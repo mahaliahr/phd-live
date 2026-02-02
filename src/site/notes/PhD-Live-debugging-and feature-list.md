@@ -30,7 +30,9 @@ LIVE SYSTEM TAGS:
 [ ] Styling on blog post page is very weird
 [x] Images being weird
 [ ]2 sessions on daily page not being picked up 
-[ ] Add phd proposal / research questions to the first page 
+[ ] Add phd proposal / research questions to the first page
+
+show git commits on homepage?
 
   
 
