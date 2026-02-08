@@ -1,7 +1,6 @@
 ---
 dg-publish: true
 visibility: public
-title: untitled
 tags: []
 type: ""
 ---

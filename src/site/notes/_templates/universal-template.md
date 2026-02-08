@@ -1,8 +1,6 @@
 ---
 dg-publish: true
 visibility: public
-# title: ""
-title: <% tp.file.title.toLowerCase() %>
 tags: []
 type: ""
 ---
