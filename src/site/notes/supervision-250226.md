@@ -22,4 +22,4 @@ LIVE SYSTEM TAGS:
 • daily         → daily log style notes
 -->
 
-- [] send through latest updates / meeting agenda to supervisors #milestone @2026-02-18
+- [ ] send through latest updates / meeting agenda to supervisors #milestone @2026-02-18
