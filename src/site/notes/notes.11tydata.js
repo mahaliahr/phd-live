@@ -4,57 +4,30 @@ const settings = require("../../helpers/constants");
 const allSettings = settings.ALL_NOTE_SETTINGS;
 
 module.exports = {
-  layout: "note.njk",
   eleventyComputed: {
     layout: (data) => {
-      if (data.page?.inputPath?.includes('/notes/blog/') &&
-          (data.page.fileSlug === 'index' || data.page.fileSlug === 'blog-index')) {
-        return data.layout || "layouts/index.njk";
+      if (data.tags.indexOf("gardenEntry") != -1) {
+        return "layouts/index.njk";
       }
-      const tags = Array.isArray(data.tags) ? data.tags : [];
-      return tags.includes("gardenEntry") ? "index.njk" : "note.njk";
+      return "layouts/note.njk";
     },
-
     permalink: (data) => {
-      const tags = Array.isArray(data.tags) ? data.tags : [];
-      
-      if (tags.includes("gardenEntry")) return "/";
-      if (data.permalink && data.permalink !== false) return data.permalink;
-      
-      return `/notes/${data.page.fileSlug}/`;
+      if (data.tags.indexOf("gardenEntry") != -1) {
+        return "/";
+      }
+      return data.permalink || undefined;
     },
-
     settings: (data) => {
       const noteSettings = {};
-      for (const setting of allSettings) {
-        const noteSetting = data[setting];
-        const globalSetting = process.env[setting];
-        
-        noteSettings[setting] =
-          typeof noteSetting !== "undefined"
-            ? noteSetting
-            : (globalSetting === "true" && noteSetting !== false);
-      }
+      allSettings.forEach((setting) => {
+        let noteSetting = data[setting];
+        let globalSetting = process.env[setting];
+
+        let settingValue =
+          noteSetting || (globalSetting === "true" && noteSetting !== false);
+        noteSettings[setting] = settingValue;
+      });
       return noteSettings;
     },
-
-    "dg-publish": (d) =>
-      typeof d["dg-publish"] === "boolean" ? d["dg-publish"] : true,
-
-    visibility: (d) => d.visibility || "public",
-
-    title: d => {
-      const rawTitle = d.title;
-      if (rawTitle instanceof Date) {
-        return rawTitle.toISOString().split('T')[0];
-      }
-      return rawTitle || d.page.fileSlug;
-    },
-    
-    description: d =>
-      d.description ||
-      (d.content || "").replace(/<[^>]*>/g, "").trim().slice(0, 160),
-
-    updated: (d) => d.updated || d.page.date,
   },
 };
