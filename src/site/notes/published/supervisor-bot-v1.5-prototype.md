@@ -1,7 +1,7 @@
 ---
 dg-publish: true
-title: supervisor bot v2 prototype
-permalink: /notes/supervisor-bot-v2-prototype/
+title:
+permalink:
 visibility: public
 description: |-
   speaker diarization 
@@ -10,7 +10,7 @@ description: |-
   (voice?)
 
   https://ollama.com/blog/streaming-tool
-updated: '2025-10-20T22:34:14.481Z'
+updated: 2025-10-20T22:34:14.481Z
 ---
 speaker diarization 
 simple UI
@@ -19,6 +19,6 @@ memory
 
 https://ollama.com/blog/streaming-tool
 
-What is the easiest/ quickest way to get superviosr bot running as local LLM with customisable UI interface (so I don't necessarily noeed to build from scratch)
+What is the easiest/ quickest way to get supervisor bot running as local LLM with customisable UI interface (so I don't necessarily noeed to build from scratch)
 
 add a [[supevisor-bot-first-iteration-reflection]] before pivoting to v2

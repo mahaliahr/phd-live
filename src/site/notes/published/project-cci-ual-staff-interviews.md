@@ -15,16 +15,18 @@ How to design it so that people feel inclined to do it, rather than being a burd
 
 ### **what do I want to find out?**
 
-How are we across CCI, teaching AI literacy? What position are we taking?
+~~How are we across CCI, teaching AI literacy? What position are we taking?~~
 
-should CCI take a defining and innovative stance on how we teach with AI
+~~should CCI take a defining and innovative stance on how we teach with AI~~
 
-How is AI talked about/ introduced to students? 
+~~How is AI talked about/ introduced to students?~~ 
 
-When do we talk about it first in the pedagogical process? (probably key differences in teaching postgraduate vs undergraduate)
+~~When do we talk about it first in the pedagogical process? (probably key differences in teaching postgraduate vs undergraduate)~~
 
-Opinions on AI integration in learning - positive or negative, if negative ask why
-As educators do we have a responsibility to prepare students for this landscape
+~~Opinions on AI integration in learning - positive or negative, if negative ask why~~
+~~As educators do we have a responsibility to prepare students for this landscape~~
+
+the above are all interesting points, but quite generalised. I think it would be good to make the interviews more in service of my research projects that I am exploring
 
 focus groups?
 questionnaire?
