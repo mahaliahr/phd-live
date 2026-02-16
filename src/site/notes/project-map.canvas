@@ -1,0 +1,44 @@
+{
+	"nodes":[
+		{"id":"927a24626a8f675f","type":"file","file":"published/project-supervisor-bot.md","x":-480,"y":220,"width":400,"height":400},
+		{"id":"9a402847974dca42","type":"file","file":"published/diy-bot-creation.md","x":40,"y":220,"width":400,"height":400},
+		{"id":"730b7a3bd45678a3","type":"file","file":"published/thesis-bot.md","x":40,"y":760,"width":400,"height":400},
+		{"id":"c58a62bca4b6090e","type":"file","file":"published/project-cci-ual-staff-interviews.md","x":-480,"y":-640,"width":400,"height":400},
+		{
+			"id":"41bdf9a6a0398e0d",
+			"type":"text",
+			"text":"# Interfaces",
+			"styleAttributes":{},
+			"x":-480,
+			"y":80,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"44da997fea2dfb98",
+			"type":"text",
+			"text":"# Infrastructure",
+			"styleAttributes":{},
+			"x":600,
+			"y":80,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"46204dc45fa615f5",
+			"type":"text",
+			"text":"# Pedagogy ?",
+			"styleAttributes":{},
+			"x":-480,
+			"y":-800,
+			"width":260,
+			"height":60
+		},
+		{"id":"c602781cced0b7da","type":"file","file":"published/project-phd-live-platform.md","x":600,"y":220,"width":400,"height":400}
+	],
+	"edges":[],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

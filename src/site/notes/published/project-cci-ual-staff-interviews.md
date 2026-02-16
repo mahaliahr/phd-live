@@ -26,14 +26,23 @@ How to design it so that people feel inclined to do it, rather than being a burd
 ~~Opinions on AI integration in learning - positive or negative, if negative ask why~~
 ~~As educators do we have a responsibility to prepare students for this landscape~~
 
-the above are all interesting points, but quite generalised. I think it would be good to make the interviews more in service of my research projects that I am exploring
-
 focus groups?
 questionnaire?
-~~observations~~ ethics form doesn't account for this, so will need to submit another for this/ work out if it's valuable or useful
+~~teaching observations~~ (ethics form doesn't account for this, so will need to submit another for this/ work out if it's valuable or useful)
 
-what do I want the findings from this to feed into?
 ---
+the vibecoding question - do you think there is benefit to this top down approach, rather than growth from the fundamentals
+
+
+the above are all interesting points, but quite generalised. I think it would be good to make the interviews more in service of my research projects that I am exploring
+
+General themes:
+feelings around AI in education, views on more ethical ways forward, institutional perspective, anxieties around the topic? 
+
+what role do you belive CCI/ UAL as an institution should take with AI?
+
+### what do I want the findings from this to feed into?
+
 ### 1 - recruit / scope (questionnaire)
 
 - I'll send a short survey (5–8 Qs) to staff, with the aim to:
@@ -56,7 +65,7 @@ what do I want the findings from this to feed into?
 ### 2 -semi-structured interviews
 
 - 30-45 minute semi-structured interviews 
-- ==can I offer participants _different modes of interview_ to be more accommodating to varying and busy schedules (shorter, online, asynchronous written responses)==
+- can I offer participants _different modes of interview_ to be more accommodating to varying and busy schedules (shorter, online, asynchronous written responses)
 
 ### 3 - analysis
 - **Questionnaire data** -  simple descriptives (counts, word clouds for open comments).
