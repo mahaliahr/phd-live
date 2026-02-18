@@ -3,6 +3,12 @@ console.log("Live widget loaded");
 (async function () {
   const base = (window.BASE_URL || "/").replace(/\/+$/, "") + "/";
   
+  // Declare these at the top of the IIFE so renderSessions can use them
+  let currentSession = null;
+  let nextSession = null;
+  const nowContainer = document.getElementById("live-now");
+  const nextContainer = document.getElementById("live-next");
+  
   async function fetchJson(url) {
     try {
       const res = await fetch(url);
@@ -35,13 +41,13 @@ console.log("Live widget loaded");
 
   // Relative time formatter
   const rtf = new Intl.RelativeTimeFormat(undefined, { numeric: "auto" });
-  function relativeTime(date) {
-    if (!date) return "unknown time";
+  function relativeTime(dateString) {
+    if (!dateString) return "unknown time";
     
-    const d = new Date(date);
+    const d = new Date(dateString);
     if (isNaN(d.getTime())) {
-      console.error("Invalid date:", date);
-      return "invalid date";
+      console.warn("Invalid date string:", dateString);
+      return "unknown time";
     }
     
     const ms = d.getTime() - Date.now();
@@ -49,7 +55,7 @@ console.log("Live widget loaded");
     const min = Math.round(sec / 60);
     const hr = Math.round(min / 60);
     const day = Math.round(hr / 24);
-    
+
     if (Math.abs(day) >= 1) return rtf.format(day, "day");
     if (Math.abs(hr) >= 1) return rtf.format(hr, "hour");
     if (Math.abs(min) >= 1) return rtf.format(min, "minute");
@@ -67,36 +73,32 @@ console.log("Live widget loaded");
     if (stream) await renderStream(stream);
   }
 
-  async function renderSessions(sessions) {
-    const nowContainer = $("#live-now");
-    const nextContainer = $("#live-next");
+  async function renderSessions(data) {
+    const now = new Date();
     
-    if (!nowContainer || !nextContainer) {
-      console.warn("Missing #live-now or #live-next containers");
+    if (!data || !Array.isArray(data)) {
+      console.warn("Sessions data is not an array:", data);
       return;
     }
 
-    if (!sessions || sessions.length === 0) {
-      nowContainer.innerHTML = '<p class="no-data">No work sessions tracked yet</p>';
-      nextContainer.innerHTML = '';
-      return;
-    }
-
-    const now = Date.now();
-    let currentSession = null;
-    let nextSession = null;
-    
-    for (const s of sessions) {
-      const start = new Date(s.start);
-      const end = s.end ? new Date(s.end) : null;
+    for (const session of data) {
+      if (!session.start) continue;
       
+      const startDate = new Date(session.start);
+      if (isNaN(startDate.getTime())) {
+        console.warn("Invalid session start date:", session.start);
+        continue;
+      }
+
+      const start = startDate;
+      const end = session.end ? new Date(session.end) : null;
       if (start.getTime() <= now && (!end || end.getTime() >= now)) {
-        currentSession = s;
+        currentSession = session;
         break;
       }
     }
     
-    for (const s of sessions) {
+    for (const s of data) {  // Changed from 'sessions' to 'data'
       const start = new Date(s.start);
       if (start.getTime() > now) {
         nextSession = s;
@@ -104,8 +106,8 @@ console.log("Live widget loaded");
       }
     }
     
-    if (!currentSession && sessions.length > 0) {
-      currentSession = sessions[0];
+    if (!currentSession && data.length > 0) {  // Changed from 'sessions' to 'data'
+      currentSession = data[0];
     }
 
     if (currentSession) {
