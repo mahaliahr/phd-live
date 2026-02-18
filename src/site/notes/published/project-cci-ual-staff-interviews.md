@@ -31,16 +31,15 @@ questionnaire?
 ~~teaching observations~~ (ethics form doesn't account for this, so will need to submit another for this/ work out if it's valuable or useful)
 
 ---
-the vibecoding question - do you think there is benefit to this top down approach, rather than growth from the fundamentals
-
 
 the above are all interesting points, but quite generalised. I think it would be good to make the interviews more in service of my research projects that I am exploring
 
-General themes:
+### General themes:
 feelings around AI in education, views on more ethical ways forward, institutional perspective, anxieties around the topic? 
 
 what role do you belive CCI/ UAL as an institution should take with AI?
 
+the vibecoding question - do you think there is benefit to this top down approach, rather than growth from the fundamentals
 ### what do I want the findings from this to feed into?
 
 ### 1 - recruit / scope (questionnaire)

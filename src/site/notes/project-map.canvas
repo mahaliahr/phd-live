@@ -34,7 +34,17 @@
 			"width":260,
 			"height":60
 		},
-		{"id":"c602781cced0b7da","type":"file","file":"published/project-phd-live-platform.md","x":600,"y":220,"width":400,"height":400}
+		{"id":"c602781cced0b7da","type":"file","file":"published/project-phd-live-platform.md","x":600,"y":220,"width":400,"height":400},
+		{
+			"id":"f2d49d5d0436b866",
+			"type":"text",
+			"text":"# Autoethnographic Design\n\nthis is where the experimentation with my own practice is happening",
+			"styleAttributes":{},
+			"x":600,
+			"y":660,
+			"width":400,
+			"height":140
+		}
 	],
 	"edges":[],
 	"metadata":{
