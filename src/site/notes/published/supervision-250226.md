@@ -24,7 +24,7 @@ LIVE SYSTEM TAGS:
 
 - [ ] send through latest updates / meeting agenda to supervisors #milestone @2026-02-18
 
-_last meeting [[supervision-261125]]\-
+_last meeting [[supervision-261125]]_
 
 updates: 
 

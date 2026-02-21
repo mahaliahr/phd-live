@@ -30,6 +30,7 @@ end::2026-01-12T23:27:45+0000
 ---
 
 - [x] focus on progress note, make into a fully fledged post - exploring more deeply my motivations behind this all -> [[focus-on-process]]
+
 - a post looking at historic 'vintage' bots, what can we learn from what has already been achieved. Have we reached the limit of what the chatbot interface is good for
 
 - exploring my personal vantage point on all this, my positionality and get clearer on how I hope to employ an autoethnographic practice within this research -> [[my-positionality]]

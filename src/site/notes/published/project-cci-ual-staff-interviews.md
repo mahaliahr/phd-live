@@ -35,11 +35,29 @@ questionnaire?
 the above are all interesting points, but quite generalised. I think it would be good to make the interviews more in service of my research projects that I am exploring
 
 ### General themes:
+
 feelings around AI in education, views on more ethical ways forward, institutional perspective, anxieties around the topic? 
 
-what role do you belive CCI/ UAL as an institution should take with AI?
+what are the general stances on AI use in education ?
+	 why and what concerns?
 
-the vibecoding question - do you think there is benefit to this top down approach, rather than growth from the fundamentals
+what do people think about the development of bespoke (open-source/local) tools?
+
+the term AI literacy is being thrown around a lot, what doest this mean to you? How do you think we might teach this?
+
+How do people think that CCI / UAL role should approach teaching with genAI everywhere?
+
+How do you imagine we might assess work more practically? 
+
+what role do you believe CCI/ UAL as an institution should take with AI?
+
+the vibe-coding question - do you think there is benefit to this top down approach, rather than growth from the fundamentals
+
+
+
+
+
+
 ### what do I want the findings from this to feed into?
 
 ### 1 - recruit / scope (questionnaire)
