@@ -27,10 +27,11 @@ LIVE SYSTEM TAGS:
 - [x] Posts not tracking properly
 - [x] Wikilinks not clickable in the widget/live bar
 - [x] Session tracking not working properly
-- [ ] Styling on blog post page is very weird
+- [x] Styling on blog post page is very weird
 - [x] Images being weird
 - [x] 2 sessions on daily page not being picked up 
 - [ ] Add phd proposal / research questions to the first page
+- [ ] reinstate graphscript (side bar local graph)
 
 show git commits on homepage?
 
@@ -38,6 +39,6 @@ show git commits on homepage?
 - [ ] Group/ organise notes in a more clear to understand way 
 - [ ] Formatted date view not updated in the graph
 - [ ] Live bar behavior could do with finessing - only have it show when a session is live
-- [ ] Session logs and thoughts log
+- [ ] Session logs and thoughts log (way to access and see all of them, other than just on the live widget)
 - [x] Template session to be dropdown
 - [x] Session formatting make neater

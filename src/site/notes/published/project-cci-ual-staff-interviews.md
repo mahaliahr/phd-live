@@ -53,23 +53,25 @@ what role do you believe CCI/ UAL as an institution should take with AI?
 
 the vibe-coding question - do you think there is benefit to this top down approach, rather than growth from the fundamentals
 
-
-
-
-
-
 ### what do I want the findings from this to feed into?
 
+development of the diy-bot project framing 
+more accurate understanding from other peers what their concerns are + gain other insights
+idea of what people think about the future impacts of genAI on learning
+
 ### 1 - recruit / scope (questionnaire)
+
+I am thinking to start with a more personalise invite to people that I know/work closely with before 
 
 - I'll send a short survey (5–8 Qs) to staff, with the aim to:
     1. Map teaching roles, engagement, brief opinions re. AI.
     2. Recruit for interviews.
 
 ---
+**onboarding questionnaire**
 
-- Your role at CCI 
-- What year groups/modules do you primarily work with? (short answer).
+- Your role at CCI/UAL
+- What course/year groups/modules do you primarily work with? (short answer).
 - How often do you discuss or use generative AI tools in your teaching?
 - When (if at all) do you first introduce AI concepts to students in the learning process? 
 - In one or two sentences, how would you describe your current view of AI in education? 
@@ -78,16 +80,15 @@ the vibe-coding question - do you think there is benefit to this top down approa
 - Would you like to receive a short summary of findings?
 
 ---
-
 ### 2 -semi-structured interviews
 
 - 30-45 minute semi-structured interviews 
-- can I offer participants _different modes of interview_ to be more accommodating to varying and busy schedules (shorter, online, asynchronous written responses)
+- ~~can I offer participants _different modes of interview_ to be more accommodating to varying and busy schedules (shorter, online, asynchronous written responses)~~
 
+---
 ### 3 - analysis
 - **Questionnaire data** -  simple descriptives (counts, word clouds for open comments).
 - **Interviews** - thematic analysis.
 
 Compare the two, to see what emerges
-
 Feedback summary email at the end - for reciprocity
