@@ -67,23 +67,16 @@ I am thinking to start with a more personalise invite to people that I know/work
     1. Map teaching roles, engagement, brief opinions re. AI.
     2. Recruit for interviews.
 
----
-**onboarding questionnaire**
-
-- Your role at CCI/UAL
-- What course/year groups/modules do you primarily work with? (short answer).
-- How often do you discuss or use generative AI tools in your teaching?
-- When (if at all) do you first introduce AI concepts to students in the learning process? 
-- In one or two sentences, how would you describe your current view of AI in education? 
-- What do you see as the main benefits and/or risks of using AI in teaching and learning? 
-- Would you be willing to take part in a 30-45 minute interview?
-- Would you like to receive a short summary of findings?
+**[[staff-onboarding-questionnaire]]**
 
 ---
 ### 2 -semi-structured interviews
 
 - 30-45 minute semi-structured interviews 
 - ~~can I offer participants _different modes of interview_ to be more accommodating to varying and busy schedules (shorter, online, asynchronous written responses)~~
+
+[[staff-interview-overview]]
+[[staff-interview-questions]]
 
 ---
 ### 3 - analysis
