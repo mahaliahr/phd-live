@@ -123,13 +123,6 @@ html, body {
 }
 
 /* Graph containers */
-#graph, #link-graph, #full-graph-container {
-  position: relative;
-  z-index: 1;
-  max-width: 100%;
-  overflow: hidden;
-}
-
 .graph-fs {
   position: fixed !important;
   inset: 0;
