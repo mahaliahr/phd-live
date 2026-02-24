@@ -10,9 +10,34 @@ description: >-
   burde
 updated: '2025-10-20T22:18:15.274Z'
 ---
-Considerations -> everyone is very busy, will people have time to contribute? 
-How to design it so that people feel inclined to do it, rather than being a burden?
+### 1 - recruit / scope (questionnaire)
 
+I am thinking to start with a more personalise invite to people that I know/work closely with before 
+
+- I'll send a short survey (5–8 Qs) to staff, with the aim to:
+    1. Map teaching roles, engagement, brief opinions re. AI.
+    2. Recruit for interviews.
+
+**[[staff-onboarding-questionnaire]]**
+
+---
+### 2 -semi-structured interviews
+
+- 30-45 minute semi-structured interviews 
+- ~~can I offer participants _different modes of interview_ to be more accommodating to varying and busy schedules (shorter, online, asynchronous written responses)~~
+
+[[staff-interview-overview]]
+[[staff-interview-questions]]
+
+---
+### 3 - analysis
+- **Questionnaire data** -  simple descriptives (counts, word clouds for open comments).
+- **Interviews** - thematic analysis.
+
+Compare the two, to see what emerges
+Feedback summary email at the end - for reciprocity
+
+---
 ### **what do I want to find out?**
 
 ~~How are we across CCI, teaching AI literacy? What position are we taking?~~
@@ -59,29 +84,3 @@ development of the diy-bot project framing
 more accurate understanding from other peers what their concerns are + gain other insights
 idea of what people think about the future impacts of genAI on learning
 
-### 1 - recruit / scope (questionnaire)
-
-I am thinking to start with a more personalise invite to people that I know/work closely with before 
-
-- I'll send a short survey (5–8 Qs) to staff, with the aim to:
-    1. Map teaching roles, engagement, brief opinions re. AI.
-    2. Recruit for interviews.
-
-**[[staff-onboarding-questionnaire]]**
-
----
-### 2 -semi-structured interviews
-
-- 30-45 minute semi-structured interviews 
-- ~~can I offer participants _different modes of interview_ to be more accommodating to varying and busy schedules (shorter, online, asynchronous written responses)~~
-
-[[staff-interview-overview]]
-[[staff-interview-questions]]
-
----
-### 3 - analysis
-- **Questionnaire data** -  simple descriptives (counts, word clouds for open comments).
-- **Interviews** - thematic analysis.
-
-Compare the two, to see what emerges
-Feedback summary email at the end - for reciprocity
