@@ -12,7 +12,7 @@ updated: '2025-10-20T22:18:15.274Z'
 ---
 ### 1 - recruit / scope (questionnaire)
 
-I am thinking to start with a more personalise invite to people that I know/work closely with before 
+I am thinking to start with a more personalised invite to people that I know/work closely with before 
 
 - I'll send a short survey (5–8 Qs) to staff, with the aim to:
     1. Map teaching roles, engagement, brief opinions re. AI.
