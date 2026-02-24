@@ -19,7 +19,7 @@ _last meeting [[supervision-261125]]_
 ### currently: 
 I am working on preparing the staff interviews -[[project-cci-ual-staff-interviews]]
 
-#### discussion points: 
-- talk about the staff interviews - what is my timeline
-- talk about conferences, is there a good way to be thinking about them/ planning which one to take part in 
+### discussion points: 
+- talk about the staff interviews - what is my timeline?
+- talk about conferences, is there a good way to be thinking about them/ planning which one to take part in?
 - discuss my plan for the coming months https://www.notion.so/PhD-Planning-Overview-1d8d4b0df71d80799030cbb90f2fa664
