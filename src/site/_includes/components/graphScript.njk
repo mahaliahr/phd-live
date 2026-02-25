@@ -1,0 +1,198 @@
+<script>
+    async function fetchGraphData() {
+        const graphData = await fetch('{{ "/graph.json" | url }}', { cache: "no-store" }).then(res => res.json());
+        return graphData;
+    }
+
+    function untilSized(el, cb, tries = 30) {
+      const tick = () => {
+        const w = el.offsetWidth, h = el.offsetHeight;
+        if (w > 0 && h > 0) return cb(w, h);
+        if (tries <= 0) return cb(Math.max(1, w), Math.max(1, h));
+        tries--;
+        requestAnimationFrame(tick);
+      };
+      tick();
+    }
+
+    function getNextLevelNeighbours(existing, remaining) {
+        const keys = Object.values(existing).map((n) => n.neighbors).flat();
+        const n_remaining = Object.keys(remaining).reduce((acc, key) => {
+            if (keys.indexOf(key) != -1) {
+                if (!remaining[key].hide) existing[key] = remaining[key];
+            } else {
+                acc[key] = remaining[key];
+            }
+            return acc;
+        }, {});
+        return [existing, n_remaining];
+    }
+
+    function filterLocalGraphData(graphData, depth) {
+      if (!graphData) return null;
+      let remaining = JSON.parse(JSON.stringify(graphData.nodes));
+      let links = JSON.parse(JSON.stringify(graphData.links));
+      const currentLink = decodeURI(window.location.pathname);
+
+      let currentNode =
+        remaining[currentLink] ||
+        (graphData.homeAlias && remaining[graphData.homeAlias]) ||
+        Object.values(remaining)[0];
+
+      if (!currentNode) return null;
+
+      delete remaining[currentNode.url];
+      if (!currentNode.home && graphData.homeAlias && remaining[graphData.homeAlias]) {
+        delete remaining[graphData.homeAlias];
+      }
+      currentNode.current = true;
+
+      let existing = { [currentNode.url]: currentNode };
+      for (let i = 0; i < depth; i++) {
+        [existing, remaining] = getNextLevelNeighbours(existing, remaining);
+      }
+      let nodes = Object.values(existing);
+      if (!currentNode.home && graphData.homeAlias && graphData.homeAlias !== currentNode.url) {
+        nodes = nodes.filter(n => !n.home);
+      }
+      const ids = new Set(nodes.map(n => n.id));
+      return { nodes, links: links.filter(con => ids.has(con.source) && ids.has(con.target)) };
+    }
+
+    function htmlDecode(input) { 
+      const doc = new DOMParser().parseFromString(input, "text/html"); 
+      return doc.documentElement.textContent; 
+    }
+
+    function getCssVar(variable) {
+      const bodyVal = getComputedStyle(document.body).getPropertyValue(variable).trim();
+      if (bodyVal) return bodyVal;
+      return getComputedStyle(document.documentElement).getPropertyValue(variable).trim();
+    }
+
+    function renderLocalGraph(graphData, depth) {
+        if (!graphData) return null;
+        if (typeof ForceGraph !== 'function') return null;
+        
+        const el = document.getElementById('link-graph');
+        if (!el) return null;
+        
+        const data = filterLocalGraphData(graphData, depth);
+        if (!data) return null;
+
+        let Graph = null;
+
+        const createOrResize = () => {
+          const w = Math.max(1, el.offsetWidth);
+          const h = Math.max(1, el.offsetHeight);
+          const color = getCssVar("--graph-main") || "#8b6cef";
+          const mutedColor = getCssVar("--graph-muted") || "rgba(139,108,239,.45)";
+          const highlightNodes = new Set();
+          let hoverNode = null;
+
+          if (!Graph) {
+            Graph = ForceGraph()(el)
+              .graphData(data)
+              .nodeId('id')
+              .nodeLabel('title')
+              .linkSource('source')
+              .linkTarget('target')
+              .d3AlphaDecay(0.12)
+              .autoPauseRedraw(false)
+              .width(w).height(h)
+              .linkColor((link) => {
+                  if (!hoverNode) return color;
+                  return (link.source.id === hoverNode.id || link.target.id === hoverNode.id) ? color : mutedColor;
+              })
+              .nodeCanvasObject((node, ctx) => {
+                  const numberOfNeighbours = (node.neighbors && node.neighbors.length) || 2;
+                  const nodeR = Math.min(6, Math.max(numberOfNeighbours / 2, 2));
+                  ctx.beginPath();
+                  ctx.arc(node.x, node.y, nodeR, 0, 2 * Math.PI, false);
+                  const active = (!hoverNode) || node.id === hoverNode.id || highlightNodes.has(node.url);
+                  ctx.fillStyle = active ? color : mutedColor;
+                  ctx.fill();
+
+                  if (node.current) {
+                      ctx.beginPath();
+                      ctx.arc(node.x, node.y, nodeR + 1, 0, 2 * Math.PI, false);
+                      ctx.lineWidth = 0.5;
+                      ctx.strokeStyle = color;
+                      ctx.stroke();
+                  }
+                  const label = htmlDecode(node.title);
+                  ctx.font = '3.5px Sans-Serif';
+                  ctx.textAlign = 'center';
+                  ctx.textBaseline = 'top';
+                  ctx.fillText(label, node.x, node.y + nodeR + 2);
+              })
+              .onNodeClick(node => { if (node?.url) window.location = node.url; })
+              .onNodeHover(node => {
+                  highlightNodes.clear();
+                  if (node) {
+                      highlightNodes.add(node.url);
+                      (node.neighbors || []).forEach(neighborUrl => highlightNodes.add(neighborUrl));
+                  }
+                  hoverNode = node || null;
+              });
+
+            try {
+              const ro = new ResizeObserver(() => {
+                const nw = Math.max(1, el.offsetWidth);
+                const nh = Math.max(1, el.offsetHeight);
+                if (nw && nh) { Graph.width(nw).height(nh); }
+              });
+              ro.observe(el);
+            } catch {}
+          } else {
+            Graph.width(w).height(h);
+          }
+
+          setTimeout(() => { try { Graph.zoomToFit(200, 30); } catch {} }, 200);
+        };
+
+        untilSized(el, () => createOrResize());
+
+        const details = el.closest('details');
+        if (details && !details.__graphResizeBound) {
+          details.__graphResizeBound = true;
+          details.addEventListener('toggle', () => setTimeout(createOrResize, 50));
+        }
+
+        return Graph;
+    }
+</script>
+
+<div
+  x-data="{ graphData: null, depth: 1, graph: null }"
+  x-init="(async () => { graphData = await fetchGraphData(); })()"
+  id="graph-component"
+  class="graph">
+    <div class="graph-title-container">
+        <div class="graph-title">Connected Pages</div>
+        <div id="graph-controls">
+            <div class="depth-control">
+                <label for="graph-depth">Depth</label>
+                <div class="slider">
+                    <input x-model.number="depth" name="graph-depth" list="depthmarkers" type="range" step="1" min="1" max="3" id="graph-depth"/>
+                    <datalist id="depthmarkers">
+                        <option value="1" label="1"></option>
+                        <option value="2" label="2"></option>
+                        <option value="3" label="3"></option>
+                    </datalist>
+                </div>
+                <span id="depth-display" x-text="depth"></span>
+            </div>
+            <div class="ctrl-right">
+                <a href="{{ '/graph/' | url }}" title="Full Graph"><i icon-name="globe" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+    <div x-effect="if (graphData && typeof ForceGraph === 'function' && document.getElementById('link-graph')) { window.graph = renderLocalGraph(graphData, depth); }" id="link-graph"></div>
+</div>
+
+<script>
+  if (window.lucide && typeof window.lucide.createIcons === 'function') {
+    window.lucide.createIcons({ attrs: { class: ['svg-icon'] } });
+  }
+</script>
