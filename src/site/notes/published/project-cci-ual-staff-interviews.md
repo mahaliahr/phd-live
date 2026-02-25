@@ -44,7 +44,7 @@ Feedback summary email at the end - for reciprocity
 
 ~~should CCI take a defining and innovative stance on how we teach with AI~~
 
-~~How is AI talked about/ introduced to students?~~ 
+~~How is AI  introduced to students?~~ 
 
 ~~When do we talk about it first in the pedagogical process? (probably key differences in teaching postgraduate vs undergraduate)~~
 

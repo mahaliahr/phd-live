@@ -6,10 +6,11 @@ type: ""
 ---
 [[staff-interview-overview]]
 
+MOODLE INVESTIGATION OF COURSES FIRST
 # 1. Practice  
 
  **main questions**
-- Could you tell me a bit about the students you’re currently teaching and the kinds of learning experiences you’re trying to support?
+- Could you tell me a bit about the students you’re currently teaching and the kinds of learning experiences you’re trying to support? -- we create the conditions for learning 
 - Where, if at all, does generative AI currently show up in your teaching environment?
 
 **follow-up prompts**
