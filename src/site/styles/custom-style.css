@@ -18,7 +18,7 @@
   --background-primary-alt: #fafafa;
   --background-modifier-border: rgba(0,0,0,0.1);
   --text-normal: #0b0b0b;
-  --text-muted: #6b7280;
+  --text-muted: #70747c;
   --interactive-accent: #8b6cef;
   --live-active: #22c55e; /* green for live */
   --live-inactive: #ef4444; /* red for offline */
@@ -322,6 +322,30 @@ section .more a {
   padding: 1.5rem;
   background: var(--background-secondary, #f5f5f5);
   border-radius: 8px;
+}
+
+/* Live Dashboard - gradient border */
+.live-dashboard {
+  margin-block: 3rem;
+  padding: 2rem;
+  background: var(--card-bg);
+  border: 2px solid transparent;
+  border-radius: 12px;
+  background-clip: padding-box;
+  position: relative;
+}
+
+.live-dashboard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  padding: 2px;
+  background: linear-gradient(135deg, var(--accent), var(--live-active));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
 }
 
 /* Live Widget Styling */
@@ -712,6 +736,88 @@ a.internal-link.is-unresolved {
   color: var(--live-inactive);
 }
 
+/* Navbar */
+.navbar {
+  background: var(--navbar-bg);
+  color: var(--navbar-fg);
+  padding: 0.75rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid var(--card-border);
+  width: 100%;
+}
+
+.navbar-inner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.nav-brand {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--navbar-fg);
+  flex-shrink: 0;
+}
+
+.nav-brand :hover {
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-links a {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: var(--text-normal);
+  border-radius: 4px;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* Active/current page link */
+.nav-links a[aria-current=page],
+.nav-links a.active {
+  background: var(--background-secondary);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* External links - subtle indicator */
+.nav-links a[target=_blank] {
+  color: var(--text-muted);
+}
+
+.nav-links a[target=_blank]:hover {
+  background: var(--background-secondary);
+  color: var(--text-normal);
+}
+
+/* Hide toggle on desktop */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: var(--navbar-fg);
+}
+
 /* Mobile adjustments */
 @media (max-width: 640px) {
   .graph-toolbar {
@@ -725,4 +831,52 @@ a.internal-link.is-unresolved {
     height: calc(100vh - 280px);
     min-height: 350px;
   }
+}
+/* Mobile navbar */
+@media (max-width: 768px) {
+  .navbar-inner {
+    position: relative;
+    flex-wrap: wrap;
+  }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--navbar-bg);
+    flex-direction: column;
+    padding: 1rem;
+    border-bottom: 1px solid var(--card-border);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-left: 0;
+  }
+  .nav-links.open {
+    display: flex;
+  }
+  .nav-links a {
+    width: 100%;
+    padding: 0.75rem 1rem;
+  }
+  /* Show toggle on mobile */
+  .nav-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-right {
+    margin-left: auto;
+  }
+}
+/* Graph component spacing */
+#graph-component {
+  margin-top: 1.5rem;
+}
+
+.graph-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  padding-top: 0.5rem;
 }

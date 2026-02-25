@@ -17,8 +17,6 @@ class StreamJson {
           .replace(/[\u2028\u2029]/g, '') // Remove line/paragraph separators
           .replace(/[""]/g, '"') // Normalize quotes
           .replace(/['']/g, "'") // Normalize apostrophes
-          .replace(/\\/g, '\\\\') // Escape backslashes
-          .replace(/"/g, '\\"') // Escape quotes
           .trim();
         
         // Remove any trailing commas or invalid chars
@@ -30,10 +28,16 @@ class StreamJson {
           url: i.url || null,
         };
       })
-      .filter(i => i.text && i.text.length > 0);
+      .filter(i => i.text && i.text.length > 0); // Only include items with valid text
     
-    // Return valid JSON with no extra whitespace
-    return JSON.stringify(items);
+    // Use JSON.stringify with replacer to catch any remaining issues
+    return JSON.stringify(items, (key, value) => {
+      if (typeof value === 'string') {
+        // Extra safety: remove any remaining problematic characters
+        return value.replace(/[\u0000-\u001F\u007F-\u009F\u2028\u2029]/g, '');
+      }
+      return value;
+    }, 2);
   }
 }
 
