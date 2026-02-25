@@ -169,23 +169,8 @@ section .more a { font-weight: 600; }
   border-radius: 8px;
 }
 
-/* Live Dashboard - distinctive styling */
-.live-dashboard {
-  margin-block: 3rem;
-  padding: 2rem;
-  background: var(--card-bg);
-  border: 2px solid var(--accent); /* Bolder border using accent color */
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(139, 108, 239, 0.1); /* Subtle accent-colored shadow */
-}
-
-.live-dashboard h2 {
-  margin-top: 0;
-  color: var(--accent);
-}
-
+/* Live Widget Styling */
 #live-widget {
-  margin-top: 1.5rem;
   background: var(--background-secondary);
   border-radius: 8px;
   // padding: 1rem;
