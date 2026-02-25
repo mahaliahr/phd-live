@@ -324,30 +324,6 @@ section .more a {
   border-radius: 8px;
 }
 
-/* Live Dashboard - gradient border */
-.live-dashboard {
-  margin-block: 3rem;
-  padding: 2rem;
-  background: var(--card-bg);
-  border: 2px solid transparent;
-  border-radius: 12px;
-  background-clip: padding-box;
-  position: relative;
-}
-
-.live-dashboard::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 12px;
-  padding: 2px;
-  background: linear-gradient(135deg, var(--accent), var(--live-active));
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  pointer-events: none;
-}
-
 /* Live Widget Styling */
 #live-widget {
   background: var(--background-secondary);
