@@ -22,7 +22,7 @@ I am working on preparing the staff interviews -[[project-cci-ual-staff-intervie
 
 ### discussion points: 
 
-talk about the staff interviews - what is my timeline?
+<mark style="background: #FFB8EBA6;">talk about the staff interviews - what is my timeline?</mark>
 
 - think about strategy -- focus on CCI first before branching out to the rest of UAL. CCI = phase 1. surface the tensions
 
@@ -37,7 +37,7 @@ talk about the staff interviews - what is my timeline?
 
 - domain specific concerns may be different across CCI (and across UAL more broadly) this is something to bear in mind. (also my phd sits across 3 different domains - pedagogy, creative computing, speculative design (?) )
 
-talk about conferences, is there a good way to be thinking about them/ planning which one to take part in?
+<mark style="background: #FFB8EBA6;">talk about conferences, is there a good way to be thinking about them/ planning which one to take part in?</mark>
 
 - be selective and consider what I want to get out of it. consider my time and how I can balance pushing the research forward and also participating and sharing in useful spaces
 
@@ -45,7 +45,7 @@ for interviews a good way to consider it is to find out what I can before interv
 
  ~~discuss my plan for the coming months ~~
 
-talk of the next milestone - confirmation
+<mark style="background: #FFB8EBA6;">talk of the next milestone - confirmation</mark>
 
 - what is necessary for confirmation:
 	lit review (map the field and gap), methodology (how + my approach), research design -- pilot study and prototypes of research.
