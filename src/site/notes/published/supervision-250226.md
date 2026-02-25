@@ -43,7 +43,7 @@ I am working on preparing the staff interviews -[[project-cci-ual-staff-intervie
 
 for interviews a good way to consider it is to find out what I can before interviews (moodle review). email to course teams to ask for moodle viewing, this line of communication can lead to -> questionnaire -> interviews (a focused group initially)
 
- ~~discuss my plan for the coming months ~~
+ ~~discuss my plan for the coming months~~
 
 <mark style="background: #FFB8EBA6;">talk of the next milestone - confirmation</mark>
 
