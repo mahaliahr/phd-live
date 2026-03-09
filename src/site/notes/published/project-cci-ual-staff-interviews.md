@@ -10,6 +10,9 @@ description: >-
   burde
 updated: '2025-10-20T22:18:15.274Z'
 ---
+useful discussion from [[supervision-250226]] around things to consider for the staff interviews.
+
+---
 ### 1 - recruit / scope (questionnaire)
 
 I am thinking to start with a more personalised invite to people that I know/work closely with before 

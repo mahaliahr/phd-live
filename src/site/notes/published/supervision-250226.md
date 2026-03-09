@@ -55,4 +55,4 @@ for interviews a good way to consider it is to find out what I can before interv
 - q - can I do my confirmation sooner? what is a good timeline to hit?
 
 ### for next meeting: 
-moodle review complete - clear plan and design of questions an who will be reached out to and when (stages of reaching out).
+moodle review complete - clear plan and design of questions and who will be reached out to and when (stages of reaching out).
