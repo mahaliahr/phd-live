@@ -70,6 +70,8 @@ The Auto-ethnographic turn in design
 
 [[tanimoto-2013-evolution-of-live-programming]]
 
+[[bleecker-et-al-2022-manual-of-design-fiction]]
+
 ---
 
 Research Methods
