@@ -30,6 +30,23 @@ I am working on preparing the staff interviews -[[project-cci-ual-staff-intervie
 
 - use moodle, as a kind of local lit review - see how people are teaching AI in their courses
 	- selection: diploma, undergraduate, 1 or 2 postgraduate and a stem course 
+	<!-- 
+	Murad, Irti, Jen - Diploma 
+	Ken, Stella, Sarah - BSc CC
+	Louis, Terry - Applied Machine Learning
+	Ceren - Internet Equalities  
+	Evan - BSc Computer Science
+
+Hello all,
+
+I hope you are all doing well.
+
+I am reaching out as I am conducting a review of a selection of courses at CCI and how we approach the inclusion of AI and teaching this within our course. This is the first step in a mapping out of our apprach and in the coming months I hope to have converasations with any staff that might want to talk more about this. 
+
+To begin with I was going to proceed to check if it's okay for me to have access to Moodle to see your course materials, I can reach out to the digital learning directly to facilitate this, so need for any extra work from you - but if you would not be okay with me having access to your materials, please let me know.
+
+Thanks in advance for your help and support with this. As the work develops I will of course share back my findings
+	-->
 	- what are the ethics of this?? course materials are 'UAL owned' techincally, so probably fine. 
 	- as a collegiate starting point reach out the course teams and let them know
 
