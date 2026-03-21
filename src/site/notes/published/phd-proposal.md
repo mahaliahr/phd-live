@@ -19,7 +19,7 @@ as of June 2024 for the AfR (Application for Registration)
 ---
 #### Speculating on AI Augmented Education: Creating ‘Possibility Spaces’ for Learning
 
-[[glossary-index]]
+%% [[glossary-index]] %%
 
 **Subject Area
 
