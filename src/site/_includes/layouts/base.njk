@@ -10,9 +10,6 @@
     {% include "components/navbar.njk" ignore missing %}
     {% include "components/livebar.njk" ignore missing %}
     {% include "components/searchContainer.njk" ignore missing %}
-    {% if contentClasses and "canvas-page" in contentClasses %}
-    {%include "components/canvasScript.njk"%}
-    {% endif %}
 
     <div class="page {% if dgShowSidebar !== false %}has-sidebar{% else %}no-sidebar{% endif %}">
       {% if dgShowSidebar !== false %}
@@ -24,6 +21,12 @@
     </div>
 
     {% include "components/searchScript.njk" ignore missing %}
+
+    {# Canvas script AFTER content so DOM exists #}
+    {% if contentClasses and "canvas-page" in contentClasses %}
+      {% include "components/canvasScript.njk" %}
+    {% endif %}
+
     <footer>
       {% include "components/footer.njk" ignore missing %}
     </footer>
