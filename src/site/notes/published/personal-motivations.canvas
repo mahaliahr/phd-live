@@ -41,6 +41,10 @@
 	],
 	"metadata":{
 		"version":"1.0-1.0",
-		"frontmatter":{}
+		"frontmatter":{
+			"dg-publish":true,
+			"visibility":"public",
+			"tags":null
+		}
 	}
 }

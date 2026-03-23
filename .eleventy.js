@@ -542,6 +542,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/site/favicon.svg": "favicon.svg" });
   eleventyConfig.addPassthroughCopy({ "src/site/favicon.svg": "favicon.ico" });
   eleventyConfig.addPassthroughCopy("src/site/styles/_theme.*.css");
+  eleventyConfig.addPassthroughCopy("src/site/notes/**/*.canvas");
+
 
   
   eleventyConfig.addPlugin(faviconsPlugin, { outputDir: "dist" });
