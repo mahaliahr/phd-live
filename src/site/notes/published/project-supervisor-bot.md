@@ -12,6 +12,7 @@ updated: 2025-10-20T22:34:14.471Z
 overarching body of work -> [[teaching-bots]]
 
 Developing plan of [[functionality-and-behaviour]]
+[[design-thoughts]]
 
 Thoughts about [[relationship-with-AI-bot-vs-human]]
 
