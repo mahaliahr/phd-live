@@ -5,7 +5,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "prebuild": "node src/site/get-theme.js && npx sass src/site/styles:src/site/styles --no-source-map --style=expanded",
+        "prebuild": "node src/site/get-theme.js && npx sass src/site/styles:src/site/styles --no-source-map --style=expanded && node scripts/generate-revisions.js",
         "build": "rm -rf dist && npx @11ty/eleventy",
         "dev": "npm run prebuild && rm -rf dist && npx @11ty/eleventy --serve",
         "start": "npm run dev"
@@ -29,6 +29,7 @@
         "@11ty/eleventy-img": "^4.0.2",
         "@sindresorhus/slugify": "^1.1.0",
         "axios": "^1.2.2",
+        "diff": "^8.0.4",
         "dotenv": "^16.0.3",
         "eleventy-plugin-gen-favicons": "^1.1.2",
         "eleventy-plugin-nesting-toc": "^1.3.0",

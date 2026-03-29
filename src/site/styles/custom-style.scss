@@ -764,3 +764,243 @@ a.internal-link.is-unresolved {
   margin-bottom: 0.75rem;
   padding-top: 0.5rem;
 }
+
+/* Canvas functionality styles */
+.canvas-wrapper {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  background: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  cursor: grab;
+
+  &:active {
+    cursor: grabbing;
+  }
+
+  &.hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: 0 0;
+  /* Remove transition - the JS uses RAF for smooth updates */
+  z-index: 1;
+}
+
+.canvas-node {
+  position: absolute;
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  min-width: 100px;
+  min-height: 50px;
+
+  .canvas-node-content {
+    padding: 1rem;
+    overflow: auto;
+    height: 100%;
+    box-sizing: border-box;
+  }
+}
+
+.canvas.small-scale .canvas-node {
+  pointer-events: none;
+}
+
+.canvas-hints {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--background-secondary);
+  border-radius: 4px;
+  font-size: 0.875rem;
+  z-index: 10;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+
+  &.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  kbd {
+    padding: 0.125rem 0.375rem;
+    background: var(--background-modifier-border);
+    border-radius: 3px;
+    font-family: monospace;
+    font-size: 0.75rem;
+  }
+}
+
+.canvas-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.canvas-edges {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.canvas-edge {
+  transition: stroke 0.2s ease;
+  
+  &:hover {
+    stroke: var(--interactive-accent);
+  }
+}
+
+.revision-history {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 0.5px solid var(--color-border-tertiary, rgba(0,0,0,0.15));
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  &__label {
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-muted);
+  }
+
+  &__summary {
+    font-size: 12px;
+    color: var(--text-faint);
+  }
+}
+
+.revision-row {
+  border: 0.5px solid var(--color-border-tertiary, rgba(0,0,0,0.15));
+  border-radius: 6px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.revision-toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+
+  &:hover {
+    background: var(--background-secondary);
+  }
+}
+
+.revision-date {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-normal);
+  min-width: 90px;
+}
+
+.revision-deltas {
+  display: flex;
+  gap: 6px;
+  flex: 1;
+}
+
+.delta {
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 99px;
+
+  &--added {
+    color: var(--text-success, #3a7d44);
+    background: var(--background-success, #e6f4ea);
+  }
+
+  &--removed {
+    color: var(--text-error, #a33);
+    background: var(--background-error, #fdecea);
+  }
+
+  &--initial {
+    color: var(--text-muted);
+    background: var(--background-secondary);
+  }
+}
+
+.revision-wordcount {
+  font-size: 12px;
+  color: var(--text-faint);
+  margin-left: auto;
+}
+
+.revision-chevron {
+  font-size: 10px;
+  color: var(--text-faint);
+  transition: transform 0.2s ease;
+
+  .revision-toggle[aria-expanded="true"] & {
+    transform: rotate(90deg);
+  }
+}
+
+.revision-diff {
+  padding: 12px 14px;
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--text-normal);
+  border-top: 0.5px solid var(--color-border-tertiary, rgba(0,0,0,0.15));
+  background: var(--background-secondary);
+
+  &__initial {
+    font-style: italic;
+    color: var(--text-faint);
+  }
+}
+
+.diff-added {
+  background: var(--background-success, #e6f4ea);
+  color: var(--text-success, #3a7d44);
+  border-radius: 2px;
+  padding: 0 2px;
+}
+
+.diff-removed {
+  background: var(--background-error, #fdecea);
+  color: var(--text-error, #a33);
+  border-radius: 2px;
+  padding: 0 2px;
+  text-decoration: line-through;
+}

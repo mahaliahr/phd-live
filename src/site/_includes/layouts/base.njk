@@ -21,6 +21,12 @@
     </div>
 
     {% include "components/searchScript.njk" ignore missing %}
+
+    {# Canvas script AFTER content so DOM exists #}
+    {% if contentClasses and "canvas-page" in contentClasses %}
+      {% include "components/canvasScript.njk" %}
+    {% endif %}
+
     <footer>
       {% include "components/footer.njk" ignore missing %}
     </footer>
@@ -52,5 +58,6 @@
       })();
     </script>
     <script src="{{ '/assets/live.js' | url }}" defer></script>
+    <script src="{{ '/assets/js/revision-history.js' | url }}" defer></script>
   </body>
 </html>

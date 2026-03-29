@@ -10,5 +10,6 @@
   <h1>{{ title | formatDailyTitle | default(page.fileSlug) }}</h1>
   
   {{ content | hideDataview | taggify | link | safe }}
+  {% include "components/revisionhistory.njk" %}
 </article>
 {% endblock %}

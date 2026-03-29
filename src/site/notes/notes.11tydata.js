@@ -7,12 +7,37 @@ module.exports = {
   layout: "note.njk",
   eleventyComputed: {
     layout: (data) => {
+      if (data.page?.inputPath?.endsWith('.canvas')) {
+        return "canvas.njk";  // Remove "layouts/" prefix
+      }
       if (data.page?.inputPath?.includes('/notes/blog/') &&
           (data.page.fileSlug === 'index' || data.page.fileSlug === 'blog-index')) {
         return data.layout || "layouts/index.njk";
       }
       const tags = Array.isArray(data.tags) ? data.tags : [];
       return tags.includes("gardenEntry") ? "index.njk" : "note.njk";
+    },
+
+    contentClasses: (data) => {
+      if (data.page?.inputPath?.endsWith('.canvas')) {
+        return "canvas-page";
+      }
+      return data.contentClasses || "";
+    },
+
+    canvasData: (data) => {
+      if (data.page?.inputPath?.endsWith('.canvas')) {
+        try {
+          const fs = require("fs");
+          const content = fs.readFileSync(data.page.inputPath, "utf8");
+          const parsed = JSON.parse(content);
+          return parsed;
+        } catch(e) {
+          console.error("Canvas read error:", e);
+          return { nodes: [], edges: [] };
+        }
+      }
+      return null;
     },
 
     permalink: (data) => {

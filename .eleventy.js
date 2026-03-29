@@ -94,7 +94,6 @@ const tagRegex = /(^|\s|\>)(#[^\s!@#$%^&*()=+\.,\[{\]};:'"?><]+)(?!([^<]*>))/g;
 module.exports = function (eleventyConfig) {
   eleventyConfig.setLiquidOptions({ dynamicPartials: true });
 
-  // ===== ONE MARKDOWN CONFIG (remove duplicate) =====
   let markdownLib = markdownIt({
     html: true,
     breaks: true,
@@ -273,6 +272,12 @@ module.exports = function (eleventyConfig) {
     .use(userMarkdownSetup);
 
   eleventyConfig.setLibrary("md", markdownLib);
+
+  // Add markdown filter for canvas node text rendering
+  eleventyConfig.addFilter("markdown", function(content) {
+    if (!content) return "";
+    return markdownLib.render(String(content));
+  });
 
   // Place filters BEFORE the return (not after)
   eleventyConfig.addFilter("isoDate", function (date) {
@@ -522,6 +527,40 @@ module.exports = function (eleventyConfig) {
     return content;
   });
 
+  // Add canvas file support
+eleventyConfig.addDataExtension("canvas", {
+  parser: (contents) => {
+    try {
+      return JSON.parse(contents);
+    } catch (e) {
+      console.error("Error parsing canvas file:", e);
+      return null;
+    }
+  },
+  read: true
+});
+
+// Remove addExtension entirely - use a passthrough approach instead
+eleventyConfig.addExtension("canvas", {
+  compile: function(inputContent, inputPath) {
+    return function(data) {
+      // Return empty string - layout handles all rendering
+      return Promise.resolve("");
+    };
+  },
+  compileOptions: {
+    permalink: function(permalinkString, inputPath) {
+      // Only process .canvas files
+      if (!inputPath.endsWith(".canvas")) return;
+      const slug = inputPath
+        .replace(/^.*\/notes\//, "")
+        .replace(/\.canvas$/, "")
+        .toLowerCase();
+      return () => Promise.resolve(`/notes/${slug}/`);
+    }
+  }
+});
+
   // Images: flatten ALL images to /notes/images/
   eleventyConfig.addPassthroughCopy({
     "src/site/notes/images/**/*.{png,jpg,jpeg,gif,svg,webp,avif}": "notes/images",
@@ -542,6 +581,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/site/favicon.svg": "favicon.svg" });
   eleventyConfig.addPassthroughCopy({ "src/site/favicon.svg": "favicon.ico" });
   eleventyConfig.addPassthroughCopy("src/site/styles/_theme.*.css");
+
 
   
   eleventyConfig.addPlugin(faviconsPlugin, { outputDir: "dist" });
@@ -582,7 +622,7 @@ module.exports = function (eleventyConfig) {
   // Convert Obsidian-style image embeds ![[image.png|alt or WxH]]
   eleventyConfig.addFilter("dgMedia", (html) => {
     if (!html) return html;
-    const re = /!\[\[([^\]|#]+)(?:#[^\]]+)?(?:\|([^\]]+))?\]\]/g;
+    const re = /!\[\[([^\]|#]+)(?:#[^\]|]+)?(?:\|([^\]]+))?\]\]/g;
 
     return html.replace(re, (_m, file, alias) => {
       const raw = String(file || "").trim().replace(/^\.?\//, "");
@@ -638,6 +678,12 @@ const inlineField = (src, key) => {
   return null;
 };
 
+
+  // Add canvas files to a dedicated collection
+  eleventyConfig.addCollection("canvasPages", (api) =>
+    api.getFilteredByGlob("src/site/notes/**/*.canvas")
+  );
+  
 // ===== SIMPLIFIED MILESTONES COLLECTION =====
 eleventyConfig.addCollection("milestones", (c) => {
   const out = [];
@@ -781,12 +827,15 @@ eleventyConfig.addCollection("streamItems", (c) => {
     !p?.data?.draft &&
     p?.data?.visibility !== "private";
 
-  eleventyConfig.addCollection("note", (api) =>
-    api.getFilteredByGlob("src/site/notes/**/*.md").filter((p) => isMd(p) && isPublished(p))
-  );
-  eleventyConfig.addCollection("notes", (api) =>
-    api.getFilteredByGlob("src/site/notes/**/*.md").filter((p) => isMd(p) && isPublished(p))
-  );
+  eleventyConfig.addCollection("note", (api) => [
+    ...api.getFilteredByGlob("src/site/notes/**/*.md").filter((p) => isMd(p) && isPublished(p)),
+    ...api.getFilteredByGlob("src/site/notes/**/*.canvas")
+  ]);
+
+  eleventyConfig.addCollection("notes", (api) => [
+    ...api.getFilteredByGlob("src/site/notes/**/*.md").filter((p) => isMd(p) && isPublished(p)),
+    ...api.getFilteredByGlob("src/site/notes/**/*.canvas")
+  ]);
 
   eleventyConfig.addCollection("postFeaturedFirst", (api) => {
     const byBlogFolder = api.getFilteredByGlob("src/site/notes/blog/**/*.md");
@@ -806,7 +855,7 @@ eleventyConfig.addCollection("streamItems", (c) => {
       });
   });
 
-  // Add this with your other collections (after the notes collection):
+  // Add this with other collections (after the notes collection):
 eleventyConfig.addCollection("posts", (c) => {
   return c.getAll()
     .filter(p => {
@@ -951,6 +1000,13 @@ eleventyConfig.addCollection("posts", (c) => {
     return d.toISOString();
   });
 
+  eleventyConfig.addFilter("renderDiff", function(diffString) {
+  if (!diffString) return '';
+  return diffString
+    .replace(/\{\+(.+?)\+\}/g, '<span class="diff-added">$1</span>')
+    .replace(/\[-(.+?)-\]/g, '<span class="diff-removed">$1</span>');
+});
+
   return {
     dir: {
       input: "src/site",
@@ -961,7 +1017,7 @@ eleventyConfig.addCollection("posts", (c) => {
     },
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk",
-    templateFormats: ["njk","md","11ty.js"],
+    templateFormats: ["njk", "md", "11ty.js", "canvas"],
   };
 }; // <— nothing below this line
 
