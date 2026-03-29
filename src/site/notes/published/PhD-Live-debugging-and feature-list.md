@@ -15,7 +15,7 @@ type: ""
 - [x] Add phd proposal / research questions to the first page
 - [x] reinstate graphscript (side bar local graph)
 - [ ] show git commits on homepage?
-- [ ] capturing the liveness (times of changes, how to visually design that so that it's still a legible process)
+- [x] capturing the liveness (times of changes, how to visually design that so that it's still a legible process)
 
 **Less important** 
 - [ ] Group/ organise notes in a more clear to understand way 
