@@ -1000,9 +1000,14 @@ eleventyConfig.addCollection("posts", (c) => {
     return d.toISOString();
   });
 
-  eleventyConfig.addFilter("renderDiff", function(diffString) {
+eleventyConfig.addFilter("renderDiff", function(diffString) {
   if (!diffString) return '';
-  return diffString
+  const escaped = diffString
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+  return escaped
     .replace(/\{\+(.+?)\+\}/g, '<span class="diff-added">$1</span>')
     .replace(/\[-(.+?)-\]/g, '<span class="diff-removed">$1</span>');
 });

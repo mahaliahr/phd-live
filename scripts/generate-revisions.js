@@ -7,6 +7,10 @@ const Diff = require('diff');
 const NOTES_DIR = 'src/site/notes';
 const OUTPUT = 'src/site/_data/revisions.json';
 
+function stripFrontmatter(content) {
+  return content.replace(/^---[\s\S]*?---\n?/, '').trim();
+}
+
 function getWordCount(text) {
   return text.trim().split(/\s+/).filter(Boolean).length;
 }
@@ -53,19 +57,19 @@ function parsePatchToDiff(patch) {
   
   for (const line of lines) {
     if (line.startsWith('+++') || line.startsWith('---') || line.startsWith('@@')) {
-      continue;
+    continue;
     } else if (line.startsWith('+')) {
-      const word = line.slice(1).trim();
-      if (word) {
+    const word = stripFrontmatter(line.slice(1).trim());
+    if (word) {
         result += `{+${word}+} `;
         added += word.split(/\s+/).length;
-      }
+    }
     } else if (line.startsWith('-')) {
-      const word = line.slice(1).trim();
-      if (word) {
+    const word = stripFrontmatter(line.slice(1).trim());
+    if (word) {
         result += `[-${word}-] `;
         removed += word.split(/\s+/).length;
-      }
+    }
     }
   }
 
@@ -143,8 +147,9 @@ const output = {};
 
 for (const filepath of files) {
   const slug = filepath
-    .replace(NOTES_DIR + '/', '')
-    .replace(/\.md$/, '');
+  .replace(NOTES_DIR + '/', '')
+  .replace(/\.md$/, '')
+  .replace(/^.*\//, '');  // strip any subfolder prefix
 
   const revisions = buildRevisions(filepath);
   if (revisions && revisions.length > 0) {
