@@ -1,9 +1,8 @@
 {
     "outputDirectory": "dist",
     "installCommand": "npm install",
-    "buildCommand": "npm run build",
+    "buildCommand": "git fetch --unshallow || true && npm run build",
     "devCommand": "npm run start",
-    "gitFetchDepth": 0,
     "routes": [
         { "handle": "filesystem" },
         { "src": "/(.*)", "status": 404, "dest": "/404" }
