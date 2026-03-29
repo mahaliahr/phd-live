@@ -94,7 +94,6 @@ const tagRegex = /(^|\s|\>)(#[^\s!@#$%^&*()=+\.,\[{\]};:'"?><]+)(?!([^<]*>))/g;
 module.exports = function (eleventyConfig) {
   eleventyConfig.setLiquidOptions({ dynamicPartials: true });
 
-  // ===== ONE MARKDOWN CONFIG (remove duplicate) =====
   let markdownLib = markdownIt({
     html: true,
     breaks: true,
@@ -856,7 +855,7 @@ eleventyConfig.addCollection("streamItems", (c) => {
       });
   });
 
-  // Add this with your other collections (after the notes collection):
+  // Add this with other collections (after the notes collection):
 eleventyConfig.addCollection("posts", (c) => {
   return c.getAll()
     .filter(p => {
@@ -1000,6 +999,13 @@ eleventyConfig.addCollection("posts", (c) => {
     
     return d.toISOString();
   });
+
+  eleventyConfig.addFilter("renderDiff", function(diffString) {
+  if (!diffString) return '';
+  return diffString
+    .replace(/\{\+(.+?)\+\}/g, '<span class="diff-added">$1</span>')
+    .replace(/\[-(.+?)-\]/g, '<span class="diff-removed">$1</span>');
+});
 
   return {
     dir: {

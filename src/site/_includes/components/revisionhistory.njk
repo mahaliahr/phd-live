@@ -1,0 +1,43 @@
+{% set noteRevisions = revisions[page.fileSlug] %}
+{% if noteRevisions and noteRevisions.length > 0 %}
+
+<div class="revision-history">
+  <div class="revision-history__header">
+    <span class="revision-history__label">Revision history</span>
+    <span class="revision-history__summary">
+      {{ noteRevisions.length }} revision{% if noteRevisions.length !== 1 %}s{% endif %}
+      · first published {{ noteRevisions[noteRevisions.length - 1].date }}
+    </span>
+  </div>
+
+  {% for rev in noteRevisions %}
+  <div class="revision-row">
+    <button class="revision-toggle" aria-expanded="false">
+      <span class="revision-date">{{ rev.date }}</span>
+      <span class="revision-deltas">
+        {% if loop.last %}
+          <span class="delta delta--initial">initial</span>
+        {% else %}
+          {% if rev.added > 0 %}
+            <span class="delta delta--added">+{{ rev.added }} words</span>
+          {% endif %}
+          {% if rev.removed > 0 %}
+            <span class="delta delta--removed">−{{ rev.removed }} words</span>
+          {% endif %}
+        {% endif %}
+      </span>
+      <span class="revision-wordcount">{{ rev.wordCount }} words</span>
+      <span class="revision-chevron" aria-hidden="true">▶</span>
+    </button>
+    <div class="revision-diff" hidden>
+      {% if loop.last %}
+        <span class="revision-diff__initial">First version — no previous revision to compare against.</span>
+      {% else %}
+        {{ rev.diff | renderDiff | safe }}
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+
+</div>
+{% endif %}
