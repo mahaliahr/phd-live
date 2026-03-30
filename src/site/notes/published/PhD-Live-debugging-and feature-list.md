@@ -16,6 +16,7 @@ type: ""
 - [x] reinstate graphscript (side bar local graph)
 - [ ] show git commits on homepage?
 - [x] capturing the liveness (times of changes, how to visually design that so that it's still a legible process)
+- [ ] livebar behaviour instead of showing live says 'next: in 40 minutes'
 
 **Less important** 
 - [ ] Group/ organise notes in a more clear to understand way 
