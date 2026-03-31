@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+date-created: <% tp.file.creation_date("YYYY-MM-DD") %>
 visibility: public
 tags: []
 type: ""
