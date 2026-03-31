@@ -7,7 +7,7 @@ type: ""
 
 <!--
 Quick syntax:
-Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...
+Session: start:: YYYY-MM-DD HH:MM+ZZ | end:: ... | topic:: ...
 Milestone: - [ ] Thing #milestone @YYYY-MM-DD
 
 CORE TYPES:

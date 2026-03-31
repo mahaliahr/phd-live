@@ -901,6 +901,13 @@ a.internal-link.is-unresolved {
     font-size: 12px;
     color: var(--text-faint);
   }
+
+  &__explainer {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: var(--text-muted);
+  }
 }
 
 .revision-row {
