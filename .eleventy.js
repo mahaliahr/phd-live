@@ -619,6 +619,16 @@ eleventyConfig.addExtension("canvas", {
     },
   });
 
+  eleventyConfig.addFilter('truncate_array', (arr, n) => {
+  if (!Array.isArray(arr)) return [];
+  return arr.slice(0, n);
+});
+
+eleventyConfig.addFilter('skip', (arr, n) => {
+  if (!Array.isArray(arr)) return [];
+  return arr.slice(n);
+});
+
   // Convert Obsidian-style image embeds ![[image.png|alt or WxH]]
   eleventyConfig.addFilter("dgMedia", (html) => {
     if (!html) return html;
