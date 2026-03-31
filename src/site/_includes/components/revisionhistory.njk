@@ -1,16 +1,22 @@
 {% set noteRevisions = revisions[page.fileSlug] %}
-{% if noteRevisions and noteRevisions.length > 0 %}
+{% if noteRevisions and noteRevisions.revisions.length > 0 %}
 
 <div class="revision-history">
   <div class="revision-history__header">
     <span class="revision-history__label">Revision history</span>
     <span class="revision-history__summary">
-      {{ noteRevisions.length }} revision{% if noteRevisions.length !== 1 %}s{% endif %}
-      · first published {{ noteRevisions[noteRevisions.length - 1].date }}
+      {{ noteRevisions.revisions.length }} revision{% if noteRevisions.revisions.length !== 1 %}s{% endif %}
+      · {% if noteRevisions.noteDate %}
+          {{ noteRevisions.noteDate }}
+        {% else %}
+          in this repository since {{ noteRevisions.revisions[noteRevisions.revisions.length - 1].date }}
+        {% endif %}
     </span>
   </div>
 
-  {% for rev in noteRevisions %}
+  <p class="revision-history__explainer">The revisions below show how this note has changed over time.</p>
+
+  {% for rev in noteRevisions.revisions %}
   <div class="revision-row">
     <button class="revision-toggle" aria-expanded="false">
       <span class="revision-date">{{ rev.date }}</span>

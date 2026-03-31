@@ -2,13 +2,34 @@ const { execSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 const glob = require('glob');
-const Diff = require('diff');
+// const Diff = require('diff');
+const matter = require('gray-matter');
 
 const NOTES_DIR = 'src/site/notes';
 const OUTPUT = 'src/site/_data/revisions.json';
 
 function getWordCount(text) {
   return text.trim().split(/\s+/).filter(Boolean).length;
+}
+
+function stripFrontmatter(content) {
+  return content.replace(/^---[\s\S]*?---\n?/, '').trim();
+}
+
+function getNoteDate(filepath) {
+  try {
+    const content = fs.readFileSync(filepath, 'utf8');
+    const { data } = matter(content);
+    if (data['date-created'] && /^\d{4}-\d{2}-\d{2}$/.test(String(data['date-created']))) {
+      return String(data['date-created']);
+    }
+    if (data.title && /^\d{4}-\d{2}-\d{2}$/.test(String(data.title))) {
+      return String(data.title);
+    }
+    return null;
+  } catch {
+    return null;
+  }
 }
 
 function getFullHistory(filepath) {
@@ -24,7 +45,6 @@ function getFullHistory(filepath) {
 
 function parseHistory(raw) {
   if (!raw) return [];
-  
   const entries = raw.split(/(?=COMMIT:)/);
   return entries
     .filter(e => e.trim())
@@ -43,25 +63,24 @@ function parseHistory(raw) {
 
 function parsePatchToDiff(patch) {
   if (!patch) return { diff: '', added: 0, removed: 0 };
-  
+
   let result = '';
   let added = 0;
   let removed = 0;
-  let contextBuffer = [];
 
   const lines = patch.split('\n');
-  
+
   for (const line of lines) {
     if (line.startsWith('+++') || line.startsWith('---') || line.startsWith('@@')) {
       continue;
     } else if (line.startsWith('+')) {
-      const word = line.slice(1).trim();
+      const word = stripFrontmatter(line.slice(1).trim());
       if (word) {
         result += `{+${word}+} `;
         added += word.split(/\s+/).length;
       }
     } else if (line.startsWith('-')) {
-      const word = line.slice(1).trim();
+      const word = stripFrontmatter(line.slice(1).trim());
       if (word) {
         result += `[-${word}-] `;
         removed += word.split(/\s+/).length;
@@ -70,6 +89,16 @@ function parsePatchToDiff(patch) {
   }
 
   return { diff: result.trim(), added, removed };
+}
+
+function collapseByDay(commits) {
+  const byDay = {};
+  for (const commit of commits) {
+    if (!byDay[commit.date]) {
+      byDay[commit.date] = commit;
+    }
+  }
+  return Object.values(byDay).sort((a, b) => b.date.localeCompare(a.date));
 }
 
 function buildRevisions(filepath) {
@@ -83,12 +112,11 @@ function buildRevisions(filepath) {
 
   const revisions = collapsed.map((commit, i) => {
     const { diff, added, removed } = parsePatchToDiff(commit.diff);
-    const wordCount = added; // approximate from this commit's additions
 
     return {
       date: commit.date,
       hash: commit.hash.slice(0, 7),
-      wordCount,
+      wordCount: added,
       delta: added - removed,
       added,
       removed,
@@ -96,46 +124,11 @@ function buildRevisions(filepath) {
     };
   });
 
-  return revisions;
+  return {
+    noteDate: getNoteDate(filepath),
+    revisions
+  };
 }
-
-
-function getCommitsForFile(filepath) {
-    // DEBUG line if files not processing
-    // console.log('Processing:', filepath);
-  if (!filepath || filepath.trim() === '') return [];
-  
-  try {
-    const log = execSync(
-      `git log --follow --format="%H|%ai|%s" -- ${filepath}`,
-      { encoding: 'utf8', stdio: ['pipe', 'pipe', 'pipe'] }
-    ).trim();
-
-    if (!log) return [];
-
-    return log.split('\n').map(line => {
-      const [hash, date, ...msgParts] = line.split('|');
-      return {
-        hash: hash.trim(),
-        date: date.trim().slice(0, 10),
-        message: msgParts.join('|').trim()
-      };
-    });
-  } catch {
-    return [];
-  }
-}
-
-function collapseByDay(commits) {
-  const byDay = {};
-  for (const commit of commits) {
-    if (!byDay[commit.date]) {
-      byDay[commit.date] = commit;
-    }
-  }
-  return Object.values(byDay).sort((a, b) => b.date.localeCompare(a.date));
-}
-
 
 // Main
 const files = glob.sync(`${NOTES_DIR}/**/*.md`).filter(f => !f.includes('notes/_templates'));
@@ -144,11 +137,14 @@ const output = {};
 for (const filepath of files) {
   const slug = filepath
     .replace(NOTES_DIR + '/', '')
-    .replace(/\.md$/, '');
+    .replace(/\.md$/, '')
+    .replace(/^.*\//, '');
 
-  const revisions = buildRevisions(filepath);
-  if (revisions && revisions.length > 0) {
-    output[slug] = revisions;
+  const result = buildRevisions(filepath);
+  if (result && result.revisions.length > 0) {
+    output[slug] = result;
+  } else {
+    console.log('Skipped:', filepath);
   }
 }
 
