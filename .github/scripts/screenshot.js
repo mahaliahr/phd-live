@@ -14,7 +14,7 @@ const path = require('path');
 
 // ─── Config ────────────────────────────────────────────────────────────────
 
-const SITE_URL = process.env.SITE_URL || 'research-notes-750whkzhd-mahalia-henry-richards-projects.vercel.app';
+const SITE_URL = process.env.SITE_URL || 'http://phd.mm-hr.com';
 
 const PAGES = [
   { name: 'home',  path: '/' },
@@ -91,6 +91,13 @@ function isDifferentEnough(newImgPath, prevImgPath) {
     const tmpPath  = path.join(OUTPUT_DIR, `${page.name}_tmp.png`);
     const prevPath = path.join(PREV_DIR,   `${page.name}_latest.png`);
     const savePath = path.join(OUTPUT_DIR, `${date}_${page.name}.png`);
+
+    await tab.evaluate(() => {
+      document.body.style.overflow = 'visible';
+      document.body.style.height = 'auto';
+      document.documentElement.style.overflow = 'visible';
+      document.documentElement.style.height = 'auto';
+    });
 
     await tab.screenshot({ path: tmpPath, fullPage: FULL_PAGE });
     await tab.close();
