@@ -15,7 +15,7 @@ updated: 2025-10-20T22:34:14.446Z
 ---
 list of functionality for the [[project-supervisor-bot]]
 
-##### interface
+##### [[interface]]
 'student to bot' interaction could be shared with the human supervisors, so that they would see some of the process and dialogue that happened without them there
 
 ##### [[conversation]]

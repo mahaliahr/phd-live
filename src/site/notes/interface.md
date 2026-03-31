@@ -1,7 +1,6 @@
 ---
 dg-publish: true
 visibility: public
-title: teaching-bots
 tags: []
 type: ""
 ---
@@ -23,8 +22,6 @@ LIVE SYSTEM TAGS:
 • daily         → daily log style notes
 -->
 
-[[project-supervisor-bot]]
-[[thesis-bot]]
-[[diy-bot-creation]]
-
-see also: [[LLM-as-personal-tutors]] 
+for [[supervisor-bot-v2]] there are two operational modes that need to be reflected in the interface 
+ 1. in dialogue / conversation with me and my supervisors
+ 2. act like 'traditional LLM' chatbot interface for me to interact with 
