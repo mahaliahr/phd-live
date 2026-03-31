@@ -1,0 +1,107 @@
+---
+layout: base.njk
+title: Site Evolution
+description: A visual record of how PhD-Live has changed over time.
+---
+
+<div class="evolution-page">
+
+  <header class="evolution-header">
+    <h1>Site Evolution</h1>
+    <p class="evolution-subtitle">A visual record of how this space has changed — homepage, notes, and graph, week by week.</p>
+  </header>
+
+  {# 
+    Screenshots are fetched from the phd-live-screenshots repo at build time
+    via the _data/screenshots.js data file (see below).
+    Each entry: { date, home, notes, graph }
+  #}
+
+  {% if screenshots.length %}
+
+    <div class="evolution-legend">
+      <span class="legend-item" data-page="home">Homepage</span>
+      <span class="legend-item" data-page="notes">Notes</span>
+      <span class="legend-item" data-page="graph">Graph</span>
+    </div>
+
+    <div class="evolution-grid">
+      <div class="evolution-col-header">
+        <div class="col-date-spacer"></div>
+        <div class="col-label">Homepage</div>
+        <div class="col-label">Notes</div>
+        <div class="col-label">Graph</div>
+      </div>
+
+      {# Show most recent first, limit to 20 entries by default #}
+      {% set displayed = screenshots | reverse | truncate_array(20) %}
+
+      {% for entry in displayed %}
+        <div class="evolution-row">
+          <div class="evolution-date">
+            <time datetime="{{ entry.date }}">{{ entry.date | readableDate }}</time>
+          </div>
+
+          {% for pageName in ['home', 'notes', 'graph'] %}
+            <div class="evolution-cell">
+              {% if entry[pageName] %}
+                <a class="screenshot-link" href="{{ entry[pageName] }}" target="_blank" rel="noopener">
+                  <img
+                    src="{{ entry[pageName] }}"
+                    alt="PhD-Live {{ pageName }} on {{ entry.date }}"
+                    loading="lazy"
+                    class="screenshot-thumb"
+                  />
+                </a>
+              {% else %}
+                <div class="screenshot-empty">—</div>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      {% endfor %}
+
+    </div>
+
+    {% if screenshots.length > 20 %}
+      <div class="evolution-more">
+        <button id="show-all-btn" onclick="showAll()">
+          Show all {{ screenshots.length }} snapshots
+        </button>
+      </div>
+
+      {# Hidden full archive rendered server-side, revealed by JS #}
+      <div class="evolution-grid evolution-grid--hidden" id="full-archive">
+        {% for entry in screenshots | reverse | skip(20) %}
+          <div class="evolution-row">
+            <div class="evolution-date">
+              <time datetime="{{ entry.date }}">{{ entry.date | readableDate }}</time>
+            </div>
+            {% for pageName in ['home', 'notes', 'graph'] %}
+              <div class="evolution-cell">
+                {% if entry[pageName] %}
+                  <a class="screenshot-link" href="{{ entry[pageName] }}" target="_blank" rel="noopener">
+                    <img src="{{ entry[pageName] }}" alt="PhD-Live {{ pageName }} on {{ entry.date }}" loading="lazy" class="screenshot-thumb" />
+                  </a>
+                {% else %}
+                  <div class="screenshot-empty">—</div>
+                {% endif %}
+              </div>
+            {% endfor %}
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+  {% else %}
+    <p class="evolution-empty">No snapshots yet — the first one will appear after the next Wednesday run.</p>
+  {% endif %}
+
+</div>
+
+<script>
+function showAll() {
+  document.getElementById('full-archive').classList.remove('evolution-grid--hidden');
+  document.getElementById('show-all-btn').style.display = 'none';
+}
+</script>

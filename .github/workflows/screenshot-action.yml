@@ -1,0 +1,50 @@
+name: Weekly Site Screenshots
+
+on:
+  schedule:
+    - cron: '0 9 * * 3,6'  # Every Wednesday and Saturday at 9:00 AM UTC
+  workflow_dispatch:      # Allow manual trigger too
+
+jobs:
+  screenshot:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout PhD-Live repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Playwright
+        run: |
+          npm install playwright pixelmatch pngjs
+          npx playwright install chromium --with-deps
+
+      - name: Run screenshot script
+        env:
+          SITE_URL: ${{ secrets.SITE_URL }}
+        run: node .github/scripts/screenshot.js
+
+      - name: Checkout screenshots repo
+        uses: actions/checkout@v4
+        with:
+          repository: mahaliahr/phd-live-screenshots
+          token: ${{ secrets.SCREENSHOTS_PAT }}
+          path: screenshots-repo
+
+      - name: Copy new screenshots
+        run: |
+          mkdir -p screenshots-repo/screenshots
+          cp -r /tmp/phd-screenshots/* screenshots-repo/screenshots/ 2>/dev/null || true
+
+      - name: Commit and push screenshots
+        working-directory: screenshots-repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git diff --staged --quiet || git commit -m "Screenshots $(date +'%Y-%m-%d')"
+          git push
