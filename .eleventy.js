@@ -678,6 +678,29 @@ const inlineField = (src, key) => {
   return null;
 };
 
+// Normalize date strings to UTC to avoid timezone issues
+// If a date has no timezone indicator, treat it as UTC
+const normalizeToUTC = (dateStr) => {
+  if (!dateStr || typeof dateStr !== 'string') return dateStr;
+  
+  // Check if already has timezone: +XXXX, -XXXX, or Z
+  const hasTz = /[+-]\d{2}:?\d{2}|Z$/i.test(dateStr.trim());
+  if (hasTz) return dateStr;
+  
+  // No timezone - add UTC indicator
+  // Handle formats like "2026-01-24 12:37" or "2026-01-24T12:37:00"
+  const trimmed = dateStr.trim();
+  if (/^\d{4}-\d{2}-\d{2}[\sT]\d{2}:\d{2}/.test(trimmed)) {
+    // If it has a space separator, convert to T
+    const normalized = trimmed.replace(' ', 'T');
+    // Add seconds if missing
+    const withSeconds = /:\d{2}:\d{2}/.test(normalized) ? normalized : normalized + ':00';
+    return withSeconds + '+00:00';
+  }
+  
+  return dateStr;
+};
+
 
   // Add canvas files to a dedicated collection
   eleventyConfig.addCollection("canvasPages", (api) =>
@@ -740,8 +763,8 @@ eleventyConfig.addCollection("sessions", (c) => {
     })
     .map(p => {
       const txt = getText(p);
-      const start = inlineField(txt, "start");
-      const end = inlineField(txt, "end");
+      const start = normalizeToUTC(inlineField(txt, "start"));
+      const end = normalizeToUTC(inlineField(txt, "end"));
       const topic = inlineField(txt, "topic") || p.data.title || p.fileSlug;
       
       return { 
@@ -784,7 +807,8 @@ eleventyConfig.addCollection("streamItems", (c) => {
     let m;
     while ((m = re.exec(txt))) {
       const [, time, message] = m;
-      out.push({ date: day ? `${day} ${time}` : time, text: message.trim(), url: p.url });
+      const dateStr = day ? normalizeToUTC(`${day} ${time}`) : time;
+      out.push({ date: dateStr, text: message.trim(), url: p.url });
     }
   }
   return out.sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));
