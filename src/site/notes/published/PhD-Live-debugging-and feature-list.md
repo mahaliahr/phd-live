@@ -21,6 +21,7 @@ type: ""
 
 **Less important** 
 - [ ] Group/ organise notes in a more clear to understand way 
+- [ ] maybe delete/change the milestones section as it's not that intuitve with kanban more useful - maybe move to integrate kanban into obsidian and make a kind of milestone functionality that publishes to the kanban
 - [ ] Formatted date view not updated in the graph
 - [ ] redesign the homepage to be 2 column and make the different blocks more visually legible
 - [ ] recent notes should show most recently edited (not accurate at the moment)

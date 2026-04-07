@@ -23,3 +23,7 @@ LIVE SYSTEM TAGS:
 -->
 
 this is currently an undeveloped idea of a connecting interface that acts like a central hub connecting to [[project-supervisor-bot]] and the [[project-phd-live-platform]] (and any other interfaces and apps that I may develop in this research)
+
+![rough thoughts](ld-rough-thoughts-sketch.jpg)
+![rough thoughts](infrastructure-sketch.jpg)
+
