@@ -18,3 +18,7 @@ https://vhbelvadi.com/zettelkasten
 [[sascha-2020-intro-to-zettelkasten]]
 
 https://www.soenkeahrens.de/en/takesmartnotes
+
+sidenote: it's quite funny to me that I started looking up Zettelkasten very randomly near the beginning of the phd research when I was desperately trying to be organise and set myself up in some coherent way, I was not prepared for this to become such an important conceptual foundation behind my work. This seem to be very zettelkasten in spirit, that you never know which note or connection might become useful as things develop 
+
+[[zettelkasten-connction-to-LLMs]]
