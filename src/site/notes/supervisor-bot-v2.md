@@ -22,3 +22,9 @@ LIVE SYSTEM TAGS:
 • session       → used for live sessions / work periods
 • daily         → daily log style notes
 -->
+
+conversational supervisor bot for conversations in meetings 
+
+and 
+
+'traditional' LLM chatbot for my queries, questions and support 
