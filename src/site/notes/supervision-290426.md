@@ -22,6 +22,22 @@ LIVE SYSTEM TAGS:
 • daily         → daily log style notes
 -->
 
+### currently: 
+
+moodle lit review - progress
+
+feedback that I received from paper submission 
+
+[[student-llm-use]]
+
+### discussion points: 
+
+[[project-supervisor-bot]] live demo
+
 Q's for supervisors 
 
 there's an ethical question perhaps around including people in my notes if they are public - how should I address this? anonymisation across the board when talking about people (unless I get explicit ethical clearance? although I'm not really sure how would do ethics for something like this)
+
+### for next meeting: 
+
+
