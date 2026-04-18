@@ -41,8 +41,8 @@ following session [[2026-04-17]]
 ### Research / knowledge infrastructure: key decisions
 
 ### Build approach
-Custom FastAPI + frontend remains correct. Off-the-shelf options (LibreChat,
-AnythingLLM, Chainlit) don't accommodate the non-chat interaction paradigms that I am interested in exploring.
+Custom FastAPI + frontend remains correct. 
+(Off-the-shelf options (LibreChat, AnythingLLM, Chainlit) don't accommodate the non-chat interaction paradigms that I am interested in exploring).
 
 general logic - don't build 'plumbing' that already exists; but build the interface layer myself
 
