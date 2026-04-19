@@ -25,4 +25,4 @@ I would like to collect/track all the instance of sharing that I am doing/trying
 
 [[project-phd-live-platform]] ongoing 'live' sharing
 
-[[conferences-etc]]
+[[conferences-workshops-etc]]
