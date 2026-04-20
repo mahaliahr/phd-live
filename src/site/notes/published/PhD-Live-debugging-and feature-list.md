@@ -16,16 +16,17 @@ type: ""
 - [x] reinstate graphscript (side bar local graph)
 - [x] capturing the liveness (times of changes, how to visually design that so that it's still a legible process)
 - [x] livebar behaviour instead of showing live says 'next: in 40 minutes'
-- [ ] adding screenshots capture to show process over time 
+- [x] adding screenshots capture to show process over time 
+- [ ] time in the recent thoughts and updates section is wrong (gmt to bst)
+- [ ] recent notes should show most recently edited (not accurate at the moment)
 
 
 **Less important** 
 - [ ] Group/ organise notes in a more clear to understand way 
-- [ ] when you click on links they expand to bigger size
-- [ ] maybe delete/change the milestones section as it's not that intuitve with kanban more useful - maybe move to integrate kanban into obsidian and make a kind of milestone functionality that publishes to the kanban
+- [ ] when you click on images they expand to bigger size
+- [ ] maybe delete/change the milestones section as it's not that intuitive with kanban more useful - maybe move to integrate kanban into obsidian and make a kind of milestone functionality that publishes to the kanban
 - [ ] Formatted date view not updated in the graph
 - [ ] redesign the homepage to be 2 column and make the different blocks more visually legible
-- [ ] recent notes should show most recently edited (not accurate at the moment)
 - [x] Live bar behavior could do with finessing - only have it show when a session is live
 - [ ] Session logs and thoughts log (way to access and see all of them, other than just on the live widget)
 - [ ] incorporate the canvas functionality that has been added to the orignal digital garden template

@@ -6,5 +6,5 @@ type: ""
 ---
 ~~[[conference-xCoAx]]~~
 ~~[[conference-OER26]]~~
-[[workshop-RiCE]]
-[[conference-ICLC]]
+[[workshop-RiCE]] deadline 12th May 2026
+[[conference-ICLC]] deadline: 15th August 2026
