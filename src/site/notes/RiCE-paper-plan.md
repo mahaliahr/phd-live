@@ -15,7 +15,8 @@ type: ""
 
 - two layers working in parallel: Obsidian vault as the protected space of actual thinking -- chaotic, associative, non-linear -- and PhD-Live as the public-facing surface that makes that thinking more legible without flattening it
 - they are distinct but connected -- not the same thing presented differently
-- noticed something interesting in practice: often reading through posts on the PhD-Live website rather than inside Obsidian -- the two environments produce different relationships to the same material
+- noticed something interesting in practice: often reading through posts on the PhD-Live website rather than inside Obsidian -- the two environments produce different relationships to the same material.
+	-it helps me see areas that are 'lacking' and need to be developed, perhaps that awareness of legibility required for a website?
 - the public layer makes the thinking readable in a way that the vault doesn't, but the vault is where the thinking actually lives
 
 **The design question: where AI enters and where it can't**

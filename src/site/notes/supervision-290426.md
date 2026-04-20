@@ -27,6 +27,7 @@ LIVE SYSTEM TAGS:
 moodle lit review - progress
 
 feedback that I received from paper submission 
+next paper outline and workshop I'm submitting to 
 
 [[student-llm-use]]
 
