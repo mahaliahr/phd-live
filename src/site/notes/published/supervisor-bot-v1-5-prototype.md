@@ -29,8 +29,8 @@ https://ollama.com/blog/streaming-tool
 
 [[functionality-and-behaviour]]
 
-add a [[reflections-on-supervisor-bot-v1]] before pivoting to v2
+[[reflections-on-supervisor-bot-v1]] 
 
-testing thoughts
+[[testing-observations-v1_5]]
 
-when it seemingly picks up nothing from what its heard it just says completely irrelevant statements that don't connect. i would prefer it didnt do that 
+[[reflections-on-supervisor-bot-v1_5]]

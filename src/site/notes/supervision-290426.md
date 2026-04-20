@@ -39,6 +39,9 @@ Q's for supervisors
 
 there's an ethical question perhaps around including people in my notes if they are public - how should I address this? anonymisation across the board when talking about people (unless I get explicit ethical clearance? although I'm not really sure how would do ethics for something like this)
 
+sketch out out chapters for thesis
+
+
 ### for next meeting: 
 
 

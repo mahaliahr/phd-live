@@ -22,7 +22,7 @@ and connects to the obsidian vault for context
 following session [[2026-04-17]]
 ### Research / knowledge infrastructure: key decisions
 
-![research infrastructure|597](images/knowledge-ecosystem.png)
+![research infrastructure|650](images/knowledge-ecosystem.png)
 
 ### Build approach
 Custom FastAPI + frontend remains correct. 
