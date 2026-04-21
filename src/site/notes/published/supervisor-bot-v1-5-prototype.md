@@ -31,6 +31,6 @@ https://ollama.com/blog/streaming-tool
 
 [[reflections-on-supervisor-bot-v1]] 
 
-[[testing-observations-v1_5]]
+[[testing-observations-v1point5]]
 
-[[reflections-on-supervisor-bot-v1_5]]
+[[reflections-on-supervisor-bot-v1point5]]
