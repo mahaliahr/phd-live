@@ -73,4 +73,4 @@ How does this line up with other institutional uses of LLM's?
 **How do I get the bot to stay up to date? Is that possible, do I have to keep doing that? - Could it suggest to me updates that are useful, then I can choose to update
 
 ---
-It needs memory and context 
+It needs memory and context ([[shared-context-layer]])

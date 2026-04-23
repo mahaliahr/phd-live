@@ -27,4 +27,4 @@ overview:
 
 [[teaching-bots]]
 
-[[student-LLM-use]] 
+[[student-llm-use]] 
