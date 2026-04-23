@@ -9,7 +9,7 @@ description: |-
   Thoughts about relationship-with-AI-bot-vs-human
 updated: 2025-10-20T22:34:14.471Z
 ---
-![[supervisor-bot-v1-screenshot-2.png]]
+![alt text](images/supervisor-bot-v1-screenshot-2.png)
 
 **PROGRESS / ITERATIONS:** 
 
@@ -26,8 +26,6 @@ Developing plan of:
 - [[design-thoughts]]
 
 Thoughts about [[relationship-with-AI-bot-vs-human]]
-
-![alt text](images/supervisor-bot-v1-screenshot-2.png)
 
 ~~[[llm-supervisor-v1-progress]]~~
 

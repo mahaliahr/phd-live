@@ -7,6 +7,7 @@ type: ""
 ### currently: 
 *(what I am thinking about/working on now).*
 
+---
 - moodle lit review - progress
 	- I have reached out to staff for permission and got the relevant access, but have not started yet
 
@@ -18,6 +19,8 @@ type: ""
 
 ### discussion points: 
 *(what I have been working on, links connect to work-in-progress if you want to look further).*
+
+---
 
 - [[project-supervisor-bot]] - live demo, and general development discussion.
 
