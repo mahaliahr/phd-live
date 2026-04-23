@@ -17,7 +17,7 @@ type: ""
 - designing and building my '[[research-infrastructure]]'
 
 ### discussion points: 
-<mark style="background: #BBFABBA6;">*(what I have been working on, links connect to work-in-progress if you want to look further).*</mark>
+<mark style="background: #BBFABBA6;">*(items to discuss in the meeting, links connect to work-in-progress if you want to look further).*</mark>
 
 - [[project-supervisor-bot]] - live demo, and general development discussion.
 
