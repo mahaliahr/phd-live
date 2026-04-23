@@ -5,9 +5,8 @@ tags: []
 type: ""
 ---
 ### currently: 
-*(what I am thinking about/working on now).*
+<mark style="background: #BBFABBA6;">*(what I am thinking about/working on now).*</mark>
 
----
 - moodle lit review - progress
 	- I have reached out to staff for permission and got the relevant access, but have not started yet
 
@@ -18,9 +17,7 @@ type: ""
 - designing and building my '[[research-infrastructure]]'
 
 ### discussion points: 
-*(what I have been working on, links connect to work-in-progress if you want to look further).*
-
----
+<mark style="background: #BBFABBA6;">*(what I have been working on, links connect to work-in-progress if you want to look further).*</mark>
 
 - [[project-supervisor-bot]] - live demo, and general development discussion.
 
@@ -29,6 +26,9 @@ type: ""
 	- sketching out of chapters for thesis and an attempt at re-framing [[phd-proposal-thoughts-and-reframing]]
 	- how the [[project-phd-live-platform]] and the [[project-supervisor-bot]] connect -- developing a knowledge infrastructure. 
 		- In developing the supervisor-bot further, I had to consider how this will scale in the more long term, which required me to start sketching out a bigger map, found here: [[learning-dashboard]] & [[research-infrastructure]]
+
+
+---
 
 **Q's for supervisors :**
 there's an ethical question perhaps around including people in my notes if they are public - how should I address this? anonymisation across the board when talking about people, is that fine?
