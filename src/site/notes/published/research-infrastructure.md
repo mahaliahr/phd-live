@@ -12,9 +12,9 @@ the overarching system that holds:
 [[study-companion-bot]]
 [[confidence-bot]]
 
-and connects to the obsidian vault for context
+as well as connecting to my obsidian vault and the website (the [[project-phd-live-platform]])
 
-![research infrastructure|597](images/personal.png)
+![research infrastructure|650](images/personal.png)
 
 [[shared-context-layer]]
 
