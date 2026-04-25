@@ -7,7 +7,7 @@ type: ""
 ---
 ~~when it seemingly picks up nothing from what its heard it just says something completely irrelevant, with statements that don't connect.  I would prefer it didn't do that ~~ 
 
-^ changing model fixed this 
+^ changing the model fixed this. 
 
 - I kind of don't like the way it just says statements, it doesn't feel that conversational. But this is a very simple build logic at the moment, so that is probably why. It will be interesting to actually test this in the supervisor meeting setting to see what value it may or may not produce
 
