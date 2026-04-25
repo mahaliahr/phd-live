@@ -1024,6 +1024,17 @@ eleventyConfig.addCollection("posts", (c) => {
     return d.toISOString();
   });
 
+  eleventyConfig.addFilter("readableDate", function(date) {
+    if (!date) return "";
+    const d = date instanceof Date ? date : new Date(date);
+    return d.toLocaleDateString('en-US', { 
+      year: 'numeric', 
+      month: 'short', 
+      day: 'numeric',
+      timeZone: 'UTC'
+    });
+  });
+
 eleventyConfig.addFilter("renderDiff", function(diffString) {
   if (!diffString) return '';
   

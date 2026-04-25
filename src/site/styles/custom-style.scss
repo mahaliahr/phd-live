@@ -176,6 +176,23 @@ section .more a { font-weight: 600; }
   // padding: 1rem;
   // margin: 2rem 0;
   // border: 1px solid var(--background-modifier-border);
+  
+  /* 2-column grid on desktop, 1-column on mobile */
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+/* Make section intro paragraphs span full width */
+#live-widget .section-intro {
+  grid-column: 1 / -1;
+}
+
+/* Mobile: switch to single column */
+@media (max-width: 768px) {
+  #live-widget {
+    grid-template-columns: 1fr;
+  }
 }
 
 #live-widget h2 {
@@ -1010,6 +1027,359 @@ a.internal-link.is-unresolved {
   border-radius: 2px;
   padding: 0 2px;
   text-decoration: line-through;
+}
+
+/* ============================================
+   HOMEPAGE: PhD-Live Two-Column Layout
+   Scoped to homepage only
+   ============================================ */
+
+/* Global: Make all pages full-width by default */
+.content {
+  max-width: 100% !important;
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.markdown-preview-sizer {
+  max-width: 100% !important;
+}
+
+/* Exception: Constrain width for individual note pages for readability */
+.content:has(article.note) {
+  max-width: var(--content-max, 1100px) !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content:has(article.note) .markdown-preview-sizer {
+  max-width: var(--file-line-width, 700px) !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header with left/right split */
+.phd-live-header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  align-items: start;
+  margin-bottom: 1.5rem;
+  padding-top: 2rem;
+}
+
+.phd-live-header .header-left h1 {
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: 700;
+  margin: 0;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--text-normal);
+}
+
+.phd-live-header .header-right {
+  padding-top: 0.5rem;
+}
+
+.phd-live-header .header-right p {
+  margin: 0 0 0.75rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-normal);
+}
+
+.phd-live-header .header-note {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* Divider below header */
+.header-divider {
+  border: none;
+  border-top: 1px solid var(--card-border);
+  margin: 2rem 0 2.5rem 0;
+}
+
+/* Two-column main layout */
+.phd-live-main {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* LEFT COLUMN: LIVE feed */
+.live-column {
+  background: var(--background-secondary);
+  padding: 2rem;
+  border-radius: 4px;
+  border: 1px solid var(--card-border);
+  position: sticky;
+  top: 2rem;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+}
+
+.live-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin: 0 0 0.25rem 0;
+  text-transform: uppercase;
+  border: none;
+  padding: 0;
+}
+
+.live-subheading {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin: 0 0 2rem 0;
+  font-style: italic;
+}
+
+/* Live feed container */
+.live-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Override existing session card styles for homepage */
+.live-column .session-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 4px;
+  padding: 1.25rem;
+  margin-bottom: 0;
+}
+
+.live-column .session-card:hover {
+  border-color: var(--accent);
+}
+
+.live-column .session-card.active {
+  border-color: var(--live-active);
+  background: #f0fdf4;
+  border-width: 2px;
+}
+
+/* Override stream item styles for homepage */
+.live-column .stream-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.live-column .stream-item {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 4px;
+  padding: 1rem;
+  display: block;
+  border-left: 2px solid transparent;
+}
+
+.live-column .stream-item:hover {
+  border-left-color: var(--accent);
+}
+
+/* Feed cards for notes - alternating alignment */
+.feed-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 4px;
+  padding: 1.25rem;
+  transition: all 0.2s ease;
+}
+
+.feed-card.align-left {
+  margin-right: 2rem;
+}
+
+.feed-card.align-right {
+  margin-left: 2rem;
+}
+
+.feed-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.feed-card-content p {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text-normal);
+}
+
+.feed-card-meta {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.feed-card-meta a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.feed-card-meta a:hover {
+  text-decoration: underline;
+}
+
+/* RIGHT COLUMN: Static info */
+.info-column {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.info-section h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  border-bottom: 1px solid var(--card-border);
+  padding-bottom: 0.5rem;
+}
+
+.info-section p {
+  margin: 0 0 1rem 0;
+  line-height: 1.6;
+  color: var(--text-normal);
+}
+
+.info-section ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.info-section li {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.info-section .text-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.info-section .text-link:hover {
+  text-decoration: underline;
+}
+
+/* Post list in right column */
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.post-list li {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.post-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.post-list h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.post-list h3 a {
+  color: var(--text-normal);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.post-list h3 a:hover {
+  color: var(--accent);
+}
+
+.post-list small {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.post-list p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.more-link {
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.more-link a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.more-link a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE: Stack on mobile */
+@media (max-width: 968px) {
+  .phd-live-header {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .phd-live-main {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .live-column {
+    position: static;
+    max-height: none;
+  }
+  
+  .feed-card.align-left,
+  .feed-card.align-right {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .phd-live-header .header-left h1 {
+    font-size: 2.5rem;
+  }
+  
+  .live-heading {
+    font-size: 2rem;
+  }
+  
+  .live-column {
+    padding: 1.5rem;
+  }
 }
 
 @import 'evolution';
