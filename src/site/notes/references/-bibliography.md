@@ -72,6 +72,8 @@ The Auto-ethnographic turn in design
 
 [[bleecker-et-al-2022-manual-of-design-fiction]]
 
+[[evans-et-al-agentic-ai-next-intelligence-explosion]]
+
 ---
 
 Research Methods

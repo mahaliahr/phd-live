@@ -1,6 +1,6 @@
 ---
 dg-publish: true
-date-created: <% tp.file.creation_date("YYYY-MM-DD") %>
+date-created: 2026-04-17
 visibility: public
 tags: []
 type: ""
@@ -22,3 +22,9 @@ LIVE SYSTEM TAGS:
 • session       → used for live sessions / work periods
 • daily         → daily log style notes
 -->
+
+overview:
+
+[[teaching-bots]]
+
+[[student-llm-use]] 

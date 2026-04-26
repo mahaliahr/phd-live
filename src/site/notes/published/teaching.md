@@ -9,4 +9,6 @@ description: >-
   throughout the
 updated: '2025-10-20T22:39:03.667Z'
 ---
-teaching is a part of [[my-practice]] , relatively new in conjunciton with my other creative abilities. This will be impoprtant to make more concrete throughout the PhD - ===can I extract any key insights from the PgCert about my teaching practice?
+teaching is a part of [[my-practice]] , relatively new in conjunction with my other creative practice. This will be important to make more concrete throughout the PhD - ===can I extract any key insights from the PgCert about my teaching practice?
+
+[[teaching-research]]

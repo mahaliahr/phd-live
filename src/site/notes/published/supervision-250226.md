@@ -33,7 +33,7 @@ I am working on preparing the staff interviews -[[project-cci-ual-staff-intervie
 	- what are the ethics of this?? course materials are 'UAL owned' techincally, so probably fine. 
 	- as a collegiate starting point reach out the course teams and let them know
 
-- am I trying to work out genAI's impact on learning/pedagogy or on creative production/practice. be clear about the differentiation (and in my questioning) 
+- am I trying to work out genAI's impact on learning/pedagogy or on creative production/practice. be clear about the differentiation (and in my questioning). 
 
 - domain specific concerns may be different across CCI (and across UAL more broadly) this is something to bear in mind. (also my phd sits across 3 different domains - pedagogy, creative computing, speculative design (?) )
 

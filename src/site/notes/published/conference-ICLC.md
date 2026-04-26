@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+date-created: 2026-04-20
 visibility: public
 tags: []
 type: ""
@@ -7,7 +8,7 @@ type: ""
 
 <!--
 Quick syntax:
-Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...
+Session: start:: YYYY-MM-DD HH:MM+ZZ | end:: ... | topic:: ...
 Milestone: - [ ] Thing #milestone @YYYY-MM-DD
 
 CORE TYPES:
@@ -21,8 +22,5 @@ LIVE SYSTEM TAGS:
 • session       → used for live sessions / work periods
 • daily         → daily log style notes
 -->
-I would like to collect/track all the instance of sharing that I am doing/trying to do for the research, as it's an integral part of the ([[making-public]]) progress. 
 
-[[project-phd-live-platform]] ongoing 'live' sharing
-
-[[conferences-etc]]
+https://iclc.toplap.org/2027/

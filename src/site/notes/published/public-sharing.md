@@ -1,6 +1,5 @@
 ---
 dg-publish: true
-date-created: <% tp.file.creation_date("YYYY-MM-DD") %>
 visibility: public
 tags: []
 type: ""
@@ -8,7 +7,7 @@ type: ""
 
 <!--
 Quick syntax:
-Session: start:: YYYY-MM-DD HH:MM+ZZ | end:: ... | topic:: ...
+Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...
 Milestone: - [ ] Thing #milestone @YYYY-MM-DD
 
 CORE TYPES:
@@ -22,3 +21,8 @@ LIVE SYSTEM TAGS:
 • session       → used for live sessions / work periods
 • daily         → daily log style notes
 -->
+I would like to collect/track all the instance of sharing that I am doing/trying to do for the research, as it's an integral part of the ([[making-public]]) progress. 
+
+[[project-phd-live-platform]] ongoing 'live' sharing
+
+[[conferences-workshops-etc]]

@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+date-created: 2026-04-13
 visibility: public
 tags: []
 type: ""
@@ -7,7 +8,7 @@ type: ""
 
 <!--
 Quick syntax:
-Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...
+Session: start:: YYYY-MM-DD HH:MM+ZZ | end:: ... | topic:: ...
 Milestone: - [ ] Thing #milestone @YYYY-MM-DD
 
 CORE TYPES:
@@ -22,4 +23,8 @@ LIVE SYSTEM TAGS:
 • daily         → daily log style notes
 -->
 
-this is currently an undeveloped idea of a connecting interface that acts like a central hub connecting to [[project-supervisor-bot]] and the [[project-phd-live-platform]] (and any other interfaces and apps that I may develop in this research)
+conversational supervisor bot for conversations in meetings 
+
+and 
+
+'traditional' LLM chatbot for my queries, questions and support 

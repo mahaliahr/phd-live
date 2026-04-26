@@ -5,12 +5,8 @@
   <div class="revision-history__header">
     <span class="revision-history__label">Revision history</span>
     <span class="revision-history__summary">
-      {{ noteRevisions.revisions.length }} revision{% if noteRevisions.revisions.length !== 1 %}s{% endif %}
-      · {% if noteRevisions.noteDate %}
-          {{ noteRevisions.noteDate }}
-        {% else %}
-          in this repository since {{ noteRevisions.revisions[noteRevisions.revisions.length - 1].date }}
-        {% endif %}
+        {{ noteRevisions.revisions.length }} revision{% if noteRevisions.revisions.length !== 1 %}s{% endif %}
+        {% if noteRevisions.noteDate %}· {{ noteRevisions.noteDate }}{% endif %}
     </span>
   </div>
 

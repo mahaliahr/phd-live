@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+date-created: 2026-04-07
 visibility: public
 tags: []
 type: ""
@@ -7,7 +8,7 @@ type: ""
 
 <!--
 Quick syntax:
-Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...
+Session: start:: YYYY-MM-DD HH:MM+ZZ | end:: ... | topic:: ...
 Milestone: - [ ] Thing #milestone @YYYY-MM-DD
 
 CORE TYPES:
@@ -22,6 +23,7 @@ LIVE SYSTEM TAGS:
 • daily         → daily log style notes
 -->
 
-Q's for supervisors 
 
-there's an ethical question perhaps around including people in my notes if they are public - how should I address this? anonymisation across the board when talking about people (unless I get explicit ethical clearance? although I'm not really sure how would do ethics for something like this)
+I just came across this interesting guide from Karpathy, that I am yet to read fully, but within this research I am increasingly seeing some connections between the logic of a zettelkasten type system and the underpinning systems and architecture of LLM systems. 
+
+I wonder if any researchers have made this explicit connection and what thinking might be around this
