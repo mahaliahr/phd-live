@@ -6,10 +6,9 @@ title: "Home"
 {# ==== HEADER ==== #}
 <header class="phd-live-header">
   <div class="header-left">
-    <h1>PhD-Live</h1>
+    <strong>*Process as Everything</strong> <p>an evolving research environment documenting my doctoral process in real time.</p>
   </div>
   <div class="header-right">
-    <p><strong>*Process as everything</strong> — an evolving research environment documenting my doctoral process in real time.</p>
     <p class="header-note">Note: This site publishes my PhD research as it unfolds, including incomplete thoughts, experiments, and revisions.</p>
   </div>
 </header>
@@ -21,7 +20,7 @@ title: "Home"
   
   {# LEFT COLUMN: LIVE FEED #}
   <aside class="live-column">
-    <h2 class="live-heading">LIVE</h2>
+    <h2 class="live-heading" id="live-heading">in progress</h2>
     <p class="live-subheading">latest activities</p>
     
     <div class="live-feed">
@@ -48,6 +47,7 @@ title: "Home"
               {% endif %}
               • <a href="{{ n.url | url }}">{{ (n.data.title | formatDailyTitle) or n.fileSlug | lower }}</a>
             </div>
+            <div class="content-type-label">recent note</div>
           </div>
         {% endfor %}
       {% endif %}
@@ -59,7 +59,7 @@ title: "Home"
     {# Research Focus #}
     <div class="info-section">
       <h2>Research Focus</h2>
-      <p>This research explores how generative AI is reshaping the ways we learn, teach, and create. I am interested in what new forms of learning and research might look like as AI becomes part of everyday educational practice.</p>
+      <p><del>This research explores how generative AI is reshaping the ways we learn, teach, and create. I am interested in what new forms of learning and research might look like as AI becomes part of everyday educational practice.</del><br>currently in the process of being reworded</p>      
       <p><em>Key questions include:</em></p>
       <ul>
         <li>How might AI transform teaching and learning — in my own work as a researcher and lecturer, and in higher education more broadly?</li>
@@ -87,6 +87,53 @@ title: "Home"
         <p class="more-link"><a href="{{ '/posts/' | url }}">Read all posts →</a></p>
       {% else %}
         <p>No posts yet.</p>
+      {% endif %}
+    </div>
+    
+    {# Featured Posts #}
+    <div class="info-section">
+      <h2>Featured Posts</h2>
+      {% set featuredPosts = collections.posts | default([]) | selectattr('data.featured', 'equalto', true) %}
+      {% if featuredPosts | length %}
+        <ul class="post-list">
+          {% for post in featuredPosts | reverse | limit(3) %}
+            <li>
+              <h3>
+                <a href="{{ post.url | url }}">{{ (post.data.title or post.fileSlug) | lower }}</a>
+                <span class="badge">Featured</span>
+              </h3>
+              <small><time data-dt="{{ post.date | isoDate }}">{{ post.date | isoDate }}</time></small>
+              {% set desc = post.data.description or (post.templateContent | striptags) %}
+              <p>{{ desc | truncate(120) }}</p>
+            </li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p>No featured posts yet. Add <code>featured: true</code> to post front matter.</p>
+      {% endif %}
+    </div>
+    
+    {# Upcoming Milestones #}
+    <div class="info-section">
+      <h2>Upcoming Milestones</h2>
+      {% set ms = collections.milestones | default([]) %}
+      {% if ms | length %}
+        <ul class="milestone-list">
+          {% for m in ms | limit(5) %}
+            {% if not m.checked %}
+            <li>
+              <strong>{{ m.title }}</strong>
+              {% if m.due %}
+                <small>due <time data-dt="{{ m.due }}">{{ m.due }}</time></small>
+              {% endif %}
+              {% if m.url %}<a href="{{ m.url }}">view note</a>{% endif %}
+            </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+        <p class="more-link"><a href="{{ '/planning/' | url }}">See all milestones →</a></p>
+      {% else %}
+        <p>No milestones yet. Add <code>- [ ] … #milestone @YYYY-MM-DD</code> to any note.</p>
       {% endif %}
     </div>
   </section>
