@@ -26,7 +26,7 @@ type: ""
 - [ ] when you click on images they expand to bigger size
 - [ ] maybe delete/change the milestones section as it's not that intuitive with kanban more useful - maybe move to integrate kanban into obsidian and make a kind of milestone functionality that publishes to the kanban
 - [ ] Formatted date view not updated in the graph
-- [ ] redesign the homepage to be 2 column and make the different blocks more visually legible
+- [x] redesign the homepage to be 2 column and make the different blocks more visually legible 
 - [x] Live bar behavior could do with finessing - only have it show when a session is live
 - [ ] Session logs and thoughts log (way to access and see all of them, other than just on the live widget)
 - [ ] incorporate the canvas functionality that has been added to the orignal digital garden template
