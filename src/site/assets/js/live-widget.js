@@ -116,6 +116,18 @@ console.log("Live widget loaded");
       const end = s.end ? new Date(s.end) : null;
       const isActive = start.getTime() <= now && (!end || end.getTime() >= now);
       
+      // Update the live heading based on active status
+      const liveHeading = document.getElementById('live-heading');
+      if (liveHeading) {
+        if (isActive) {
+          liveHeading.innerHTML = '<span class="record-dot"></span>LIVE';
+          liveHeading.classList.add('is-live');
+        } else {
+          liveHeading.textContent = 'in progress';
+          liveHeading.classList.remove('is-live');
+        }
+      }
+      
       // Clear status text - either LIVE NOW or Most Recent
       const statusLabel = isActive ? 
         '<span class="status active">LIVE NOW</span>' : 
@@ -143,6 +155,7 @@ console.log("Live widget loaded");
             ${!isActive && end ? `<span style="margin-left: 1rem;">Ended ${relativeTime(end)}</span>` : ''}
           </div>
           ${s.url ? `<a href="${s.url}" class="session-link">View full session →</a>` : ''}
+          <div class="content-type-label">session</div>
         </div>
       `;
     } else {
@@ -161,6 +174,7 @@ console.log("Live widget loaded");
             <span class="status">Scheduled ${relativeTime(start)}</span>
           </div>
           ${s.url ? `<a href="${s.url}" class="session-link">View details →</a>` : ''}
+          <div class="content-type-label">session</div>
         </div>
       `;
     } else {
@@ -190,6 +204,7 @@ console.log("Live widget loaded");
           <span class="stream-time">${time}</span>
           <span class="stream-text">${processedText}</span>
           ${item.noteUrl ? `<a href="${item.noteUrl}" class="stream-link">→</a>` : ''}
+          <div class="content-type-label">recent thinking</div>
         </div>
       `;
     }).join('');

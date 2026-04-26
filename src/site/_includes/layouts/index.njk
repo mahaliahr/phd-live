@@ -7,7 +7,6 @@
     {% for imp in dynamics.index.head %}{% include imp %}{% endfor %}
   </head>
   <body class="theme-{{ meta.baseTheme }} {{ meta.bodyClasses }}">
-    {# Remove duplicate pageheader - it's already in <head> #}
     {% include "components/navbar.njk" ignore missing %}
     {% include "components/livebar.njk" ignore missing %}
     {% include "components/notegrowthhistory.njk" ignore missing %}
@@ -47,9 +46,9 @@
       </main>
     </div>
 
-    {% if dgShowSidebar !== false %}
+    {# {% if dgShowSidebar !== false %}
       {% include "components/sidebar.njk" ignore missing %}
-    {% endif %}
+    {% endif %} #}
 
     {% if settings.dgLinkPreview === true %}
       {% include "components/linkPreview.njk" %}
