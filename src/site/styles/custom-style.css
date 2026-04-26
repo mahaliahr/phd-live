@@ -6,11 +6,11 @@
   --card-border: rgba(0,0,0,0.06);
   --muted-text: #9aa1b3;
   --accent: #8b6cef;
-  --background-primary: #0b0b0b;
+  --background-primary: #1a1a1a;
   --content-max: 1100px;
   /* Navbar + graph (ForceGraph reads these) */
   --navbar-bg: #f7f7f7;
-  --navbar-fg: #0b0b0b;
+  --navbar-fg: #1a1a1a;
   --graph-main: #8b6cef;
   --graph-muted: rgba(139,108,239,.45);
   /* Live widget colors */
@@ -20,8 +20,8 @@
   --text-normal: #0b0b0b;
   --text-muted: #70747c;
   --interactive-accent: #8b6cef;
-  --live-active: #22c55e; /* green for live */
-  --live-inactive: #ef4444; /* red for offline */
+  --live-active: #21c491; /* green for live */
+  --live-inactive: #e8024f; /* red for offline */
 }
 
 /* Base */
@@ -328,8 +328,23 @@ section .more a {
 #live-widget {
   background: var(--background-secondary);
   border-radius: 8px;
+  /* 2-column grid on desktop, 1-column on mobile */
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
 }
 
+/* Make section intro paragraphs span full width */
+#live-widget .section-intro {
+  grid-column: 1/-1;
+}
+
+/* Mobile: switch to single column */
+@media (max-width: 768px) {
+  #live-widget {
+    grid-template-columns: 1fr;
+  }
+}
 #live-widget h2 {
   margin-top: 0;
   margin-bottom: 1.5rem;
@@ -556,6 +571,7 @@ section .more a {
 footer {
   background: var(--footer-bg, #f8f8f8);
   padding: 1rem;
+  font-size: 0.9rem;
 }
 
 /* Wikilink styling (internal links) */
@@ -1088,4 +1104,613 @@ a.internal-link.is-unresolved {
   text-decoration: line-through;
 }
 
-/*# sourceMappingURL=custom-style.css.map */
+/* ============================================
+   HOMEPAGE: PhD-Live Two-Column Layout
+   Scoped to homepage only
+   ============================================ */
+/* Global: Make all pages full-width by default */
+.content {
+  max-width: 100% !important;
+  width: 100%;
+  padding: 2rem;
+  margin-top: 0 !important;
+}
+
+.markdown-preview-sizer {
+  max-width: 100% !important;
+}
+
+/* Exception: Constrain width for individual note pages for readability */
+.content:has(article.note) {
+  max-width: var(--content-max, 1100px) !important;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 90px !important;
+  padding-right: 370px; /* Prevent overlap with fixed sidebar */
+}
+
+.content:has(article.note) .markdown-preview-sizer {
+  max-width: var(--file-line-width, 700px) !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Remove sidebar padding on mobile/tablet where sidebar is hidden */
+@media (max-width: 1200px) {
+  .content:has(article.note) {
+    padding-right: 2rem;
+  }
+}
+/* Header with left/right split */
+.phd-live-header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  align-items: start;
+  margin-bottom: 1.5rem;
+}
+
+.phd-live-header .header-left h1 {
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: 700;
+  margin: 0;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--text-normal);
+}
+
+.phd-live-header .header-right {
+  padding-top: 0.5rem;
+}
+
+.phd-live-header .header-right p {
+  margin: 0 0 0.75rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-normal);
+}
+
+.phd-live-header .header-note {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* Divider below header */
+.header-divider {
+  border: none;
+  border-top: 1px solid var(--card-border);
+  margin: 2rem 0 2.5rem 0;
+}
+
+/* Two-column main layout */
+.phd-live-main {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3rem;
+  align-items: stretch;
+}
+
+/* LEFT COLUMN: LIVE feed */
+.live-column {
+  background: #d8f4eb;
+  padding: 2rem;
+  border-radius: 4px;
+  border: 1px solid var(--card-border);
+  display: flex;
+  flex-direction: column;
+}
+
+.live-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin: 0 0 0.25rem 0;
+  text-transform: uppercase;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Red record dot for live status */
+.record-dot {
+  width: 0.8rem;
+  height: 0.8rem;
+  background: var(--live-active, #e8024f);
+  border-radius: 50%;
+  display: inline-block;
+  animation: pulse-dot 2s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes pulse-dot {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(0.9);
+  }
+}
+.live-subheading {
+  font-size: 0.95rem;
+  color: var(--text-normal);
+  margin: 0 0 2rem 0;
+  font-style: italic;
+}
+
+/* Live feed container */
+.live-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Override existing session card styles for homepage */
+.live-column .session-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 4px;
+  padding: 1.25rem;
+  margin-bottom: 0;
+}
+
+.live-column .session-card:hover {
+  border-color: var(--accent);
+}
+
+.live-column .session-card.active {
+  border-color: var(--live-active);
+  background: #f0fdf4;
+  border-width: 2px;
+}
+
+/* Override stream item styles for homepage */
+.live-column .stream-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.live-column .stream-item {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 4px;
+  padding: 1rem;
+  display: block;
+  border-left: 2px solid transparent;
+}
+
+.live-column .stream-item:hover {
+  border-left-color: var(--accent);
+}
+
+/* Feed cards for notes - alternating alignment */
+.feed-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 4px;
+  padding: 1.25rem;
+  transition: all 0.2s ease;
+}
+
+.feed-card.align-left {
+  margin-right: 2rem;
+}
+
+.feed-card.align-right {
+  margin-left: 2rem;
+}
+
+.feed-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.feed-card-content p {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text-normal);
+}
+
+.feed-card-meta {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.feed-card-meta a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.feed-card-meta a:hover {
+  text-decoration: underline;
+}
+
+/* Content type labels for all feed items */
+.content-type-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  opacity: 0.6;
+  margin-top: 0.75rem;
+  font-weight: 600;
+}
+
+/* Add labels to session and stream items too */
+.session-card .content-type-label,
+.stream-item .content-type-label {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* RIGHT COLUMN: Static info */
+.info-column {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.info-section h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  border-bottom: 1px solid var(--card-border);
+  padding-bottom: 0.5rem;
+}
+
+.info-section p {
+  margin: 0 0 1rem 0;
+  line-height: 1.6;
+  color: var(--text-normal);
+}
+
+.info-section ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.info-section li {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.info-section .text-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.info-section .text-link:hover {
+  text-decoration: underline;
+}
+
+/* Post list in right column */
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.post-list li {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.post-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.post-list h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.post-list h3 a {
+  color: var(--text-normal);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.post-list h3 a:hover {
+  color: var(--accent);
+}
+
+.post-list small {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.post-list p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Badge for featured posts */
+.post-list .badge {
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-size: 0.7rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+.more-link {
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.more-link a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.more-link a:hover {
+  text-decoration: underline;
+}
+
+/* Milestone list in right column */
+.milestone-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.milestone-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--card-border);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.milestone-list li:last-child {
+  border-bottom: none;
+}
+
+.milestone-list strong {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-normal);
+}
+
+.milestone-list small {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: normal;
+}
+
+.milestone-list a {
+  font-size: 0.85rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.milestone-list a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE: Stack on mobile */
+@media (max-width: 968px) {
+  .phd-live-header {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .phd-live-main {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .feed-card.align-left,
+  .feed-card.align-right {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (max-width: 640px) {
+  .content {
+    padding: 1rem;
+  }
+  .phd-live-header .header-left h1 {
+    font-size: 2.5rem;
+  }
+  .live-heading {
+    font-size: 2rem;
+  }
+  .live-column {
+    padding: 1.5rem;
+  }
+}
+/* evolution.css
+   Aligned with PhD-Live custom-style.scss design tokens */
+.evolution-page {
+  max-width: var(--content-max, 1100px);
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.evolution-header {
+  margin-bottom: 2.5rem;
+}
+
+.evolution-header h1 {
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.evolution-subtitle {
+  color: var(--text-muted, #70747c);
+  opacity: 0.85;
+  font-size: 0.95rem;
+  max-width: 60ch;
+  line-height: 1.6;
+}
+
+/* Legend */
+.evolution-legend {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted, #70747c);
+  opacity: 0.65;
+}
+
+/* Grid layout: date + 3 page columns */
+.evolution-col-header,
+.evolution-row {
+  display: grid;
+  grid-template-columns: 7rem 1fr 1fr 1fr;
+  gap: 0.75rem;
+  align-items: start;
+}
+
+.evolution-col-header {
+  margin-bottom: 0.5rem;
+}
+
+.col-date-spacer {
+  /* empty */
+}
+
+.col-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted, #70747c);
+  opacity: 0.65;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--card-border, rgba(0, 0, 0, 0.06));
+}
+
+/* Rows */
+.evolution-row {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--card-border, rgba(0, 0, 0, 0.06));
+}
+
+.evolution-row:last-child {
+  border-bottom: none;
+}
+
+.evolution-date time {
+  font-size: 0.85rem;
+  color: var(--text-muted, #70747c);
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+  display: block;
+  padding-top: 0.25rem;
+}
+
+/* Screenshot thumbnails */
+.evolution-cell {
+  position: relative;
+}
+
+.screenshot-link {
+  display: block;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  border: 1px solid var(--card-border, rgba(0, 0, 0, 0.06));
+  box-shadow: 0 2px 8px rgba(2, 6, 23, 0.04);
+}
+
+.screenshot-link:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(2, 6, 23, 0.08);
+}
+
+.screenshot-thumb {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.screenshot-empty {
+  color: var(--text-muted, #70747c);
+  opacity: 0.5;
+  font-size: 0.85rem;
+  padding: 0.5rem 0;
+  font-style: italic;
+}
+
+/* Show all */
+.evolution-more {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.evolution-more button {
+  font-family: "Overpass Mono", monospace;
+  font-size: 0.85rem;
+  padding: 0.5rem 1.25rem;
+  border: 1px solid var(--card-border, rgba(0, 0, 0, 0.06));
+  background: var(--card-bg, #ffffff);
+  color: var(--text-normal, #0b0b0b);
+  cursor: pointer;
+  border-radius: 6px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 2px 6px rgba(2, 6, 23, 0.04);
+}
+
+.evolution-more button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(2, 6, 23, 0.08);
+}
+
+.evolution-grid--hidden {
+  display: none;
+}
+
+.evolution-empty {
+  color: var(--text-muted, #70747c);
+  opacity: 0.65;
+  font-style: italic;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* Responsive: stack to 2 columns on smaller screens */
+@media (max-width: 700px) {
+  .evolution-col-header,
+  .evolution-row {
+    grid-template-columns: 5rem 1fr 1fr;
+  }
+  /* Hide graph column on small screens */
+  .evolution-col-header > *:last-child,
+  .evolution-row > *:last-child {
+    display: none;
+  }
+}

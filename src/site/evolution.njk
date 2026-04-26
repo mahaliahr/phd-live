@@ -34,7 +34,7 @@ description: A visual record of how PhD-Live has changed over time.
       </div>
 
       {# Show most recent first, limit to 20 entries by default #}
-      {% set displayed = screenshots | reverse | truncate_array(20) %}
+      {% set displayed = screenshots | reverse | limit(20) %}
 
       {% for entry in displayed %}
         <div class="evolution-row">
