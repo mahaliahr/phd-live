@@ -19,6 +19,7 @@ Edwards, B. (2025) _ChatGPT comes to 500,000 new users in OpenAI’s largest AI 
 
 https://academy.openai.com/public/resources/the-global-faculty-ai-project-2025-09-04?trk=feed_main-feed-card_feed-article-content
 
+
 ---
 
 'The education-focused version of the AI assistant will aim to provide students with personalized tutoring and study guides, while faculty will be able to use it for administrative work.' (Edwards, 2025)
@@ -33,3 +34,11 @@ However, while Underwood thinks AI can be potentially useful in education, he is
 
 Reading both these articles highlights the fact that AI in academia is becoming more widespread - its also really interesting to see a strong push from these company to innovate in this area. However as raised in the ChatGPT article there is a real concern about relying on 'proprietarty closed AI models' and 'outsourcing reasoning and writing to private firms' (Edwards, 2025). These development make clear to me that there is a need  offer alternatives to these systems and explore the potential of open source and local AI setups. Especially as there is a lot interesting work happening with open source models.
 
+
+Gulezian, Kirk. “Understanding Workspace Agents in Higher Education - Blog.” OpenAI Academy. Accessed April 27, 2026. https://academy.openai.com/public/clubs/higher-education-05x4z/blogs/understanding-workspace-agents-higher-education.
+
+from a quick read of this article, it makes be think about the pipeline of potential development with agents in an education context. I can very easily see a context in which admin roles within universities get automated away. With the crisis of higher education in the UK, I think things generally are bleak - it's very hard to see the integration of AI automation enmeshed with the fragile and desperate context of many universities and see anything particularly positive as an outcome. (Noted, I am particularly pessimistic due to restructuring happening in my department at the moment ([[cci-dissolution]]) that is jeopardising the future development of the department and many jobs)
+
+
+[[possibility-spaces-and-impossibility-spaces]] 
+[[the-effects-of-neoliberalism-on-higher-education]]

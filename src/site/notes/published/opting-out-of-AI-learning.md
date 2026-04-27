@@ -10,7 +10,7 @@ description: |-
   what would be the motivations for someone wanti
 updated: '2025-10-20T22:34:14.465Z'
 ---
-should people be allowed to opt out of using [[generative-AI]] in learning
+should people be allowed to opt out of using [[generative-ai]] in learning
 
 in theory yes, but what would that mean?
 what would be the motivations for someone wanting to opt out 

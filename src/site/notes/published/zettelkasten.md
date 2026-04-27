@@ -19,6 +19,13 @@ https://vhbelvadi.com/zettelkasten
 
 https://www.soenkeahrens.de/en/takesmartnotes
 
-sidenote: it's quite funny to me that I started looking up Zettelkasten very randomly near the beginning of the phd research when I was desperately trying to be organise and set myself up in some coherent way, I was not prepared for this to become such an important conceptual foundation behind my work. This seem to be very zettelkasten in spirit, that you never know which note or connection might become useful as things develop 
+sidenote: it's quite funny to me that I started looking up Zettelkasten very randomly near the beginning of the phd research when I was desperately trying to be organise and set myself up in some coherent way. I was not prepared for this to become such an important conceptual foundation behind my work. This seems to be very 'zettelkasten' in spirit, that you never know which note or connection might become useful as things develop.
+
+[[ahrens-2017-how-to-take-smart-notes]]
+
+I have been thinking about the unique selling point of the zettelkasten method, that is the chaos and emergent threads coming together over time, in a way that cannot really be categorised beforehand and in which it is the somewhat organic nature of adding, reflecting and connecting notes that the knowledge and creation of new ideas happen. This feels incredibly important, as an essence to understand more - its why things like thematic analysis cannot really be automated, due to that subjective and reflective aspect. There is an interesting recent papers by the thematic analysis authors that I should read to connect to this. 
+-> [[jowsey-et-al-2025-we-reject-genAI-for-reflexive-qualitative-research]]
+
+There is also what I am seeing a growing trend of building 'second brain' systems that utilise LLMs, this feels to me like it could be problematic, in impairing a natural thought process, but this is further research that I want to do
 
 [[zettelkasten-connction-to-LLMs]]

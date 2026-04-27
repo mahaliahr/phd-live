@@ -21,7 +21,8 @@ description: |-
 updated: '2025-10-09T17:10:31.555Z'
 ---
 [[AI]]
-[[generative-AI]]
+[[generative-ai]]
+[[agentic-ai]]
 [[spatial-ai]]
 [[large-language-models]]
 [[bot]]

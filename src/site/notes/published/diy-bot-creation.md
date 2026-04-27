@@ -9,7 +9,7 @@ description: >-
   large-language-m
 updated: '2025-10-20T22:36:08.451Z'
 ---
-I am having thoughts around how to build this and I am thinking of it being some kind of 'customisable entity' using [[generative-AI]] specifically [[large-language-models]] to create this personalizable interface. The user has agency in building the supervisor and the characteristics that it has. In this sense it will be very personal to the user and due to them customising it, they will (need to) have a level of understanding about it, which will hopefully lead to a more informed utilisation.
+I am having thoughts around how to build this and I am thinking of it being some kind of 'customisable entity' using [[generative-ai]] specifically [[large-language-models]] to create this personalizable interface. The user has agency in building the supervisor and the characteristics that it has. In this sense it will be very personal to the user and due to them customising it, they will (need to) have a level of understanding about it, which will hopefully lead to a more informed utilisation.
 
 I think that I need to do more work with Supervisor Bot before I am ready for this project to happen. 
 

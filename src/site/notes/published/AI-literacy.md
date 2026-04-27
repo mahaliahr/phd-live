@@ -12,7 +12,7 @@ description: >-
 updated: '2025-10-15T21:01:34.000Z'
 title: ai literacy
 ---
-This is a growing area that will be as important as the technological developments of [[generative-AI]] expand and develop.
+This is a growing area that will be as important as the technological developments of [[generative-ai]] expand and develop.
 
 There seems to be two ways of talking about AI Literacy
 1. coming from the major corporate entities such as Anthropic (who have developed their own short courses <https://www.anthropic.com/learn/claude-for-you>)

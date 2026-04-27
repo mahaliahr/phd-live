@@ -75,6 +75,12 @@ group based on research areas?
 
 [[aguera-y-arcas-2025-what-is-intelligence]]
 
+[[karpathy-2026-llm-wiki]]
+
+[[jowsey-et-al-2025-we-reject-genAI-for-reflexive-qualitative-research]]
+
+[[ahrens-2017-how-to-take-smart-notes]]
+
 ---
 
 Research Methods
