@@ -475,6 +475,13 @@ footer {
   // text-align: center; /* Center text */
 }
 
+/* Hide footer details on mobile */
+@media (max-width: 768px) {
+  .footer-details {
+    display: none;
+  }
+}
+
 /* Wikilink styling (internal links) */
 a.internal-link {
   color: var(--accent);
@@ -709,6 +716,24 @@ a.internal-link.is-unresolved {
   cursor: pointer;
   padding: 0.5rem;
   color: var(--navbar-fg);
+}
+
+/* Hide mobile search on desktop, hide desktop search on mobile */
+.nav-search-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-search-desktop {
+    display: none;
+  }
+  
+  .nav-search-mobile {
+    display: block;
+    padding: 0.5rem 0;
+    border-top: 1px solid var(--card-border);
+    margin-top: 0.5rem;
+  }
 }
 
 /* Mobile adjustments */
@@ -1121,7 +1146,7 @@ a.internal-link.is-unresolved {
 
 /* LEFT COLUMN: LIVE feed */
 .live-column {
-  background: #d8f4eb;
+  background: #D4C8F9;
   padding: 2rem;
   border-radius: 4px;
   border: 1px solid var(--card-border);
