@@ -63,8 +63,7 @@ group based on research areas?
 
 [[smith-nunes-offline-llms-and-the-future-private-AI]]
 
-The Auto-ethnographic turn in design
-[[autographic-turn-in-design]]  
+[[schouwenberg-kaethler-2021-autographic-turn-in-design]]  
 
 [[blackwell-et-al-2022-live-coding-user-manual]] <mark style="background: #ADCCFFA6;">READING</mark>
 
@@ -72,7 +71,7 @@ The Auto-ethnographic turn in design
 
 [[bleecker-et-al-2022-manual-of-design-fiction]]
 
-[[evans-et-al-agentic-ai-next-intelligence-explosion]]
+[[evans-et-al-2026-agentic-ai-next-intelligence-explosion]]
 
 ---
 
