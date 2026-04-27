@@ -73,6 +73,8 @@ group based on research areas?
 
 [[evans-et-al-2026-agentic-ai-next-intelligence-explosion]]
 
+[[aguera-y-arcas-2025-what-is-intelligence]]
+
 ---
 
 Research Methods
