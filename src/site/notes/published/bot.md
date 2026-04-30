@@ -17,4 +17,8 @@ interests for me to explore:
 - recent projects that I was inspired by:
 	- [[case-study-shell-game]]
 	- [[case-study-shiffbot]]
-	- 
+
+random iconic bots 
+- clippy
+speculative
+- ian cheng https://lifeafterbob.io/

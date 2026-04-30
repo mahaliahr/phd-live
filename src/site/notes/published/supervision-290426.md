@@ -34,6 +34,26 @@ type: ""
 there's an ethical question perhaps around including people in my notes if they are public - how should I address this? anonymisation across the board when talking about people, is that fine?
 
 
-### for next meeting: 
+### notes / for next meeting: 
 
+- we talked about confirmation and when it might be
+- think about who might be on the confirmation when 
+10000 words for confirmation + 15 minute presentation
+lit review -- overview (but not inclusive)
+
+write about my positioning in this (being more clear)
+
+how does the performative aspect of doing phd feed into the research q's (at the moment it's implicit but not explicit) --> part of the methodology
+
+Hayley Newman PhD -- look at
+Rebecca Cord - Fine Art Phd  
+look at other PhD theses
+
+is there a way to translate the website into the actual thesis document
+
+[[student-llm-use]] as pilot study before conformation, also maybe speak to peers (phd students as a practice)
+
+look at handbook about confirmation 
+
+is the supervisor bot a bit like an echo chamber as it is trained on my data
 
