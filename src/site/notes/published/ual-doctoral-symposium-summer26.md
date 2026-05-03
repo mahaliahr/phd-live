@@ -5,24 +5,6 @@ visibility: public
 tags: []
 type: ""
 ---
-
-<!--
-Quick syntax:
-Session: start:: YYYY-MM-DD HH:MM+ZZ | end:: ... | topic:: ...
-Milestone: - [ ] Thing #milestone @YYYY-MM-DD
-
-CORE TYPES:
-• Turn into blog post → add: type: post
-
-FEATURE & NAVIGATION TAGS:
-• featured      → appears in Featured section on homepage
-• gardenEntry   → appears as a trailhead in the Garden gateway
-
-LIVE SYSTEM TAGS:
-• session       → used for live sessions / work periods
-• daily         → daily log style notes
--->
-
 Extracted from the application form:
 
 what format will your presentation take?  
@@ -40,7 +22,16 @@ Are there any days and times that you are unable to deliver your presentation? (
 
 **For the Programme: what is the title of your research project?**
 
+After Intelligence: a live doctoral inquiry into AI, making and creative knowledge ??
+
+After Intelligence: speculative platforms for knowledge-making and learning with generative AI ??
+
+Live coding a PhD: speculative infrastructures for knowledge-making in the age of generative AI??
+
+
 **For the Programme: provide an abstract of your research project (up to 300 words)**
+
+
 
 **For the Programme: list up to 5 keywords for your presentation**
 

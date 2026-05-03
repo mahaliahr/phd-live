@@ -19,6 +19,7 @@ type: ""
 - [x] adding screenshots capture to show process over time 
 - [ ] time in the recent thoughts and updates section is wrong (gmt to bst)
 - [ ] recent notes should show most recently edited (not accurate at the moment)
+- [ ] create way to click through to see recent thoughts and sessions 
 
 
 **Less important** 
@@ -29,6 +30,7 @@ type: ""
 - [x] redesign the homepage to be 2 column and make the different blocks more visually legible 
 - [x] Live bar behavior could do with finessing - only have it show when a session is live
 - [ ] Session logs and thoughts log (way to access and see all of them, other than just on the live widget)
-- [ ] incorporate the canvas functionality that has been added to the orignal digital garden template
+- [x] incorporate the canvas functionality that has been added to the orignal digital garden template
+- [ ] edit canvas functionality so it's better
 - [x] Template session to be dropdown
 - [x] Session formatting make neater
