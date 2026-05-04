@@ -8,7 +8,6 @@ description: |-
   - co-creation with students, how do the students not feel exploited? 
   - open-source / massive platforms - ethics 
   - positionality of par
-updated: '2025-10-20T22:34:14.443Z'
 ---
 Ethical considerations 
 - co-creation with students, how do the students not feel exploited? 
@@ -18,9 +17,9 @@ Ethical considerations
 current proposed research projects: 
 - ~~student ai literacy workshops (make this just class? not special session)
 - diy ai bot
-- student focus groups
-- supervisor bot 
-- cci staff interviews 
+- student focus groups [[student-llm-use]]
+- supervisor bot -- approved
+- cci staff interviews -- approved
 
 [[ethical-AI]]
 

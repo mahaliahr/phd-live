@@ -37,23 +37,25 @@ there's an ethical question perhaps around including people in my notes if they 
 ### notes / for next meeting: 
 
 - we talked about confirmation and when it might be
-- think about who might be on the confirmation when 
-10000 words for confirmation + 15 minute presentation
-lit review -- overview (but not inclusive)
+- think about who might be good to be in the confirmation 
+10,000 words (max) for confirmation + 15 minute presentation
+lit review -- overview (will not be inclusive pf everything)
+**look at handbook about confirmation to see what is required**
 
 write about my positioning in this (being more clear)
 
-how does the performative aspect of doing phd feed into the research q's (at the moment it's implicit but not explicit) --> part of the methodology
+##### how does the performative aspect of doing phd feed into the research q's (at the moment it's implicit but not explicit)
+--> part of the methodology
 
+##### -> look at other PhD theses!!
 Hayley Newman PhD -- look at
-Rebecca Cord - Fine Art Phd  
-look at other PhD theses
+Rebecca Court - Fine Art PhD  
+both mentioned by my supervisors as being potentially inspiring 
 
-is there a way to translate the website into the actual thesis document
+is there a way to translate the website into the actual thesis document?
 
 [[student-llm-use]] as pilot study before conformation, also maybe speak to peers (phd students as a practice)
 
-look at handbook about confirmation 
-
-is the supervisor bot a bit like an echo chamber as it is trained on my data
+[[first-test-with-supervisor-bot-in-meeting]]
+is the supervisor bot a bit like an echo chamber as it is trained on my data?
 
