@@ -18,7 +18,7 @@ it feels that the conditions in which many work in Academia (and more broadly wi
 
 (Im)possibility spaces
 
-how does this coincide with the [[title-and-subject-area]] of the phd?
+how does this coincide with the [[phd-title-and-subject-area]] of the phd?
 ''Speculating on AI Augmented Education: Creating ‘Possibility Spaces’ for Learning"
 
 [[cci-dissolution]]

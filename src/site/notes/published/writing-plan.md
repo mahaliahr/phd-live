@@ -31,7 +31,7 @@ end::2026-01-12T23:27:45+0000
 
 - [x] focus on progress note, make into a fully fledged post - exploring more deeply my motivations behind this all -> [[focus-on-process]]
 
-- how do I define possibility spaces for the purposes of this research? (as outlined in my phd proposal [[title-and-subject-area]]) this I feel can feed into the development of [[project-phd-live-platform]] as a type of platform (and space) ?
+- how do I define possibility spaces for the purposes of this research? (as outlined in my phd proposal [[phd-title-and-subject-area]]) this I feel can feed into the development of [[project-phd-live-platform]] as a type of platform (and space) ?
 
 - a post looking at historic 'vintage' bots, what can we learn from what has already been achieved. Have we reached the limit of what the chatbot interface is good for?
 
