@@ -5,22 +5,13 @@ visibility: public
 tags: []
 type: ""
 ---
+small in-house scoping event with the _Interior Futures programme_ at CCW (Camberwell, Chelsea and Wimbledon). It will begin to critically address **'Ai in Spatial Practice and Education'**. It will be a two hour event with discussion and identification of problems/potentials to be taken forward for future events and action. 
 
-<!--
-Quick syntax:
-Session: start:: YYYY-MM-DD HH:MM+ZZ | end:: ... | topic:: ...
-Milestone: - [ ] Thing #milestone @YYYY-MM-DD
+plan
 
-CORE TYPES:
-• Turn into blog post → add: type: post
-
-FEATURE & NAVIGATION TAGS:
-• featured      → appears in Featured section on homepage
-• gardenEntry   → appears as a trailhead in the Garden gateway
-
-LIVE SYSTEM TAGS:
-• session       → used for live sessions / work periods
-• daily         → daily log style notes
--->
-
-a small in-house scoping event with the _Interior Futures programme_ on which I work. It will begin to critically address **'Ai in Spatial Practice and Education'**. I have two speakers, Arup's 'futuriser' and PhD student **Tobias Revell** and CCi Lecturer and PhD student, **Mahalia Henry-Richards**. It will be a two hour event with discussion and identification of problems/potentials to be taken forward for future events and action. 
+intro myself
+bg - industry and academic exp. being in architecture/spatial
+performance - livecoding and then how that flowed through into the masters
+covid context - was a student within that bizarre time, in some ways was like a precursor to some questions we have now re. the how education adapts to outside forces, technology question central
+ual / cci/ phd - what made me want to explore this as a topic
+where I am now - current position and plans for the near future (+ key value in the research)
