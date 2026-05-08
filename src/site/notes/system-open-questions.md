@@ -12,6 +12,14 @@ questions that don't have a home yet, or that need thinking before they can beco
 
 what is the meaningful difference between the supervisor bot and the study companion bot?
 
+---
+
+### study companion bot
+
+- can a local model grounded in vault context approximate the calibration function, or does that require something closer to the full project understanding?
+- what does the "holding the research frame" function require technically - is it system prompt, retrieval context, or something about how the model reasons?
+- which of these functions are most degraded by lower capability models, and which survive?
+- is the dialogic quality (thinking against output rather than receiving it) something that can be designed for, or does it emerge from the interaction?
 
 ---
 
@@ -19,7 +27,7 @@ what is the meaningful difference between the supervisor bot and the study compa
 
 is phd-live live, or also performative? does it need an audience, to be the latter? what would it take to move from live to performative?
 
-how does this connect to the research questions that I initially laid out?[[supervision-290426#how does the performative aspect of doing phd feed into the research q's (at the moment it's implicit but not explicit)]]
+how does this connect to the research questions that I initially laid out? [[supervision-290426#how does the performative aspect of doing phd feed into the research q's (at the moment it's implicit but not explicit)]]
 
 ---
 

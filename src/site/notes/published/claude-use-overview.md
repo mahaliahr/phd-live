@@ -69,9 +69,5 @@ the context that makes this work isn't model capability alone, it's an accumulat
 
 ---
 
-## open questions for the local companion design
-
-- can a local model grounded in vault context approximate the calibration function, or does that require something closer to the full project understanding?
-- what does the "holding the research frame" function require technically - is it system prompt, retrieval context, or something about how the model reasons?
-- which of these functions are most degraded by lower capability models, and which survive?
-- is the dialogic quality (thinking against output rather than receiving it) something that can be designed for, or does it emerge from the interaction?
+## open questions for the local companion design. 
+read here: [[system-open-questions#study companion bot]]
