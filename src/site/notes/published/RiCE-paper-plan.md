@@ -5,9 +5,17 @@ visibility: public
 tags: []
 type: ""
 ---
-**Opening: the zettelkasten instinct**
+We particularly encourage submissions of **first-person reflective pieces on people's own computer arts practice**, especially with a brief meta-analysis (1 paragraph) of how reflection occurred in their making.*  <mark style="background: #FFB8EBA6;">--> where does this go?</mark> 
 
-- discovered zettelkasten and was immediately drawn to the idea of ideas growing and clustering rather than being organised top-down
+---
+
+What does it look like to build a personal research infrastructure that uses AI, but is designed around how you actually think rather than around how AI wants you to think?
+
+
+**the zettelkasten instinct**
+
+- started from an arbitury place of trying to organise my PhD in a good way that would benefit me over the span of the project
+- discovered zettelkasten as an administrative solution that unexpectedly opened into something conceptually richer -- ideas growing and clustering through association rather than hierarchy
 - this led to a tangential imaginative question: what if you could live code a PhD?
 - that framing connected to play, to speculative thinking, to process over outcome -- ~~it wasn't a methodology~~([[RQ3-playful-methodology-as-way-to-speculate]] explores playfulness so this is a thing that has been in my mind since the start), it was an imaginary that then became a system
 
@@ -15,9 +23,12 @@ type: ""
 
 - two layers working in parallel: Obsidian vault as the protected space of actual thinking -- chaotic, associative, non-linear -- and PhD-Live as the public-facing surface that makes that thinking more legible without flattening it
 - they are distinct but connected -- not the same thing presented differently
-- noticed something interesting in practice: often reading through posts on the PhD-Live website rather than inside Obsidian -- the two environments produce different relationships to the same material.
+- noticed something interesting in practice: often reading through posts on the PhD-Live website rather than inside Obsidian -- the two environments produce different relationships to the same material. When I am 'outside' of sessions I would read over and think about ideas on the website
 	-it helps me see areas that are 'lacking' and need to be developed, perhaps that awareness of legibility required for a website?
+	- the live layer logic of tracking recent sessions and thought allows me to more readily recoginse progress and thread as they develop and mature 
 - the public layer makes the thinking readable in a way that the vault doesn't, but the vault is where the thinking actually lives
+- This two-layer structure wasn't planned -- it emerged from use, and only became visible as a design decision retrospectively
+
 
 **The design question: where AI enters and where it can't**
 
