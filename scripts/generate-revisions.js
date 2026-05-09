@@ -12,6 +12,12 @@ function stripFrontmatter(content) {
 }
 
 function getNoteDate(filepath) {
+  // check filename first -- most reliable for daily notes
+  const filename = path.basename(filepath, '.md');
+  if (/^\d{4}-\d{2}-\d{2}$/.test(filename)) {
+    return filename;
+  }
+  // fall back to frontmatter
   try {
     const content = fs.readFileSync(filepath, 'utf8');
     const { data } = matter(content);
