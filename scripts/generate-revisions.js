@@ -104,22 +104,27 @@ function buildRevisions(filepath) {
   if (commits.length === 0) return null;
 
   const collapsed = collapseByDay(commits);
+  const noteDate = getNoteDate(filepath);
 
-  const revisions = collapsed.map((commit) => {
-    const { diff, added, removed } = parsePatchToDiff(commit.diff);
-    return {
-      date: commit.date,
-      hash: commit.hash.slice(0, 7),
-      wordCount: added,
-      delta: added - removed,
-      added,
-      removed,
-      diff
-    };
-  });
+  const revisions = collapsed
+    .filter(commit => !noteDate || commit.date >= noteDate)
+    .map((commit) => {
+      const { diff, added, removed } = parsePatchToDiff(commit.diff);
+      return {
+        date: commit.date,
+        hash: commit.hash.slice(0, 7),
+        wordCount: added,
+        delta: added - removed,
+        added,
+        removed,
+        diff
+      };
+    });
+
+  if (revisions.length === 0) return null;
 
   return {
-    noteDate: getNoteDate(filepath),
+    noteDate,
     revisions
   };
 }
