@@ -11,6 +11,17 @@ We particularly encourage submissions of **first-person reflective pieces on peo
 
 What does it look like to build a personal research infrastructure that uses AI, but is designed around how you actually think rather than around how AI wants you to think?
 
+### Building around the thinking: a personal AI research infrastructure designed for non-linear creative practice
+
+setting out to research generative AI in learning and education, I was not expecting the site of my growing research to become in quite a meta sense - the core site of my research. But from the start rather unintentionally the foundations of a wider personal AI research infrastructure was seeded. 
+
+As a basis, I notes and thinking are structure around the scaffold of a zettelkasten-inspired approach, which naturally allows for a slow formulation and clustering of ideas. I started to wonder if from this emergent cluster there could be ways to implement LLM tools to surface or work with this alongside my thinking, but always keeping within it's seperate domain. This is the central tension and my desire to understand and build toward. How can I work with LLM's on the growing dataset which is my research, but working against some of the understood behaviours and functionalities of this technology - optimisation, productivity and efficiency and swift evaluation. How can I instead create a space where thoughts can be investigated and played with, that stimulate and aid my process rather that taking the reins from my by too swiftly resolving all open issues or problems
+
+~~As my research began to grow, naturally I started to see and understand that this was a perfect dataset for LLM tools that might aid me in my research and that I should built on top of this.~~ 
+
+
+
+
 
 **the zettelkasten instinct**
 
