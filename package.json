@@ -5,8 +5,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "prebuild": "node src/site/get-theme.js && npx sass src/site/styles:src/site/styles --no-source-map --style=expanded && node scripts/generate-revisions.js",
-        "build": "rm -rf dist && npx @11ty/eleventy",
+        "prebuild": "node src/site/get-theme.js && npx sass src/site/styles:src/site/styles --no-source-map --style=expanded",        "build": "rm -rf dist && npx @11ty/eleventy",
         "dev": "npm run prebuild && rm -rf dist && npx @11ty/eleventy --serve",
         "start": "npm run dev"
     },

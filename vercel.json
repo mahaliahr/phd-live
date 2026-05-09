@@ -1,7 +1,7 @@
 {
     "outputDirectory": "dist",
     "installCommand": "npm install",
-    "buildCommand": "git fetch --depth=2147483647 origin && git rev-list --count HEAD && npm run build",  
+    "buildCommand": "npm run build",
     "devCommand": "npm run start",
     "routes": [
         { "handle": "filesystem" },

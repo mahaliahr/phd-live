@@ -1,0 +1,4 @@
+#!/bin/sh
+echo "Generating revisions..."
+node scripts/generate-revisions.js
+git add src/site/_data/revisions.json

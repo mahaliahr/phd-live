@@ -15,8 +15,7 @@ description: >-
 updated: '2025-10-15T21:01:33.999Z'
 title: 22 01 2024 where did i learn to learn
 ---
-
-I didn't learn how to learn from school. 
+I feel like I I didn't learn how to learn from school. 
 
 So where did I learn it from?
 
