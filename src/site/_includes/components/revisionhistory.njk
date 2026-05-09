@@ -5,14 +5,15 @@
   <div class="revision-history__header">
     <span class="revision-history__label">Revision history</span>
     <span class="revision-history__summary">
-        {{ noteRevisions.revisions.length }} revision{% if noteRevisions.revisions.length !== 1 %}s{% endif %}
-        {% if noteRevisions.noteDate %}· {{ noteRevisions.noteDate }}{% endif %}
+      {{ noteRevisions.revisions.length }} revision{% if noteRevisions.revisions.length !== 1 %}s{% endif %}
+      {% if noteRevisions.noteDate %}· {{ noteRevisions.noteDate }}{% endif %}
     </span>
   </div>
 
   <p class="revision-history__explainer">The revisions below show how this note has changed over time.</p>
 
   {% for rev in noteRevisions.revisions %}
+  {% if rev.added > 0 or rev.removed > 0 or loop.last %}
   <div class="revision-row">
     <button class="revision-toggle" aria-expanded="false">
       <span class="revision-date">{{ rev.date }}</span>
@@ -39,6 +40,7 @@
       {% endif %}
     </div>
   </div>
+  {% endif %}
   {% endfor %}
 
 </div>

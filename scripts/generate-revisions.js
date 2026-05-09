@@ -2,19 +2,10 @@ const { execSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 const glob = require('glob');
-// const Diff = require('diff');
 const matter = require('gray-matter');
 
 const NOTES_DIR = 'src/site/notes';
 const OUTPUT = 'src/site/_data/revisions.json';
-
-function stripFrontmatter(content) {
-  return content.replace(/^---[\s\S]*?---\n?/, '').trim();
-}
-
-function getWordCount(text) {
-  return text.trim().split(/\s+/).filter(Boolean).length;
-}
 
 function stripFrontmatter(content) {
   return content.replace(/^---[\s\S]*?---\n?/, '').trim();
@@ -76,19 +67,19 @@ function parsePatchToDiff(patch) {
 
   for (const line of lines) {
     if (line.startsWith('+++') || line.startsWith('---') || line.startsWith('@@')) {
-    continue;
+      continue;
     } else if (line.startsWith('+')) {
       const word = stripFrontmatter(line.slice(1).trim());
       if (word) {
         result += `{+${word}+} `;
         added += word.split(/\s+/).length;
-    }
+      }
     } else if (line.startsWith('-')) {
       const word = stripFrontmatter(line.slice(1).trim());
       if (word) {
         result += `[-${word}-] `;
         removed += word.split(/\s+/).length;
-    }
+      }
     }
   }
 
@@ -114,9 +105,8 @@ function buildRevisions(filepath) {
 
   const collapsed = collapseByDay(commits);
 
-  const revisions = collapsed.map((commit, i) => {
+  const revisions = collapsed.map((commit) => {
     const { diff, added, removed } = parsePatchToDiff(commit.diff);
-
     return {
       date: commit.date,
       hash: commit.hash.slice(0, 7),
@@ -135,7 +125,11 @@ function buildRevisions(filepath) {
 }
 
 // Main
-const files = glob.sync(`${NOTES_DIR}/**/*.md`).filter(f => !f.includes('notes/_templates'));
+const files = glob.sync(`${NOTES_DIR}/**/*.md`).filter(f =>
+  !f.includes('notes/_templates') &&
+  !f.includes('notes/_unpublished')
+);
+
 const output = {};
 
 for (const filepath of files) {
@@ -147,11 +141,9 @@ for (const filepath of files) {
   const result = buildRevisions(filepath);
   if (result && result.revisions.length > 0) {
     output[slug] = result;
-  } else {
-    console.log('Skipped:', filepath);
   }
 }
 
 fs.mkdirSync(path.dirname(OUTPUT), { recursive: true });
 fs.writeFileSync(OUTPUT, JSON.stringify(output, null, 2));
-console.log(`Revisions generated for ${Object.keys(output).length} notes`);
+console.log(`✓ Revisions generated for ${Object.keys(output).length} notes`);
