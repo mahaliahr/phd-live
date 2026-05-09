@@ -12820,7 +12820,7 @@
     ]
   },
   "2026-05-08": {
-    "noteDate": null,
+    "noteDate": "2026-05-08",
     "revisions": [
       {
         "date": "2026-05-09",
@@ -12834,7 +12834,7 @@
     ]
   },
   "2026-05-07": {
-    "noteDate": null,
+    "noteDate": "2026-05-07",
     "revisions": [
       {
         "date": "2026-05-08",
@@ -12848,7 +12848,7 @@
     ]
   },
   "2026-05-04": {
-    "noteDate": null,
+    "noteDate": "2026-05-04",
     "revisions": [
       {
         "date": "2026-05-05",
@@ -12871,7 +12871,7 @@
     ]
   },
   "2026-05-03": {
-    "noteDate": null,
+    "noteDate": "2026-05-03",
     "revisions": [
       {
         "date": "2026-05-04",
@@ -12890,92 +12890,11 @@
         "added": 14,
         "removed": 14,
         "diff": "[-title: <% tp.date.now('YYYY-MM-DD') %>-] {+title: 2026-05-03+} [-- <% tp.date.now(\"HH:mm\") %>-] [-start:: <% tp.date.now(\"YYYY-MM-DDTHH:mm:ssZZ\") %>-] [-topic::-] [-</details>-] {+start:: 2026-05-03T19:38:27+0100+} {+topic:: planning / working through my to-do list+} {+</details>+} {+[[conferences-workshops-etc]]+}"
-      },
-      {
-        "date": "2026-03-31",
-        "hash": "fb851f8",
-        "wordCount": 14,
-        "delta": -1,
-        "added": 14,
-        "removed": 15,
-        "diff": "[-Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...-] {+Session: start:: YYYY-MM-DD HH:MM+ZZ | end:: ... | topic:: ...+} [-start:: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>-] {+start:: <% tp.date.now(\"YYYY-MM-DDTHH:mm:ssZZ\") %>+}"
-      },
-      {
-        "date": "2026-01-24",
-        "hash": "ab6ec12",
-        "wordCount": 7,
-        "delta": -2,
-        "added": 7,
-        "removed": 9,
-        "diff": "[-- <% tp.date.now(\"HH:mm\") %> Started day-] {+- <% tp.date.now(\"HH:mm\") %>+} [-#### Session-] {+<details>+} {+<summary>Session</summary>+} [-end::-] {+</details>+}"
-      },
-      {
-        "date": "2026-01-22",
-        "hash": "d13c6dc",
-        "wordCount": 19,
-        "delta": -17,
-        "added": 19,
-        "removed": 36,
-        "diff": "[-Embedded session syntax (widget detects start:: anywhere):-] [-start:: YYYY-MM-DD HH:MM-] [-end:: YYYY-MM-DD HH:MM-] [-topic:: short title-] {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} [-Milestone syntax (anywhere in any note):-] [-- [ ] Do the thing #milestone @YYYY-MM-DD-] [-- [x] Done thing #milestone @YYYY-MM-DD-]"
-      },
-      {
-        "date": "2026-01-20",
-        "hash": "e8230b3",
-        "wordCount": 65,
-        "delta": 52,
-        "added": 65,
-        "removed": 13,
-        "diff": "[-## Daily Log-] [-- <% tp.date.now('HH:mm') %>-] {+<!--+} {+Daily note template (PhD-Live)+} [-### Focus-] {+Stream line syntax:+} {+- HH:MM something you did+} [-### Notes-] {+Embedded session syntax (widget detects start:: anywhere):+} {+start:: YYYY-MM-DD HH:MM+} {+end:: YYYY-MM-DD HH:MM+} {+topic:: short title+} [-### Tomorrow-] {+Milestone syntax (anywhere in any note):+} {+- [ ] Do the thing #milestone @YYYY-MM-DD+} {+- [x] Done thing #milestone @YYYY-MM-DD+} {+-->+} {+- <% tp.date.now(\"HH:mm\") %> Started day+} {+#### Session+} {+start:: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>+} {+topic::+} {+end::+}"
-      },
-      {
-        "date": "2026-01-16",
-        "hash": "4416544",
-        "wordCount": 13,
-        "delta": 13,
-        "added": 13,
-        "removed": 0,
-        "diff": "{+dg-publish: true+} {+visibility: public+} {+tags:+} {+- daily+} {+- stream+} {+- <% tp.date.now('HH:mm') %>+}"
-      },
-      {
-        "date": "2026-01-15",
-        "hash": "f80d77d",
-        "wordCount": 6,
-        "delta": 6,
-        "added": 6,
-        "removed": 0,
-        "diff": "{+---+} {+title: <% tp.date.now('YYYY-MM-DD') %>+} {+---+}"
-      },
-      {
-        "date": "2026-01-11",
-        "hash": "40dbbff",
-        "wordCount": 9,
-        "delta": -26,
-        "added": 9,
-        "removed": 35,
-        "diff": "[-title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"-] [-dg-publish: true-] [-visibility: public-] [-tags:-] [-- daily-] [-- stream-] [-permalink: false-] [-eleventyExcludeFromCollections: true-] {+## Daily Log+} [-- <% tp.date.now('HH:mm') %> Started…-] [-- <% tp.date.now('HH:mm') %> Linked [[zettel]]-] [-- <% tp.date.now('HH:mm') %> Wrap-up-] {+### Focus+} {+### Notes+} {+### Tomorrow+}"
-      },
-      {
-        "date": "2025-10-22",
-        "hash": "08f6ac6",
-        "wordCount": 31,
-        "delta": 16,
-        "added": 31,
-        "removed": 15,
-        "diff": "[-title: \"2025-10-22\"-] {+title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"+} [-tags: [daily, stream]-] {+tags:+} {+- daily+} {+- stream+} {+permalink: false+} {+eleventyExcludeFromCollections: true+} [-- 13:34 Started…-] [-- 13:34 Linked [[zettel]]-] [-- 13:34 Wrap-up-] {+- <% tp.date.now('HH:mm') %> Started…+} {+- <% tp.date.now('HH:mm') %> Linked [[zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up+}"
-      },
-      {
-        "date": "2025-10-21",
-        "hash": "01cf58d",
-        "wordCount": 34,
-        "delta": 15,
-        "added": 34,
-        "removed": 19,
-        "diff": "[-title: \"{{date}}\"-] {+title: \"<% tp.date.now('YYYY-MM-DD') %>\"+} [-date:: {{date}}-] [-- {{time}} Started day — plan: …-] [-- {{time}} Began [[session-writing-introduction]]-] [-- {{time}} Reflection: …-] {+- <% tp.date.now('HH:mm') %> Started day — plan: …+} {+- <% tp.date.now('HH:mm') %> Began [[session-...]]+} {+- <% tp.date.now('HH:mm') %> Linked insight to [[some-zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up: one line+}"
       }
     ]
   },
   "2026-05-02": {
-    "noteDate": null,
+    "noteDate": "2026-05-02",
     "revisions": [
       {
         "date": "2026-05-02",
@@ -12985,92 +12904,11 @@
         "added": 2,
         "removed": 0,
         "diff": "{+end:: 2026-05-02T23:00:47+0100+}"
-      },
-      {
-        "date": "2026-03-31",
-        "hash": "b3493b9",
-        "wordCount": 10,
-        "delta": 10,
-        "added": 10,
-        "removed": 0,
-        "diff": "{+end:: 2026-03-31T18:20:54+0100+} {+adding screenshots capture to show process over time+}"
-      },
-      {
-        "date": "2026-01-24",
-        "hash": "ab6ec12",
-        "wordCount": 7,
-        "delta": -2,
-        "added": 7,
-        "removed": 9,
-        "diff": "[-- <% tp.date.now(\"HH:mm\") %> Started day-] {+- <% tp.date.now(\"HH:mm\") %>+} [-#### Session-] {+<details>+} {+<summary>Session</summary>+} [-end::-] {+</details>+}"
-      },
-      {
-        "date": "2026-01-22",
-        "hash": "d13c6dc",
-        "wordCount": 19,
-        "delta": -17,
-        "added": 19,
-        "removed": 36,
-        "diff": "[-Embedded session syntax (widget detects start:: anywhere):-] [-start:: YYYY-MM-DD HH:MM-] [-end:: YYYY-MM-DD HH:MM-] [-topic:: short title-] {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} [-Milestone syntax (anywhere in any note):-] [-- [ ] Do the thing #milestone @YYYY-MM-DD-] [-- [x] Done thing #milestone @YYYY-MM-DD-]"
-      },
-      {
-        "date": "2026-01-20",
-        "hash": "e8230b3",
-        "wordCount": 65,
-        "delta": 52,
-        "added": 65,
-        "removed": 13,
-        "diff": "[-## Daily Log-] [-- <% tp.date.now('HH:mm') %>-] {+<!--+} {+Daily note template (PhD-Live)+} [-### Focus-] {+Stream line syntax:+} {+- HH:MM something you did+} [-### Notes-] {+Embedded session syntax (widget detects start:: anywhere):+} {+start:: YYYY-MM-DD HH:MM+} {+end:: YYYY-MM-DD HH:MM+} {+topic:: short title+} [-### Tomorrow-] {+Milestone syntax (anywhere in any note):+} {+- [ ] Do the thing #milestone @YYYY-MM-DD+} {+- [x] Done thing #milestone @YYYY-MM-DD+} {+-->+} {+- <% tp.date.now(\"HH:mm\") %> Started day+} {+#### Session+} {+start:: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>+} {+topic::+} {+end::+}"
-      },
-      {
-        "date": "2026-01-16",
-        "hash": "4416544",
-        "wordCount": 13,
-        "delta": 13,
-        "added": 13,
-        "removed": 0,
-        "diff": "{+dg-publish: true+} {+visibility: public+} {+tags:+} {+- daily+} {+- stream+} {+- <% tp.date.now('HH:mm') %>+}"
-      },
-      {
-        "date": "2026-01-15",
-        "hash": "f80d77d",
-        "wordCount": 6,
-        "delta": 6,
-        "added": 6,
-        "removed": 0,
-        "diff": "{+---+} {+title: <% tp.date.now('YYYY-MM-DD') %>+} {+---+}"
-      },
-      {
-        "date": "2026-01-11",
-        "hash": "40dbbff",
-        "wordCount": 9,
-        "delta": -26,
-        "added": 9,
-        "removed": 35,
-        "diff": "[-title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"-] [-dg-publish: true-] [-visibility: public-] [-tags:-] [-- daily-] [-- stream-] [-permalink: false-] [-eleventyExcludeFromCollections: true-] {+## Daily Log+} [-- <% tp.date.now('HH:mm') %> Started…-] [-- <% tp.date.now('HH:mm') %> Linked [[zettel]]-] [-- <% tp.date.now('HH:mm') %> Wrap-up-] {+### Focus+} {+### Notes+} {+### Tomorrow+}"
-      },
-      {
-        "date": "2025-10-22",
-        "hash": "08f6ac6",
-        "wordCount": 31,
-        "delta": 16,
-        "added": 31,
-        "removed": 15,
-        "diff": "[-title: \"2025-10-22\"-] {+title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"+} [-tags: [daily, stream]-] {+tags:+} {+- daily+} {+- stream+} {+permalink: false+} {+eleventyExcludeFromCollections: true+} [-- 13:34 Started…-] [-- 13:34 Linked [[zettel]]-] [-- 13:34 Wrap-up-] {+- <% tp.date.now('HH:mm') %> Started…+} {+- <% tp.date.now('HH:mm') %> Linked [[zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up+}"
-      },
-      {
-        "date": "2025-10-21",
-        "hash": "01cf58d",
-        "wordCount": 34,
-        "delta": 15,
-        "added": 34,
-        "removed": 19,
-        "diff": "[-title: \"{{date}}\"-] {+title: \"<% tp.date.now('YYYY-MM-DD') %>\"+} [-date:: {{date}}-] [-- {{time}} Started day — plan: …-] [-- {{time}} Began [[session-writing-introduction]]-] [-- {{time}} Reflection: …-] {+- <% tp.date.now('HH:mm') %> Started day — plan: …+} {+- <% tp.date.now('HH:mm') %> Began [[session-...]]+} {+- <% tp.date.now('HH:mm') %> Linked insight to [[some-zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up: one line+}"
       }
     ]
   },
   "2026-04-30": {
-    "noteDate": null,
+    "noteDate": "2026-04-30",
     "revisions": [
       {
         "date": "2026-05-01",
@@ -13093,7 +12931,7 @@
     ]
   },
   "2026-04-27": {
-    "noteDate": null,
+    "noteDate": "2026-04-27",
     "revisions": [
       {
         "date": "2026-04-27",
@@ -13103,92 +12941,11 @@
         "added": 34,
         "removed": 1,
         "diff": "{+end::2026-04-27T20:18:18+0100+} {+</details>+} [-</details>-] {+- doing research and making sense of related '[[bot]]' projects (ongoing).+} {+- A little writing about [[possibility-spaces-and-impossibility-spaces]] in relation to workplace chaos as of present.+} {+- and some more thoughts around [[zettelkasten]]+}"
-      },
-      {
-        "date": "2026-03-31",
-        "hash": "fb851f8",
-        "wordCount": 14,
-        "delta": -1,
-        "added": 14,
-        "removed": 15,
-        "diff": "[-Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...-] {+Session: start:: YYYY-MM-DD HH:MM+ZZ | end:: ... | topic:: ...+} [-start:: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>-] {+start:: <% tp.date.now(\"YYYY-MM-DDTHH:mm:ssZZ\") %>+}"
-      },
-      {
-        "date": "2026-01-24",
-        "hash": "ab6ec12",
-        "wordCount": 7,
-        "delta": -2,
-        "added": 7,
-        "removed": 9,
-        "diff": "[-- <% tp.date.now(\"HH:mm\") %> Started day-] {+- <% tp.date.now(\"HH:mm\") %>+} [-#### Session-] {+<details>+} {+<summary>Session</summary>+} [-end::-] {+</details>+}"
-      },
-      {
-        "date": "2026-01-22",
-        "hash": "d13c6dc",
-        "wordCount": 19,
-        "delta": -17,
-        "added": 19,
-        "removed": 36,
-        "diff": "[-Embedded session syntax (widget detects start:: anywhere):-] [-start:: YYYY-MM-DD HH:MM-] [-end:: YYYY-MM-DD HH:MM-] [-topic:: short title-] {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} [-Milestone syntax (anywhere in any note):-] [-- [ ] Do the thing #milestone @YYYY-MM-DD-] [-- [x] Done thing #milestone @YYYY-MM-DD-]"
-      },
-      {
-        "date": "2026-01-20",
-        "hash": "e8230b3",
-        "wordCount": 65,
-        "delta": 52,
-        "added": 65,
-        "removed": 13,
-        "diff": "[-## Daily Log-] [-- <% tp.date.now('HH:mm') %>-] {+<!--+} {+Daily note template (PhD-Live)+} [-### Focus-] {+Stream line syntax:+} {+- HH:MM something you did+} [-### Notes-] {+Embedded session syntax (widget detects start:: anywhere):+} {+start:: YYYY-MM-DD HH:MM+} {+end:: YYYY-MM-DD HH:MM+} {+topic:: short title+} [-### Tomorrow-] {+Milestone syntax (anywhere in any note):+} {+- [ ] Do the thing #milestone @YYYY-MM-DD+} {+- [x] Done thing #milestone @YYYY-MM-DD+} {+-->+} {+- <% tp.date.now(\"HH:mm\") %> Started day+} {+#### Session+} {+start:: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>+} {+topic::+} {+end::+}"
-      },
-      {
-        "date": "2026-01-16",
-        "hash": "4416544",
-        "wordCount": 13,
-        "delta": 13,
-        "added": 13,
-        "removed": 0,
-        "diff": "{+dg-publish: true+} {+visibility: public+} {+tags:+} {+- daily+} {+- stream+} {+- <% tp.date.now('HH:mm') %>+}"
-      },
-      {
-        "date": "2026-01-15",
-        "hash": "f80d77d",
-        "wordCount": 6,
-        "delta": 6,
-        "added": 6,
-        "removed": 0,
-        "diff": "{+---+} {+title: <% tp.date.now('YYYY-MM-DD') %>+} {+---+}"
-      },
-      {
-        "date": "2026-01-11",
-        "hash": "40dbbff",
-        "wordCount": 9,
-        "delta": -26,
-        "added": 9,
-        "removed": 35,
-        "diff": "[-title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"-] [-dg-publish: true-] [-visibility: public-] [-tags:-] [-- daily-] [-- stream-] [-permalink: false-] [-eleventyExcludeFromCollections: true-] {+## Daily Log+} [-- <% tp.date.now('HH:mm') %> Started…-] [-- <% tp.date.now('HH:mm') %> Linked [[zettel]]-] [-- <% tp.date.now('HH:mm') %> Wrap-up-] {+### Focus+} {+### Notes+} {+### Tomorrow+}"
-      },
-      {
-        "date": "2025-10-22",
-        "hash": "08f6ac6",
-        "wordCount": 31,
-        "delta": 16,
-        "added": 31,
-        "removed": 15,
-        "diff": "[-title: \"2025-10-22\"-] {+title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"+} [-tags: [daily, stream]-] {+tags:+} {+- daily+} {+- stream+} {+permalink: false+} {+eleventyExcludeFromCollections: true+} [-- 13:34 Started…-] [-- 13:34 Linked [[zettel]]-] [-- 13:34 Wrap-up-] {+- <% tp.date.now('HH:mm') %> Started…+} {+- <% tp.date.now('HH:mm') %> Linked [[zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up+}"
-      },
-      {
-        "date": "2025-10-21",
-        "hash": "01cf58d",
-        "wordCount": 34,
-        "delta": 15,
-        "added": 34,
-        "removed": 19,
-        "diff": "[-title: \"{{date}}\"-] {+title: \"<% tp.date.now('YYYY-MM-DD') %>\"+} [-date:: {{date}}-] [-- {{time}} Started day — plan: …-] [-- {{time}} Began [[session-writing-introduction]]-] [-- {{time}} Reflection: …-] {+- <% tp.date.now('HH:mm') %> Started day — plan: …+} {+- <% tp.date.now('HH:mm') %> Began [[session-...]]+} {+- <% tp.date.now('HH:mm') %> Linked insight to [[some-zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up: one line+}"
       }
     ]
   },
   "2026-04-26": {
-    "noteDate": null,
+    "noteDate": "2026-04-26",
     "revisions": [
       {
         "date": "2026-04-27",
@@ -13207,92 +12964,11 @@
         "added": 3,
         "removed": 2,
         "diff": "[-topic:: reading-] {+topic:: website reworking+}"
-      },
-      {
-        "date": "2026-03-31",
-        "hash": "b3493b9",
-        "wordCount": 10,
-        "delta": 10,
-        "added": 10,
-        "removed": 0,
-        "diff": "{+end:: 2026-03-31T18:20:54+0100+} {+adding screenshots capture to show process over time+}"
-      },
-      {
-        "date": "2026-01-24",
-        "hash": "ab6ec12",
-        "wordCount": 7,
-        "delta": -2,
-        "added": 7,
-        "removed": 9,
-        "diff": "[-- <% tp.date.now(\"HH:mm\") %> Started day-] {+- <% tp.date.now(\"HH:mm\") %>+} [-#### Session-] {+<details>+} {+<summary>Session</summary>+} [-end::-] {+</details>+}"
-      },
-      {
-        "date": "2026-01-22",
-        "hash": "d13c6dc",
-        "wordCount": 19,
-        "delta": -17,
-        "added": 19,
-        "removed": 36,
-        "diff": "[-Embedded session syntax (widget detects start:: anywhere):-] [-start:: YYYY-MM-DD HH:MM-] [-end:: YYYY-MM-DD HH:MM-] [-topic:: short title-] {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} [-Milestone syntax (anywhere in any note):-] [-- [ ] Do the thing #milestone @YYYY-MM-DD-] [-- [x] Done thing #milestone @YYYY-MM-DD-]"
-      },
-      {
-        "date": "2026-01-20",
-        "hash": "e8230b3",
-        "wordCount": 65,
-        "delta": 52,
-        "added": 65,
-        "removed": 13,
-        "diff": "[-## Daily Log-] [-- <% tp.date.now('HH:mm') %>-] {+<!--+} {+Daily note template (PhD-Live)+} [-### Focus-] {+Stream line syntax:+} {+- HH:MM something you did+} [-### Notes-] {+Embedded session syntax (widget detects start:: anywhere):+} {+start:: YYYY-MM-DD HH:MM+} {+end:: YYYY-MM-DD HH:MM+} {+topic:: short title+} [-### Tomorrow-] {+Milestone syntax (anywhere in any note):+} {+- [ ] Do the thing #milestone @YYYY-MM-DD+} {+- [x] Done thing #milestone @YYYY-MM-DD+} {+-->+} {+- <% tp.date.now(\"HH:mm\") %> Started day+} {+#### Session+} {+start:: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>+} {+topic::+} {+end::+}"
-      },
-      {
-        "date": "2026-01-16",
-        "hash": "4416544",
-        "wordCount": 13,
-        "delta": 13,
-        "added": 13,
-        "removed": 0,
-        "diff": "{+dg-publish: true+} {+visibility: public+} {+tags:+} {+- daily+} {+- stream+} {+- <% tp.date.now('HH:mm') %>+}"
-      },
-      {
-        "date": "2026-01-15",
-        "hash": "f80d77d",
-        "wordCount": 6,
-        "delta": 6,
-        "added": 6,
-        "removed": 0,
-        "diff": "{+---+} {+title: <% tp.date.now('YYYY-MM-DD') %>+} {+---+}"
-      },
-      {
-        "date": "2026-01-11",
-        "hash": "40dbbff",
-        "wordCount": 9,
-        "delta": -26,
-        "added": 9,
-        "removed": 35,
-        "diff": "[-title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"-] [-dg-publish: true-] [-visibility: public-] [-tags:-] [-- daily-] [-- stream-] [-permalink: false-] [-eleventyExcludeFromCollections: true-] {+## Daily Log+} [-- <% tp.date.now('HH:mm') %> Started…-] [-- <% tp.date.now('HH:mm') %> Linked [[zettel]]-] [-- <% tp.date.now('HH:mm') %> Wrap-up-] {+### Focus+} {+### Notes+} {+### Tomorrow+}"
-      },
-      {
-        "date": "2025-10-22",
-        "hash": "08f6ac6",
-        "wordCount": 31,
-        "delta": 16,
-        "added": 31,
-        "removed": 15,
-        "diff": "[-title: \"2025-10-22\"-] {+title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"+} [-tags: [daily, stream]-] {+tags:+} {+- daily+} {+- stream+} {+permalink: false+} {+eleventyExcludeFromCollections: true+} [-- 13:34 Started…-] [-- 13:34 Linked [[zettel]]-] [-- 13:34 Wrap-up-] {+- <% tp.date.now('HH:mm') %> Started…+} {+- <% tp.date.now('HH:mm') %> Linked [[zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up+}"
-      },
-      {
-        "date": "2025-10-21",
-        "hash": "01cf58d",
-        "wordCount": 34,
-        "delta": 15,
-        "added": 34,
-        "removed": 19,
-        "diff": "[-title: \"{{date}}\"-] {+title: \"<% tp.date.now('YYYY-MM-DD') %>\"+} [-date:: {{date}}-] [-- {{time}} Started day — plan: …-] [-- {{time}} Began [[session-writing-introduction]]-] [-- {{time}} Reflection: …-] {+- <% tp.date.now('HH:mm') %> Started day — plan: …+} {+- <% tp.date.now('HH:mm') %> Began [[session-...]]+} {+- <% tp.date.now('HH:mm') %> Linked insight to [[some-zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up: one line+}"
       }
     ]
   },
   "2026-04-25": {
-    "noteDate": null,
+    "noteDate": "2026-04-25",
     "revisions": [
       {
         "date": "2026-04-26",
@@ -13315,7 +12991,7 @@
     ]
   },
   "2026-04-22": {
-    "noteDate": null,
+    "noteDate": "2026-04-22",
     "revisions": [
       {
         "date": "2026-04-23",
@@ -13329,7 +13005,7 @@
     ]
   },
   "2026-04-20": {
-    "noteDate": null,
+    "noteDate": "2026-04-20",
     "revisions": [
       {
         "date": "2026-04-21",
@@ -13352,7 +13028,7 @@
     ]
   },
   "2026-04-18": {
-    "noteDate": null,
+    "noteDate": "2026-04-18",
     "revisions": [
       {
         "date": "2026-04-19",
@@ -13371,92 +13047,11 @@
         "added": 18,
         "removed": 14,
         "diff": "[-title: <% tp.date.now('YYYY-MM-DD') %>-] {+title: 2026-04-18+} [-- <% tp.date.now(\"HH:mm\") %>-] [-start:: <% tp.date.now(\"YYYY-MM-DDTHH:mm:ssZZ\") %>-] [-topic::-] [-</details>-] {+start:: 2026-04-18T19:02:16+0100+} {+topic:: research infrastructure build+} {+</details>+} {+working on the shared context for the bots+} {+[[research-infrastructure]]+}"
-      },
-      {
-        "date": "2026-03-31",
-        "hash": "fb851f8",
-        "wordCount": 14,
-        "delta": -1,
-        "added": 14,
-        "removed": 15,
-        "diff": "[-Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...-] {+Session: start:: YYYY-MM-DD HH:MM+ZZ | end:: ... | topic:: ...+} [-start:: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>-] {+start:: <% tp.date.now(\"YYYY-MM-DDTHH:mm:ssZZ\") %>+}"
-      },
-      {
-        "date": "2026-01-24",
-        "hash": "ab6ec12",
-        "wordCount": 7,
-        "delta": -2,
-        "added": 7,
-        "removed": 9,
-        "diff": "[-- <% tp.date.now(\"HH:mm\") %> Started day-] {+- <% tp.date.now(\"HH:mm\") %>+} [-#### Session-] {+<details>+} {+<summary>Session</summary>+} [-end::-] {+</details>+}"
-      },
-      {
-        "date": "2026-01-22",
-        "hash": "d13c6dc",
-        "wordCount": 19,
-        "delta": -17,
-        "added": 19,
-        "removed": 36,
-        "diff": "[-Embedded session syntax (widget detects start:: anywhere):-] [-start:: YYYY-MM-DD HH:MM-] [-end:: YYYY-MM-DD HH:MM-] [-topic:: short title-] {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} [-Milestone syntax (anywhere in any note):-] [-- [ ] Do the thing #milestone @YYYY-MM-DD-] [-- [x] Done thing #milestone @YYYY-MM-DD-]"
-      },
-      {
-        "date": "2026-01-20",
-        "hash": "e8230b3",
-        "wordCount": 65,
-        "delta": 52,
-        "added": 65,
-        "removed": 13,
-        "diff": "[-## Daily Log-] [-- <% tp.date.now('HH:mm') %>-] {+<!--+} {+Daily note template (PhD-Live)+} [-### Focus-] {+Stream line syntax:+} {+- HH:MM something you did+} [-### Notes-] {+Embedded session syntax (widget detects start:: anywhere):+} {+start:: YYYY-MM-DD HH:MM+} {+end:: YYYY-MM-DD HH:MM+} {+topic:: short title+} [-### Tomorrow-] {+Milestone syntax (anywhere in any note):+} {+- [ ] Do the thing #milestone @YYYY-MM-DD+} {+- [x] Done thing #milestone @YYYY-MM-DD+} {+-->+} {+- <% tp.date.now(\"HH:mm\") %> Started day+} {+#### Session+} {+start:: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>+} {+topic::+} {+end::+}"
-      },
-      {
-        "date": "2026-01-16",
-        "hash": "4416544",
-        "wordCount": 13,
-        "delta": 13,
-        "added": 13,
-        "removed": 0,
-        "diff": "{+dg-publish: true+} {+visibility: public+} {+tags:+} {+- daily+} {+- stream+} {+- <% tp.date.now('HH:mm') %>+}"
-      },
-      {
-        "date": "2026-01-15",
-        "hash": "f80d77d",
-        "wordCount": 6,
-        "delta": 6,
-        "added": 6,
-        "removed": 0,
-        "diff": "{+---+} {+title: <% tp.date.now('YYYY-MM-DD') %>+} {+---+}"
-      },
-      {
-        "date": "2026-01-11",
-        "hash": "40dbbff",
-        "wordCount": 9,
-        "delta": -26,
-        "added": 9,
-        "removed": 35,
-        "diff": "[-title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"-] [-dg-publish: true-] [-visibility: public-] [-tags:-] [-- daily-] [-- stream-] [-permalink: false-] [-eleventyExcludeFromCollections: true-] {+## Daily Log+} [-- <% tp.date.now('HH:mm') %> Started…-] [-- <% tp.date.now('HH:mm') %> Linked [[zettel]]-] [-- <% tp.date.now('HH:mm') %> Wrap-up-] {+### Focus+} {+### Notes+} {+### Tomorrow+}"
-      },
-      {
-        "date": "2025-10-22",
-        "hash": "08f6ac6",
-        "wordCount": 31,
-        "delta": 16,
-        "added": 31,
-        "removed": 15,
-        "diff": "[-title: \"2025-10-22\"-] {+title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"+} [-tags: [daily, stream]-] {+tags:+} {+- daily+} {+- stream+} {+permalink: false+} {+eleventyExcludeFromCollections: true+} [-- 13:34 Started…-] [-- 13:34 Linked [[zettel]]-] [-- 13:34 Wrap-up-] {+- <% tp.date.now('HH:mm') %> Started…+} {+- <% tp.date.now('HH:mm') %> Linked [[zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up+}"
-      },
-      {
-        "date": "2025-10-21",
-        "hash": "01cf58d",
-        "wordCount": 34,
-        "delta": 15,
-        "added": 34,
-        "removed": 19,
-        "diff": "[-title: \"{{date}}\"-] {+title: \"<% tp.date.now('YYYY-MM-DD') %>\"+} [-date:: {{date}}-] [-- {{time}} Started day — plan: …-] [-- {{time}} Began [[session-writing-introduction]]-] [-- {{time}} Reflection: …-] {+- <% tp.date.now('HH:mm') %> Started day — plan: …+} {+- <% tp.date.now('HH:mm') %> Began [[session-...]]+} {+- <% tp.date.now('HH:mm') %> Linked insight to [[some-zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up: one line+}"
       }
     ]
   },
   "2026-04-17": {
-    "noteDate": null,
+    "noteDate": "2026-04-17",
     "revisions": [
       {
         "date": "2026-04-30",
@@ -13479,7 +13074,7 @@
     ]
   },
   "2026-04-13": {
-    "noteDate": null,
+    "noteDate": "2026-04-13",
     "revisions": [
       {
         "date": "2026-04-14",
@@ -13502,7 +13097,7 @@
     ]
   },
   "2026-04-07": {
-    "noteDate": null,
+    "noteDate": "2026-04-07",
     "revisions": [
       {
         "date": "2026-04-19",
@@ -13525,7 +13120,7 @@
     ]
   },
   "2026-04-02": {
-    "noteDate": null,
+    "noteDate": "2026-04-02",
     "revisions": [
       {
         "date": "2026-04-02",
@@ -13539,7 +13134,7 @@
     ]
   },
   "2026-03-31": {
-    "noteDate": null,
+    "noteDate": "2026-03-31",
     "revisions": [
       {
         "date": "2026-03-31",
@@ -13549,83 +13144,11 @@
         "added": 10,
         "removed": 0,
         "diff": "{+end:: 2026-03-31T18:20:54+0100+} {+adding screenshots capture to show process over time+}"
-      },
-      {
-        "date": "2026-01-24",
-        "hash": "ab6ec12",
-        "wordCount": 7,
-        "delta": -2,
-        "added": 7,
-        "removed": 9,
-        "diff": "[-- <% tp.date.now(\"HH:mm\") %> Started day-] {+- <% tp.date.now(\"HH:mm\") %>+} [-#### Session-] {+<details>+} {+<summary>Session</summary>+} [-end::-] {+</details>+}"
-      },
-      {
-        "date": "2026-01-22",
-        "hash": "d13c6dc",
-        "wordCount": 19,
-        "delta": -17,
-        "added": 19,
-        "removed": 36,
-        "diff": "[-Embedded session syntax (widget detects start:: anywhere):-] [-start:: YYYY-MM-DD HH:MM-] [-end:: YYYY-MM-DD HH:MM-] [-topic:: short title-] {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} [-Milestone syntax (anywhere in any note):-] [-- [ ] Do the thing #milestone @YYYY-MM-DD-] [-- [x] Done thing #milestone @YYYY-MM-DD-]"
-      },
-      {
-        "date": "2026-01-20",
-        "hash": "e8230b3",
-        "wordCount": 65,
-        "delta": 52,
-        "added": 65,
-        "removed": 13,
-        "diff": "[-## Daily Log-] [-- <% tp.date.now('HH:mm') %>-] {+<!--+} {+Daily note template (PhD-Live)+} [-### Focus-] {+Stream line syntax:+} {+- HH:MM something you did+} [-### Notes-] {+Embedded session syntax (widget detects start:: anywhere):+} {+start:: YYYY-MM-DD HH:MM+} {+end:: YYYY-MM-DD HH:MM+} {+topic:: short title+} [-### Tomorrow-] {+Milestone syntax (anywhere in any note):+} {+- [ ] Do the thing #milestone @YYYY-MM-DD+} {+- [x] Done thing #milestone @YYYY-MM-DD+} {+-->+} {+- <% tp.date.now(\"HH:mm\") %> Started day+} {+#### Session+} {+start:: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>+} {+topic::+} {+end::+}"
-      },
-      {
-        "date": "2026-01-16",
-        "hash": "4416544",
-        "wordCount": 13,
-        "delta": 13,
-        "added": 13,
-        "removed": 0,
-        "diff": "{+dg-publish: true+} {+visibility: public+} {+tags:+} {+- daily+} {+- stream+} {+- <% tp.date.now('HH:mm') %>+}"
-      },
-      {
-        "date": "2026-01-15",
-        "hash": "f80d77d",
-        "wordCount": 6,
-        "delta": 6,
-        "added": 6,
-        "removed": 0,
-        "diff": "{+---+} {+title: <% tp.date.now('YYYY-MM-DD') %>+} {+---+}"
-      },
-      {
-        "date": "2026-01-11",
-        "hash": "40dbbff",
-        "wordCount": 9,
-        "delta": -26,
-        "added": 9,
-        "removed": 35,
-        "diff": "[-title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"-] [-dg-publish: true-] [-visibility: public-] [-tags:-] [-- daily-] [-- stream-] [-permalink: false-] [-eleventyExcludeFromCollections: true-] {+## Daily Log+} [-- <% tp.date.now('HH:mm') %> Started…-] [-- <% tp.date.now('HH:mm') %> Linked [[zettel]]-] [-- <% tp.date.now('HH:mm') %> Wrap-up-] {+### Focus+} {+### Notes+} {+### Tomorrow+}"
-      },
-      {
-        "date": "2025-10-22",
-        "hash": "08f6ac6",
-        "wordCount": 31,
-        "delta": 16,
-        "added": 31,
-        "removed": 15,
-        "diff": "[-title: \"2025-10-22\"-] {+title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"+} [-tags: [daily, stream]-] {+tags:+} {+- daily+} {+- stream+} {+permalink: false+} {+eleventyExcludeFromCollections: true+} [-- 13:34 Started…-] [-- 13:34 Linked [[zettel]]-] [-- 13:34 Wrap-up-] {+- <% tp.date.now('HH:mm') %> Started…+} {+- <% tp.date.now('HH:mm') %> Linked [[zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up+}"
-      },
-      {
-        "date": "2025-10-21",
-        "hash": "01cf58d",
-        "wordCount": 34,
-        "delta": 15,
-        "added": 34,
-        "removed": 19,
-        "diff": "[-title: \"{{date}}\"-] {+title: \"<% tp.date.now('YYYY-MM-DD') %>\"+} [-date:: {{date}}-] [-- {{time}} Started day — plan: …-] [-- {{time}} Began [[session-writing-introduction]]-] [-- {{time}} Reflection: …-] {+- <% tp.date.now('HH:mm') %> Started day — plan: …+} {+- <% tp.date.now('HH:mm') %> Began [[session-...]]+} {+- <% tp.date.now('HH:mm') %> Linked insight to [[some-zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up: one line+}"
       }
     ]
   },
   "2026-03-30": {
-    "noteDate": null,
+    "noteDate": "2026-03-30",
     "revisions": [
       {
         "date": "2026-04-26",
@@ -13653,92 +13176,11 @@
         "added": 3,
         "removed": 1,
         "diff": "[-</details>-] {+</details>+} {+[[PhD-Live-debugging-and feature-list]]+}"
-      },
-      {
-        "date": "2026-02-05",
-        "hash": "7fa63b9",
-        "wordCount": 14,
-        "delta": -3,
-        "added": 14,
-        "removed": 17,
-        "diff": "[-title: <% tp.date.now('YYYY-MM-DD') %>-] {+title: 2026-02-04+} [-- <% tp.date.now(\"HH:mm\") %>-] [-<details>-] [-<summary>Session</summary>-] [-start:: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>-] [-topic::-] [-</details>-] {+- 16:46 critical making vs critical design?? what are the core differences+}"
-      },
-      {
-        "date": "2026-01-24",
-        "hash": "ab6ec12",
-        "wordCount": 7,
-        "delta": -2,
-        "added": 7,
-        "removed": 9,
-        "diff": "[-- <% tp.date.now(\"HH:mm\") %> Started day-] {+- <% tp.date.now(\"HH:mm\") %>+} [-#### Session-] {+<details>+} {+<summary>Session</summary>+} [-end::-] {+</details>+}"
-      },
-      {
-        "date": "2026-01-22",
-        "hash": "d13c6dc",
-        "wordCount": 19,
-        "delta": -17,
-        "added": 19,
-        "removed": 36,
-        "diff": "[-Embedded session syntax (widget detects start:: anywhere):-] [-start:: YYYY-MM-DD HH:MM-] [-end:: YYYY-MM-DD HH:MM-] [-topic:: short title-] {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} [-Milestone syntax (anywhere in any note):-] [-- [ ] Do the thing #milestone @YYYY-MM-DD-] [-- [x] Done thing #milestone @YYYY-MM-DD-]"
-      },
-      {
-        "date": "2026-01-20",
-        "hash": "e8230b3",
-        "wordCount": 65,
-        "delta": 52,
-        "added": 65,
-        "removed": 13,
-        "diff": "[-## Daily Log-] [-- <% tp.date.now('HH:mm') %>-] {+<!--+} {+Daily note template (PhD-Live)+} [-### Focus-] {+Stream line syntax:+} {+- HH:MM something you did+} [-### Notes-] {+Embedded session syntax (widget detects start:: anywhere):+} {+start:: YYYY-MM-DD HH:MM+} {+end:: YYYY-MM-DD HH:MM+} {+topic:: short title+} [-### Tomorrow-] {+Milestone syntax (anywhere in any note):+} {+- [ ] Do the thing #milestone @YYYY-MM-DD+} {+- [x] Done thing #milestone @YYYY-MM-DD+} {+-->+} {+- <% tp.date.now(\"HH:mm\") %> Started day+} {+#### Session+} {+start:: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>+} {+topic::+} {+end::+}"
-      },
-      {
-        "date": "2026-01-16",
-        "hash": "4416544",
-        "wordCount": 13,
-        "delta": 13,
-        "added": 13,
-        "removed": 0,
-        "diff": "{+dg-publish: true+} {+visibility: public+} {+tags:+} {+- daily+} {+- stream+} {+- <% tp.date.now('HH:mm') %>+}"
-      },
-      {
-        "date": "2026-01-15",
-        "hash": "f80d77d",
-        "wordCount": 6,
-        "delta": 6,
-        "added": 6,
-        "removed": 0,
-        "diff": "{+---+} {+title: <% tp.date.now('YYYY-MM-DD') %>+} {+---+}"
-      },
-      {
-        "date": "2026-01-11",
-        "hash": "40dbbff",
-        "wordCount": 9,
-        "delta": -26,
-        "added": 9,
-        "removed": 35,
-        "diff": "[-title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"-] [-dg-publish: true-] [-visibility: public-] [-tags:-] [-- daily-] [-- stream-] [-permalink: false-] [-eleventyExcludeFromCollections: true-] {+## Daily Log+} [-- <% tp.date.now('HH:mm') %> Started…-] [-- <% tp.date.now('HH:mm') %> Linked [[zettel]]-] [-- <% tp.date.now('HH:mm') %> Wrap-up-] {+### Focus+} {+### Notes+} {+### Tomorrow+}"
-      },
-      {
-        "date": "2025-10-22",
-        "hash": "08f6ac6",
-        "wordCount": 31,
-        "delta": 16,
-        "added": 31,
-        "removed": 15,
-        "diff": "[-title: \"2025-10-22\"-] {+title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"+} [-tags: [daily, stream]-] {+tags:+} {+- daily+} {+- stream+} {+permalink: false+} {+eleventyExcludeFromCollections: true+} [-- 13:34 Started…-] [-- 13:34 Linked [[zettel]]-] [-- 13:34 Wrap-up-] {+- <% tp.date.now('HH:mm') %> Started…+} {+- <% tp.date.now('HH:mm') %> Linked [[zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up+}"
-      },
-      {
-        "date": "2025-10-21",
-        "hash": "01cf58d",
-        "wordCount": 34,
-        "delta": 15,
-        "added": 34,
-        "removed": 19,
-        "diff": "[-title: \"{{date}}\"-] {+title: \"<% tp.date.now('YYYY-MM-DD') %>\"+} [-date:: {{date}}-] [-- {{time}} Started day — plan: …-] [-- {{time}} Began [[session-writing-introduction]]-] [-- {{time}} Reflection: …-] {+- <% tp.date.now('HH:mm') %> Started day — plan: …+} {+- <% tp.date.now('HH:mm') %> Began [[session-...]]+} {+- <% tp.date.now('HH:mm') %> Linked insight to [[some-zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up: one line+}"
       }
     ]
   },
   "2026-03-28": {
-    "noteDate": null,
+    "noteDate": "2026-03-28",
     "revisions": [
       {
         "date": "2026-03-29",
@@ -13757,83 +13199,11 @@
         "added": 35,
         "removed": 24,
         "diff": "[-<summary>Session</summary>-] {+<summary>Session 1</summary>+} [-also sidenote re. notes and capturing my process, I am thinking that need more reflective notes as work is progressing -- field notes?-] {+also side note re. notes and capturing my process, I am thinking that need more reflective notes as work is progressing -- field notes?+} {+<details>+} {+<summary>Session 2</summary>+} {+start:: 2026-03-28T20:57:20+0000+} {+topic:: phd-live work+} {+</details>+}"
-      },
-      {
-        "date": "2026-01-24",
-        "hash": "ab6ec12",
-        "wordCount": 7,
-        "delta": -2,
-        "added": 7,
-        "removed": 9,
-        "diff": "[-- <% tp.date.now(\"HH:mm\") %> Started day-] {+- <% tp.date.now(\"HH:mm\") %>+} [-#### Session-] {+<details>+} {+<summary>Session</summary>+} [-end::-] {+</details>+}"
-      },
-      {
-        "date": "2026-01-22",
-        "hash": "d13c6dc",
-        "wordCount": 19,
-        "delta": -17,
-        "added": 19,
-        "removed": 36,
-        "diff": "[-Embedded session syntax (widget detects start:: anywhere):-] [-start:: YYYY-MM-DD HH:MM-] [-end:: YYYY-MM-DD HH:MM-] [-topic:: short title-] {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} [-Milestone syntax (anywhere in any note):-] [-- [ ] Do the thing #milestone @YYYY-MM-DD-] [-- [x] Done thing #milestone @YYYY-MM-DD-]"
-      },
-      {
-        "date": "2026-01-20",
-        "hash": "e8230b3",
-        "wordCount": 65,
-        "delta": 52,
-        "added": 65,
-        "removed": 13,
-        "diff": "[-## Daily Log-] [-- <% tp.date.now('HH:mm') %>-] {+<!--+} {+Daily note template (PhD-Live)+} [-### Focus-] {+Stream line syntax:+} {+- HH:MM something you did+} [-### Notes-] {+Embedded session syntax (widget detects start:: anywhere):+} {+start:: YYYY-MM-DD HH:MM+} {+end:: YYYY-MM-DD HH:MM+} {+topic:: short title+} [-### Tomorrow-] {+Milestone syntax (anywhere in any note):+} {+- [ ] Do the thing #milestone @YYYY-MM-DD+} {+- [x] Done thing #milestone @YYYY-MM-DD+} {+-->+} {+- <% tp.date.now(\"HH:mm\") %> Started day+} {+#### Session+} {+start:: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>+} {+topic::+} {+end::+}"
-      },
-      {
-        "date": "2026-01-16",
-        "hash": "4416544",
-        "wordCount": 13,
-        "delta": 13,
-        "added": 13,
-        "removed": 0,
-        "diff": "{+dg-publish: true+} {+visibility: public+} {+tags:+} {+- daily+} {+- stream+} {+- <% tp.date.now('HH:mm') %>+}"
-      },
-      {
-        "date": "2026-01-15",
-        "hash": "f80d77d",
-        "wordCount": 6,
-        "delta": 6,
-        "added": 6,
-        "removed": 0,
-        "diff": "{+---+} {+title: <% tp.date.now('YYYY-MM-DD') %>+} {+---+}"
-      },
-      {
-        "date": "2026-01-11",
-        "hash": "40dbbff",
-        "wordCount": 9,
-        "delta": -26,
-        "added": 9,
-        "removed": 35,
-        "diff": "[-title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"-] [-dg-publish: true-] [-visibility: public-] [-tags:-] [-- daily-] [-- stream-] [-permalink: false-] [-eleventyExcludeFromCollections: true-] {+## Daily Log+} [-- <% tp.date.now('HH:mm') %> Started…-] [-- <% tp.date.now('HH:mm') %> Linked [[zettel]]-] [-- <% tp.date.now('HH:mm') %> Wrap-up-] {+### Focus+} {+### Notes+} {+### Tomorrow+}"
-      },
-      {
-        "date": "2025-10-22",
-        "hash": "08f6ac6",
-        "wordCount": 31,
-        "delta": 16,
-        "added": 31,
-        "removed": 15,
-        "diff": "[-title: \"2025-10-22\"-] {+title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"+} [-tags: [daily, stream]-] {+tags:+} {+- daily+} {+- stream+} {+permalink: false+} {+eleventyExcludeFromCollections: true+} [-- 13:34 Started…-] [-- 13:34 Linked [[zettel]]-] [-- 13:34 Wrap-up-] {+- <% tp.date.now('HH:mm') %> Started…+} {+- <% tp.date.now('HH:mm') %> Linked [[zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up+}"
-      },
-      {
-        "date": "2025-10-21",
-        "hash": "01cf58d",
-        "wordCount": 34,
-        "delta": 15,
-        "added": 34,
-        "removed": 19,
-        "diff": "[-title: \"{{date}}\"-] {+title: \"<% tp.date.now('YYYY-MM-DD') %>\"+} [-date:: {{date}}-] [-- {{time}} Started day — plan: …-] [-- {{time}} Began [[session-writing-introduction]]-] [-- {{time}} Reflection: …-] {+- <% tp.date.now('HH:mm') %> Started day — plan: …+} {+- <% tp.date.now('HH:mm') %> Began [[session-...]]+} {+- <% tp.date.now('HH:mm') %> Linked insight to [[some-zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up: one line+}"
       }
     ]
   },
   "2026-03-27": {
-    "noteDate": null,
+    "noteDate": "2026-03-27",
     "revisions": [
       {
         "date": "2026-03-27",
@@ -13843,101 +13213,11 @@
         "added": 34,
         "removed": 14,
         "diff": "{+end:: 2026-03-27T23:18:51+0000+} [-looking for various conferences / public forums which I could potentially submit work to-] {+looking for various conferences / public forums which I could potentially submit work to:+} {+contining on from previous work a few weeks ago:  [[planning-for-public-sharing]]+} {+I am collating this work here -> [[public-sharing]]+}"
-      },
-      {
-        "date": "2026-02-25",
-        "hash": "47c58a4",
-        "wordCount": 0,
-        "delta": -2,
-        "added": 0,
-        "removed": 2,
-        "diff": "[-- 16:26-]"
-      },
-      {
-        "date": "2026-02-24",
-        "hash": "941673d",
-        "wordCount": 11,
-        "delta": -3,
-        "added": 11,
-        "removed": 14,
-        "diff": "[-title: <% tp.date.now('YYYY-MM-DD') %>-] {+title: 2026-02-24+} [-- <% tp.date.now(\"HH:mm\") %>-] {+- 16:26+} [-start:: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>-] [-topic::-] {+start:: 2026-02-24 16:26+} {+topic:: prepping for supervision+}"
-      },
-      {
-        "date": "2026-01-24",
-        "hash": "ab6ec12",
-        "wordCount": 7,
-        "delta": -2,
-        "added": 7,
-        "removed": 9,
-        "diff": "[-- <% tp.date.now(\"HH:mm\") %> Started day-] {+- <% tp.date.now(\"HH:mm\") %>+} [-#### Session-] {+<details>+} {+<summary>Session</summary>+} [-end::-] {+</details>+}"
-      },
-      {
-        "date": "2026-01-22",
-        "hash": "d13c6dc",
-        "wordCount": 19,
-        "delta": -17,
-        "added": 19,
-        "removed": 36,
-        "diff": "[-Embedded session syntax (widget detects start:: anywhere):-] [-start:: YYYY-MM-DD HH:MM-] [-end:: YYYY-MM-DD HH:MM-] [-topic:: short title-] {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} [-Milestone syntax (anywhere in any note):-] [-- [ ] Do the thing #milestone @YYYY-MM-DD-] [-- [x] Done thing #milestone @YYYY-MM-DD-]"
-      },
-      {
-        "date": "2026-01-20",
-        "hash": "e8230b3",
-        "wordCount": 65,
-        "delta": 52,
-        "added": 65,
-        "removed": 13,
-        "diff": "[-## Daily Log-] [-- <% tp.date.now('HH:mm') %>-] {+<!--+} {+Daily note template (PhD-Live)+} [-### Focus-] {+Stream line syntax:+} {+- HH:MM something you did+} [-### Notes-] {+Embedded session syntax (widget detects start:: anywhere):+} {+start:: YYYY-MM-DD HH:MM+} {+end:: YYYY-MM-DD HH:MM+} {+topic:: short title+} [-### Tomorrow-] {+Milestone syntax (anywhere in any note):+} {+- [ ] Do the thing #milestone @YYYY-MM-DD+} {+- [x] Done thing #milestone @YYYY-MM-DD+} {+-->+} {+- <% tp.date.now(\"HH:mm\") %> Started day+} {+#### Session+} {+start:: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>+} {+topic::+} {+end::+}"
-      },
-      {
-        "date": "2026-01-16",
-        "hash": "4416544",
-        "wordCount": 13,
-        "delta": 13,
-        "added": 13,
-        "removed": 0,
-        "diff": "{+dg-publish: true+} {+visibility: public+} {+tags:+} {+- daily+} {+- stream+} {+- <% tp.date.now('HH:mm') %>+}"
-      },
-      {
-        "date": "2026-01-15",
-        "hash": "f80d77d",
-        "wordCount": 6,
-        "delta": 6,
-        "added": 6,
-        "removed": 0,
-        "diff": "{+---+} {+title: <% tp.date.now('YYYY-MM-DD') %>+} {+---+}"
-      },
-      {
-        "date": "2026-01-11",
-        "hash": "40dbbff",
-        "wordCount": 9,
-        "delta": -26,
-        "added": 9,
-        "removed": 35,
-        "diff": "[-title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"-] [-dg-publish: true-] [-visibility: public-] [-tags:-] [-- daily-] [-- stream-] [-permalink: false-] [-eleventyExcludeFromCollections: true-] {+## Daily Log+} [-- <% tp.date.now('HH:mm') %> Started…-] [-- <% tp.date.now('HH:mm') %> Linked [[zettel]]-] [-- <% tp.date.now('HH:mm') %> Wrap-up-] {+### Focus+} {+### Notes+} {+### Tomorrow+}"
-      },
-      {
-        "date": "2025-10-22",
-        "hash": "08f6ac6",
-        "wordCount": 31,
-        "delta": 16,
-        "added": 31,
-        "removed": 15,
-        "diff": "[-title: \"2025-10-22\"-] {+title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"+} [-tags: [daily, stream]-] {+tags:+} {+- daily+} {+- stream+} {+permalink: false+} {+eleventyExcludeFromCollections: true+} [-- 13:34 Started…-] [-- 13:34 Linked [[zettel]]-] [-- 13:34 Wrap-up-] {+- <% tp.date.now('HH:mm') %> Started…+} {+- <% tp.date.now('HH:mm') %> Linked [[zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up+}"
-      },
-      {
-        "date": "2025-10-21",
-        "hash": "01cf58d",
-        "wordCount": 34,
-        "delta": 15,
-        "added": 34,
-        "removed": 19,
-        "diff": "[-title: \"{{date}}\"-] {+title: \"<% tp.date.now('YYYY-MM-DD') %>\"+} [-date:: {{date}}-] [-- {{time}} Started day — plan: …-] [-- {{time}} Began [[session-writing-introduction]]-] [-- {{time}} Reflection: …-] {+- <% tp.date.now('HH:mm') %> Started day — plan: …+} {+- <% tp.date.now('HH:mm') %> Began [[session-...]]+} {+- <% tp.date.now('HH:mm') %> Linked insight to [[some-zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up: one line+}"
       }
     ]
   },
   "2026-03-23": {
-    "noteDate": null,
+    "noteDate": "2026-03-23",
     "revisions": [
       {
         "date": "2026-03-23",
@@ -13951,7 +13231,7 @@
     ]
   },
   "2026-03-21": {
-    "noteDate": null,
+    "noteDate": "2026-03-21",
     "revisions": [
       {
         "date": "2026-05-04",
@@ -13970,101 +13250,11 @@
         "added": 2,
         "removed": 0,
         "diff": "{+end:: 2026-03-21T13:43:12+0000+}"
-      },
-      {
-        "date": "2026-02-25",
-        "hash": "47c58a4",
-        "wordCount": 0,
-        "delta": -2,
-        "added": 0,
-        "removed": 2,
-        "diff": "[-- 16:26-]"
-      },
-      {
-        "date": "2026-02-24",
-        "hash": "941673d",
-        "wordCount": 11,
-        "delta": -3,
-        "added": 11,
-        "removed": 14,
-        "diff": "[-title: <% tp.date.now('YYYY-MM-DD') %>-] {+title: 2026-02-24+} [-- <% tp.date.now(\"HH:mm\") %>-] {+- 16:26+} [-start:: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>-] [-topic::-] {+start:: 2026-02-24 16:26+} {+topic:: prepping for supervision+}"
-      },
-      {
-        "date": "2026-01-24",
-        "hash": "ab6ec12",
-        "wordCount": 7,
-        "delta": -2,
-        "added": 7,
-        "removed": 9,
-        "diff": "[-- <% tp.date.now(\"HH:mm\") %> Started day-] {+- <% tp.date.now(\"HH:mm\") %>+} [-#### Session-] {+<details>+} {+<summary>Session</summary>+} [-end::-] {+</details>+}"
-      },
-      {
-        "date": "2026-01-22",
-        "hash": "d13c6dc",
-        "wordCount": 19,
-        "delta": -17,
-        "added": 19,
-        "removed": 36,
-        "diff": "[-Embedded session syntax (widget detects start:: anywhere):-] [-start:: YYYY-MM-DD HH:MM-] [-end:: YYYY-MM-DD HH:MM-] [-topic:: short title-] {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} [-Milestone syntax (anywhere in any note):-] [-- [ ] Do the thing #milestone @YYYY-MM-DD-] [-- [x] Done thing #milestone @YYYY-MM-DD-]"
-      },
-      {
-        "date": "2026-01-20",
-        "hash": "e8230b3",
-        "wordCount": 65,
-        "delta": 52,
-        "added": 65,
-        "removed": 13,
-        "diff": "[-## Daily Log-] [-- <% tp.date.now('HH:mm') %>-] {+<!--+} {+Daily note template (PhD-Live)+} [-### Focus-] {+Stream line syntax:+} {+- HH:MM something you did+} [-### Notes-] {+Embedded session syntax (widget detects start:: anywhere):+} {+start:: YYYY-MM-DD HH:MM+} {+end:: YYYY-MM-DD HH:MM+} {+topic:: short title+} [-### Tomorrow-] {+Milestone syntax (anywhere in any note):+} {+- [ ] Do the thing #milestone @YYYY-MM-DD+} {+- [x] Done thing #milestone @YYYY-MM-DD+} {+-->+} {+- <% tp.date.now(\"HH:mm\") %> Started day+} {+#### Session+} {+start:: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>+} {+topic::+} {+end::+}"
-      },
-      {
-        "date": "2026-01-16",
-        "hash": "4416544",
-        "wordCount": 13,
-        "delta": 13,
-        "added": 13,
-        "removed": 0,
-        "diff": "{+dg-publish: true+} {+visibility: public+} {+tags:+} {+- daily+} {+- stream+} {+- <% tp.date.now('HH:mm') %>+}"
-      },
-      {
-        "date": "2026-01-15",
-        "hash": "f80d77d",
-        "wordCount": 6,
-        "delta": 6,
-        "added": 6,
-        "removed": 0,
-        "diff": "{+---+} {+title: <% tp.date.now('YYYY-MM-DD') %>+} {+---+}"
-      },
-      {
-        "date": "2026-01-11",
-        "hash": "40dbbff",
-        "wordCount": 9,
-        "delta": -26,
-        "added": 9,
-        "removed": 35,
-        "diff": "[-title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"-] [-dg-publish: true-] [-visibility: public-] [-tags:-] [-- daily-] [-- stream-] [-permalink: false-] [-eleventyExcludeFromCollections: true-] {+## Daily Log+} [-- <% tp.date.now('HH:mm') %> Started…-] [-- <% tp.date.now('HH:mm') %> Linked [[zettel]]-] [-- <% tp.date.now('HH:mm') %> Wrap-up-] {+### Focus+} {+### Notes+} {+### Tomorrow+}"
-      },
-      {
-        "date": "2025-10-22",
-        "hash": "08f6ac6",
-        "wordCount": 31,
-        "delta": 16,
-        "added": 31,
-        "removed": 15,
-        "diff": "[-title: \"2025-10-22\"-] {+title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"+} [-tags: [daily, stream]-] {+tags:+} {+- daily+} {+- stream+} {+permalink: false+} {+eleventyExcludeFromCollections: true+} [-- 13:34 Started…-] [-- 13:34 Linked [[zettel]]-] [-- 13:34 Wrap-up-] {+- <% tp.date.now('HH:mm') %> Started…+} {+- <% tp.date.now('HH:mm') %> Linked [[zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up+}"
-      },
-      {
-        "date": "2025-10-21",
-        "hash": "01cf58d",
-        "wordCount": 34,
-        "delta": 15,
-        "added": 34,
-        "removed": 19,
-        "diff": "[-title: \"{{date}}\"-] {+title: \"<% tp.date.now('YYYY-MM-DD') %>\"+} [-date:: {{date}}-] [-- {{time}} Started day — plan: …-] [-- {{time}} Began [[session-writing-introduction]]-] [-- {{time}} Reflection: …-] {+- <% tp.date.now('HH:mm') %> Started day — plan: …+} {+- <% tp.date.now('HH:mm') %> Began [[session-...]]+} {+- <% tp.date.now('HH:mm') %> Linked insight to [[some-zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up: one line+}"
       }
     ]
   },
   "2026-03-14": {
-    "noteDate": null,
+    "noteDate": "2026-03-14",
     "revisions": [
       {
         "date": "2026-05-02",
@@ -14096,7 +13286,7 @@
     ]
   },
   "2026-03-11": {
-    "noteDate": null,
+    "noteDate": "2026-03-11",
     "revisions": [
       {
         "date": "2026-03-11",
@@ -14110,7 +13300,7 @@
     ]
   },
   "2026-03-09": {
-    "noteDate": null,
+    "noteDate": "2026-03-09",
     "revisions": [
       {
         "date": "2026-03-09",
@@ -14120,101 +13310,11 @@
         "added": 49,
         "removed": 38,
         "diff": "{+end:: 2026-03-09T18:03:18+0000+} [-last week I got ethics approval for supervisor bot (whoop!) so now I can move forward in getting this going in a real way. I need to get the bot ready for use in my next supervision meeting.-] {+last week I got ethics approval for [[project-supervisor-bot]] (whoop!) so now I can move forward in getting this going in a real way. I need to get the bot ready for use in my next supervision meeting.+} {+thinking about [[teaching-bots]] more broadly and how this might work+}"
-      },
-      {
-        "date": "2026-02-25",
-        "hash": "47c58a4",
-        "wordCount": 0,
-        "delta": -2,
-        "added": 0,
-        "removed": 2,
-        "diff": "[-- 16:26-]"
-      },
-      {
-        "date": "2026-02-24",
-        "hash": "941673d",
-        "wordCount": 11,
-        "delta": -3,
-        "added": 11,
-        "removed": 14,
-        "diff": "[-title: <% tp.date.now('YYYY-MM-DD') %>-] {+title: 2026-02-24+} [-- <% tp.date.now(\"HH:mm\") %>-] {+- 16:26+} [-start:: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>-] [-topic::-] {+start:: 2026-02-24 16:26+} {+topic:: prepping for supervision+}"
-      },
-      {
-        "date": "2026-01-24",
-        "hash": "ab6ec12",
-        "wordCount": 7,
-        "delta": -2,
-        "added": 7,
-        "removed": 9,
-        "diff": "[-- <% tp.date.now(\"HH:mm\") %> Started day-] {+- <% tp.date.now(\"HH:mm\") %>+} [-#### Session-] {+<details>+} {+<summary>Session</summary>+} [-end::-] {+</details>+}"
-      },
-      {
-        "date": "2026-01-22",
-        "hash": "d13c6dc",
-        "wordCount": 19,
-        "delta": -17,
-        "added": 19,
-        "removed": 36,
-        "diff": "[-Embedded session syntax (widget detects start:: anywhere):-] [-start:: YYYY-MM-DD HH:MM-] [-end:: YYYY-MM-DD HH:MM-] [-topic:: short title-] {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} [-Milestone syntax (anywhere in any note):-] [-- [ ] Do the thing #milestone @YYYY-MM-DD-] [-- [x] Done thing #milestone @YYYY-MM-DD-]"
-      },
-      {
-        "date": "2026-01-20",
-        "hash": "e8230b3",
-        "wordCount": 65,
-        "delta": 52,
-        "added": 65,
-        "removed": 13,
-        "diff": "[-## Daily Log-] [-- <% tp.date.now('HH:mm') %>-] {+<!--+} {+Daily note template (PhD-Live)+} [-### Focus-] {+Stream line syntax:+} {+- HH:MM something you did+} [-### Notes-] {+Embedded session syntax (widget detects start:: anywhere):+} {+start:: YYYY-MM-DD HH:MM+} {+end:: YYYY-MM-DD HH:MM+} {+topic:: short title+} [-### Tomorrow-] {+Milestone syntax (anywhere in any note):+} {+- [ ] Do the thing #milestone @YYYY-MM-DD+} {+- [x] Done thing #milestone @YYYY-MM-DD+} {+-->+} {+- <% tp.date.now(\"HH:mm\") %> Started day+} {+#### Session+} {+start:: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>+} {+topic::+} {+end::+}"
-      },
-      {
-        "date": "2026-01-16",
-        "hash": "4416544",
-        "wordCount": 13,
-        "delta": 13,
-        "added": 13,
-        "removed": 0,
-        "diff": "{+dg-publish: true+} {+visibility: public+} {+tags:+} {+- daily+} {+- stream+} {+- <% tp.date.now('HH:mm') %>+}"
-      },
-      {
-        "date": "2026-01-15",
-        "hash": "f80d77d",
-        "wordCount": 6,
-        "delta": 6,
-        "added": 6,
-        "removed": 0,
-        "diff": "{+---+} {+title: <% tp.date.now('YYYY-MM-DD') %>+} {+---+}"
-      },
-      {
-        "date": "2026-01-11",
-        "hash": "40dbbff",
-        "wordCount": 9,
-        "delta": -26,
-        "added": 9,
-        "removed": 35,
-        "diff": "[-title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"-] [-dg-publish: true-] [-visibility: public-] [-tags:-] [-- daily-] [-- stream-] [-permalink: false-] [-eleventyExcludeFromCollections: true-] {+## Daily Log+} [-- <% tp.date.now('HH:mm') %> Started…-] [-- <% tp.date.now('HH:mm') %> Linked [[zettel]]-] [-- <% tp.date.now('HH:mm') %> Wrap-up-] {+### Focus+} {+### Notes+} {+### Tomorrow+}"
-      },
-      {
-        "date": "2025-10-22",
-        "hash": "08f6ac6",
-        "wordCount": 31,
-        "delta": 16,
-        "added": 31,
-        "removed": 15,
-        "diff": "[-title: \"2025-10-22\"-] {+title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"+} [-tags: [daily, stream]-] {+tags:+} {+- daily+} {+- stream+} {+permalink: false+} {+eleventyExcludeFromCollections: true+} [-- 13:34 Started…-] [-- 13:34 Linked [[zettel]]-] [-- 13:34 Wrap-up-] {+- <% tp.date.now('HH:mm') %> Started…+} {+- <% tp.date.now('HH:mm') %> Linked [[zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up+}"
-      },
-      {
-        "date": "2025-10-21",
-        "hash": "01cf58d",
-        "wordCount": 34,
-        "delta": 15,
-        "added": 34,
-        "removed": 19,
-        "diff": "[-title: \"{{date}}\"-] {+title: \"<% tp.date.now('YYYY-MM-DD') %>\"+} [-date:: {{date}}-] [-- {{time}} Started day — plan: …-] [-- {{time}} Began [[session-writing-introduction]]-] [-- {{time}} Reflection: …-] {+- <% tp.date.now('HH:mm') %> Started day — plan: …+} {+- <% tp.date.now('HH:mm') %> Began [[session-...]]+} {+- <% tp.date.now('HH:mm') %> Linked insight to [[some-zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up: one line+}"
       }
     ]
   },
   "2026-02-24": {
-    "noteDate": null,
+    "noteDate": "2026-02-24",
     "revisions": [
       {
         "date": "2026-02-25",
@@ -14233,83 +13333,11 @@
         "added": 11,
         "removed": 14,
         "diff": "[-title: <% tp.date.now('YYYY-MM-DD') %>-] {+title: 2026-02-24+} [-- <% tp.date.now(\"HH:mm\") %>-] {+- 16:26+} [-start:: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>-] [-topic::-] {+start:: 2026-02-24 16:26+} {+topic:: prepping for supervision+}"
-      },
-      {
-        "date": "2026-01-24",
-        "hash": "ab6ec12",
-        "wordCount": 7,
-        "delta": -2,
-        "added": 7,
-        "removed": 9,
-        "diff": "[-- <% tp.date.now(\"HH:mm\") %> Started day-] {+- <% tp.date.now(\"HH:mm\") %>+} [-#### Session-] {+<details>+} {+<summary>Session</summary>+} [-end::-] {+</details>+}"
-      },
-      {
-        "date": "2026-01-22",
-        "hash": "d13c6dc",
-        "wordCount": 19,
-        "delta": -17,
-        "added": 19,
-        "removed": 36,
-        "diff": "[-Embedded session syntax (widget detects start:: anywhere):-] [-start:: YYYY-MM-DD HH:MM-] [-end:: YYYY-MM-DD HH:MM-] [-topic:: short title-] {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} [-Milestone syntax (anywhere in any note):-] [-- [ ] Do the thing #milestone @YYYY-MM-DD-] [-- [x] Done thing #milestone @YYYY-MM-DD-]"
-      },
-      {
-        "date": "2026-01-20",
-        "hash": "e8230b3",
-        "wordCount": 65,
-        "delta": 52,
-        "added": 65,
-        "removed": 13,
-        "diff": "[-## Daily Log-] [-- <% tp.date.now('HH:mm') %>-] {+<!--+} {+Daily note template (PhD-Live)+} [-### Focus-] {+Stream line syntax:+} {+- HH:MM something you did+} [-### Notes-] {+Embedded session syntax (widget detects start:: anywhere):+} {+start:: YYYY-MM-DD HH:MM+} {+end:: YYYY-MM-DD HH:MM+} {+topic:: short title+} [-### Tomorrow-] {+Milestone syntax (anywhere in any note):+} {+- [ ] Do the thing #milestone @YYYY-MM-DD+} {+- [x] Done thing #milestone @YYYY-MM-DD+} {+-->+} {+- <% tp.date.now(\"HH:mm\") %> Started day+} {+#### Session+} {+start:: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>+} {+topic::+} {+end::+}"
-      },
-      {
-        "date": "2026-01-16",
-        "hash": "4416544",
-        "wordCount": 13,
-        "delta": 13,
-        "added": 13,
-        "removed": 0,
-        "diff": "{+dg-publish: true+} {+visibility: public+} {+tags:+} {+- daily+} {+- stream+} {+- <% tp.date.now('HH:mm') %>+}"
-      },
-      {
-        "date": "2026-01-15",
-        "hash": "f80d77d",
-        "wordCount": 6,
-        "delta": 6,
-        "added": 6,
-        "removed": 0,
-        "diff": "{+---+} {+title: <% tp.date.now('YYYY-MM-DD') %>+} {+---+}"
-      },
-      {
-        "date": "2026-01-11",
-        "hash": "40dbbff",
-        "wordCount": 9,
-        "delta": -26,
-        "added": 9,
-        "removed": 35,
-        "diff": "[-title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"-] [-dg-publish: true-] [-visibility: public-] [-tags:-] [-- daily-] [-- stream-] [-permalink: false-] [-eleventyExcludeFromCollections: true-] {+## Daily Log+} [-- <% tp.date.now('HH:mm') %> Started…-] [-- <% tp.date.now('HH:mm') %> Linked [[zettel]]-] [-- <% tp.date.now('HH:mm') %> Wrap-up-] {+### Focus+} {+### Notes+} {+### Tomorrow+}"
-      },
-      {
-        "date": "2025-10-22",
-        "hash": "08f6ac6",
-        "wordCount": 31,
-        "delta": 16,
-        "added": 31,
-        "removed": 15,
-        "diff": "[-title: \"2025-10-22\"-] {+title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"+} [-tags: [daily, stream]-] {+tags:+} {+- daily+} {+- stream+} {+permalink: false+} {+eleventyExcludeFromCollections: true+} [-- 13:34 Started…-] [-- 13:34 Linked [[zettel]]-] [-- 13:34 Wrap-up-] {+- <% tp.date.now('HH:mm') %> Started…+} {+- <% tp.date.now('HH:mm') %> Linked [[zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up+}"
-      },
-      {
-        "date": "2025-10-21",
-        "hash": "01cf58d",
-        "wordCount": 34,
-        "delta": 15,
-        "added": 34,
-        "removed": 19,
-        "diff": "[-title: \"{{date}}\"-] {+title: \"<% tp.date.now('YYYY-MM-DD') %>\"+} [-date:: {{date}}-] [-- {{time}} Started day — plan: …-] [-- {{time}} Began [[session-writing-introduction]]-] [-- {{time}} Reflection: …-] {+- <% tp.date.now('HH:mm') %> Started day — plan: …+} {+- <% tp.date.now('HH:mm') %> Began [[session-...]]+} {+- <% tp.date.now('HH:mm') %> Linked insight to [[some-zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up: one line+}"
       }
     ]
   },
   "2026-02-23": {
-    "noteDate": null,
+    "noteDate": "2026-02-23",
     "revisions": [
       {
         "date": "2026-02-23",
@@ -14319,83 +13347,11 @@
         "added": 2,
         "removed": 0,
         "diff": "{+end:: 2026-02-23T19:00:41+0000+}"
-      },
-      {
-        "date": "2026-01-24",
-        "hash": "ab6ec12",
-        "wordCount": 7,
-        "delta": -2,
-        "added": 7,
-        "removed": 9,
-        "diff": "[-- <% tp.date.now(\"HH:mm\") %> Started day-] {+- <% tp.date.now(\"HH:mm\") %>+} [-#### Session-] {+<details>+} {+<summary>Session</summary>+} [-end::-] {+</details>+}"
-      },
-      {
-        "date": "2026-01-22",
-        "hash": "d13c6dc",
-        "wordCount": 19,
-        "delta": -17,
-        "added": 19,
-        "removed": 36,
-        "diff": "[-Embedded session syntax (widget detects start:: anywhere):-] [-start:: YYYY-MM-DD HH:MM-] [-end:: YYYY-MM-DD HH:MM-] [-topic:: short title-] {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} [-Milestone syntax (anywhere in any note):-] [-- [ ] Do the thing #milestone @YYYY-MM-DD-] [-- [x] Done thing #milestone @YYYY-MM-DD-]"
-      },
-      {
-        "date": "2026-01-20",
-        "hash": "e8230b3",
-        "wordCount": 65,
-        "delta": 52,
-        "added": 65,
-        "removed": 13,
-        "diff": "[-## Daily Log-] [-- <% tp.date.now('HH:mm') %>-] {+<!--+} {+Daily note template (PhD-Live)+} [-### Focus-] {+Stream line syntax:+} {+- HH:MM something you did+} [-### Notes-] {+Embedded session syntax (widget detects start:: anywhere):+} {+start:: YYYY-MM-DD HH:MM+} {+end:: YYYY-MM-DD HH:MM+} {+topic:: short title+} [-### Tomorrow-] {+Milestone syntax (anywhere in any note):+} {+- [ ] Do the thing #milestone @YYYY-MM-DD+} {+- [x] Done thing #milestone @YYYY-MM-DD+} {+-->+} {+- <% tp.date.now(\"HH:mm\") %> Started day+} {+#### Session+} {+start:: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>+} {+topic::+} {+end::+}"
-      },
-      {
-        "date": "2026-01-16",
-        "hash": "4416544",
-        "wordCount": 13,
-        "delta": 13,
-        "added": 13,
-        "removed": 0,
-        "diff": "{+dg-publish: true+} {+visibility: public+} {+tags:+} {+- daily+} {+- stream+} {+- <% tp.date.now('HH:mm') %>+}"
-      },
-      {
-        "date": "2026-01-15",
-        "hash": "f80d77d",
-        "wordCount": 6,
-        "delta": 6,
-        "added": 6,
-        "removed": 0,
-        "diff": "{+---+} {+title: <% tp.date.now('YYYY-MM-DD') %>+} {+---+}"
-      },
-      {
-        "date": "2026-01-11",
-        "hash": "40dbbff",
-        "wordCount": 9,
-        "delta": -26,
-        "added": 9,
-        "removed": 35,
-        "diff": "[-title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"-] [-dg-publish: true-] [-visibility: public-] [-tags:-] [-- daily-] [-- stream-] [-permalink: false-] [-eleventyExcludeFromCollections: true-] {+## Daily Log+} [-- <% tp.date.now('HH:mm') %> Started…-] [-- <% tp.date.now('HH:mm') %> Linked [[zettel]]-] [-- <% tp.date.now('HH:mm') %> Wrap-up-] {+### Focus+} {+### Notes+} {+### Tomorrow+}"
-      },
-      {
-        "date": "2025-10-22",
-        "hash": "08f6ac6",
-        "wordCount": 31,
-        "delta": 16,
-        "added": 31,
-        "removed": 15,
-        "diff": "[-title: \"2025-10-22\"-] {+title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"+} [-tags: [daily, stream]-] {+tags:+} {+- daily+} {+- stream+} {+permalink: false+} {+eleventyExcludeFromCollections: true+} [-- 13:34 Started…-] [-- 13:34 Linked [[zettel]]-] [-- 13:34 Wrap-up-] {+- <% tp.date.now('HH:mm') %> Started…+} {+- <% tp.date.now('HH:mm') %> Linked [[zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up+}"
-      },
-      {
-        "date": "2025-10-21",
-        "hash": "01cf58d",
-        "wordCount": 34,
-        "delta": 15,
-        "added": 34,
-        "removed": 19,
-        "diff": "[-title: \"{{date}}\"-] {+title: \"<% tp.date.now('YYYY-MM-DD') %>\"+} [-date:: {{date}}-] [-- {{time}} Started day — plan: …-] [-- {{time}} Began [[session-writing-introduction]]-] [-- {{time}} Reflection: …-] {+- <% tp.date.now('HH:mm') %> Started day — plan: …+} {+- <% tp.date.now('HH:mm') %> Began [[session-...]]+} {+- <% tp.date.now('HH:mm') %> Linked insight to [[some-zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up: one line+}"
       }
     ]
   },
   "2026-02-16": {
-    "noteDate": null,
+    "noteDate": "2026-02-16",
     "revisions": [
       {
         "date": "2026-02-18",
@@ -14414,83 +13370,11 @@
         "added": 4,
         "removed": 1,
         "diff": "[-</details>-] {+end:: 2026-02-16T14:52:29+0000+} {+</details>+} {+[[supervision-250226]]+}"
-      },
-      {
-        "date": "2026-01-24",
-        "hash": "ab6ec12",
-        "wordCount": 7,
-        "delta": -2,
-        "added": 7,
-        "removed": 9,
-        "diff": "[-- <% tp.date.now(\"HH:mm\") %> Started day-] {+- <% tp.date.now(\"HH:mm\") %>+} [-#### Session-] {+<details>+} {+<summary>Session</summary>+} [-end::-] {+</details>+}"
-      },
-      {
-        "date": "2026-01-22",
-        "hash": "d13c6dc",
-        "wordCount": 19,
-        "delta": -17,
-        "added": 19,
-        "removed": 36,
-        "diff": "[-Embedded session syntax (widget detects start:: anywhere):-] [-start:: YYYY-MM-DD HH:MM-] [-end:: YYYY-MM-DD HH:MM-] [-topic:: short title-] {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} [-Milestone syntax (anywhere in any note):-] [-- [ ] Do the thing #milestone @YYYY-MM-DD-] [-- [x] Done thing #milestone @YYYY-MM-DD-]"
-      },
-      {
-        "date": "2026-01-20",
-        "hash": "e8230b3",
-        "wordCount": 65,
-        "delta": 52,
-        "added": 65,
-        "removed": 13,
-        "diff": "[-## Daily Log-] [-- <% tp.date.now('HH:mm') %>-] {+<!--+} {+Daily note template (PhD-Live)+} [-### Focus-] {+Stream line syntax:+} {+- HH:MM something you did+} [-### Notes-] {+Embedded session syntax (widget detects start:: anywhere):+} {+start:: YYYY-MM-DD HH:MM+} {+end:: YYYY-MM-DD HH:MM+} {+topic:: short title+} [-### Tomorrow-] {+Milestone syntax (anywhere in any note):+} {+- [ ] Do the thing #milestone @YYYY-MM-DD+} {+- [x] Done thing #milestone @YYYY-MM-DD+} {+-->+} {+- <% tp.date.now(\"HH:mm\") %> Started day+} {+#### Session+} {+start:: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>+} {+topic::+} {+end::+}"
-      },
-      {
-        "date": "2026-01-16",
-        "hash": "4416544",
-        "wordCount": 13,
-        "delta": 13,
-        "added": 13,
-        "removed": 0,
-        "diff": "{+dg-publish: true+} {+visibility: public+} {+tags:+} {+- daily+} {+- stream+} {+- <% tp.date.now('HH:mm') %>+}"
-      },
-      {
-        "date": "2026-01-15",
-        "hash": "f80d77d",
-        "wordCount": 6,
-        "delta": 6,
-        "added": 6,
-        "removed": 0,
-        "diff": "{+---+} {+title: <% tp.date.now('YYYY-MM-DD') %>+} {+---+}"
-      },
-      {
-        "date": "2026-01-11",
-        "hash": "40dbbff",
-        "wordCount": 9,
-        "delta": -26,
-        "added": 9,
-        "removed": 35,
-        "diff": "[-title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"-] [-dg-publish: true-] [-visibility: public-] [-tags:-] [-- daily-] [-- stream-] [-permalink: false-] [-eleventyExcludeFromCollections: true-] {+## Daily Log+} [-- <% tp.date.now('HH:mm') %> Started…-] [-- <% tp.date.now('HH:mm') %> Linked [[zettel]]-] [-- <% tp.date.now('HH:mm') %> Wrap-up-] {+### Focus+} {+### Notes+} {+### Tomorrow+}"
-      },
-      {
-        "date": "2025-10-22",
-        "hash": "08f6ac6",
-        "wordCount": 31,
-        "delta": 16,
-        "added": 31,
-        "removed": 15,
-        "diff": "[-title: \"2025-10-22\"-] {+title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"+} [-tags: [daily, stream]-] {+tags:+} {+- daily+} {+- stream+} {+permalink: false+} {+eleventyExcludeFromCollections: true+} [-- 13:34 Started…-] [-- 13:34 Linked [[zettel]]-] [-- 13:34 Wrap-up-] {+- <% tp.date.now('HH:mm') %> Started…+} {+- <% tp.date.now('HH:mm') %> Linked [[zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up+}"
-      },
-      {
-        "date": "2025-10-21",
-        "hash": "01cf58d",
-        "wordCount": 34,
-        "delta": 15,
-        "added": 34,
-        "removed": 19,
-        "diff": "[-title: \"{{date}}\"-] {+title: \"<% tp.date.now('YYYY-MM-DD') %>\"+} [-date:: {{date}}-] [-- {{time}} Started day — plan: …-] [-- {{time}} Began [[session-writing-introduction]]-] [-- {{time}} Reflection: …-] {+- <% tp.date.now('HH:mm') %> Started day — plan: …+} {+- <% tp.date.now('HH:mm') %> Began [[session-...]]+} {+- <% tp.date.now('HH:mm') %> Linked insight to [[some-zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up: one line+}"
       }
     ]
   },
   "2026-02-12": {
-    "noteDate": null,
+    "noteDate": "2026-02-12",
     "revisions": [
       {
         "date": "2026-02-12",
@@ -14504,7 +13388,7 @@
     ]
   },
   "2026-02-09": {
-    "noteDate": null,
+    "noteDate": "2026-02-09",
     "revisions": [
       {
         "date": "2026-02-09",
@@ -14514,83 +13398,11 @@
         "added": 5,
         "removed": 1,
         "diff": "[-<summary>Session</summary>-] {+<summary>Session - thinking/reading</summary>+} {+end:: 2026-02-09T18:39:30+0000+}"
-      },
-      {
-        "date": "2026-01-24",
-        "hash": "ab6ec12",
-        "wordCount": 7,
-        "delta": -2,
-        "added": 7,
-        "removed": 9,
-        "diff": "[-- <% tp.date.now(\"HH:mm\") %> Started day-] {+- <% tp.date.now(\"HH:mm\") %>+} [-#### Session-] {+<details>+} {+<summary>Session</summary>+} [-end::-] {+</details>+}"
-      },
-      {
-        "date": "2026-01-22",
-        "hash": "d13c6dc",
-        "wordCount": 19,
-        "delta": -17,
-        "added": 19,
-        "removed": 36,
-        "diff": "[-Embedded session syntax (widget detects start:: anywhere):-] [-start:: YYYY-MM-DD HH:MM-] [-end:: YYYY-MM-DD HH:MM-] [-topic:: short title-] {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} [-Milestone syntax (anywhere in any note):-] [-- [ ] Do the thing #milestone @YYYY-MM-DD-] [-- [x] Done thing #milestone @YYYY-MM-DD-]"
-      },
-      {
-        "date": "2026-01-20",
-        "hash": "e8230b3",
-        "wordCount": 65,
-        "delta": 52,
-        "added": 65,
-        "removed": 13,
-        "diff": "[-## Daily Log-] [-- <% tp.date.now('HH:mm') %>-] {+<!--+} {+Daily note template (PhD-Live)+} [-### Focus-] {+Stream line syntax:+} {+- HH:MM something you did+} [-### Notes-] {+Embedded session syntax (widget detects start:: anywhere):+} {+start:: YYYY-MM-DD HH:MM+} {+end:: YYYY-MM-DD HH:MM+} {+topic:: short title+} [-### Tomorrow-] {+Milestone syntax (anywhere in any note):+} {+- [ ] Do the thing #milestone @YYYY-MM-DD+} {+- [x] Done thing #milestone @YYYY-MM-DD+} {+-->+} {+- <% tp.date.now(\"HH:mm\") %> Started day+} {+#### Session+} {+start:: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>+} {+topic::+} {+end::+}"
-      },
-      {
-        "date": "2026-01-16",
-        "hash": "4416544",
-        "wordCount": 13,
-        "delta": 13,
-        "added": 13,
-        "removed": 0,
-        "diff": "{+dg-publish: true+} {+visibility: public+} {+tags:+} {+- daily+} {+- stream+} {+- <% tp.date.now('HH:mm') %>+}"
-      },
-      {
-        "date": "2026-01-15",
-        "hash": "f80d77d",
-        "wordCount": 6,
-        "delta": 6,
-        "added": 6,
-        "removed": 0,
-        "diff": "{+---+} {+title: <% tp.date.now('YYYY-MM-DD') %>+} {+---+}"
-      },
-      {
-        "date": "2026-01-11",
-        "hash": "40dbbff",
-        "wordCount": 9,
-        "delta": -26,
-        "added": 9,
-        "removed": 35,
-        "diff": "[-title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"-] [-dg-publish: true-] [-visibility: public-] [-tags:-] [-- daily-] [-- stream-] [-permalink: false-] [-eleventyExcludeFromCollections: true-] {+## Daily Log+} [-- <% tp.date.now('HH:mm') %> Started…-] [-- <% tp.date.now('HH:mm') %> Linked [[zettel]]-] [-- <% tp.date.now('HH:mm') %> Wrap-up-] {+### Focus+} {+### Notes+} {+### Tomorrow+}"
-      },
-      {
-        "date": "2025-10-22",
-        "hash": "08f6ac6",
-        "wordCount": 31,
-        "delta": 16,
-        "added": 31,
-        "removed": 15,
-        "diff": "[-title: \"2025-10-22\"-] {+title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"+} [-tags: [daily, stream]-] {+tags:+} {+- daily+} {+- stream+} {+permalink: false+} {+eleventyExcludeFromCollections: true+} [-- 13:34 Started…-] [-- 13:34 Linked [[zettel]]-] [-- 13:34 Wrap-up-] {+- <% tp.date.now('HH:mm') %> Started…+} {+- <% tp.date.now('HH:mm') %> Linked [[zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up+}"
-      },
-      {
-        "date": "2025-10-21",
-        "hash": "01cf58d",
-        "wordCount": 34,
-        "delta": 15,
-        "added": 34,
-        "removed": 19,
-        "diff": "[-title: \"{{date}}\"-] {+title: \"<% tp.date.now('YYYY-MM-DD') %>\"+} [-date:: {{date}}-] [-- {{time}} Started day — plan: …-] [-- {{time}} Began [[session-writing-introduction]]-] [-- {{time}} Reflection: …-] {+- <% tp.date.now('HH:mm') %> Started day — plan: …+} {+- <% tp.date.now('HH:mm') %> Began [[session-...]]+} {+- <% tp.date.now('HH:mm') %> Linked insight to [[some-zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up: one line+}"
       }
     ]
   },
   "2026-02-04": {
-    "noteDate": null,
+    "noteDate": "2026-02-04",
     "revisions": [
       {
         "date": "2026-02-05",
@@ -14600,83 +13412,11 @@
         "added": 14,
         "removed": 17,
         "diff": "[-title: <% tp.date.now('YYYY-MM-DD') %>-] {+title: 2026-02-04+} [-- <% tp.date.now(\"HH:mm\") %>-] [-<details>-] [-<summary>Session</summary>-] [-start:: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>-] [-topic::-] [-</details>-] {+- 16:46 critical making vs critical design?? what are the core differences+}"
-      },
-      {
-        "date": "2026-01-24",
-        "hash": "ab6ec12",
-        "wordCount": 7,
-        "delta": -2,
-        "added": 7,
-        "removed": 9,
-        "diff": "[-- <% tp.date.now(\"HH:mm\") %> Started day-] {+- <% tp.date.now(\"HH:mm\") %>+} [-#### Session-] {+<details>+} {+<summary>Session</summary>+} [-end::-] {+</details>+}"
-      },
-      {
-        "date": "2026-01-22",
-        "hash": "d13c6dc",
-        "wordCount": 19,
-        "delta": -17,
-        "added": 19,
-        "removed": 36,
-        "diff": "[-Embedded session syntax (widget detects start:: anywhere):-] [-start:: YYYY-MM-DD HH:MM-] [-end:: YYYY-MM-DD HH:MM-] [-topic:: short title-] {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} [-Milestone syntax (anywhere in any note):-] [-- [ ] Do the thing #milestone @YYYY-MM-DD-] [-- [x] Done thing #milestone @YYYY-MM-DD-]"
-      },
-      {
-        "date": "2026-01-20",
-        "hash": "e8230b3",
-        "wordCount": 65,
-        "delta": 52,
-        "added": 65,
-        "removed": 13,
-        "diff": "[-## Daily Log-] [-- <% tp.date.now('HH:mm') %>-] {+<!--+} {+Daily note template (PhD-Live)+} [-### Focus-] {+Stream line syntax:+} {+- HH:MM something you did+} [-### Notes-] {+Embedded session syntax (widget detects start:: anywhere):+} {+start:: YYYY-MM-DD HH:MM+} {+end:: YYYY-MM-DD HH:MM+} {+topic:: short title+} [-### Tomorrow-] {+Milestone syntax (anywhere in any note):+} {+- [ ] Do the thing #milestone @YYYY-MM-DD+} {+- [x] Done thing #milestone @YYYY-MM-DD+} {+-->+} {+- <% tp.date.now(\"HH:mm\") %> Started day+} {+#### Session+} {+start:: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>+} {+topic::+} {+end::+}"
-      },
-      {
-        "date": "2026-01-16",
-        "hash": "4416544",
-        "wordCount": 13,
-        "delta": 13,
-        "added": 13,
-        "removed": 0,
-        "diff": "{+dg-publish: true+} {+visibility: public+} {+tags:+} {+- daily+} {+- stream+} {+- <% tp.date.now('HH:mm') %>+}"
-      },
-      {
-        "date": "2026-01-15",
-        "hash": "f80d77d",
-        "wordCount": 6,
-        "delta": 6,
-        "added": 6,
-        "removed": 0,
-        "diff": "{+---+} {+title: <% tp.date.now('YYYY-MM-DD') %>+} {+---+}"
-      },
-      {
-        "date": "2026-01-11",
-        "hash": "40dbbff",
-        "wordCount": 9,
-        "delta": -26,
-        "added": 9,
-        "removed": 35,
-        "diff": "[-title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"-] [-dg-publish: true-] [-visibility: public-] [-tags:-] [-- daily-] [-- stream-] [-permalink: false-] [-eleventyExcludeFromCollections: true-] {+## Daily Log+} [-- <% tp.date.now('HH:mm') %> Started…-] [-- <% tp.date.now('HH:mm') %> Linked [[zettel]]-] [-- <% tp.date.now('HH:mm') %> Wrap-up-] {+### Focus+} {+### Notes+} {+### Tomorrow+}"
-      },
-      {
-        "date": "2025-10-22",
-        "hash": "08f6ac6",
-        "wordCount": 31,
-        "delta": 16,
-        "added": 31,
-        "removed": 15,
-        "diff": "[-title: \"2025-10-22\"-] {+title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"+} [-tags: [daily, stream]-] {+tags:+} {+- daily+} {+- stream+} {+permalink: false+} {+eleventyExcludeFromCollections: true+} [-- 13:34 Started…-] [-- 13:34 Linked [[zettel]]-] [-- 13:34 Wrap-up-] {+- <% tp.date.now('HH:mm') %> Started…+} {+- <% tp.date.now('HH:mm') %> Linked [[zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up+}"
-      },
-      {
-        "date": "2025-10-21",
-        "hash": "01cf58d",
-        "wordCount": 34,
-        "delta": 15,
-        "added": 34,
-        "removed": 19,
-        "diff": "[-title: \"{{date}}\"-] {+title: \"<% tp.date.now('YYYY-MM-DD') %>\"+} [-date:: {{date}}-] [-- {{time}} Started day — plan: …-] [-- {{time}} Began [[session-writing-introduction]]-] [-- {{time}} Reflection: …-] {+- <% tp.date.now('HH:mm') %> Started day — plan: …+} {+- <% tp.date.now('HH:mm') %> Began [[session-...]]+} {+- <% tp.date.now('HH:mm') %> Linked insight to [[some-zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up: one line+}"
       }
     ]
   },
   "2026-02-03": {
-    "noteDate": null,
+    "noteDate": "2026-02-03",
     "revisions": [
       {
         "date": "2026-04-13",
@@ -14704,83 +13444,11 @@
         "added": 0,
         "removed": 2,
         "diff": "[-- 17:51-]"
-      },
-      {
-        "date": "2026-01-24",
-        "hash": "ab6ec12",
-        "wordCount": 7,
-        "delta": -2,
-        "added": 7,
-        "removed": 9,
-        "diff": "[-- <% tp.date.now(\"HH:mm\") %> Started day-] {+- <% tp.date.now(\"HH:mm\") %>+} [-#### Session-] {+<details>+} {+<summary>Session</summary>+} [-end::-] {+</details>+}"
-      },
-      {
-        "date": "2026-01-22",
-        "hash": "d13c6dc",
-        "wordCount": 19,
-        "delta": -17,
-        "added": 19,
-        "removed": 36,
-        "diff": "[-Embedded session syntax (widget detects start:: anywhere):-] [-start:: YYYY-MM-DD HH:MM-] [-end:: YYYY-MM-DD HH:MM-] [-topic:: short title-] {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} [-Milestone syntax (anywhere in any note):-] [-- [ ] Do the thing #milestone @YYYY-MM-DD-] [-- [x] Done thing #milestone @YYYY-MM-DD-]"
-      },
-      {
-        "date": "2026-01-20",
-        "hash": "e8230b3",
-        "wordCount": 65,
-        "delta": 52,
-        "added": 65,
-        "removed": 13,
-        "diff": "[-## Daily Log-] [-- <% tp.date.now('HH:mm') %>-] {+<!--+} {+Daily note template (PhD-Live)+} [-### Focus-] {+Stream line syntax:+} {+- HH:MM something you did+} [-### Notes-] {+Embedded session syntax (widget detects start:: anywhere):+} {+start:: YYYY-MM-DD HH:MM+} {+end:: YYYY-MM-DD HH:MM+} {+topic:: short title+} [-### Tomorrow-] {+Milestone syntax (anywhere in any note):+} {+- [ ] Do the thing #milestone @YYYY-MM-DD+} {+- [x] Done thing #milestone @YYYY-MM-DD+} {+-->+} {+- <% tp.date.now(\"HH:mm\") %> Started day+} {+#### Session+} {+start:: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>+} {+topic::+} {+end::+}"
-      },
-      {
-        "date": "2026-01-16",
-        "hash": "4416544",
-        "wordCount": 13,
-        "delta": 13,
-        "added": 13,
-        "removed": 0,
-        "diff": "{+dg-publish: true+} {+visibility: public+} {+tags:+} {+- daily+} {+- stream+} {+- <% tp.date.now('HH:mm') %>+}"
-      },
-      {
-        "date": "2026-01-15",
-        "hash": "f80d77d",
-        "wordCount": 6,
-        "delta": 6,
-        "added": 6,
-        "removed": 0,
-        "diff": "{+---+} {+title: <% tp.date.now('YYYY-MM-DD') %>+} {+---+}"
-      },
-      {
-        "date": "2026-01-11",
-        "hash": "40dbbff",
-        "wordCount": 9,
-        "delta": -26,
-        "added": 9,
-        "removed": 35,
-        "diff": "[-title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"-] [-dg-publish: true-] [-visibility: public-] [-tags:-] [-- daily-] [-- stream-] [-permalink: false-] [-eleventyExcludeFromCollections: true-] {+## Daily Log+} [-- <% tp.date.now('HH:mm') %> Started…-] [-- <% tp.date.now('HH:mm') %> Linked [[zettel]]-] [-- <% tp.date.now('HH:mm') %> Wrap-up-] {+### Focus+} {+### Notes+} {+### Tomorrow+}"
-      },
-      {
-        "date": "2025-10-22",
-        "hash": "08f6ac6",
-        "wordCount": 31,
-        "delta": 16,
-        "added": 31,
-        "removed": 15,
-        "diff": "[-title: \"2025-10-22\"-] {+title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"+} [-tags: [daily, stream]-] {+tags:+} {+- daily+} {+- stream+} {+permalink: false+} {+eleventyExcludeFromCollections: true+} [-- 13:34 Started…-] [-- 13:34 Linked [[zettel]]-] [-- 13:34 Wrap-up-] {+- <% tp.date.now('HH:mm') %> Started…+} {+- <% tp.date.now('HH:mm') %> Linked [[zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up+}"
-      },
-      {
-        "date": "2025-10-21",
-        "hash": "01cf58d",
-        "wordCount": 34,
-        "delta": 15,
-        "added": 34,
-        "removed": 19,
-        "diff": "[-title: \"{{date}}\"-] {+title: \"<% tp.date.now('YYYY-MM-DD') %>\"+} [-date:: {{date}}-] [-- {{time}} Started day — plan: …-] [-- {{time}} Began [[session-writing-introduction]]-] [-- {{time}} Reflection: …-] {+- <% tp.date.now('HH:mm') %> Started day — plan: …+} {+- <% tp.date.now('HH:mm') %> Began [[session-...]]+} {+- <% tp.date.now('HH:mm') %> Linked insight to [[some-zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up: one line+}"
       }
     ]
   },
   "2026-02-02": {
-    "noteDate": null,
+    "noteDate": "2026-02-02",
     "revisions": [
       {
         "date": "2026-02-03",
@@ -14799,83 +13467,11 @@
         "added": 15,
         "removed": 14,
         "diff": "[-title: <% tp.date.now('YYYY-MM-DD') %>-] {+title: 2026-02-02+} [-- <% tp.date.now(\"HH:mm\") %>-] [-start:: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>-] [-topic::-] {+start:: 2026-02-02 11:38+} {+topic:: Writing (aiming for finished draft by end of day)+}"
-      },
-      {
-        "date": "2026-01-24",
-        "hash": "ab6ec12",
-        "wordCount": 7,
-        "delta": -2,
-        "added": 7,
-        "removed": 9,
-        "diff": "[-- <% tp.date.now(\"HH:mm\") %> Started day-] {+- <% tp.date.now(\"HH:mm\") %>+} [-#### Session-] {+<details>+} {+<summary>Session</summary>+} [-end::-] {+</details>+}"
-      },
-      {
-        "date": "2026-01-22",
-        "hash": "d13c6dc",
-        "wordCount": 19,
-        "delta": -17,
-        "added": 19,
-        "removed": 36,
-        "diff": "[-Embedded session syntax (widget detects start:: anywhere):-] [-start:: YYYY-MM-DD HH:MM-] [-end:: YYYY-MM-DD HH:MM-] [-topic:: short title-] {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} [-Milestone syntax (anywhere in any note):-] [-- [ ] Do the thing #milestone @YYYY-MM-DD-] [-- [x] Done thing #milestone @YYYY-MM-DD-]"
-      },
-      {
-        "date": "2026-01-20",
-        "hash": "e8230b3",
-        "wordCount": 65,
-        "delta": 52,
-        "added": 65,
-        "removed": 13,
-        "diff": "[-## Daily Log-] [-- <% tp.date.now('HH:mm') %>-] {+<!--+} {+Daily note template (PhD-Live)+} [-### Focus-] {+Stream line syntax:+} {+- HH:MM something you did+} [-### Notes-] {+Embedded session syntax (widget detects start:: anywhere):+} {+start:: YYYY-MM-DD HH:MM+} {+end:: YYYY-MM-DD HH:MM+} {+topic:: short title+} [-### Tomorrow-] {+Milestone syntax (anywhere in any note):+} {+- [ ] Do the thing #milestone @YYYY-MM-DD+} {+- [x] Done thing #milestone @YYYY-MM-DD+} {+-->+} {+- <% tp.date.now(\"HH:mm\") %> Started day+} {+#### Session+} {+start:: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>+} {+topic::+} {+end::+}"
-      },
-      {
-        "date": "2026-01-16",
-        "hash": "4416544",
-        "wordCount": 13,
-        "delta": 13,
-        "added": 13,
-        "removed": 0,
-        "diff": "{+dg-publish: true+} {+visibility: public+} {+tags:+} {+- daily+} {+- stream+} {+- <% tp.date.now('HH:mm') %>+}"
-      },
-      {
-        "date": "2026-01-15",
-        "hash": "f80d77d",
-        "wordCount": 6,
-        "delta": 6,
-        "added": 6,
-        "removed": 0,
-        "diff": "{+---+} {+title: <% tp.date.now('YYYY-MM-DD') %>+} {+---+}"
-      },
-      {
-        "date": "2026-01-11",
-        "hash": "40dbbff",
-        "wordCount": 9,
-        "delta": -26,
-        "added": 9,
-        "removed": 35,
-        "diff": "[-title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"-] [-dg-publish: true-] [-visibility: public-] [-tags:-] [-- daily-] [-- stream-] [-permalink: false-] [-eleventyExcludeFromCollections: true-] {+## Daily Log+} [-- <% tp.date.now('HH:mm') %> Started…-] [-- <% tp.date.now('HH:mm') %> Linked [[zettel]]-] [-- <% tp.date.now('HH:mm') %> Wrap-up-] {+### Focus+} {+### Notes+} {+### Tomorrow+}"
-      },
-      {
-        "date": "2025-10-22",
-        "hash": "08f6ac6",
-        "wordCount": 31,
-        "delta": 16,
-        "added": 31,
-        "removed": 15,
-        "diff": "[-title: \"2025-10-22\"-] {+title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"+} [-tags: [daily, stream]-] {+tags:+} {+- daily+} {+- stream+} {+permalink: false+} {+eleventyExcludeFromCollections: true+} [-- 13:34 Started…-] [-- 13:34 Linked [[zettel]]-] [-- 13:34 Wrap-up-] {+- <% tp.date.now('HH:mm') %> Started…+} {+- <% tp.date.now('HH:mm') %> Linked [[zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up+}"
-      },
-      {
-        "date": "2025-10-21",
-        "hash": "01cf58d",
-        "wordCount": 34,
-        "delta": 15,
-        "added": 34,
-        "removed": 19,
-        "diff": "[-title: \"{{date}}\"-] {+title: \"<% tp.date.now('YYYY-MM-DD') %>\"+} [-date:: {{date}}-] [-- {{time}} Started day — plan: …-] [-- {{time}} Began [[session-writing-introduction]]-] [-- {{time}} Reflection: …-] {+- <% tp.date.now('HH:mm') %> Started day — plan: …+} {+- <% tp.date.now('HH:mm') %> Began [[session-...]]+} {+- <% tp.date.now('HH:mm') %> Linked insight to [[some-zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up: one line+}"
       }
     ]
   },
   "2026-01-28": {
-    "noteDate": null,
+    "noteDate": "2026-01-28",
     "revisions": [
       {
         "date": "2026-01-28",
@@ -14885,83 +13481,11 @@
         "added": 16,
         "removed": 11,
         "diff": "[-end:: 2026-01-28 1:00-] {+end:: 2026-01-28 13:00+} [-lecture from Vince Lynch-] {+lecture from Vince Lynch notes:+} [-programming with natural language-] {+programming with natural language (I like this phrasing)+}"
-      },
-      {
-        "date": "2026-01-24",
-        "hash": "ab6ec12",
-        "wordCount": 7,
-        "delta": -2,
-        "added": 7,
-        "removed": 9,
-        "diff": "[-- <% tp.date.now(\"HH:mm\") %> Started day-] {+- <% tp.date.now(\"HH:mm\") %>+} [-#### Session-] {+<details>+} {+<summary>Session</summary>+} [-end::-] {+</details>+}"
-      },
-      {
-        "date": "2026-01-22",
-        "hash": "d13c6dc",
-        "wordCount": 19,
-        "delta": -17,
-        "added": 19,
-        "removed": 36,
-        "diff": "[-Embedded session syntax (widget detects start:: anywhere):-] [-start:: YYYY-MM-DD HH:MM-] [-end:: YYYY-MM-DD HH:MM-] [-topic:: short title-] {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} [-Milestone syntax (anywhere in any note):-] [-- [ ] Do the thing #milestone @YYYY-MM-DD-] [-- [x] Done thing #milestone @YYYY-MM-DD-]"
-      },
-      {
-        "date": "2026-01-20",
-        "hash": "e8230b3",
-        "wordCount": 65,
-        "delta": 52,
-        "added": 65,
-        "removed": 13,
-        "diff": "[-## Daily Log-] [-- <% tp.date.now('HH:mm') %>-] {+<!--+} {+Daily note template (PhD-Live)+} [-### Focus-] {+Stream line syntax:+} {+- HH:MM something you did+} [-### Notes-] {+Embedded session syntax (widget detects start:: anywhere):+} {+start:: YYYY-MM-DD HH:MM+} {+end:: YYYY-MM-DD HH:MM+} {+topic:: short title+} [-### Tomorrow-] {+Milestone syntax (anywhere in any note):+} {+- [ ] Do the thing #milestone @YYYY-MM-DD+} {+- [x] Done thing #milestone @YYYY-MM-DD+} {+-->+} {+- <% tp.date.now(\"HH:mm\") %> Started day+} {+#### Session+} {+start:: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>+} {+topic::+} {+end::+}"
-      },
-      {
-        "date": "2026-01-16",
-        "hash": "4416544",
-        "wordCount": 13,
-        "delta": 13,
-        "added": 13,
-        "removed": 0,
-        "diff": "{+dg-publish: true+} {+visibility: public+} {+tags:+} {+- daily+} {+- stream+} {+- <% tp.date.now('HH:mm') %>+}"
-      },
-      {
-        "date": "2026-01-15",
-        "hash": "f80d77d",
-        "wordCount": 6,
-        "delta": 6,
-        "added": 6,
-        "removed": 0,
-        "diff": "{+---+} {+title: <% tp.date.now('YYYY-MM-DD') %>+} {+---+}"
-      },
-      {
-        "date": "2026-01-11",
-        "hash": "40dbbff",
-        "wordCount": 9,
-        "delta": -26,
-        "added": 9,
-        "removed": 35,
-        "diff": "[-title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"-] [-dg-publish: true-] [-visibility: public-] [-tags:-] [-- daily-] [-- stream-] [-permalink: false-] [-eleventyExcludeFromCollections: true-] {+## Daily Log+} [-- <% tp.date.now('HH:mm') %> Started…-] [-- <% tp.date.now('HH:mm') %> Linked [[zettel]]-] [-- <% tp.date.now('HH:mm') %> Wrap-up-] {+### Focus+} {+### Notes+} {+### Tomorrow+}"
-      },
-      {
-        "date": "2025-10-22",
-        "hash": "08f6ac6",
-        "wordCount": 31,
-        "delta": 16,
-        "added": 31,
-        "removed": 15,
-        "diff": "[-title: \"2025-10-22\"-] {+title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"+} [-tags: [daily, stream]-] {+tags:+} {+- daily+} {+- stream+} {+permalink: false+} {+eleventyExcludeFromCollections: true+} [-- 13:34 Started…-] [-- 13:34 Linked [[zettel]]-] [-- 13:34 Wrap-up-] {+- <% tp.date.now('HH:mm') %> Started…+} {+- <% tp.date.now('HH:mm') %> Linked [[zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up+}"
-      },
-      {
-        "date": "2025-10-21",
-        "hash": "01cf58d",
-        "wordCount": 34,
-        "delta": 15,
-        "added": 34,
-        "removed": 19,
-        "diff": "[-title: \"{{date}}\"-] {+title: \"<% tp.date.now('YYYY-MM-DD') %>\"+} [-date:: {{date}}-] [-- {{time}} Started day — plan: …-] [-- {{time}} Began [[session-writing-introduction]]-] [-- {{time}} Reflection: …-] {+- <% tp.date.now('HH:mm') %> Started day — plan: …+} {+- <% tp.date.now('HH:mm') %> Began [[session-...]]+} {+- <% tp.date.now('HH:mm') %> Linked insight to [[some-zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up: one line+}"
       }
     ]
   },
   "2026-01-27": {
-    "noteDate": null,
+    "noteDate": "2026-01-27",
     "revisions": [
       {
         "date": "2026-02-20",
@@ -14980,83 +13504,11 @@
         "added": 12,
         "removed": 0,
         "diff": "{+<details>+} {+<summary>Session - editing</summary>+} {+start:: 2026-01-27T20:38:45+0000+} {+topic:: editing and annotating writing+} {+</details>+}"
-      },
-      {
-        "date": "2026-01-24",
-        "hash": "ab6ec12",
-        "wordCount": 7,
-        "delta": -2,
-        "added": 7,
-        "removed": 9,
-        "diff": "[-- <% tp.date.now(\"HH:mm\") %> Started day-] {+- <% tp.date.now(\"HH:mm\") %>+} [-#### Session-] {+<details>+} {+<summary>Session</summary>+} [-end::-] {+</details>+}"
-      },
-      {
-        "date": "2026-01-22",
-        "hash": "d13c6dc",
-        "wordCount": 19,
-        "delta": -17,
-        "added": 19,
-        "removed": 36,
-        "diff": "[-Embedded session syntax (widget detects start:: anywhere):-] [-start:: YYYY-MM-DD HH:MM-] [-end:: YYYY-MM-DD HH:MM-] [-topic:: short title-] {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} [-Milestone syntax (anywhere in any note):-] [-- [ ] Do the thing #milestone @YYYY-MM-DD-] [-- [x] Done thing #milestone @YYYY-MM-DD-]"
-      },
-      {
-        "date": "2026-01-20",
-        "hash": "e8230b3",
-        "wordCount": 65,
-        "delta": 52,
-        "added": 65,
-        "removed": 13,
-        "diff": "[-## Daily Log-] [-- <% tp.date.now('HH:mm') %>-] {+<!--+} {+Daily note template (PhD-Live)+} [-### Focus-] {+Stream line syntax:+} {+- HH:MM something you did+} [-### Notes-] {+Embedded session syntax (widget detects start:: anywhere):+} {+start:: YYYY-MM-DD HH:MM+} {+end:: YYYY-MM-DD HH:MM+} {+topic:: short title+} [-### Tomorrow-] {+Milestone syntax (anywhere in any note):+} {+- [ ] Do the thing #milestone @YYYY-MM-DD+} {+- [x] Done thing #milestone @YYYY-MM-DD+} {+-->+} {+- <% tp.date.now(\"HH:mm\") %> Started day+} {+#### Session+} {+start:: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>+} {+topic::+} {+end::+}"
-      },
-      {
-        "date": "2026-01-16",
-        "hash": "4416544",
-        "wordCount": 13,
-        "delta": 13,
-        "added": 13,
-        "removed": 0,
-        "diff": "{+dg-publish: true+} {+visibility: public+} {+tags:+} {+- daily+} {+- stream+} {+- <% tp.date.now('HH:mm') %>+}"
-      },
-      {
-        "date": "2026-01-15",
-        "hash": "f80d77d",
-        "wordCount": 6,
-        "delta": 6,
-        "added": 6,
-        "removed": 0,
-        "diff": "{+---+} {+title: <% tp.date.now('YYYY-MM-DD') %>+} {+---+}"
-      },
-      {
-        "date": "2026-01-11",
-        "hash": "40dbbff",
-        "wordCount": 9,
-        "delta": -26,
-        "added": 9,
-        "removed": 35,
-        "diff": "[-title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"-] [-dg-publish: true-] [-visibility: public-] [-tags:-] [-- daily-] [-- stream-] [-permalink: false-] [-eleventyExcludeFromCollections: true-] {+## Daily Log+} [-- <% tp.date.now('HH:mm') %> Started…-] [-- <% tp.date.now('HH:mm') %> Linked [[zettel]]-] [-- <% tp.date.now('HH:mm') %> Wrap-up-] {+### Focus+} {+### Notes+} {+### Tomorrow+}"
-      },
-      {
-        "date": "2025-10-22",
-        "hash": "08f6ac6",
-        "wordCount": 31,
-        "delta": 16,
-        "added": 31,
-        "removed": 15,
-        "diff": "[-title: \"2025-10-22\"-] {+title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"+} [-tags: [daily, stream]-] {+tags:+} {+- daily+} {+- stream+} {+permalink: false+} {+eleventyExcludeFromCollections: true+} [-- 13:34 Started…-] [-- 13:34 Linked [[zettel]]-] [-- 13:34 Wrap-up-] {+- <% tp.date.now('HH:mm') %> Started…+} {+- <% tp.date.now('HH:mm') %> Linked [[zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up+}"
-      },
-      {
-        "date": "2025-10-21",
-        "hash": "01cf58d",
-        "wordCount": 34,
-        "delta": 15,
-        "added": 34,
-        "removed": 19,
-        "diff": "[-title: \"{{date}}\"-] {+title: \"<% tp.date.now('YYYY-MM-DD') %>\"+} [-date:: {{date}}-] [-- {{time}} Started day — plan: …-] [-- {{time}} Began [[session-writing-introduction]]-] [-- {{time}} Reflection: …-] {+- <% tp.date.now('HH:mm') %> Started day — plan: …+} {+- <% tp.date.now('HH:mm') %> Began [[session-...]]+} {+- <% tp.date.now('HH:mm') %> Linked insight to [[some-zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up: one line+}"
       }
     ]
   },
   "2026-01-26": {
-    "noteDate": null,
+    "noteDate": "2026-01-26",
     "revisions": [
       {
         "date": "2026-01-26",
@@ -15066,83 +13518,11 @@
         "added": 41,
         "removed": 2,
         "diff": "[-<summary>Session</summary>-] {+<summary>Session - Still writing </summary>+} [-</details>-] {+end:: 2026-01-26T15:46:34+0000+} {+</details>+} {+difficult day of writing today, really had to push through a bit of a wall, but have made decent progress. Might do a bit more later, but will take a break for now+}"
-      },
-      {
-        "date": "2026-01-24",
-        "hash": "ab6ec12",
-        "wordCount": 7,
-        "delta": -2,
-        "added": 7,
-        "removed": 9,
-        "diff": "[-- <% tp.date.now(\"HH:mm\") %> Started day-] {+- <% tp.date.now(\"HH:mm\") %>+} [-#### Session-] {+<details>+} {+<summary>Session</summary>+} [-end::-] {+</details>+}"
-      },
-      {
-        "date": "2026-01-22",
-        "hash": "d13c6dc",
-        "wordCount": 19,
-        "delta": -17,
-        "added": 19,
-        "removed": 36,
-        "diff": "[-Embedded session syntax (widget detects start:: anywhere):-] [-start:: YYYY-MM-DD HH:MM-] [-end:: YYYY-MM-DD HH:MM-] [-topic:: short title-] {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} [-Milestone syntax (anywhere in any note):-] [-- [ ] Do the thing #milestone @YYYY-MM-DD-] [-- [x] Done thing #milestone @YYYY-MM-DD-]"
-      },
-      {
-        "date": "2026-01-20",
-        "hash": "e8230b3",
-        "wordCount": 65,
-        "delta": 52,
-        "added": 65,
-        "removed": 13,
-        "diff": "[-## Daily Log-] [-- <% tp.date.now('HH:mm') %>-] {+<!--+} {+Daily note template (PhD-Live)+} [-### Focus-] {+Stream line syntax:+} {+- HH:MM something you did+} [-### Notes-] {+Embedded session syntax (widget detects start:: anywhere):+} {+start:: YYYY-MM-DD HH:MM+} {+end:: YYYY-MM-DD HH:MM+} {+topic:: short title+} [-### Tomorrow-] {+Milestone syntax (anywhere in any note):+} {+- [ ] Do the thing #milestone @YYYY-MM-DD+} {+- [x] Done thing #milestone @YYYY-MM-DD+} {+-->+} {+- <% tp.date.now(\"HH:mm\") %> Started day+} {+#### Session+} {+start:: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>+} {+topic::+} {+end::+}"
-      },
-      {
-        "date": "2026-01-16",
-        "hash": "4416544",
-        "wordCount": 13,
-        "delta": 13,
-        "added": 13,
-        "removed": 0,
-        "diff": "{+dg-publish: true+} {+visibility: public+} {+tags:+} {+- daily+} {+- stream+} {+- <% tp.date.now('HH:mm') %>+}"
-      },
-      {
-        "date": "2026-01-15",
-        "hash": "f80d77d",
-        "wordCount": 6,
-        "delta": 6,
-        "added": 6,
-        "removed": 0,
-        "diff": "{+---+} {+title: <% tp.date.now('YYYY-MM-DD') %>+} {+---+}"
-      },
-      {
-        "date": "2026-01-11",
-        "hash": "40dbbff",
-        "wordCount": 9,
-        "delta": -26,
-        "added": 9,
-        "removed": 35,
-        "diff": "[-title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"-] [-dg-publish: true-] [-visibility: public-] [-tags:-] [-- daily-] [-- stream-] [-permalink: false-] [-eleventyExcludeFromCollections: true-] {+## Daily Log+} [-- <% tp.date.now('HH:mm') %> Started…-] [-- <% tp.date.now('HH:mm') %> Linked [[zettel]]-] [-- <% tp.date.now('HH:mm') %> Wrap-up-] {+### Focus+} {+### Notes+} {+### Tomorrow+}"
-      },
-      {
-        "date": "2025-10-22",
-        "hash": "08f6ac6",
-        "wordCount": 31,
-        "delta": 16,
-        "added": 31,
-        "removed": 15,
-        "diff": "[-title: \"2025-10-22\"-] {+title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"+} [-tags: [daily, stream]-] {+tags:+} {+- daily+} {+- stream+} {+permalink: false+} {+eleventyExcludeFromCollections: true+} [-- 13:34 Started…-] [-- 13:34 Linked [[zettel]]-] [-- 13:34 Wrap-up-] {+- <% tp.date.now('HH:mm') %> Started…+} {+- <% tp.date.now('HH:mm') %> Linked [[zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up+}"
-      },
-      {
-        "date": "2025-10-21",
-        "hash": "01cf58d",
-        "wordCount": 34,
-        "delta": 15,
-        "added": 34,
-        "removed": 19,
-        "diff": "[-title: \"{{date}}\"-] {+title: \"<% tp.date.now('YYYY-MM-DD') %>\"+} [-date:: {{date}}-] [-- {{time}} Started day — plan: …-] [-- {{time}} Began [[session-writing-introduction]]-] [-- {{time}} Reflection: …-] {+- <% tp.date.now('HH:mm') %> Started day — plan: …+} {+- <% tp.date.now('HH:mm') %> Began [[session-...]]+} {+- <% tp.date.now('HH:mm') %> Linked insight to [[some-zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up: one line+}"
       }
     ]
   },
   "2026-01-25": {
-    "noteDate": null,
+    "noteDate": "2026-01-25",
     "revisions": [
       {
         "date": "2026-01-25",
@@ -15152,83 +13532,11 @@
         "added": 4,
         "removed": 1,
         "diff": "[-</details>-] {+end:: 2026-01-25T17:40:18+0000+} {+</details>+} {+[[possible-PhD-Live-LLM-integrations]]+}"
-      },
-      {
-        "date": "2026-01-24",
-        "hash": "ab6ec12",
-        "wordCount": 7,
-        "delta": -2,
-        "added": 7,
-        "removed": 9,
-        "diff": "[-- <% tp.date.now(\"HH:mm\") %> Started day-] {+- <% tp.date.now(\"HH:mm\") %>+} [-#### Session-] {+<details>+} {+<summary>Session</summary>+} [-end::-] {+</details>+}"
-      },
-      {
-        "date": "2026-01-22",
-        "hash": "d13c6dc",
-        "wordCount": 19,
-        "delta": -17,
-        "added": 19,
-        "removed": 36,
-        "diff": "[-Embedded session syntax (widget detects start:: anywhere):-] [-start:: YYYY-MM-DD HH:MM-] [-end:: YYYY-MM-DD HH:MM-] [-topic:: short title-] {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} [-Milestone syntax (anywhere in any note):-] [-- [ ] Do the thing #milestone @YYYY-MM-DD-] [-- [x] Done thing #milestone @YYYY-MM-DD-]"
-      },
-      {
-        "date": "2026-01-20",
-        "hash": "e8230b3",
-        "wordCount": 65,
-        "delta": 52,
-        "added": 65,
-        "removed": 13,
-        "diff": "[-## Daily Log-] [-- <% tp.date.now('HH:mm') %>-] {+<!--+} {+Daily note template (PhD-Live)+} [-### Focus-] {+Stream line syntax:+} {+- HH:MM something you did+} [-### Notes-] {+Embedded session syntax (widget detects start:: anywhere):+} {+start:: YYYY-MM-DD HH:MM+} {+end:: YYYY-MM-DD HH:MM+} {+topic:: short title+} [-### Tomorrow-] {+Milestone syntax (anywhere in any note):+} {+- [ ] Do the thing #milestone @YYYY-MM-DD+} {+- [x] Done thing #milestone @YYYY-MM-DD+} {+-->+} {+- <% tp.date.now(\"HH:mm\") %> Started day+} {+#### Session+} {+start:: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>+} {+topic::+} {+end::+}"
-      },
-      {
-        "date": "2026-01-16",
-        "hash": "4416544",
-        "wordCount": 13,
-        "delta": 13,
-        "added": 13,
-        "removed": 0,
-        "diff": "{+dg-publish: true+} {+visibility: public+} {+tags:+} {+- daily+} {+- stream+} {+- <% tp.date.now('HH:mm') %>+}"
-      },
-      {
-        "date": "2026-01-15",
-        "hash": "f80d77d",
-        "wordCount": 6,
-        "delta": 6,
-        "added": 6,
-        "removed": 0,
-        "diff": "{+---+} {+title: <% tp.date.now('YYYY-MM-DD') %>+} {+---+}"
-      },
-      {
-        "date": "2026-01-11",
-        "hash": "40dbbff",
-        "wordCount": 9,
-        "delta": -26,
-        "added": 9,
-        "removed": 35,
-        "diff": "[-title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"-] [-dg-publish: true-] [-visibility: public-] [-tags:-] [-- daily-] [-- stream-] [-permalink: false-] [-eleventyExcludeFromCollections: true-] {+## Daily Log+} [-- <% tp.date.now('HH:mm') %> Started…-] [-- <% tp.date.now('HH:mm') %> Linked [[zettel]]-] [-- <% tp.date.now('HH:mm') %> Wrap-up-] {+### Focus+} {+### Notes+} {+### Tomorrow+}"
-      },
-      {
-        "date": "2025-10-22",
-        "hash": "08f6ac6",
-        "wordCount": 31,
-        "delta": 16,
-        "added": 31,
-        "removed": 15,
-        "diff": "[-title: \"2025-10-22\"-] {+title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"+} [-tags: [daily, stream]-] {+tags:+} {+- daily+} {+- stream+} {+permalink: false+} {+eleventyExcludeFromCollections: true+} [-- 13:34 Started…-] [-- 13:34 Linked [[zettel]]-] [-- 13:34 Wrap-up-] {+- <% tp.date.now('HH:mm') %> Started…+} {+- <% tp.date.now('HH:mm') %> Linked [[zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up+}"
-      },
-      {
-        "date": "2025-10-21",
-        "hash": "01cf58d",
-        "wordCount": 34,
-        "delta": 15,
-        "added": 34,
-        "removed": 19,
-        "diff": "[-title: \"{{date}}\"-] {+title: \"<% tp.date.now('YYYY-MM-DD') %>\"+} [-date:: {{date}}-] [-- {{time}} Started day — plan: …-] [-- {{time}} Began [[session-writing-introduction]]-] [-- {{time}} Reflection: …-] {+- <% tp.date.now('HH:mm') %> Started day — plan: …+} {+- <% tp.date.now('HH:mm') %> Began [[session-...]]+} {+- <% tp.date.now('HH:mm') %> Linked insight to [[some-zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up: one line+}"
       }
     ]
   },
   "2026-01-24": {
-    "noteDate": null,
+    "noteDate": "2026-01-24",
     "revisions": [
       {
         "date": "2026-01-24",
@@ -15238,74 +13546,11 @@
         "added": 2,
         "removed": 0,
         "diff": "{+end:: 2026-01-24T16:18:42+0000+}"
-      },
-      {
-        "date": "2026-01-22",
-        "hash": "d13c6dc",
-        "wordCount": 19,
-        "delta": -17,
-        "added": 19,
-        "removed": 36,
-        "diff": "[-Embedded session syntax (widget detects start:: anywhere):-] [-start:: YYYY-MM-DD HH:MM-] [-end:: YYYY-MM-DD HH:MM-] [-topic:: short title-] {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} [-Milestone syntax (anywhere in any note):-] [-- [ ] Do the thing #milestone @YYYY-MM-DD-] [-- [x] Done thing #milestone @YYYY-MM-DD-]"
-      },
-      {
-        "date": "2026-01-20",
-        "hash": "e8230b3",
-        "wordCount": 65,
-        "delta": 52,
-        "added": 65,
-        "removed": 13,
-        "diff": "[-## Daily Log-] [-- <% tp.date.now('HH:mm') %>-] {+<!--+} {+Daily note template (PhD-Live)+} [-### Focus-] {+Stream line syntax:+} {+- HH:MM something you did+} [-### Notes-] {+Embedded session syntax (widget detects start:: anywhere):+} {+start:: YYYY-MM-DD HH:MM+} {+end:: YYYY-MM-DD HH:MM+} {+topic:: short title+} [-### Tomorrow-] {+Milestone syntax (anywhere in any note):+} {+- [ ] Do the thing #milestone @YYYY-MM-DD+} {+- [x] Done thing #milestone @YYYY-MM-DD+} {+-->+} {+- <% tp.date.now(\"HH:mm\") %> Started day+} {+#### Session+} {+start:: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>+} {+topic::+} {+end::+}"
-      },
-      {
-        "date": "2026-01-16",
-        "hash": "4416544",
-        "wordCount": 13,
-        "delta": 13,
-        "added": 13,
-        "removed": 0,
-        "diff": "{+dg-publish: true+} {+visibility: public+} {+tags:+} {+- daily+} {+- stream+} {+- <% tp.date.now('HH:mm') %>+}"
-      },
-      {
-        "date": "2026-01-15",
-        "hash": "f80d77d",
-        "wordCount": 6,
-        "delta": 6,
-        "added": 6,
-        "removed": 0,
-        "diff": "{+---+} {+title: <% tp.date.now('YYYY-MM-DD') %>+} {+---+}"
-      },
-      {
-        "date": "2026-01-11",
-        "hash": "40dbbff",
-        "wordCount": 9,
-        "delta": -26,
-        "added": 9,
-        "removed": 35,
-        "diff": "[-title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"-] [-dg-publish: true-] [-visibility: public-] [-tags:-] [-- daily-] [-- stream-] [-permalink: false-] [-eleventyExcludeFromCollections: true-] {+## Daily Log+} [-- <% tp.date.now('HH:mm') %> Started…-] [-- <% tp.date.now('HH:mm') %> Linked [[zettel]]-] [-- <% tp.date.now('HH:mm') %> Wrap-up-] {+### Focus+} {+### Notes+} {+### Tomorrow+}"
-      },
-      {
-        "date": "2025-10-22",
-        "hash": "08f6ac6",
-        "wordCount": 31,
-        "delta": 16,
-        "added": 31,
-        "removed": 15,
-        "diff": "[-title: \"2025-10-22\"-] {+title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"+} [-tags: [daily, stream]-] {+tags:+} {+- daily+} {+- stream+} {+permalink: false+} {+eleventyExcludeFromCollections: true+} [-- 13:34 Started…-] [-- 13:34 Linked [[zettel]]-] [-- 13:34 Wrap-up-] {+- <% tp.date.now('HH:mm') %> Started…+} {+- <% tp.date.now('HH:mm') %> Linked [[zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up+}"
-      },
-      {
-        "date": "2025-10-21",
-        "hash": "01cf58d",
-        "wordCount": 34,
-        "delta": 15,
-        "added": 34,
-        "removed": 19,
-        "diff": "[-title: \"{{date}}\"-] {+title: \"<% tp.date.now('YYYY-MM-DD') %>\"+} [-date:: {{date}}-] [-- {{time}} Started day — plan: …-] [-- {{time}} Began [[session-writing-introduction]]-] [-- {{time}} Reflection: …-] {+- <% tp.date.now('HH:mm') %> Started day — plan: …+} {+- <% tp.date.now('HH:mm') %> Began [[session-...]]+} {+- <% tp.date.now('HH:mm') %> Linked insight to [[some-zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up: one line+}"
       }
     ]
   },
   "2026-01-21": {
-    "noteDate": null,
+    "noteDate": "2026-01-21",
     "revisions": [
       {
         "date": "2026-01-22",
@@ -15324,65 +13569,11 @@
         "added": 2,
         "removed": 0,
         "diff": "{+end:: 2026-01-21T18:00:07+0000+}"
-      },
-      {
-        "date": "2026-01-20",
-        "hash": "e8230b3",
-        "wordCount": 65,
-        "delta": 52,
-        "added": 65,
-        "removed": 13,
-        "diff": "[-## Daily Log-] [-- <% tp.date.now('HH:mm') %>-] {+<!--+} {+Daily note template (PhD-Live)+} [-### Focus-] {+Stream line syntax:+} {+- HH:MM something you did+} [-### Notes-] {+Embedded session syntax (widget detects start:: anywhere):+} {+start:: YYYY-MM-DD HH:MM+} {+end:: YYYY-MM-DD HH:MM+} {+topic:: short title+} [-### Tomorrow-] {+Milestone syntax (anywhere in any note):+} {+- [ ] Do the thing #milestone @YYYY-MM-DD+} {+- [x] Done thing #milestone @YYYY-MM-DD+} {+-->+} {+- <% tp.date.now(\"HH:mm\") %> Started day+} {+#### Session+} {+start:: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>+} {+topic::+} {+end::+}"
-      },
-      {
-        "date": "2026-01-16",
-        "hash": "4416544",
-        "wordCount": 13,
-        "delta": 13,
-        "added": 13,
-        "removed": 0,
-        "diff": "{+dg-publish: true+} {+visibility: public+} {+tags:+} {+- daily+} {+- stream+} {+- <% tp.date.now('HH:mm') %>+}"
-      },
-      {
-        "date": "2026-01-15",
-        "hash": "f80d77d",
-        "wordCount": 6,
-        "delta": 6,
-        "added": 6,
-        "removed": 0,
-        "diff": "{+---+} {+title: <% tp.date.now('YYYY-MM-DD') %>+} {+---+}"
-      },
-      {
-        "date": "2026-01-11",
-        "hash": "40dbbff",
-        "wordCount": 9,
-        "delta": -26,
-        "added": 9,
-        "removed": 35,
-        "diff": "[-title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"-] [-dg-publish: true-] [-visibility: public-] [-tags:-] [-- daily-] [-- stream-] [-permalink: false-] [-eleventyExcludeFromCollections: true-] {+## Daily Log+} [-- <% tp.date.now('HH:mm') %> Started…-] [-- <% tp.date.now('HH:mm') %> Linked [[zettel]]-] [-- <% tp.date.now('HH:mm') %> Wrap-up-] {+### Focus+} {+### Notes+} {+### Tomorrow+}"
-      },
-      {
-        "date": "2025-10-22",
-        "hash": "08f6ac6",
-        "wordCount": 31,
-        "delta": 16,
-        "added": 31,
-        "removed": 15,
-        "diff": "[-title: \"2025-10-22\"-] {+title: \"<% tp.file.title || tp.date.now('YYYY-MM-DD') %>\"+} [-tags: [daily, stream]-] {+tags:+} {+- daily+} {+- stream+} {+permalink: false+} {+eleventyExcludeFromCollections: true+} [-- 13:34 Started…-] [-- 13:34 Linked [[zettel]]-] [-- 13:34 Wrap-up-] {+- <% tp.date.now('HH:mm') %> Started…+} {+- <% tp.date.now('HH:mm') %> Linked [[zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up+}"
-      },
-      {
-        "date": "2025-10-21",
-        "hash": "01cf58d",
-        "wordCount": 34,
-        "delta": 15,
-        "added": 34,
-        "removed": 19,
-        "diff": "[-title: \"{{date}}\"-] {+title: \"<% tp.date.now('YYYY-MM-DD') %>\"+} [-date:: {{date}}-] [-- {{time}} Started day — plan: …-] [-- {{time}} Began [[session-writing-introduction]]-] [-- {{time}} Reflection: …-] {+- <% tp.date.now('HH:mm') %> Started day — plan: …+} {+- <% tp.date.now('HH:mm') %> Began [[session-...]]+} {+- <% tp.date.now('HH:mm') %> Linked insight to [[some-zettel]]+} {+- <% tp.date.now('HH:mm') %> Wrap-up: one line+}"
       }
     ]
   },
   "2026-01-20": {
-    "noteDate": null,
+    "noteDate": "2026-01-20",
     "revisions": [
       {
         "date": "2026-04-18",
@@ -15428,29 +13619,11 @@
         "added": 2,
         "removed": 0,
         "diff": "{+end:: 2026-01-20T20:00:38+0000+}"
-      },
-      {
-        "date": "2026-01-19",
-        "hash": "bb80055",
-        "wordCount": 8,
-        "delta": 1,
-        "added": 8,
-        "removed": 7,
-        "diff": "[-# title: \"\"-] [-title: <% tp.file.title.toLowerCase() %>-] {+title: teaching-bots+} {+[[project-supervisor-bot]]+} {+[[thesis-bot]]+} {+[[diy-bot-creation]]+} {+see also: [[LLM-as-personal-tutors]]+}"
-      },
-      {
-        "date": "2026-01-11",
-        "hash": "1bdddd0",
-        "wordCount": 7,
-        "delta": 5,
-        "added": 7,
-        "removed": 2,
-        "diff": "[-title: \"\"-] {+# title: \"\"+} {+title: <% tp.file.title.toLowerCase() %>+}"
       }
     ]
   },
   "2026-01-19": {
-    "noteDate": null,
+    "noteDate": "2026-01-19",
     "revisions": [
       {
         "date": "2026-02-23",
@@ -15482,7 +13655,7 @@
     ]
   },
   "2026-01-15": {
-    "noteDate": null,
+    "noteDate": "2026-01-15",
     "revisions": [
       {
         "date": "2026-01-16",
@@ -15505,7 +13678,7 @@
     ]
   },
   "2025-11-03": {
-    "noteDate": null,
+    "noteDate": "2025-11-03",
     "revisions": [
       {
         "date": "2026-01-17",
