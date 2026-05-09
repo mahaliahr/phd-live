@@ -1,7 +1,7 @@
 {
     "outputDirectory": "dist",
     "installCommand": "npm install",
-    "buildCommand": "git fetch --unshallow || true && npm run build",
+    "buildCommand": "git fetch --unshallow || true && git rev-list --count HEAD && npm run build",
     "devCommand": "npm run start",
     "routes": [
         { "handle": "filesystem" },
