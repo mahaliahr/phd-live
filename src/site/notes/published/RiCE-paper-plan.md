@@ -15,13 +15,15 @@ What does it look like to build a personal research infrastructure that uses AI,
 
 setting out to research generative AI in learning and education, I was not expecting the site of my growing research to become in quite a meta sense - the core site of my research. But from the start rather unintentionally the foundations of a wider personal AI research infrastructure was seeded. 
 
-As a basis, I notes and thinking are structure around the scaffold of a zettelkasten-inspired approach, which naturally allows for a slow formulation and clustering of ideas. I started to wonder if from this emergent cluster there could be ways to implement LLM tools to surface or work with this alongside my thinking, but always keeping within it's seperate domain. This is the central tension and my desire to understand and build toward. How can I work with LLM's on the growing dataset which is my research, but working against some of the understood behaviours and functionalities of this technology - optimisation, productivity and efficiency and swift evaluation. How can I instead create a space where thoughts can be investigated and played with, that stimulate and aid my process rather that taking the reins from my by too swiftly resolving all open issues or problems
+At it's base, my notes and thinking are structured around a zettelkasten-inspired approach, which naturally allows for the slow formulation and clustering of ideas. I began to wonder whether from this emergent cluster there could be ways to implement LLM tools to surface and work with this material alongside my thinking, but always keeping them within a seperate domain. This is the central tension I am trying to understand and build toward: how can I work with LLM's on the growing dataset that is my research, while working against some of the understood behaviours and functionalities of this technology - optimisation, productivity and efficiency and swift evaluation. How can I instead create a space where thoughts can be investigated and played with, where AI stimulates and aids my process rather that taking the reins from me by too swiftly resolving what should remain open
 
 ~~As my research began to grow, naturally I started to see and understand that this was a perfect dataset for LLM tools that might aid me in my research and that I should built on top of this.~~ 
 
+<mark style="background: #FFB8EBA6;">*what did I actually build, and what did building it reveal?*
+</mark>
 
-
-
+context: 
+working with obsidian as the core container, I began working with this as a way to track my thoughts, inspired by Zettalkasten, it was proving a useful tool in the very early stages of starting to demonstrate to me the ways in which my seemingly disparate thoughts were beginning to connect and become coherent directions. In this process I was simultaneously reflecting on a thread that is important to my research, which is a playful and imaginative approach that was informing my methodological approach. I was also interested in ideas of performance from my practice, I had this thought -- 'what could you could live code a phd?'. This was to explore a methodical approach to conducting my research, but also a direct question and hypothesis that Ihad in regards to the growing influence of generative AI on education. If the assessed outcomes within learning can all be produced easily with generative AI tools, does it everything become centered on the process? This system came to embody and explore both of these possibilities.
 
 **the zettelkasten instinct**
 

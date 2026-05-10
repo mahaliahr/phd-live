@@ -7,7 +7,11 @@ tags:
 this is an evolving website/digital garden/process as performance for the research.
 
 [[About PhD-Live]] that is linked from the main homepage
+[[phd-live-readme]] evolving README doc that for a public audience
+[[phd-live-guide-for-others]]
+
+[[liveness-system-phd-live]]
+[[revision-history-phd-live]]
 
 [[phd-live-ideation]]
-
 [[PhD-Live-debugging-and feature-list]]
