@@ -1,4 +1,32 @@
 {
+  "revision-history-phd-live": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-05-10",
+        "hash": "4401601",
+        "wordCount": 577,
+        "delta": 577,
+        "added": 577,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-05-10+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+# revision history+} {+## what it does+} {+Every published note on PhD-Live displays a revision trail at the bottom of the page. This shows how the note has changed over time -- when it was edited, how many words were added or removed, and an expandable diff of what specifically changed. Revisions are collapsed by default so they don't interrupt reading, but are available to anyone who wants to see the thinking behind the current version.+} {+## why it exists+} {+Research notes don't arrive fully formed. The version of a note visible on the site at any given moment is the product of earlier drafts, deleted sections, reframings, and rerouting. That process is usually invisible -- the published version displaces everything that came before it.+} {+The revision history makes that process legible without requiring the reader to dig through git commits. It treats the evolution of a note as part of its meaning, not noise to be hidden. This is consistent with PhD-Live's broader intent: to publish research as an ongoing practice rather than a fixed product.+} {+## how it works+} {+A script (`scripts/generate-revisions.js`) reads the git history for each published note and generates a `revisions.json` file containing the commit dates, word deltas, and diffs for every note. This runs automatically via a pre-commit hook every time changes are committed, so the revision data stays current without any extra steps.+} {+The site reads from `revisions.json` at build time and renders the revision trail as a collapsible component at the bottom of each note.+} {+## architectural decisions+} {+**git history as the data source** -- rather than manually versioning notes or storing snapshots, the script reads directly from git log. This means no extra files, no frontmatter flags, and no curation overhead. The cost is that history only goes back to when the note first entered this repository, not when it was originally written in Obsidian.+} {+**pre-commit hook over build-time generation** -- an earlier version ran the script on Vercel at deploy time, but Vercel's shallow git clone made the history incomplete. Running locally via pre-commit hook gives access to the full git history and keeps the setup portable -- no API tokens or environment variables needed.+} {+**day-level granularity** -- multiple commits on the same day are collapsed into a single revision entry. This reflects meaningful editing sessions rather than individual saves.+} {+**filename-based dating for daily notes** -- daily notes are dated from their filename (`2026-02-04.md`) rather than git history. This prevents git's rename tracking from tracing daily notes back through the template file they were created from, which would show template evolution rather than note evolution.+} {+## known limitations+} {+- History only goes back to when notes entered this repository, not their original creation date in Obsidian. Older notes show their first commit date rather than when they were written.+} {+- Notes created from a Templater template may show the template's git history if `--follow` is enabled and git traces the rename. Currently mitigated by filename-based date filtering for daily notes.+} {+- The diff format is line-level rather than word-level, which is less granular but faster to generate at scale.+} {+## using this in your own site+} {+Requirements: Node.js v18+, git, the pre-commit hook installed.+} {+Setup:+} {+```bash+} {+cp scripts/pre-commit .git/hooks/pre-commit+} {+chmod +x .git/hooks/pre-commit+} {+```+} {+To regenerate manually:+} {+```bash+} {+node scripts/generate-revisions.js+} {+```+} {+No API tokens or environment variables required. Works with any public or private git repository.+}"
+      }
+    ]
+  },
+  "liveness-system-phd-live": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-05-10",
+        "hash": "4401601",
+        "wordCount": 759,
+        "delta": 759,
+        "added": 759,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-05-10+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+# liveness system+} {+## what it is+} {+PhD-Live has a liveness layer -- a set of features that signal whether research is actively happening, what is being worked on, and how recently the site has been updated. This is distinct from the content of the site itself. Where notes and revision history show *what* has been thought, the liveness system shows *when* and *whether* thinking is happening now.+} {+The system currently has three components: a status indicator (livebar), an activity feed (live column), and an implicit recency signal derived from the last git commit. These are partially implemented and not yet fully connected to each other.+} {+## why it exists+} {+Liveness is a central concept in this research. In performance studies, liveness refers to the co-presence of performer and audience in time -- the sense that something is happening now, that the outcome is not yet determined. PhD-Live asks whether research practice can have this quality: whether making the process of thinking visible as it unfolds changes what it means to do research publicly.+} {+The liveness system is the most direct technical expression of this question. It is not decorative. The livebar is not just a status indicator -- it is an argument that the state of being-in-research is worth making visible, that the boundary between working and not-working is meaningful information for a reader.+} {+This also connects to questions of labour and presence in academic work. Research happens in time, in sessions, with rhythms of intensity and rest. Most academic publishing renders this invisible. PhD-Live tries to make it legible.+} {+## how it currently works+} {+**Livebar** (`src/site/_includes/components/livebar.njk`, `src/site/assets/js/live-widget.js`)+} {+The livebar displays a pulsing dot and status text indicating whether a session is active. It reads from a data source that is updated when notes are pushed to the repository. The limitation is that it is only as accurate as the last git push -- if a session starts in Obsidian but the vault hasn't been pushed, the livebar won't reflect it.+} {+**Live column**+} {+The live column surfaces recent activity on the site -- recently updated notes, today's stream lines, current session information. It is driven by the same push-based mechanism as the livebar.+} {+**Recency**+} {+The last commit timestamp is available as an implicit signal of how recently the site was updated. This is not yet surfaced explicitly as a UI element but is present in the underlying data.+} {+## known limitations+} {+The core limitation of the current implementation is that liveness is **push-dependent**. The site updates when notes are committed and pushed to git, not when writing actually happens. This creates a gap between actual research activity and what the site signals -- a session can be underway for an hour before the livebar reflects it, if the vault hasn't been pushed.+} {+This is a meaningful limitation not just technically but conceptually. A liveness system that only updates on manual triggers is not really live -- it is a retrospective record dressed as presence.+} {+## the intended architecture+} {+The push-dependent limitation points toward a different architecture. The learning dashboard (in development) is intended to become the control layer for liveness -- a separate interface for starting and stopping sessions, logging activity, and updating live status independently of Obsidian pushes.+} {+A physical button is also part of the intended design: a deliberate, tactile gesture that signals the transition from private thinking to active research session. This literalises the concept of going live -- making the boundary between working and not-working a physical act rather than an accidental side effect of git push behaviour.+} {+In this intended architecture:+} {+- **Obsidian** handles long-form writing and note-taking+} {+- **Dashboard** handles session control and live status+} {+- **Physical button** triggers session start/stop as a deliberate gesture+} {+- **PhD-Live** reflects the current state derived from all of the above+} {+## connection to the research+} {+The gap between the current implementation and the intended architecture is itself research material. Building a system that tries to be live and repeatedly encounters the limits of what liveness means in a static site context is generative. The technical constraints are not just problems to solve -- they are evidence about what liveness actually requires, and what it costs.+} {+The liveness system is probably the feature of PhD-Live most directly connected to the theoretical framing of the research. It is worth continuing to document its evolution -- both the technical decisions and the conceptual ones -- as the dashboard is built and the physical button is realised.+}"
+      }
+    ]
+  },
   "planning-for-public-sharing": {
     "noteDate": null,
     "revisions": [
@@ -3677,6 +3705,61 @@
       }
     ]
   },
+  "system-open-questions": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-05-10",
+        "hash": "4401601",
+        "wordCount": 0,
+        "delta": 0,
+        "added": 0,
+        "removed": 0,
+        "diff": ""
+      },
+      {
+        "date": "2026-05-08",
+        "hash": "264dc4a",
+        "wordCount": 128,
+        "delta": 95,
+        "added": 128,
+        "removed": 33,
+        "diff": "{+---+} {+### study companion bot+} {+- can a local model grounded in vault context approximate the calibration function, or does that require something closer to the full project understanding?+} {+- what does the \"holding the research frame\" function require technically - is it system prompt, retrieval context, or something about how the model reasons?+} {+- which of these functions are most degraded by lower capability models, and which survive?+} {+- is the dialogic quality (thinking against output rather than receiving it) something that can be designed for, or does it emerge from the interaction?+} [-how does this connect to the research questions that I initially laid out?[[supervision-290426#how does the performative aspect of doing phd feed into the research q's (at the moment it's implicit but not explicit)]]-] {+how does this connect to the research questions that I initially laid out? [[supervision-290426#how does the performative aspect of doing phd feed into the research q's (at the moment it's implicit but not explicit)]]+}"
+      },
+      {
+        "date": "2026-05-04",
+        "hash": "a352d0b",
+        "wordCount": 58,
+        "delta": 28,
+        "added": 58,
+        "removed": 30,
+        "diff": "[-is phd-live live, or also performative? does it need an audience — and a body — to be the latter? what would it take to move from live to performative?-] {+is phd-live live, or also performative? does it need an audience, to be the latter? what would it take to move from live to performative?+} {+how does this connect to the research questions that I initially laid out?[[supervision-290426#how does the performative aspect of doing phd feed into the research q's (at the moment it's implicit but not explicit)]]+}"
+      }
+    ]
+  },
+  "system-map": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-05-10",
+        "hash": "4401601",
+        "wordCount": 0,
+        "delta": 0,
+        "added": 0,
+        "removed": 0,
+        "diff": ""
+      },
+      {
+        "date": "2026-05-04",
+        "hash": "d671441",
+        "wordCount": 388,
+        "delta": 388,
+        "added": 388,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-05-03+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+a map of the research infrastructure. updated when something changes state, not on a schedule. for active tasks see [[phd-live-build]]. for unresolved thinking see [[system-open-questions]].+} {+---+} {+Research Infrastructure:+} {+- obsidian vault base - exists and I don't imagine I will change this dramatically+} {+- writing tool - augmented writing space+} {+- learning dashboard (interface that holds all components + live logging, with perhaps more LLM functionality later down the line)+} {+- live logging capability+} {+- bots:+} {+- supervisor-bot+} {+- study-companion-bot+} {+- confidence-bot+} {+(note for later, what is the main difference between supervisor and study companion bot )+} {+- activity log+} {+- mirror, exists in learning dashboard and on phd-live site (previously and generically titled the 'AI Layer')+} {+- PhD-Live public site (tracking site things here [[PhD-Live-debugging-and feature-list]])+} {+- capture keystrokes - trigger audio+} {+- livestream to youtube+} {+- newsletter of liveness, updates on the system and the research+} {+physical hardware:+} {+- supervisor-bot 'vision' - hardware that can 'see' (maybe I can move 'hearing' functionality to the hardware too)+} {+- live log button+} {+public facing / pedagogical frameworks:+} {+- share obsidian configuration?+} {+- research infrastructure+} {+- phd-live+} {+- bots+} {+status key: 🟢 stable · 🔵 active · 🟡 speculative+} {+---+} {+## writing + thinking+} {+|component|status|notes|+} {+|---|---|---|+} {+|obsidian vault|🟢 stable||+} {+|augmented writing space|||+} {+---+} {+## learning dashboard+} {+| component           | status | notes                                                     |+} {+| ------------------- | ------ | --------------------------------------------------------- |+} {+| live logging        |        |                                                           |+} {+| supervisor bot      |        |                                                           |+} {+| activity log        |        |                                                           |+} {+| mirror / AI layer   |        |                                                           |+} {+| study companion bot |        | → [[system-open-questions#supervisor-vs-study-companion]] |+} {+| confidence bot      |        |                                                           |+} {+|                     |        |                                                           |+} {+---+} {+## phd-live public site+} {+|component|status|notes|+} {+|---|---|---|+} {+|obsidian → eleventy → vercel stack|🟢 stable||+} {+|revision history|||+} {+|screenshot archive / evolution page|||+} {+|kanban rendering|||+} {+|keystroke → audio trigger|||+} {+|youtube livestream|||+} {+|newsletter|||+} {+---+} {+## physical hardware+} {+|component|status|notes|+} {+|---|---|---|+} {+|supervisor bot vision|||+} {+|live log button|||+} {+---+} {+## public-facing / pedagogical+} {+|component|status|notes|+} {+|---|---|---|+} {+|share obsidian config|||+} {+|research infrastructure docs|||+} {+|phd-live|||+} {+|bots|||+} {+---+} {+## open questions+} {+short captures only, fuller thinking lives in [[system-open-questions]].+} {+- [[system-open-questions#supervisor-vs-study-companion]] — what is the meaningful difference in role and interaction mode?+} {+- [[system-open-questions#liveness-vs-performance]] — is phd-live live, or also performative?+} {+- [[system-open-questions#what-to-share-publicly]] — what is the pedagogical intent of sharing infrastructure?+}"
+      }
+    ]
+  },
   "sychophantic-AI": {
     "noteDate": null,
     "revisions": [
@@ -6099,6 +6182,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-05-10",
+        "hash": "4401601",
+        "wordCount": 13,
+        "delta": 12,
+        "added": 13,
+        "removed": 1,
+        "diff": "{+[[phd-live-readme]] evolving README doc that for a public audience+} {+[[phd-live-guide-for-others]]+} [-[[phd-live-ideation]]-] {+[[liveness-system-phd-live]]+} {+[[revision-history-phd-live]]+} {+[[phd-live-ideation]]+}"
+      },
+      {
         "date": "2026-03-23",
         "hash": "3036e05",
         "wordCount": 3,
@@ -6957,6 +7049,20 @@
       }
     ]
   },
+  "phd-live-readme": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-05-10",
+        "hash": "4401601",
+        "wordCount": 373,
+        "delta": 373,
+        "added": 373,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-05-10+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+# PhD-Live+} {+PhD-Live is a process-based research website that publishes my PhD work as it unfolds. Rather than presenting only finished outputs, the site exposes notes, sessions, reflections, and connections in (near) real time. Writing happens locally in Obsidian and is published automatically as a living digital garden.+} {+This project explores what it means to treat research as an ongoing practice rather than a fixed product, within the wider context of my research into generative AI and learning, speculative methods, and creative computation.+} {+## How the site works+} {+- Notes are written locally in Obsidian.+} {+- Links between notes form a growing knowledge graph.+} {+- Lightweight syntax is used to track sessions, milestones, and live activity.+} {+- The website updates automatically to reflect recent work, connections, and progress.+} {+Everything here should be read as provisional. Notes may be incomplete, contradictory, or revised over time.+} {+## Using this as a template+} {+This repo can be used as a starting point for your own process-based research site. It is built on the open-source Digital Garden ecosystem: https://dg-docs.ole.dev/+} {+### Prerequisites+} {+- [Obsidian](https://obsidian.md/) for writing and managing notes+} {+- [Node.js](https://nodejs.org/) (v18 or above)+} {+- A [Vercel](https://vercel.com/) account for deployment+} {+- Git+} {+### Setup+} {+1. Fork or clone this repository+} {+2. Run `npm install` to install dependencies+} {+3. Set up the pre-commit hook so revision history generates automatically on every commit:+} {+```bash+} {+cp scripts/pre-commit .git/hooks/pre-commit+} {+chmod +x .git/hooks/pre-commit+} {+```+} {+4. Run `npm run dev` to preview the site locally+} {+5. Deploy to Vercel by connecting your forked repo -- no additional environment variables required+} {+### Revision history+} {+This site tracks how notes evolve over time using git history. A script (`scripts/generate-revisions.js`) reads your git log and generates a `revisions.json` file that the site uses to display revision trails on each note page.+} {+The pre-commit hook runs this script automatically before every commit, so revision history stays up to date without any extra steps.+} {+If you ever need to regenerate it manually:+} {+```bash+} {+node scripts/generate-revisions.js+} {+```+} {+## Background+} {+Built on the [Digital Garden](https://dg-docs.ole.dev/) ecosystem by Ole Vik.+} {+## Status+} {+This project is a work in progress. Structure, content, and tooling will continue to evolve throughout the PhD.+}"
+      }
+    ]
+  },
   "phd-live-ideation": {
     "noteDate": null,
     "revisions": [
@@ -7022,6 +7128,29 @@
         "added": 7,
         "removed": 2,
         "diff": "[-title: \"\"-] {+# title: \"\"+} {+title: <% tp.file.title.toLowerCase() %>+}"
+      }
+    ]
+  },
+  "phd-live-build": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-05-10",
+        "hash": "4401601",
+        "wordCount": 0,
+        "delta": 0,
+        "added": 0,
+        "removed": 0,
+        "diff": ""
+      },
+      {
+        "date": "2026-05-04",
+        "hash": "d671441",
+        "wordCount": 262,
+        "delta": 262,
+        "added": 262,
+        "removed": 0,
+        "diff": "{+---+} {+kanban-plugin: board+} {+dg-publish:+} {+description: active work - tasks pulled from the system map+} {+---+} {+## backlog [bugs + fixes]+} {+- [ ] posts not tracking properly+} {+- [ ] wikilinks not clickable in widget / live bar+} {+- [ ] session tracking not working properly+} {+- [ ] styling on blog post page+} {+- [ ] images rendering incorrectly+} {+- [ ] 2 sessions on daily page not being picked up+} {+- [ ] livebar showing 'next: in 40 minutes' instead of 'live'+} {+- [ ] livebar only show when session is actually live+} {+- [ ] time wrong in recent thoughts + updates section (GMT → BST)+} {+- [ ] recent notes not showing most recently edited+} {+## backlog [features]+} {+- [ ] add phd proposal / research questions to homepage+} {+- [ ] reinstate graphscript (sidebar local graph)+} {+- [ ] create way to click through to all recent thoughts and sessions+} {+- [ ] session logs + thoughts log — browsable archive view+} {+- [ ] when clicking images expand to full size+} {+- [ ] redesign homepage to 2-column layout+} {+- [ ] template session as dropdown+} {+- [ ] neaten session formatting+} {+- [ ] formatted date view in graph+} {+- [ ] incorporate canvas functionality from original digital garden template+} {+- [ ] improve canvas functionality once incorporated+} {+- [ ] group / organise notes more clearly+} {+## this week+} {+## in progress+} {+## blocked+} {+## done+} {+- [x] screenshot capture system (github actions + playwright + /evolution page)+} {+%% kanban:settings+} {+```+} {+{\"kanban-plugin\":\"board\",\"list-collapse\":[false,false,false,false,false,false]}+} {+```+} {+%%+}"
       }
     ]
   },
@@ -9500,6 +9629,29 @@
       }
     ]
   },
+  "first-test-with-supervisor-bot-in-meeting": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-05-10",
+        "hash": "4401601",
+        "wordCount": 0,
+        "delta": 0,
+        "added": 0,
+        "removed": 0,
+        "diff": ""
+      },
+      {
+        "date": "2026-05-04",
+        "hash": "2914455",
+        "wordCount": 135,
+        "delta": 85,
+        "added": 135,
+        "removed": 50,
+        "diff": "[-We joked maybe the LLM needs to have the experience of doing a PhD before its useful, and as I do like to follow absolutely wacky thought experiments, I am intrigued by what that might mean in practical real terms. There is the LLM research project by Karpathy that could-] {+We joked maybe the LLM needs to have the experience of doing a PhD before its useful, and as I do like to follow absolutely wacky thought experiments, I am intrigued by what that might/could mean in practical real terms. There is the LLM research project by Karpathy that could contribute to fleshing out this a bit more...+} {+- [ ] read the LLM paper by [Karpathy](https://github.com/karpathy/autoresearch) as starting point, how might this be (can it be extrapolated to a less scientific approach). #milestone+} {+I need to add this to the [[reflections-on-supervisor-bot-v1point5]]+} {+---+} {+other potentially related papers:+} {+The AI Scientist (Lu et al., 2024)+} {+Disembodied creativity in generative AI: _prima facie_ challenges and limitations of prompting in creative practice+} {+foundational texts:+} {+_Dreyfus, \"What Computers Still Can't Do\" (1972, revised 1992)_+} {+[Schön, \"The Reflective Practitioner\" (1983)](https://infed.org/dir/welcome/donald-schon-learning-reflection-change/)?+}"
+      }
+    ]
+  },
   "first-day-phd-thoughts": {
     "noteDate": null,
     "revisions": [
@@ -11414,6 +11566,74 @@
       }
     ]
   },
+  "ai-in-spatial-practice-and-education": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-05-10",
+        "hash": "4401601",
+        "wordCount": 0,
+        "delta": 0,
+        "added": 0,
+        "removed": 0,
+        "diff": ""
+      },
+      {
+        "date": "2026-05-04",
+        "hash": "425b447",
+        "wordCount": 141,
+        "delta": -1,
+        "added": 141,
+        "removed": 142,
+        "diff": "{+small in-house scoping event with the _Interior Futures programme_ at CCW (Camberwell, Chelsea and Wimbledon). It will begin to critically address **'Ai in Spatial Practice and Education'**. It will be a two hour event with discussion and identification of problems/potentials to be taken forward for future events and action.+} [-<!---] [-Quick syntax:-] [-Session: start:: YYYY-MM-DD HH:MM+ZZ | end:: ... | topic:: ...-] [-Milestone: - [ ] Thing #milestone @YYYY-MM-DD-] {+plan+} [-CORE TYPES:-] [-• Turn into blog post → add: type: post-] [-FEATURE & NAVIGATION TAGS:-] [-• featured      → appears in Featured section on homepage-] [-• gardenEntry   → appears as a trailhead in the Garden gateway-] [-LIVE SYSTEM TAGS:-] [-• session       → used for live sessions / work periods-] [-• daily         → daily log style notes-] [-a small in-house scoping event with the _Interior Futures programme_ on which I work. It will begin to critically address **'Ai in Spatial Practice and Education'**. I have two speakers, Arup's 'futuriser' and PhD student **Tobias Revell** and CCi Lecturer and PhD student, **Mahalia Henry-Richards**. It will be a two hour event with discussion and identification of problems/potentials to be taken forward for future events and action.-] {+intro myself+} {+bg - industry and academic exp. being in architecture/spatial+} {+performance - livecoding and then how that flowed through into the masters+} {+covid context - was a student within that bizarre time, in some ways was like a precursor to some questions we have now re. the how education adapts to outside forces, technology question central+} {+ual / cci/ phd - what made me want to explore this as a topic+} {+where I am now - current position and plans for the near future (+ key value in the research)+}"
+      },
+      {
+        "date": "2026-04-23",
+        "hash": "448ef01",
+        "wordCount": 0,
+        "delta": 0,
+        "added": 0,
+        "removed": 0,
+        "diff": ""
+      },
+      {
+        "date": "2026-04-13",
+        "hash": "38a142d",
+        "wordCount": 17,
+        "delta": 17,
+        "added": 17,
+        "removed": 0,
+        "diff": "{+conversational supervisor bot for conversations in meetings+} {+and+} {+'traditional' LLM chatbot for my queries, questions and support+}"
+      },
+      {
+        "date": "2026-03-31",
+        "hash": "c7cb54e",
+        "wordCount": 4,
+        "delta": 4,
+        "added": 4,
+        "removed": 0,
+        "diff": "{+date-created: <% tp.file.creation_date(\"YYYY-MM-DD\") %>+}"
+      },
+      {
+        "date": "2026-02-08",
+        "hash": "5cd38e4",
+        "wordCount": 0,
+        "delta": -7,
+        "added": 0,
+        "removed": 7,
+        "diff": "[-# title: \"\"-] [-title: <% tp.file.title.toLowerCase() %>-]"
+      },
+      {
+        "date": "2026-01-11",
+        "hash": "1bdddd0",
+        "wordCount": 7,
+        "delta": 5,
+        "added": 7,
+        "removed": 2,
+        "diff": "[-title: \"\"-] {+# title: \"\"+} {+title: <% tp.file.title.toLowerCase() %>+}"
+      }
+    ]
+  },
   "ahrens-2017-how-to-take-smart-notes": {
     "noteDate": null,
     "revisions": [
@@ -11531,6 +11751,15 @@
   "RiCE-paper-plan": {
     "noteDate": null,
     "revisions": [
+      {
+        "date": "2026-05-10",
+        "hash": "4401601",
+        "wordCount": 332,
+        "delta": 187,
+        "added": 332,
+        "removed": 145,
+        "diff": "[-As a basis, I notes and thinking are structure around the scaffold of a zettelkasten-inspired approach, which naturally allows for a slow formulation and clustering of ideas. I started to wonder if from this emergent cluster there could be ways to implement LLM tools to surface or work with this alongside my thinking, but always keeping within it's seperate domain. This is the central tension and my desire to understand and build toward. How can I work with LLM's on the growing dataset which is my research, but working against some of the understood behaviours and functionalities of this technology - optimisation, productivity and efficiency and swift evaluation. How can I instead create a space where thoughts can be investigated and played with, that stimulate and aid my process rather that taking the reins from my by too swiftly resolving all open issues or problems-] {+At it's base, my notes and thinking are structured around a zettelkasten-inspired approach, which naturally allows for the slow formulation and clustering of ideas. I began to wonder whether from this emergent cluster there could be ways to implement LLM tools to surface and work with this material alongside my thinking, but always keeping them within a seperate domain. This is the central tension I am trying to understand and build toward: how can I work with LLM's on the growing dataset that is my research, while working against some of the understood behaviours and functionalities of this technology - optimisation, productivity and efficiency and swift evaluation. How can I instead create a space where thoughts can be investigated and played with, where AI stimulates and aids my process rather that taking the reins from me by too swiftly resolving what should remain open+} {+<mark style=\"background: #FFB8EBA6;\">*what did I actually build, and what did building it reveal?*+} {+</mark>+} {+context:+} {+working with obsidian as the core container, I began working with this as a way to track my thoughts, inspired by Zettalkasten, it was proving a useful tool in the very early stages of starting to demonstrate to me the ways in which my seemingly disparate thoughts were beginning to connect and become coherent directions. In this process I was simultaneously reflecting on a thread that is important to my research, which is a playful and imaginative approach that was informing my methodological approach. I was also interested in ideas of performance from my practice, I had this thought -- 'what could you could live code a phd?'. This was to explore a methodical approach to conducting my research, but also a direct question and hypothesis that Ihad in regards to the growing influence of generative AI on education. If the assessed outcomes within learning can all be produced easily with generative AI tools, does it everything become centered on the process? This system came to embody and explore both of these possibilities.+}"
+      },
       {
         "date": "2026-05-09",
         "hash": "172b304",
@@ -12692,6 +12921,20 @@
         "added": 96,
         "removed": 0,
         "diff": "{+---+} {+{\"dg-publish\":true,\"permalink\":\"/pre-start-thoughts/algorithms-as-world-ph-d-rough-ideas/\"}+} {+---+} {+[[published/play-is-the-work-of-operating-a-system\\|play-is-the-work-of-operating-a-system]]+} {+---+} {+order - resistance - messiness+} {+The current state of the world - systems+} {+[[published/types-of-systems\\|types-of-systems]]+} {+specific case study education -> creative computing+} {+(which system? education)+} {+(playing with(in) the system to build something new)+} {+what is worlding?+} {+Use the idea of algorithms as a framework to work within+} {+ML algorithms+} {+Generative algorithms+} {+[[algorithms-as-framework\\|algorithms-as-framework]]+} {+(rigidity as canvas)+} {+methodology ?+} {+play as methodology - too vague?+} {+improvisation and imagination+} {+experience design+} {+collaborative world building using computational tools?+} {+metaphorical and literal+} {+making the familiar strange+} {+systems as stories / embodying it as a way to learn+}"
+      }
+    ]
+  },
+  "2026-05-10": {
+    "noteDate": "2026-05-10",
+    "revisions": [
+      {
+        "date": "2026-05-10",
+        "hash": "4401601",
+        "wordCount": 31,
+        "delta": 31,
+        "added": 31,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+visibility: public+} {+title: 2026-05-10+} {+tags:+} {+- daily+} {+- stream+} {+---+} {+<details>+} {+<summary>Session</summary>+} {+start:: 2026-05-10T13:07:27+0100+} {+topic:: doing a bunch of things+} {+</details>+} {+adding some documentation to here:+} {+[[project-phd-live-platform]]+} {+[[RiCE-paper-plan]]+}"
       }
     ]
   },
