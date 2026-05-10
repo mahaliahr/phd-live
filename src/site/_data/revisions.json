@@ -12929,12 +12929,12 @@
     "revisions": [
       {
         "date": "2026-05-10",
-        "hash": "a206cb5",
-        "wordCount": 1,
-        "delta": 1,
-        "added": 1,
-        "removed": 0,
-        "diff": "{+end::2026-05-10T16:28:44+0100+}"
+        "hash": "70b3297",
+        "wordCount": 10,
+        "delta": 9,
+        "added": 10,
+        "removed": 1,
+        "diff": "[-<summary>Session</summary>-] {+<summary>Session 1</summary>+} {+<details>+} {+<summary>Session 2</summary>+} {+start:: 2026-05-10T18:09:16+0100+} {+topic:: organising+} {+</details>+}"
       }
     ]
   },

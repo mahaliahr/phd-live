@@ -1,4 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&family=Roboto+Mono:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Override obsidian/theme font variables so all content uses our chosen fonts */
+:root,
+.theme-light,
+.theme-dark {
+  --font-text: "Roboto Mono", monospace;
+  --font-interface: "Roboto Mono", monospace;
+  --font-default: "Roboto Mono", monospace;
+}
 
 /* Design tokens and fallbacks (top-level, not nested) */
 :root {
@@ -34,7 +43,7 @@ html, body, .livebar {
 }
 body {
   margin: 0;
-  font-family: "Overpass Mono", monospace;
+  font-family: "Roboto Mono", monospace;
 }
 
 html, body {
@@ -114,7 +123,8 @@ html, body {
 /* Navbar color lock */
 .navbar { background: var(--navbar-bg); color: var(--navbar-fg); }
 
-/* Heading scale (restore visual hierarchy) */
+/* Heading scale */
+h1, h2, h3, h4, h5, h6 { font-family: "Roboto Mono", monospace; }
 h1 { font-size: clamp(2.1rem, 4.5vw, 2.8rem); line-height:1.15; font-weight:600; margin:1.4rem 0 .9rem; }
 h2 { font-size: clamp(1.7rem, 3.5vw, 2.2rem); line-height:1.2;  font-weight:600; margin:1.3rem 0 .8rem; }
 h3 { font-size: clamp(1.35rem, 2.6vw, 1.6rem); line-height:1.25; font-weight:600; margin:1.1rem 0 .6rem; }
