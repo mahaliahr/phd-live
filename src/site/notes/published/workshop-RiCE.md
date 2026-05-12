@@ -8,14 +8,14 @@ type: ""
 # Reflection in Creative Experience (RiCE) Workshop
 
 https://riceworkshop.github.io/ 
-##### *Theme: AI Support for Reflection*
 
-AI models that respond to complex, open-ended, and multimodal inputs at scale bring forth unique opportunities and challenges for supporting creative practitioners' reflective thinking. Concerns persist regarding the potential negative cognitive effects of AI use. For instance, there is a cognitive process mismatch between creators and LLMs: LLMs typically operate through direct, goal-directed reasoning whereas creative practice is inherently non-linear and characterised by loosely defined intentions.
+[[theme-ai-support-for-reflection]]
+[[theme-creativity-support-tools-for-reflection]]
 
-- <mark style="background: #FFB8EBA6;">How can creators contend with the cognitive mismatch between LLMs and their own thinking?</mark>
-- Can structure be implemented in LLMs to scaffold creative reflection without impacting characteristics of the creative user experience?
-- Will creators retain the opportunity to reflect on surprises and follow tangents within an AI's constraints?
-- <mark style="background: #FFB8EBA6;">Will creators feelings of agency and creative intent be preserved when working with reflective AI scaffolds?</mark>
+[[RiCE-paper-plan]]
+
+
+
 ##### *What to submit?*
 
 *To participate, please submit either: A) a 2 to 4-page **paper**; B) a 2 to 4-page **pictorial**; or C) a 3 to 5-min **video**.*  
@@ -42,4 +42,3 @@ AI models that respond to complex, open-ended, and multimodal inputs at scale br
 - *Include the workshop details in your submission's header and footers.*
 - *Pictorials do not need to be anonymised. Include the submission's title, author(s) and their affiliation(s), and a 150-word abstract on the first page.*
 
-[[RiCE-paper-plan]]
