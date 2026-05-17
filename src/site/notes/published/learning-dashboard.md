@@ -3,6 +3,8 @@ dg-publish: true
 visibility: public
 tags: []
 type: ""
+aliases:
+  - learning dashboard
 ---
 As this research has been developing, it's become clear that all these components could (and would) benefit from coming together in some kind of wider ecosystem. Where obsidian has kind of been a 'homebase' so far in terms of where the main work is happening - as I am building these various bots, it makes sense that this all has a base that connects.
 

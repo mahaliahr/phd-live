@@ -3,6 +3,8 @@ dg-publish: true
 visibility: public
 tags:
   - zettel
+aliases:
+  - phd-live platform
 ---
 this is an evolving website/digital garden/process as performance for the research.
 

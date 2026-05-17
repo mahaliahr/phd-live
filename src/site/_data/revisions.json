@@ -1,4 +1,18 @@
 {
+  "study-companion-bot": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-05-17",
+        "hash": "c66bd41",
+        "wordCount": 12,
+        "delta": 12,
+        "added": 12,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-05-17+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+}"
+      }
+    ]
+  },
   "planning-for-public-sharing": {
     "noteDate": null,
     "revisions": [
@@ -525,6 +539,15 @@
   "matuschak-2024-how-might-we-learn": {
     "noteDate": null,
     "revisions": [
+      {
+        "date": "2026-05-17",
+        "hash": "c66bd41",
+        "wordCount": 174,
+        "delta": 45,
+        "added": 174,
+        "removed": 129,
+        "diff": "{+ie. the most rewarding high growth period of your life _learning wasn’t the point_. Instead, they were immersed in a situation with real personal meaning—like a startup, a research project, an artistic urge, or just a fiery curiosity. They dove in, got their hands dirty, and learned whatever was important along the way.+} [-ie. the most rewarding high growth period of your life-] {+But when I look at others’ visions of chatbot tutors through the much broader framing we’ve been discussing—they’re clearly missing a lot of what I want. I think these visions also often fail to take seriously just how much a real tutor can do. In large part, I think that’s because the authors of these visions are usually thinking about _educating_ (something they want to do to others) rather than _learning_ (something they want for themselves) <mark style=\"background: #FFB8EBA6;\"> --> I like this perspective of thinking of teaching in the way that you like to work </mark>+} [-_learning wasn’t the point_. Instead, they were immersed in a situation with real personal meaning—like a startup, a research project, an artistic urge, or just a fiery curiosity. They dove in, got their hands dirty, and learned whatever was important along the way.-] [-But when I look at others’ visions of chatbot tutors through the much broader framing we’ve been discussing—they’re clearly missing a lot of what I want. I think these visions also often fail to take seriously just how much a real tutor can do. In large part, I think that’s because the authors of these visions are usually thinking about _educating_ (something they want to do to others) rather than _learning_ (something they want for themselves).-] {+he talks about the difference between implicit learning and guided learning and that they both have flaws, but would benefit from being more integrated+}"
+      },
       {
         "date": "2026-05-04",
         "hash": "d671441",
@@ -6277,6 +6300,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-05-17",
+        "hash": "c66bd41",
+        "wordCount": 2,
+        "delta": 2,
+        "added": 2,
+        "removed": 0,
+        "diff": "{+![rough thoughts](images/diagram.png)+}"
+      },
+      {
         "date": "2026-05-10",
         "hash": "4401601",
         "wordCount": 13,
@@ -7229,6 +7261,15 @@
   "phd-live-build": {
     "noteDate": null,
     "revisions": [
+      {
+        "date": "2026-05-17",
+        "hash": "c66bd41",
+        "wordCount": 101,
+        "delta": 0,
+        "added": 101,
+        "removed": 101,
+        "diff": "[-- [ ] wikilinks not clickable in widget / live bar-] [-- [ ] session tracking not working properly-] [-- [ ] styling on blog post page-] [-- [ ] images rendering incorrectly-] [-- [ ] 2 sessions on daily page not being picked up-] [-- [ ] livebar showing 'next: in 40 minutes' instead of 'live'-] [-- [ ] recent notes not showing most recently edited-] [-- [ ] reinstate graphscript (sidebar local graph)-] [-- [ ] redesign homepage to 2-column layout-] [-- [ ] template session as dropdown-] [-- [ ] incorporate canvas functionality from original digital garden template-] {+- [ ] recent notes not showing most recently edited+} {+- [ ] reinstate graphscript (sidebar local graph)+} {+- [ ] incorporate canvas functionality from original digital garden template+} {+- [ ] template session as dropdown+} {+- [ ] redesign homepage to 2-column layout+} {+- [ ] images rendering incorrectly+} {+- [ ] styling on blog post page+} {+- [ ] livebar showing 'next: in 40 minutes' instead of 'live'+} {+- [ ] wikilinks not clickable in widget / live bar+} {+- [ ] 2 sessions on daily page not being picked up+} {+- [ ] session tracking not working properly+}"
+      },
       {
         "date": "2026-05-10",
         "hash": "4401601",
@@ -13048,6 +13089,20 @@
         "added": 96,
         "removed": 0,
         "diff": "{+---+} {+{\"dg-publish\":true,\"permalink\":\"/pre-start-thoughts/algorithms-as-world-ph-d-rough-ideas/\"}+} {+---+} {+[[published/play-is-the-work-of-operating-a-system\\|play-is-the-work-of-operating-a-system]]+} {+---+} {+order - resistance - messiness+} {+The current state of the world - systems+} {+[[published/types-of-systems\\|types-of-systems]]+} {+specific case study education -> creative computing+} {+(which system? education)+} {+(playing with(in) the system to build something new)+} {+what is worlding?+} {+Use the idea of algorithms as a framework to work within+} {+ML algorithms+} {+Generative algorithms+} {+[[algorithms-as-framework\\|algorithms-as-framework]]+} {+(rigidity as canvas)+} {+methodology ?+} {+play as methodology - too vague?+} {+improvisation and imagination+} {+experience design+} {+collaborative world building using computational tools?+} {+metaphorical and literal+} {+making the familiar strange+} {+systems as stories / embodying it as a way to learn+}"
+      }
+    ]
+  },
+  "2026-05-17": {
+    "noteDate": "2026-05-17",
+    "revisions": [
+      {
+        "date": "2026-05-17",
+        "hash": "c66bd41",
+        "wordCount": 22,
+        "delta": 22,
+        "added": 22,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+visibility: public+} {+title: 2026-05-17+} {+tags:+} {+- daily+} {+- stream+} {+---+} {+<details>+} {+<summary>Session</summary>+} {+start:: 2026-05-17T14:18:51+0100+} {+topic:: working on infrastructure+} {+</details>+}"
       }
     ]
   },

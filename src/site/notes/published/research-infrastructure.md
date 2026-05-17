@@ -7,25 +7,33 @@ type: ""
 ---
 the overarching system that holds:
 
-[[learning-dashboard]]
-[[project-supervisor-bot]]
-[[study-companion-bot]]
-[[confidence-bot]]
+- [[learning-dashboard]]
+- [[project-supervisor-bot]]
+- [[study-companion-bot]]
+- [[confidence-bot]]
 
-as well as connecting to my obsidian vault and the website (the [[project-phd-live-platform]])
+as well as connecting to my obsidian vault and the website (the [[project-phd-live-platform|phd-live platform]])
 
 ![research infrastructure|650](images/personal.png)
 
-[[shared-context-layer]]
+the obsidian vault acts a basis that feeds into an intrinsic [[shared-context-layer]] which acts as additional contextual information for all components of the research infrastructure.
+
+![research infrastructure new|489](images/research-infrastructure.png)
+
+<figcaption>most recent diagram<figcaption>
 
 ---
-following session [[2026-04-17]]
+
+following session [[2026-04-17]], the 'research infrastructure' was born.
+
 ### Research / knowledge infrastructure: key decisions
 
-![research infrastructure|650](images/knowledge-ecosystem.png)
+![initial infrastructure image](images/knowledge-ecosystem.png)
 
+<figcaption>initial diagram of research infrastructure</figcaption> 
 ### Build approach
-Custom FastAPI + frontend remains correct. 
+Custom FastAPI + frontend approach. 
+
 (Off-the-shelf options (LibreChat, AnythingLLM, Chainlit) don't accommodate the non-chat interaction paradigms that I am interested in exploring).
 
 general logic - don't build 'plumbing' that already exists; but build the interface layer myself
@@ -36,21 +44,21 @@ general logic - don't build 'plumbing' that already exists; but build the interf
 - **Confidence bot** — public presence agent. Reads notes, proposes shares, approval
   step retained. Most conceptually distinctive -> next to build?
 
-These map onto three modes of cognitive/emotional labour in PhD research.
-This is worth naming explicitly in the thesis framing.
+These map onto three modes of cognitive/emotional labour in PhD research. -> This is worth naming explicitly in the thesis framing.
 
-### Shared context layer (build this first)
+### [[shared-context-layer|shared context layer]]
 One vector store (ChromaDB or SQLite + embeddings), one query API, all bots consume it. Sequence: watcher → embed → query endpoint → wire supervisor bot → build confidence bot on top. Chunk by Obsidian heading structure. 
 
 (RAG-compatible by design; fuller retrieval can be added later as extension).
 
-### Learning dashboard
-Shell first (navigation + activity feed), which can become knowledge layer second. 
-Let real usage generate signal before designing potential context features of this dashboard.
+### [[learning-dashboard|learning dashboard]]
+Shell first (navigation + activity feed), which can become knowledge layer second.
 
-Document this sequencing decision - the reasoning is important research material (ie. why starting from shell first, seeing what emerges as I use it before adding more features)
+I will let real usage generate signal before designing potential context features of this dashboard.
 
-### Activity log (AI layer as I have been calling it in provisional sketches)
+*Document this sequencing decision - the reasoning is important research material (ie. why starting from shell first, seeing what emerges as I use it before adding more features)*
+
+### Activity log
 Three distinct things, kept separate:
 - Session record — structured log per bot interaction (local store)
 - Research diary layer — interpretive, themes, trajectory (future)

@@ -4,14 +4,15 @@ date-created: 2026-04-18
 visibility: public
 tags: []
 type: ""
+aliases:
+  - shared context layer
 ---
 Before building more bots, I need to establish a single shared context layer that all three bots can query. 
 
 this is to avoid rebuilding the Obsidian integration three times and ensures consistent knowledge across the system.
 
 
-**The Obsidian vault is the canonical knowledge source** -> A watched folder pipeline embeds markdown files into a shared vector store (ChromaDB or
-SQLite + embeddings). 
+**The Obsidian vault is the canonical knowledge source** -> A watched folder pipeline embeds markdown files into a shared vector store (ChromaDB or SQLite + embeddings). 
 Any bot queries this store via a common internal API.
 No bot owns its own copy of the notes.
 
@@ -54,12 +55,9 @@ python3 -m uvicorn api:app --reload
 ```
 #### Key open questions
 
-- Chunking strategy: by heading, by paragraph, or fixed token windows?
-- Which embedding model? (nomic-embed-text via Ollama is a reasonable local default)
-- How does the Confidence Bot determine "shareable" threshold?
-  This is partly a prompt engineering question, partly a research question.
-- Does the Activity Log feed PhD-Live automatically or via manual curation?
 
+- Does the Activity Log feed PhD-Live automatically or via manual curation?
+[[system-open-questions]]
 ## What this is not
 
 This is not a full RAG system build. The vector store is infrastructure,

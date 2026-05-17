@@ -5,7 +5,7 @@ visibility: public
 tags: []
 type: ""
 ---
-questions that don't have a home yet, or that need thinking before they can become tasks. linked from [[system-map]]. when a question resolves, note the resolution briefly and leave it here — the history of how questions close is interesting.
+questions that don't have a home yet, or that need thinking before they can become tasks. linked from [[system-map]]. when a question resolves, note the resolution briefly and leave it here -- the history of how questions close is interesting.
 
 ---
 ### supervisor vs study companion
@@ -20,6 +20,18 @@ what is the meaningful difference between the supervisor bot and the study compa
 - what does the "holding the research frame" function require technically - is it system prompt, retrieval context, or something about how the model reasons?
 - which of these functions are most degraded by lower capability models, and which survive?
 - is the dialogic quality (thinking against output rather than receiving it) something that can be designed for, or does it emerge from the interaction?
+
+---
+### [[shared-context-layer|shared context layer]]
+
+- Chunking strategy: by heading, by paragraph, or fixed token windows?
+- Which embedding model? (nomic-embed-text via Ollama is a reasonable local default)
+
+---
+### confidence bot
+
+- How does the Confidence Bot determine "shareable" threshold?
+  This is partly a prompt engineering question, partly a research question.
 
 ---
 
