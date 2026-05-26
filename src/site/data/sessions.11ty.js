@@ -91,6 +91,15 @@ class SessionsJson {
     return "";
   }
 
+  isLikelyActive(startIso, endIso) {
+    if (endIso) return false; // has an end time — definitely not active
+    if (!startIso) return false;
+    const start = new Date(startIso);
+    if (isNaN(start.getTime())) return false;
+    const hoursAgo = (Date.now() - start.getTime()) / (1000 * 60 * 60);
+    return hoursAgo <= 8; // within staleness threshold
+  }
+
   render(data) {
     const sessions = [];
     const seen = new Set();
@@ -113,32 +122,44 @@ class SessionsJson {
       const parsed = this.parseSessionsFromContent(rawContent);
 
       for (const s of parsed) {
+        const startIso = this.normalizeToIso(s.start) || s.start;
+        const endIso = this.normalizeToIso(s.end) || s.end || null;
         sessions.push({
-          start: this.normalizeToIso(s.start) || s.start,
-          end: this.normalizeToIso(s.end) || s.end || null,
+          source: 'obsidian',
+          start: startIso,
+          end: endIso,
           topic: s.topic,
           url: note.url,
           title: note.data?.title || note.fileSlug,
+          isLikelyActive: this.isLikelyActive(startIso, endIso),
         });
       }
 
       if (Array.isArray(note.data?.sessions)) {
         for (const s of note.data.sessions) {
+          const startIso = this.normalizeToIso(s.start) || s.start;
+          const endIso = this.normalizeToIso(s.end) || s.end || null;
           sessions.push({
-            start: this.normalizeToIso(s.start) || s.start,
-            end: this.normalizeToIso(s.end) || s.end || null,
+            source: 'obsidian',
+            start: startIso,
+            end: endIso,
             topic: s.topic || note.data.topic || null,
             url: note.url,
             title: note.data?.title || note.fileSlug,
+            isLikelyActive: this.isLikelyActive(startIso, endIso),
           });
         }
       } else if (note.data?.start) {
+        const startIso = this.normalizeToIso(note.data.start) || note.data.start;
+        const endIso = this.normalizeToIso(note.data.end) || note.data.end || null;
         sessions.push({
-          start: this.normalizeToIso(note.data.start) || note.data.start,
-          end: this.normalizeToIso(note.data.end) || note.data.end || null,
+          source: 'obsidian',
+          start: startIso,
+          end: endIso,
           topic: note.data.topic || null,
           url: note.url,
           title: note.data?.title || note.fileSlug,
+          isLikelyActive: this.isLikelyActive(startIso, endIso),
         });
       }
     }

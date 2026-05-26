@@ -61,6 +61,7 @@
       if (!res.ok) return []
       const data = await res.json()
       return data.map(s => ({
+        source: 'supabase',
         start: s.started,
         end: s.ended || null,
         topic: s.type + (s.note ? ` · ${s.note}` : ''),
@@ -70,6 +71,15 @@
       console.error('Supabase fetch failed', e)
       return []
     }
+  }
+
+  // --- Active session detection ---
+  // Supabase: trust the explicit status field
+  // Obsidian: trust the isLikelyActive flag (no end + within 8h staleness threshold)
+
+  function isActive(session) {
+    if (session.source === 'supabase') return session.status === 'active'
+    return session.isLikelyActive === true
   }
 
   // --- Live bar ---
@@ -103,33 +113,21 @@
     const streamContainer = document.getElementById('live-stream')
     const liveHeading = document.getElementById('live-heading')
 
-    let currentSession = null
-    let nextSession = null
+    console.log('streamContainer:', streamContainer)
+    console.log('allSessions count:', allSessions.length)
+    console.log('stream count:', stream ? stream.length : 'null')
 
-    for (const session of allSessions) {
-      if (!session.start) continue
-      const start = new Date(session.start)
-      if (isNaN(start.getTime())) continue
-      const end = session.end ? new Date(session.end) : null
-      if (start <= now && (!end || end >= now)) {
-        currentSession = session
-        break
-      }
-    }
+    let currentSession = allSessions.find(isActive) || null
 
-    for (const s of allSessions) {
-      if (new Date(s.start) > now) {
-        nextSession = s
-        break
-      }
-    }
-
+    // fall back to most recent if nothing active
     if (!currentSession && allSessions.length > 0) {
       currentSession = allSessions[0]
     }
 
+    const nextSession = allSessions.find(s => new Date(s.start) > now) || null
+
     if (liveHeading) {
-      const isLive = currentSession && !currentSession.end
+      const isLive = currentSession && isActive(currentSession)
       if (isLive) {
         liveHeading.innerHTML = '<span class="record-dot"></span>LIVE'
         liveHeading.classList.add('is-live')
@@ -143,8 +141,8 @@
       const s = currentSession
       const start = new Date(s.start)
       const end = s.end ? new Date(s.end) : null
-      const isActive = start <= now && (!end || end >= now)
-      const statusLabel = isActive
+      const isSessionActive = isActive(s)
+      const statusLabel = isSessionActive
         ? '<span class="status active">LIVE NOW</span>'
         : '<span class="status">Most Recent</span>'
 
@@ -157,24 +155,24 @@
       }
 
       const tick = () => {
-        const mins = isActive ? Math.max(0, Math.floor((Date.now() - start) / 60000)) : null
+        const mins = isSessionActive ? Math.max(0, Math.floor((Date.now() - start) / 60000)) : null
         nowContainer.innerHTML = `
-          <div class="session-card ${isActive ? 'active' : ''}">
+          <div class="session-card ${isSessionActive ? 'active' : ''}">
             <div class="session-header">
               <h3>${processWikilinks(s.topic || 'Session')}</h3>
               ${statusLabel}
             </div>
             <div class="session-meta">
               <span>Started ${relativeTime(s.start)}</span>
-              ${isActive ? `<span>${mins}m and counting</span>` : duration}
-              ${!isActive && end ? `<span>Ended ${relativeTime(s.end)}</span>` : ''}
+              ${isSessionActive ? `<span>${mins}m and counting</span>` : duration}
+              ${!isSessionActive && end ? `<span>Ended ${relativeTime(s.end)}</span>` : ''}
             </div>
             ${s.url ? `<a href="${s.url}" class="session-link">View full session →</a>` : ''}
             <div class="content-type-label">session</div>
           </div>`
       }
       tick()
-      if (isActive) setInterval(tick, 60_000)
+      if (isSessionActive) setInterval(tick, 60_000)
     } else if (nowContainer) {
       nowContainer.innerHTML = '<p class="no-data">No recent work sessions</p>'
     }
@@ -195,15 +193,22 @@
       }
     }
 
+    console.log('about to render stream, items:', stream ? stream.length : 'null', 'container:', streamContainer)
+
     if (streamContainer && stream && stream.length) {
-      streamContainer.innerHTML = stream.slice(0, 5).map(item => `
-        <div class="stream-item">
-          <span class="stream-time">${relativeTime(item.date)}</span>
-          <span class="stream-text">${processWikilinks(item.text)}</span>
-          ${item.noteUrl ? `<a href="${item.noteUrl}" class="stream-link">→</a>` : ''}
-          <div class="content-type-label">recent thinking</div>
-        </div>`
-      ).join('')
+        console.log('rendering stream items:', stream.slice(0, 5))
+      streamContainer.innerHTML = stream.slice(0, 5).map((item, i) => `
+  <div class="feed-card ${i % 2 === 0 ? 'align-left' : 'align-right'}">
+    <div class="feed-card-content">
+      <p>${processWikilinks(item.text)}</p>
+    </div>
+    <div class="feed-card-meta">
+      ${relativeTime(item.date)}
+      ${(item.noteUrl || item.url) ? `· <a href="${item.noteUrl || item.url}" class="stream-link">view note</a>` : ''}
+    </div>
+    <div class="content-type-label">recent thinking</div>
+  </div>`
+).join('')
     }
   }
 
@@ -218,12 +223,15 @@
       fetchJson(`${base}data/stream.json`)
     ])
 
+    console.log('obsidian sessions:', obsidianSessions)
+    console.log('stream:', stream)
+
     const allSessions = [
       ...(supabaseSessions || []),
       ...(obsidianSessions || [])
     ].sort((a, b) => new Date(b.start) - new Date(a.start))
 
-    const activeSession = allSessions.find(s => s.status === 'active' || (!s.end && new Date(s.start) <= new Date()))
+    const activeSession = allSessions.find(isActive)
 
     updateLiveBar(activeSession)
     updateLiveColumn(allSessions, stream)

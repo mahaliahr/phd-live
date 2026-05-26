@@ -13,6 +13,29 @@
       }
     ]
   },
+  "Untitled": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-01-15",
+        "hash": "fbfacbc",
+        "wordCount": 0,
+        "delta": -127,
+        "added": 0,
+        "removed": 127,
+        "diff": "[-dg-publish: true-] [-visibility: public-] [-title: 2026-01-15-] [-tags:-] [-- daily-] [-- stream-] [-type: \"\"-] [-<!---] [-Quick syntax:-] [-Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...-] [-Milestone: - [ ] Thing #milestone @YYYY-MM-DD-] [-CORE TYPES:-] [-• Turn into blog post → add: type: post-] [-FEATURE & NAVIGATION TAGS:-] [-• featured      → appears in Featured section on homepage-] [-• gardenEntry   → appears as a trailhead in the Garden gateway-] [-LIVE SYSTEM TAGS:-] [-• session       → used for live sessions / work periods-] [-• daily         → daily log style notes-] [-15:39  thinking about [vibe-coding], is there a pedagogical benefit to this? can it be framed in a useful way in teaching? Particularly in relation to creating your own tools, moving away from all the major companies attempts to dominate...-]"
+      },
+      {
+        "date": "2026-01-11",
+        "hash": "1bdddd0",
+        "wordCount": 7,
+        "delta": 5,
+        "added": 7,
+        "removed": 2,
+        "diff": "[-title: \"\"-] {+# title: \"\"+} {+title: <% tp.file.title.toLowerCase() %>+}"
+      }
+    ]
+  },
   "planning-for-public-sharing": {
     "noteDate": null,
     "revisions": [
@@ -13142,26 +13165,12 @@
     "revisions": [
       {
         "date": "2026-05-26",
-        "hash": "f7c37ed",
-        "wordCount": 14,
-        "delta": 14,
-        "added": 14,
+        "hash": "d81b4ab",
+        "wordCount": 8,
+        "delta": 8,
+        "added": 8,
         "removed": 0,
-        "diff": "{+---+} {+date: 2026-05-26+} {+---+} {+## sessions+} {+- 23:41 · coding · 9m · test+}"
-      }
-    ]
-  },
-  "2026-05-25": {
-    "noteDate": "2026-05-25",
-    "revisions": [
-      {
-        "date": "2026-05-26",
-        "hash": "f7c37ed",
-        "wordCount": 27,
-        "delta": 27,
-        "added": 27,
-        "removed": 0,
-        "diff": "{+---+} {+date: 2026-05-25+} {+---+} {+## sessions+} {+- 22:18 · reading · 33m+} {+- 18:34 · reading · 0m+} {+- 17:03 · reading · 1m · test session+}"
+        "diff": "{+- 23:50 · coding · 70m · test+}"
       }
     ]
   },
