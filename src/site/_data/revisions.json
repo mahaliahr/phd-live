@@ -3804,6 +3804,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-05-18",
+        "hash": "ca41984",
+        "wordCount": 92,
+        "delta": 52,
+        "added": 92,
+        "removed": 40,
+        "diff": "[-questions that don't have a home yet, or that need thinking before they can become tasks. linked from [[system-map]]. when a question resolves, note the resolution briefly and leave it here — the history of how questions close is interesting.-] {+questions that don't have a home yet, or that need thinking before they can become tasks. linked from [[system-map]]. when a question resolves, note the resolution briefly and leave it here -- the history of how questions close is interesting.+} {+---+} {+### [[shared-context-layer|shared context layer]]+} {+- Chunking strategy: by heading, by paragraph, or fixed token windows?+} {+- Which embedding model? (nomic-embed-text via Ollama is a reasonable local default)+} {+---+} {+### confidence bot+} {+- How does the Confidence Bot determine \"shareable\" threshold?+} {+This is partly a prompt engineering question, partly a research question.+}"
+      },
+      {
         "date": "2026-05-10",
         "hash": "4401601",
         "wordCount": 0,
@@ -5333,6 +5342,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-05-18",
+        "hash": "ca41984",
+        "wordCount": 44,
+        "delta": -37,
+        "added": 44,
+        "removed": 81,
+        "diff": "{+aliases:+} {+- shared context layer+} [-**The Obsidian vault is the canonical knowledge source** -> A watched folder pipeline embeds markdown files into a shared vector store (ChromaDB or-] [-SQLite + embeddings).-] {+**The Obsidian vault is the canonical knowledge source** -> A watched folder pipeline embeds markdown files into a shared vector store (ChromaDB or SQLite + embeddings).+} [-- Chunking strategy: by heading, by paragraph, or fixed token windows?-] [-- Which embedding model? (nomic-embed-text via Ollama is a reasonable local default)-] [-- How does the Confidence Bot determine \"shareable\" threshold?-] [-This is partly a prompt engineering question, partly a research question.-] [-- Does the Activity Log feed PhD-Live automatically or via manual curation?-] {+- Does the Activity Log feed PhD-Live automatically or via manual curation?+} {+[[system-open-questions]]+}"
+      },
+      {
         "date": "2026-04-23",
         "hash": "448ef01",
         "wordCount": 0,
@@ -5637,6 +5655,15 @@
   "research-infrastructure": {
     "noteDate": null,
     "revisions": [
+      {
+        "date": "2026-05-18",
+        "hash": "ca41984",
+        "wordCount": 160,
+        "delta": 34,
+        "added": 160,
+        "removed": 126,
+        "diff": "[-[[learning-dashboard]]-] [-[[project-supervisor-bot]]-] [-[[study-companion-bot]]-] [-[[confidence-bot]]-] {+- [[learning-dashboard]]+} {+- [[project-supervisor-bot]]+} {+- [[study-companion-bot]]+} {+- [[confidence-bot]]+} [-as well as connecting to my obsidian vault and the website (the [[project-phd-live-platform]])-] {+as well as connecting to my obsidian vault and the website (the [[project-phd-live-platform|phd-live platform]])+} [-[[shared-context-layer]]-] {+the obsidian vault acts a basis that feeds into an intrinsic [[shared-context-layer]] which acts as additional contextual information for all components of the research infrastructure.+} {+![research infrastructure new|489](images/research-infrastructure.png)+} {+<figcaption>most recent diagram<figcaption>+} [-following session [[2026-04-17]]-] {+following session [[2026-04-17]], the 'research infrastructure' was born.+} [-![research infrastructure|650](images/knowledge-ecosystem.png)-] {+![initial infrastructure image](images/knowledge-ecosystem.png)+} {+<figcaption>initial diagram of research infrastructure</figcaption>+} [-Custom FastAPI + frontend remains correct.-] {+Custom FastAPI + frontend approach.+} [-These map onto three modes of cognitive/emotional labour in PhD research.-] [-This is worth naming explicitly in the thesis framing.-] {+These map onto three modes of cognitive/emotional labour in PhD research. -> This is worth naming explicitly in the thesis framing.+} [-### Shared context layer (build this first)-] {+### [[shared-context-layer|shared context layer]]+} [-### Learning dashboard-] [-Shell first (navigation + activity feed), which can become knowledge layer second.-] [-Let real usage generate signal before designing potential context features of this dashboard.-] {+### [[learning-dashboard|learning dashboard]]+} {+Shell first (navigation + activity feed), which can become knowledge layer second.+} {+I will let real usage generate signal before designing potential context features of this dashboard.+} [-Document this sequencing decision - the reasoning is important research material (ie. why starting from shell first, seeing what emerges as I use it before adding more features)-] {+*Document this sequencing decision - the reasoning is important research material (ie. why starting from shell first, seeing what emerges as I use it before adding more features)*+} [-### Activity log (AI layer as I have been calling it in provisional sketches)-] {+### Activity log+}"
+      },
       {
         "date": "2026-04-25",
         "hash": "4b7f307",
@@ -6299,6 +6326,15 @@
   "project-phd-live-platform": {
     "noteDate": null,
     "revisions": [
+      {
+        "date": "2026-05-18",
+        "hash": "ca41984",
+        "wordCount": 4,
+        "delta": 4,
+        "added": 4,
+        "removed": 0,
+        "diff": "{+aliases:+} {+- phd-live platform+}"
+      },
       {
         "date": "2026-05-17",
         "hash": "c66bd41",
@@ -8810,6 +8846,15 @@
   "learning-dashboard": {
     "noteDate": null,
     "revisions": [
+      {
+        "date": "2026-05-18",
+        "hash": "ca41984",
+        "wordCount": 4,
+        "delta": 4,
+        "added": 4,
+        "removed": 0,
+        "diff": "{+aliases:+} {+- learning dashboard+}"
+      },
       {
         "date": "2026-04-25",
         "hash": "04b9f30",
@@ -13095,6 +13140,15 @@
   "2026-05-17": {
     "noteDate": "2026-05-17",
     "revisions": [
+      {
+        "date": "2026-05-18",
+        "hash": "ca41984",
+        "wordCount": 20,
+        "delta": 19,
+        "added": 20,
+        "removed": 1,
+        "diff": "[-</details>-] {+end:: 2026-05-18T00:48:51+0100+} {+</details>+} {+updating these files [[learning-dashboard]] and [[research-infrastructure]]. Was a bit of a distracted day, but made some updates+}"
+      },
       {
         "date": "2026-05-17",
         "hash": "c66bd41",
