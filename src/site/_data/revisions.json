@@ -17,22 +17,40 @@
     "noteDate": null,
     "revisions": [
       {
-        "date": "2026-01-15",
-        "hash": "fbfacbc",
-        "wordCount": 0,
-        "delta": -127,
-        "added": 0,
-        "removed": 127,
-        "diff": "[-dg-publish: true-] [-visibility: public-] [-title: 2026-01-15-] [-tags:-] [-- daily-] [-- stream-] [-type: \"\"-] [-<!---] [-Quick syntax:-] [-Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...-] [-Milestone: - [ ] Thing #milestone @YYYY-MM-DD-] [-CORE TYPES:-] [-• Turn into blog post → add: type: post-] [-FEATURE & NAVIGATION TAGS:-] [-• featured      → appears in Featured section on homepage-] [-• gardenEntry   → appears as a trailhead in the Garden gateway-] [-LIVE SYSTEM TAGS:-] [-• session       → used for live sessions / work periods-] [-• daily         → daily log style notes-] [-15:39  thinking about [vibe-coding], is there a pedagogical benefit to this? can it be framed in a useful way in teaching? Particularly in relation to creating your own tools, moving away from all the major companies attempts to dominate...-]"
+        "date": "2026-05-26",
+        "hash": "e0186b7",
+        "wordCount": 2,
+        "delta": 0,
+        "added": 2,
+        "removed": 2,
+        "diff": "[-date-created: 2026-05-09-] {+date-created: 2026-05-26+}"
       },
       {
-        "date": "2026-01-11",
-        "hash": "1bdddd0",
-        "wordCount": 7,
-        "delta": 5,
-        "added": 7,
+        "date": "2026-05-09",
+        "hash": "93969b9",
+        "wordCount": 78,
+        "delta": 76,
+        "added": 78,
         "removed": 2,
-        "diff": "[-title: \"\"-] {+# title: \"\"+} {+title: <% tp.file.title.toLowerCase() %>+}"
+        "diff": "[-date-created: 2026-04-27-] {+date-created: 2026-05-09+} {+<!--+} {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM+ZZ | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} {+CORE TYPES:+} {+• Turn into blog post → add: type: post+} {+FEATURE & NAVIGATION TAGS:+} {+• featured      → appears in Featured section on homepage+} {+• gardenEntry   → appears as a trailhead in the Garden gateway+} {+LIVE SYSTEM TAGS:+} {+• session       → used for live sessions / work periods+} {+• daily         → daily log style notes+} {+-->+}"
+      },
+      {
+        "date": "2026-05-04",
+        "hash": "d671441",
+        "wordCount": 0,
+        "delta": 0,
+        "added": 0,
+        "removed": 0,
+        "diff": ""
+      },
+      {
+        "date": "2026-04-27",
+        "hash": "f588171",
+        "wordCount": 12,
+        "delta": 12,
+        "added": 12,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-04-27+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+}"
       }
     ]
   },
@@ -13157,20 +13175,6 @@
         "added": 96,
         "removed": 0,
         "diff": "{+---+} {+{\"dg-publish\":true,\"permalink\":\"/pre-start-thoughts/algorithms-as-world-ph-d-rough-ideas/\"}+} {+---+} {+[[published/play-is-the-work-of-operating-a-system\\|play-is-the-work-of-operating-a-system]]+} {+---+} {+order - resistance - messiness+} {+The current state of the world - systems+} {+[[published/types-of-systems\\|types-of-systems]]+} {+specific case study education -> creative computing+} {+(which system? education)+} {+(playing with(in) the system to build something new)+} {+what is worlding?+} {+Use the idea of algorithms as a framework to work within+} {+ML algorithms+} {+Generative algorithms+} {+[[algorithms-as-framework\\|algorithms-as-framework]]+} {+(rigidity as canvas)+} {+methodology ?+} {+play as methodology - too vague?+} {+improvisation and imagination+} {+experience design+} {+collaborative world building using computational tools?+} {+metaphorical and literal+} {+making the familiar strange+} {+systems as stories / embodying it as a way to learn+}"
-      }
-    ]
-  },
-  "2026-05-26": {
-    "noteDate": "2026-05-26",
-    "revisions": [
-      {
-        "date": "2026-05-26",
-        "hash": "d81b4ab",
-        "wordCount": 8,
-        "delta": 8,
-        "added": 8,
-        "removed": 0,
-        "diff": "{+- 23:50 · coding · 70m · test+}"
       }
     ]
   },
