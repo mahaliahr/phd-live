@@ -18,6 +18,8 @@ as of June 2024 for the AfR (Application for Registration)
 
 I am beginning to work on reframing my focus, here: [[phd-proposal-thoughts-and-reframing]]
 
+[[research-summary]]
+
 ---
 #### ~~Speculating on AI Augmented Education: Creating ‘Possibility Spaces’ for Learning~~
 

@@ -15,3 +15,5 @@ this is a random idea that I had whilst observing how difficult it is for me to 
 **What "shareable" means** -- this is the threshold question that's genuinely hard to encode. Is it about completeness, about a idea being sufficiently formed, about it connecting to your broader research arc?
 
 **The approval UI** -- what information do I need to see to make a good ratification decision quickly? Just the proposed post and screenshot, or more context about why the bot chose this note?
+
+->  see [[2026-05-27]] for thought
