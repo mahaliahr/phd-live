@@ -13,6 +13,20 @@
       }
     ]
   },
+  "research-summary": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-05-28",
+        "hash": "21b90f8",
+        "wordCount": 258,
+        "delta": 258,
+        "added": 258,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-05-27+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+27/05/2026 -+} {+**Working title - After Intelligence: building possibility spaces for learning and making with and through generative systems**+} {+This research works with LLMs as material, actively shaping the experience of learning and making, and as infrastructure, building the environments within which that experience is investigated.+} {+The work begins from a specific problem: generative AI in learning tends to collapse process, producing polished and swift outputs that compress thinking, erasing the mess where learning happens. Rather than critique this tendency from the outside, I am asking whether a different relationship is possible, and building toward an answer. The core artefact is PhD-Live, a public digital garden that keeps knowledge-in-process visible as a research proposition. Built alongside it, a suite of local AI tools (a Supervisor Bot, Study Companion, and a knowledge layer that feeds my own prior thinking back into the conversation) extends that investigation into the practice itself. Together they probe what it means to build a genuine thinking partner rather than a generic tool centred on optimisation. The gaps and failures of that infrastructure are as much the research as the working parts.+} {+My position as simultaneously learner and teacher shapes the investigation and the work has an autoethnographic central thread. If the problem is what gets erased when AI mediates knowledge work, the methodological response is to centre that process. A commitment to liveness runs through the research - keeping knowledge public whilst still forming, as research artifact rather than purely a record.+}"
+      }
+    ]
+  },
   "Untitled": {
     "noteDate": null,
     "revisions": [
@@ -7112,6 +7126,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-05-28",
+        "hash": "21b90f8",
+        "wordCount": 1,
+        "delta": 1,
+        "added": 1,
+        "removed": 0,
+        "diff": "{+[[research-summary]]+}"
+      },
+      {
         "date": "2026-05-04",
         "hash": "883c712",
         "wordCount": 75,
@@ -10964,6 +10987,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-05-28",
+        "hash": "21b90f8",
+        "wordCount": 39,
+        "delta": 5,
+        "added": 39,
+        "removed": 34,
+        "diff": "[-**The approval UI** -- what information do I need to see to make a good ratification decision quickly? Just the proposed post and screenshot, or more context about why the bot chose this note?-] {+**The approval UI** -- what information do I need to see to make a good ratification decision quickly? Just the proposed post and screenshot, or more context about why the bot chose this note?+} {+->  see [[2026-05-27]] for thought+}"
+      },
+      {
         "date": "2026-04-23",
         "hash": "448ef01",
         "wordCount": 0,
@@ -13175,6 +13207,20 @@
         "added": 96,
         "removed": 0,
         "diff": "{+---+} {+{\"dg-publish\":true,\"permalink\":\"/pre-start-thoughts/algorithms-as-world-ph-d-rough-ideas/\"}+} {+---+} {+[[published/play-is-the-work-of-operating-a-system\\|play-is-the-work-of-operating-a-system]]+} {+---+} {+order - resistance - messiness+} {+The current state of the world - systems+} {+[[published/types-of-systems\\|types-of-systems]]+} {+specific case study education -> creative computing+} {+(which system? education)+} {+(playing with(in) the system to build something new)+} {+what is worlding?+} {+Use the idea of algorithms as a framework to work within+} {+ML algorithms+} {+Generative algorithms+} {+[[algorithms-as-framework\\|algorithms-as-framework]]+} {+(rigidity as canvas)+} {+methodology ?+} {+play as methodology - too vague?+} {+improvisation and imagination+} {+experience design+} {+collaborative world building using computational tools?+} {+metaphorical and literal+} {+making the familiar strange+} {+systems as stories / embodying it as a way to learn+}"
+      }
+    ]
+  },
+  "2026-05-27": {
+    "noteDate": "2026-05-27",
+    "revisions": [
+      {
+        "date": "2026-05-28",
+        "hash": "21b90f8",
+        "wordCount": 97,
+        "delta": 97,
+        "added": 97,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+visibility: public+} {+title: 2026-05-27+} {+tags:+} {+- daily+} {+- stream+} {+---+} {+## sessions+} {+<details>+} {+<summary>Session 1</summary>+} {+start:: 2026-05-27T20:26:12.524Z+} {+topic:: thinking / planning · drafting emails and organising (catching up on things on my todo list)+} {+end:: 2026-05-27T23:36:04.625Z+} {+</details>+} {+[[phd-proposal]]+} {+- 23:43 - I just had a though re. the [[confidence-bot]], maybe another part of this bots job is to reflect on my work and make the progress made more concrete? often when working its not clear to see your progress and this could help? How does this differ to the 'mirror/ai-layer' which also surfaces progress?+}"
       }
     ]
   },
