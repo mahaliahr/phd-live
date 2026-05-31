@@ -22,6 +22,7 @@ LIVE SYSTEM TAGS:
 • session       → used for live sessions / work periods
 • daily         → daily log style notes
 -->
+[[confirmation-draft-document]]
 
 extract from handbook: 
 

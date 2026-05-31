@@ -13,6 +13,20 @@
       }
     ]
   },
+  "standard-LLM-benchmarks": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-05-31",
+        "hash": "a7350a4",
+        "wordCount": 13,
+        "delta": 13,
+        "added": 13,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-05-31+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+https://www.datacamp.com/tutorial/llm-benchmarks+}"
+      }
+    ]
+  },
   "research-summary": {
     "noteDate": null,
     "revisions": [
@@ -33,6 +47,97 @@
         "added": 258,
         "removed": 0,
         "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-05-27+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+27/05/2026 -+} {+**Working title - After Intelligence: building possibility spaces for learning and making with and through generative systems**+} {+This research works with LLMs as material, actively shaping the experience of learning and making, and as infrastructure, building the environments within which that experience is investigated.+} {+The work begins from a specific problem: generative AI in learning tends to collapse process, producing polished and swift outputs that compress thinking, erasing the mess where learning happens. Rather than critique this tendency from the outside, I am asking whether a different relationship is possible, and building toward an answer. The core artefact is PhD-Live, a public digital garden that keeps knowledge-in-process visible as a research proposition. Built alongside it, a suite of local AI tools (a Supervisor Bot, Study Companion, and a knowledge layer that feeds my own prior thinking back into the conversation) extends that investigation into the practice itself. Together they probe what it means to build a genuine thinking partner rather than a generic tool centred on optimisation. The gaps and failures of that infrastructure are as much the research as the working parts.+} {+My position as simultaneously learner and teacher shapes the investigation and the work has an autoethnographic central thread. If the problem is what gets erased when AI mediates knowledge work, the methodological response is to centre that process. A commitment to liveness runs through the research - keeping knowledge public whilst still forming, as research artifact rather than purely a record.+}"
+      }
+    ]
+  },
+  "research-infrastructure-llm-evaluation-criteria": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-05-31",
+        "hash": "a7350a4",
+        "wordCount": 634,
+        "delta": 634,
+        "added": 634,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-05-31+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+_status: early draft -criteria are provisional and will develop through use_ _links: [[system-map]]_+} {+---+} {+[[standard-LLM-benchmarks]] don't apply to this infrastructure. quality here means something different -- not accuracy or fluency, but whether an AI interaction serves the specific epistemological goals of the research. this document attempts to name those goals as evaluation criteria, so that comparisons between local and commercial models can become more systematic.+} {+---+} {+### the core question+} {+what does a 'good' AI interaction look like in this context?+} {+not good in a general sense. good for a research infrastructure designed to preserve non-linear, associative thinking while allowing AI to surface patterns and connections without resolving or speaking for me.+} {+---+} {+### possible criteria+} {+**epistemic friction** does the interaction introduce productive difficulty, or does it smooth things over? (and what exactly do I mean by 'smooth' over?) a good interaction should make you think harder, not less. it should ask questions rather than provide answers, and resist the pressure to resolve what should remain open.+} {+**pattern surfacing without resolution** does it surface connections and patterns from the knowledge base without collapsing them into conclusions? the distinction matters -- an AI that says 'your thinking on X connects to Y' is doing something different from one that says 'therefore Z.' the first is useful. the second is overreach.+} {+**register consistency** does it match the register and tone of my thinking, or does it flatten it into something more generic? this includes vocabulary, the level of certainty it projects, and whether it treats your unfinished thoughts as unfinished rather than as problems to be completed. (not sure exactly how I will effectively measure this)+} {+~~**boundary respect** does it stay within its designated domain? the supervisor bot should not behave like a study companion. the AI mirror should not enter the vault. interactions that bleed across designed boundaries are a quality failure regardless of how fluent they are.~~ ????+} {+**genuine novelty** does it surface something you didn't already think, or does it mirror your existing thinking back at you? mirroring feels validating but is epistemically empty. useful AI interactions should occasionally surprise you or offer an angle you hadn't considered.+} {+this is the current issue of study companion bot (as of 31/5/2026)+} {+**non-linearity preservation** does it respect the associative, non-linear quality of the thinking it's working with? or does it impose a linear, goal-directed structure? this is particularly relevant for interactions that involve the vault.+} {+---+} {+### observed findings so far+} {+_this section will grow as comparisons are run_+} {+**study companion (local -- gemma/ollama)**+} {+initial tests after first iteration:+} {+- does not ask clarifying questions -- interactions feel one-directional+} {+- mirrors vault content despite instructions -- low genuine novelty score+} {+- register inconsistency -- responses feel generic rather than situated in the specific research context+} {+- reframed as research finding: the capability gap between local and frontier models is itself data, not just a technical inconvenience+} {+**supervisor bot (local -- zephyr/ollama)**+} {+- echo chamber tendency when fed correlated context from the vault -- surfacing patterns that reflect existing thinking rather than challenging it+} {+- this is a design problem as much as a model problem -- the context layer needs to be curated more carefully to introduce genuine epistemic distance+} {+---+} {+### open questions+} {+- how do these criteria relate to existing [[HCI-evaluation-frameworks]]? worth connecting to qualitative research methods literature+} {+- can epistemic friction be measured, or only described? what would a rigorous evaluation of this look like??+} {+- how does evaluation criteria shift depending on which component of the infrastructure is being evaluated? supervisor bot criteria may differ from study companion criteria+} {+- what does 'genuine novelty' look like in practice -- how do you distinguish it from inaccuracies and hallucination?+} {+---+}"
+      }
+    ]
+  },
+  "mirror": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-05-31",
+        "hash": "a7350a4",
+        "wordCount": 6,
+        "delta": 4,
+        "added": 6,
+        "removed": 2,
+        "diff": "[-date-created: 2026-04-27-] {+date-created: 2026-05-31+} {+aliases:+} {+- AI Layer+}"
+      },
+      {
+        "date": "2026-04-27",
+        "hash": "f588171",
+        "wordCount": 0,
+        "delta": 0,
+        "added": 0,
+        "removed": 0,
+        "diff": ""
+      },
+      {
+        "date": "2026-04-23",
+        "hash": "448ef01",
+        "wordCount": 0,
+        "delta": 0,
+        "added": 0,
+        "removed": 0,
+        "diff": ""
+      },
+      {
+        "date": "2026-04-20",
+        "hash": "ce0123f",
+        "wordCount": 3,
+        "delta": 1,
+        "added": 3,
+        "removed": 2,
+        "diff": "[-date-created: 2026-04-17-] {+date-created: 2026-04-20+} {+https://iclc.toplap.org/2027/+}"
+      },
+      {
+        "date": "2026-04-18",
+        "hash": "1ca75a6",
+        "wordCount": 2,
+        "delta": -2,
+        "added": 2,
+        "removed": 4,
+        "diff": "[-date-created: <% tp.file.creation_date(\"YYYY-MM-DD\") %>-] {+date-created: 2026-04-17+}"
+      },
+      {
+        "date": "2026-03-31",
+        "hash": "c7cb54e",
+        "wordCount": 4,
+        "delta": 4,
+        "added": 4,
+        "removed": 0,
+        "diff": "{+date-created: <% tp.file.creation_date(\"YYYY-MM-DD\") %>+}"
+      },
+      {
+        "date": "2026-02-08",
+        "hash": "5cd38e4",
+        "wordCount": 0,
+        "delta": -7,
+        "added": 0,
+        "removed": 7,
+        "diff": "[-# title: \"\"-] [-title: <% tp.file.title.toLowerCase() %>-]"
+      },
+      {
+        "date": "2026-01-11",
+        "hash": "1bdddd0",
+        "wordCount": 7,
+        "delta": 5,
+        "added": 7,
+        "removed": 2,
+        "diff": "[-title: \"\"-] {+# title: \"\"+} {+title: <% tp.file.title.toLowerCase() %>+}"
       }
     ]
   },
@@ -74,6 +179,20 @@
         "added": 12,
         "removed": 0,
         "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-04-27+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+}"
+      }
+    ]
+  },
+  "HCI-evaluation-frameworks": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-05-31",
+        "hash": "a7350a4",
+        "wordCount": 98,
+        "delta": 98,
+        "added": 98,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-05-31+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+these papers as a start:+} {+**Gaver, W. (2012).** What should we expect from research through design? In _Proceedings of the SIGCHI Conference on Human Factors in Computing Systems_ (CHI '12), pp. 937--946. ACM. [https://doi.org/10.1145/2207676.2208538](https://doi.org/10.1145/2207676.2208538)+} {+**Shneiderman, B. (2020).** Human-centered artificial intelligence: Reliable, safe and trustworthy. _International Journal of Human-Computer Interaction_, 36(6), 495--504. [https://doi.org/10.1080/10447318.2020.1741118](https://doi.org/10.1080/10447318.2020.1741118)+} {+**Cherry, E., & Latulipe, C. (2014).** Quantifying the creativity support of digital tools through the creativity support index. _ACM Transactions on Computer-Human Interaction_, 21(4), Article 21. [https://doi.org/10.1145/2617588](https://doi.org/10.1145/2617588)+} {+^ though a bit old very influential+}"
       }
     ]
   },
@@ -3919,12 +4038,12 @@
     "revisions": [
       {
         "date": "2026-05-31",
-        "hash": "5643628",
-        "wordCount": 43,
-        "delta": 0,
-        "added": 43,
-        "removed": 43,
-        "diff": "[-Research Infrastructure:-] {+[[research-infrastructure]]:+} [-- learning dashboard (interface that holds all components + live logging, with perhaps more LLM functionality later down the line)-] {+- [[learning-dashboard|learning dashboard]] (interface that holds all components + live logging, with perhaps more LLM functionality later down the line)+} [-- supervisor-bot-] [-- study-companion-bot-] [-- confidence-bot-] [-(note for later, what is the main difference between supervisor and study companion bot )-] {+- [[project-supervisor-bot|supervisor bot]]+} {+- [[study-companion-bot]]+} {+- [[confidence-bot]]+} {+**(note for later, what is the main difference between supervisor and study companion bot )**+}"
+        "hash": "a7350a4",
+        "wordCount": 41,
+        "delta": 11,
+        "added": 41,
+        "removed": 30,
+        "diff": "[-- activity log-] [-- mirror, exists in learning dashboard and on phd-live site (previously and generically titled the 'AI Layer')-] [-- PhD-Live public site (tracking site things here [[PhD-Live-debugging-and feature-list]])-] {+- activity log (learning dashboard summary -- gets pushed to phd-live site?)+} {+- [[mirror]], exists in learning dashboard and on phd-live site (previously and generically titled the 'AI Layer')+} {+- [[project-phd-live-platform|phd-live platform]] public site -> (tracking site things here [[PhD-Live-debugging-and feature-list]])+}"
       },
       {
         "date": "2026-05-10",
@@ -5739,12 +5858,12 @@
     "revisions": [
       {
         "date": "2026-05-31",
-        "hash": "5643628",
-        "wordCount": 11,
+        "hash": "a7350a4",
+        "wordCount": 14,
         "delta": 11,
-        "added": 11,
-        "removed": 0,
-        "diff": "{+aliases:+} {+- research infrastructure+} {+progess and updates kept here: [[system-map]]+} {+----+}"
+        "added": 14,
+        "removed": 3,
+        "diff": "[-### Activity log-] {+### Activity log (exists only on phd-live site? or also on the learning dashboard)+}"
       },
       {
         "date": "2026-05-18",
@@ -11014,38 +11133,6 @@
       }
     ]
   },
-  "confirmation": {
-    "noteDate": null,
-    "revisions": [
-      {
-        "date": "2026-05-04",
-        "hash": "d671441",
-        "wordCount": 0,
-        "delta": 0,
-        "added": 0,
-        "removed": 0,
-        "diff": ""
-      },
-      {
-        "date": "2026-05-02",
-        "hash": "589e634",
-        "wordCount": 610,
-        "delta": 1,
-        "added": 610,
-        "removed": 609,
-        "diff": "[-i. A contextual review (e.g. a literature or practice review) and an analysis of methods employed which may later form a chapter of the final thesis. If the student intends to submit a body of creative, practical work for the final examination, the contextual review will include a practice review. A practice review explains the significance of the student’s own work in the appropriate historical, critical and theoretical context and should include documentation of the project.-] {+i. **A contextual review (e.g. a literature or practice review) and an analysis of methods employed which may later form a chapter of the final thesis.** If the student intends to submit a body of creative, practical work for the final examination, the contextual review will include a practice review. A practice review explains the significance of the student’s own work in the appropriate historical, critical and theoretical context and should include documentation of the project.+} [-ii. a detailed plan of the research project to completion and chapter outlines for the written text (and, if the degree includes a significant body of creative work, an indication of the likely for of the creative work at submission in terms of documentation or exhibition/ event).-] {+ii. **a detailed plan of the research project to completion and chapter outlines for the written text** (and, if the degree includes a significant body of creative work, an indication of the likely for of the creative work at submission in terms of documentation or exhibition/ event).+} [-iii. an abstract outlining the main thesis of the work.-] {+iii. **an abstract outlining the main thesis of the work.**+} [-5.6 At the Confirmation meeting the Director of Studies and co-supervisor(s) are required to provide in writing:-] {+*5.6 At the Confirmation meeting the Director of Studies and co-supervisor(s) are required to provide in writing:*+} [-i. an assessment of the student’s work and progress since registration-] {+*i. an assessment of the student’s work and progress since registration*+} [-ii. comments on; the contextual review; the analysis of methods employed; the schedule for the completion of the research project proposed by the student; and description of chapter headings and (if applicable) creative work to be submitted-] {+*ii. comments on; the contextual review; the analysis of methods employed; the schedule for the completion of the research project proposed by the student; and description of chapter headings and (if applicable) creative work to be submitted*+} [-iii. details of the progress reviews undertaken during the probationary period, including a report of the meeting held in connection with this probationary report-] {+*iii. details of the progress reviews undertaken during the probationary period, including a report of the meeting held in connection with this probationary report*+} [-iv. details of any concerns they may have about the student’s performance and ability to complete successfully a research degree within the maximum registration period-] {+*iv. details of any concerns they may have about the student’s performance and ability to complete successfully a research degree within the maximum registration period*+} [-v. details of supervisory arrangements, including details of the division of responsibilities between the supervisors, in relation to the assessment of the student’s written work, frequency and approximate duration of supervisory sessions and the date of the most recent contact-] {+*v. details of supervisory arrangements, including details of the division of responsibilities between the supervisors, in relation to the assessment of the student’s written work, frequency and approximate duration of supervisory sessions and the date of the most recent contact*+} [-vi. comments on the annual assessment of any new ethical considerations for which th student may need to seek approval-] {+*vi. comments on the annual assessment of any new ethical considerations for which th student may need to seek approval*+} [-vii. comments on the annual health and safety written risk assessment of the student’s research (if applicable).-] {+*vii. comments on the annual health and safety written risk assessment of the student’s research (if applicable).*+} [-5.7 The panel should make a recommendation in their report to the College and University Research Degrees Sub-Committees as to whether the student’s registration for either MPhil or PhD should be confirmed; the probationary period extended by a maximum of 3 months for full-time and 6 months for part-time students (to enable items of further work to be completed – the panel should normally remain the same when reconvened to assess the student’s progress); or their registration discontinued.-] {+*5.7 The panel should make a recommendation in their report to the College and University Research Degrees Sub-Committees as to whether the student’s registration for either MPhil or PhD should be confirmed; the probationary period extended by a maximum of 3 months for full-time and 6 months for part-time students (to enable items of further work to be completed – the panel should normally remain the same when reconvened to assess the student’s progress); or their registration discontinued.*+} [-5.8 The Director of Studies is responsible for submitting the final report to the College Research Degrees Sub-Committee. The supervisors must ensure that, at the end of the meeting, the student has a chance to discuss any further issues with the independent academic privately. The report will be sent to College Research Degrees Sub-Committee for comment and a recommendation, and then to University Research Degrees Sub-Committee, which will consider the report and confirm the recommendation.-] {+*5.8 The Director of Studies is responsible for submitting the final report to the College Research Degrees Sub-Committee. The supervisors must ensure that, at the end of the meeting, the student has a chance to discuss any further issues with the independent academic privately. The report will be sent to College Research Degrees Sub-Committee for comment and a recommendation, and then to University Research Degrees Sub-Committee, which will consider the report and confirm the recommendation.*+} [-5.9 A copy of the report will be shown to the student after University Research Degrees Sub-Committee has approved it. The student has the right to appeal against the confirmed recommendation, according to the procedure laid out in the Section 11 of these Regulations.-] {+*5.9 A copy of the report will be shown to the student after University Research Degrees Sub-Committee has approved it. The student has the right to appeal against the confirmed recommendation, according to the procedure laid out in the Section 11 of these Regulations.*+} [-5.10 As part of the confirmation process it is compulsory for the PGR student to present as part of the RNUAL Block 2. If it is not possible for a student to attend for reasons such as ill health, then alternative arrangements need to be discussed with the Directors of Doctoral Training and Development.-] {+*5.10 As part of the confirmation process it is compulsory for the PGR student to present as part of the RNUAL Block 2. If it is not possible for a student to attend for reasons such as ill health, then alternative arrangements need to be discussed with the Directors of Doctoral Training and Development.*+} [-ii. identify how the creative/practical work (both achieved and anticipated) are likely to be included in the final submission and how this will be presented (as event or exhibition) and documented for final examination-] {+ii. **identify how the creative/practical work (both achieved and anticipated) are likely to be included in the final submission and how this will be presented (as event or exhibition) and documented for final examination **+}"
-      },
-      {
-        "date": "2026-05-01",
-        "hash": "50b9b3f",
-        "wordCount": 1146,
-        "delta": 1146,
-        "added": 1146,
-        "removed": 0,
-        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-05-01+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+<!--+} {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM+ZZ | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} {+CORE TYPES:+} {+• Turn into blog post → add: type: post+} {+FEATURE & NAVIGATION TAGS:+} {+• featured      → appears in Featured section on homepage+} {+• gardenEntry   → appears as a trailhead in the Garden gateway+} {+LIVE SYSTEM TAGS:+} {+• session       → used for live sessions / work periods+} {+• daily         → daily log style notes+} {+-->+} {+extract from handbook:+} {+5.1 Students are registered initially for an unspecified research degree, at which point they will have indicated their intended degree (MPhil or PhD). The application to confirm the degree for which they will be examined will normally take place after a probationary period of 12 to 18 months for full time students and 24 to 30 months for part-time students.+} {+5.2 In making their application to confirm the degree for which they will be examined, students are required to provide (maximum word count 10,000 words):+} {+i. A contextual review (e.g. a literature or practice review) and an analysis of methods employed which may later form a chapter of the final thesis. If the student intends to submit a body of creative, practical work for the final examination, the contextual review will include a practice review. A practice review explains the significance of the student’s own work in the appropriate historical, critical and theoretical context and should include documentation of the project.+} {+ii. a detailed plan of the research project to completion and chapter outlines for the written text (and, if the degree includes a significant body of creative work, an indication of the likely for of the creative work at submission in terms of documentation or exhibition/ event).+} {+iii. an abstract outlining the main thesis of the work.+} {+iv. a comment on any new ethical considerations since Registration.+} {+v. a written health and safety risk assessment (if applicable).+} {+5.3 A formal meeting will be held and the student will be invited to make a short presentation on the work achieved to a confirmation panel.+} {+5.4 The panel will normally consist of the supervisory team and one other member of the University’s academic staff normally from a different College than the student; exceptionally an external may be included if the topic is very specialised. The independent academic is required to have the experience of at least one Research Degree completion. The Director of Studies would normally be expected to chair the meeting. The independent member of the University’s academic staff will lead the questions about the work presented and contribute their judgement on the student’s work to the writing of the report.+} {+5.5 The panel will complete the confirmation report at the same time as the meeting in order to record the supervisors’ comments and recommendations and confirm supervisory arrangements.+} {+5.6 At the Confirmation meeting the Director of Studies and co-supervisor(s) are required to provide in writing:+} {+i. an assessment of the student’s work and progress since registration+} {+ii. comments on; the contextual review; the analysis of methods employed; the schedule for the completion of the research project proposed by the student; and description of chapter headings and (if applicable) creative work to be submitted+} {+iii. details of the progress reviews undertaken during the probationary period, including a report of the meeting held in connection with this probationary report+} {+iv. details of any concerns they may have about the student’s performance and ability to complete successfully a research degree within the maximum registration period+} {+v. details of supervisory arrangements, including details of the division of responsibilities between the supervisors, in relation to the assessment of the student’s written work, frequency and approximate duration of supervisory sessions and the date of the most recent contact+} {+vi. comments on the annual assessment of any new ethical considerations for which th student may need to seek approval+} {+vii. comments on the annual health and safety written risk assessment of the student’s research (if applicable).+} {+5.7 The panel should make a recommendation in their report to the College and University Research Degrees Sub-Committees as to whether the student’s registration for either MPhil or PhD should be confirmed; the probationary period extended by a maximum of 3 months for full-time and 6 months for part-time students (to enable items of further work to be completed – the panel should normally remain the same when reconvened to assess the student’s progress); or their registration discontinued.+} {+5.8 The Director of Studies is responsible for submitting the final report to the College Research Degrees Sub-Committee. The supervisors must ensure that, at the end of the meeting, the student has a chance to discuss any further issues with the independent academic privately. The report will be sent to College Research Degrees Sub-Committee for comment and a recommendation, and then to University Research Degrees Sub-Committee, which will consider the report and confirm the recommendation.+} {+5.9 A copy of the report will be shown to the student after University Research Degrees Sub-Committee has approved it. The student has the right to appeal against the confirmed recommendation, according to the procedure laid out in the Section 11 of these Regulations.+} {+5.10 As part of the confirmation process it is compulsory for the PGR student to present as part of the RNUAL Block 2. If it is not possible for a student to attend for reasons such as ill health, then alternative arrangements need to be discussed with the Directors of Doctoral Training and Development.+} {+# Criteria to be considered+} {+5.11 The purpose of this stage is to confirm that:+} {+i. the student has the knowledge and skills appropriate to completing their research programme+} {+ii. that they have completed work of a quality to justify continuation and that the research methods are appropriate and practical+} {+iii. that the proposed research is likely to make a significant contribution to knowledge (as set out in the requirements for the award of a PhD at the University); or that confirmation as MPhil is more appropriate+} {+iv. that a realistic plan is in place for completion of the research within the expected timeframe.+} {+5.12 For those students where practice is to form a significant component of the thesis, the material presented must:+} {+i. clearly articulate the role and purpose of the practice within the overall research project+} {+ii. identify how the creative/practical work (both achieved and anticipated) are likely to be included in the final submission and how this will be presented (as event or exhibition) and documented for final examination+} {+iii. identify which research methods have informed their work and present the contexts (both historical and/or theoretical) in which they are working+} {+iv. offer reflection on the development of their practice, with an emphasis on what can be communicated to others (i.e. as a contribution to new knowledge in the field).+} {+[[PhD-checkpoints-as-ceremonies]]+}"
-      }
-    ]
-  },
   "confidence-bot": {
     "noteDate": null,
     "revisions": [
@@ -13270,6 +13357,20 @@
         "added": 96,
         "removed": 0,
         "diff": "{+---+} {+{\"dg-publish\":true,\"permalink\":\"/pre-start-thoughts/algorithms-as-world-ph-d-rough-ideas/\"}+} {+---+} {+[[published/play-is-the-work-of-operating-a-system\\|play-is-the-work-of-operating-a-system]]+} {+---+} {+order - resistance - messiness+} {+The current state of the world - systems+} {+[[published/types-of-systems\\|types-of-systems]]+} {+specific case study education -> creative computing+} {+(which system? education)+} {+(playing with(in) the system to build something new)+} {+what is worlding?+} {+Use the idea of algorithms as a framework to work within+} {+ML algorithms+} {+Generative algorithms+} {+[[algorithms-as-framework\\|algorithms-as-framework]]+} {+(rigidity as canvas)+} {+methodology ?+} {+play as methodology - too vague?+} {+improvisation and imagination+} {+experience design+} {+collaborative world building using computational tools?+} {+metaphorical and literal+} {+making the familiar strange+} {+systems as stories / embodying it as a way to learn+}"
+      }
+    ]
+  },
+  "2026-05-31": {
+    "noteDate": "2026-05-31",
+    "revisions": [
+      {
+        "date": "2026-05-31",
+        "hash": "a7350a4",
+        "wordCount": 26,
+        "delta": 26,
+        "added": 26,
+        "removed": 0,
+        "diff": "{+---+} {+date: 2026-05-31+} {+---+} {+## sessions+} {+<details>+} {+<summary>Session 1</summary>+} {+start:: 2026-05-31T13:06:45.441Z+} {+topic:: reading · beginning to consolidate work into a rough confirmation draft+} {+end:: 2026-05-31T15:24:44.360Z+} {+</details>+}"
       }
     ]
   },

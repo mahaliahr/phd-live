@@ -52,29 +52,28 @@ status key: 🟢 stable · 🔵 active · 🟡 speculative
 
 ## learning dashboard
 
-| component           | status | notes                                                     |
-| ------------------- | ------ | --------------------------------------------------------- |
-| live logging        |        |                                                           |
-| supervisor bot      |        |                                                           |
-| activity log        |        |                                                           |
-| mirror / AI layer   |        |                                                           |
-| study companion bot |        | → [[system-open-questions#supervisor-vs-study-companion]] |
-| confidence bot      |        |                                                           |
-|                     |        |                                                           |
+| component           | status         | notes                                                     |
+| ------------------- | -------------- | --------------------------------------------------------- |
+| live logging        | 🔵 active      |                                                           |
+| supervisor bot      | 🔵 active      |                                                           |
+| activity log        | 🔵 active      |                                                           |
+| mirror / AI layer   | 🟡 speculative |                                                           |
+| study companion bot | 🔵 active      | → [[system-open-questions#supervisor-vs-study-companion]] |
+| confidence bot      | 🟡 speculative |                                                           |
 
 ---
 
 ## phd-live public site
 
-|component|status|notes|
-|---|---|---|
-|obsidian → eleventy → vercel stack|🟢 stable||
-|revision history|||
-|screenshot archive / evolution page|||
-|kanban rendering|||
-|keystroke → audio trigger|||
-|youtube livestream|||
-|newsletter|||
+| component                           | status         | notes |
+| ----------------------------------- | -------------- | ----- |
+| obsidian → eleventy → vercel stack  | 🟢 stable      |       |
+| revision history                    | 🔵 active      |       |
+| screenshot archive / evolution page | 🔵 active      |       |
+| kanban rendering                    | 🟡 speculative |       |
+| keystroke → audio trigger           | 🟡 speculative |       |
+| youtube livestream                  | 🟡 speculative |       |
+| newsletter                          | 🟡 speculative |       |
 
 ---
 
