@@ -8,6 +8,8 @@ description: |-
 
   Thoughts about relationship-with-AI-bot-vs-human
 updated: 2025-10-20T22:34:14.471Z
+aliases:
+  - supervisor bot
 ---
 ![alt text](images/supervisor-bot-v1-screenshot-2.png)
 

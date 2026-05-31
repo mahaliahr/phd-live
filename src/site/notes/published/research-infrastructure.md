@@ -4,6 +4,8 @@ date-created: 2026-04-18
 visibility: public
 tags: []
 type: ""
+aliases:
+  - research infrastructure
 ---
 the overarching system that holds:
 
@@ -13,6 +15,10 @@ the overarching system that holds:
 - [[confidence-bot]]
 
 as well as connecting to my obsidian vault and the website (the [[project-phd-live-platform|phd-live platform]])
+
+progess and updates kept here: [[system-map]]
+
+----
 
 ![research infrastructure|650](images/personal.png)
 

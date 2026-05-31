@@ -15,11 +15,9 @@ description: active work - tasks pulled from the system map
 
 ## backlog [features]
 
-- [ ] add phd proposal / research questions to homepage
 - [ ] create way to click through to all recent thoughts and sessions
 - [ ] session logs + thoughts log — browsable archive view
 - [ ] when clicking images expand to full size
-- [ ] neaten session formatting
 - [ ] formatted date view in graph
 - [ ] improve canvas functionality once incorporated
 - [ ] group / organise notes more clearly
@@ -40,6 +38,8 @@ description: active work - tasks pulled from the system map
 
 ## done
 
+- [ ] neaten session formatting
+- [ ] add phd proposal / research questions to homepage
 - [ ] reinstate graphscript (sidebar local graph)
 - [ ] incorporate canvas functionality from original digital garden template
 - [ ] template session as dropdown

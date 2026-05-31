@@ -9,16 +9,16 @@ a map of the research infrastructure. updated when something changes state, not 
 
 ---
 
-Research Infrastructure:
+[[research-infrastructure]]:
 - obsidian vault base - exists and I don't imagine I will change this dramatically 
 	- writing tool - augmented writing space
-- learning dashboard (interface that holds all components + live logging, with perhaps more LLM functionality later down the line)
+- [[learning-dashboard|learning dashboard]] (interface that holds all components + live logging, with perhaps more LLM functionality later down the line)
 	- live logging capability
 	- bots:
-		- supervisor-bot
-		- study-companion-bot
-		- confidence-bot
-	(note for later, what is the main difference between supervisor and study companion bot )
+		- [[project-supervisor-bot|supervisor bot]]
+		- [[study-companion-bot]]
+		- [[confidence-bot]]
+	**(note for later, what is the main difference between supervisor and study companion bot )**
 	- activity log
 	- mirror, exists in learning dashboard and on phd-live site (previously and generically titled the 'AI Layer')
 - PhD-Live public site (tracking site things here [[PhD-Live-debugging-and feature-list]])
