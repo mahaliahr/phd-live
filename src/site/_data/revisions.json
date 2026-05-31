@@ -131,6 +131,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-05-31",
+        "hash": "5643628",
+        "wordCount": 29,
+        "delta": 3,
+        "added": 29,
+        "removed": 26,
+        "diff": "[-Smith-Nunes, G. (2025) “The Quiet Revolution: Offline LLMs and the Future of Private AI,” _Data in Motion_, 16 August. Available at: [https://readysaltedcode.substack.com/p/the-quiet-revolution-offline-llms](https://readysaltedcode.substack.com/p/the-quiet-revolution-offline-llms) (Accessed: October 6, 2025).-] {+Smith-Nunes, G. (2025) “The Quiet Revolution: Offline LLMs and the Future of Private AI,” _Data in Motion_, 16 August. Available at: [https://readysaltedcode.substack.com/p/the-quiet-revolution-offline-llms](https://readysaltedcode.substack.com/p/the-quiet-revolution-offline-llms) (Accessed: October 6, 2025).+} {+---+} {+[[running-LLMs-locally]]+} {+[[open-source-LLMs]]+}"
+      },
+      {
         "date": "2025-11-24",
         "hash": "e475c0f",
         "wordCount": 0,
@@ -3909,6 +3918,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-05-31",
+        "hash": "5643628",
+        "wordCount": 43,
+        "delta": 0,
+        "added": 43,
+        "removed": 43,
+        "diff": "[-Research Infrastructure:-] {+[[research-infrastructure]]:+} [-- learning dashboard (interface that holds all components + live logging, with perhaps more LLM functionality later down the line)-] {+- [[learning-dashboard|learning dashboard]] (interface that holds all components + live logging, with perhaps more LLM functionality later down the line)+} [-- supervisor-bot-] [-- study-companion-bot-] [-- confidence-bot-] [-(note for later, what is the main difference between supervisor and study companion bot )-] {+- [[project-supervisor-bot|supervisor bot]]+} {+- [[study-companion-bot]]+} {+- [[confidence-bot]]+} {+**(note for later, what is the main difference between supervisor and study companion bot )**+}"
+      },
+      {
         "date": "2026-05-10",
         "hash": "4401601",
         "wordCount": 0,
@@ -5720,6 +5738,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-05-31",
+        "hash": "5643628",
+        "wordCount": 11,
+        "delta": 11,
+        "added": 11,
+        "removed": 0,
+        "diff": "{+aliases:+} {+- research infrastructure+} {+progess and updates kept here: [[system-map]]+} {+----+}"
+      },
+      {
         "date": "2026-05-18",
         "hash": "ca41984",
         "wordCount": 160,
@@ -6250,6 +6277,15 @@
   "project-supervisor-bot": {
     "noteDate": null,
     "revisions": [
+      {
+        "date": "2026-05-31",
+        "hash": "5643628",
+        "wordCount": 4,
+        "delta": 4,
+        "added": 4,
+        "removed": 0,
+        "diff": "{+aliases:+} {+- supervisor bot+}"
+      },
       {
         "date": "2026-04-23",
         "hash": "0b6bb4e",
@@ -7371,6 +7407,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-05-31",
+        "hash": "5643628",
+        "wordCount": 17,
+        "delta": 0,
+        "added": 17,
+        "removed": 17,
+        "diff": "[-- [ ] add phd proposal / research questions to homepage-] [-- [ ] neaten session formatting-] {+- [ ] neaten session formatting+} {+- [ ] add phd proposal / research questions to homepage+}"
+      },
+      {
         "date": "2026-05-17",
         "hash": "c66bd41",
         "wordCount": 101,
@@ -7865,6 +7910,15 @@
   "open-source-LLMs": {
     "noteDate": null,
     "revisions": [
+      {
+        "date": "2026-05-31",
+        "hash": "5643628",
+        "wordCount": 43,
+        "delta": 28,
+        "added": 43,
+        "removed": 15,
+        "diff": "[-description: 'Tulu https://allenai.org/blog/tulu-3 - open source model?'-] [-updated: '2025-10-20T22:34:14.465Z'-] {+description:+} {+updated: 2025-10-20T22:34:14.465Z+} [-Tulu https://allenai.org/blog/tulu-3 - open source model?-] {+here I should keep track of the open source models I have been working with for the research.+} {+It would also be worthwhile to be clear about the the true level of 'open source' that these models provide, for clarity.+}"
+      },
       {
         "date": "2026-01-11",
         "hash": "1bdddd0",

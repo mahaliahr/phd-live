@@ -64,7 +64,7 @@ I will let real usage generate signal before designing potential context feature
 
 *Document this sequencing decision - the reasoning is important research material (ie. why starting from shell first, seeing what emerges as I use it before adding more features)*
 
-### Activity log
+### Activity log (exists only on phd-live site? or also on the learning dashboard)
 Three distinct things, kept separate:
 - Session record — structured log per bot interaction (local store)
 - Research diary layer — interpretive, themes, trajectory (future)

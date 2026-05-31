@@ -19,9 +19,9 @@ a map of the research infrastructure. updated when something changes state, not 
 		- [[study-companion-bot]]
 		- [[confidence-bot]]
 	**(note for later, what is the main difference between supervisor and study companion bot )**
-	- activity log
-	- mirror, exists in learning dashboard and on phd-live site (previously and generically titled the 'AI Layer')
-- PhD-Live public site (tracking site things here [[PhD-Live-debugging-and feature-list]])
+	- activity log (learning dashboard summary -- gets pushed to phd-live site?)
+	- [[mirror]], exists in learning dashboard and on phd-live site (previously and generically titled the 'AI Layer')
+- [[project-phd-live-platform|phd-live platform]] public site -> (tracking site things here [[PhD-Live-debugging-and feature-list]])
 	- capture keystrokes - trigger audio
 	- livestream to youtube
 	- newsletter of liveness, updates on the system and the research
