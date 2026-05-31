@@ -13215,12 +13215,12 @@
     "revisions": [
       {
         "date": "2026-05-28",
-        "hash": "21b90f8",
-        "wordCount": 97,
-        "delta": 97,
-        "added": 97,
-        "removed": 0,
-        "diff": "{+---+} {+dg-publish: true+} {+visibility: public+} {+title: 2026-05-27+} {+tags:+} {+- daily+} {+- stream+} {+---+} {+## sessions+} {+<details>+} {+<summary>Session 1</summary>+} {+start:: 2026-05-27T20:26:12.524Z+} {+topic:: thinking / planning · drafting emails and organising (catching up on things on my todo list)+} {+end:: 2026-05-27T23:36:04.625Z+} {+</details>+} {+[[phd-proposal]]+} {+- 23:43 - I just had a though re. the [[confidence-bot]], maybe another part of this bots job is to reflect on my work and make the progress made more concrete? often when working its not clear to see your progress and this could help? How does this differ to the 'mirror/ai-layer' which also surfaces progress?+}"
+        "hash": "12ac8e1",
+        "wordCount": 60,
+        "delta": 3,
+        "added": 60,
+        "removed": 57,
+        "diff": "[-[[phd-proposal]]-] {+I worked on writing this[[research-summary]]+} [-- 23:43 - I just had a though re. the [[confidence-bot]], maybe another part of this bots job is to reflect on my work and make the progress made more concrete? often when working its not clear to see your progress and this could help? How does this differ to the 'mirror/ai-layer' which also surfaces progress?-] {+- 23:43 I just had a though re. the [[confidence-bot]], maybe another part of this bots job is to reflect on my work and make the progress made more concrete? often when working its not clear to see your progress and this could help? How does this differ to the 'mirror/ai-layer' which also surfaces progress?+}"
       }
     ]
   },
