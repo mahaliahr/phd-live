@@ -5,23 +5,6 @@ visibility: public
 tags: []
 type: ""
 ---
-
-<!--
-Quick syntax:
-Session: start:: YYYY-MM-DD HH:MM+ZZ | end:: ... | topic:: ...
-Milestone: - [ ] Thing #milestone @YYYY-MM-DD
-
-CORE TYPES:
-• Turn into blog post → add: type: post
-
-FEATURE & NAVIGATION TAGS:
-• featured      → appears in Featured section on homepage
-• gardenEntry   → appears as a trailhead in the Garden gateway
-
-LIVE SYSTEM TAGS:
-• session       → used for live sessions / work periods
-• daily         → daily log style notes
--->
 [[confirmation-draft-document]]
 
 extract from handbook: 
@@ -35,6 +18,8 @@ i. **A contextual review (e.g. a literature or practice review) and an analysis 
 ii. **a detailed plan of the research project to completion and chapter outlines for the written text** (and, if the degree includes a significant body of creative work, an indication of the likely for of the creative work at submission in terms of documentation or exhibition/ event). 
 
 iii. **an abstract outlining the main thesis of the work.**
+
+q: due to the autoethnographic aspect of the work, could I write my abstract in third person? is there any best practice for this?
 
 iv. a comment on any new ethical considerations since Registration. 
 
