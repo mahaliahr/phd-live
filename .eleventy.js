@@ -14,6 +14,8 @@ const fg = require("fast-glob");
 const { headerToId, namedHeadingsFilter } = require("./src/helpers/utils");
 const { userMarkdownSetup, userEleventySetup } = require("./src/helpers/userSetup");
 
+const { renderKanbanFromFile } = require('./scripts/kanban-transform');
+
 const Image = require("@11ty/eleventy-img");
 function transformImage(src, cls, alt, sizes, widths = ["500", "700", "auto"]) {
   let options = {
@@ -90,6 +92,10 @@ function getAnchorAttributes(filePath, linkTitle) {
 }
 
 const tagRegex = /(^|\s|\>)(#[^\s!@#$%^&*()=+\.,\[{\]};:'"?><]+)(?!([^<]*>))/g;
+
+module.exports = {
+  isKanban: (data) => !!data['kanban-plugin']
+};
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.setLiquidOptions({ dynamicPartials: true });
@@ -560,6 +566,8 @@ eleventyConfig.addExtension("canvas", {
     }
   }
 });
+
+eleventyConfig.addShortcode('kanban', renderKanbanFromFile);
 
   // Images: flatten ALL images to /notes/images/
   eleventyConfig.addPassthroughCopy({

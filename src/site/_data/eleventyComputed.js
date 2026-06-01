@@ -1,6 +1,10 @@
 const { getGraph } = require("../../helpers/linkUtils");
 
 module.exports = {
+  isKanban: (data) => {
+    return Boolean(data && data["kanban-plugin"]);
+  },
+
   graph: (data) => {
     const notes = data?.collections?.notes || data?.collections?.note;
     if (!Array.isArray(notes) || !notes.length) return null;

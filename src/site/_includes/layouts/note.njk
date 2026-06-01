@@ -8,8 +8,11 @@
 {% block content %}
 <article class="note">
   <h1>{{ title | formatDailyTitle | default(page.fileSlug) }}</h1>
-  
-  {{ content | hideDataview | taggify | link | safe }}
-  {% include "components/revisionhistory.njk" %}
+  {% if isKanban %}
+    {% kanban page.inputPath %}
+  {% else %}
+    {{ content | hideDataview | taggify | link | safe }}
+    {% include "components/revisionhistory.njk" %}
+  {% endif %}
 </article>
 {% endblock %}
