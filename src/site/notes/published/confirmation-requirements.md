@@ -19,8 +19,6 @@ ii. **a detailed plan of the research project to completion and chapter outlines
 
 iii. **an abstract outlining the main thesis of the work.**
 
-q: due to the autoethnographic aspect of the work, could I write my abstract in third person? is there any best practice for this?
-
 iv. a comment on any new ethical considerations since Registration. 
 
 v. a written health and safety risk assessment (if applicable). 

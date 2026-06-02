@@ -15,7 +15,8 @@ q: does the practice that I am doing mean that I need to do a practice review?
 - <mark style="background: #FFB8EBA6;">an abstract outlining the main thesis of the work</mark>
 [[abstract-work-in-progress]]
 
-q: can my abstract be in first person?
+q: due to the autoethnographic aspect of the work, could I write my abstract in third person? is there any best practice for this?
+
 - a written risk assessment (if applicable).
 
 - to indicate a proposed examination panel

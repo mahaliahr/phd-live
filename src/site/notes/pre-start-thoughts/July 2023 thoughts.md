@@ -1,11 +1,25 @@
 ---
 dg-publish: true
 permalink: /pre-start-thoughts/july-2023-thoughts/
-noteIcon: ''
+noteIcon: ""
 visibility: public
-description: "REMEMBER - You can do all the things you want to do without a PhD\n\n---\n\nPhD as activism\_\n\nCritical and provocative work\n\n--- \n\nWorking within constraints (me)\n\n"
-updated: '2025-10-15T21:01:33.998Z'
+description: |+
+  REMEMBER - You can do all the things you want to do without a PhD
+
+  ---
+
+  PhD as activism 
+
+  Critical and provocative work
+
+  --- 
+
+  Working within constraints (me)
+
+updated: 2025-10-15T21:01:33.998Z
 title: July 2023 Thoughts
+tags:
+  - pre-phd
 ---
 
 REMEMBER - You can do all the things you want to do without a PhD

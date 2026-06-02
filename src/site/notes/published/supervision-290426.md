@@ -12,7 +12,7 @@ type: ""
 
 - next paper outline and workshop I'm submitting to: 
 
-- [[student-llm-use]] - I have a (loose idea for a) plan for setting up a focus group for current students about to embark on their research project.
+- [[student-focus-group-llm-use]] - I have a (loose idea for a) plan for setting up a focus group for current students about to embark on their research project.
 
 - designing and building my '[[research-infrastructure]]'
 
@@ -54,7 +54,7 @@ both mentioned by my supervisors as being potentially inspiring
 
 is there a way to translate the website into the actual thesis document?
 
-[[student-llm-use]] as pilot study before conformation, also maybe speak to peers (phd students as a practice)
+[[student-focus-group-llm-use]] as pilot study before conformation, also maybe speak to peers (phd students as a practice)
 
 [[first-test-with-supervisor-bot-in-meeting]]
 is the supervisor bot a bit like an echo chamber as it is trained on my data?

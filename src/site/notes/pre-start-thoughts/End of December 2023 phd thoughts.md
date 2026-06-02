@@ -1,7 +1,7 @@
 ---
 dg-publish: true
 permalink: /pre-start-thoughts/end-of-december-2023-phd-thoughts/
-noteIcon: ''
+noteIcon: ""
 visibility: public
 description: |-
   _Al and labour_
@@ -17,8 +17,10 @@ description: |-
   _If being at rest (in rest states_
 
   _is vit
-updated: '2025-10-15T21:01:33.998Z'
+updated: 2025-10-15T21:01:33.998Z
 title: End Of December 2023 Phd Thoughts
+tags:
+  - pre-phd
 ---
 _Al and labour_
 

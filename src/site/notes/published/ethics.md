@@ -17,7 +17,7 @@ Ethical considerations
 current proposed research projects: 
 - ~~student ai literacy workshops (make this just class? not special session)
 - diy ai bot
-- student focus groups [[student-llm-use]]
+- student focus groups [[student-focus-group-llm-use]]
 - supervisor bot -- approved
 - cci staff interviews -- approved
 

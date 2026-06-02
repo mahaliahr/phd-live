@@ -3,6 +3,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-06-01",
+        "hash": "1af15e3",
+        "wordCount": 78,
+        "delta": 76,
+        "added": 78,
+        "removed": 2,
+        "diff": "[-date-created: 2026-05-17-] {+date-created: 2026-06-01+} {+<!--+} {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM+ZZ | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} {+CORE TYPES:+} {+• Turn into blog post → add: type: post+} {+FEATURE & NAVIGATION TAGS:+} {+• featured      → appears in Featured section on homepage+} {+• gardenEntry   → appears as a trailhead in the Garden gateway+} {+LIVE SYSTEM TAGS:+} {+• session       → used for live sessions / work periods+} {+• daily         → daily log style notes+} {+-->+}"
+      },
+      {
         "date": "2026-05-17",
         "hash": "c66bd41",
         "wordCount": 12,
@@ -145,6 +154,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-06-01",
+        "hash": "1af15e3",
+        "wordCount": 178,
+        "delta": 32,
+        "added": 178,
+        "removed": 146,
+        "diff": "[-<mark style=\"background: #FFB8EBA6;\">a contextual review (e.g. a literature or practice review) and an analysis of methods employed, which may later form a chapter of the final thesis</mark>. If the student intends to submit a body of creative, practical work for the final examination, a practice review should also be included. A practice review explains the significance of the student's own work in the appropriate historical, critical and theoretical context and should include documentation of the project.-] {+- <mark style=\"background: #FFB8EBA6;\">a contextual review (e.g. a literature or practice review) and an analysis of methods employed, which may later form a chapter of the final thesis</mark>. If the student intends to submit a body of creative, practical work for the final examination, a practice review should also be included. A practice review explains the significance of the student's own work in the appropriate historical, critical and theoretical context and should include documentation of the project.+} [-<mark style=\"background: #FFB8EBA6;\">a detailed plan of the research project to completion and chapter outlines for the written text</mark>; if the degree includes a significant body of creative work, an indication of the likely form of the creative work at submission in terms of documentation or exhibition/ event.-] {+q: does the practice that I am doing mean that I need to do a practice review?+} [-<mark style=\"background: #FFB8EBA6;\">an abstract outlining the main thesis of the work</mark>-] {+- <mark style=\"background: #FFB8EBA6;\">a detailed plan of the research project to completion and chapter outlines for the written text</mark>; if the degree includes a significant body of creative work, an indication of the likely form of the creative work at submission in terms of documentation or exhibition/ event.+} {+[[possible-thesis-chapters]]+} [-a written risk assessment (if applicable).-] {+- <mark style=\"background: #FFB8EBA6;\">an abstract outlining the main thesis of the work</mark>+} {+[[abstract-work-in-progress]]+} [-to indicate a proposed examination panel-] {+q: can my abstract be in first person?+} {+- a written risk assessment (if applicable).+} {+- to indicate a proposed examination panel+}"
+      },
+      {
         "date": "2026-05-31",
         "hash": "9bb2f90",
         "wordCount": 158,
@@ -158,6 +176,15 @@
   "abstract-work-in-progress": {
     "noteDate": null,
     "revisions": [
+      {
+        "date": "2026-06-01",
+        "hash": "1af15e3",
+        "wordCount": 867,
+        "delta": 574,
+        "added": 867,
+        "removed": 293,
+        "diff": "[-What can AI add to the processes of learning and knowledge-making, while preserving the boundary around the messy, generative thinking so central to creative work? And what assumptions about intelligence, agency, and knowledge are embedded in the commercial AI systems now entering educational contexts?-] [-The research proceeds through building: developing speculative tools, live systems, and research infrastructure as primary modes of investigation, where each artefact operates as both a technical object and a theoretical proposition.-] {+~~What can AI add to the processes of learning and knowledge-making, while preserving the boundary around the messy, generative thinking so central to creative work? And what assumptions about intelligence, agency, and knowledge are embedded in the commercial AI systems now entering educational contexts?~~+} {+~~The research proceeds through building: developing speculative tools, live systems, and research infrastructure as primary modes of investigation, where each artefact operates as both a technical object and a theoretical proposition.~~+} [-PhD-Live sits at the centre of this work: a live, public-facing digital research environment that treats the process of doctoral thinking as the core output rather than just the means to an end. Around it, a wider infrastructure is taking shape, including a supervisor bot whose development has surfaced a central design tension: how do you build an AI tool that introduces genuine epistemic friction rather than simply reflecting the researcher back at themselves? These are not neutral questions. They point toward a principle that emerged from making rather than planning: that LLM reasoning and human associative thought operate with different logics. LLMs are built to resolve and optimise; creative research thinking often needs to stay open, contradictory, unfinished. Designing with both means holding that difference deliberately, rather than letting the efficiency logic of the tool quietly shape the thinking.-] {+~~PhD-Live sits at the centre of this work: a live, public-facing digital research environment that treats the process of doctoral thinking as a core output rather than just the means to an eventual end state. Around it, a wider infrastructure is taking shape, including a 'supervisor bot' whose development has surfaced a central design tension: how do you build an AI tool that introduces genuine epistemic friction rather than simply reflecting the researcher back at themselves? This question points toward a principle that emerged through making rather than planning: that LLM reasoning and human associative thought operate with different logics. LLMs are built to resolve and optimise; creative research thinking often needs to stay open, contradictory, unfinished. Designing with both means holding that difference deliberately, rather than letting the efficiency logic of the tool quietly shape the thinking.~~+} [-The research sits at the intersection of speculative design, live coding practice, and critical AI studies. It is shaped by its moment: the politics of knowledge, precarity in higher education, and the institutional pressures that surround the integration of AI. Within this, several threads have emerged as central: what a locally-based AI infrastructure might offer creative research practice; the distinction between liveness and performance; and how generative AI can participate in creative thinking without speaking for the researcher.-] {+~~The research sits at the intersection of speculative design, live coding practice, and critical AI studies. It is shaped by its moment: the politics of knowledge, precarity in higher education, and the institutional pressures that surround the integration of AI. Within this, several threads have emerged as central: what a locally-based AI infrastructure might offer creative research practice; the distinction between liveness and performance; and how generative AI can participate in creative thinking without speaking for the researcher.~~+} {+~~The research sits at the intersection of speculative design, live coding practice, and critical AI studies, and it treats building as its primary method: each artefact is both a technical object and a theoretical proposition. It is shaped by its moment, by the politics of knowledge, precarity in higher education, and the institutional pressures surrounding the integration of AI. Three threads structure the contribution. The first is what a locally based AI infrastructure can and cannot offer creative research practice, including where local models fall short. The second is the distinction between liveness and performance, which the work treats as an open conceptual question rather than a settled one. The third is how generative AI can participate in creative thinking without speaking for the researcher. Together these form an account of building and learning with and through AI systems while holding open the unfinished, exploratory thinking that creative work depends on.~~+} {+What can AI add to the processes of learning and knowledge-making, while preserving the boundary around the messy, generative thinking so central to creative work? And what assumptions about intelligence, agency, and knowledge are embedded in the commercial AI systems now entering educational contexts? The research proceeds through building: developing speculative tools, live systems, and research infrastructure as primary modes of investigation, where each artefact operates as both a technical object and a theoretical proposition. LLM systems function here as both material and infrastructure: the stuff a tool is made of, and the substrate the wider research practice runs on.+} {+PhD-Live sits at the centre of this work: a live, public-facing digital research environment that treats the process of doctoral thinking as a core output rather than just the means to an eventual end state. Liveness is not an aesthetic feature of the platform but a critical methodological response: commercial AI systems tend to collapse process into product, and building in public with process visible is a deliberate counter to that collapse. Around PhD-Live, a wider infrastructure is taking shape, including a supervisor bot whose development has surfaced a central design tension: how to build an AI tool that introduces genuine epistemic friction rather than simply reflecting the researcher back at themselves. This question points toward a principle that emerged through making rather than planning: that LLM reasoning and human associative thought operate with different logics. LLMs are built to resolve and optimise; creative research thinking often needs to stay open, contradictory, unfinished. Designing with both means holding that difference deliberately, rather than letting the efficiency logic of the tool quietly shape the thinking.+} {+The research sits at the intersection of speculative design, live coding practice, and critical AI studies, and it treats building as its primary method. It is shaped by its moment, by the politics of knowledge, precarity in higher education, and the institutional pressures surrounding the integration of AI. Three threads structure the contribution. The first is what a locally based AI infrastructure can and cannot offer creative research practice, including where local models fall short. The second is the distinction between liveness and performance, which the work treats as an open conceptual question rather than a settled one. The third is how generative AI can participate in creative thinking without speaking for the researcher. The originality of the work lies not in occupying a gap in the literature but in treating building with and through AI as a method for investigating the conditions under which knowledge-making happens within a creative institution.+}"
+      },
       {
         "date": "2026-05-31",
         "hash": "9bb2f90",
@@ -5175,20 +5202,6 @@
       }
     ]
   },
-  "student-llm-use": {
-    "noteDate": null,
-    "revisions": [
-      {
-        "date": "2026-04-23",
-        "hash": "448ef01",
-        "wordCount": 51,
-        "delta": 51,
-        "added": 51,
-        "removed": 0,
-        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-04-17+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+I think for the upcoming thesis project, it would be good to have focus groups with any willing students to understand more accurately what they use it for and what they think about it using LLM's in their work+}"
-      }
-    ]
-  },
   "start-with-the-end-of-phd-in-mind": {
     "noteDate": null,
     "revisions": [
@@ -6967,6 +6980,15 @@
   "possible-thesis-chapters": {
     "noteDate": null,
     "revisions": [
+      {
+        "date": "2026-06-01",
+        "hash": "1af15e3",
+        "wordCount": 103,
+        "delta": 32,
+        "added": 103,
+        "removed": 71,
+        "diff": "[-- **defining a playful methodology** - drawing on speculative design, design fiction, and play theory-] [-- **process and performance** - live coding as literal performance, but also the performative nature of many institutional practices-] {+- **defining a playful methodology** - drawing on speculative design, design fiction, and ~~play theory~~ live coding and performance (as playful)+} {+- ~~**process and performance** - live coding as literal performance, but also the performative nature of many institutional practices~~+} {+- **process** - digital gardens, tools for thought+} [-- **power and ethics** - both in commercial AI production and within academic institutions-] [-- **possibility and (im)possibility spaces** - exploring the concept itself, but also the constrained and difficult space of higher education as an institution-] {+- **power and ethics** - both in commercial AI production and within academic institutions+} {+- **possibility and (im)possibility spaces** - exploring the concept itself, but also the constrained and difficult space of higher education as an institution.+} {+- though experiments (speculative design) and the socio economic/ political context that shapes the work+} {+- **autoethnographic element**+}"
+      },
       {
         "date": "2026-04-27",
         "hash": "f588171",
@@ -11210,6 +11232,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-06-01",
+        "hash": "1af15e3",
+        "wordCount": 24,
+        "delta": -51,
+        "added": 24,
+        "removed": 75,
+        "diff": "[-<!---] [-Quick syntax:-] [-Session: start:: YYYY-MM-DD HH:MM+ZZ | end:: ... | topic:: ...-] [-Milestone: - [ ] Thing #milestone @YYYY-MM-DD-] [-CORE TYPES:-] [-• Turn into blog post → add: type: post-] [-FEATURE & NAVIGATION TAGS:-] [-• featured      → appears in Featured section on homepage-] [-• gardenEntry   → appears as a trailhead in the Garden gateway-] [-LIVE SYSTEM TAGS:-] [-• session       → used for live sessions / work periods-] [-• daily         → daily log style notes-] {+q: due to the autoethnographic aspect of the work, could I write my abstract in third person? is there any best practice for this?+}"
+      },
+      {
         "date": "2026-05-31",
         "hash": "9bb2f90",
         "wordCount": 1,
@@ -13471,6 +13502,20 @@
         "added": 96,
         "removed": 0,
         "diff": "{+---+} {+{\"dg-publish\":true,\"permalink\":\"/pre-start-thoughts/algorithms-as-world-ph-d-rough-ideas/\"}+} {+---+} {+[[published/play-is-the-work-of-operating-a-system\\|play-is-the-work-of-operating-a-system]]+} {+---+} {+order - resistance - messiness+} {+The current state of the world - systems+} {+[[published/types-of-systems\\|types-of-systems]]+} {+specific case study education -> creative computing+} {+(which system? education)+} {+(playing with(in) the system to build something new)+} {+what is worlding?+} {+Use the idea of algorithms as a framework to work within+} {+ML algorithms+} {+Generative algorithms+} {+[[algorithms-as-framework\\|algorithms-as-framework]]+} {+(rigidity as canvas)+} {+methodology ?+} {+play as methodology - too vague?+} {+improvisation and imagination+} {+experience design+} {+collaborative world building using computational tools?+} {+metaphorical and literal+} {+making the familiar strange+} {+systems as stories / embodying it as a way to learn+}"
+      }
+    ]
+  },
+  "2026-06-01": {
+    "noteDate": "2026-06-01",
+    "revisions": [
+      {
+        "date": "2026-06-01",
+        "hash": "1af15e3",
+        "wordCount": 42,
+        "delta": 42,
+        "added": 42,
+        "removed": 0,
+        "diff": "{+---+} {+date: 2026-06-01+} {+---+} {+## sessions+} {+<details>+} {+<summary>Session 2</summary>+} {+start:: 2026-06-01T18:59:58.828Z+} {+topic:: thinking / planning · continuing confirmation draft doc preperation+} {+end:: 2026-06-01T20:17:58.018Z+} {+</details>+} {+<details>+} {+<summary>Session 1</summary>+} {+start:: 2026-06-01T15:12:50.250Z+} {+topic:: coding · site edits (i should be writing!)+} {+end:: 2026-06-01T17:24:38.072Z+} {+</details>+} {+[[confirmation-draft-document]]+}"
       }
     ]
   },
