@@ -10,7 +10,7 @@ featured: true
 ---
 I am beginning to work on reframing my focus, here: [[phd-proposal-thoughts-and-reframing]]
 
-## Working title: After Intelligence - building possibility spaces for learning and making with and through generative systems
+## current working title: After Intelligence - building possibility spaces for learning and making with and through generative systems
 
 - rework in progress: [[phd-title-and-subject-area]]
 - rework in progress: [[research-questions]]
@@ -20,30 +20,31 @@ I am beginning to work on reframing my focus, here: [[phd-proposal-thoughts-and-
 
 ---
 
-Proposal as submitted on June 2024 for the AfR (Application for Registration)
+[OLD] Proposal as submitted on June 2024 for the AfR (Application for Registration)
 ## Reimagining Learning: Speculating on the Future of Educational Environments as 'Possibility Spaces’  
 
 ### Subject Area 
 
-This practice-based PhD research operates at the interdisciplinary junction of Creative Computing, Speculative Design, and Education. The project is concerned with how Artificial Intelligence (AI) can augment education, transforming traditional learning environments into 'possibility spaces' that promote the development of 21st century skills.  
-
+This practice-based PhD research operates at the interdisciplinary junction of Creative Computing, Speculative Design, and Education. The project is concerned with how Artificial Intelligence (AI) can augment education, transforming traditional learning environments into 'possibility spaces' that promote the development of 21st century skills. 
 ### Research Questions 
 
-- How will utilising AI in learning environments change teaching and learning? 
-- How can a ‘playful’ methodology, informed by speculative design and play theories, be utilized to innovate and create future learning spaces? 
-- How can the speculative process be structured as a participatory activity, involving stakeholders in the generation of these future 'possibility spaces’? 
+- How will utilizing Generative AI change teaching and learning within the context of both my experience as a PhD researcher and as Lecturer in MSc Creative Computing. 
 
+- More broadly, what changes can be anticipated in learning environments based on the current socio-political and technological landscape? 
+
+- How can a ‘playful’ methodology, informed by speculative design and play theories, be utilized to innovate and create future learning experiences? 
+
+- How can the speculative process be structured as a participatory activity, involving stakeholders in the generation of these future 'possibility spaces’?
 ### Aim  
 
-This research aims to speculate on the future of learning, operating under the assumption that AI will increasingly permeate society and educational settings. Grounded in principles of imagination and play, this research seeks to experiment with novel approaches to learning. Through participatory research involving learning communities both within and outside academia, the objective is to co-create and assess learning environments that integrate AI technologies. By gaining valuable insights into the effects of these environments on learning experiences and outcomes, this research enhances our understanding of AI-integrated learning environments and their implications for future educational practices. 
+This research aims to speculate on the future of learning, operating under the assumption that AI will increasingly permeate society and educational settings. Grounded in principles of imagination and play, this research seeks to experiment with novel approaches to learning. Through participatory research involving learning communities both within and outside academia, the objective is to co-create and assess learning environments that integrate AI technologies. By gaining valuable insights into the effects of these environments on learning experiences and outcomes, this research enhances our understanding of AI-integrated learning environments and their implications for future educational practices.
 
 ### Objectives 
 
 - Critically examine the potential implications of AI on teaching and learning. 
 - Use speculative design to envision and construct scenarios that explore alternative learning and pedagogical approaches situated in possible futures. 
-- Embed AI technology into interfaces or novel devices to create interactive environments that serve as speculative representations of future learning infrastructures. 
-- Develop practical experimentation within these 'possibility spaces’ to test and evaluate the effectiveness of these speculative tools within pedagogical practice. 
-- Evaluate the impact and effectiveness of these speculative learning environments on student engagement, motivation, and learning outcomes. 
+- Embed AI technology into interfaces or novel devices to create interactive environments that serve as speculative representations of future learning infrastructures.
+- Develop practical experimentation within these 'possibility spaces’ to test and evaluate the effectiveness of these speculative tools within pedagogical practice.
 
 ### Research Contexts: 
 

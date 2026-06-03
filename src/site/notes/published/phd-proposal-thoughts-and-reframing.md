@@ -13,6 +13,7 @@ So I have been taking some time to make to try to express my research more coher
 
 [[possible-thesis-chapters]] ???
 
+---
 
 This research sits at the intersection of speculative design, creative computing, and critical AI. The organising question is: what might learning and teaching look like _after_ the current assumptions about intelligence, knowledge, and technology are opened up and challenged?
 
@@ -20,7 +21,15 @@ Rather than studying AI in education from the outside, the research proceeds thr
 
 Key questions include:
 
-- What assumptions about intelligence and knowledge are embedded in generative AI systems, and what do those assumptions mean for how we learn and teach?
-- How can speculative design methods help us imagine and build alternatives to dominant AI narratives in education - not just critique them?
+- What assumptions about intelligence and knowledge are embedded in commercial AI systems, and what do those assumptions mean for how we learn and teach?
+- How can speculative design methods help to imagine and build alternatives to dominant AI narratives in education - not just critique them?
 - How does working with generative tools change the practice of thinking itself?
-- How can the conditions of live, performative practice (from live coding to the open research process of PhD-Live itself) offer different models for learning and knowledge-making?
+- How can the conditions of live, performative practice (from live coding to open research process) offer different models for learning and knowledge-making?
+
+
+**Key questions**
+
+- What assumptions about intelligence and knowledge are embedded in commercial AI systems, and what do those assumptions mean for how we learn and teach?
+- How can experimental and speculative approaches to working with AI open up alternatives to the conventional modes of learning and teaching that currently dominate?
+- How does working with generative tools change the practice of thinking itself?
+- What might a commitment to liveness — keeping knowledge public whilst still forming — offer as a model for learning and knowledge-making in an era of AI-generated outputs?
