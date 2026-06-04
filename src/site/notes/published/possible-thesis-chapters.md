@@ -19,27 +19,32 @@ the thesis feel so abstractly far in the future at the moment, but I tried the e
 ---
 ### 1: introduction
 
-Frames the research questions: what AI can add to learning and knowledge-making without eroding the generative space creative work depends on, and what assumptions about intelligence and agency are embedded in commercial AI systems entering education. Introduces "After Intelligence" as a layered framing: the pun on AI, the temporal gesture past current hype, the critical interrogation of intelligence as a concept. Names the inversion from the original proposal (designing for others) to the current work (the researcher's own practice as site and subject). Introduces PhD-Live and the wider infrastructure briefly. Sets out the thesis structure and explains the distributed autoethnographic and pedagogical approach, so the reader knows what to expect.
+- Frames the research questions: what can AI add to learning and knowledge-making without eroding the generative space creative work depends on, and what assumptions about intelligence and agency are embedded in commercial AI systems entering education. 
+- Introduces 'After Intelligence' as a layered framing: The temporal gesture past current hype, the critical interrogation of intelligence as a concept. Names the inversion from the original proposal (designing for others) to the current work (the researcher's own practice as site and subject). 
+- Introduces PhD-Live and the wider infrastructure briefly. Sets out the thesis structure and explains the distributed autoethnographic and pedagogical approach, so the reader knows what to expect.
 
 ---
 
 ### 2: methodology, a playful methodology
 
-_Conceptual argument:_ Positions the research within practice-based and autoethnographic traditions, then builds a methodological framework through speculative design, design fiction, tie-in the idea of possibility spaces to speculative design practice (thought experiments, Dunne and Raby) and live coding as a playful and performative practice. Argues that "building with and through" LLM systems is the primary mode of investigation, where each artefact is both technical object and theoretical proposition. Addresses liveness as a methodological commitment, not an aesthetic one. Names and justifies the structural decision to distribute pedagogy and autoethnographic reflection across all chapters rather than isolating them.
+_Conceptual argument:_ 
+- Positions the research within practice-based and autoethnographic traditions, then builds a methodological framework through speculative design (thought experiments, Dunne and Raby), design fiction, establishing the idea of possibility spaces as speculative design practice that is being employed as foundational approach, which led to exploring live coding as a playful and performative practice that embodies liveness.  Addresses liveness as a methodological commitment, not an aesthetic one.
+- Argues that 'building with and through' LLM systems is the primary mode of investigation, where each artefact is both technical object and theoretical proposition.
+- Names and justifies the structural decision to distribute pedagogy and autoethnographic reflection across all chapters rather than isolating them.
 
-_Pedagogical grounding:_ Positions the methodology in relation to critical and emancipatory pedagogy (Freire, hooks). The choice of a playful methodology is not neutral: it is a response to how learning gets flattened in institutional and commercial AI contexts.
+_Pedagogical grounding:_ Positions the methodology in relation to critical and emancipatory pedagogy (Freire, hooks). The choice of a playful methodology is not neutral: it is a response to how learning gets flattened in institutional and commercial AI contexts. (play as way to learn sources Montessori approach)
 
-_Autoethnographic account:_ Reflects on occupying the triple role of learner, researcher, and teacher simultaneously, and what that does to methodological choices. Through this, surfaces how the experience of teaching creative computing while researching AI's role in it produces a specific kind of knowledge that neither role alone could generate.
+_Autoethnographic account:_ Reflects on occupying the triple role of learner, researcher, and teacher simultaneously, and what that does to methodological choices. 
 
 ---
 
 ### 3: intelligence, power and ethics
 
-_Conceptual argument:_ Traces how intelligence has been defined, measured, and operationalised, and how that history has shaped the development of AI (Crawford, critical AI studies, histories of psychometrics and classification). Examines how these logics enter educational contexts through commercial AI systems, and what assumptions about agency, autonomy, and reasoning they carry. Introduces the bots here as critical responses: artefacts built to interrogate these assumptions rather than reproduce them. Addresses the political economy of commercial AI production and the power dynamics that determine how AI gets adopted within institutions and who gets to question it.
+_Conceptual argument:_ Traces how intelligence has been defined, measured, and operationalised, and how that history has shaped the development of AI (Crawford, Agüera y Arcas, Hayles, critical AI studies, histories of psychometrics and classification). The chatbot lineage matters here: Weizenbaum built ELIZA as a critique not a product, and that parallel to building bots that interrogate rather than optimise is worth making explicit. Examines how these logics enter educational contexts through commercial AI systems, and what assumptions about agency, autonomy, and reasoning they carry. Introduces the bots here as critical responses: artefacts built to interrogate these assumptions rather than reproduce them. Addresses the political economy of commercial AI production and the power dynamics that determine how AI gets adopted within institutions and who gets to question it.
 
-_Pedagogical grounding:_ Definitions of intelligence determine what gets optimised in educational technology. Critical pedagogy challenges the chain from measurement to design. This chapter establishes the stakes before the thesis turns to knowledge.
+_Pedagogical grounding:_ Definitions of intelligence determine what gets optimised in educational technology. Manning on learning otherwise and refusal of institutional categories: learning exceeds what intelligence frameworks measure. This chapter establishes the stakes before the thesis turns to knowledge.
 
-_Autoethnographic account:_ Through the experience of building tools that deliberately resist the resolve-and-optimise logic, reflects on what it means to construct alternative models of intelligence in practice. The echo chamber problem in the supervisor bot surfaces here too, from a different angle: not as a technical finding (that is chapter 4) but as a consequence of how LLM "intelligence" actually works. Through navigating institutional AI adoption as both staff and student, reflects on precarity and structural position as conditions that shape what questions feel askable.
+_Autoethnographic account:_ Through the experience of building tools that deliberately resist the resolve-and-optimise logic, reflects on what it means to construct alternative models of intelligence in practice. The echo chamber problem in the supervisor bot surfaces here, not as a technical finding (that is chapter 4) but as a consequence of how LLM "intelligence" actually works. The sycophancy literature (Cheng et al, Malmqvist) connects: these are structural tendencies in LLMs, not incidental failures. Through navigating institutional AI adoption as both staff and student, reflects on precarity and structural position as conditions that shape what questions feel askable.
 
 ---
 
