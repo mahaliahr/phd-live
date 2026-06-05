@@ -75,4 +75,30 @@ iii. identify which research methods have informed their work and present the co
 
 iv. offer reflection on the development of their practice, with an emphasis on what can be communicated to others (i.e. as a contribution to new knowledge in the field).
 
-[[PhD-checkpoints-as-ceremonies]]
+---
+Notes:
+
+- <mark style="background: #FFB8EBA6;">a contextual review (e.g. a literature or practice review) and an analysis of methods employed, which may later form a chapter of the final thesis</mark>. If the student intends to submit a body of creative, practical work for the final examination, a practice review should also be included. A practice review explains the significance of the student's own work in the appropriate historical, critical and theoretical context and should include documentation of the project.
+
+**contextual review**
+
+**analysis of methods**
+
+**practice review**
+
+q: does the practice that I am doing mean that I need to do a practice review?
+
+- <mark style="background: #FFB8EBA6;">a detailed plan of the research project to completion and chapter outlines for the written text</mark>; if the degree includes a significant body of creative work, an indication of the likely form of the creative work at submission in terms of documentation or exhibition/ event.
+[[possible-thesis-chapters]]
+
+- <mark style="background: #FFB8EBA6;">an abstract outlining the main thesis of the work</mark>
+[[abstract-work-in-progress]]
+
+q: due to the autoethnographic aspect of the work, could I write my abstract in third person? is there any best practice for this?
+
+- a written risk assessment (if applicable).
+
+- to indicate a proposed examination panel
+
+also related:
+[[PhD-checkpoints-as-ceremonies]] & [[oreilly-research-identity-threshold-concepts]]
