@@ -26,7 +26,7 @@ the obsidian vault acts a basis that feeds into an intrinsic [[shared-context-la
 
 ![research infrastructure new|489](images/research-infrastructure.png)
 
-<figcaption>most recent diagram<figcaption>
+most recent diagram
 
 ---
 
