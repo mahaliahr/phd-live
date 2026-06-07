@@ -6011,6 +6011,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-06-05",
+        "hash": "4934475",
+        "wordCount": 3,
+        "delta": 0,
+        "added": 3,
+        "removed": 3,
+        "diff": "[-<figcaption>most recent diagram<figcaption>-] {+most recent diagram+}"
+      },
+      {
         "date": "2026-05-31",
         "hash": "a7350a4",
         "wordCount": 14,
