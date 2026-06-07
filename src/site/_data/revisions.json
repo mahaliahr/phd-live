@@ -13690,6 +13690,20 @@
       }
     ]
   },
+  "2026-06-07": {
+    "noteDate": "2026-06-07",
+    "revisions": [
+      {
+        "date": "2026-06-07",
+        "hash": "1100924",
+        "wordCount": 118,
+        "delta": 118,
+        "added": 118,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+visibility: public+} {+title: 2026-06-07+} {+tags:+} {+- daily+} {+- stream+} {+---+} {+- 20:10 idea for functionality for the research infrastructure -> when things are processing or 'loading' have visual prompts that keep me engaged/nudge me to do tasks that are adjacent or connected.+} {+- - 20:11 I watched this youtube video yesterday [The Brain Eating Machines](https://youtu.be/kVjhV-In25c?si=I3dsPMICKMMNMNVD) I agree with much of his stance, and it makes me think about the 'boundaries' of this technology, what are the things that I refuse to let LLMs handle -- I already know this implicitly, but for the purposes of this research I need to be clearer of this for myself. Where do the boundaries exist already? The protected areas?+}"
+      }
+    ]
+  },
   "2026-06-04": {
     "noteDate": "2026-06-04",
     "revisions": [
