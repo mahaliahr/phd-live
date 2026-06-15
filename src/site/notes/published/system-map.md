@@ -43,10 +43,10 @@ status key: 🟢 stable · 🔵 active · 🟡 speculative
 
 ## writing + thinking
 
-|component|status|notes|
-|---|---|---|
-|obsidian vault|🟢 stable||
-|augmented writing space|||
+| component               | status         | notes |
+| ----------------------- | -------------- | ----- |
+| obsidian vault          | 🟢 stable      |       |
+| augmented writing space | 🟡 speculative |       |
 
 ---
 
@@ -88,12 +88,12 @@ status key: 🟢 stable · 🔵 active · 🟡 speculative
 
 ## public-facing / pedagogical
 
-|component|status|notes|
-|---|---|---|
-|share obsidian config|||
-|research infrastructure docs|||
-|phd-live|||
-|bots|||
+| component                    | status | notes |
+| ---------------------------- | ------ | ----- |
+| share obsidian config        |        |       |
+| research infrastructure docs |        |       |
+| phd-live                     |        |       |
+| bots                         |        |       |
 
 ---
 

@@ -4,11 +4,12 @@ visibility: public
 tags: []
 type: ""
 ---
-~~[[conference-xcoax]]~~
+~~[[conference-xcoax]]~~ 
 ~~[[conference-OER26]]~~
-~~[[ual-doctoral-symposium-summer26]]~~
-[[workshop-RiCE]] deadline 12th May 2026
+~~[[ual-doctoral-symposium-summer26]]~~~~
+~~[[workshop-RiCE]] deadline 12th May 2026~~
 [[conference-ICLC]] deadline: 15th August 2026
+[[peckham-digital-26-open-call]] 
 
 invited:
 [[ai-in-spatial-practice-and-education]] @ UAL

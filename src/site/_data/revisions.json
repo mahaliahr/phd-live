@@ -259,47 +259,6 @@
       }
     ]
   },
-  "Untitled": {
-    "noteDate": null,
-    "revisions": [
-      {
-        "date": "2026-05-26",
-        "hash": "e0186b7",
-        "wordCount": 2,
-        "delta": 0,
-        "added": 2,
-        "removed": 2,
-        "diff": "[-date-created: 2026-05-09-] {+date-created: 2026-05-26+}"
-      },
-      {
-        "date": "2026-05-09",
-        "hash": "93969b9",
-        "wordCount": 78,
-        "delta": 76,
-        "added": 78,
-        "removed": 2,
-        "diff": "[-date-created: 2026-04-27-] {+date-created: 2026-05-09+} {+<!--+} {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM+ZZ | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} {+CORE TYPES:+} {+• Turn into blog post → add: type: post+} {+FEATURE & NAVIGATION TAGS:+} {+• featured      → appears in Featured section on homepage+} {+• gardenEntry   → appears as a trailhead in the Garden gateway+} {+LIVE SYSTEM TAGS:+} {+• session       → used for live sessions / work periods+} {+• daily         → daily log style notes+} {+-->+}"
-      },
-      {
-        "date": "2026-05-04",
-        "hash": "d671441",
-        "wordCount": 0,
-        "delta": 0,
-        "added": 0,
-        "removed": 0,
-        "diff": ""
-      },
-      {
-        "date": "2026-04-27",
-        "hash": "f588171",
-        "wordCount": 12,
-        "delta": 12,
-        "added": 12,
-        "removed": 0,
-        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-04-27+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+}"
-      }
-    ]
-  },
   "HCI-evaluation-frameworks": {
     "noteDate": null,
     "revisions": [
@@ -13695,12 +13654,12 @@
     "revisions": [
       {
         "date": "2026-06-07",
-        "hash": "1100924",
-        "wordCount": 118,
-        "delta": 118,
-        "added": 118,
-        "removed": 0,
-        "diff": "{+---+} {+dg-publish: true+} {+visibility: public+} {+title: 2026-06-07+} {+tags:+} {+- daily+} {+- stream+} {+---+} {+- 20:10 idea for functionality for the research infrastructure -> when things are processing or 'loading' have visual prompts that keep me engaged/nudge me to do tasks that are adjacent or connected.+} {+- - 20:11 I watched this youtube video yesterday [The Brain Eating Machines](https://youtu.be/kVjhV-In25c?si=I3dsPMICKMMNMNVD) I agree with much of his stance, and it makes me think about the 'boundaries' of this technology, what are the things that I refuse to let LLMs handle -- I already know this implicitly, but for the purposes of this research I need to be clearer of this for myself. Where do the boundaries exist already? The protected areas?+}"
+        "hash": "858e77b",
+        "wordCount": 72,
+        "delta": -1,
+        "added": 72,
+        "removed": 73,
+        "diff": "[-- - 20:11 I watched this youtube video yesterday [The Brain Eating Machines](https://youtu.be/kVjhV-In25c?si=I3dsPMICKMMNMNVD) I agree with much of his stance, and it makes me think about the 'boundaries' of this technology, what are the things that I refuse to let LLMs handle -- I already know this implicitly, but for the purposes of this research I need to be clearer of this for myself. Where do the boundaries exist already? The protected areas?-] {+- 20:11 I watched this youtube video yesterday [The Brain Eating Machines](https://youtu.be/kVjhV-In25c?si=I3dsPMICKMMNMNVD) I agree with much of his stance, and it makes me think about the 'boundaries' of this technology, what are the things that I refuse to let LLMs handle -- I already know this implicitly, but for the purposes of this research I need to be clearer of this for myself. Where do the boundaries exist already? The protected areas?+}"
       }
     ]
   },

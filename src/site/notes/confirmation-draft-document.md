@@ -23,24 +23,35 @@ type: ""
 
 #### Abstract (what I submitted for the doctoral symposium, definitely needs a bit more work)
 
+==what why how?
+
+===where exactly I want to make a contribution to knowledge?
+
+===keywords and glossary add after abstract
+
 What can AI add to the processes of learning and knowledge-making, while preserving the boundary around the messy, generative thinking so central to creative work? And what assumptions about intelligence, agency, and knowledge are embedded in the commercial AI systems now entering educational contexts?
 The research proceeds through building: developing speculative tools, live systems, and research infrastructure as primary modes of investigation, where each artefact operates as both a technical object and a theoretical proposition.
 
 PhD-Live sits at the centre of this work: a live, public-facing digital research environment that treats the process of doctoral thinking as a core output rather than just the means to an eventual end state. Around it, a wider infrastructure is taking shape, including a 'supervisor bot' whose development has surfaced a central design tension: how do you build an AI tool that introduces genuine epistemic friction rather than simply reflecting the researcher back at themselves? This question points toward a principle that emerged through making rather than planning: that LLM reasoning and human associative thought operate with different logics. LLMs are built to resolve and optimise; creative research thinking often needs to stay open, contradictory, unfinished. Designing with both means holding that difference deliberately, rather than letting the efficiency logic of the tool quietly shape the thinking.
 
 The research sits at the intersection of speculative design, live coding practice, and critical AI studies. It is shaped by its moment: the politics of knowledge, precarity in higher education, and the institutional pressures that surround the integration of AI. Within this, several threads have emerged as central: what a locally-based AI infrastructure might offer creative research practice; the distinction between liveness and performance; and how generative AI can participate in creative thinking without speaking for the researcher.
+
+===could I hyperlink to the phd-live site
+
 #### Introduction:
 
-I will orient the reader to the project, introduce the research questions and talk about the inversion from the original proposal's approach, additionally explaining the 'After Intelligence' framing.
+I will orient the reader to the project, introduce the research questions and talk about the inversion from the original proposal's approach, additionally explaining the 'After Intelligence' framing ===ground the explanation in how it has changed
 
 **Research Questions:**
 
 - What assumptions about intelligence and knowledge are embedded in commercial AI systems, and how do those assumptions compound when these tools are adopted into learning and educational institutions?
 - How does working with LLM-based tools change the practice of thinking itself?
 - How can experimental and speculative approaches to working with AI move beyond the generic workflows of commercial systems, making space for new kinds of learning and teaching?
-- What might a commitment to liveness (keeping knowledge public whilst still forming) offer as a model for learning and knowledge-making in an era of AI-generated outputs?
+- What might a commitment to liveness (keeping knowledge public whilst still forming) offer as a model for learning and knowledge-making in an era of AI-generated outputs? ===wikipedia as a connection?===
 ---
 ### Contextual and practice review: 
+
+===criticality needs to be made clear, ie. I am aware of the critique 
 
  **The problem space**
 
@@ -157,7 +168,7 @@ A planned bot that would help me share what I'm working on more publicly: monito
 - Likely to surface questions about agency, authorship, and voice
 - Queued as priority for the next phase
 
-### emerging findings
+### emerging findings ===analysis of findings 
 
 - **The echo chamber problem**: correlated context collapses response space. A finding about LLM context handling and about the difficulty of designing for epistemic friction in tools that hold deep researcher context
 - **The capability gap**: local models do not match frontier systems for open-ended dialogic thinking. A tension between sovereignty (owning infrastructure) and capability (needing what your infrastructure can't provide)
@@ -177,7 +188,6 @@ Every chapter (other than the introduction and conclusion) will have two movemen
 - Sets out the thesis structure and explains why pedagogy and autoethnographic reflection are distributed across every chapter
 
 ---
-
 ##### 2: methodology, a playful methodology
 
 _Conceptual argument:_ practice-based and autoethnographic research, with speculative design and live coding as the methodological lineages. Possibility spaces as a foundational speculative approach. "Building with and through" LLM systems as the primary mode of investigation. Liveness named here as a methodological commitment, investigated fully in chapter 5.
@@ -244,7 +254,7 @@ _Autoethnographic account:_ Reflect on the real constraints that shaped the work
 - Reflects on what "After Intelligence" means at the end of the project
 - Limitations and future directions.
 ---
-### Plan to completion
+### Plan to completion ===make clear with the build components and focus groups 
 
 **timeline**
 **Year 3: October 2026 – September 2027**

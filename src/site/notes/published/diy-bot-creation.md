@@ -15,7 +15,7 @@ I think that I need to do more work with Supervisor Bot before I am ready for th
 
 I have a feeling that I want this not to be a LLM interface, like LLM chatbots, but something different. I am very interested in physical objects that might be able to feed into larger systems like a LLM interface. I would like it to be different to the status quo of a chatbot interface, what other kinds of interactions could be useful in a learning context. 
 
-A kind or guardian/assistant that offers something different to the educational experience. 
+A kind of guardian/assistant that offers something different to the educational experience. 
 
 I can develop further what that actually is through Supervisor Bot iterations and developments.
 
@@ -27,3 +27,17 @@ what are the key objectives that I want to achieve through this project?
 
 What do I hope people might learn?
 
+---
+
+it might have some [[project-supervisor-bot|supervisor bot]] functionality -- speaking and listening
+[[study-companion-bot]] knows what I am doing and upcoming milestones so helps me keep to it, prompts etc
+
+maybe workshop can be a simplified infrastructure -> website so it can work mobile
+
+whats a good hardware set for this hypothetically if I want to keep everything local
+
+---
+
+[[peckham-digital-26-open-call]]
+
+possible workshop structure: [[provisional-pilot-diy-bot-workshop]]

@@ -25,7 +25,7 @@ v. a written health and safety risk assessment (if applicable). 
 
 5.3 A formal meeting will be held and the student will be invited to make a short presentation on the work achieved to a confirmation panel. 
 
-5.4 The panel will normally consist of the supervisory team and one other member of the University’s academic staff normally from a different College than the student; exceptionally an external may be included if the topic is very specialised. The independent academic is required to have the experience of at least one Research Degree completion. The Director of Studies would normally be expected to chair the meeting. The independent member of the University’s academic staff will lead the questions about the work presented and contribute their judgement on the student’s work to the writing of the report. 
+5.4 <mark style="background: #D2B3FFA6;">The panel will normally consist of the supervisory team and one other member of the University’s academic staff normally from a different College than the student</mark>; exceptionally an external may be included if the topic is very specialised. The independent academic is required to have the experience of at least one Research Degree completion. The Director of Studies would normally be expected to chair the meeting. The independent member of the University’s academic staff will lead the questions about the work presented and contribute their judgement on the student’s work to the writing of the report. 
 
 5.5 The panel will complete the confirmation report at the same time as the meeting in order to record the supervisors’ comments and recommendations and confirm supervisory arrangements. 
 
