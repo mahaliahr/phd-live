@@ -4,7 +4,10 @@ date-created: 2026-05-03
 visibility: public
 tags: []
 type: ""
+aliases:
+  - ual-doctoral-symposium
 ---
+slidedeck plan [[ual-doctoral-symposium-slidedeck-plan]]
 ### Extracted from the application form:
 
 what format will your presentation take?  

@@ -1,4 +1,18 @@
 {
+  "supervision-110626": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-06-15",
+        "hash": "3abb84f",
+        "wordCount": 55,
+        "delta": 55,
+        "added": 55,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-06-11+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+[[supervision-meetings-record]]+} {+### meeting to discuss confirmation+} {+mid September send confirmation doc to the external person+} {+beginning of September send to supervisors+} {+confirmation+} {+[[confirmation-draft-document]]+} {+- [x] send updated abstract to the symposium and+} {+- [ ] update re the external for the confirmation panel+}"
+      }
+    ]
+  },
   "study-companion-bot": {
     "noteDate": null,
     "revisions": [
@@ -40,6 +54,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-06-15",
+        "hash": "3abb84f",
+        "wordCount": 69,
+        "delta": 1,
+        "added": 69,
+        "removed": 68,
+        "diff": "[-My position as both learner and teacher shapes the investigation, and the work has a strong autoethnographic thread. If the central concern is what gets erased when AI mediates knowledge work, then the methodological response is to make that process visible and available for reflection. A commitment to liveness runs through the research - keeping knowledge public whilst still forming, as research artefact rather than purely a record.-] {+My position as both learner and teacher shapes the investigation, and the work has a strong autoethnographic thread. If the central concern is what gets erased when AI mediates knowledge work, then the methodological response is to make that process visible and available for reflection. A commitment to liveness runs through the research - keeping knowledge public whilst still forming, as research artefact rather than purely a record.+} {+---+}"
+      },
+      {
         "date": "2026-05-31",
         "hash": "9bb2f90",
         "wordCount": 0,
@@ -70,6 +93,34 @@
         "added": 634,
         "removed": 0,
         "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-05-31+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+_status: early draft -criteria are provisional and will develop through use_ _links: [[system-map]]_+} {+---+} {+[[standard-LLM-benchmarks]] don't apply to this infrastructure. quality here means something different -- not accuracy or fluency, but whether an AI interaction serves the specific epistemological goals of the research. this document attempts to name those goals as evaluation criteria, so that comparisons between local and commercial models can become more systematic.+} {+---+} {+### the core question+} {+what does a 'good' AI interaction look like in this context?+} {+not good in a general sense. good for a research infrastructure designed to preserve non-linear, associative thinking while allowing AI to surface patterns and connections without resolving or speaking for me.+} {+---+} {+### possible criteria+} {+**epistemic friction** does the interaction introduce productive difficulty, or does it smooth things over? (and what exactly do I mean by 'smooth' over?) a good interaction should make you think harder, not less. it should ask questions rather than provide answers, and resist the pressure to resolve what should remain open.+} {+**pattern surfacing without resolution** does it surface connections and patterns from the knowledge base without collapsing them into conclusions? the distinction matters -- an AI that says 'your thinking on X connects to Y' is doing something different from one that says 'therefore Z.' the first is useful. the second is overreach.+} {+**register consistency** does it match the register and tone of my thinking, or does it flatten it into something more generic? this includes vocabulary, the level of certainty it projects, and whether it treats your unfinished thoughts as unfinished rather than as problems to be completed. (not sure exactly how I will effectively measure this)+} {+~~**boundary respect** does it stay within its designated domain? the supervisor bot should not behave like a study companion. the AI mirror should not enter the vault. interactions that bleed across designed boundaries are a quality failure regardless of how fluent they are.~~ ????+} {+**genuine novelty** does it surface something you didn't already think, or does it mirror your existing thinking back at you? mirroring feels validating but is epistemically empty. useful AI interactions should occasionally surprise you or offer an angle you hadn't considered.+} {+this is the current issue of study companion bot (as of 31/5/2026)+} {+**non-linearity preservation** does it respect the associative, non-linear quality of the thinking it's working with? or does it impose a linear, goal-directed structure? this is particularly relevant for interactions that involve the vault.+} {+---+} {+### observed findings so far+} {+_this section will grow as comparisons are run_+} {+**study companion (local -- gemma/ollama)**+} {+initial tests after first iteration:+} {+- does not ask clarifying questions -- interactions feel one-directional+} {+- mirrors vault content despite instructions -- low genuine novelty score+} {+- register inconsistency -- responses feel generic rather than situated in the specific research context+} {+- reframed as research finding: the capability gap between local and frontier models is itself data, not just a technical inconvenience+} {+**supervisor bot (local -- zephyr/ollama)**+} {+- echo chamber tendency when fed correlated context from the vault -- surfacing patterns that reflect existing thinking rather than challenging it+} {+- this is a design problem as much as a model problem -- the context layer needs to be curated more carefully to introduce genuine epistemic distance+} {+---+} {+### open questions+} {+- how do these criteria relate to existing [[HCI-evaluation-frameworks]]? worth connecting to qualitative research methods literature+} {+- can epistemic friction be measured, or only described? what would a rigorous evaluation of this look like??+} {+- how does evaluation criteria shift depending on which component of the infrastructure is being evaluated? supervisor bot criteria may differ from study companion criteria+} {+- what does 'genuine novelty' look like in practice -- how do you distinguish it from inaccuracies and hallucination?+} {+---+}"
+      }
+    ]
+  },
+  "provisional-pilot-diy-bot-workshop": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-06-15",
+        "hash": "3abb84f",
+        "wordCount": 413,
+        "delta": 413,
+        "added": 413,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-06-15+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+**Before the session**+} {+send a pre-workshop email with Ollama installation instructions and a link to pull one small model (gemma3 or llama3.2 -- something that runs on modest hardware). People who arrive with it installed move faster; people who don't can install during the first section while I am talking.+} {+**The room**+} {+Laptops out, projector showing mine. run everything live so participants can follow along and see what I am  doing in real time.+} {+**Opening (15 mins)**+} {+talk through the critical framing -- not a lecture, more like a provocation. Why local, why now, what's at stake. show my own setup briefly: the supervisor bot, the study companion. The point isn't to impress but to show that this is buildable and that I hace done it myself. ask the room: what shape do you imagine an AI tool taking in your own practice?+} {+**Dreaming (15 mins)**+} {+Participants fill in a worksheet -- designed to feel more like a design brief than a form. Four questions: what would you call it, how does it speak to you, when would you use it, what's the one thing it should always or never do. This is the ideation moment. I will circulate, ask questions, encourage people to think beyond chat.+} {+**Building (25 mins)**+} {+walk through the scaffold live -- a simple Python script or a pre-built interface where they drop their four decisions in and the bot appears. do it first on the projector with a demo bot, then they do it on their own machines. I will circulate. People who finish early can start experimenting with adjustments -- changing the system prompt, trying different instructions.+} {+**Exploring alternative forms (15 mins)**+} {+show two or three quick demos of non-chat implementations: a voice-activated version, something that reads from a folder of notes, a bot triggered by a button rather than a typed prompt. don't build these in the session -- just show them running. The point is to open up the possibility space beyond what they've just built.+} {+**Reflection and close (15 mins)**+} {+Group conversation: what surprised you, what would you change, what's the bigger version of this you'd want to build. point them to resources for continuing -- the repo they've cloned, where to find models, how to keep modifying the system prompt. Brief mention of the political stakes again: 'this is yours, it runs on your machine, nobody else has access to it'.+}"
+      }
+    ]
+  },
+  "peckham-digital-26-open-call": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-06-15",
+        "hash": "3abb84f",
+        "wordCount": 647,
+        "delta": 647,
+        "added": 647,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-06-14+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+DESCRIPTION (200 words)+} {+Build-a-Bot: take back your tools+} {+A small number of powerful companies now control how most people interact with AI. Their tools are convenient, but not neutral: they are designed to keep you dependent, train on your data, make decisions about what intelligence looks like on your behalf, and consume extraordinary amounts of energy to run infrastructure that primarily serves their own growth.+} {+This workshop is about engaging with this differently. Using Ollama (free, open source software that runs large language models entirely on your own machine) participants will get inside how these systems actually work, and decide for themselves what, if anything, they want to build with that knowledge.+} {+Local implementation opens up possibilities that commercial tools structurally can't offer. Your AI doesn't have to be a chat window. It can take other forms, fit other workflows, respond to your actual practice rather than a generalised idea of what a user might need.+} {+Participants will configure a bot with its own persona, purpose, and rules and leave with it running on their own machine, with enough knowledge to keep developing it.+} {+No prior coding experience required. Participants are encouraged to install Ollama before the session.+} {+---+} {+FACILITATOR STATEMENT+} {+I am a Senior Lecturer on the MSc Creative Computing at UAL's Creative Computing Institute, and a part-time doctoral researcher. My PhD, titled 'After Intelligence', investigates what it means to build AI infrastructure that genuinely supports creative and intellectual practice, rather than standardising it in the image of commercial workflows.+} {+I believe the current moment in AI development is one where the decisions made about who builds these tools, who owns them, and who they serve (and the concentration of power behind those decisions) will have long-term consequences for how we think, learn, and create. My response to that, both as a researcher and a practitioner, has been to build my own: a suite of locally-run AI tools including a supervisor bot, a study companion, and a shared knowledge layer connected to my research notes. These tools run entirely on open source software (Ollama, FastAPI, ChromaDB) and on local hardware, without sending data to commercial servers.+} {+Building them has changed how I understand these AI tools: not as a product to consume but as something that can and should be shaped by the people using it. I want to share that understanding in a practical, hands-on way, particularly with people who are curious about these tools and those who may feel that building their own is beyond them.+} {+---+} {+PROFESSIONAL DEVELOPMENT+} {+This workshop sits directly within my doctoral research, which asks how AI tools can be built to support thinking and creative practice rather than replace or flatten it. A central argument of that research is that people should be able to understand, own, and modify the AI systems they use, and that building your own is one of the most powerful ways to develop that understanding and resist the commercial AI infrastructures of power that now surround us.+} {+Running this workshop at Peckham Digital would be the first time I have tested this pedagogical framework in a community setting outside the university. The audience, creative practitioners, technologists, and curious people of all abilities, would be exactly the context I need to understand how these ideas and tools translate beyond an academic environment.+} {+The observations and feedback from the session will feed directly into a larger project I am developing: DIY Bot: a modular framework for building personalised AI tools, explored through both physical and digital dimensions, as a teaching and learning project. Peckham Digital would be its first pilot.+} {+Delivering the workshop will also push me to make the technical scaffold genuinely accessible, which requires a clarity of design and communication that will strengthen both my teaching practice and my wider research outputs.+}"
       }
     ]
   },
@@ -154,6 +205,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-06-15",
+        "hash": "3abb84f",
+        "wordCount": 125,
+        "delta": 63,
+        "added": 125,
+        "removed": 62,
+        "diff": "{+==what why how?+} {+===where exactly I want to make a contribution to knowledge?+} {+===keywords and glossary add after abstract+} {+===could I hyperlink to the phd-live site+} [-I will orient the reader to the project, introduce the research questions and talk about the inversion from the original proposal's approach, additionally explaining the 'After Intelligence' framing.-] {+I will orient the reader to the project, introduce the research questions and talk about the inversion from the original proposal's approach, additionally explaining the 'After Intelligence' framing ===ground the explanation in how it has changed+} [-- What might a commitment to liveness (keeping knowledge public whilst still forming) offer as a model for learning and knowledge-making in an era of AI-generated outputs?-] {+- What might a commitment to liveness (keeping knowledge public whilst still forming) offer as a model for learning and knowledge-making in an era of AI-generated outputs? ===wikipedia as a connection?===+} {+===criticality needs to be made clear, ie. I am aware of the critique+} [-### emerging findings-] {+### emerging findings ===analysis of findings+} [-### Plan to completion-] {+### Plan to completion ===make clear with the build components and focus groups+}"
+      },
+      {
         "date": "2026-06-05",
         "hash": "4f8088b",
         "wordCount": 3699,
@@ -203,6 +263,15 @@
   "abstract-work-in-progress": {
     "noteDate": null,
     "revisions": [
+      {
+        "date": "2026-06-15",
+        "hash": "3abb84f",
+        "wordCount": 1080,
+        "delta": 716,
+        "added": 1080,
+        "removed": 364,
+        "diff": "[-What can AI add to the processes of learning and knowledge-making, while preserving the boundary around the messy, generative thinking so central to creative work? And what assumptions about intelligence, agency, and knowledge are embedded in the commercial AI systems now entering educational contexts?-] [-The research proceeds through building: developing speculative tools, live systems, and research infrastructure as primary modes of investigation, where each artefact operates as both a technical object and a theoretical proposition.-] {+As generative AI becomes normalised within academic practice, how might these systems be integrated into creative research in ways that make thinking more visible rather than less? This practice-based PhD asks what alternative relationships with these systems might look like, and what they might reveal about how intelligence, knowledge, and learning are currently being shaped as commercial LLMs become embedded within higher education.+} [-PhD-Live sits at the centre of this work: a live, public-facing digital research environment that treats the process of doctoral thinking as a core output rather than just the means to an eventual end state. Around it, a wider infrastructure is taking shape, including a 'supervisor bot' whose development has surfaced a central design tension: how do you build an AI tool that introduces genuine epistemic friction rather than simply reflecting the researcher back at themselves? This question points toward a principle that emerged through making rather than planning: that LLM reasoning and human associative thought operate with different logics. LLMs are built to resolve and optimise; creative research thinking often needs to stay open, contradictory, unfinished. Designing with both means holding that difference deliberately, rather than letting the efficiency logic of the tool quietly shape the thinking.-] {+The research begins from the observation that these systems often compress process, producing polished outputs that can obscure the reflective, exploratory, and unfinished aspects of learning. As these tools become infrastructural to academic work, questions of who controls the means of thinking, and on whose terms, also become urgent.+} {+Rather than critique these tendencies from the outside, I investigate them through my own doctoral practice, using an autoethnographic approach informed by my position as both learner and educator. If AI-mediated knowledge work risks making process invisible, then the methodological response is to build infrastructures that make it visible again, and to keep ownership of those infrastructures close to the researcher.+} {+The core artefact is PhD-Live, a public digital research environment designed to keep knowledge-in-process visible. Alongside it, a suite of locally hosted AI systems, including a Supervisor Bot, Study Companion, and shared knowledge layer, creates an experimental infrastructure for exploring alternative human-AI research relationships. These systems are treated not only as tools but also as research materials and sites of inquiry.+} {+Through this making, findings emerge from practice rather than planning. These include the challenge of building AI tools that genuinely challenge the researcher rather than reinforce existing thinking, a tradeoff between technological sovereignty and model capability, and questions about liveness as a research methodology. Together, the project explores how creative research might remain reflective, situated, and open-ended within an emerging landscape of AI-mediated knowledge production.+} {+---+} {+~~What can AI add to the processes of learning and knowledge-making, while preserving the boundary around the messy, generative thinking so central to creative work? And what assumptions about intelligence, agency, and knowledge are embedded in the commercial AI systems now entering educational contexts?~~+} {+~~The research proceeds through building: developing speculative tools, live systems, and research infrastructure as primary modes of investigation, where each artefact operates as both a technical object and a theoretical proposition.~~+} {+~~PhD-Live sits at the centre of this work: a live, public-facing digital research environment that treats the process of doctoral thinking as a core output rather than just the means to an eventual end state. Around it, a wider infrastructure is taking shape, including a 'supervisor bot' whose development has surfaced a central design tension: how do you build an AI tool that introduces genuine epistemic friction rather than simply reflecting the researcher back at themselves? This question points toward a principle that emerged through making rather than planning: that LLM reasoning and human associative thought operate with different logics. LLMs are built to resolve and optimise; creative research thinking often needs to stay open, contradictory, unfinished. Designing with both means holding that difference deliberately, rather than letting the efficiency logic of the tool quietly shape the thinking.~~+} [-The research sits at the intersection of speculative design, live coding practice, and critical AI studies, and it treats building as its primary method. It is shaped by its moment, by the politics of knowledge, precarity in higher education, and the institutional pressures surrounding the integration of AI. Three threads structure the contribution. The first is what a locally based AI infrastructure can and cannot offer creative research practice, including where local models fall short. The second is the distinction between liveness and performance, which the work treats as an open conceptual question rather than a settled one. The third is how generative AI can participate in creative thinking without speaking for the researcher. The originality of the work lies not in occupying a gap in the literature but in treating building with and through AI as a method for investigating the conditions under which knowledge-making happens within a creative institution.-] {+~~The research sits at the intersection of speculative design, live coding practice, and critical AI studies, and it treats building as its primary method. It is shaped by its moment, by the politics of knowledge, precarity in higher education, and the institutional pressures surrounding the integration of AI. Three threads structure the contribution. The first is what a locally based AI infrastructure can and cannot offer creative research practice, including where local models fall short. The second is the distinction between liveness and performance, which the work treats as an open conceptual question rather than a settled one. The third is how generative AI can participate in creative thinking without speaking for the researcher. The originality of the work lies not in occupying a gap in the literature but in treating building with and through AI as a method for investigating the conditions under which knowledge-making happens within a creative institution.~~+} {+~~---~~+} {+~~what happens as generative AI use becomes more normalised within our academic settings? This research investigates from this starting place, questioning what this means in regard to our understandings of intelligence, knowledge and sovereignty in the face of growing integration of these commercial AI systems into many avenues of our thinking and production. This tension is something that the research aims to investigate.~~+} {+~~Assuming these circumstances as a foundational backdrop, this research concerns itself with investigating core questions situated in this reality. Framing my research as a central site within this, the infrastructure of this research itseld becomes a place to examine these questions.~~+} {+~~What happens as generative AI usage becomes normalised within our academic settings? This practice-based research investigates what this normalisation means for our understandings of intelligence, knowledge, and sovereignty as commercial AI systems are integrated into creative thinking, learning, and production.~~+} {+~~These AI systems carry embedded assumptions about what intelligence is, what learning looks like, and what counts as knowledge, and as such these assumptions are now entering educational contexts rapidly %% is this a bit repetitive? %%. The kinds of knowing creative practice depends on, tacit, exploratory, unfinished, are exactly the kinds these systems struggle to support%%  i dont know if struggle to support is right, as much as they werent necessarily designed with this in mind %%, and the institutional adoption of commercial AI is reshaping creative academic work before the implications are fully understood~~+} {+~~The research investigates these questions from within. My own doctoral practice is both the site and the subject of the investigation, and the research infrastructure built to support that practice is the place where the questions are examined materially. This infrastructure includes PhD-Live, a public digital research environment that publishes the working process of doctoral thinking as it happens, and a local AI infrastructure of bots and a shared knowledge layer that function as alternatives to commercial systems. Each component operates as both a technical object and a theoretical proposition: a way of building with and through AI rather than only using or critiquing it.~~+} {+~~Through this making, the research surfaces findings that emerge from practice rather than from planning: an echo chamber problem in AI tools that hold deep researcher context, a capability gap between local and frontier models that names a sovereignty/quality tradeoff, and an open question about what a commitment to liveness, keeping knowledge public whilst still forming, might offer as a model for learning in an era of AI-generated outputs.~~+} {+~~---~~+}"
+      },
       {
         "date": "2026-06-02",
         "hash": "84466bc",
@@ -4123,6 +4192,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-06-15",
+        "hash": "3abb84f",
+        "wordCount": 69,
+        "delta": 51,
+        "added": 69,
+        "removed": 18,
+        "diff": "[-|component|status|notes|-] [-|---|---|---|-] [-|obsidian vault|🟢 stable||-] [-|augmented writing space|||-] {+| component               | status         | notes |+} {+| ----------------------- | -------------- | ----- |+} {+| obsidian vault          | 🟢 stable      |       |+} {+| augmented writing space | 🟡 speculative |       |+} [-|component|status|notes|-] [-|---|---|---|-] [-|share obsidian config|||-] [-|research infrastructure docs|||-] [-|phd-live|||-] [-|bots|||-] {+| component                    | status | notes |+} {+| ---------------------------- | ------ | ----- |+} {+| share obsidian config        |        |       |+} {+| research infrastructure docs |        |       |+} {+| phd-live                     |        |       |+} {+| bots                         |        |       |+}"
+      },
+      {
         "date": "2026-05-31",
         "hash": "9bb2f90",
         "wordCount": 145,
@@ -4593,6 +4671,15 @@
   "supervision-meetings-record": {
     "noteDate": null,
     "revisions": [
+      {
+        "date": "2026-06-15",
+        "hash": "3abb84f",
+        "wordCount": 2,
+        "delta": 2,
+        "added": 2,
+        "removed": 0,
+        "diff": "{+4 [[supervision-110626]]+}"
+      },
       {
         "date": "2026-03-28",
         "hash": "4e77154",
@@ -10709,6 +10796,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-06-15",
+        "hash": "3abb84f",
+        "wordCount": 76,
+        "delta": 64,
+        "added": 76,
+        "removed": 12,
+        "diff": "[-A kind or guardian/assistant that offers something different to the educational experience.-] {+A kind of guardian/assistant that offers something different to the educational experience.+} {+---+} {+it might have some [[project-supervisor-bot|supervisor bot]] functionality -- speaking and listening+} {+[[study-companion-bot]] knows what I am doing and upcoming milestones so helps me keep to it, prompts etc+} {+maybe workshop can be a simplified infrastructure -> website so it can work mobile+} {+whats a good hardware set for this hypothetically if I want to keep everything local+} {+---+} {+[[peckham-digital-26-open-call]]+} {+possible workshop structure: [[provisional-pilot-diy-bot-workshop]]+}"
+      },
+      {
         "date": "2026-04-27",
         "hash": "f588171",
         "wordCount": 81,
@@ -11340,6 +11436,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-06-15",
+        "hash": "3abb84f",
+        "wordCount": 99,
+        "delta": 2,
+        "added": 99,
+        "removed": 97,
+        "diff": "[-5.4 The panel will normally consist of the supervisory team and one other member of the University’s academic staff normally from a different College than the student; exceptionally an external may be included if the topic is very specialised. The independent academic is required to have the experience of at least one Research Degree completion. The Director of Studies would normally be expected to chair the meeting. The independent member of the University’s academic staff will lead the questions about the work presented and contribute their judgement on the student’s work to the writing of the report.-] {+5.4 <mark style=\"background: #D2B3FFA6;\">The panel will normally consist of the supervisory team and one other member of the University’s academic staff normally from a different College than the student</mark>; exceptionally an external may be included if the topic is very specialised. The independent academic is required to have the experience of at least one Research Degree completion. The Director of Studies would normally be expected to chair the meeting. The independent member of the University’s academic staff will lead the questions about the work presented and contribute their judgement on the student’s work to the writing of the report.+}"
+      },
+      {
         "date": "2026-06-05",
         "hash": "4f8088b",
         "wordCount": 208,
@@ -11439,6 +11544,15 @@
   "conferences-workshops-etc": {
     "noteDate": null,
     "revisions": [
+      {
+        "date": "2026-06-15",
+        "hash": "3abb84f",
+        "wordCount": 8,
+        "delta": 1,
+        "added": 8,
+        "removed": 7,
+        "diff": "[-~~[[conference-xcoax]]~~-] {+~~[[conference-xcoax]]~~+} [-~~[[ual-doctoral-symposium-summer26]]~~-] [-[[workshop-RiCE]] deadline 12th May 2026-] {+~~[[ual-doctoral-symposium-summer26]]~~~~+} {+~~[[workshop-RiCE]] deadline 12th May 2026~~+} {+[[peckham-digital-26-open-call]]+}"
+      },
       {
         "date": "2026-05-09",
         "hash": "3a97d1c",
@@ -13646,6 +13760,34 @@
         "added": 96,
         "removed": 0,
         "diff": "{+---+} {+{\"dg-publish\":true,\"permalink\":\"/pre-start-thoughts/algorithms-as-world-ph-d-rough-ideas/\"}+} {+---+} {+[[published/play-is-the-work-of-operating-a-system\\|play-is-the-work-of-operating-a-system]]+} {+---+} {+order - resistance - messiness+} {+The current state of the world - systems+} {+[[published/types-of-systems\\|types-of-systems]]+} {+specific case study education -> creative computing+} {+(which system? education)+} {+(playing with(in) the system to build something new)+} {+what is worlding?+} {+Use the idea of algorithms as a framework to work within+} {+ML algorithms+} {+Generative algorithms+} {+[[algorithms-as-framework\\|algorithms-as-framework]]+} {+(rigidity as canvas)+} {+methodology ?+} {+play as methodology - too vague?+} {+improvisation and imagination+} {+experience design+} {+collaborative world building using computational tools?+} {+metaphorical and literal+} {+making the familiar strange+} {+systems as stories / embodying it as a way to learn+}"
+      }
+    ]
+  },
+  "2026-06-15": {
+    "noteDate": "2026-06-15",
+    "revisions": [
+      {
+        "date": "2026-06-15",
+        "hash": "3abb84f",
+        "wordCount": 31,
+        "delta": 31,
+        "added": 31,
+        "removed": 0,
+        "diff": "{+---+} {+date: 2026-06-15+} {+---+} {+## sessions+} {+<details>+} {+<summary>Session 1</summary>+} {+start:: 2026-06-14T11:55:44.902Z+} {+topic:: other · reading/planning/updating+} {+end:: 2026-06-14T23:29:07.260Z+} {+</details>+} {+working on developing this: [[diy-bot-creation]] for the [[peckham-digital-26-open-call]] which had a closing deadline.+}"
+      }
+    ]
+  },
+  "2026-06-12": {
+    "noteDate": "2026-06-12",
+    "revisions": [
+      {
+        "date": "2026-06-15",
+        "hash": "3abb84f",
+        "wordCount": 20,
+        "delta": 20,
+        "added": 20,
+        "removed": 0,
+        "diff": "{+---+} {+date: 2026-06-12+} {+---+} {+## sessions+} {+<details>+} {+<summary>Session 1</summary>+} {+start:: 2026-06-12T10:08:16.322Z+} {+topic:: writing · working on abstract+} {+end:: 2026-06-12T13:43:46.763Z+} {+</details>+}"
       }
     ]
   },

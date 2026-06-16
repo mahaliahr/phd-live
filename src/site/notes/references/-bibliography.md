@@ -68,6 +68,8 @@ group based on research areas?
 
 [[karpathy-2026-llm-wiki]]
 
+[[karpathy-2025-LLM-year-in-review]]
+
 [[jowsey-et-al-2025-we-reject-genAI-for-reflexive-qualitative-research]]
 
 [[ahrens-2017-how-to-take-smart-notes]]
