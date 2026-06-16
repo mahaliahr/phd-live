@@ -1,4 +1,81 @@
 {
+  "ual-doctoral-symposium-slidedeck-plan": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-06-16",
+        "hash": "9e5881a",
+        "wordCount": 2,
+        "delta": 0,
+        "added": 2,
+        "removed": 2,
+        "diff": "[-date-created: 2026-04-27-] {+date-created: 2026-06-15+}"
+      },
+      {
+        "date": "2026-04-27",
+        "hash": "f588171",
+        "wordCount": 0,
+        "delta": 0,
+        "added": 0,
+        "removed": 0,
+        "diff": ""
+      },
+      {
+        "date": "2026-04-23",
+        "hash": "448ef01",
+        "wordCount": 0,
+        "delta": 0,
+        "added": 0,
+        "removed": 0,
+        "diff": ""
+      },
+      {
+        "date": "2026-04-20",
+        "hash": "ce0123f",
+        "wordCount": 3,
+        "delta": 1,
+        "added": 3,
+        "removed": 2,
+        "diff": "[-date-created: 2026-04-17-] {+date-created: 2026-04-20+} {+https://iclc.toplap.org/2027/+}"
+      },
+      {
+        "date": "2026-04-18",
+        "hash": "1ca75a6",
+        "wordCount": 2,
+        "delta": -2,
+        "added": 2,
+        "removed": 4,
+        "diff": "[-date-created: <% tp.file.creation_date(\"YYYY-MM-DD\") %>-] {+date-created: 2026-04-17+}"
+      },
+      {
+        "date": "2026-03-31",
+        "hash": "c7cb54e",
+        "wordCount": 4,
+        "delta": 4,
+        "added": 4,
+        "removed": 0,
+        "diff": "{+date-created: <% tp.file.creation_date(\"YYYY-MM-DD\") %>+}"
+      },
+      {
+        "date": "2026-02-08",
+        "hash": "5cd38e4",
+        "wordCount": 0,
+        "delta": -7,
+        "added": 0,
+        "removed": 7,
+        "diff": "[-# title: \"\"-] [-title: <% tp.file.title.toLowerCase() %>-]"
+      },
+      {
+        "date": "2026-01-11",
+        "hash": "1bdddd0",
+        "wordCount": 7,
+        "delta": 5,
+        "added": 7,
+        "removed": 2,
+        "diff": "[-title: \"\"-] {+# title: \"\"+} {+title: <% tp.file.title.toLowerCase() %>+}"
+      }
+    ]
+  },
   "supervision-110626": {
     "noteDate": null,
     "revisions": [
@@ -198,6 +275,20 @@
         "added": 7,
         "removed": 2,
         "diff": "[-title: \"\"-] {+# title: \"\"+} {+title: <% tp.file.title.toLowerCase() %>+}"
+      }
+    ]
+  },
+  "karpathy-2025-LLM-year-in-review": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-06-16",
+        "hash": "9e5881a",
+        "wordCount": 104,
+        "delta": 104,
+        "added": 104,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-06-16+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+[[-bibliography]]+} {+Karpathy. “2025 LLM Year in Review.” December 19, 2025. https://karpathy.bearblog.dev/year-in-review-2025/.+} {+---+} {+he lists the following 'paradigm changes' that have shifted the landscape. As a prominent thinker and figure in this space its interesting to read about his thoughts about important shifts in this domain+} {+#### 1. Reinforcement Learning from Verifiable Rewards (RLVR)+} {+#### 2. Ghosts vs. Animals / Jagged Intelligence+} {+#### 3. Cursor / new layer of LLM apps+} {+#### 4. Claude Code / AI that lives on your computer+} {+#### 5. Vibe coding+} {+#### 6. Nano banana / LLM GUI+}"
       }
     ]
   },
@@ -1852,6 +1943,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-06-16",
+        "hash": "9e5881a",
+        "wordCount": 184,
+        "delta": 166,
+        "added": 184,
+        "removed": 18,
+        "diff": "[-Ian Bogost, _Play Anything: The Pleasure of Limits, the Uses of Boredom, and the Secret of Games_, 2016.-] {+Bogost, I. (2016) _Play anything: the pleasure of limits, the uses of boredom, and the secret of games_.+} {+his mention of [[possibility-spaces-and-impossibility-spaces|possibility-spaces]] is a seed that has stayed in my mind since I did my masters degree. This has been a loose way to structure my interegation of possible future scenarios in my making of different prototypes.+} {+this part is very resonant to me, as it suggests not only a imaginative approach but a rigorous one:+} {+SCIENTISTS AND MATHEMATICIANS sometimes talk about the “possibility space” of a problem. Rather than making assumptions about a more or less likely answer to a hypothesis or behavior of an actor in an experiment, you could assemble, rank, and test all the possible directions a solution might take. In some cases, such as logical or mathematical puzzles, the overall solution space might be small, and a process of elimination can yield a result. The possibility space for a coin flip is heads or tails; of two coin flips, heads-heads, heads-tails, tails-heads, tails-tails. But for more complex problems, it’s harder to draw a simple map of the solution space.+}"
+      },
+      {
         "date": "2025-10-21",
         "hash": "01cf58d",
         "wordCount": 29,
@@ -2297,6 +2397,15 @@
   "-bibliography": {
     "noteDate": null,
     "revisions": [
+      {
+        "date": "2026-06-16",
+        "hash": "9e5881a",
+        "wordCount": 1,
+        "delta": 1,
+        "added": 1,
+        "removed": 0,
+        "diff": "{+[[karpathy-2025-LLM-year-in-review]]+}"
+      },
       {
         "date": "2026-05-02",
         "hash": "589e634",
@@ -3128,6 +3237,15 @@
   "ual-doctoral-symposium-summer26": {
     "noteDate": null,
     "revisions": [
+      {
+        "date": "2026-06-16",
+        "hash": "9e5881a",
+        "wordCount": 6,
+        "delta": 6,
+        "added": 6,
+        "removed": 0,
+        "diff": "{+aliases:+} {+- ual-doctoral-symposium+} {+slidedeck plan [[ual-doctoral-symposium-slidedeck-plan]]+}"
+      },
       {
         "date": "2026-05-08",
         "hash": "264dc4a",
@@ -7194,6 +7312,15 @@
   "possibility-spaces-and-impossibility-spaces": {
     "noteDate": null,
     "revisions": [
+      {
+        "date": "2026-06-16",
+        "hash": "9e5881a",
+        "wordCount": 1,
+        "delta": 1,
+        "added": 1,
+        "removed": 0,
+        "diff": "{+[[bogost-2016-play-anything]]+}"
+      },
       {
         "date": "2026-05-04",
         "hash": "883c712",
@@ -11436,6 +11563,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-06-16",
+        "hash": "9e5881a",
+        "wordCount": 3,
+        "delta": 3,
+        "added": 3,
+        "removed": 0,
+        "diff": "{+aliases:+} {+- confirmation+}"
+      },
+      {
         "date": "2026-06-15",
         "hash": "3abb84f",
         "wordCount": 99,
@@ -13760,6 +13896,20 @@
         "added": 96,
         "removed": 0,
         "diff": "{+---+} {+{\"dg-publish\":true,\"permalink\":\"/pre-start-thoughts/algorithms-as-world-ph-d-rough-ideas/\"}+} {+---+} {+[[published/play-is-the-work-of-operating-a-system\\|play-is-the-work-of-operating-a-system]]+} {+---+} {+order - resistance - messiness+} {+The current state of the world - systems+} {+[[published/types-of-systems\\|types-of-systems]]+} {+specific case study education -> creative computing+} {+(which system? education)+} {+(playing with(in) the system to build something new)+} {+what is worlding?+} {+Use the idea of algorithms as a framework to work within+} {+ML algorithms+} {+Generative algorithms+} {+[[algorithms-as-framework\\|algorithms-as-framework]]+} {+(rigidity as canvas)+} {+methodology ?+} {+play as methodology - too vague?+} {+improvisation and imagination+} {+experience design+} {+collaborative world building using computational tools?+} {+metaphorical and literal+} {+making the familiar strange+} {+systems as stories / embodying it as a way to learn+}"
+      }
+    ]
+  },
+  "2026-06-16": {
+    "noteDate": "2026-06-16",
+    "revisions": [
+      {
+        "date": "2026-06-16",
+        "hash": "9e5881a",
+        "wordCount": 62,
+        "delta": 62,
+        "added": 62,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+visibility: public+} {+title: 2026-06-16+} {+tags:+} {+- daily+} {+- stream+} {+---+} {+<details>+} {+<summary>Session</summary>+} {+start:: 2026-06-16T19:51:41+0100+} {+topic:: working on doctoral symposium planning+} {+</details>+} {+I have decided that I will use the [[ual-doctoral-symposium-summer26|ual-doctoral-symposium]] as a way to firm up the narrative around the terminology [[possibility-spaces-and-impossibility-spaces|possibility-spaces]] within the research. The hope is this will be a useful exercise moving forward into the [[confirmation-requirements|confirmation]].+}"
       }
     ]
   },
