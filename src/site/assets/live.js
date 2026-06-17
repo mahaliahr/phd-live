@@ -10,7 +10,7 @@
 
   function relativeTime(dateString) {
     if (!dateString) return "unknown time";
-    const d = new Date(dateString);
+    const d = new Date(normalizeSessionTimestamp(dateString));
     if (isNaN(d.getTime())) return "unknown time";
     const ms = d.getTime() - Date.now();
     const sec = Math.round(ms / 1000);
@@ -24,7 +24,29 @@
   }
 
   function formatTime(iso) {
-    return new Date(iso).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+    return new Date(normalizeSessionTimestamp(iso)).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+  }
+
+  function normalizeSessionTimestamp(value) {
+    if (!value) return null;
+    const raw = String(value).trim();
+    if (!raw) return null;
+    const normalized = raw.replace(' ', 'T');
+    const hasTimezone = /(?:Z|[+-]\d{2}:?\d{2})$/i.test(normalized);
+    if (hasTimezone) {
+      if (/[+-]\d{4}$/.test(normalized)) {
+        return normalized.replace(/([+-]\d{2})(\d{2})$/, '$1:$2');
+      }
+      return normalized;
+    }
+    return `${normalized}Z`;
+  }
+
+  function toUtcMs(value) {
+    const normalized = normalizeSessionTimestamp(value);
+    if (!normalized) return NaN;
+    const ms = Date.parse(normalized);
+    return Number.isFinite(ms) ? ms : NaN;
   }
 
   function processWikilinks(text) {
@@ -78,7 +100,18 @@
   // Obsidian: trust the isLikelyActive flag (no end + within 8h staleness threshold)
 
   function isActive(session) {
-    if (session.source === 'supabase') return session.status === 'active'
+    if (session.source === 'supabase') {
+      const status = String(session.status || '').trim().toLowerCase();
+      if (status !== 'active') return false;
+
+      const now = Date.now();
+      const startedMs = toUtcMs(session.start);
+      const endedMs = toUtcMs(session.end);
+
+      if (Number.isFinite(startedMs) && startedMs > now) return false;
+      if (Number.isFinite(endedMs) && endedMs <= now) return false;
+      return true;
+    }
     return session.isLikelyActive === true
   }
 
@@ -90,7 +123,7 @@
     const text = bar.querySelector('[data-livebar-text]')
 
     if (activeSession) {
-      const started = new Date(activeSession.start).getTime()
+      const started = toUtcMs(activeSession.start)
       const tick = () => {
         const mins = Math.max(0, Math.floor((Date.now() - started) / 60000))
         if (text) text.innerHTML = `<strong>LIVE</strong> — ${activeSession.topic} · ${mins}m`
@@ -107,7 +140,7 @@
   // --- Live column ---
 
   function updateLiveColumn(allSessions, stream) {
-    const now = new Date()
+    const nowMs = Date.now()
     const nowContainer = document.getElementById('live-now')
     const nextContainer = document.getElementById('live-next')
     const streamContainer = document.getElementById('live-stream')
@@ -124,7 +157,10 @@
       currentSession = allSessions[0]
     }
 
-    const nextSession = allSessions.find(s => new Date(s.start) > now) || null
+    const nextSession = allSessions.find(s => {
+      const startMs = toUtcMs(s.start)
+      return Number.isFinite(startMs) && startMs > nowMs
+    }) || null
 
     if (liveHeading) {
       const isLive = currentSession && isActive(currentSession)
@@ -139,23 +175,25 @@
 
     if (nowContainer && currentSession) {
       const s = currentSession
-      const start = new Date(s.start)
-      const end = s.end ? new Date(s.end) : null
+      const startMs = toUtcMs(s.start)
+      const endMs = toUtcMs(s.end)
       const isSessionActive = isActive(s)
       const statusLabel = isSessionActive
         ? '<span class="status active">LIVE NOW</span>'
         : '<span class="status">Most Recent</span>'
 
       let duration = ''
-      if (start && end) {
-        const durationMs = end - start
+      if (Number.isFinite(startMs) && Number.isFinite(endMs) && endMs >= startMs) {
+        const durationMs = endMs - startMs
         const hours = Math.floor(durationMs / (1000 * 60 * 60))
         const mins = Math.floor((durationMs % (1000 * 60 * 60)) / (1000 * 60))
         duration = `<span class="session-duration">${hours}h ${mins}m</span>`
       }
 
       const tick = () => {
-        const mins = isSessionActive ? Math.max(0, Math.floor((Date.now() - start) / 60000)) : null
+        const mins = isSessionActive && Number.isFinite(startMs)
+          ? Math.max(0, Math.floor((Date.now() - startMs) / 60000))
+          : null
         nowContainer.innerHTML = `
           <div class="session-card ${isSessionActive ? 'active' : ''}">
             <div class="session-header">
@@ -165,7 +203,7 @@
             <div class="session-meta">
               <span>Started ${relativeTime(s.start)}</span>
               ${isSessionActive ? `<span>${mins}m and counting</span>` : duration}
-              ${!isSessionActive && end ? `<span>Ended ${relativeTime(s.end)}</span>` : ''}
+              ${!isSessionActive && Number.isFinite(endMs) ? `<span>Ended ${relativeTime(s.end)}</span>` : ''}
             </div>
             ${s.url ? `<a href="${s.url}" class="session-link">View full session →</a>` : ''}
             <div class="content-type-label">session</div>
@@ -229,7 +267,25 @@
     const allSessions = [
       ...(supabaseSessions || []),
       ...(obsidianSessions || [])
-    ].sort((a, b) => new Date(b.start) - new Date(a.start))
+    ].sort((a, b) => {
+      const bStart = toUtcMs(b.start)
+      const aStart = toUtcMs(a.start)
+      if (!Number.isFinite(bStart)) return -1
+      if (!Number.isFinite(aStart)) return 1
+      return bStart - aStart
+    })
+
+    allSessions.forEach((session, index) => {
+      const parsedStart = new Date(normalizeSessionTimestamp(session.start))
+      console.log('[live][session-before-isActive]', {
+        index,
+        source: session.source || null,
+        start: session.start || null,
+        end: session.end || null,
+        status: session.status || null,
+        parsedStartIso: Number.isNaN(parsedStart.getTime()) ? null : parsedStart.toISOString(),
+      })
+    })
 
     const activeSession = allSessions.find(isActive)
 
