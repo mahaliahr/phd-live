@@ -1,8 +1,9 @@
-const { execSync } = require('child_process');
+const { execFileSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 const glob = require('glob');
 const matter = require('gray-matter');
+const slugify = require('@sindresorhus/slugify');
 
 const NOTES_DIR = 'src/site/notes';
 const OUTPUT = 'src/site/_data/revisions.json';
@@ -35,8 +36,9 @@ function getNoteDate(filepath) {
 
 function getFullHistory(filepath) {
   try {
-    return execSync(
-      `git log --follow --unified=3 --format="COMMIT:%H|%ai" -p -- ${filepath}`,
+    return execFileSync(
+      'git',
+      ['log', '--follow', '--unified=3', '--format=COMMIT:%H|%ai', '-p', '--', filepath],
       { encoding: 'utf8', stdio: ['pipe', 'pipe', 'pipe'] }
     ).trim();
   } catch {
@@ -135,6 +137,17 @@ function buildRevisions(filepath) {
   };
 }
 
+function getRevisionKeys(filepath) {
+  const basename = filepath
+    .replace(NOTES_DIR + '/', '')
+    .replace(/\.md$/, '')
+    .replace(/^.*\//, '');
+
+  const keys = new Set([basename]);
+  keys.add(slugify(basename));
+  return [...keys].filter(Boolean);
+}
+
 // Main
 const files = glob.sync(`${NOTES_DIR}/**/*.md`).filter(f =>
   !f.includes('notes/_templates') &&
@@ -144,14 +157,11 @@ const files = glob.sync(`${NOTES_DIR}/**/*.md`).filter(f =>
 const output = {};
 
 for (const filepath of files) {
-  const slug = filepath
-    .replace(NOTES_DIR + '/', '')
-    .replace(/\.md$/, '')
-    .replace(/^.*\//, '');
-
   const result = buildRevisions(filepath);
   if (result && result.revisions.length > 0) {
-    output[slug] = result;
+    for (const key of getRevisionKeys(filepath)) {
+      output[key] = result;
+    }
   }
 }
 

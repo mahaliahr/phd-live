@@ -97,7 +97,7 @@ class SessionsJson {
     const start = new Date(startIso);
     if (isNaN(start.getTime())) return false;
     const hoursAgo = (Date.now() - start.getTime()) / (1000 * 60 * 60);
-    return hoursAgo <= 8; // within staleness threshold
+    return hoursAgo < 8; // within staleness threshold
   }
 
   render(data) {
