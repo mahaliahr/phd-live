@@ -87,7 +87,8 @@
         start: s.started,
         end: s.ended || null,
         topic: s.type + (s.note ? ` · ${s.note}` : ''),
-        status: s.status
+        status: s.status,
+        url: `/daily/${s.started.slice(0, 10)}/`
       }))
     } catch (e) {
       console.error('Supabase fetch failed', e)
