@@ -3,6 +3,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-06-18",
+        "hash": "c018558",
+        "wordCount": 55,
+        "delta": 39,
+        "added": 55,
+        "removed": 16,
+        "diff": "[-imposisbility space as an extra seperate node that ground the work in the socio/political realities ?-] {+impossibility space as an extra seperate node that ground the work in the socio/political realities ?+} {+start off grounding and defining what I mean re. possibility spaces for the research+} {+how it works as a framing to investigate my research q's+} {+intro the domain - and the medium+} {+directions and questions+} {+expected contributions? exploratory areas+}"
+      },
+      {
         "date": "2026-06-16",
         "hash": "afcbc29",
         "wordCount": 20,
@@ -19529,6 +19538,20 @@
         "added": 83,
         "removed": 0,
         "diff": "{+---+} {+{\"dg-publish\":true,\"permalink\":\"/pre-start-thoughts/28-11-2023-notes/\"}+} {+---+} {+I feel strongly that a big part of my work should be a critique of the current state of affairs. This critique will come from the perspective of being a member of staff and also of studying.+} {+It will pull from a lived experience of being excluded and what it potentially means to have new models that give access to things that have been historically gatekept,+} {+(what new ways of gatekeeping could be brought up/dreamt up)+} {+Foucault Knowledge and Power+}"
+      }
+    ]
+  },
+  "2026-06-18": {
+    "noteDate": "2026-06-18",
+    "revisions": [
+      {
+        "date": "2026-06-18",
+        "hash": "c018558",
+        "wordCount": 23,
+        "delta": 23,
+        "added": 23,
+        "removed": 0,
+        "diff": "{+---+} {+date: 2026-06-18+} {+---+} {+## sessions+} {+<details>+} {+<summary>Session 1</summary>+} {+start:: 2026-06-17T23:07:12.785Z+} {+topic:: thinking / planning · slidedeck work for symposium+} {+end:: 2026-06-18T01:40:12.591Z+} {+</details>+}"
       }
     ]
   },
