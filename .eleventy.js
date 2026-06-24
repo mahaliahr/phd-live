@@ -869,6 +869,28 @@ eleventyConfig.addCollection("streamItems", (c) => {
     !p?.data?.draft &&
     p?.data?.visibility !== "private";
 
+  const hasFeaturedFlag = (p) => {
+    const featured = p?.data?.featured;
+    if (featured === true) return true;
+    if (typeof featured === "string" && featured.trim().toLowerCase() === "true") return true;
+
+    const tags = p?.data?.tags;
+    if (Array.isArray(tags)) {
+      return tags.some((t) => String(t).trim().toLowerCase() === "featured");
+    }
+
+    // Handles accidental nested front matter like:
+    // tags:
+    //   featured: true
+    if (tags && typeof tags === "object") {
+      const nestedFeatured = tags.featured;
+      if (nestedFeatured === true) return true;
+      if (typeof nestedFeatured === "string" && nestedFeatured.trim().toLowerCase() === "true") return true;
+    }
+
+    return false;
+  };
+
   eleventyConfig.addCollection("note", (api) => [
     ...api.getFilteredByGlob("src/site/notes/**/*.md").filter((p) => isMd(p) && isPublished(p)),
     ...api.getFilteredByGlob("src/site/notes/**/*.canvas")
@@ -891,9 +913,26 @@ eleventyConfig.addCollection("streamItems", (c) => {
     return [...map.values()]
       .filter(isPublished)
       .sort((a, b) => {
-        const fa = !!a.data?.featured, fb = !!b.data?.featured;
+        const fa = hasFeaturedFlag(a), fb = hasFeaturedFlag(b);
         if (fa !== fb) return fb - fa;               // featured first
         return (b.date || 0) - (a.date || 0);        // newest next
+      });
+  });
+
+  eleventyConfig.addCollection("featuredPosts", (api) => {
+    const byBlogFolder = api.getFilteredByGlob("src/site/notes/blog/**/*.md");
+    const byPublishedFolder = api.getFilteredByGlob("src/site/notes/published/**/*.md");
+    const byTag = api.getFilteredByTag("post");
+
+    const map = new Map();
+    [...byBlogFolder, ...byPublishedFolder, ...byTag].forEach((p) => map.set(p.inputPath, p));
+
+    return [...map.values()]
+      .filter((p) => isPublished(p) && hasFeaturedFlag(p))
+      .sort((a, b) => {
+        const dateA = new Date(a.data?.date || a.date || 0).getTime();
+        const dateB = new Date(b.data?.date || b.date || 0).getTime();
+        return dateB - dateA;
       });
   });
 

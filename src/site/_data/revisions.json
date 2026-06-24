@@ -89,6 +89,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-06-24",
+        "hash": "7e09bc0",
+        "wordCount": 10,
+        "delta": -1,
+        "added": 10,
+        "removed": 11,
+        "diff": "[-- [ ] update re the external for the confirmation panel-] {+- [x] update re the external for the confirmation panel+}"
+      },
+      {
         "date": "2026-06-15",
         "hash": "3abb84f",
         "wordCount": 55,
@@ -5473,6 +5482,15 @@
   "system-map": {
     "noteDate": null,
     "revisions": [
+      {
+        "date": "2026-06-24",
+        "hash": "7e09bc0",
+        "wordCount": 2,
+        "delta": 2,
+        "added": 2,
+        "removed": 0,
+        "diff": "{+featured: true+}"
+      },
       {
         "date": "2026-06-15",
         "hash": "3abb84f",
