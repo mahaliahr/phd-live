@@ -19541,9 +19541,32 @@
       }
     ]
   },
+  "2026-06-19": {
+    "noteDate": "2026-06-19",
+    "revisions": [
+      {
+        "date": "2026-06-19",
+        "hash": "bf25ace",
+        "wordCount": 95,
+        "delta": 95,
+        "added": 95,
+        "removed": 0,
+        "diff": "{+---+} {+date: 2026-06-19+} {+---+} {+## sessions+} {+<details>+} {+<summary>Session 1</summary>+} {+start:: 2026-06-19T10:27:11.720Z+} {+topic:: thinking / planning · continuing on slides for symposium+} {+end:: 2026-06-19T21:52:45.696Z+} {+</details>+} {+continuing work on the slides for the [[ual-doctoral-symposium-summer26|ual-doctoral-symposium]]. Mostly finished them up, but will want to revisit a bit before Monday to sanity check it and go over the narrative. This is the first time properly talking about the research so even though I feel that this was a little bit enforced on me as an activity (literally I am forced to do this for confirmation) it is a useful task.+}"
+      }
+    ]
+  },
   "2026-06-18": {
     "noteDate": "2026-06-18",
     "revisions": [
+      {
+        "date": "2026-06-19",
+        "hash": "bf25ace",
+        "wordCount": 16,
+        "delta": 16,
+        "added": 16,
+        "removed": 0,
+        "diff": "{+<summary>Session 2</summary>+} {+start:: 2026-06-18T11:48:00.973Z+} {+topic:: thinking / planning · continuing slidedeck prep+} {+end:: 2026-06-18T21:45:23.427Z+} {+</details>+} {+<details>+}"
+      },
       {
         "date": "2026-06-18",
         "hash": "c018558",
