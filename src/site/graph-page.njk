@@ -1,16 +1,98 @@
 ---
 permalink: "/graph/"
 layout: "base.njk"
-title: "Knowledge Graph"
+title: "Graph"
 dgShowSidebar: false
 dgShowLocalGraph: false
 ---
 
-<div class="graph-page content-wrapper">
-  <header class="graph-page-header">
-<h1>Map of Ideas</h1>
-<p>Explore the 'Digital Garden' of developing thoughts, knowledge and ideas.</p>
-  </header>
-  
-  {% include "components/fullGraphPage.njk" %}
+<div id="graph-page-wrap">
+  <div id="graph-full-container"></div>
+  <aside id="graph-preview" class="graph-preview graph-preview--hidden">
+    <div class="graph-preview__inner">
+      <h3 id="graph-preview-title" class="graph-preview__title"></h3>
+      <p id="graph-preview-excerpt" class="graph-preview__excerpt"></p>
+      <a id="graph-preview-link" class="graph-preview__link" href="#">Open note -></a>
+    </div>
+    <button id="graph-preview-close" class="graph-preview__close" aria-label="Close preview">x</button>
+  </aside>
 </div>
+
+<style>
+  #graph-page-wrap {
+    display: flex;
+    height: calc(100vh - var(--header-height, 60px));
+    position: relative;
+    overflow: hidden;
+  }
+
+  #graph-full-container {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .graph-preview {
+    width: 300px;
+    flex-shrink: 0;
+    border-left: 1px solid var(--graph-muted, #444);
+    padding: 1.5rem;
+    overflow-y: auto;
+    position: relative;
+    transition: width 0.2s, opacity 0.2s;
+    background: var(--background-primary, #1e1e1e);
+  }
+
+  .graph-preview--hidden {
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .graph-preview__title {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+  }
+
+  .graph-preview__excerpt {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    margin-bottom: 1rem;
+  }
+
+  .graph-preview__link {
+    font-size: 0.85rem;
+  }
+
+  .graph-preview__close {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-muted, #888);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 600px) {
+    .graph-preview {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100% !important;
+      height: 200px;
+      border-left: none;
+      border-top: 1px solid var(--graph-muted, #444);
+    }
+
+    .graph-preview--hidden {
+      height: 0;
+      width: 100% !important;
+    }
+  }
+</style>
+
+<script src="{{ '/assets/js/graph-full.js' | url }}" defer></script>

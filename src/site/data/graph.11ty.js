@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const slugify = require("@sindresorhus/slugify");
+const matter = require("gray-matter");
 
 function readFileSafe(p) { try { return fs.readFileSync(p, "utf8"); } catch { return ""; } }
 function extractWikiTargets(src) {
@@ -8,6 +9,68 @@ function extractWikiTargets(src) {
   const re = /\[\[([^\]\|#]+)(?:#[^\]\|]+)?(?:\|[^\]]+)?\]\]/g; let m;
   while ((m = re.exec(src))) { const t = (m[1] || "").trim(); if (t) out.push(t); }
   return out;
+}
+
+function stripMarkdownForExcerpt(src) {
+  if (typeof src !== "string" || !src.trim()) return "";
+
+  let text = src;
+
+  // Remove frontmatter.
+  text = text.replace(/^---[\s\S]*?---\s*/m, "");
+
+  // Remove fenced code blocks and inline code.
+  text = text.replace(/```[\s\S]*?```/g, " ");
+  text = text.replace(/`[^`]*`/g, " ");
+
+  // Strip markdown headings and blockquote/list markers.
+  text = text.replace(/^\s{0,3}#{1,6}\s*/gm, "");
+  text = text.replace(/^\s{0,3}>\s?/gm, "");
+  text = text.replace(/^\s*[-*+]\s+/gm, "");
+  text = text.replace(/^\s*\d+\.\s+/gm, "");
+
+  // Convert wikilinks to readable text.
+  text = text.replace(/\[\[([^\]|#]+)(?:#[^\]]+)?(?:\|([^\]]+))?\]\]/g, (_m, target, alias) => {
+    return (alias || target || "").trim();
+  });
+
+  // Convert normal markdown links and images.
+  text = text.replace(/!\[[^\]]*\]\([^\)]*\)/g, " ");
+  text = text.replace(/\[([^\]]+)\]\([^\)]*\)/g, "$1");
+
+  // Strip raw HTML tags.
+  text = text.replace(/<[^>]*>/g, " ");
+
+  // Remove leftover markdown emphasis/formatting characters.
+  text = text.replace(/[*_~>#]/g, " ");
+  text = text.replace(/[\u0000-\u001f\u007f]/g, " ");
+  text = text.replace(/\s+/g, " ").trim();
+
+  return text;
+}
+
+function getFrontmatterDescription(rawText) {
+  if (typeof rawText !== "string" || !rawText.trim()) return "";
+  try {
+    const parsed = matter(rawText);
+    const desc = parsed?.data?.description;
+    return typeof desc === "string" ? desc : "";
+  } catch {
+    return "";
+  }
+}
+
+function buildExcerpt(rawText) {
+  const fromDescription = getFrontmatterDescription(rawText);
+  if (fromDescription.trim()) {
+    return fromDescription
+      .replace(/[\u0000-\u001f\u007f]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim()
+      .slice(0, 120);
+  }
+  const cleaned = stripMarkdownForExcerpt(rawText);
+  return cleaned.slice(0, 120);
 }
 
 class GraphJson {
@@ -58,10 +121,11 @@ class GraphJson {
         const url = String(p.url || "");
         const title = String(p.data?.title || p.fileSlug || url);
         const src = readFileSafe(String(p.inputPath || ""));
+        const excerpt = buildExcerpt(src);
         const targets = extractWikiTargets(src).map(resolve).filter((u) => !!u && u !== url);
         outLinks.set(url, new Set(targets));
         nodes[url] = nodes[url] || {
-          id: url, url, title,
+          id: url, url, title, excerpt,
           neighbors: [], backLinks: [],
           hide: false,
           home: url === homeUrl // mark the gardenEntry page as home
