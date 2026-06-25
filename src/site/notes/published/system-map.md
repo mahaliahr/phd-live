@@ -4,6 +4,7 @@ date-created: 2026-05-03
 visibility: public
 tags: []
 type: ""
+featured: true
 ---
 a map of the research infrastructure. updated when something changes state, not on a schedule. for active tasks see [[phd-live-build]]. for unresolved thinking see [[system-open-questions]].
 

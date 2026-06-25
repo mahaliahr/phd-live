@@ -18,4 +18,4 @@ confirmation
 [[confirmation-draft-document]]
 
 - [x] send updated abstract to the symposium and 
-- [ ] update re the external for the confirmation panel 
+- [x] update re the external for the confirmation panel 

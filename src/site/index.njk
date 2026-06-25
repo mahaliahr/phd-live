@@ -93,10 +93,10 @@ title: "Home"
     {# Featured Posts #}
     <div class="info-section">
       <h2>Featured Posts</h2>
-      {% set featuredPosts = collections.posts | default([]) | selectattr('data.featured', 'equalto', true) %}
+      {% set featuredPosts = collections.featuredPosts | default([]) %}
       {% if featuredPosts | length %}
         <ul class="post-list">
-          {% for post in featuredPosts | reverse | limit(3) %}
+          {% for post in featuredPosts | limit(3) %}
             <li>
               <h3>
                 <a href="{{ post.url | url }}">{{ (post.data.title or post.fileSlug) | lower }}</a>
