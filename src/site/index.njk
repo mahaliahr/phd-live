@@ -27,30 +27,10 @@ title: "Home"
       {# Working sessions #}
       <div id="live-now"></div>
       <div id="live-next"></div>
+      <div id="live-past-sessions"></div>
       
       {# Stream items #}
       <div id="live-stream"></div>
-      
-      {# Recent notes as fallback/additional content #}
-      {% set z = collections.zettels | default([]) %}
-      {% if z | length %}
-        {% for n in z | limit(3) %}
-          <div class="feed-card {% if loop.index0 % 2 == 0 %}align-left{% else %}align-right{% endif %}">
-            <div class="feed-card-content">
-              <p>{{ (n.data.description or n.templateContent | striptags | truncate(120)) }}</p>
-            </div>
-            <div class="feed-card-meta">
-              {% if n.data.updated %}
-                <time data-dt="{{ n.data.updated | isoDate }}">{{ n.data.updated | isoDate }}</time>
-              {% else %}
-                <time data-dt="{{ n.date | isoDate }}">{{ n.date | isoDate }}</time>
-              {% endif %}
-              • <a href="{{ n.url | url }}">{{ (n.data.title | formatDailyTitle) or n.fileSlug | lower }}</a>
-            </div>
-            <div class="content-type-label">recent note</div>
-          </div>
-        {% endfor %}
-      {% endif %}
     </div>
   </aside>
   

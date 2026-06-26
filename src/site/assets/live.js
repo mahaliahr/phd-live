@@ -58,6 +58,71 @@
     });
   }
 
+  function toShortPreview(text, max = 160) {
+    if (!text) return ''
+    const cleaned = String(text)
+      .replace(/\[\[([^\]|#]+)(?:#[^\]]+)?(?:\|([^\]]+))?\]\]/g, (_, link, alias) => alias || link)
+      .replace(/\[([^\]]+)\]\([^\)]+\)/g, '$1')
+      .replace(/\s+/g, ' ')
+      .trim()
+    if (cleaned.length <= max) return cleaned
+    return `${cleaned.slice(0, max - 1).trimEnd()}…`
+  }
+
+  function formatDurationMinutes(startValue, endValue) {
+    const startMs = toUtcMs(startValue)
+    const endMs = toUtcMs(endValue)
+    if (!Number.isFinite(startMs) || !Number.isFinite(endMs) || endMs < startMs) {
+      return ''
+    }
+
+    const totalMinutes = Math.max(1, Math.round((endMs - startMs) / 60000))
+    return `${totalMinutes} mins`
+  }
+
+  function hasSessionFrontmatter(text) {
+    if (!text) return false
+    return /(?:^|\n)\s*(start|end|topic)::/i.test(String(text))
+  }
+
+  function parseSessionBlocksFromText(text) {
+    const sessions = []
+    if (!text) return sessions
+
+    const content = String(text).replace(/\r\n?/g, '\n')
+    const startPattern = /\bstart::\s*(.+?)(?=(?:\s+\btopic::|\s+\bend::|\s+\bstart::|\n|$))/gi
+    const starts = []
+    let match
+
+    while ((match = startPattern.exec(content)) !== null) {
+      const startValue = String(match[1] || '').trim()
+      if (!startValue) continue
+      starts.push({ value: startValue, index: match.index })
+    }
+
+    for (let i = 0; i < starts.length; i++) {
+      const current = starts[i]
+      const nextIndex = starts[i + 1]?.index ?? content.length
+      const block = content.slice(current.index, nextIndex)
+
+      const topicMatch = /\btopic::\s*(.+?)(?=(?:\s+\bend::|\s+\bstart::|\n|$))/i.exec(block)
+      const endMatch = /\bend::\s*(.+?)(?=(?:\s+\bstart::|\n|$))/i.exec(block)
+      const started = normalizeSessionTimestamp(current.value)
+      const ended = normalizeSessionTimestamp(endMatch?.[1] ? String(endMatch[1]).trim() : null)
+      const topic = topicMatch?.[1] ? String(topicMatch[1]).trim() : null
+
+      if (!started || !Number.isFinite(toUtcMs(started))) continue
+      sessions.push({
+        type: 'session',
+        started,
+        topic: topic || 'Session',
+        ended: ended || null,
+      })
+    }
+
+    return sessions
+  }
+
   async function fetchJson(url) {
     try {
       const res = await fetch(url);
@@ -140,10 +205,39 @@
 
   // --- Live column ---
 
+  let liveSessionTicker = null
+  let hasSyncedInfoColumnHeight = false
+
+  function syncInfoColumnHeightVar() {
+    const layoutRow = document.querySelector('.phd-live-main')
+    const infoCol = layoutRow?.querySelector('section.info-column') || document.querySelector('section.info-column')
+    if (!infoCol) return
+
+    const milestonesEl = infoCol.querySelector('.milestone-list')?.closest('.info-section') || infoCol.querySelector('.milestone-list')
+    if (!milestonesEl) return
+
+    const measuredHeight = Math.round(milestonesEl.getBoundingClientRect().bottom - infoCol.getBoundingClientRect().top)
+    if (!Number.isFinite(measuredHeight) || measuredHeight <= 0) return
+
+    const heightValue = `${measuredHeight}px`
+    if (layoutRow) {
+      layoutRow.style.setProperty('--info-column-height', heightValue)
+    }
+    document.documentElement.style.setProperty('--info-column-height', heightValue)
+  }
+
+  function isSameSession(a, b) {
+    if (!a || !b) return false
+    return String(a.source || '') === String(b.source || '')
+      && String(a.start || '') === String(b.start || '')
+      && String(a.topic || '') === String(b.topic || '')
+  }
+
   function updateLiveColumn(allSessions, stream) {
     const nowMs = Date.now()
     const nowContainer = document.getElementById('live-now')
     const nextContainer = document.getElementById('live-next')
+    const pastSessionsContainer = document.getElementById('live-past-sessions')
     const streamContainer = document.getElementById('live-stream')
     const liveHeading = document.getElementById('live-heading')
 
@@ -163,6 +257,97 @@
       return Number.isFinite(startMs) && startMs > nowMs
     }) || null
 
+    const pastSessions = allSessions
+      .filter(s => {
+        const startedMs = toUtcMs(s.start)
+        return s.source === 'obsidian' && Number.isFinite(startedMs) && startedMs < nowMs && !isActive(s)
+      })
+      .slice(0, 20)
+
+    const timelineItems = []
+    if (currentSession) {
+      timelineItems.push({
+        type: 'session',
+        variant: 'current',
+        started: normalizeSessionTimestamp(currentSession.start),
+        topic: currentSession.topic || 'Session',
+        ended: normalizeSessionTimestamp(currentSession.end),
+        url: currentSession.url || '',
+        session: currentSession,
+        timestampMs: toUtcMs(currentSession.start)
+      })
+    }
+    if (nextSession && !isSameSession(nextSession, currentSession)) {
+      timelineItems.push({
+        type: 'session',
+        variant: 'next',
+        started: normalizeSessionTimestamp(nextSession.start),
+        topic: nextSession.topic || 'Upcoming session',
+        ended: normalizeSessionTimestamp(nextSession.end),
+        url: nextSession.url || '',
+        session: nextSession,
+        timestampMs: toUtcMs(nextSession.start)
+      })
+    }
+    pastSessions.forEach(s => {
+      if (!isSameSession(s, currentSession) && !isSameSession(s, nextSession)) {
+        timelineItems.push({
+          type: 'session',
+          variant: 'past',
+          started: normalizeSessionTimestamp(s.start),
+          topic: s.topic || 'Session',
+          ended: normalizeSessionTimestamp(s.end),
+          url: s.url || '',
+          session: s,
+          timestampMs: toUtcMs(s.start)
+        })
+      }
+    })
+
+    const streamTimelineItems = []
+    for (const item of (stream || [])) {
+      const sourceText = String(item?.text || '')
+      const sourceUrl = item?.noteUrl || item?.url || ''
+      const parsedSessions = parseSessionBlocksFromText(sourceText)
+
+      if (parsedSessions.length) {
+        parsedSessions.forEach(parsed => {
+          streamTimelineItems.push({
+            ...parsed,
+            variant: 'past',
+            url: sourceUrl,
+            timestampMs: toUtcMs(parsed.started)
+          })
+        })
+        continue
+      }
+
+      if (hasSessionFrontmatter(sourceText)) {
+        continue
+      }
+
+      streamTimelineItems.push({
+        type: 'stream',
+        text: sourceText,
+        url: sourceUrl,
+        timestampMs: toUtcMs(item?.date),
+        date: item?.date
+      })
+    }
+
+    const streamItems = streamTimelineItems.filter(item => Number.isFinite(item.timestampMs))
+
+    timelineItems.push(...streamItems)
+    // TODO: bot interaction items injected here
+
+    timelineItems.sort((a, b) => {
+      const bStart = b.timestampMs
+      const aStart = a.timestampMs
+      if (!Number.isFinite(bStart)) return -1
+      if (!Number.isFinite(aStart)) return 1
+      return bStart - aStart
+    })
+
     if (liveHeading) {
       const isLive = currentSession && isActive(currentSession)
       if (isLive) {
@@ -174,80 +359,130 @@
       }
     }
 
-    if (nowContainer && currentSession) {
-      const s = currentSession
-      const startMs = toUtcMs(s.start)
-      const endMs = toUtcMs(s.end)
-      const isSessionActive = isActive(s)
-      const statusLabel = isSessionActive
-        ? '<span class="status active">LIVE NOW</span>'
-        : '<span class="status">Most Recent</span>'
+    if (liveSessionTicker) {
+      clearInterval(liveSessionTicker)
+      liveSessionTicker = null
+    }
 
-      let duration = ''
-      if (Number.isFinite(startMs) && Number.isFinite(endMs) && endMs >= startMs) {
-        const durationMs = endMs - startMs
-        const hours = Math.floor(durationMs / (1000 * 60 * 60))
-        const mins = Math.floor((durationMs % (1000 * 60 * 60)) / (1000 * 60))
-        duration = `<span class="session-duration">${hours}h ${mins}m</span>`
-      }
+    if (nowContainer && timelineItems.length) {
+      nowContainer.innerHTML = `
+        <ul class="live-session-timeline">
+          ${timelineItems.map(item => {
+            if (item.type === 'stream') {
+              const streamText = String(item.text || '').trim()
+              return `
+                <li class="session-item stream">
+                  <div class="stream-item-content">
+                    <p class="stream-text-preview">${streamText}</p>
+                  </div>
+                  <div class="stream-meta-row">
+                    ${relativeTime(item.date)}
+                    ${item.url ? `· <a href="${item.url}" class="stream-link">view note</a>` : ''}
+                  </div>
+                  <div class="content-type-label">recent thinking</div>
+                </li>`
+            }
 
-      const tick = () => {
-        const mins = isSessionActive && Number.isFinite(startMs)
-          ? Math.max(0, Math.floor((Date.now() - startMs) / 60000))
-          : null
-        nowContainer.innerHTML = `
-          <div class="session-card ${isSessionActive ? 'active' : ''}">
-            <div class="session-header">
-              <h3>${processWikilinks(s.topic || 'Session')}</h3>
-              ${statusLabel}
-            </div>
-            <div class="session-meta">
-              <span>Started ${relativeTime(s.start)}</span>
-              ${isSessionActive ? `<span>${mins}m and counting</span>` : duration}
-              ${!isSessionActive && Number.isFinite(endMs) ? `<span>Ended ${relativeTime(s.end)}</span>` : ''}
-            </div>
-            ${s.url ? `<a href="${s.url}" class="session-link">View full session →</a>` : ''}
-            <div class="content-type-label">session</div>
-          </div>`
+            if (item.type !== 'session') {
+              return ''
+            }
+
+            const s = item.session || {
+              start: item.started,
+              end: item.ended,
+              topic: item.topic,
+              url: item.url,
+              source: 'parsed-note-session',
+              isLikelyActive: false,
+            }
+
+            if (item.variant === 'past') {
+              const durationLabel = formatDurationMinutes(s.start || item.started, s.end || item.ended)
+              const metaLabel = [relativeTime(s.start || item.started), durationLabel].filter(Boolean).join(' · ')
+              return `
+                <li class="session-item past">
+                  <a href="${s.url || '#'}" class="session-link">${processWikilinks(s.topic || item.topic || 'Session')}</a>
+                  <span class="session-meta-inline">${metaLabel}</span>
+                </li>`
+            }
+
+            if (item.variant === 'next') {
+              return `
+                <li class="session-item next">
+                  <div class="session-card upcoming">
+                    <div class="session-header">
+                      <h3>${processWikilinks(s.topic || item.topic || 'Upcoming session')}</h3>
+                      <span class="status">Scheduled ${relativeTime(s.start || item.started)}</span>
+                    </div>
+                    ${s.url ? `<a href="${s.url}" class="session-link">View details →</a>` : ''}
+                    <div class="content-type-label">session</div>
+                  </div>
+                </li>`
+            }
+
+            const startMs = toUtcMs(s.start)
+            const endMs = toUtcMs(s.end)
+            const isSessionActive = isActive(s)
+            const statusLabel = isSessionActive
+              ? '<span class="status active">LIVE NOW</span>'
+              : '<span class="status">Most Recent</span>'
+
+            let duration = ''
+            if (Number.isFinite(startMs) && Number.isFinite(endMs) && endMs >= startMs) {
+              const durationMs = endMs - startMs
+              const hours = Math.floor(durationMs / (1000 * 60 * 60))
+              const mins = Math.floor((durationMs % (1000 * 60 * 60)) / (1000 * 60))
+              duration = `<span class="session-duration">${hours}h ${mins}m</span>`
+            }
+
+            const activeTimer = isSessionActive && Number.isFinite(startMs)
+              ? `<span data-live-mins data-start-ms="${startMs}">${Math.max(0, Math.floor((Date.now() - startMs) / 60000))}m and counting</span>`
+              : duration
+
+            return `
+              <li class="session-item current">
+                <div class="session-card ${isSessionActive ? 'active' : ''}">
+                  <div class="session-header">
+                    <h3>${processWikilinks(s.topic || 'Session')}</h3>
+                    ${statusLabel}
+                  </div>
+                  <div class="session-meta">
+                    <span>Started ${relativeTime(s.start)}</span>
+                    ${activeTimer}
+                    ${!isSessionActive && Number.isFinite(endMs) ? `<span>Ended ${relativeTime(s.end)}</span>` : ''}
+                  </div>
+                  ${s.url ? `<a href="${s.url}" class="session-link">View full session →</a>` : ''}
+                  <div class="content-type-label">session</div>
+                </div>
+              </li>`
+          }).join('')}
+        </ul>`
+
+      const activeTimerNode = nowContainer.querySelector('[data-live-mins]')
+      if (activeTimerNode) {
+        liveSessionTicker = setInterval(() => {
+          const startMs = Number(activeTimerNode.getAttribute('data-start-ms'))
+          if (!Number.isFinite(startMs)) return
+          const mins = Math.max(0, Math.floor((Date.now() - startMs) / 60000))
+          activeTimerNode.textContent = `${mins}m and counting`
+        }, 60_000)
       }
-      tick()
-      if (isSessionActive) setInterval(tick, 60_000)
     } else if (nowContainer) {
       nowContainer.innerHTML = '<p class="no-data">No recent work sessions</p>'
     }
 
     if (nextContainer) {
-      if (nextSession) {
-        nextContainer.innerHTML = `
-          <div class="session-card upcoming">
-            <div class="session-header">
-              <h3>${processWikilinks(nextSession.topic || 'Upcoming session')}</h3>
-              <span class="status">Scheduled ${relativeTime(nextSession.start)}</span>
-            </div>
-            ${nextSession.url ? `<a href="${nextSession.url}" class="session-link">View details →</a>` : ''}
-            <div class="content-type-label">session</div>
-          </div>`
-      } else {
-        nextContainer.innerHTML = ''
-      }
+      nextContainer.innerHTML = ''
     }
 
-    console.log('about to render stream, items:', stream ? stream.length : 'null', 'container:', streamContainer)
+    if (pastSessionsContainer) {
+      pastSessionsContainer.innerHTML = ''
+    }
 
-    if (streamContainer && stream && stream.length) {
-        console.log('rendering stream items:', stream.slice(0, 5))
-      streamContainer.innerHTML = stream.slice(0, 5).map((item, i) => `
-  <div class="feed-card ${i % 2 === 0 ? 'align-left' : 'align-right'}">
-    <div class="feed-card-content">
-      <p>${processWikilinks(item.text)}</p>
-    </div>
-    <div class="feed-card-meta">
-      ${relativeTime(item.date)}
-      ${(item.noteUrl || item.url) ? `· <a href="${item.noteUrl || item.url}" class="stream-link">view note</a>` : ''}
-    </div>
-    <div class="content-type-label">recent thinking</div>
-  </div>`
-).join('')
+    console.log('stream merged into timeline, items:', stream ? stream.length : 'null')
+
+    if (streamContainer) {
+      streamContainer.innerHTML = ''
     }
   }
 
@@ -278,21 +513,22 @@
 
     allSessions.forEach((session, index) => {
       const parsedStart = new Date(normalizeSessionTimestamp(session.start))
-      console.log('[live][session-before-isActive]', {
-        index,
-        source: session.source || null,
-        start: session.start || null,
-        end: session.end || null,
-        status: session.status || null,
-        parsedStartIso: Number.isNaN(parsedStart.getTime()) ? null : parsedStart.toISOString(),
-      })
     })
 
     const activeSession = allSessions.find(isActive)
 
     updateLiveBar(activeSession)
     updateLiveColumn(allSessions, stream)
+
+    if (!hasSyncedInfoColumnHeight) {
+      hasSyncedInfoColumnHeight = true
+      requestAnimationFrame(() => {
+        syncInfoColumnHeightVar()
+      })
+    }
   }
+
+  window.addEventListener('resize', syncInfoColumnHeightVar)
 
   if (document.readyState !== 'loading') render()
   else document.addEventListener('DOMContentLoaded', render)

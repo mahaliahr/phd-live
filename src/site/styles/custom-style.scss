@@ -1155,6 +1155,8 @@ a.internal-link.is-unresolved {
   border: 1px solid var(--card-border);
   display: flex;
   flex-direction: column;
+  align-self: stretch;
+  max-height: var(--info-column-height);
 }
 
 .live-heading {
@@ -1199,12 +1201,13 @@ a.internal-link.is-unresolved {
   font-style: italic;
 }
 
-/* Live feed container */
 .live-feed {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
 }
+
+ 
 
 /* Override existing session card styles for homepage */
 .live-column .session-card {
@@ -1268,6 +1271,65 @@ a.internal-link.is-unresolved {
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
+/* Unified live timeline */
+.live-column .live-session-timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.live-column .live-session-timeline > li,
+.live-column .live-session-timeline > li::marker {
+  list-style: none;
+  content: none;
+  margin: 0;
+  padding: 0;
+}
+
+.live-column .live-session-timeline .session-item.stream {
+  border: 1px solid var(--card-border);
+  border-radius: 4px;
+  background: var(--card-bg);
+  padding: 0.85rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.45rem;
+}
+
+.live-column .stream-item-content {
+  width: 100%;
+}
+
+.live-column .stream-text-preview {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: var(--text-normal);
+}
+
+.live-column .stream-meta-row {
+  width: 100%;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.live-column .stream-meta-row a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.live-column .stream-meta-row a:hover {
+  text-decoration: underline;
+}
+
 .feed-card-content p {
   margin: 0 0 0.75rem 0;
   font-size: 0.95rem;
@@ -1316,6 +1378,11 @@ a.internal-link.is-unresolved {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  height: auto;
+}
+
+.info-section {
+  align-self: auto;
 }
 
 .info-section h2 {
@@ -1509,6 +1576,10 @@ a.internal-link.is-unresolved {
   
   .live-column {
     padding: 1.5rem;
+  }
+
+  .live-feed {
+    overflow-y: visible;
   }
 }
 

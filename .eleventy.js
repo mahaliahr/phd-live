@@ -808,6 +808,7 @@ eleventyConfig.addCollection("sessions", (c) => {
 
 // Stream: from daily notes or stream.md lines "- HH:MM message"
 const streamLineRe = /^\s*-\s*(\d{1,2}:\d{2})\s+(.+)$/gm;
+const hasSessionFrontmatterLine = (text = "") => /(?:^|\n)\s*(start|end|topic)::/i.test(String(text));
 eleventyConfig.addCollection("streamItems", (c) => {
   const out = [];
   const candidates = c.getAll().filter(p => {
@@ -825,8 +826,10 @@ eleventyConfig.addCollection("streamItems", (c) => {
     let m;
     while ((m = re.exec(txt))) {
       const [, time, message] = m;
+      const cleanedMessage = String(message || '').trim();
+      if (!cleanedMessage || hasSessionFrontmatterLine(cleanedMessage)) continue;
       const dateStr = day ? normalizeToUTC(`${day} ${time}`) : time;
-      out.push({ date: dateStr, text: message.trim(), url: p.url });
+      out.push({ date: dateStr, text: cleanedMessage, url: p.url });
     }
   }
   return out.sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));
