@@ -1739,7 +1739,9 @@ a.internal-link.is-unresolved {
 
 .screenshot-thumb {
   width: 100%;
-  height: auto;
+  height: 180px;
+  object-fit: cover;
+  object-position: top;
   display: block;
 }
 
@@ -1749,6 +1751,9 @@ a.internal-link.is-unresolved {
   font-size: 0.85rem;
   padding: 0.5rem 0;
   font-style: italic;
+  height: 180px; /* match thumb height so empty cells don't collapse */
+  display: flex;
+  align-items: center;
 }
 
 /* Show all */
