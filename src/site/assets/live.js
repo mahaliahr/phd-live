@@ -329,7 +329,7 @@
     const pastSessions = allSessions
       .filter(s => {
         const startedMs = toUtcMs(s.start)
-        return s.source === 'obsidian' && Number.isFinite(startedMs) && startedMs < nowMs && !isActive(s)
+        return Number.isFinite(startedMs) && startedMs < nowMs && !isActive(s)
       })
       .slice(0, 20)
 
