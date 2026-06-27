@@ -19703,6 +19703,20 @@
       }
     ]
   },
+  "2026-06-27": {
+    "noteDate": "2026-06-27",
+    "revisions": [
+      {
+        "date": "2026-06-27",
+        "hash": "f423469",
+        "wordCount": 43,
+        "delta": 43,
+        "added": 43,
+        "removed": 0,
+        "diff": "{+---+} {+date: 2026-06-27+} {+---+} {+## sessions+} {+<details>+} {+<summary>Session 2</summary>+} {+start:: 2026-06-27T11:05:04.355Z+} {+topic:: coding · debigging / tweaks to the phd-live site+} {+end:: 2026-06-27T11:44:58.706Z+} {+</details>+} {+<details>+} {+<summary>Session 1</summary>+} {+start:: 2026-06-26T12:54:38.293Z+} {+topic:: thinking / planning · planning for the mirror infrastructure component+} {+end:: 2026-06-26T23:56:47.936Z+} {+</details>+}"
+      }
+    ]
+  },
   "2026-06-19": {
     "noteDate": "2026-06-19",
     "revisions": [
