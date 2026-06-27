@@ -1,0 +1,56 @@
+/* Live block under navbar (left aligned) */
+:root {
+  --navbar-height: 3rem;
+}
+
+.session-card,
+.live-column {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+@keyframes livePulse {
+  0%,100% { box-shadow: 0 0 0.35rem 0.05rem rgba(231,2,52,.55); transform: scale(1); }
+  50%     { box-shadow: 0 0 0.55rem 0.12rem rgba(231,2,52,.35); transform: scale(0.92); }
+}
+
+.logo-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  vertical-align: middle;
+  margin-right: 6px;
+  flex-shrink: 0;
+}
+
+.logo-dot[data-state="live"] {
+  background: rgb(231, 2, 52);
+  box-shadow: 0 0 0 2px rgba(231, 2, 52, 0.25);
+  animation: livePulse 1.8s ease-in-out infinite;
+}
+
+.logo-live-meta {
+  display: inline-block;
+  max-width: 220px;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: middle;
+  margin-left: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'rubik', sans-serif;
+  text-decoration: none;
+  color: var(--interactive-accent);
+  letter-spacing: 0.01em;
+}
+
+.logo-live-meta.is-scrolling {
+  cursor: default;
+}
+
+.logo-live-meta:empty {
+  display: none;
+}

@@ -129,7 +129,7 @@
 }
 
 .evolution-more button {
-  font-family: "Overpass Mono", monospace;
+  font-family: "Roboto Mono", monospace;
   font-size: 0.85rem;
   padding: 0.5rem 1.25rem;
   border: 1px solid var(--card-border, rgba(0,0,0,0.06));

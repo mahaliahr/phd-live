@@ -58,6 +58,24 @@
     });
   }
 
+  function parseLinks(text) {
+    if (!text) return text
+
+    // wikilinks: [[note name]] → internal link
+    text = text.replace(/\[\[([^\]]+)\]\]/g, (_, name) => {
+      const slug = name.toLowerCase().replace(/\s+/g, '-')
+      return `<a href="/notes/${slug}" class="live-card-link">${name}</a>`
+    })
+
+    // markdown links: [text](url)
+    text = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, label, url) => {
+      const isExternal = url.startsWith('http')
+      return `<a href="${url}" class="live-card-link"${isExternal ? ' target="_blank" rel="noopener"' : ''}>${label}</a>`
+    })
+
+    return text
+  }
+
   function toShortPreview(text, max = 160) {
     if (!text) return ''
     const cleaned = String(text)
@@ -183,23 +201,74 @@
 
   // --- Live bar ---
 
+  let tickerRAF = null
+
+  function applyTickerIfNeeded(meta) {
+    if (tickerRAF) {
+      cancelAnimationFrame(tickerRAF)
+      tickerRAF = null
+    }
+
+    meta.classList.remove('is-scrolling')
+    meta.innerHTML = meta.textContent
+
+    requestAnimationFrame(() => {
+      if (meta.scrollWidth <= meta.offsetWidth) return
+
+      const text = meta.textContent
+      const gap = '     '
+      const full = text + gap + text
+      const span = document.createElement('span')
+      span.style.display = 'inline-block'
+      span.style.willChange = 'transform'
+      span.textContent = full
+      meta.innerHTML = ''
+      meta.appendChild(span)
+      meta.classList.add('is-scrolling')
+
+      const singleWidth = span.offsetWidth / 2
+      let pos = 0
+      const speed = 0.4
+
+      function tick() {
+        pos += speed
+        if (pos >= singleWidth) pos -= singleWidth
+        span.style.transform = `translateX(${-pos}px)`
+        tickerRAF = requestAnimationFrame(tick)
+      }
+
+      tickerRAF = requestAnimationFrame(tick)
+    })
+  }
+
   function updateLiveBar(activeSession) {
-    const bar = document.querySelector('[data-livebar]')
-    if (!bar) return
-    const text = bar.querySelector('[data-livebar-text]')
+    const dot = document.querySelector('[data-logo-dot]')
+    const meta = document.querySelector('[data-logo-meta]')
+    if (!dot) return
 
     if (activeSession) {
+      dot.dataset.state = 'live'
       const started = toUtcMs(activeSession.start)
       const tick = () => {
-        const mins = Math.max(0, Math.floor((Date.now() - started) / 60000))
-        if (text) text.innerHTML = `<strong>LIVE</strong> — ${activeSession.topic} · ${mins}m`
+        const totalMins = Math.max(0, Math.floor((Date.now() - started) / 60000))
+        let duration
+        if (totalMins >= 60) {
+          const h = Math.floor(totalMins / 60)
+          const m = totalMins % 60
+          duration = m > 0 ? `${h}h ${m}m` : `${h}h`
+        } else {
+          duration = `${totalMins}m`
+        }
+        if (meta) {
+          meta.textContent = `${activeSession.topic} · ${duration}`
+          applyTickerIfNeeded(meta)
+        }
       }
-      bar.dataset.state = 'on'
       tick()
       setInterval(tick, 60_000)
     } else {
-      bar.dataset.state = 'idle'
-      if (text) text.textContent = 'no active session'
+      dot.dataset.state = 'idle'
+      if (meta) meta.textContent = ''
     }
   }
 
@@ -351,10 +420,10 @@
     if (liveHeading) {
       const isLive = currentSession && isActive(currentSession)
       if (isLive) {
-        liveHeading.innerHTML = '<span class="record-dot"></span>LIVE'
+        liveHeading.innerHTML = '<span class="record-dot"></span>LIVE <span class="live-heading-meta">(work happening now)</span>'
         liveHeading.classList.add('is-live')
       } else {
-        liveHeading.textContent = 'in progress'
+        liveHeading.innerHTML = 'IN PROGRESS <span class="live-heading-meta">(latest activities)</span>'
         liveHeading.classList.remove('is-live')
       }
     }
@@ -369,7 +438,7 @@
         <ul class="live-session-timeline">
           ${timelineItems.map(item => {
             if (item.type === 'stream') {
-              const streamText = String(item.text || '').trim()
+              const streamText = parseLinks(String(item.text || '').trim())
               return `
                 <li class="session-item stream">
                   <div class="stream-item-content">
