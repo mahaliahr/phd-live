@@ -7,19 +7,5 @@ type: ""
 aliases:
   - AI Layer
 ---
-<!--
-Quick syntax:
-Session: start:: YYYY-MM-DD HH:MM+ZZ | end:: ... | topic:: ...
-Milestone: - [ ] Thing #milestone @YYYY-MM-DD
+Mirror is an LLM presence within the [[research-infrastructure]] that's purpose is to reflect back my thoughts and accumalsting research.
 
-CORE TYPES:
-• Turn into blog post → add: type: post
-
-FEATURE & NAVIGATION TAGS:
-• featured      → appears in Featured section on homepage
-• gardenEntry   → appears as a trailhead in the Garden gateway
-
-LIVE SYSTEM TAGS:
-• session       → used for live sessions / work periods
-• daily         → daily log style notes
--->
