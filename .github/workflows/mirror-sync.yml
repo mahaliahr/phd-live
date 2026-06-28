@@ -1,0 +1,164 @@
+name: sync mirror outputs
+
+on:
+  schedule:
+    # runs at 00:30 UTC daily -- after the 00:15 push from research-infrastructure
+    # adjust if your local cron runs in a significantly different timezone
+    - cron: '30 0 * * *'
+  workflow_dispatch:
+    # allows manual trigger from GitHub Actions UI
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout phd-live
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: fetch latest daily mirror file
+        id: fetch_daily
+        run: |
+          # get list of daily files from research-infrastructure
+          # uses GitHub API to list files in mirror-outputs/daily/
+          DAILY_API="https://api.github.com/repos/mahaliahr/research-infrastructure/contents/mirror-outputs/daily"
+
+          # get the most recent file (alphabetically last = most recent date)
+          LATEST_DAILY=$(curl -s "$DAILY_API" \
+            | python3 -c "
+          import sys, json
+          files = json.load(sys.stdin)
+          if isinstance(files, list) and files:
+              files.sort(key=lambda f: f['name'], reverse=True)
+              print(files[0]['download_url'])
+          else:
+              print('')
+          ")
+
+          if [ -z "$LATEST_DAILY" ]; then
+            echo "no daily file found"
+            echo "daily_content=" >> $GITHUB_OUTPUT
+          else
+            CONTENT=$(curl -s "$LATEST_DAILY")
+            # escape for multiline output
+            echo "daily_content<<EOF" >> $GITHUB_OUTPUT
+            echo "$CONTENT" >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
+          fi
+
+      - name: fetch recent weekly mirror files
+        id: fetch_weekly
+        run: |
+          WEEKLY_API="https://api.github.com/repos/mahaliahr/research-infrastructure/contents/mirror-outputs/weekly"
+
+          # get up to 8 most recent weekly files
+          WEEKLY_URLS=$(curl -s "$WEEKLY_API" \
+            | python3 -c "
+          import sys, json
+          files = json.load(sys.stdin)
+          if isinstance(files, list) and files:
+              files.sort(key=lambda f: f['name'], reverse=True)
+              for f in files[:8]:
+                  print(f['download_url'])
+          ")
+
+          # fetch each file and build JSON array
+          python3 - <<'PYEOF'
+          import subprocess, json, sys, os
+
+          urls = """$WEEKLY_URLS""".strip().split('\n')
+          urls = [u.strip() for u in urls if u.strip()]
+
+          files = []
+          for url in urls:
+              result = subprocess.run(['curl', '-s', url], capture_output=True, text=True)
+              content = result.stdout
+              if content:
+                  # extract week from filename in URL
+                  week = url.split('/')[-1].replace('.md', '')
+                  files.append({'week': week, 'raw': content})
+
+          with open('mirror_weekly_tmp.json', 'w') as f:
+              json.dump(files, f)
+          PYEOF
+
+      - name: build mirror JSON files
+        run: |
+          python3 - <<'PYEOF'
+          import json, os, re
+          from datetime import datetime
+
+          def parse_sections(text):
+              sections = {}
+              current_section = None
+              current_lines = []
+              content = text
+              if text.startswith('---'):
+                  end = text.find('---', 3)
+                  if end != -1:
+                      content = text[end + 3:].strip()
+              for line in content.split('\n'):
+                  if line.startswith('## '):
+                      if current_section is not None:
+                          sections[current_section] = '\n'.join(current_lines).strip()
+                      current_section = line[3:].strip().lower().replace(' ', '_')
+                      current_lines = []
+                  else:
+                      current_lines.append(line)
+              if current_section is not None:
+                  sections[current_section] = '\n'.join(current_lines).strip()
+              return sections
+
+          # daily
+          daily_content = os.environ.get('DAILY_CONTENT', '')
+          daily_output = []
+          if daily_content.strip():
+              # extract date from frontmatter
+              date_match = re.search(r'date:\s*(\S+)', daily_content)
+              date = date_match.group(1) if date_match else 'unknown'
+              daily_output.append({
+                  'date': date,
+                  'raw': daily_content,
+                  'parsed': parse_sections(daily_content)
+              })
+
+          os.makedirs('src/site/data', exist_ok=True)
+          with open('src/site/data/mirror-daily.json', 'w') as f:
+              json.dump({'files': daily_output}, f, indent=2)
+
+          # weekly
+          weekly_files = []
+          if os.path.exists('mirror_weekly_tmp.json'):
+              with open('mirror_weekly_tmp.json') as f:
+                  raw_files = json.load(f)
+              for rf in raw_files:
+                  weekly_files.append({
+                      'week': rf['week'],
+                      'raw': rf['raw'],
+                      'parsed': parse_sections(rf['raw'])
+                  })
+
+          with open('src/site/data/mirror-weekly.json', 'w') as f:
+              json.dump({'files': weekly_files}, f, indent=2)
+
+          print(f"written {len(daily_output)} daily, {len(weekly_files)} weekly files")
+          PYEOF
+        env:
+          DAILY_CONTENT: ${{ steps.fetch_daily.outputs.daily_content }}
+
+      - name: commit and push if changed
+        run: |
+          git config user.name "mirror-sync"
+          git config user.email "mirror-sync@users.noreply.github.com"
+          git add src/site/data/mirror-daily.json src/site/data/mirror-weekly.json
+
+          if git diff --staged --quiet; then
+            echo "no changes to commit"
+          else
+            git commit -m "sync mirror outputs $(date +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: cleanup
+        run: rm -f mirror_weekly_tmp.json
