@@ -1553,6 +1553,14 @@ a.internal-link.is-unresolved {
     margin-left: 0;
     margin-right: 0;
   }
+  .live-column {
+    max-height: none;
+    height: auto;
+  }
+  .live-feed {
+    overflow-y: visible;
+    min-height: 0;
+  }
 }
 @media (max-width: 640px) {
   .content {
@@ -1566,9 +1574,6 @@ a.internal-link.is-unresolved {
   }
   .live-column {
     padding: 1.5rem;
-  }
-  .live-feed {
-    overflow-y: visible;
   }
 }
 .graph-tooltip {

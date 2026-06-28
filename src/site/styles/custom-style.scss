@@ -85,9 +85,6 @@ html, body {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
 }
-@media (max-width: 560px) {
-  .cards.grid-2x4 { grid-template-columns: 1fr; }
-}
 .cards.grid-2x4 .card {
   background: var(--card-bg);
   border: 1px solid var(--card-border);
@@ -137,12 +134,6 @@ h1+h2, h2+h3, h3+h4 { margin-top:.4rem; }
 .content p { white-space: pre-line; }
 
 /* Optional: scale down on small screens */
-@media (max-width: 640px) {
-  h1 { font-size: 1.8rem; }
-  h2 { font-size: 1.4rem; }
-  h3 { font-size: 1.1rem; }
-}
-
 #nav-title {
   font-size: 1.2rem !important;
   line-height: 1.05;
@@ -402,39 +393,12 @@ section .more a { font-weight: 600; }
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-  #live-widget {
-    padding: 1rem;
-  }
-  
-  .session-header {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  
-  .stream-item {
-    grid-template-columns: 1fr;
-    gap: 0.25rem;
-  }
-  
-  .stream-time {
-    font-size: 0.75rem;
-  }
-}
-
 /* Footer styles */
 footer {
   background: var(--footer-bg, #f8f8f8); 
   padding: 1rem; 
   font-size: 0.9rem;
   // text-align: center; /* Center text */
-}
-
-/* Hide footer details on mobile */
-@media (max-width: 768px) {
-  .footer-details {
-    display: none;
-  }
 }
 
 /* Wikilink styling (internal links) */
@@ -567,65 +531,6 @@ a.internal-link.is-unresolved {
 /* Hide mobile search on desktop, hide desktop search on mobile */
 .nav-search-mobile {
   display: none;
-}
-
-@media (max-width: 768px) {
-  .nav-search-desktop {
-    display: none;
-  }
-  
-  .nav-search-mobile {
-    display: block;
-    padding: 0.5rem 0;
-    border-top: 1px solid var(--card-border);
-    margin-top: 0.5rem;
-  }
-}
-
-/* Mobile adjustments */
-@media (max-width: 640px) {
-}
-
-/* Mobile navbar */
-@media (max-width: 768px) {
-  .navbar-inner {
-    position: relative;
-    flex-wrap: wrap;
-  }
-
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: var(--navbar-bg);
-    flex-direction: column;
-    padding: 1rem;
-    border-bottom: 1px solid var(--card-border);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    margin-left: 0;
-  }
-
-  .nav-links.open {
-    display: flex;
-  }
-
-  .nav-links a {
-    width: 100%;
-    padding: 0.75rem 1rem;
-  }
-
-  /* Show toggle on mobile */
-  .nav-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .nav-right {
-    margin-left: auto;
-  }
 }
 
 /* Graph component spacing */
@@ -851,19 +756,6 @@ a.internal-link.is-unresolved {
   color: var(--color-green, #5a9e6f);
 }
 
-/* --- responsive: stack columns on narrow viewports --- */
-@media (max-width: 640px) {
-  .kanban-board__columns {
-    flex-direction: column;
-    min-width: 0;
-  }
-
-  .kanban-col {
-    flex: 0 0 auto;
-    width: 100%;
-  }
-}
-
 /* Revision history component styles */
 .revision-history {
   font-family: "Rubik", sans-serif;
@@ -1034,12 +926,6 @@ a.internal-link.is-unresolved {
 }
 
 /* Remove sidebar padding on mobile/tablet where sidebar is hidden */
-@media (max-width: 1200px) {
-  .content:has(article.note) {
-    padding-right: 2rem;
-  }
-}
-
 /* Header with left/right split */
 .phd-live-header {
   display: grid;
@@ -1155,8 +1041,6 @@ a.internal-link.is-unresolved {
   overflow-y: auto;
   min-height: 0;
 }
-
- 
 
 /* Override existing session card styles for homepage */
 .live-column .session-card {
@@ -1491,44 +1375,137 @@ a.internal-link.is-unresolved {
   text-decoration: underline;
 }
 
-/* RESPONSIVE: Stack on mobile */
+/* ============================================
+   RESPONSIVE / MOBILE
+   ============================================ */
+
+/* Sidebar: note pages */
+@media (max-width: 1200px) {
+  .content:has(article.note) {
+    padding-right: 2rem;
+  }
+}
+
+/* Tablet (≤968px): collapse homepage two-column layout */
 @media (max-width: 968px) {
   .phd-live-header {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
   .phd-live-main {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
   .feed-card.align-left,
   .feed-card.align-right {
     margin-left: 0;
     margin-right: 0;
   }
-}
-
-@media (max-width: 640px) {
-  .content {
-    padding: 1rem;
-  }
-  
-  .phd-live-header .header-left h1 {
-    font-size: 2.5rem;
-  }
-  
-  .live-heading {
-    font-size: 2rem;
-  }
-  
   .live-column {
-    padding: 1.5rem;
+    max-height: none;
+    height: auto;
   }
-
   .live-feed {
     overflow-y: visible;
+    min-height: 0;
+  }
+}
+
+/* Mobile (≤768px) */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar-inner {
+    position: relative;
+    flex-wrap: wrap;
+  }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--navbar-bg);
+    flex-direction: column;
+    padding: 1rem;
+    border-bottom: 1px solid var(--card-border);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-left: 0;
+  }
+  .nav-links.open {
+    display: flex;
+  }
+  .nav-links a {
+    width: 100%;
+    padding: 0.75rem 1rem;
+  }
+  .nav-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-right {
+    margin-left: auto;
+  }
+  .nav-search-desktop {
+    display: none;
+  }
+  .nav-search-mobile {
+    display: block;
+    padding: 0.5rem 0;
+    border-top: 1px solid var(--card-border);
+    margin-top: 0.5rem;
+  }
+  .logo-dot,
+  .logo-live-meta {
+    display: none;
+  }
+
+  /* Live widget */
+  #live-widget {
+    padding: 1rem;
+  }
+  .session-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .stream-item {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+  .stream-time {
+    font-size: 0.75rem;
+  }
+
+  /* Footer */
+  .footer-details {
+    display: none;
+  }
+}
+
+/* Small mobile (≤640px) */
+@media (max-width: 640px) {
+  /* Typography */
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.4rem; }
+  h3 { font-size: 1.1rem; }
+
+  /* Layout */
+  .content { padding: 1rem; }
+  .cards.grid-2x4 { grid-template-columns: 1fr; }
+
+  /* Homepage */
+  .phd-live-header .header-left h1 { font-size: 2.5rem; }
+  .live-heading { font-size: 2rem; }
+  .live-column { padding: 1.5rem; }
+
+  /* Kanban */
+  .kanban-board__columns {
+    flex-direction: column;
+    min-width: 0;
+  }
+  .kanban-col {
+    flex: 0 0 auto;
+    width: 100%;
   }
 }
 
