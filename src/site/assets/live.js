@@ -771,6 +771,8 @@
 
   const liveHeadingEl = document.getElementById('live-heading')
 
+  let savedLiveHeading = null
+
   function setMirrorMode(active) {
     const liveColumn = document.querySelector('.live-column')
     if (active) {
@@ -778,6 +780,7 @@
       if (mirrorFeed) mirrorFeed.hidden = false
       mirrorToggle.setAttribute('aria-checked', 'true')
       mirrorToggle.classList.add('mirror-toggle-switch--on')
+      if (liveHeadingEl) savedLiveHeading = liveHeadingEl.innerHTML
       if (liveHeadingEl) {
         liveHeadingEl.innerHTML = 'MIRROR <span class="live-heading-meta live-heading-meta--mirror">an automated layer that reads research activity and surfaces patterns</span>'
         liveHeadingEl.classList.add('mirror-mode-heading')
@@ -789,8 +792,10 @@
       mirrorToggle.setAttribute('aria-checked', 'false')
       mirrorToggle.classList.remove('mirror-toggle-switch--on')
       if (liveHeadingEl) {
-        liveHeadingEl.innerHTML = 'IN PROGRESS <span class="live-heading-meta">(latest activities)</span>'
+        liveHeadingEl.innerHTML = savedLiveHeading ||
+          'IN PROGRESS <span class="live-heading-meta">(latest activities)</span>'
         liveHeadingEl.classList.remove('mirror-mode-heading')
+        savedLiveHeading = null
       }
       if (liveColumn) liveColumn.classList.remove('live-column--mirror')
     }
