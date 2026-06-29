@@ -54,3 +54,103 @@
 .logo-live-meta:empty {
   display: none;
 }
+
+.live-column {
+  transition: background 0.25s ease;
+}
+
+.live-column--mirror {
+  background: #ede8f0;
+}
+
+.live-column-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  gap: 12px;
+}
+
+.mirror-toggle-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  padding-top: 2px;
+}
+
+.mirror-toggle-label {
+  font-size: 10px;
+  font-family: monospace;
+  letter-spacing: 0.05em;
+  opacity: 0.45;
+}
+
+.mirror-toggle-switch {
+  width: 32px;
+  height: 18px;
+  border-radius: 9px;
+  background: #c5cdd6;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.2s ease;
+  flex-shrink: 0;
+}
+
+.mirror-toggle-switch--on {
+  background: #7c5cbf;
+}
+
+.mirror-toggle-knob {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: left 0.2s ease;
+  pointer-events: none;
+}
+
+.mirror-toggle-switch--on .mirror-toggle-knob {
+  left: 16px;
+}
+
+.mirror-mode-heading {
+  font-size: 0.9em;
+}
+
+.live-heading-meta--mirror {
+  display: block;
+  font-size: 0.78em;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  opacity: 0.6;
+  margin-top: 3px;
+  line-height: 1.4;
+}
+
+.mirror-section { margin-bottom: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid rgba(100,70,140,0.12); }
+.mirror-section:last-child { border-bottom: none; }
+.mirror-label { font-size: 10px; font-family: monospace; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.4; margin: 0 0 0.5rem 0; }
+.mirror-sublabel { font-size: 10px; font-family: monospace; opacity: 0.35; margin: 0.5rem 0 0.2rem 0; }
+.mirror-summary { display: flex; flex-wrap: wrap; gap: 8px; }
+.mirror-summary-item { font-size: 12px; opacity: 0.7; }
+.mirror-days { display: flex; flex-direction: column; gap: 2px; }
+.mirror-day { font-size: 12px; opacity: 0.8; }
+.mirror-day--inactive { opacity: 0.25; }
+.mirror-terms { display: flex; flex-direction: column; gap: 3px; }
+.mirror-term { font-size: 12px; display: flex; justify-content: space-between; opacity: 0.8; }
+.mirror-term-count { font-family: monospace; font-size: 11px; opacity: 0.5; }
+.mirror-orphan { font-size: 12px; opacity: 0.55; margin: 2px 0; }
+.mirror-synthesis-text { font-size: 13px; line-height: 1.7; margin: 0 0 0.5rem 0; }
+.mirror-grounded { font-size: 11px; font-family: monospace; opacity: 0.35; margin: 0; }
+.mirror-prompt { font-size: 13px; font-style: italic; line-height: 1.6; margin: 0; }
+.mirror-item { font-size: 13px; margin: 2px 0; opacity: 0.8; }
+.mirror-item--muted { opacity: 0.4; }
+.mirror-empty { font-size: 12px; opacity: 0.4; font-style: italic; }

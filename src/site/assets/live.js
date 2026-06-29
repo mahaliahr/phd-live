@@ -603,4 +603,205 @@
   else document.addEventListener('DOMContentLoaded', render)
   setInterval(render, 30_000)
 
+  // --- Mirror toggle ---
+
+  const mirrorToggle = document.getElementById('mirror-toggle')
+  const liveFeed = document.getElementById('live-feed')
+  const mirrorFeed = document.getElementById('mirror-feed')
+  const mirrorWeeklyContent = document.getElementById('mirror-weekly-content')
+  const mirrorDailyContent = document.getElementById('mirror-daily-content')
+
+  let mirrorLoaded = false
+
+  function parseListLines(text) {
+    if (!text) return []
+    return text.split('\n')
+      .map(l => l.replace(/^-\s*/, '').trim())
+      .filter(l => l && l !== 'none')
+  }
+
+  function parseMirrorSections(text) {
+    const sections = {}
+    let currentSection = null
+    let currentLines = []
+    let content = text
+    if (text.startsWith('---')) {
+      const end = text.indexOf('---', 3)
+      if (end !== -1) content = text.slice(end + 3).trim()
+    }
+    for (const line of content.split('\n')) {
+      if (line.startsWith('## ')) {
+        if (currentSection !== null) {
+          sections[currentSection] = currentLines.join('\n').trim()
+        }
+        currentSection = line.slice(3).trim().toLowerCase().replace(/\s+/g, '_')
+        currentLines = []
+      } else {
+        currentLines.push(line)
+      }
+    }
+    if (currentSection !== null) {
+      sections[currentSection] = currentLines.join('\n').trim()
+    }
+    return sections
+  }
+
+  function renderMirrorWeekly(file) {
+    if (!file) return '<p class="mirror-empty">no weekly digest yet</p>'
+    const s = parseMirrorSections(file.raw)
+
+    const synthesisRaw = s.synthesis || ''
+    const groundedIdx = synthesisRaw.indexOf('grounded in:')
+    const synthesisText = groundedIdx > -1
+      ? synthesisRaw.slice(0, groundedIdx).trim()
+      : synthesisRaw.trim()
+    const groundedText = groundedIdx > -1
+      ? synthesisRaw.slice(groundedIdx).trim()
+      : ''
+
+    const terms = parseListLines(s.recurring_terms).slice(0, 10).map(t => {
+      const parts = t.split(' — ')
+      return `<span class="mirror-term">
+        ${parts[0]}
+        <span class="mirror-term-count">${parts[1] || ''}</span>
+      </span>`
+    }).join('')
+
+    const days = parseListLines(s.activity_by_day).map(d => {
+      const inactive = d.includes('no activity')
+      return `<span class="mirror-day ${inactive
+        ? 'mirror-day--inactive' : ''}">${d}</span>`
+    }).join('')
+
+    const orphanLines = parseListLines(s.orphans_this_week)
+
+    return `
+      <div class="mirror-section">
+        <p class="mirror-label">week ${file.week}</p>
+        <div class="mirror-summary">
+          ${parseListLines(s.summary).map(l =>
+            `<span class="mirror-summary-item">${l}</span>`
+          ).join('')}
+        </div>
+      </div>
+      <div class="mirror-section">
+        <p class="mirror-label">activity</p>
+        <div class="mirror-days">${days}</div>
+      </div>
+      <div class="mirror-section">
+        <p class="mirror-label">recurring terms</p>
+        <div class="mirror-terms">${terms}</div>
+      </div>
+      ${orphanLines.length ? `
+        <div class="mirror-section">
+          <p class="mirror-label">orphans</p>
+          ${orphanLines.map(o =>
+            `<p class="mirror-orphan">${o}</p>`
+          ).join('')}
+        </div>` : ''}
+      <div class="mirror-section mirror-section--synthesis">
+        <p class="mirror-label">synthesis</p>
+        <p class="mirror-synthesis-text">${synthesisText}</p>
+        ${groundedText
+          ? `<p class="mirror-grounded">${groundedText}</p>`
+          : ''}
+      </div>
+      <div class="mirror-section">
+        <p class="mirror-label">generated prompt</p>
+        <p class="mirror-prompt">${s.generated_prompt || ''}</p>
+      </div>`
+  }
+
+  function renderMirrorDaily(file) {
+    if (!file) return '<p class="mirror-empty">no daily digest yet</p>'
+    const s = parseMirrorSections(file.raw)
+    const created = parseListLines(s.notes_created)
+    const edited = parseListLines(s.notes_edited)
+    const sessions = parseListLines(s.sessions)
+    const orphans = parseListLines(s.orphans_flagged)
+    return `
+      <div class="mirror-section">
+        <p class="mirror-label">today · ${file.date}</p>
+        ${created.length ? `
+          <p class="mirror-sublabel">created</p>
+          ${created.map(n =>
+            `<p class="mirror-item">${n}</p>`).join('')}` : ''}
+        ${edited.length ? `
+          <p class="mirror-sublabel">edited</p>
+          ${edited.map(n =>
+            `<p class="mirror-item">${n}</p>`).join('')}` : ''}
+        ${sessions.length ? `
+          <p class="mirror-sublabel">sessions</p>
+          ${sessions.map(n =>
+            `<p class="mirror-item">${n}</p>`).join('')}` : ''}
+        ${orphans.length ? `
+          <p class="mirror-sublabel">orphans</p>
+          ${orphans.map(n =>
+            `<p class="mirror-item mirror-item--muted">${n}</p>`
+          ).join('')}` : ''}
+      </div>`
+  }
+
+  async function loadMirrorData() {
+    if (mirrorLoaded) return
+    const base = (window.BASE_URL || "/").replace(/\/+$/, "") + "/"
+    try {
+      const [weeklyRes, dailyRes] = await Promise.all([
+        fetch(`${base}data/mirror-weekly.json`),
+        fetch(`${base}data/mirror-daily.json`)
+      ])
+      const weekly = await weeklyRes.json()
+      const daily = await dailyRes.json()
+      if (mirrorWeeklyContent) {
+        mirrorWeeklyContent.innerHTML =
+          renderMirrorWeekly(weekly.files && weekly.files[0])
+      }
+      if (mirrorDailyContent) {
+        mirrorDailyContent.innerHTML =
+          renderMirrorDaily(daily.files && daily.files[0])
+      }
+      mirrorLoaded = true
+    } catch (e) {
+      if (mirrorWeeklyContent) {
+        mirrorWeeklyContent.innerHTML =
+          '<p class="mirror-empty">mirror data unavailable</p>'
+      }
+    }
+  }
+
+  const liveHeadingEl = document.getElementById('live-heading')
+
+  function setMirrorMode(active) {
+    const liveColumn = document.querySelector('.live-column')
+    if (active) {
+      if (liveFeed) liveFeed.hidden = true
+      if (mirrorFeed) mirrorFeed.hidden = false
+      mirrorToggle.setAttribute('aria-checked', 'true')
+      mirrorToggle.classList.add('mirror-toggle-switch--on')
+      if (liveHeadingEl) {
+        liveHeadingEl.innerHTML = 'MIRROR <span class="live-heading-meta live-heading-meta--mirror">an automated layer that reads research activity and surfaces patterns</span>'
+        liveHeadingEl.classList.add('mirror-mode-heading')
+      }
+      if (liveColumn) liveColumn.classList.add('live-column--mirror')
+    } else {
+      if (liveFeed) liveFeed.hidden = false
+      if (mirrorFeed) mirrorFeed.hidden = true
+      mirrorToggle.setAttribute('aria-checked', 'false')
+      mirrorToggle.classList.remove('mirror-toggle-switch--on')
+      if (liveHeadingEl) {
+        liveHeadingEl.innerHTML = 'IN PROGRESS <span class="live-heading-meta">(latest activities)</span>'
+        liveHeadingEl.classList.remove('mirror-mode-heading')
+      }
+      if (liveColumn) liveColumn.classList.remove('live-column--mirror')
+    }
+  }
+
+  if (mirrorToggle) {
+    mirrorToggle.addEventListener('click', async () => {
+      const showing = mirrorFeed && !mirrorFeed.hidden
+      setMirrorMode(!showing)
+      if (!showing) await loadMirrorData()
+    })
+  }
+
 })();
