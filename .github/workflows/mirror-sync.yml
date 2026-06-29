@@ -126,8 +126,8 @@ jobs:
                   'parsed': parse_sections(daily_content)
               })
 
-          os.makedirs('src/site/data', exist_ok=True)
-          with open('src/site/data/mirror-daily.json', 'w') as f:
+          os.makedirs('src/site/mirror', exist_ok=True)
+          with open('src/site/mirror/mirror-daily.json', 'w') as f:
               json.dump({'files': daily_output}, f, indent=2)
 
           # weekly
@@ -142,7 +142,7 @@ jobs:
                       'parsed': parse_sections(rf['raw'])
                   })
 
-          with open('src/site/data/mirror-weekly.json', 'w') as f:
+          with open('src/site/mirror/mirror-weekly.json', 'w') as f:
               json.dump({'files': weekly_files}, f, indent=2)
 
           print(f"written {len(daily_output)} daily, {len(weekly_files)} weekly files")
@@ -154,7 +154,7 @@ jobs:
         run: |
           git config user.name "mirror-sync"
           git config user.email "mirror-sync@users.noreply.github.com"
-          git add src/site/data/mirror-daily.json src/site/data/mirror-weekly.json
+          git add src/site/mirror/mirror-daily.json src/site/mirror/mirror-weekly.json
 
           if git diff --staged --quiet; then
             echo "no changes to commit"

@@ -589,6 +589,7 @@ eleventyConfig.addShortcode('kanban', renderKanbanFromFile);
   eleventyConfig.addPassthroughCopy({ "src/site/favicon.svg": "favicon.svg" });
   eleventyConfig.addPassthroughCopy({ "src/site/favicon.svg": "favicon.ico" });
   eleventyConfig.addPassthroughCopy("src/site/styles/_theme.*.css");
+  eleventyConfig.addPassthroughCopy("src/site/mirror");
 
 
   

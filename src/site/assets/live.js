@@ -747,8 +747,8 @@
     const base = (window.BASE_URL || "/").replace(/\/+$/, "") + "/"
     try {
       const [weeklyRes, dailyRes] = await Promise.all([
-        fetch(`${base}data/mirror-weekly.json`),
-        fetch(`${base}data/mirror-daily.json`)
+        fetch(`${base}mirror/mirror-weekly.json`),
+        fetch(`${base}mirror/mirror-daily.json`)
       ])
       const weekly = await weeklyRes.json()
       const daily = await dailyRes.json()
