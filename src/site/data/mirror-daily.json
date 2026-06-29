@@ -1,13 +1,13 @@
 {
   "files": [
     {
-      "date": "2026-06-28",
-      "raw": "---\ndate: 2026-06-28\ngenerated: 18:48\n---\n\n## notes created\n- [[mirror-v0]] \u2014 daily/ \u2014 16:46\n- [[2026-06-28]] \u2014 daily/ \u2014 16:52\n- [[mirror]] \u2014 published/ \u2014 16:09\n\n## notes edited\n- none\n\n## sessions\n- thinking / planning \u2014 12:31 \u2192 15:52\n- coding \u2014 15:52 \u2192 ?\n\n## orphans flagged\n- [[2026-06-28]] \u2014 no backlinks",
+      "date": "2026-06-29",
+      "raw": "---\ndate: 2026-06-29\ngenerated: 00:00\n---\n\n## notes created\n- none\n\n## notes edited\n- none\n\n## sessions\n- none\n\n## orphans flagged\n- none",
       "parsed": {
-        "notes_created": "- [[mirror-v0]] \u2014 daily/ \u2014 16:46\n- [[2026-06-28]] \u2014 daily/ \u2014 16:52\n- [[mirror]] \u2014 published/ \u2014 16:09",
+        "notes_created": "- none",
         "notes_edited": "- none",
-        "sessions": "- thinking / planning \u2014 12:31 \u2192 15:52\n- coding \u2014 15:52 \u2192 ?",
-        "orphans_flagged": "- [[2026-06-28]] \u2014 no backlinks"
+        "sessions": "- none",
+        "orphans_flagged": "- none"
       }
     }
   ]
