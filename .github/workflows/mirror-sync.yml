@@ -55,23 +55,36 @@ jobs:
         run: |
           WEEKLY_API="https://api.github.com/repos/mahaliahr/research-infrastructure/contents/mirror-outputs/weekly"
 
-          curl -s "$WEEKLY_API" | python3 -c "
-import sys, json, subprocess
-files = json.load(sys.stdin)
-if not isinstance(files, list) or not files:
-    open('mirror_weekly_tmp.json', 'w').write('[]')
-    sys.exit(0)
-files.sort(key=lambda f: f['name'], reverse=True)
-results = []
-for f in files[:8]:
-    url = f['download_url']
-    r = subprocess.run(['curl', '-s', url], capture_output=True, text=True)
-    if r.stdout:
-        week = url.split('/')[-1].replace('.md', '')
-        results.append({'week': week, 'raw': r.stdout})
-with open('mirror_weekly_tmp.json', 'w') as out:
-    json.dump(results, out)
-"
+          # get up to 8 most recent weekly files
+          WEEKLY_URLS=$(curl -s "$WEEKLY_API" \
+            | python3 -c "
+          import sys, json
+          files = json.load(sys.stdin)
+          if isinstance(files, list) and files:
+              files.sort(key=lambda f: f['name'], reverse=True)
+              for f in files[:8]:
+                  print(f['download_url'])
+          ")
+
+          # fetch each file and build JSON array
+          python3 - <<'PYEOF'
+          import subprocess, json, sys, os
+
+          urls = """$WEEKLY_URLS""".strip().split('\n')
+          urls = [u.strip() for u in urls if u.strip()]
+
+          files = []
+          for url in urls:
+              result = subprocess.run(['curl', '-s', url], capture_output=True, text=True)
+              content = result.stdout
+              if content:
+                  # extract week from filename in URL
+                  week = url.split('/')[-1].replace('.md', '')
+                  files.append({'week': week, 'raw': content})
+
+          with open('mirror_weekly_tmp.json', 'w') as f:
+              json.dump(files, f)
+          PYEOF
 
       - name: build mirror JSON files
         run: |
