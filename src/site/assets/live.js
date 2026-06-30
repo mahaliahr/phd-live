@@ -241,10 +241,20 @@
     })
   }
 
+  let liveBarTicker = null
+
   function updateLiveBar(activeSession) {
     const dot = document.querySelector('[data-logo-dot]')
     const meta = document.querySelector('[data-logo-meta]')
     if (!dot) return
+
+    // Every render() call reached this point before without clearing the
+    // previous interval, so intervals piled up the longer the page stayed
+    // open (each one re-running the marquee setup). Clear before re-arming.
+    if (liveBarTicker) {
+      clearInterval(liveBarTicker)
+      liveBarTicker = null
+    }
 
     if (activeSession) {
       dot.dataset.state = 'live'
@@ -265,7 +275,7 @@
         }
       }
       tick()
-      setInterval(tick, 60_000)
+      liveBarTicker = setInterval(tick, 60_000)
     } else {
       dot.dataset.state = 'idle'
       if (meta) meta.textContent = ''
@@ -276,6 +286,7 @@
 
   let liveSessionTicker = null
   let hasSyncedInfoColumnHeight = false
+  let lastTimelineSignature = null
 
   function syncInfoColumnHeightVar() {
     const layoutRow = document.querySelector('.phd-live-main')
@@ -309,10 +320,6 @@
     const pastSessionsContainer = document.getElementById('live-past-sessions')
     const streamContainer = document.getElementById('live-stream')
     const liveHeading = document.getElementById('live-heading')
-
-    console.log('streamContainer:', streamContainer)
-    console.log('allSessions count:', allSessions.length)
-    console.log('stream count:', stream ? stream.length : 'null')
 
     let currentSession = allSessions.find(isActive) || null
 
@@ -417,6 +424,14 @@
       return bStart - aStart
     })
 
+    // Without a cap, this list only grows as stream.json picks up bot
+    // summaries — every 30s tick would then be rebuilding more HTML than
+    // the last. Keep it to the most recent N regardless of source mix.
+    const MAX_TIMELINE_ITEMS = 40
+    if (timelineItems.length > MAX_TIMELINE_ITEMS) {
+      timelineItems.length = MAX_TIMELINE_ITEMS
+    }
+
     if (liveHeading) {
       const isMirrorActive = mirrorFeed && !mirrorFeed.hidden
       if (!isMirrorActive) {
@@ -432,12 +447,24 @@
       }
     }
 
-    if (liveSessionTicker) {
-      clearInterval(liveSessionTicker)
-      liveSessionTicker = null
-    }
+    // Cheap fingerprint of what would actually render. If it's identical to
+    // last tick, skip rebuilding the whole <ul> — relative-time labels are
+    // the only thing that could drift, and those are minutes-granularity
+    // at most, not worth a full HTML rebuild every 30s.
+    const timelineSignature = JSON.stringify(
+      timelineItems.map(i => [i.type, i.variant, i.topic || i.text || '', i.timestampMs, i.url || ''])
+    )
+    const timelineUnchanged = timelineSignature === lastTimelineSignature
+    lastTimelineSignature = timelineSignature
 
-    if (nowContainer && timelineItems.length) {
+    if (timelineUnchanged && nowContainer && nowContainer.childElementCount > 0) {
+      // no-op: identical content, leave existing DOM (and its running
+      // activeTimerNode interval, if any) untouched
+    } else if (nowContainer && timelineItems.length) {
+      if (liveSessionTicker) {
+        clearInterval(liveSessionTicker)
+        liveSessionTicker = null
+      }
       nowContainer.innerHTML = `
         <ul class="live-session-timeline">
           ${timelineItems.map(item => {
@@ -552,8 +579,6 @@
       pastSessionsContainer.innerHTML = ''
     }
 
-    console.log('stream merged into timeline, items:', stream ? stream.length : 'null')
-
     if (streamContainer) {
       streamContainer.innerHTML = ''
     }
@@ -562,6 +587,11 @@
   // --- Main render ---
 
   async function render() {
+    // Mirror data only changes once a day (00:30 UTC sync). No reason to
+    // fetch and rebuild the live timeline every 30s while it's hidden.
+    const mirrorFeedEl = document.getElementById('mirror-feed')
+    if (mirrorFeedEl && !mirrorFeedEl.hidden) return
+
     const base = (window.BASE_URL || "/").replace(/\/+$/, "") + "/";
 
     const [supabaseSessions, obsidianSessions, stream] = await Promise.all([
@@ -569,9 +599,6 @@
       fetchJson(`${base}data/sessions.json`),
       fetchJson(`${base}data/stream.json`)
     ])
-
-    console.log('obsidian sessions:', obsidianSessions)
-    console.log('stream:', stream)
 
     const allSessions = [
       ...(supabaseSessions || []),
@@ -582,10 +609,6 @@
       if (!Number.isFinite(bStart)) return -1
       if (!Number.isFinite(aStart)) return 1
       return bStart - aStart
-    })
-
-    allSessions.forEach((session, index) => {
-      const parsedStart = new Date(normalizeSessionTimestamp(session.start))
     })
 
     const activeSession = allSessions.find(isActive)
