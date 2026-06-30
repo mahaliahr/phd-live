@@ -1,3 +1,16 @@
 {
-  "files": []
+  "files": [
+    {
+      "week": "2026-W26",
+      "raw": "---\nweek: 2026-W26\nperiod: 2026-06-22 \u2192 2026-06-28\ngenerated: 19:52\n---\n\n## summary\n- notes created: 3\n- notes edited: 0\n- sessions: 2\n- active days: 1/7\n\n## activity by day\n- mon 22: no activity\n- tue 23: no activity\n- wed 24: no activity\n- thu 25: no activity\n- fri 26: no activity\n- sat 27: no activity\n- sun 28: 3 notes \u00b7 2 sessions\n\n## recurring terms\n- study companion \u2014 15\n- supervisor bot \u2014 15\n- commercial ai \u2014 11\n- creative research \u2014 11\n- ai tools \u2014 10\n- ai systems \u2014 10\n- live coding \u2014 10\n- generative ai \u2014 9\n- my own \u2014 9\n- research infrastructure \u2014 9\n- #supervisor \u2014 2\n- [[mirror]] \u2014 2\n- [[project-phd-live-platform]] \u2014 2\n- [[research-infrastructure]] \u2014 2\n- [[system-open-questions]] \u2014 2\n\n## orphans this week\n- [[2026-06-28]] \u2014 first flagged 2026-06-28\n\n## synthesis\n\nthis week's activities centered around the creation of new notes titled [[mirror-v0]], [[2026-06-28]], and [[mirror]]. sessions focused on thinking/planning and coding. recurring terms like \"study companion,\" \"supervisor bot,\" and \"commercial ai\" appeared frequently, suggesting a concentrated effort on developing or refining these concepts within the context of research infrastructure and live coding.\n\ngrounded in: study companion \u00d715, supervisor bot \u00d715, commercial ai \u00d711, 1 orphan notes, 3 notes created, 2 sessions\n\n## generated prompt\nhow do the concepts of \"study companion\" and \"supervisor bot\" manifest differently in the notes [[mirror-v0]] and [[mirror]]?\n",
+      "parsed": {
+        "summary": "- notes created: 3\n- notes edited: 0\n- sessions: 2\n- active days: 1/7",
+        "activity_by_day": "- mon 22: no activity\n- tue 23: no activity\n- wed 24: no activity\n- thu 25: no activity\n- fri 26: no activity\n- sat 27: no activity\n- sun 28: 3 notes \u00b7 2 sessions",
+        "recurring_terms": "- study companion \u2014 15\n- supervisor bot \u2014 15\n- commercial ai \u2014 11\n- creative research \u2014 11\n- ai tools \u2014 10\n- ai systems \u2014 10\n- live coding \u2014 10\n- generative ai \u2014 9\n- my own \u2014 9\n- research infrastructure \u2014 9\n- #supervisor \u2014 2\n- [[mirror]] \u2014 2\n- [[project-phd-live-platform]] \u2014 2\n- [[research-infrastructure]] \u2014 2\n- [[system-open-questions]] \u2014 2",
+        "orphans_this_week": "- [[2026-06-28]] \u2014 first flagged 2026-06-28",
+        "synthesis": "this week's activities centered around the creation of new notes titled [[mirror-v0]], [[2026-06-28]], and [[mirror]]. sessions focused on thinking/planning and coding. recurring terms like \"study companion,\" \"supervisor bot,\" and \"commercial ai\" appeared frequently, suggesting a concentrated effort on developing or refining these concepts within the context of research infrastructure and live coding.\n\ngrounded in: study companion \u00d715, supervisor bot \u00d715, commercial ai \u00d711, 1 orphan notes, 3 notes created, 2 sessions",
+        "generated_prompt": "how do the concepts of \"study companion\" and \"supervisor bot\" manifest differently in the notes [[mirror-v0]] and [[mirror]]?"
+      }
+    }
+  ]
 }
