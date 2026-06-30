@@ -23,68 +23,24 @@ jobs:
       - name: fetch latest daily mirror file
         id: fetch_daily
         run: |
-          # get list of daily files from research-infrastructure
-          # uses GitHub API to list files in mirror-outputs/daily/
-          DAILY_API="https://api.github.com/repos/mahaliahr/research-infrastructure/contents/mirror-outputs/daily"
+          python3 scripts/fetch_daily.py \
+            "https://api.github.com/repos/mahaliahr/research-infrastructure/contents/mirror-outputs/daily" \
+            "daily_content.txt"
 
-          # get the most recent file (alphabetically last = most recent date)
-          LATEST_DAILY=$(curl -s "$DAILY_API" \
-            | python3 -c "
-          import sys, json
-          files = json.load(sys.stdin)
-          if isinstance(files, list) and files:
-              files.sort(key=lambda f: f['name'], reverse=True)
-              print(files[0]['download_url'])
-          else:
-              print('')
-          ")
-
-          if [ -z "$LATEST_DAILY" ]; then
-            echo "no daily file found"
-            echo "daily_content=" >> $GITHUB_OUTPUT
-          else
-            CONTENT=$(curl -s "$LATEST_DAILY")
-            # escape for multiline output
+          if [ -s daily_content.txt ]; then
             echo "daily_content<<EOF" >> $GITHUB_OUTPUT
-            echo "$CONTENT" >> $GITHUB_OUTPUT
+            cat daily_content.txt >> $GITHUB_OUTPUT
             echo "EOF" >> $GITHUB_OUTPUT
+          else
+            echo "daily_content=" >> $GITHUB_OUTPUT
           fi
 
       - name: fetch recent weekly mirror files
         id: fetch_weekly
         run: |
-          WEEKLY_API="https://api.github.com/repos/mahaliahr/research-infrastructure/contents/mirror-outputs/weekly"
-
-          # get up to 8 most recent weekly files
-          WEEKLY_URLS=$(curl -s "$WEEKLY_API" \
-            | python3 -c "
-          import sys, json
-          files = json.load(sys.stdin)
-          if isinstance(files, list) and files:
-              files.sort(key=lambda f: f['name'], reverse=True)
-              for f in files[:8]:
-                  print(f['download_url'])
-          ")
-
-          # fetch each file and build JSON array
-          python3 - <<'PYEOF'
-          import subprocess, json, sys, os
-
-          urls = """$WEEKLY_URLS""".strip().split('\n')
-          urls = [u.strip() for u in urls if u.strip()]
-
-          files = []
-          for url in urls:
-              result = subprocess.run(['curl', '-s', url], capture_output=True, text=True)
-              content = result.stdout
-              if content:
-                  # extract week from filename in URL
-                  week = url.split('/')[-1].replace('.md', '')
-                  files.append({'week': week, 'raw': content})
-
-          with open('mirror_weekly_tmp.json', 'w') as f:
-              json.dump(files, f)
-          PYEOF
+          python3 scripts/fetch_weekly.py \
+            "https://api.github.com/repos/mahaliahr/research-infrastructure/contents/mirror-outputs/weekly" \
+            "mirror_weekly_tmp.json"
 
       - name: build mirror JSON files
         run: |
@@ -165,4 +121,4 @@ jobs:
           fi
 
       - name: cleanup
-        run: rm -f mirror_weekly_tmp.json
+        run: rm -f mirror_weekly_tmp.json daily_content.txt
