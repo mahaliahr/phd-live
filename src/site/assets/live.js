@@ -418,13 +418,17 @@
     })
 
     if (liveHeading) {
-      const isLive = currentSession && isActive(currentSession)
-      if (isLive) {
-        liveHeading.innerHTML = '<span class="record-dot"></span>LIVE <span class="live-heading-meta">(work happening now)</span>'
-        liveHeading.classList.add('is-live')
-      } else {
-        liveHeading.innerHTML = 'IN PROGRESS <span class="live-heading-meta">(latest activities)</span>'
-        liveHeading.classList.remove('is-live')
+      const isMirrorActive = mirrorFeed && !mirrorFeed.hidden
+      if (!isMirrorActive) {
+        const isLive = currentSession && isActive(currentSession)
+        if (isLive) {
+          liveHeading.innerHTML = 'LIVE <span class="live-heading-meta">work happening now</span>'
+          liveHeading.classList.add('is-live')
+        } else {
+          liveHeading.innerHTML = 'IN PROGRESS <span class="live-heading-meta">(latest activities)</span>'
+          liveHeading.classList.remove('is-live')
+        }
+        savedLiveHeading = liveHeading.innerHTML
       }
     }
 
