@@ -18,3 +18,32 @@ these sketches reference an earlier diagram I made sketching out the (high-level
 ![rough thoughts](images/diagram.png)
 
 this work has lead me to understand that this learning dashboard, is in fact not the 'homebase' but an interface that is part of the bigger over-arching '[[research-infrastructure]]'.
+
+---
+### Developing the Learning dashboard
+
+the first behaviour I set up was the logging of activity -- I wanted there to be an easier way to capture a session that only in obsidian
+
+![learning dashboard first iteration](learning-dashboard-v0.png)
+
+Then I brought in the Mirror element as this is a vital part of the [[research-infrastructure]] (particularly on the [[project-phd-live-platform|phd-live platform]]) that was missing. 
+
+now that I have this in place the next area of importance is to have the bots integrated.
+
+But how I capture this is not immediately straightforward - what are the core aspects of an interaction with the bots that I want to capture and how do I build this. 
+
+I decided the any time or duration is not so important as the already established session logging captures this to a certain degree, rather what is being discussed or worked through with the bots is the important thing.
+
+![bot summary sketch](bot-summaries-sketch.jpeg)
+
+**Study Companion / Supervisor Bot activity logging — decided**
+
+Both bots log into the same `sessions` table the dashboard already uses (`source` field distinguishes them), but with a different lifecycle than manual ActivityLog entries.
+
+A session is one calendar day's worth of activity with a given bot, not one sitting. The first message of a day creates the session and the entry appears immediately as `in progress`. Every subsequent message that day is a touchpoint — a timestamp appended to the same session, no new entry. Touchpoints are the unit of legibility: instead of duration (meaningless once a session can span gaps of hours), the entry shows a small timeline of when you returned to the bot that day.
+
+The entry closes (`done`) either when the session is explicitly ended, or automatically after 8 hours with no new message, as a stopgap so nothing sits "in progress" indefinitely. On close, one summary is generated from the full conversation_history accumulated so far and becomes the entry's gist line. If a new touchpoint arrives after a stopgap-close, the same entry reopens (not a new entry) and goes back to `in progress`. Whenever it closes again, the summary is regenerated from the whole conversation to date — a single overwritten gist covering the full arc of the day, not a stacked per-chunk list. This was chosen over per-chunk summaries for legibility: a single line per entry reads consistently alongside the rest of the activity feed, where everything else (manual sessions, mirror entries) is also single-line.
+
+Both bots use the same entry shape and the same state machine (in progress → done → possible reopen → in progress → done), rendered identically on the dashboard (private, end-of-day view with the touchpoint timeline) and on the PhD-Live live stream (public, where each touchpoint can appear as its own terse live-feed line as it happens, since that surface favors liveness over rolled-up completeness).
+
+Explicitly out of scope for now: duration/time tracking, capability-gap flagging, and vault note linking — perhaps I will pick these up later.

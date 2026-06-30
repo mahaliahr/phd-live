@@ -13,3 +13,5 @@ My position as both learner and teacher shapes the investigation, and the work h
 
 ---
 
+[[abstract-work-in-progress]]
+[[abstract-shortened]]
