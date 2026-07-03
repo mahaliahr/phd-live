@@ -179,6 +179,25 @@
     }
   }
 
+  async function fetchSupabaseBotEvents() {
+    try {
+      const res = await fetch(
+        `${SUPABASE_URL}/rest/v1/bot_events?order=time.desc&limit=20`,
+        {
+          headers: {
+            'apikey': SUPABASE_KEY,
+            'Authorization': `Bearer ${SUPABASE_KEY}`
+          }
+        }
+      )
+      if (!res.ok) return []
+      return await res.json()
+    } catch (e) {
+      console.error('Supabase bot_events fetch failed', e)
+      return []
+    }
+  }
+
   // --- Active session detection ---
   // Supabase: trust the explicit status field
   // Obsidian: trust the isLikelyActive flag (no end + within 8h staleness threshold)
@@ -313,7 +332,7 @@
       && String(a.topic || '') === String(b.topic || '')
   }
 
-  function updateLiveColumn(allSessions, stream) {
+  function updateLiveColumn(allSessions, stream, botEvents) {
     const nowMs = Date.now()
     const nowContainer = document.getElementById('live-now')
     const nextContainer = document.getElementById('live-next')
@@ -414,7 +433,18 @@
     const streamItems = streamTimelineItems.filter(item => Number.isFinite(item.timestampMs))
 
     timelineItems.push(...streamItems)
-    // TODO: bot interaction items injected here
+
+    const botTimelineItems = (botEvents || [])
+      .map(e => ({
+        type: 'bot',
+        bot: e.bot,
+        status: e.status,
+        summary: e.summary || null,
+        time: e.time,
+        timestampMs: toUtcMs(e.time)
+      }))
+      .filter(item => Number.isFinite(item.timestampMs))
+    timelineItems.push(...botTimelineItems)
 
     timelineItems.sort((a, b) => {
       const bStart = b.timestampMs
@@ -424,9 +454,9 @@
       return bStart - aStart
     })
 
-    // Without a cap, this list only grows as stream.json picks up bot
-    // summaries — every 30s tick would then be rebuilding more HTML than
-    // the last. Keep it to the most recent N regardless of source mix.
+    // Without a cap, this list only grows as bot_events accumulates —
+    // every 30s tick would then be rebuilding more HTML than the last.
+    // Keep it to the most recent N regardless of source mix.
     const MAX_TIMELINE_ITEMS = 40
     if (timelineItems.length > MAX_TIMELINE_ITEMS) {
       timelineItems.length = MAX_TIMELINE_ITEMS
@@ -452,7 +482,7 @@
     // the only thing that could drift, and those are minutes-granularity
     // at most, not worth a full HTML rebuild every 30s.
     const timelineSignature = JSON.stringify(
-      timelineItems.map(i => [i.type, i.variant, i.topic || i.text || '', i.timestampMs, i.url || ''])
+      timelineItems.map(i => [i.type, i.variant, i.topic || i.text || i.bot || '', i.timestampMs, i.url || '', i.status || '', i.summary || ''])
     )
     const timelineUnchanged = timelineSignature === lastTimelineSignature
     lastTimelineSignature = timelineSignature
@@ -480,6 +510,14 @@
                     ${item.url ? `· <a href="${item.url}" class="stream-link">view note</a>` : ''}
                   </div>
                   <div class="content-type-label">recent thinking</div>
+                </li>`
+            }
+
+            if (item.type === 'bot') {
+              const gist = item.status === 'done' && item.summary ? item.summary : item.status
+              return `
+                <li class="session-item bot-event">
+                  <span class="bot-event-line">${formatTime(item.time)} · ${item.bot} · ${gist}</span>
                 </li>`
             }
 
@@ -594,10 +632,11 @@
 
     const base = (window.BASE_URL || "/").replace(/\/+$/, "") + "/";
 
-    const [supabaseSessions, obsidianSessions, stream] = await Promise.all([
+    const [supabaseSessions, obsidianSessions, stream, botEvents] = await Promise.all([
       fetchSupabaseSessions(),
       fetchJson(`${base}data/sessions.json`),
-      fetchJson(`${base}data/stream.json`)
+      fetchJson(`${base}data/stream.json`),
+      fetchSupabaseBotEvents()
     ])
 
     const allSessions = [
@@ -614,7 +653,7 @@
     const activeSession = allSessions.find(isActive)
 
     updateLiveBar(activeSession)
-    updateLiveColumn(allSessions, stream)
+    updateLiveColumn(allSessions, stream, botEvents)
 
     if (!hasSyncedInfoColumnHeight) {
       hasSyncedInfoColumnHeight = true
