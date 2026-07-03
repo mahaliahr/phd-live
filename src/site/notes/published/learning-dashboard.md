@@ -36,7 +36,7 @@ I decided the any time or duration is not so important as the already establishe
 
 ![bot summary sketch](bot-summaries-sketch.jpeg)
 
-** [[study-companion-bot|study companion]] / [[project-supervisor-bot|supervisor bot]] activity logging — decided**
+**Study Companion / Supervisor Bot activity logging — decided**
 
 Both bots log into the same `sessions` table the dashboard already uses (`source` field distinguishes them), but with a different lifecycle than manual ActivityLog entries.
 
@@ -47,15 +47,3 @@ The entry closes (`done`) either when the session is explicitly ended, or automa
 Both bots use the same entry shape and the same state machine (in progress → done → possible reopen → in progress → done), rendered identically on the dashboard (private, end-of-day view with the touchpoint timeline) and on the PhD-Live live stream (public, where each touchpoint can appear as its own terse live-feed line as it happens, since that surface favors liveness over rolled-up completeness).
 
 Explicitly out of scope for now: duration/time tracking, capability-gap flagging, and vault note linking — perhaps I will pick these up later.
-
-**Study Companion - potential future direction (v2)**
-
-Current model (v1): single rolling `conversation_history`, one daily session, all activity accumulated into one context.
-
-Identified limitation: a single context flattens different threads of inquiry that may be unrelated. In practice, research work involves multiple concurrent strands (a chapter structure question, a methodology problem, a technical build issue) each potentially revisited across days, not just within one sitting.
-
-V2 direction: multi-thread model, where each distinct inquiry has its own persistent `conversation_history`, keyed by thread id. The chat UI would allow creating, naming, and navigating between threads, closer to how multiple Claude conversation tabs actually get used. Session logging in the dashboard could track per-thread rather than per-day, so the activity feed reflects what was being worked through rather than just that the bot was used.
-
-This is also the likely moment to introduce episodic memory (A-Mem) for Study Companion, already deferred to Mirror v1 — per-thread memory would make more sense than trying to apply it to one undifferentiated daily accumulation.
-
-**Dependency:** thread management UI and a refactored `conversation_history` store in `server.py`. Not a small change -- treat as a separate build after v1 is stable and tested.

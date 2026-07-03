@@ -9324,15 +9324,6 @@
     "noteDate": null,
     "revisions": [
       {
-        "date": "2026-07-03",
-        "hash": "3052d58",
-        "wordCount": 14,
-        "delta": 14,
-        "added": 14,
-        "removed": 0,
-        "diff": "{+- [ ] fix the live/current session to the top of the live feed+}"
-      },
-      {
         "date": "2026-05-31",
         "hash": "5643628",
         "wordCount": 17,
