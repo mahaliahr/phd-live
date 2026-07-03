@@ -11,6 +11,7 @@ description: active work - tasks pulled from the system map
 - [ ] posts not tracking properly
 - [ ] livebar only show when session is actually live
 - [ ] time wrong in recent thoughts + updates section (GMT → BST)
+- [ ] fix the live/current session to the top of the live feed
 
 
 ## backlog [features]
