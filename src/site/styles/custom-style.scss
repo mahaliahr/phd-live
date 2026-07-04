@@ -29,6 +29,7 @@
   --background-secondary: #f5f5f5;
   --background-primary-alt: #fafafa;
   --background-modifier-border: rgba(0,0,0,0.1);
+  --border: var(--background-modifier-border);
   --text-normal: #0b0b0b;
   --text-session-active: #e8024f;
   --session-link: #5A3DA7;
@@ -392,7 +393,164 @@ section .more a { font-weight: 600; }
   color: var(--accent);
 }
 
+/* Two-column notes index (/notes/, /notes/daily/, /notes/all/) */
+.notes-columns {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.notes-col {
+  min-width: 0;
+}
+
+.notes-col--daily {
+  width: 260px;
+  flex: 0 0 260px;
+}
+
+.notes-col--thematic {
+  flex: 1;
+  margin-top: 0; /* .notes-col--thematic is a <section>; override the global section margin-block so it sits flush with the daily column */
+}
+
+.notes-divider {
+  align-self: stretch;
+  width: 0.5px;
+  background: var(--border);
+  flex: 0 0 0.5px;
+}
+
+.notes-col-heading {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  margin: 0 0 0.75rem;
+}
+
+.notes-col-footer {
+  margin-top: 0.75rem;
+}
+
+.notes-col-footer a {
+  font-size: 13px;
+  text-decoration: none;
+  color: var(--text-muted);
+}
+
+.notes-col-footer a:hover {
+  color: var(--accent);
+}
+
+/* Daily notes: month groups */
+.daily-month-group {
+  border-bottom: 0.5px solid var(--border);
+}
+
+.daily-month-group summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  list-style: none;
+  font-size: 13px;
+  color: var(--text-normal);
+}
+
+.daily-month-group summary::-webkit-details-marker {
+  display: none;
+}
+
+.daily-month-group summary::after {
+  content: "";
+  flex-shrink: 0;
+  width: 6px;
+  height: 6px;
+  border-right: 1.5px solid var(--text-muted);
+  border-bottom: 1.5px solid var(--text-muted);
+  transform: rotate(45deg);
+  transition: transform 0.15s ease;
+}
+
+.daily-month-group[open] summary::after {
+  transform: rotate(-135deg);
+}
+
+.daily-month-group .group-count {
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.daily-month-list,
+.thematic-note-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.daily-month-list li,
+.thematic-note-list li {
+  border-bottom: 0.5px solid var(--border);
+  padding: 0;
+}
+
+.daily-month-list li:last-child,
+.thematic-note-list li:last-child {
+  border-bottom: none;
+}
+
+.daily-month-list a,
+.thematic-note-list a {
+  display: block;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: var(--text-normal);
+  transition: color 0.2s;
+}
+
+.daily-month-list a:hover,
+.thematic-note-list a:hover {
+  color: var(--accent);
+}
+
+.thematic-note-list a {
+  font-family: "Rubik", sans-serif;
+}
+
+.thematic-note-list li {
+  padding: 0.5rem 0;
+}
+
+.thematic-note-list li a {
+  padding: 0;
+}
+
+.note-meta {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 0.15rem;
+}
+
 /* Responsive */
+@media (max-width: 700px) {
+  .notes-columns {
+    flex-direction: column;
+  }
+
+  .notes-col--daily {
+    width: 100%;
+    flex: 1 1 auto;
+  }
+
+  .notes-divider {
+    display: none;
+  }
+}
 /* Footer styles */
 footer {
   background: var(--footer-bg, #f8f8f8); 
@@ -1161,6 +1319,24 @@ a.internal-link.is-unresolved {
 
 .live-column .stream-meta-row a:hover {
   text-decoration: underline;
+}
+
+.session-item.bot {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 0.5px solid var(--border, #e5e5e5);
+}
+
+.session-item.bot .bot-name {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.session-item.bot .session-meta-inline {
+  font-size: 12px;
+  color: var(--text-muted, #999);
 }
 
 .feed-card-content p {

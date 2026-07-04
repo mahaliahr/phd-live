@@ -166,10 +166,11 @@
       if (!res.ok) return []
       const data = await res.json()
       return data.map(s => ({
-        source: 'supabase',
+        source: s.source || 'dashboard',
         start: s.started,
         end: s.ended || null,
         topic: s.type + (s.note ? ` · ${s.note}` : ''),
+        summary: s.summary || null,
         status: s.status,
         url: `/daily/${s.started.slice(0, 10)}/`
       }))
@@ -184,7 +185,8 @@
   // Obsidian: trust the isLikelyActive flag (no end + within 8h staleness threshold)
 
   function isActive(session) {
-    if (session.source === 'supabase') {
+    if (session.source === 'study_companion' || session.source === 'supervisor_bot') return false
+    if (session.source === 'dashboard') {
       const status = String(session.status || '').trim().toLowerCase();
       if (status !== 'active') return false;
 
@@ -321,19 +323,23 @@
     const streamContainer = document.getElementById('live-stream')
     const liveHeading = document.getElementById('live-heading')
 
-    let currentSession = allSessions.find(isActive) || null
+    const dashboardSessions = allSessions.filter(
+      s => s.source !== 'study_companion' && s.source !== 'supervisor_bot'
+    )
+
+    let currentSession = dashboardSessions.find(isActive) || null
 
     // fall back to most recent if nothing active
-    if (!currentSession && allSessions.length > 0) {
-      currentSession = allSessions[0]
+    if (!currentSession && dashboardSessions.length > 0) {
+      currentSession = dashboardSessions[0]
     }
 
-    const nextSession = allSessions.find(s => {
+    const nextSession = dashboardSessions.find(s => {
       const startMs = toUtcMs(s.start)
       return Number.isFinite(startMs) && startMs > nowMs
     }) || null
 
-    const pastSessions = allSessions
+    const pastSessions = dashboardSessions
       .filter(s => {
         const startedMs = toUtcMs(s.start)
         return Number.isFinite(startedMs) && startedMs < nowMs && !isActive(s)
@@ -414,7 +420,19 @@
     const streamItems = streamTimelineItems.filter(item => Number.isFinite(item.timestampMs))
 
     timelineItems.push(...streamItems)
-    // TODO: bot interaction items injected here
+    const botItems = allSessions.filter(
+      s => s.source === 'study_companion' || s.source === 'supervisor_bot'
+    )
+    botItems.forEach(s => {
+      timelineItems.push({
+        type: 'bot',
+        source: s.source,
+        started: s.start,
+        summary: s.summary,
+        status: s.status,
+        timestampMs: toUtcMs(s.start)
+      })
+    })
 
     timelineItems.sort((a, b) => {
       const bStart = b.timestampMs
@@ -468,6 +486,17 @@
       nowContainer.innerHTML = `
         <ul class="live-session-timeline">
           ${timelineItems.map(item => {
+            if (item.type === 'bot') {
+              const botName = item.source === 'supervisor_bot' ? 'supervisor bot' : 'study companion'
+              const statusText = item.status === 'active' ? 'in progress' : (item.summary || '')
+              return `
+                <li class="session-item bot">
+                  <span class="bot-name">${botName}</span>
+                  <span class="session-meta-inline">${statusText}</span>
+                  <span class="session-meta-inline">${relativeTime(item.started)}</span>
+                </li>`
+            }
+
             if (item.type === 'stream') {
               const streamText = parseLinks(String(item.text || '').trim())
               return `

@@ -905,6 +905,127 @@ eleventyConfig.addCollection("streamItems", (c) => {
     ...api.getFilteredByGlob("src/site/notes/**/*.canvas")
   ]);
 
+  // ===== Daily notes grouped by month (for the two-column notes index) =====
+  // Daily notes live under src/site/notes/daily/ and are always named YYYY-MM-DD.md,
+  // so we key off the filename rather than frontmatter title (which is inconsistent).
+  const DAILY_SLUG_RE = /^\d{4}-\d{2}-\d{2}$/;
+
+  const formatDailyEntryTitle = (slug) => {
+    const [y, m, d] = slug.split("-").map(Number);
+    return new Date(Date.UTC(y, m - 1, d)).toLocaleDateString("en-US", {
+      weekday: "long",
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+      timeZone: "UTC",
+    });
+  };
+
+  const monthLabel = (key) => {
+    const [y, m] = key.split("-").map(Number);
+    return new Date(Date.UTC(y, m - 1, 1)).toLocaleDateString("en-US", {
+      month: "long",
+      year: "numeric",
+      timeZone: "UTC",
+    });
+  };
+
+  const currentMonthKey = () => {
+    const d = new Date();
+    return `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, "0")}`;
+  };
+
+  const previousMonthKey = () => {
+    const d = new Date();
+    const prev = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth() - 1, 1));
+    return `${prev.getUTCFullYear()}-${String(prev.getUTCMonth() + 1).padStart(2, "0")}`;
+  };
+
+  const getDailyEntries = (api) =>
+    api.getFilteredByGlob("src/site/notes/daily/*.md")
+      .filter((p) => isMd(p) && isPublished(p) && DAILY_SLUG_RE.test(p.fileSlug))
+      .map((p) => ({ url: p.url, title: formatDailyEntryTitle(p.fileSlug), date: p.fileSlug }))
+      .sort((a, b) => b.date.localeCompare(a.date));
+
+  // Full breakdown by real calendar month (used by the /notes/daily/ archive page).
+  eleventyConfig.addCollection("dailyNotesArchive", (api) => {
+    const entries = getDailyEntries(api);
+    const curKey = currentMonthKey();
+    const prevKey = previousMonthKey();
+
+    const groups = new Map();
+    for (const entry of entries) {
+      const key = entry.date.slice(0, 7);
+      if (!groups.has(key)) groups.set(key, []);
+      groups.get(key).push(entry);
+    }
+
+    return [...groups.entries()]
+      .sort((a, b) => b[0].localeCompare(a[0]))
+      .map(([key, notes]) => ({
+        key,
+        label: monthLabel(key),
+        count: notes.length,
+        open: key === curKey || key === prevKey,
+        notes,
+      }));
+  });
+
+  // Compact sidebar version: current month + previous month get their own group,
+  // everything older is bucketed into a single collapsed "Earlier" group.
+  eleventyConfig.addCollection("dailyNotesSidebar", (api) => {
+    const entries = getDailyEntries(api);
+    const curKey = currentMonthKey();
+    const prevKey = previousMonthKey();
+
+    const current = entries.filter((e) => e.date.slice(0, 7) === curKey);
+    const previous = entries.filter((e) => e.date.slice(0, 7) === prevKey);
+    const earlier = entries.filter((e) => {
+      const key = e.date.slice(0, 7);
+      return key !== curKey && key !== prevKey;
+    });
+
+    const groups = [];
+    if (current.length) {
+      groups.push({ key: curKey, label: monthLabel(curKey), count: current.length, open: true, notes: current });
+    }
+    if (previous.length) {
+      groups.push({ key: prevKey, label: monthLabel(prevKey), count: previous.length, open: true, notes: previous });
+    }
+    if (earlier.length) {
+      groups.push({ key: "earlier", label: "Earlier", count: earlier.length, open: false, notes: earlier });
+    }
+    return groups;
+  });
+
+  // ===== Non-daily ("thematic") notes, most recently updated/created first =====
+  eleventyConfig.addCollection("thematicNotes", (api) => {
+    const pages = [
+      ...api.getFilteredByGlob("src/site/notes/**/*.md").filter((p) => isMd(p) && isPublished(p)),
+      ...api.getFilteredByGlob("src/site/notes/**/*.canvas"),
+    ].filter((p) => !p.inputPath.includes("/notes/daily/"));
+
+    const sortTime = (p) => {
+      const raw = p.data?.updated || p.date;
+      const t = raw instanceof Date ? raw.getTime() : new Date(raw).getTime();
+      return Number.isNaN(t) ? 0 : t;
+    };
+
+    return pages
+      .map((p) => {
+        const tags = Array.isArray(p.data?.tags)
+          ? p.data.tags.filter((t) => t && t !== "note" && t !== "gardenEntry")
+          : [];
+        return {
+          url: p.url,
+          title: p.data?.title || p.fileSlug,
+          primaryTag: tags[0] || null,
+          sortTime: sortTime(p),
+        };
+      })
+      .sort((a, b) => b.sortTime - a.sortTime);
+  });
+
   eleventyConfig.addCollection("postFeaturedFirst", (api) => {
     const byBlogFolder = api.getFilteredByGlob("src/site/notes/blog/**/*.md");
     const byPublishedFolder = api.getFilteredByGlob("src/site/notes/published/**/*.md");

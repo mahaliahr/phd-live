@@ -6281,6 +6281,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-07-03",
+        "hash": "cd3e88c",
+        "wordCount": 0,
+        "delta": -4,
+        "added": 0,
+        "removed": 4,
+        "diff": "[-aliases:-] [-- study companion-]"
+      },
+      {
         "date": "2026-06-30",
         "hash": "731de20",
         "wordCount": 0,
@@ -9324,6 +9333,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-07-03",
+        "hash": "3052d58",
+        "wordCount": 14,
+        "delta": 14,
+        "added": 14,
+        "removed": 0,
+        "diff": "{+- [ ] fix the live/current session to the top of the live feed+}"
+      },
+      {
         "date": "2026-05-31",
         "hash": "5643628",
         "wordCount": 17,
@@ -11294,6 +11312,15 @@
   "learning-dashboard": {
     "noteDate": null,
     "revisions": [
+      {
+        "date": "2026-07-03",
+        "hash": "cd3e88c",
+        "wordCount": 31,
+        "delta": -196,
+        "added": 31,
+        "removed": 227,
+        "diff": "[-** [[study-companion-bot|study companion]] / [[project-supervisor-bot|supervisor bot]] activity logging — decided**-] {+**Study Companion / Supervisor Bot activity logging — decided**+} [-Explicitly out of scope for now: duration/time tracking, capability-gap flagging, and vault note linking — perhaps I will pick these up later.-] [-**Study Companion - potential future direction (v2)**-] [-Current model (v1): single rolling `conversation_history`, one daily session, all activity accumulated into one context.-] [-Identified limitation: a single context flattens different threads of inquiry that may be unrelated. In practice, research work involves multiple concurrent strands (a chapter structure question, a methodology problem, a technical build issue) each potentially revisited across days, not just within one sitting.-] [-V2 direction: multi-thread model, where each distinct inquiry has its own persistent `conversation_history`, keyed by thread id. The chat UI would allow creating, naming, and navigating between threads, closer to how multiple Claude conversation tabs actually get used. Session logging in the dashboard could track per-thread rather than per-day, so the activity feed reflects what was being worked through rather than just that the bot was used.-] [-This is also the likely moment to introduce episodic memory (A-Mem) for Study Companion, already deferred to Mirror v1 — per-thread memory would make more sense than trying to apply it to one undifferentiated daily accumulation.-] [-**Dependency:** thread management UI and a refactored `conversation_history` store in `server.py`. Not a small change -- treat as a separate build after v1 is stable and tested.-] {+Explicitly out of scope for now: duration/time tracking, capability-gap flagging, and vault note linking — perhaps I will pick these up later.+}"
+      },
       {
         "date": "2026-06-30",
         "hash": "731de20",
@@ -19764,6 +19791,20 @@
         "added": 83,
         "removed": 0,
         "diff": "{+---+} {+{\"dg-publish\":true,\"permalink\":\"/pre-start-thoughts/28-11-2023-notes/\"}+} {+---+} {+I feel strongly that a big part of my work should be a critique of the current state of affairs. This critique will come from the perspective of being a member of staff and also of studying.+} {+It will pull from a lived experience of being excluded and what it potentially means to have new models that give access to things that have been historically gatekept,+} {+(what new ways of gatekeeping could be brought up/dreamt up)+} {+Foucault Knowledge and Power+}"
+      }
+    ]
+  },
+  "2026-07-03": {
+    "noteDate": "2026-07-03",
+    "revisions": [
+      {
+        "date": "2026-07-03",
+        "hash": "cd3e88c",
+        "wordCount": 0,
+        "delta": -21,
+        "added": 0,
+        "removed": 21,
+        "diff": "[-date: 2026-07-03-] [-## sessions-] [-<details>-] [-<summary>Session 1</summary>-] [-start:: 2026-07-02T19:47:28.691Z-] [-topic:: coding · debugging / working on infrastructure-] [-end:: 2026-07-03T01:28:57.822Z-] [-</details>-] [-[[learning-dashboard]]-]"
       }
     ]
   },
