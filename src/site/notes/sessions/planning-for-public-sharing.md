@@ -31,5 +31,5 @@ what feels (reasonably) ready to share with the world is the [[project-phd-live-
 
 what I do need to do very soon, is get clear about what the adjacent and relevant works are to PhD-Live, and to situate this work (this is been happening in the background, but haven't put aside time to flesh this out)
 
-additionally the [[teaching-bots]] work is also becoming more developed, but until ethics have been cleared not sure how much I can effectively talk about with this.
+additionally the [[teaching-and-learning-bots]] work is also becoming more developed, but until ethics have been cleared not sure how much I can effectively talk about with this.
 

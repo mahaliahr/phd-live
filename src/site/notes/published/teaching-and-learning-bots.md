@@ -5,7 +5,11 @@ title: teaching-bots
 tags: []
 type: ""
 ---
-[[project-supervisor-bot]]
+learning/research
+[[project-supervisor-bot|supervisor bot]]
+[[study-companion-bot]]
+
+teaching:
 [[thesis-bot]]
 [[diy-bot-creation]]
 

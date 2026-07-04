@@ -4,6 +4,10 @@
   const SUPABASE_URL = 'https://fetlnstxydhmtpzzlxur.supabase.co'
   const SUPABASE_KEY = 'sb_publishable_6iYXZtPYvCM_1i9hVmULYg_cPCV1rHw'
 
+  // Bot session terse lines (study companion / supervisor bot) are disabled
+  // pending a redesigned output — flip this back to true to re-enable.
+  const SHOW_BOT_SESSIONS = false
+
   // --- Utilities ---
 
   const rtf = new Intl.RelativeTimeFormat(undefined, { numeric: "auto" });
@@ -420,19 +424,21 @@
     const streamItems = streamTimelineItems.filter(item => Number.isFinite(item.timestampMs))
 
     timelineItems.push(...streamItems)
-    const botItems = allSessions.filter(
-      s => s.source === 'study_companion' || s.source === 'supervisor_bot'
-    )
-    botItems.forEach(s => {
-      timelineItems.push({
-        type: 'bot',
-        source: s.source,
-        started: s.start,
-        summary: s.summary,
-        status: s.status,
-        timestampMs: toUtcMs(s.start)
+    if (SHOW_BOT_SESSIONS) {
+      const botItems = allSessions.filter(
+        s => s.source === 'study_companion' || s.source === 'supervisor_bot'
+      )
+      botItems.forEach(s => {
+        timelineItems.push({
+          type: 'bot',
+          source: s.source,
+          started: s.start,
+          summary: s.summary,
+          status: s.status,
+          timestampMs: toUtcMs(s.start)
+        })
       })
-    })
+    }
 
     timelineItems.sort((a, b) => {
       const bStart = b.timestampMs

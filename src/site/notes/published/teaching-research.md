@@ -25,6 +25,6 @@ LIVE SYSTEM TAGS:
 
 overview:
 
-[[teaching-bots]]
+[[teaching-and-learning-bots]]
 
 [[student-focus-group-llm-use]] 

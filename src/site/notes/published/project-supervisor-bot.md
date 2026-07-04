@@ -21,7 +21,7 @@ aliases:
 
 ---
 
-Overarching body of work -> [[teaching-bots]]
+Overarching body of work -> [[teaching-and-learning-bots]]
 
 Developing plan of:
 - [[functionality-and-behaviour]]

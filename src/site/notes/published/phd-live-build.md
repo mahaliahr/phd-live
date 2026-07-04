@@ -21,7 +21,6 @@ description: active work - tasks pulled from the system map
 - [ ] when clicking images expand to full size
 - [ ] formatted date view in graph
 - [ ] improve canvas functionality once incorporated
-- [ ] group / organise notes more clearly
 
 
 ## this week
@@ -39,6 +38,7 @@ description: active work - tasks pulled from the system map
 
 ## done
 
+- [ ] group / organise notes more clearly
 - [ ] neaten session formatting
 - [ ] add phd proposal / research questions to homepage
 - [ ] reinstate graphscript (sidebar local graph)

@@ -4917,65 +4917,6 @@
       }
     ]
   },
-  "teaching-bots": {
-    "noteDate": null,
-    "revisions": [
-      {
-        "date": "2026-04-19",
-        "hash": "73976d2",
-        "wordCount": 0,
-        "delta": -75,
-        "added": 0,
-        "removed": 75,
-        "diff": "[-<!---] [-Quick syntax:-] [-Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...-] [-Milestone: - [ ] Thing #milestone @YYYY-MM-DD-] [-CORE TYPES:-] [-• Turn into blog post → add: type: post-] [-FEATURE & NAVIGATION TAGS:-] [-• featured      → appears in Featured section on homepage-] [-• gardenEntry   → appears as a trailhead in the Garden gateway-] [-LIVE SYSTEM TAGS:-] [-• session       → used for live sessions / work periods-] [-• daily         → daily log style notes-]"
-      },
-      {
-        "date": "2026-03-28",
-        "hash": "4e77154",
-        "wordCount": 50,
-        "delta": 3,
-        "added": 50,
-        "removed": 47,
-        "diff": "[-following the creation of [[supervisor-bot-v1-prototype]], [[thesis-bot]] and use of LLMs more broadly, I think that is of particular use to differentiate the uses of the 'bots'. The supervisor bot is being designed to mimic the traditional supervisor, which is distinctly different to brainstorming ideas with an LLM.-] {+following the creation of [[supervisor-bot-v1-prototype]], [[thesis-bot]] and use of LLMs more broadly, I think that it is of particular use to differentiate the uses of the 'bots'. The supervisor bot is being designed to mimic the traditional supervisor, which is distinctly different to brainstorming ideas with an LLM for example.+}"
-      },
-      {
-        "date": "2026-03-09",
-        "hash": "a2a7384",
-        "wordCount": 77,
-        "delta": 77,
-        "added": 77,
-        "removed": 0,
-        "diff": "{+following the creation of [[supervisor-bot-v1-prototype]], [[thesis-bot]] and use of LLMs more broadly, I think that is of particular use to differentiate the uses of the 'bots'. The supervisor bot is being designed to mimic the traditional supervisor, which is distinctly different to brainstorming ideas with an LLM.+} {+Though separate, I would like them to be all connected through a central user interface (perhaps with way to connect, not sure on what that might look like currently).+} {+![sketch](images/teaching_bots_sketch.jpeg)+}"
-      },
-      {
-        "date": "2026-02-16",
-        "hash": "bb6d60d",
-        "wordCount": 0,
-        "delta": 0,
-        "added": 0,
-        "removed": 0,
-        "diff": ""
-      },
-      {
-        "date": "2026-01-19",
-        "hash": "bb80055",
-        "wordCount": 8,
-        "delta": 1,
-        "added": 8,
-        "removed": 7,
-        "diff": "[-# title: \"\"-] [-title: <% tp.file.title.toLowerCase() %>-] {+title: teaching-bots+} {+[[project-supervisor-bot]]+} {+[[thesis-bot]]+} {+[[diy-bot-creation]]+} {+see also: [[LLM-as-personal-tutors]]+}"
-      },
-      {
-        "date": "2026-01-11",
-        "hash": "1bdddd0",
-        "wordCount": 7,
-        "delta": 5,
-        "added": 7,
-        "removed": 2,
-        "diff": "[-title: \"\"-] {+# title: \"\"+} {+title: <% tp.file.title.toLowerCase() %>+}"
-      }
-    ]
-  },
   "tanimoto-2013-evolution-of-live-programming": {
     "noteDate": null,
     "revisions": [
@@ -19794,9 +19735,32 @@
       }
     ]
   },
+  "2026-07-04": {
+    "noteDate": "2026-07-04",
+    "revisions": [
+      {
+        "date": "2026-07-04",
+        "hash": "7f2a9e1",
+        "wordCount": 22,
+        "delta": 22,
+        "added": 22,
+        "removed": 0,
+        "diff": "{+---+} {+date: 2026-07-04+} {+---+} {+## sessions+} {+<details>+} {+<summary>Session 1</summary>+} {+start:: 2026-07-03T19:41:48.313Z+} {+topic:: coding · debugging - latest feature testing+} {+end:: 2026-07-04T00:55:15.701Z+} {+</details>+}"
+      }
+    ]
+  },
   "2026-07-03": {
     "noteDate": "2026-07-03",
     "revisions": [
+      {
+        "date": "2026-07-04",
+        "hash": "7f2a9e1",
+        "wordCount": 24,
+        "delta": 24,
+        "added": 24,
+        "removed": 0,
+        "diff": "{+---+} {+date: 2026-07-03+} {+---+} {+## sessions+} {+<details>+} {+<summary>Session 1</summary>+} {+start:: 2026-07-03T16:30:44.251Z+} {+topic:: coding · working on study companion integration to dashbord+} {+end:: 2026-07-03T19:41:23.378Z+} {+</details>+}"
+      },
       {
         "date": "2026-07-03",
         "hash": "cd3e88c",
