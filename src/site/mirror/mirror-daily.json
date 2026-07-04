@@ -1,13 +1,13 @@
 {
   "files": [
     {
-      "date": "2026-07-01",
-      "raw": "---\ndate: 2026-07-01\ngenerated: 00:00\n---\n\n## notes created\n- none\n\n## notes edited\n- none\n\n## sessions\n- none\n\n## orphans flagged\n- none",
+      "date": "2026-07-03",
+      "raw": "---\ndate: 2026-07-03\ngenerated: 23:00\n---\n\n## notes created\n- [[2026-07-03]] \u2014 daily/ \u2014 20:41\n- [[learning-dashboard]] \u2014 published/ \u2014 19:29\n- [[study-companion-bot]] \u2014 published/ \u2014 19:29\n- [[phd-live-build]] \u2014 published/ \u2014 02:25\n\n## notes edited\n- none\n\n## sessions\n- study companion \u2014 01:52 \u2192 ?\n- coding \u2014 16:30 \u2192 19:41\n- study companion \u2014 18:25 \u2192 ?\n- study companion \u2014 18:58 \u2192 ?\n- study companion \u2014 19:07 \u2192 ?\n- study companion \u2014 19:11 \u2192 ?\n- study companion \u2014 19:17 \u2192 ?\n- study companion \u2014 19:30 \u2192 ?\n- study companion \u2014 19:37 \u2192 ?\n- study companion \u2014 19:39 \u2192 ?\n- coding \u2014 19:41 \u2192 ?\n- study companion \u2014 19:49 \u2192 ?\n- study companion \u2014 19:54 \u2192 ?\n- study companion \u2014 20:00 \u2192 ?\n- study companion \u2014 20:09 \u2192 ?\n\n## orphans flagged\n- [[2026-07-03]] \u2014 no backlinks",
       "parsed": {
-        "notes_created": "- none",
+        "notes_created": "- [[2026-07-03]] \u2014 daily/ \u2014 20:41\n- [[learning-dashboard]] \u2014 published/ \u2014 19:29\n- [[study-companion-bot]] \u2014 published/ \u2014 19:29\n- [[phd-live-build]] \u2014 published/ \u2014 02:25",
         "notes_edited": "- none",
-        "sessions": "- none",
-        "orphans_flagged": "- none"
+        "sessions": "- study companion \u2014 01:52 \u2192 ?\n- coding \u2014 16:30 \u2192 19:41\n- study companion \u2014 18:25 \u2192 ?\n- study companion \u2014 18:58 \u2192 ?\n- study companion \u2014 19:07 \u2192 ?\n- study companion \u2014 19:11 \u2192 ?\n- study companion \u2014 19:17 \u2192 ?\n- study companion \u2014 19:30 \u2192 ?\n- study companion \u2014 19:37 \u2192 ?\n- study companion \u2014 19:39 \u2192 ?\n- coding \u2014 19:41 \u2192 ?\n- study companion \u2014 19:49 \u2192 ?\n- study companion \u2014 19:54 \u2192 ?\n- study companion \u2014 20:00 \u2192 ?\n- study companion \u2014 20:09 \u2192 ?",
+        "orphans_flagged": "- [[2026-07-03]] \u2014 no backlinks"
       }
     }
   ]
