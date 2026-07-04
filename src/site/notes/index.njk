@@ -4,9 +4,38 @@ permalink: "/notes/"
 title: "Notes"
 dgShowSidebar: false
 ---
-{# <h1>Zettelkasten</h1> #}
-<ul class="notes-index">
-  {% for n in collections.notes %}
-    <li><a href="{{ n.url }}">{{ n.data.title | formatDailyTitle | default(n.fileSlug) }}</a></li>
-  {% endfor %}
-</ul>
+<div class="notes-columns">
+  <aside class="notes-col notes-col--daily">
+    <h2 class="notes-col-heading">daily notes</h2>
+
+    {% for group in collections.dailyNotesSidebar %}
+      <details class="daily-month-group"{% if group.open %} open{% endif %}>
+        <summary>{{ group.label }} <span class="group-count">({{ group.count }})</span></summary>
+        <ul class="daily-month-list">
+          {% for n in group.notes %}
+            <li><a href="{{ n.url }}">{{ n.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </details>
+    {% endfor %}
+
+    <p class="notes-col-footer"><a href="{{ '/notes/daily/' | url }}">all daily notes →</a></p>
+  </aside>
+
+  <div class="notes-divider" aria-hidden="true"></div>
+
+  <section class="notes-col notes-col--thematic">
+    <h2 class="notes-col-heading">notes</h2>
+
+    <ul class="thematic-note-list">
+      {% for n in collections.thematicNotes | limit(50) %}
+        <li>
+          <a href="{{ n.url }}">{{ n.title }}</a>
+          {% if n.primaryTag %}<div class="note-meta">#{{ n.primaryTag }}</div>{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+
+    <p class="notes-col-footer"><a href="{{ '/notes/all/' | url }}">all notes →</a></p>
+  </section>
+</div>

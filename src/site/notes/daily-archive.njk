@@ -1,0 +1,22 @@
+---
+layout: "index.njk"
+permalink: "/notes/daily/"
+title: "All Daily Notes"
+dgShowSidebar: false
+---
+<p class="notes-col-footer"><a href="{{ '/notes/' | url }}">← back to notes</a></p>
+
+<h1 class="notes-col-heading">all daily notes</h1>
+
+<div class="daily-archive">
+  {% for group in collections.dailyNotesArchive %}
+    <details class="daily-month-group"{% if group.open %} open{% endif %}>
+      <summary>{{ group.label }} <span class="group-count">({{ group.count }})</span></summary>
+      <ul class="daily-month-list">
+        {% for n in group.notes %}
+          <li><a href="{{ n.url }}">{{ n.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </details>
+  {% endfor %}
+</div>

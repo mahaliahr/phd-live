@@ -14,6 +14,11 @@ module.exports = {
           (data.page.fileSlug === 'index' || data.page.fileSlug === 'blog-index')) {
         return data.layout || "layouts/index.njk";
       }
+      // Structural notes-index / archive pages (not personal notes) keep their own layout.
+      const structuralIndexPages = ['/notes/index.njk', '/notes/daily-archive.njk', '/notes/all.njk'];
+      if (data.page?.inputPath && structuralIndexPages.some((p) => data.page.inputPath.endsWith(p))) {
+        return data.layout || "layouts/index.njk";
+      }
       const tags = Array.isArray(data.tags) ? data.tags : [];
       return tags.includes("gardenEntry") ? "index.njk" : "note.njk";
     },
