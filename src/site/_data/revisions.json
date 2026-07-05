@@ -31,6 +31,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-07-04",
+        "hash": "202f1e8",
+        "wordCount": 26,
+        "delta": 0,
+        "added": 26,
+        "removed": 26,
+        "diff": "[-additionally the [[teaching-bots]] work is also becoming more developed, but until ethics have been cleared not sure how much I can effectively talk about with this.-] {+additionally the [[teaching-and-learning-bots]] work is also becoming more developed, but until ethics have been cleared not sure how much I can effectively talk about with this.+}"
+      },
+      {
         "date": "2026-03-27",
         "hash": "96f3db8",
         "wordCount": 0,
@@ -4862,6 +4871,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-07-04",
+        "hash": "202f1e8",
+        "wordCount": 1,
+        "delta": 0,
+        "added": 1,
+        "removed": 1,
+        "diff": "[-[[teaching-bots]]-] {+[[teaching-and-learning-bots]]+}"
+      },
+      {
         "date": "2026-06-02",
         "hash": "84466bc",
         "wordCount": 1,
@@ -4905,6 +4923,74 @@
         "added": 0,
         "removed": 7,
         "diff": "[-# title: \"\"-] [-title: <% tp.file.title.toLowerCase() %>-]"
+      },
+      {
+        "date": "2026-01-11",
+        "hash": "1bdddd0",
+        "wordCount": 7,
+        "delta": 5,
+        "added": 7,
+        "removed": 2,
+        "diff": "[-title: \"\"-] {+# title: \"\"+} {+title: <% tp.file.title.toLowerCase() %>+}"
+      }
+    ]
+  },
+  "teaching-and-learning-bots": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-07-04",
+        "hash": "202f1e8",
+        "wordCount": 5,
+        "delta": 4,
+        "added": 5,
+        "removed": 1,
+        "diff": "[-[[project-supervisor-bot]]-] {+learning/research+} {+[[project-supervisor-bot|supervisor bot]]+} {+[[study-companion-bot]]+} {+teaching:+}"
+      },
+      {
+        "date": "2026-04-19",
+        "hash": "73976d2",
+        "wordCount": 0,
+        "delta": -75,
+        "added": 0,
+        "removed": 75,
+        "diff": "[-<!---] [-Quick syntax:-] [-Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...-] [-Milestone: - [ ] Thing #milestone @YYYY-MM-DD-] [-CORE TYPES:-] [-• Turn into blog post → add: type: post-] [-FEATURE & NAVIGATION TAGS:-] [-• featured      → appears in Featured section on homepage-] [-• gardenEntry   → appears as a trailhead in the Garden gateway-] [-LIVE SYSTEM TAGS:-] [-• session       → used for live sessions / work periods-] [-• daily         → daily log style notes-]"
+      },
+      {
+        "date": "2026-03-28",
+        "hash": "4e77154",
+        "wordCount": 50,
+        "delta": 3,
+        "added": 50,
+        "removed": 47,
+        "diff": "[-following the creation of [[supervisor-bot-v1-prototype]], [[thesis-bot]] and use of LLMs more broadly, I think that is of particular use to differentiate the uses of the 'bots'. The supervisor bot is being designed to mimic the traditional supervisor, which is distinctly different to brainstorming ideas with an LLM.-] {+following the creation of [[supervisor-bot-v1-prototype]], [[thesis-bot]] and use of LLMs more broadly, I think that it is of particular use to differentiate the uses of the 'bots'. The supervisor bot is being designed to mimic the traditional supervisor, which is distinctly different to brainstorming ideas with an LLM for example.+}"
+      },
+      {
+        "date": "2026-03-09",
+        "hash": "a2a7384",
+        "wordCount": 77,
+        "delta": 77,
+        "added": 77,
+        "removed": 0,
+        "diff": "{+following the creation of [[supervisor-bot-v1-prototype]], [[thesis-bot]] and use of LLMs more broadly, I think that is of particular use to differentiate the uses of the 'bots'. The supervisor bot is being designed to mimic the traditional supervisor, which is distinctly different to brainstorming ideas with an LLM.+} {+Though separate, I would like them to be all connected through a central user interface (perhaps with way to connect, not sure on what that might look like currently).+} {+![sketch](images/teaching_bots_sketch.jpeg)+}"
+      },
+      {
+        "date": "2026-02-16",
+        "hash": "bb6d60d",
+        "wordCount": 0,
+        "delta": 0,
+        "added": 0,
+        "removed": 0,
+        "diff": ""
+      },
+      {
+        "date": "2026-01-19",
+        "hash": "bb80055",
+        "wordCount": 8,
+        "delta": 1,
+        "added": 8,
+        "removed": 7,
+        "diff": "[-# title: \"\"-] [-title: <% tp.file.title.toLowerCase() %>-] {+title: teaching-bots+} {+[[project-supervisor-bot]]+} {+[[thesis-bot]]+} {+[[diy-bot-creation]]+} {+see also: [[LLM-as-personal-tutors]]+}"
       },
       {
         "date": "2026-01-11",
@@ -5796,6 +5882,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-07-04",
+        "hash": "202f1e8",
+        "wordCount": 10,
+        "delta": 0,
+        "added": 10,
+        "removed": 10,
+        "diff": "[-- submitted [[teaching-bots]] ethics forms on the 21st of January-] {+- submitted [[teaching-and-learning-bots]] ethics forms on the 21st of January+}"
+      },
+      {
         "date": "2026-04-13",
         "hash": "0b02c2a",
         "wordCount": 24,
@@ -6221,6 +6316,15 @@
   "study-companion-bot": {
     "noteDate": null,
     "revisions": [
+      {
+        "date": "2026-07-04",
+        "hash": "202f1e8",
+        "wordCount": 48,
+        "delta": 48,
+        "added": 48,
+        "removed": 0,
+        "diff": "{+part of the broader exploration LLM 'bots' [[teaching-and-learning-bots]]+} {+---+} {+the study companion bot works as a 'thinking partner' and a way to discuss and work through ideas. Practically this looks like the classic LLM chat interface interaction (for now, but I may iterate different kind of interaction/functionality later)+}"
+      },
       {
         "date": "2026-07-03",
         "hash": "cd3e88c",
@@ -8041,6 +8145,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-07-04",
+        "hash": "202f1e8",
+        "wordCount": 6,
+        "delta": 0,
+        "added": 6,
+        "removed": 6,
+        "diff": "[-Overarching body of work -> [[teaching-bots]]-] {+Overarching body of work -> [[teaching-and-learning-bots]]+}"
+      },
+      {
         "date": "2026-05-31",
         "hash": "5643628",
         "wordCount": 4,
@@ -9273,6 +9386,15 @@
   "phd-live-build": {
     "noteDate": null,
     "revisions": [
+      {
+        "date": "2026-07-04",
+        "hash": "202f1e8",
+        "wordCount": 9,
+        "delta": 0,
+        "added": 9,
+        "removed": 9,
+        "diff": "[-- [ ] group / organise notes more clearly-] {+- [ ] group / organise notes more clearly+}"
+      },
       {
         "date": "2026-07-03",
         "hash": "3052d58",
@@ -20447,6 +20569,15 @@
     "noteDate": "2026-03-28",
     "revisions": [
       {
+        "date": "2026-07-04",
+        "hash": "202f1e8",
+        "wordCount": 1,
+        "delta": 0,
+        "added": 1,
+        "removed": 1,
+        "diff": "[-[[teaching-bots]]-] {+[[teaching-and-learning-bots]]+}"
+      },
+      {
         "date": "2026-03-29",
         "hash": "d4df38c",
         "wordCount": 20,
@@ -20566,6 +20697,15 @@
   "2026-03-09": {
     "noteDate": "2026-03-09",
     "revisions": [
+      {
+        "date": "2026-07-04",
+        "hash": "202f1e8",
+        "wordCount": 10,
+        "delta": 0,
+        "added": 10,
+        "removed": 10,
+        "diff": "[-thinking about [[teaching-bots]] more broadly and how this might work-] {+thinking about [[teaching-and-learning-bots]] more broadly and how this might work+}"
+      },
       {
         "date": "2026-03-09",
         "hash": "a2a7384",
