@@ -1,13 +1,13 @@
 {
   "files": [
     {
-      "date": "2026-07-04",
-      "raw": "---\ndate: 2026-07-04\ngenerated: 23:00\n---\n\n## notes created\n- [[2026-07-03]] \u2014 daily/ \u2014 15:48\n- [[2026-07-04]] \u2014 daily/ \u2014 15:48\n- [[phd-live-build]] \u2014 published/ \u2014 15:48\n\n## notes edited\n- none\n\n## sessions\n- study companion \u2014 00:18 \u2192 12:08\n- study companion \u2014 11:17 \u2192 11:22\n\n## orphans flagged\n- [[2026-07-03]] \u2014 no backlinks\n- [[2026-07-04]] \u2014 no backlinks",
+      "date": "2026-07-06",
+      "raw": "---\ndate: 2026-07-06\ngenerated: 23:00\n---\n\n## notes created\n- none\n\n## notes edited\n- none\n\n## sessions\n- none\n\n## orphans flagged\n- none",
       "parsed": {
-        "notes_created": "- [[2026-07-03]] \u2014 daily/ \u2014 15:48\n- [[2026-07-04]] \u2014 daily/ \u2014 15:48\n- [[phd-live-build]] \u2014 published/ \u2014 15:48",
+        "notes_created": "- none",
         "notes_edited": "- none",
-        "sessions": "- study companion \u2014 00:18 \u2192 12:08\n- study companion \u2014 11:17 \u2192 11:22",
-        "orphans_flagged": "- [[2026-07-03]] \u2014 no backlinks\n- [[2026-07-04]] \u2014 no backlinks"
+        "sessions": "- none",
+        "orphans_flagged": "- none"
       }
     }
   ]
