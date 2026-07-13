@@ -22,6 +22,8 @@ jobs:
 
       - name: fetch latest daily mirror file
         id: fetch_daily
+        env:
+          MIRROR_SYNC_TOKEN: ${{ secrets.MIRROR_SYNC_TOKEN }}
         run: |
           python3 scripts/fetch_daily.py \
             "https://api.github.com/repos/mahaliahr/research-infrastructure/contents/mirror-outputs/daily" \
@@ -37,6 +39,8 @@ jobs:
 
       - name: fetch recent weekly mirror files
         id: fetch_weekly
+        env:
+          MIRROR_SYNC_TOKEN: ${{ secrets.MIRROR_SYNC_TOKEN }}
         run: |
           python3 scripts/fetch_weekly.py \
             "https://api.github.com/repos/mahaliahr/research-infrastructure/contents/mirror-outputs/weekly" \

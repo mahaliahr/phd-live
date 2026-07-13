@@ -4,7 +4,7 @@
   const SUPABASE_URL = 'https://fetlnstxydhmtpzzlxur.supabase.co'
   const SUPABASE_KEY = 'sb_publishable_6iYXZtPYvCM_1i9hVmULYg_cPCV1rHw'
 
-  // Bot session terse lines (study companion / supervisor bot) are disabled
+  // Bot session lines (study companion / supervisor bot) are disabled
   // pending a redesigned output — flip this back to true to re-enable.
   const SHOW_BOT_SESSIONS = false
 

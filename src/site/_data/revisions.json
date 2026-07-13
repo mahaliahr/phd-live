@@ -13,6 +13,120 @@
       }
     ]
   },
+  "kreminski-and-mateas-2021-reflective-creators": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-07-05",
+        "hash": "a2cb009",
+        "wordCount": 292,
+        "delta": 292,
+        "added": 292,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-07-05+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+[[-bibliography]]+} {+Kreminski, Max, and Michael Mateas. Reflective Creators. 2021. https://mkremins.github.io/publications/ReflectiveCreators_ICCC2021.pdf.+} {+---+} {+starting off reading this paper I wasn't sure it was going to be the most relevant as it begins in the abstract talking about 'casual creators' whhich are a specific type of 'creativity support tool' (CST) that are autotelic, process focused (intrinsically motivated) that prioritise the aesthetic experience of the creative process rather than the end product. As this description does not really align with the things that I am building for this phd, which do have purposes in service of learning and research my immediate thought was that there is not a correlation here. However the abrasct goes onto to establish the core idea which is really interesting and inspiring for me to think about.+} {+The authors introduce the idea of 'process aethesitcs' as mode of analysing different autotelic CSTs - specifically reflection - and how the presensce of this quality distinguishes it in many cases from a 'casual creator' type of CST. They distinguish this new type of tool as a 'reflective creator'.+} {+For me it's the granular breakdown of how reflection can be embedded into these tools and the idea of CSTs themselves that I have not read much about so far and which is very influential to me. The idea of autotelic process focused tools is also interesting and although I would not describe either [[research-infrastructure]] or [[project-phd-live-platform]] in this way specifically, I think there is some aspects of this idea that are present, especially as I have a personal believe that learning should be something that some wants to do and have some intrinsic enjoyment+} {+---+} {+Key terminology from this paper:+} {+[[casual-creators]]+} {+[[creativity-support-tools]]+} {+[[reflective-creators]]+}"
+      }
+    ]
+  },
+  "creativity-support-tools": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-07-05",
+        "hash": "a2cb009",
+        "wordCount": 5,
+        "delta": 3,
+        "added": 5,
+        "removed": 2,
+        "diff": "[-date-created: 2026-05-09-] {+date-created: 2026-07-05+} {+aliases:+} {+- CSTs+}"
+      },
+      {
+        "date": "2026-06-02",
+        "hash": "84466bc",
+        "wordCount": 0,
+        "delta": -75,
+        "added": 0,
+        "removed": 75,
+        "diff": "[-<!---] [-Quick syntax:-] [-Session: start:: YYYY-MM-DD HH:MM+ZZ | end:: ... | topic:: ...-] [-Milestone: - [ ] Thing #milestone @YYYY-MM-DD-] [-CORE TYPES:-] [-• Turn into blog post → add: type: post-] [-FEATURE & NAVIGATION TAGS:-] [-• featured      → appears in Featured section on homepage-] [-• gardenEntry   → appears as a trailhead in the Garden gateway-] [-LIVE SYSTEM TAGS:-] [-• session       → used for live sessions / work periods-] [-• daily         → daily log style notes-]"
+      },
+      {
+        "date": "2026-05-09",
+        "hash": "93969b9",
+        "wordCount": 78,
+        "delta": 76,
+        "added": 78,
+        "removed": 2,
+        "diff": "[-date-created: 2026-04-27-] {+date-created: 2026-05-09+} {+<!--+} {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM+ZZ | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} {+CORE TYPES:+} {+• Turn into blog post → add: type: post+} {+FEATURE & NAVIGATION TAGS:+} {+• featured      → appears in Featured section on homepage+} {+• gardenEntry   → appears as a trailhead in the Garden gateway+} {+LIVE SYSTEM TAGS:+} {+• session       → used for live sessions / work periods+} {+• daily         → daily log style notes+} {+-->+}"
+      },
+      {
+        "date": "2026-05-04",
+        "hash": "d671441",
+        "wordCount": 0,
+        "delta": 0,
+        "added": 0,
+        "removed": 0,
+        "diff": ""
+      },
+      {
+        "date": "2026-04-27",
+        "hash": "f588171",
+        "wordCount": 12,
+        "delta": 12,
+        "added": 12,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-04-27+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+}"
+      }
+    ]
+  },
+  "bot-evaluation-thinking-partnership": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-07-05",
+        "hash": "a2cb009",
+        "wordCount": 2,
+        "delta": 0,
+        "added": 2,
+        "removed": 2,
+        "diff": "[-date-created: 2026-05-09-] {+date-created: 2026-07-05+}"
+      },
+      {
+        "date": "2026-06-02",
+        "hash": "84466bc",
+        "wordCount": 0,
+        "delta": -75,
+        "added": 0,
+        "removed": 75,
+        "diff": "[-<!---] [-Quick syntax:-] [-Session: start:: YYYY-MM-DD HH:MM+ZZ | end:: ... | topic:: ...-] [-Milestone: - [ ] Thing #milestone @YYYY-MM-DD-] [-CORE TYPES:-] [-• Turn into blog post → add: type: post-] [-FEATURE & NAVIGATION TAGS:-] [-• featured      → appears in Featured section on homepage-] [-• gardenEntry   → appears as a trailhead in the Garden gateway-] [-LIVE SYSTEM TAGS:-] [-• session       → used for live sessions / work periods-] [-• daily         → daily log style notes-]"
+      },
+      {
+        "date": "2026-05-09",
+        "hash": "93969b9",
+        "wordCount": 78,
+        "delta": 76,
+        "added": 78,
+        "removed": 2,
+        "diff": "[-date-created: 2026-04-27-] {+date-created: 2026-05-09+} {+<!--+} {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM+ZZ | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} {+CORE TYPES:+} {+• Turn into blog post → add: type: post+} {+FEATURE & NAVIGATION TAGS:+} {+• featured      → appears in Featured section on homepage+} {+• gardenEntry   → appears as a trailhead in the Garden gateway+} {+LIVE SYSTEM TAGS:+} {+• session       → used for live sessions / work periods+} {+• daily         → daily log style notes+} {+-->+}"
+      },
+      {
+        "date": "2026-05-04",
+        "hash": "d671441",
+        "wordCount": 0,
+        "delta": 0,
+        "added": 0,
+        "removed": 0,
+        "diff": ""
+      },
+      {
+        "date": "2026-04-27",
+        "hash": "f588171",
+        "wordCount": 12,
+        "delta": 12,
+        "added": 12,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-04-27+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+}"
+      }
+    ]
+  },
   "abstract-shortened": {
     "noteDate": null,
     "revisions": [
@@ -2407,6 +2521,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-07-05",
+        "hash": "a2cb009",
+        "wordCount": 1,
+        "delta": 1,
+        "added": 1,
+        "removed": 0,
+        "diff": "{+[[kreminski-and-mateas-2021-reflective-creators]]+}"
+      },
+      {
         "date": "2026-06-16",
         "hash": "9e5881a",
         "wordCount": 1,
@@ -2519,6 +2642,15 @@
   "bibliography": {
     "noteDate": null,
     "revisions": [
+      {
+        "date": "2026-07-05",
+        "hash": "a2cb009",
+        "wordCount": 1,
+        "delta": 1,
+        "added": 1,
+        "removed": 0,
+        "diff": "{+[[kreminski-and-mateas-2021-reflective-creators]]+}"
+      },
       {
         "date": "2026-06-16",
         "hash": "9e5881a",
@@ -6316,6 +6448,15 @@
   "study-companion-bot": {
     "noteDate": null,
     "revisions": [
+      {
+        "date": "2026-07-05",
+        "hash": "a2cb009",
+        "wordCount": 75,
+        "delta": 28,
+        "added": 75,
+        "removed": 47,
+        "diff": "[-part of the broader exploration LLM 'bots' [[teaching-and-learning-bots]]-] {+- part of the broader exploration LLM 'bots' [[teaching-and-learning-bots]]+} {+- integrates into my personal [[research-infrastructure]]+} [-the study companion bot works as a 'thinking partner' and a way to discuss and work through ideas. Practically this looks like the classic LLM chat interface interaction (for now, but I may iterate different kind of interaction/functionality later)-] {+the study companion bot works as a 'thinking partner' and a way to discuss and work through ideas. Practically this looks like the classic LLM chat interface interaction (for now, but I may iterate different kind of interaction/functionality later)+} {+initial tests show that local models whilst performing quite well, do not compare comparatively to being a good 'thinking partner'+} {+[[bot-evaluation-thinking-partnership]]+}"
+      },
       {
         "date": "2026-07-04",
         "hash": "202f1e8",
@@ -19854,6 +19995,20 @@
         "added": 83,
         "removed": 0,
         "diff": "{+---+} {+{\"dg-publish\":true,\"permalink\":\"/pre-start-thoughts/28-11-2023-notes/\"}+} {+---+} {+I feel strongly that a big part of my work should be a critique of the current state of affairs. This critique will come from the perspective of being a member of staff and also of studying.+} {+It will pull from a lived experience of being excluded and what it potentially means to have new models that give access to things that have been historically gatekept,+} {+(what new ways of gatekeeping could be brought up/dreamt up)+} {+Foucault Knowledge and Power+}"
+      }
+    ]
+  },
+  "2026-07-05": {
+    "noteDate": "2026-07-05",
+    "revisions": [
+      {
+        "date": "2026-07-05",
+        "hash": "a2cb009",
+        "wordCount": 93,
+        "delta": 93,
+        "added": 93,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+visibility: public+} {+title: 2026-07-05+} {+tags:+} {+- daily+} {+- stream+} {+---+} {+I am reading this paper [[kreminski-and-mateas-2021-reflective-creators]] that is great as it's putting into words to a lot of things that I have been exploring (implicitly) through the building of the core infrastructure of this research and aligns it with wider key thinkers and termionology that is critical. It's also gving me ideas on how to potentially extend aspects of the [[research-infrastructure|research infrastructure]] /[[project-phd-live-platform|phd-live platform]]+} {+## sessions+} {+<details>+} {+<summary>Session 1</summary>+} {+start:: 2026-07-05T13:29:40.466Z+} {+topic:: reading · reading and notes+} {+end:: 2026-07-05T15:07:37.303Z+} {+</details>+}"
       }
     ]
   },
