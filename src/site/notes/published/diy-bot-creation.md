@@ -21,6 +21,10 @@ I can develop further what that actually is through Supervisor Bot iterations an
 
 Maybe I can do an ideation workshop about what this might look like?
 
+what aspects of my workflow can transfer for this workshop scenario
+
+What do I want to test or learn from doing this 
+
 what are the key objectives that I want to achieve through this project?
 
 - physical intermediary devices that can assist in the process of learning or delivering work

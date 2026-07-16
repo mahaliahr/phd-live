@@ -1,4 +1,18 @@
 {
+  "neustaedter-and-sengers-2012-autobiographical-design": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-07-13",
+        "hash": "d4d3238",
+        "wordCount": 34,
+        "delta": 34,
+        "added": 34,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-07-12+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+Neustaedter, Carman, and Phoebe Sengers. “Autobiographical Design: What You Can Learn from Designing for Yourself.” Interactions 19, no. 6 (2012): 28–33. https://doi.org/10.1145/2377783.2377791.+}"
+      }
+    ]
+  },
   "mirror-v0": {
     "noteDate": null,
     "revisions": [
@@ -19995,6 +20009,20 @@
         "added": 83,
         "removed": 0,
         "diff": "{+---+} {+{\"dg-publish\":true,\"permalink\":\"/pre-start-thoughts/28-11-2023-notes/\"}+} {+---+} {+I feel strongly that a big part of my work should be a critique of the current state of affairs. This critique will come from the perspective of being a member of staff and also of studying.+} {+It will pull from a lived experience of being excluded and what it potentially means to have new models that give access to things that have been historically gatekept,+} {+(what new ways of gatekeeping could be brought up/dreamt up)+} {+Foucault Knowledge and Power+}"
+      }
+    ]
+  },
+  "2026-07-12": {
+    "noteDate": "2026-07-12",
+    "revisions": [
+      {
+        "date": "2026-07-13",
+        "hash": "d4d3238",
+        "wordCount": 64,
+        "delta": 64,
+        "added": 64,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+visibility: public+} {+title: 2026-07-12+} {+tags:+} {+- daily+} {+- stream+} {+---+} {+I read this paper [[neustaedter-and-sengers-2012-autobiographical-design]], which is super interesting and describes in principal the way that I have been approaching designing the [[confirmation-requirements|confirmation]], it's useful to have this framing. Moving into writing for the confirmation, I need to differentiate and be clear about how autobiographical design and [[autoethnography]] work side-by-side/ together.+}"
       }
     ]
   },
