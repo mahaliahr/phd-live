@@ -1,0 +1,122 @@
+filters:
+  and:
+    - file.inFolder("bibliography")
+    - '!file.inFolder("bibliography/_archive")'
+formulas:
+  read_icon: if(read == "Done", "✅ Done", if(read == "In progress", "🟡 In progress", "⬜ Not started"))
+properties:
+  read:
+    displayName: Read?
+  priority:
+    displayName: Priority
+  theme:
+    displayName: Theme
+  type:
+    displayName: Type
+  year:
+    displayName: Year
+  authors:
+    displayName: Authors
+  url:
+    displayName: URL
+  formula.read_icon:
+    displayName: Status
+views:
+  - type: table
+    name: All
+    order:
+      - file.name
+      - read
+      - priority
+      - theme
+      - type
+      - year
+      - authors
+      - url
+    sort: []
+  - type: table
+    name: Grouped by status
+    groupBy:
+      property: read
+      direction: ASC
+    order:
+      - file.name
+      - priority
+      - theme
+      - type
+      - year
+      - authors
+      - url
+  - type: table
+    name: Grouped by theme
+    groupBy:
+      property: theme
+      direction: ASC
+    order:
+      - file.name
+      - read
+      - priority
+      - type
+      - year
+      - authors
+      - url
+  - type: table
+    name: Books
+    filters:
+      and:
+        - type == "book"
+    order:
+      - file.name
+      - read
+      - priority
+      - theme
+      - year
+      - authors
+      - url
+  - type: table
+    name: Articles
+    filters:
+      and:
+        - or:
+            - type == "journal-article"
+            - type == "newspaper-article"
+            - type == "magazine-article"
+            - type == "conference-paper"
+            - type == "preprint"
+    order:
+      - file.name
+      - read
+      - priority
+      - theme
+      - type
+      - year
+      - authors
+      - url
+  - type: table
+    name: Film + TV
+    filters:
+      and:
+        - or:
+            - type == "video-recording"
+            - type == "podcast"
+    order:
+      - file.name
+      - read
+      - priority
+      - theme
+      - year
+      - authors
+      - url
+  - type: table
+    name: Finished list
+    filters:
+      and:
+        - read == "Done"
+    order:
+      - file.name
+      - priority
+      - theme
+      - type
+      - year
+      - authors
+      - url

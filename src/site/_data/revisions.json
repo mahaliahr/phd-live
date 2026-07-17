@@ -1,160 +1,4 @@
 {
-  "neustaedter-and-sengers-2012-autobiographical-design": {
-    "noteDate": null,
-    "revisions": [
-      {
-        "date": "2026-07-13",
-        "hash": "d4d3238",
-        "wordCount": 34,
-        "delta": 34,
-        "added": 34,
-        "removed": 0,
-        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-07-12+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+Neustaedter, Carman, and Phoebe Sengers. “Autobiographical Design: What You Can Learn from Designing for Yourself.” Interactions 19, no. 6 (2012): 28–33. https://doi.org/10.1145/2377783.2377791.+}"
-      }
-    ]
-  },
-  "mirror-v0": {
-    "noteDate": null,
-    "revisions": [
-      {
-        "date": "2026-06-28",
-        "hash": "72c85c5",
-        "wordCount": 645,
-        "delta": 645,
-        "added": 645,
-        "removed": 0,
-        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-06-28+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+## structure (daily and weekly)+} {+### daily (runs at midnight via cron)+} {+purely observational. no llm involved.+} {+collects:+} {+- notes created (new .md files in vault)+} {+- notes edited (modified timestamps)+} {+- sessions that occurred (from session data)+} {+- orphan notes flagged (notes with no backlinks, detected that day)+} {+writes to: `mirror-outputs/daily/YYYY-MM-DD.md` (outside vault, in research-infrastructure repo or dedicated folder)+} {+if no activity: writes a minimal dated file recording the absence. absence is data.+} {+---+} {+### weekly (runs sunday midnight via cron)+} {+draws on: all seven daily files for the window + a fresh chromadb pass over vault activity for the week.+} {+**structured operations (no llm):**+} {+- frequency/recurrence counts: tags, links, phrases appearing most across the week's notes+} {+- notes created/edited this week, lightly grouped by folder/topic+} {+- orphans accumulating across the week+} {+**llm synthesis (local model -- qwen2.5:32b recommended, llama3.3:70b as fallback):**+} {+two passes, both shown with their grounding data visible in the output so the ai's reasoning is transparent and auditable.+} {+pass 1 -- synthesis statement:+} {+- input: top recurring terms, orphan list, notes created/edited this week (titles and folders)+} {+- output: a short paragraph describing what the week's notes seem to be circling around+} {+- the grounding data is displayed alongside the statement in the output (not hidden)+} {+pass 2 -- single generated reflective prompt:+} {+- input: the synthesis statement just produced + top recurring terms + orphan list+} {+- instruction to model: \"generate one specific question grounded in the above. name actual notes, terms, or patterns you can see in the data. do not ask generic reflective questions.\"+} {+- output: one question only+} {+- specificity constraint does significant work regardless of model quality -- the model follows the instruction rather than needing to be clever+} {+- if the prompt misses it costs little; one question is easier to ignore than three and less damaging when it fails+} {+**on model quality for this task:** the bar is not a brilliant insight -- it is a prompt that causes a momentary pause rather than being skipped. that is achievable with qwen2.5:32b given well-prepared, constrained input. if generated prompts are consistently poor after testing, this moves to v1 and is replaced with no prompt (synthesis statement only) in v0.+} {+writes to: `mirror-outputs/weekly/YYYY-WNN.md`+} {+---+} {+## output format+} {+dated markdown files in `mirror-outputs/` folder. outside the vault. not indexed by obsidian. readable by you; you decide what if anything comes back into the vault. the act of curation is yours.+} {+folder structure:+} {+```+} {+mirror-outputs/+} {+daily/+} {+2026-06-23.md+} {+2026-06-24.md+} {+...+} {+weekly/+} {+2026-W26.md+} {+2026-W27.md+} {+...+} {+```+} {+---+} {+## interface integration+} {+### phd-live+} {+mirror surfaces via a toggle on the existing live column (not a separate page). toggling switches the live column into mirror mode.+} {+mirror mode shows:+} {+- most recent daily digest+} {+- most recent weekly digest+} {+- history of past digests (scroll)+} {+### learning dashboard (react/vite)+} {+mirror gets its own tab in the existing dashboard.+} {+dashboard tab shows:+} {+- daily digest feed+} {+- weekly digest with pattern outputs and reflective prompts visible+} {+---+} {+## cron jobs+} {+```+} {+# daily mirror run -- midnight+} {+0 0 * * * /path/to/mirror/run_daily.sh+} {+# weekly mirror run -- sunday midnight+} {+0 0 * * 0 /path/to/mirror/run_weekly.sh+} {+```+} {+---+} {+## explicitly out of scope for v0+} {+- bot activity logging (next todo after v0)+} {+- episodic/a-mem style memory (v1 consideration -- simple append log approach most likely)+} {+- frontier model access+} {+- vault write access (permanent constraint, not a v0 limitation)+} {+- fine-tuning local models for mirror tasks+} {+---+} {+## local model notes+} {+qwen2.5:32b: recommended for weekly synthesis -- good balance of capability and speed on 32gb ram. llama3.3:70b-instruct-q4_K_M: stronger reasoning, significantly slower -- use if weekly run timing allows. the quality gap relative to frontier models is documented and framed as a research finding (consistent with study companion precedent).+} {+---+}"
-      }
-    ]
-  },
-  "kreminski-and-mateas-2021-reflective-creators": {
-    "noteDate": null,
-    "revisions": [
-      {
-        "date": "2026-07-05",
-        "hash": "a2cb009",
-        "wordCount": 292,
-        "delta": 292,
-        "added": 292,
-        "removed": 0,
-        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-07-05+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+[[-bibliography]]+} {+Kreminski, Max, and Michael Mateas. Reflective Creators. 2021. https://mkremins.github.io/publications/ReflectiveCreators_ICCC2021.pdf.+} {+---+} {+starting off reading this paper I wasn't sure it was going to be the most relevant as it begins in the abstract talking about 'casual creators' whhich are a specific type of 'creativity support tool' (CST) that are autotelic, process focused (intrinsically motivated) that prioritise the aesthetic experience of the creative process rather than the end product. As this description does not really align with the things that I am building for this phd, which do have purposes in service of learning and research my immediate thought was that there is not a correlation here. However the abrasct goes onto to establish the core idea which is really interesting and inspiring for me to think about.+} {+The authors introduce the idea of 'process aethesitcs' as mode of analysing different autotelic CSTs - specifically reflection - and how the presensce of this quality distinguishes it in many cases from a 'casual creator' type of CST. They distinguish this new type of tool as a 'reflective creator'.+} {+For me it's the granular breakdown of how reflection can be embedded into these tools and the idea of CSTs themselves that I have not read much about so far and which is very influential to me. The idea of autotelic process focused tools is also interesting and although I would not describe either [[research-infrastructure]] or [[project-phd-live-platform]] in this way specifically, I think there is some aspects of this idea that are present, especially as I have a personal believe that learning should be something that some wants to do and have some intrinsic enjoyment+} {+---+} {+Key terminology from this paper:+} {+[[casual-creators]]+} {+[[creativity-support-tools]]+} {+[[reflective-creators]]+}"
-      }
-    ]
-  },
-  "creativity-support-tools": {
-    "noteDate": null,
-    "revisions": [
-      {
-        "date": "2026-07-05",
-        "hash": "a2cb009",
-        "wordCount": 5,
-        "delta": 3,
-        "added": 5,
-        "removed": 2,
-        "diff": "[-date-created: 2026-05-09-] {+date-created: 2026-07-05+} {+aliases:+} {+- CSTs+}"
-      },
-      {
-        "date": "2026-06-02",
-        "hash": "84466bc",
-        "wordCount": 0,
-        "delta": -75,
-        "added": 0,
-        "removed": 75,
-        "diff": "[-<!---] [-Quick syntax:-] [-Session: start:: YYYY-MM-DD HH:MM+ZZ | end:: ... | topic:: ...-] [-Milestone: - [ ] Thing #milestone @YYYY-MM-DD-] [-CORE TYPES:-] [-• Turn into blog post → add: type: post-] [-FEATURE & NAVIGATION TAGS:-] [-• featured      → appears in Featured section on homepage-] [-• gardenEntry   → appears as a trailhead in the Garden gateway-] [-LIVE SYSTEM TAGS:-] [-• session       → used for live sessions / work periods-] [-• daily         → daily log style notes-]"
-      },
-      {
-        "date": "2026-05-09",
-        "hash": "93969b9",
-        "wordCount": 78,
-        "delta": 76,
-        "added": 78,
-        "removed": 2,
-        "diff": "[-date-created: 2026-04-27-] {+date-created: 2026-05-09+} {+<!--+} {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM+ZZ | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} {+CORE TYPES:+} {+• Turn into blog post → add: type: post+} {+FEATURE & NAVIGATION TAGS:+} {+• featured      → appears in Featured section on homepage+} {+• gardenEntry   → appears as a trailhead in the Garden gateway+} {+LIVE SYSTEM TAGS:+} {+• session       → used for live sessions / work periods+} {+• daily         → daily log style notes+} {+-->+}"
-      },
-      {
-        "date": "2026-05-04",
-        "hash": "d671441",
-        "wordCount": 0,
-        "delta": 0,
-        "added": 0,
-        "removed": 0,
-        "diff": ""
-      },
-      {
-        "date": "2026-04-27",
-        "hash": "f588171",
-        "wordCount": 12,
-        "delta": 12,
-        "added": 12,
-        "removed": 0,
-        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-04-27+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+}"
-      }
-    ]
-  },
-  "bot-evaluation-thinking-partnership": {
-    "noteDate": null,
-    "revisions": [
-      {
-        "date": "2026-07-05",
-        "hash": "a2cb009",
-        "wordCount": 2,
-        "delta": 0,
-        "added": 2,
-        "removed": 2,
-        "diff": "[-date-created: 2026-05-09-] {+date-created: 2026-07-05+}"
-      },
-      {
-        "date": "2026-06-02",
-        "hash": "84466bc",
-        "wordCount": 0,
-        "delta": -75,
-        "added": 0,
-        "removed": 75,
-        "diff": "[-<!---] [-Quick syntax:-] [-Session: start:: YYYY-MM-DD HH:MM+ZZ | end:: ... | topic:: ...-] [-Milestone: - [ ] Thing #milestone @YYYY-MM-DD-] [-CORE TYPES:-] [-• Turn into blog post → add: type: post-] [-FEATURE & NAVIGATION TAGS:-] [-• featured      → appears in Featured section on homepage-] [-• gardenEntry   → appears as a trailhead in the Garden gateway-] [-LIVE SYSTEM TAGS:-] [-• session       → used for live sessions / work periods-] [-• daily         → daily log style notes-]"
-      },
-      {
-        "date": "2026-05-09",
-        "hash": "93969b9",
-        "wordCount": 78,
-        "delta": 76,
-        "added": 78,
-        "removed": 2,
-        "diff": "[-date-created: 2026-04-27-] {+date-created: 2026-05-09+} {+<!--+} {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM+ZZ | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} {+CORE TYPES:+} {+• Turn into blog post → add: type: post+} {+FEATURE & NAVIGATION TAGS:+} {+• featured      → appears in Featured section on homepage+} {+• gardenEntry   → appears as a trailhead in the Garden gateway+} {+LIVE SYSTEM TAGS:+} {+• session       → used for live sessions / work periods+} {+• daily         → daily log style notes+} {+-->+}"
-      },
-      {
-        "date": "2026-05-04",
-        "hash": "d671441",
-        "wordCount": 0,
-        "delta": 0,
-        "added": 0,
-        "removed": 0,
-        "diff": ""
-      },
-      {
-        "date": "2026-04-27",
-        "hash": "f588171",
-        "wordCount": 12,
-        "delta": 12,
-        "added": 12,
-        "removed": 0,
-        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-04-27+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+}"
-      }
-    ]
-  },
-  "abstract-shortened": {
-    "noteDate": null,
-    "revisions": [
-      {
-        "date": "2026-06-30",
-        "hash": "731de20",
-        "wordCount": 138,
-        "delta": 138,
-        "added": 138,
-        "removed": 0,
-        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-06-30+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+This PhD research asks what gets lost when generative AI tools compress creative and intellectual process into polished, swift outputs — and explores whether a different relationship with these systems is possible. By building a personalised research infrastructure that uses the researcher's own data to enrich the system, the investigation starts within their own practice. Core artefacts include 'PhD-Live', a public research environment that keeps doctoral thinking visible and in-process, alongside a suite of local AI tools (including a 'Supervisor Bot' and 'Study Companion'). The work treats building as a primary mode of inquiry, using the gaps and failures of the infrastructure as much as its successes to ask what more exploratory, personalised relationships with AI might look like in education and creative practice.+} {+----+} {+[[abstract-work-in-progress]]+}"
-      }
-    ]
-  },
   "planning-for-public-sharing": {
     "noteDate": null,
     "revisions": [
@@ -2969,6 +2813,15 @@
   "writing-plan": {
     "noteDate": null,
     "revisions": [
+      {
+        "date": "2026-07-16",
+        "hash": "8c18129",
+        "wordCount": 108,
+        "delta": -33,
+        "added": 108,
+        "removed": 141,
+        "diff": "[-<!---] [-Quick syntax:-] [-Session: start:: YYYY-MM-DD HH:MM | end:: ... | topic:: ...-] [-Milestone: - [ ] Thing #milestone @YYYY-MM-DD-] [-CORE TYPES:-] [-• Turn into blog post → add: type: post-] [-FEATURE & NAVIGATION TAGS:-] [-• featured      → appears in Featured section on homepage-] [-• gardenEntry   → appears as a trailhead in the Garden gateway-] [-LIVE SYSTEM TAGS:-] [-• session       → used for live sessions / work periods-] [-• daily         → daily log style notes-] [-- how do I define possibility spaces for the purposes of this research? (as outlined in my phd proposal [[phd-title-and-subject-area]]) this I feel can feed into the development of [[project-phd-live-platform]] as a type of platform (and space) ?-] {+- how do I define possibility spaces for the purposes of this research? (as outlined in my phd proposal [[phd-title-and-subject-area]]) this I feel can feed into the development of [[project-phd-live-platform]] as a type of platform (and space) ?]+} {+update:  my doctoral symposium talk work helped my start to refine this further [[ual-doctoral-symposium-summer26|ual-doctoral-symposium]]+} [-- exploring my personal vantage point on all this, my positionality and get clearer on how I hope to employ an autoethnographic practice within this research -> [[my-positionality]]-] {+- [ ] write a position statement about my position on LLMs and why I am doing this research [[position-statement]]+} {+- subsumes what I previously said I would write: exploring my personal vantage point on all this, my positionality and get clearer on how I hope to employ an autoethnographic practice within this research -> [[my-positionality]]+}"
+      },
       {
         "date": "2026-05-04",
         "hash": "883c712",
@@ -13389,6 +13242,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-07-16",
+        "hash": "8c18129",
+        "wordCount": 22,
+        "delta": 22,
+        "added": 22,
+        "removed": 0,
+        "diff": "{+what aspects of my workflow can transfer for this workshop scenario+} {+What do I want to test or learn from doing this+}"
+      },
+      {
         "date": "2026-06-15",
         "hash": "3abb84f",
         "wordCount": 76,
@@ -15787,6 +15649,15 @@
   "agentic-ai": {
     "noteDate": null,
     "revisions": [
+      {
+        "date": "2026-07-16",
+        "hash": "8c18129",
+        "wordCount": 0,
+        "delta": -75,
+        "added": 0,
+        "removed": 75,
+        "diff": "[-<!---] [-Quick syntax:-] [-Session: start:: YYYY-MM-DD HH:MM+ZZ | end:: ... | topic:: ...-] [-Milestone: - [ ] Thing #milestone @YYYY-MM-DD-] [-CORE TYPES:-] [-• Turn into blog post → add: type: post-] [-FEATURE & NAVIGATION TAGS:-] [-• featured      → appears in Featured section on homepage-] [-• gardenEntry   → appears as a trailhead in the Garden gateway-] [-LIVE SYSTEM TAGS:-] [-• session       → used for live sessions / work periods-] [-• daily         → daily log style notes-]"
+      },
       {
         "date": "2026-04-27",
         "hash": "f588171",
@@ -20009,6 +19880,20 @@
         "added": 83,
         "removed": 0,
         "diff": "{+---+} {+{\"dg-publish\":true,\"permalink\":\"/pre-start-thoughts/28-11-2023-notes/\"}+} {+---+} {+I feel strongly that a big part of my work should be a critique of the current state of affairs. This critique will come from the perspective of being a member of staff and also of studying.+} {+It will pull from a lived experience of being excluded and what it potentially means to have new models that give access to things that have been historically gatekept,+} {+(what new ways of gatekeeping could be brought up/dreamt up)+} {+Foucault Knowledge and Power+}"
+      }
+    ]
+  },
+  "2026-07-16": {
+    "noteDate": "2026-07-16",
+    "revisions": [
+      {
+        "date": "2026-07-16",
+        "hash": "8c18129",
+        "wordCount": 191,
+        "delta": 191,
+        "added": 191,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+visibility: public+} {+title: 2026-07-16+} {+tags:+} {+- daily+} {+- stream+} {+---+} {+<!--+} {+Daily note template (PhD-Live)+} {+Stream line syntax:+} {+- HH:MM something you did+} {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM+ZZ | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} {+-->+} {+<details>+} {+<summary>Session</summary>+} {+start:: 2026-07-16T14:06:31+0100+} {+topic::+} {+</details>+} {+today's work centres around beginning my  [[position-statement]], I also think regarding the confirmation doc first draft, it's probably good to start working up the [[glossary-index]].+} {+- 17:42 I am becoming increasingly interested in people and communities that build their own tech and infrastructure, such as recently the cyberdeck boom (I have always been interested, but I mean specifically here in the domain of this research). This to me feels like the counter movement to the AI boom at the moment (potentially) an it aligns with my approach of making so far in this research+} {+- 17:45 for my confirmation doc, is there a way to bring tangible elements of this site into the document in some way??+} {+## sessions+} {+<details>+} {+<summary>Session 1</summary>+} {+start:: 2026-07-16T12:59:49.008Z+} {+topic:: writing · what is my position in regards to this research?+} {+end:: 2026-07-16T17:28:25.948Z+} {+</details>+}"
       }
     ]
   },

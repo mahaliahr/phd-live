@@ -24,7 +24,7 @@ this work has lead me to understand that this learning dashboard, is in fact not
 
 the first behaviour I set up was the logging of activity -- I wanted there to be an easier way to capture a session that only in obsidian
 
-![learning dashboard first iteration](learning-dashboard-v0.png)
+![learning dashboard first iteration](published/learning-dashboard-v0.png)
 
 Then I brought in the Mirror element as this is a vital part of the [[research-infrastructure]] (particularly on the [[project-phd-live-platform|phd-live platform]]) that was missing. 
 
@@ -34,7 +34,7 @@ But how I capture this is not immediately straightforward - what are the core as
 
 I decided the any time or duration is not so important as the already established session logging captures this to a certain degree, rather what is being discussed or worked through with the bots is the important thing.
 
-![bot summary sketch](bot-summaries-sketch.jpeg)
+![bot summary sketch](published/bot-summaries-sketch.jpeg)
 
 **Study Companion / Supervisor Bot activity logging — decided**
 
