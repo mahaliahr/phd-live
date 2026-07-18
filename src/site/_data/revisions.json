@@ -8865,6 +8865,29 @@
       }
     ]
   },
+  "position-statement": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 0,
+        "delta": 0,
+        "added": 0,
+        "removed": 0,
+        "diff": ""
+      },
+      {
+        "date": "2026-07-16",
+        "hash": "8c18129",
+        "wordCount": 582,
+        "delta": 582,
+        "added": 582,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-07-16+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+(perhaps I should frame this as my nuance 'in the middle' take, not pro AI and not anti AI)+} {+STREAM OF CONSCIOUSNESS:+} {+my take on LLMs and why I think its important to engage with:+} {+'tech bros' / industry has always been difficult space to get into. Often alienating and not inclusive. This is broadly speaking, but also what I have experience myself personally as some coming into the scene not from a computer science or engineering backgorund.+} {+this impenetrability too extends to academia+} {+what LLMs seem to show is that is allows many people access skills ans capacities that they might otherwise have struggled with [[karpathy-2025-power-to-the-people]].+} {+At the moment and since the LLM boom, it's clear that there is this is this race for dominance by the major tech corporations, this is resulting in many products being developed, but also in this way where AI is being shoved into every application and the public is being forced to engage with this in a way that they never consented to. In the educational domain I see this happening in different initiatives being set up ([[open-ai-anthropic-education-partnerships]] [[gemini-google-ai-education]]). Though this is often done in collaboration with academic institutions, this to me is an overstep, a situation where these companies financially want to make a claim, before its even clear the full impacts of these technolgies on education, there is a soverignty issue here almost like the collective knowledge and expertise of the people in these systems can be funneled into the tech organisations (data).+} {+my thoughts in response to the sentiments  / understanding that AI is bad:+} {+the technology is not inherently bad, fundamentally it is just computation, an algorithmic system and I think it's important to stay grounded in that reality. However the myths, narratives and material impacts of the pursuit of this continuing pursuit of this technology is somehting that is causing many harms - particularly becasue the people that hold the greatest influence are these major corporations driven by a small community of very wealthy powerful people. They developand push the main narratives that drive the adoption and development of this technoogical progress.+} {+the infrastructure materially and foundationally of the commercial AI tools and giant tech companies is exploitative ([[hao-empire-of-AI-2025]] & Atlas of AI).+} {+As a society of peopl I believe we need agency to claim ownership on what 'AI' means. As a medium that will potentially be embedded into everything tech device, interface or platform it becomes like a membrane surrounding everything. As such we should have a level of understanding and agency on how we build or implement and integrate these things into our lives.+} {+the impact so far has shown that these systems have impacts on how we think ([[cheng-et-al-sychophantic-AI-promotes-dependency]] & [[malmqvist-sychophancy-llm-causes-and-mitigation]]) so therefore this is something to think carefully about, particularly in the realm of education.+} {+my thoughts about utilising live coding as a method in this research (acknowledging the displeasure of many in the community regarding LLMs)+} {+live coding for me was my real 'initiation' into the tech scene, as mentioned having not studied this at university (the first time), and having come from an art and design background, all of my exposure to tech from 2013 was self taught, but when I encountered the livecoding scence I felt for the first time that I felt a practice and ethos that really excited and made me feel included and accepted (regardless of my background).+}"
+      }
+    ]
+  },
   "play-is-the-work-of-operating-a-system": {
     "noteDate": null,
     "revisions": [
@@ -10449,6 +10472,29 @@
       }
     ]
   },
+  "neustaedter-and-sengers-2012-autobiographical-design": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 0,
+        "delta": 0,
+        "added": 0,
+        "removed": 0,
+        "diff": ""
+      },
+      {
+        "date": "2026-07-13",
+        "hash": "d4d3238",
+        "wordCount": 34,
+        "delta": 34,
+        "added": 34,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-07-12+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+Neustaedter, Carman, and Phoebe Sengers. “Autobiographical Design: What You Can Learn from Designing for Yourself.” Interactions 19, no. 6 (2012): 28–33. https://doi.org/10.1145/2377783.2377791.+}"
+      }
+    ]
+  },
   "my-thoughts-on-illinois-chat": {
     "noteDate": null,
     "revisions": [
@@ -10804,6 +10850,29 @@
         "added": 7,
         "removed": 2,
         "diff": "[-title: \"\"-] {+# title: \"\"+} {+title: <% tp.file.title.toLowerCase() %>+}"
+      }
+    ]
+  },
+  "mirror-v0": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 0,
+        "delta": 0,
+        "added": 0,
+        "removed": 0,
+        "diff": ""
+      },
+      {
+        "date": "2026-06-28",
+        "hash": "72c85c5",
+        "wordCount": 645,
+        "delta": 645,
+        "added": 645,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-06-28+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+## structure (daily and weekly)+} {+### daily (runs at midnight via cron)+} {+purely observational. no llm involved.+} {+collects:+} {+- notes created (new .md files in vault)+} {+- notes edited (modified timestamps)+} {+- sessions that occurred (from session data)+} {+- orphan notes flagged (notes with no backlinks, detected that day)+} {+writes to: `mirror-outputs/daily/YYYY-MM-DD.md` (outside vault, in research-infrastructure repo or dedicated folder)+} {+if no activity: writes a minimal dated file recording the absence. absence is data.+} {+---+} {+### weekly (runs sunday midnight via cron)+} {+draws on: all seven daily files for the window + a fresh chromadb pass over vault activity for the week.+} {+**structured operations (no llm):**+} {+- frequency/recurrence counts: tags, links, phrases appearing most across the week's notes+} {+- notes created/edited this week, lightly grouped by folder/topic+} {+- orphans accumulating across the week+} {+**llm synthesis (local model -- qwen2.5:32b recommended, llama3.3:70b as fallback):**+} {+two passes, both shown with their grounding data visible in the output so the ai's reasoning is transparent and auditable.+} {+pass 1 -- synthesis statement:+} {+- input: top recurring terms, orphan list, notes created/edited this week (titles and folders)+} {+- output: a short paragraph describing what the week's notes seem to be circling around+} {+- the grounding data is displayed alongside the statement in the output (not hidden)+} {+pass 2 -- single generated reflective prompt:+} {+- input: the synthesis statement just produced + top recurring terms + orphan list+} {+- instruction to model: \"generate one specific question grounded in the above. name actual notes, terms, or patterns you can see in the data. do not ask generic reflective questions.\"+} {+- output: one question only+} {+- specificity constraint does significant work regardless of model quality -- the model follows the instruction rather than needing to be clever+} {+- if the prompt misses it costs little; one question is easier to ignore than three and less damaging when it fails+} {+**on model quality for this task:** the bar is not a brilliant insight -- it is a prompt that causes a momentary pause rather than being skipped. that is achievable with qwen2.5:32b given well-prepared, constrained input. if generated prompts are consistently poor after testing, this moves to v1 and is replaced with no prompt (synthesis statement only) in v0.+} {+writes to: `mirror-outputs/weekly/YYYY-WNN.md`+} {+---+} {+## output format+} {+dated markdown files in `mirror-outputs/` folder. outside the vault. not indexed by obsidian. readable by you; you decide what if anything comes back into the vault. the act of curation is yours.+} {+folder structure:+} {+```+} {+mirror-outputs/+} {+daily/+} {+2026-06-23.md+} {+2026-06-24.md+} {+...+} {+weekly/+} {+2026-W26.md+} {+2026-W27.md+} {+...+} {+```+} {+---+} {+## interface integration+} {+### phd-live+} {+mirror surfaces via a toggle on the existing live column (not a separate page). toggling switches the live column into mirror mode.+} {+mirror mode shows:+} {+- most recent daily digest+} {+- most recent weekly digest+} {+- history of past digests (scroll)+} {+### learning dashboard (react/vite)+} {+mirror gets its own tab in the existing dashboard.+} {+dashboard tab shows:+} {+- daily digest feed+} {+- weekly digest with pattern outputs and reflective prompts visible+} {+---+} {+## cron jobs+} {+```+} {+# daily mirror run -- midnight+} {+0 0 * * * /path/to/mirror/run_daily.sh+} {+# weekly mirror run -- sunday midnight+} {+0 0 * * 0 /path/to/mirror/run_weekly.sh+} {+```+} {+---+} {+## explicitly out of scope for v0+} {+- bot activity logging (next todo after v0)+} {+- episodic/a-mem style memory (v1 consideration -- simple append log approach most likely)+} {+- frontier model access+} {+- vault write access (permanent constraint, not a v0 limitation)+} {+- fine-tuning local models for mirror tasks+} {+---+} {+## local model notes+} {+qwen2.5:32b: recommended for weekly synthesis -- good balance of capability and speed on 32gb ram. llama3.3:70b-instruct-q4_K_M: stronger reasoning, significantly slower -- use if weekly run timing allows. the quality gap relative to frontier models is documented and framed as a research finding (consistent with study companion precedent).+} {+---+}"
       }
     ]
   },
@@ -11384,6 +11453,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 7,
+        "delta": 0,
+        "added": 7,
+        "removed": 7,
+        "diff": "[-![learning dashboard first iteration](learning-dashboard-v0.png)-] {+![learning dashboard first iteration](published/learning-dashboard-v0.png)+} [-![bot summary sketch](bot-summaries-sketch.jpeg)-] {+![bot summary sketch](published/bot-summaries-sketch.jpeg)+}"
+      },
+      {
         "date": "2026-07-03",
         "hash": "cd3e88c",
         "wordCount": 31,
@@ -11575,6 +11653,29 @@
       }
     ]
   },
+  "kreminski-and-mateas-2021-reflective-creators": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 0,
+        "delta": 0,
+        "added": 0,
+        "removed": 0,
+        "diff": ""
+      },
+      {
+        "date": "2026-07-05",
+        "hash": "a2cb009",
+        "wordCount": 292,
+        "delta": 292,
+        "added": 292,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-07-05+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+[[-bibliography]]+} {+Kreminski, Max, and Michael Mateas. Reflective Creators. 2021. https://mkremins.github.io/publications/ReflectiveCreators_ICCC2021.pdf.+} {+---+} {+starting off reading this paper I wasn't sure it was going to be the most relevant as it begins in the abstract talking about 'casual creators' whhich are a specific type of 'creativity support tool' (CST) that are autotelic, process focused (intrinsically motivated) that prioritise the aesthetic experience of the creative process rather than the end product. As this description does not really align with the things that I am building for this phd, which do have purposes in service of learning and research my immediate thought was that there is not a correlation here. However the abrasct goes onto to establish the core idea which is really interesting and inspiring for me to think about.+} {+The authors introduce the idea of 'process aethesitcs' as mode of analysing different autotelic CSTs - specifically reflection - and how the presensce of this quality distinguishes it in many cases from a 'casual creator' type of CST. They distinguish this new type of tool as a 'reflective creator'.+} {+For me it's the granular breakdown of how reflection can be embedded into these tools and the idea of CSTs themselves that I have not read much about so far and which is very influential to me. The idea of autotelic process focused tools is also interesting and although I would not describe either [[research-infrastructure]] or [[project-phd-live-platform]] in this way specifically, I think there is some aspects of this idea that are present, especially as I have a personal believe that learning should be something that some wants to do and have some intrinsic enjoyment+} {+---+} {+Key terminology from this paper:+} {+[[casual-creators]]+} {+[[creativity-support-tools]]+} {+[[reflective-creators]]+}"
+      }
+    ]
+  },
   "karpathy-2026-llm-wiki": {
     "noteDate": null,
     "revisions": [
@@ -11586,6 +11687,29 @@
         "added": 21,
         "removed": 0,
         "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-04-27+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+[[-bibliography]]+} {+Karpathy, Andrej. “LLM Wiki.” Gist, 2026. https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f.+} {+---+}"
+      }
+    ]
+  },
+  "karpathy-2025-power-to-the-people": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 0,
+        "delta": 0,
+        "added": 0,
+        "removed": 0,
+        "diff": ""
+      },
+      {
+        "date": "2026-07-16",
+        "hash": "8c18129",
+        "wordCount": 244,
+        "delta": 244,
+        "added": 244,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-07-16+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+[[-bibliography]]+} {+Karpathy, Andrej. “Power to the People: How LLMs Flip the Script on Technology Diffusion.” Karpathy, April 7, 2025. https://karpathy.bearblog.dev/power-to-the-people/.+} {+---+} {+\"they generate disproportionate benefit for regular people, while their impact is a lot more muted and lagging in corporations and governments\"+} {+\"it is a major multiplier to an individual's power level across a broad range of capabilities. And the barrier to use is incredibly low - the models are cheap (free, even), fast, available to anyone on demand behind a url (or even local machine), and they speak anyone's native language, including tone, slang or emoji\"+} {+this articles brings to light the interesting impact of LLMs on an individual scale vs at a corporate scale and speculates at the reasoning as to why this might be. The following is a really interesting articualtion of the difference:+} {+*an organization's unique superpower is the ability to concentrate diverse expertise into a single entity by employing engineers, researchers, analysts, lawyers, marketers, etc. While LLMs can certainly make these experts more efficient individually (e.g. drafting initial legal clauses, generating boilerplate code, etc.), the improvement to the organization takes the form of becoming a bit better at the things it could already do. In contrast, an individual will usually only be an expert in at most one thing, so the broad quasi-expertise offered by the LLM fundamentally allows them to do things they couldn't do before.*+}"
       }
     ]
   },
@@ -13878,6 +14002,65 @@
       }
     ]
   },
+  "creativity-support-tools": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 0,
+        "delta": 0,
+        "added": 0,
+        "removed": 0,
+        "diff": ""
+      },
+      {
+        "date": "2026-07-05",
+        "hash": "a2cb009",
+        "wordCount": 5,
+        "delta": 3,
+        "added": 5,
+        "removed": 2,
+        "diff": "[-date-created: 2026-05-09-] {+date-created: 2026-07-05+} {+aliases:+} {+- CSTs+}"
+      },
+      {
+        "date": "2026-06-02",
+        "hash": "84466bc",
+        "wordCount": 0,
+        "delta": -75,
+        "added": 0,
+        "removed": 75,
+        "diff": "[-<!---] [-Quick syntax:-] [-Session: start:: YYYY-MM-DD HH:MM+ZZ | end:: ... | topic:: ...-] [-Milestone: - [ ] Thing #milestone @YYYY-MM-DD-] [-CORE TYPES:-] [-• Turn into blog post → add: type: post-] [-FEATURE & NAVIGATION TAGS:-] [-• featured      → appears in Featured section on homepage-] [-• gardenEntry   → appears as a trailhead in the Garden gateway-] [-LIVE SYSTEM TAGS:-] [-• session       → used for live sessions / work periods-] [-• daily         → daily log style notes-]"
+      },
+      {
+        "date": "2026-05-09",
+        "hash": "93969b9",
+        "wordCount": 78,
+        "delta": 76,
+        "added": 78,
+        "removed": 2,
+        "diff": "[-date-created: 2026-04-27-] {+date-created: 2026-05-09+} {+<!--+} {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM+ZZ | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} {+CORE TYPES:+} {+• Turn into blog post → add: type: post+} {+FEATURE & NAVIGATION TAGS:+} {+• featured      → appears in Featured section on homepage+} {+• gardenEntry   → appears as a trailhead in the Garden gateway+} {+LIVE SYSTEM TAGS:+} {+• session       → used for live sessions / work periods+} {+• daily         → daily log style notes+} {+-->+}"
+      },
+      {
+        "date": "2026-05-04",
+        "hash": "d671441",
+        "wordCount": 0,
+        "delta": 0,
+        "added": 0,
+        "removed": 0,
+        "diff": ""
+      },
+      {
+        "date": "2026-04-27",
+        "hash": "f588171",
+        "wordCount": 12,
+        "delta": 12,
+        "added": 12,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-04-27+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+}"
+      }
+    ]
+  },
   "corporate university speculation": {
     "noteDate": null,
     "revisions": [
@@ -15187,6 +15370,65 @@
       }
     ]
   },
+  "bot-evaluation-thinking-partnership": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 0,
+        "delta": 0,
+        "added": 0,
+        "removed": 0,
+        "diff": ""
+      },
+      {
+        "date": "2026-07-05",
+        "hash": "a2cb009",
+        "wordCount": 2,
+        "delta": 0,
+        "added": 2,
+        "removed": 2,
+        "diff": "[-date-created: 2026-05-09-] {+date-created: 2026-07-05+}"
+      },
+      {
+        "date": "2026-06-02",
+        "hash": "84466bc",
+        "wordCount": 0,
+        "delta": -75,
+        "added": 0,
+        "removed": 75,
+        "diff": "[-<!---] [-Quick syntax:-] [-Session: start:: YYYY-MM-DD HH:MM+ZZ | end:: ... | topic:: ...-] [-Milestone: - [ ] Thing #milestone @YYYY-MM-DD-] [-CORE TYPES:-] [-• Turn into blog post → add: type: post-] [-FEATURE & NAVIGATION TAGS:-] [-• featured      → appears in Featured section on homepage-] [-• gardenEntry   → appears as a trailhead in the Garden gateway-] [-LIVE SYSTEM TAGS:-] [-• session       → used for live sessions / work periods-] [-• daily         → daily log style notes-]"
+      },
+      {
+        "date": "2026-05-09",
+        "hash": "93969b9",
+        "wordCount": 78,
+        "delta": 76,
+        "added": 78,
+        "removed": 2,
+        "diff": "[-date-created: 2026-04-27-] {+date-created: 2026-05-09+} {+<!--+} {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM+ZZ | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} {+CORE TYPES:+} {+• Turn into blog post → add: type: post+} {+FEATURE & NAVIGATION TAGS:+} {+• featured      → appears in Featured section on homepage+} {+• gardenEntry   → appears as a trailhead in the Garden gateway+} {+LIVE SYSTEM TAGS:+} {+• session       → used for live sessions / work periods+} {+• daily         → daily log style notes+} {+-->+}"
+      },
+      {
+        "date": "2026-05-04",
+        "hash": "d671441",
+        "wordCount": 0,
+        "delta": 0,
+        "added": 0,
+        "removed": 0,
+        "diff": ""
+      },
+      {
+        "date": "2026-04-27",
+        "hash": "f588171",
+        "wordCount": 12,
+        "delta": 12,
+        "added": 12,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-04-27+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+}"
+      }
+    ]
+  },
   "bot-context": {
     "noteDate": null,
     "revisions": [
@@ -15797,6 +16039,29 @@
         "added": 268,
         "removed": 0,
         "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-05-03+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+<!--+} {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM+ZZ | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} {+CORE TYPES:+} {+• Turn into blog post → add: type: post+} {+FEATURE & NAVIGATION TAGS:+} {+• featured      → appears in Featured section on homepage+} {+• gardenEntry   → appears as a trailhead in the Garden gateway+} {+LIVE SYSTEM TAGS:+} {+• session       → used for live sessions / work periods+} {+• daily         → daily log style notes+} {+-->+} {+Extracted from the application form:+} {+what format will your presentation take?+} {+- individual oral/spoken presentation, with slides or other screen-based media+} {+- ~~table-top or object-display with oral/spoken presentation~~+} {+- ~~poster presentation~~+} {+- ~~group presentation or in conversation~~+} {+Will you deliver your presentation in person or remotely/online?+} {+- In person+} {+- ~~Online~~+} {+For the timetable: the symposium and exhibition runs from <mark style=\"background: #FFB8EBA6;\">Monday 22 - Friday 26 June 2026, between the hours of 9.30am to 6.00pm BST. </mark>+} {+Are there any days and times that you are unable to deliver your presentation? (We will do our best to accommodate you)+} {+**For the Programme: what is the title of your research project?**+} {+**For the Programme: provide an abstract of your research project (up to 300 words)**+} {+**For the Programme: list up to 5 keywords for your presentation**+} {+~~Please share information here on AV playback, technical equipment, production or display requirements. Please describe equipment or furniture that you would need to make your presentation or exhibition display.+} {+You don't need to answer this question if you're presenting as an individual with slides.~~+}"
+      }
+    ]
+  },
+  "abstract-shortened": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 0,
+        "delta": 0,
+        "added": 0,
+        "removed": 0,
+        "diff": ""
+      },
+      {
+        "date": "2026-06-30",
+        "hash": "731de20",
+        "wordCount": 138,
+        "delta": 138,
+        "added": 138,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-06-30+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+This PhD research asks what gets lost when generative AI tools compress creative and intellectual process into polished, swift outputs — and explores whether a different relationship with these systems is possible. By building a personalised research infrastructure that uses the researcher's own data to enrich the system, the investigation starts within their own practice. Core artefacts include 'PhD-Live', a public research environment that keeps doctoral thinking visible and in-process, alongside a suite of local AI tools (including a 'Supervisor Bot' and 'Study Companion'). The work treats building as a primary mode of inquiry, using the gaps and failures of the infrastructure as much as its successes to ask what more exploratory, personalised relationships with AI might look like in education and creative practice.+} {+----+} {+[[abstract-work-in-progress]]+}"
       }
     ]
   },
@@ -19883,6 +20148,20 @@
       }
     ]
   },
+  "2026-07-17": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 273,
+        "delta": 273,
+        "added": 273,
+        "removed": 0,
+        "diff": "{+---+} {+date: 2026-07-17+} {+---+} {+## sessions+} {+<details>+} {+<summary>Session 2</summary>+} {+start:: 2026-07-16T15:32:00.482227+00:00+} {+topic:: study companion+} {+end:: 2026-07-17T13:09:43.792611+} {+</details>+} {+<details>+} {+<summary>Session 1</summary>+} {+start:: 2026-07-16T20:47:52.438Z+} {+topic:: other · working on integrating zotero list into obsidian / phd-live system+} {+end:: 2026-07-17T00:56:45.671Z+} {+</details>+} {+I just watched a really interesting talk called **\"The University of Excess: Redundancy, Crisis and the Future of Study\"** (event description: As universities become increasingly governed through financial imperatives, visa regimes, managerial restructurings, and strategic repositioning, what forms of intellectual, political, and collective life become impossible within them? What survives beyond them? If the university increasingly appears unable to sustain the conditions for collective intellectual life, where does study go? What forms of inquiry exceed the university, and what kinds of institutions – or anti-institutions – might emerge in its wake?)+} {+it got me thinking about a side of this research that I haven't put as much focus into (since finishing my PgCert ) partially because its part of my day to day work reality and it sometimes feels like a seperate other issue to my PhD. The issue is, the increasingly difficult context of teaching in higher education in the UK, that I think will only be exacerbated by the growing infiltration of commercial AI tools. A concept that really stuck with me that was discussed was this idea of para-academic institutions which are organisations existing outside/ on the edges of academia that allow for 'scholarly' work - I want to do more research into this term and what exists. I wonder if this ends up being the future of things if the trajectory of higher education and academia continues in its current form+}"
+      }
+    ]
+  },
   "2026-07-16": {
     "noteDate": "2026-07-16",
     "revisions": [
@@ -21201,6 +21480,1756 @@
         "added": 59,
         "removed": 0,
         "diff": "{+---+} {+title: \"My First Blog Post\"+} {+date: 2026-01-25+} {+description: \"Testing the blog functionality\"+} {+dg-publish: true+} {+type: post+} {+permalink: \"/notes/blog/my-first-post/\"+} {+---+} {+# My First Blog Post+} {+This is a test post to verify the blog is working correctly.+} {+## Features to Test+} {+- Post rendering+} {+- Collection filtering+} {+- Layout application+} {+If you can see this, the blog is working!+}"
+      }
+    ]
+  },
+  "zhecgtn-2025-robots-reality-chinas": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 45,
+        "delta": 45,
+        "added": 45,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Gong Zhe,CGTN+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: web-page+} {+url: https://news.cgtn.com/news/2025-09-08/From-robots-to-reality-China-s-classrooms-get-an-AI-makeover-1GvoPiiXn7G/p.html+} {+visibility: public+} {+year: 2025+} {+zotero_key: zhecgtn-2025-robotsrealitychinas+} {+---+} {+[[-bibliography]]+} {+Zhe,CGTN, Gong. _From robots to reality: China's classrooms get an AI makeover_. 2025. https://news.cgtn.com/news/2025-09-08/From-robots-to-reality-China-s-classrooms-get-an-AI-makeover-1GvoPiiXn7G/p.html+} {+---+}"
+      }
+    ]
+  },
+  "weller-2020-25-years-ed": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 40,
+        "delta": 40,
+        "added": 40,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Martin Weller+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- EdTech+} {+type: book+} {+url: null+} {+visibility: public+} {+year: 2020+} {+zotero_key: weller-2020-25yearsed+} {+---+} {+[[-bibliography]]+} {+Weller, Martin. _25 years of ed tech_. 2020.+} {+---+}"
+      }
+    ]
+  },
+  "weizenbaum-1966-eliza-computer-program": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 54,
+        "delta": 54,
+        "added": 54,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Joseph Weizenbaum+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+- LLMs / NLP+} {+type: journal-article+} {+url: https://dl.acm.org/doi/10.1145/365153.365168+} {+visibility: public+} {+year: 1966+} {+zotero_key: weizenbaum-1966-elizacomputerprogram+} {+---+} {+[[-bibliography]]+} {+Weizenbaum, Joseph. _ELIZA—a computer program for the study of natural language communication between man and machine_. 1966. https://dl.acm.org/doi/10.1145/365153.365168+} {+---+}"
+      }
+    ]
+  },
+  "unesco-2023-global-education-monitoring": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 46,
+        "delta": 46,
+        "added": 46,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- UNESCO+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: journal-article+} {+url: https://doi.org/10.54676/uzqv8501+} {+visibility: public+} {+year: 2023+} {+zotero_key: unesco-2023-globaleducationmonitoring+} {+---+} {+[[-bibliography]]+} {+UNESCO. _Global Education Monitoring Report 2023: Technology in education: A tool on whose terms?_. 2023. https://doi.org/10.54676/uzqv8501+} {+---+}"
+      }
+    ]
+  },
+  "ucl-2025-ucl-joins-forces": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 46,
+        "delta": 46,
+        "added": 46,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- UCL+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+type: web-page+} {+url: https://www.ucl.ac.uk/news/2025/oct/ucl-joins-forces-google-deepmind-democratise-access-ai-education+} {+visibility: public+} {+year: 2025+} {+zotero_key: ucl-2025-ucljoinsforces+} {+---+} {+[[-bibliography]]+} {+UCL. _UCL joins forces with Google DeepMind to democratise access to AI education_. 2025. https://www.ucl.ac.uk/news/2025/oct/ucl-joins-forces-google-deepmind-democratise-access-ai-education+} {+---+}"
+      }
+    ]
+  },
+  "turing-1950-computing-machinery-intelligence": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 38,
+        "delta": 38,
+        "added": 38,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- A.M Turing+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: journal-article+} {+url: null+} {+visibility: public+} {+year: 1950+} {+zotero_key: turing-1050-computingmachineryintelligence+} {+---+} {+[[-bibliography]]+} {+Turing, A.M. _COMPUTING MACHINERY AND INTELLIGENCE_. 1950.+} {+---+}"
+      }
+    ]
+  },
+  "tanimoto-2013-perspective-evolution-live": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 47,
+        "delta": 47,
+        "added": 47,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Steven L. Tanimoto+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- Live Coding+} {+type: conference-paper+} {+url: https://dl.acm.org/doi/10.5555/2662726.2662735+} {+visibility: public+} {+year: 2013+} {+zotero_key: tanimoto-2013-perspectiveevolutionlive+} {+---+} {+[[-bibliography]]+} {+Tanimoto, Steven L.. _A perspective on the evolution of live programming_. 2013. https://dl.acm.org/doi/10.5555/2662726.2662735+} {+---+}"
+      }
+    ]
+  },
+  "soon-2018-executing-liveness-examination": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 50,
+        "delta": 50,
+        "added": 50,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Winnie Soon+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: web-page+} {+url: https://www.academia.edu/37051235/Executing_Liveness_An_examination_of_the_live_dimension_of_code_inter_actions_in_software_art_practice+} {+visibility: public+} {+year: 2018+} {+zotero_key: soon-2018-executinglivenessexamination+} {+---+} {+[[-bibliography]]+} {+Soon, Winnie. _Executing Liveness: An examination of the live dimension of code inter-actions in software (art) practice_. 2018. https://www.academia.edu/37051235/Executing_Liveness_An_examination_of_the_live_dimension_of_code_inter_actions_in_software_art_practice+} {+---+}"
+      }
+    ]
+  },
+  "sol-2026-understanding-epistemology-its": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 48,
+        "delta": 48,
+        "added": 48,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Koemhong Sol+} {+- Kimkong Heng+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: journal-article+} {+url: https://www.researchgate.net/publication/367310471_Understanding_epistemology_and_its_key_approaches_in_research+} {+visibility: public+} {+year: 2026+} {+zotero_key: sol-2026-understandingepistemologyits+} {+---+} {+[[-bibliography]]+} {+Sol, Koemhong; Heng, Kimkong. _Understanding epistemology and its key approaches in research_. 2026. https://www.researchgate.net/publication/367310471_Understanding_epistemology_and_its_key_approaches_in_research+} {+---+}"
+      }
+    ]
+  },
+  "smithnunes-2025-quiet-revolution-offline": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 51,
+        "delta": 51,
+        "added": 51,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Genevieve Smith-Nunes+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+- EdTech+} {+- Pedagogy+} {+type: blog-post+} {+url: https://readysaltedcode.substack.com/p/the-quiet-revolution-offline-llms+} {+visibility: public+} {+year: 2025+} {+zotero_key: smith-nunes-2025-quietrevolutionoffline+} {+---+} {+[[-bibliography]]+} {+Smith-Nunes, Genevieve. _The Quiet Revolution: Offline LLMs and the Future of Private AI_. 2025. https://readysaltedcode.substack.com/p/the-quiet-revolution-offline-llms+} {+---+}"
+      }
+    ]
+  },
+  "skains-2024-designing-conducting-practice": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 45,
+        "delta": 45,
+        "added": 45,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- R. Lyle Skains+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- Research Methods+} {+type: book+} {+url: https://www.intellectbooks.com/designing-and-conducting-practice-based-research-projects+} {+visibility: public+} {+year: 2024+} {+zotero_key: skains-2024-designingconductingpracticebased+} {+---+} {+[[-bibliography]]+} {+Skains, R. Lyle. _Designing and Conducting Practice-Based Research Projects_. 2024. https://www.intellectbooks.com/designing-and-conducting-practice-based-research-projects+} {+---+}"
+      }
+    ]
+  },
+  "sikes-2008-researching-education-inside": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 45,
+        "delta": 45,
+        "added": 45,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Pat Sikes+} {+- Anthony Potts+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- Pedagogy+} {+type: book+} {+url: null+} {+visibility: public+} {+year: 2008+} {+zotero_key: sikes-2008-researchingeducation+} {+---+} {+[[-bibliography]]+} {+Sikes, Pat; Potts, Anthony. _Researching Education from the Inside_. 2008.+} {+---+}"
+      }
+    ]
+  },
+  "siemens-2020-post-learning-era": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 44,
+        "delta": 44,
+        "added": 44,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- George Siemens+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: web-page+} {+url: https://er.educause.edu/articles/2020/2/the-post-learning-era-in-higher-education-human-machine+} {+visibility: public+} {+year: 2020+} {+zotero_key: siemens-2020-postlearningerahigher+} {+---+} {+[[-bibliography]]+} {+Siemens, George. _The Post-Learning Era in Higher Education: Human + machine_. 2020. https://er.educause.edu/articles/2020/2/the-post-learning-era-in-higher-education-human-machine+} {+---+}"
+      }
+    ]
+  },
+  "sicart-2014-play-matters": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 38,
+        "delta": 38,
+        "added": 38,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Miguel Sicart+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- Play+} {+type: book+} {+url: https://doi.org/10.7551/mitpress/10042.001.0001+} {+visibility: public+} {+year: 2014+} {+zotero_key: sicart-2014-playmatters+} {+---+} {+[[-bibliography]]+} {+Sicart, Miguel. _Play matters_. 2014. https://doi.org/10.7551/mitpress/10042.001.0001+} {+---+}"
+      }
+    ]
+  },
+  "shneiderman-2020-human-centered-artificial": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 42,
+        "delta": 42,
+        "added": 42,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Ben Shneiderman+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: journal-article+} {+url: https://doi.org/10.1080/10447318.2020.1741118+} {+visibility: public+} {+year: 2020+} {+zotero_key: shneiderman-2020-humancenteredartificialintelligence+} {+---+} {+[[-bibliography]]+} {+Shneiderman, Ben. _Human-Centered Artificial Intelligence: Reliable, Safe & Trustworthy_. 2020. https://doi.org/10.1080/10447318.2020.1741118+} {+---+}"
+      }
+    ]
+  },
+  "shirky-2025-opinion-only-real": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 48,
+        "delta": 48,
+        "added": 48,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Clay Shirky+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: web-page+} {+url: https://archive.ph/p7jcG+} {+visibility: public+} {+year: 2025+} {+zotero_key: shirky-2025-opiniononlyreal+} {+---+} {+[[-bibliography]]+} {+Shirky, Clay. _Opinion | The Only Real Solution to the A.I. College Cheating Crisis …_. 2025. https://archive.ph/p7jcG+} {+---+}"
+      }
+    ]
+  },
+  "shaw-2026-thinking-fast-slow": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 59,
+        "delta": 59,
+        "added": 59,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Steven D. Shaw+} {+- Gideon Nave+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+type: preprint+} {+url: https://papers.ssrn.com/abstract=6097646+} {+visibility: public+} {+year: 2026+} {+zotero_key: shaw-2026-thinkingfastslow+} {+---+} {+[[-bibliography]]+} {+Shaw, Steven D.; Nave, Gideon. _Thinking—Fast, Slow, and Artificial: How AI is Reshaping Human Reasoning and the Rise of Cognitive Surrender_. 2026. https://papers.ssrn.com/abstract=6097646+} {+---+}"
+      }
+    ]
+  },
+  "sascha-2020-introduction-zettelkasten-method": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 38,
+        "delta": 38,
+        "added": 38,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- sascha+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: web-page+} {+url: https://zettelkasten.de/introduction/+} {+visibility: public+} {+year: 2020+} {+zotero_key: sascha-2020-introductionzettelkastenmethod+} {+---+} {+[[-bibliography]]+} {+sascha. _Introduction to the Zettelkasten Method_. 2020. https://zettelkasten.de/introduction/+} {+---+}"
+      }
+    ]
+  },
+  "power-2023-technology-curriculum": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 39,
+        "delta": 39,
+        "added": 39,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Rob Power+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: book+} {+url: https://pressbooks.pub/techcurr2023/+} {+visibility: public+} {+year: 2023+} {+zotero_key: power-2023-technologycurriculum+} {+---+} {+[[-bibliography]]+} {+Power, Rob. _Technology and the Curriculum_. 2023. https://pressbooks.pub/techcurr2023/+} {+---+}"
+      }
+    ]
+  },
+  "pearce-nd-education-industrial-complex": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 42,
+        "delta": 42,
+        "added": 42,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Kyle Pearce+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- Pedagogy+} {+type: blog-post+} {+url: https://www.diygenius.com/education-industrial-complex/+} {+visibility: public+} {+year: null+} {+zotero_key: pearce-2019-educationindustrialcomplex21st+} {+---+} {+[[-bibliography]]+} {+Pearce, Kyle. _The Education-Industrial Complex and 21st Century Learning_. https://www.diygenius.com/education-industrial-complex/+} {+---+}"
+      }
+    ]
+  },
+  "park-2023-generative-agents-interactive": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 82,
+        "delta": 82,
+        "added": 82,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Joon Sung Park+} {+- Joseph O'Brien+} {+- Carrie Jun Cai+} {+- Meredith Ringel Morris+} {+- Percy Liang+} {+- Michael S. Bernstein+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+- LLMs / NLP+} {+- Speculative+} {+type: conference-paper+} {+url: https://dl.acm.org/doi/10.1145/3586183.3606763+} {+visibility: public+} {+year: 2023+} {+zotero_key: park-2023-generativeagentsinteractive+} {+---+} {+[[-bibliography]]+} {+Park, Joon Sung; O'Brien, Joseph; Cai, Carrie Jun; Morris, Meredith Ringel; Liang, Percy; Bernstein, Michael S.. _Generative Agents: Interactive Simulacra of Human Behavior_. 2023. https://dl.acm.org/doi/10.1145/3586183.3606763+} {+---+}"
+      }
+    ]
+  },
+  "oreilly-2023-see-you-other": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 59,
+        "delta": 59,
+        "added": 59,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- John O'Reilly+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- Pedagogy+} {+type: journal-article+} {+url: null+} {+visibility: public+} {+year: 2023+} {+zotero_key: oreilly-2023-seeyouother+} {+---+} {+[[-bibliography]]+} {+O'Reilly, John. _“See you on the other side”: researcher identity, threshold concepts and making a ritual of confirmation. Spark: UAL Creative Teaching and Learning Journal, 6(1)_. 2023.+} {+---+}"
+      }
+    ]
+  },
+  "nhayles-2025-modes-cognition-n": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 54,
+        "delta": 54,
+        "added": 54,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Katherine N. Hayles+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+- LLMs / NLP+} {+type: web-page+} {+url: https://modesofcognition.antikythera.org/+} {+visibility: public+} {+year: 2025+} {+zotero_key: n.hayles-2025-modescognitionkatherine+} {+---+} {+[[-bibliography]]+} {+N. Hayles, Katherine. _Modes of Cognition by N. Katherine Hayles — Antikythera Journal Volume 2025_. 2025. https://modesofcognition.antikythera.org/+} {+---+}"
+      }
+    ]
+  },
+  "news-2024-real-open-ai": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 40,
+        "delta": 40,
+        "added": 40,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- oio news+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+type: web-page+} {+url: https://www.oio.news/p/31+} {+visibility: public+} {+year: 2024+} {+zotero_key: news-2024-realopenai+} {+---+} {+[[-bibliography]]+} {+news, oio. _the real open AI_. 2024. https://www.oio.news/p/31+} {+---+}"
+      }
+    ]
+  },
+  "neustaedter-nd-autobiographical-design-you": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 51,
+        "delta": 51,
+        "added": 51,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Carman Neustaedter+} {+- Phoebe Sengers+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- Research Methods+} {+type: journal-article+} {+url: https://dl.acm.org/doi/10.1145/2377783.2377791+} {+visibility: public+} {+year: null+} {+zotero_key: neustaedter-2012-autobiographicaldesignwhat+} {+---+} {+[[-bibliography]]+} {+Neustaedter, Carman; Sengers, Phoebe. _Autobiographical design: what you can learn from designing for yourself_. https://dl.acm.org/doi/10.1145/2377783.2377791+} {+---+}"
+      }
+    ]
+  },
+  "naidoo-2013-students-consumers-commodifying": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 48,
+        "delta": 48,
+        "added": 48,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Rajani Naidoo+} {+- Geoff Whitty+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- Pedagogy+} {+type: journal-article+} {+url: https://journals.sagepub.com/doi/10.1163/22125868-12340022+} {+visibility: public+} {+year: 2013+} {+zotero_key: naidoo-2013-studentsconsumerscommodifying+} {+---+} {+[[-bibliography]]+} {+Naidoo, Rajani; Whitty, Geoff. _Students as Consumers: Commodifying or Democratising Learning?_. 2013. https://journals.sagepub.com/doi/10.1163/22125868-12340022+} {+---+}"
+      }
+    ]
+  },
+  "mickel-2024-performance-practice-research": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 46,
+        "delta": 46,
+        "added": 46,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Lesley Mickel+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- Pedagogy+} {+- Research Methods+} {+type: journal-article+} {+url: https://doi.org/10.1080/13562517.2021.2000385+} {+visibility: public+} {+year: 2024+} {+zotero_key: mickel-2024-performancepracticeresearch+} {+---+} {+[[-bibliography]]+} {+Mickel, Lesley. _Performance practice as research, learning and teaching_. 2024. https://doi.org/10.1080/13562517.2021.2000385+} {+---+}"
+      }
+    ]
+  },
+  "metz-2026-chinese-i-models": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 55,
+        "delta": 55,
+        "added": 55,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Cade Metz+} {+- Karen Weise+} {+- Meaghan Tobin+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: newspaper-article+} {+url: https://www.nytimes.com/2026/06/25/technology/zai-china-artificial-intelligence-models.html+} {+visibility: public+} {+year: 2026+} {+zotero_key: metz-2026-chineseaimodels+} {+---+} {+[[-bibliography]]+} {+Metz, Cade; Weise, Karen; Tobin, Meaghan. _Chinese A.I. Models Close the Gap With Anthropic and OpenAI_. 2026. https://www.nytimes.com/2026/06/25/technology/zai-china-artificial-intelligence-models.html+} {+---+}"
+      }
+    ]
+  },
+  "mckenzie-2026-ai-shatters-pretence": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 50,
+        "delta": 50,
+        "added": 50,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Rex Mckenzie+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+- Pedagogy+} {+type: blog-post+} {+url: https://wonkhe.com/blogs/ai-shatters-the-pretence-that-academic-polish-was-ever-anything-but-gatekeeping/+} {+visibility: public+} {+year: 2026+} {+zotero_key: mckenzie-2026-aishatterspretence+} {+---+} {+[[-bibliography]]+} {+Mckenzie, Rex. _AI shatters the pretence that academic polish was ever anything but gatekeeping_. 2026. https://wonkhe.com/blogs/ai-shatters-the-pretence-that-academic-polish-was-ever-anything-but-gatekeeping/+} {+---+}"
+      }
+    ]
+  },
+  "mcgrath-2025-generative-ai-chatbots": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 61,
+        "delta": 61,
+        "added": 61,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Cormac McGrath+} {+- Alexandra Farazouli+} {+- Teresa Cerratto-Pargman+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- LLMs / NLP+} {+type: journal-article+} {+url: https://doi.org/10.1007/s10734-024-01288-w+} {+visibility: public+} {+year: 2025+} {+zotero_key: mcgrath-2025-generativeaichatbots+} {+---+} {+[[-bibliography]]+} {+McGrath, Cormac; Farazouli, Alexandra; Cerratto-Pargman, Teresa. _Generative AI chatbots in higher education: a review of an emerging research area_. 2025. https://doi.org/10.1007/s10734-024-01288-w+} {+---+}"
+      }
+    ]
+  },
+  "matuschak-2026-apps-programming-two": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 41,
+        "delta": 41,
+        "added": 41,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Andy Matuschak+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: journal-article+} {+url: https://andymatuschak.org/tat+} {+visibility: public+} {+year: 2026+} {+zotero_key: matuschak-2026-appsprogrammingtwo+} {+---+} {+[[-bibliography]]+} {+Matuschak, Andy. _Apps and programming: two accidental tyrannies_. 2026. https://andymatuschak.org/tat+} {+---+}"
+      }
+    ]
+  },
+  "matuschak-2024-whats-worth-learning": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 42,
+        "delta": 42,
+        "added": 42,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Andy Matuschak+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: journal-article+} {+url: https://andymatuschak.org/worth-learning-agi+} {+visibility: public+} {+year: 2024+} {+zotero_key: matuschak-2024-whatsworthlearning+} {+---+} {+[[-bibliography]]+} {+Matuschak, Andy. _What's worth learning if we have AGI?_. 2024. https://andymatuschak.org/worth-learning-agi+} {+---+}"
+      }
+    ]
+  },
+  "matuschak-2024-might-we-learn": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 48,
+        "delta": 48,
+        "added": 48,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Andy Matuschak+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+- LLMs / NLP+} {+- Pedagogy+} {+type: journal-article+} {+url: https://andymatuschak.org/hmwl+} {+visibility: public+} {+year: 2024+} {+zotero_key: matuschak-2024-howmightwea+} {+---+} {+[[-bibliography]]+} {+Matuschak, Andy. _How Might We Learn? UCSD Design@Large_. 2024. https://andymatuschak.org/hmwl+} {+---+}"
+      }
+    ]
+  },
+  "matuschak-2022-ethics-ai-based": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 42,
+        "delta": 42,
+        "added": 42,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Andy Matuschak+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: journal-article+} {+url: https://andymatuschak.org/personal-ai-ethics+} {+visibility: public+} {+year: 2022+} {+zotero_key: matuschak-2022-ethicsaibasedinvention+} {+---+} {+[[-bibliography]]+} {+Matuschak, Andy. _Ethics of AI-based invention: a personal inquiry_. 2022. https://andymatuschak.org/personal-ai-ethics+} {+---+}"
+      }
+    ]
+  },
+  "matuschak-2019-can-we-develop": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 58,
+        "delta": 58,
+        "added": 58,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Andy Matuschak+} {+- Michael Nielsen+} {+- Andy Matuschak+} {+- Michael Nielsen+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: journal-article+} {+url: https://numinous.productions/ttft+} {+visibility: public+} {+year: 2019+} {+zotero_key: matuschak-2019-howcanwe+} {+---+} {+[[-bibliography]]+} {+Matuschak, Andy; Nielsen, Michael; Matuschak, Andy; Nielsen, Michael. _How can we develop transformative tools for thought?_. 2019. https://numinous.productions/ttft+} {+---+}"
+      }
+    ]
+  },
+  "manning-2024-conversation-erin-manning": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 54,
+        "delta": 54,
+        "added": 54,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Erin Manning+} {+- V.G Bozalek+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- Pedagogy+} {+type: journal-article+} {+url: null+} {+visibility: public+} {+year: 2024+} {+zotero_key: manning-2024-conversationerinmanning+} {+---+} {+[[-bibliography]]+} {+Manning, Erin; Bozalek, V.G. _In conversation with Erin Manning: A refusal of neurotypicality through attunements to learning otherwise_. 2024.+} {+---+}"
+      }
+    ]
+  },
+  "manning-2019-propositions-radical-pedagogy": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 44,
+        "delta": 44,
+        "added": 44,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Erin Manning+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: journal-article+} {+url: null+} {+visibility: public+} {+year: 2019+} {+zotero_key: manning-2019-propositionsradicalpedagogy+} {+---+} {+[[-bibliography]]+} {+Manning, Erin. _Propositions for a radical pedagogy, or how to rethink value_. 2019.+} {+---+}"
+      }
+    ]
+  },
+  "malmqvist-2024-sycophancy-large-language": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 48,
+        "delta": 48,
+        "added": 48,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Lars Malmqvist+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+- LLMs / NLP+} {+type: preprint+} {+url: http://arxiv.org/abs/2411.15287+} {+visibility: public+} {+year: 2024+} {+zotero_key: malmqvist-2024-sycophancylargelanguage+} {+---+} {+[[-bibliography]]+} {+Malmqvist, Lars. _Sycophancy in Large Language Models: Causes and Mitigations_. 2024. http://arxiv.org/abs/2411.15287+} {+---+}"
+      }
+    ]
+  },
+  "luccioni-2024-environmental-impacts-ai": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 53,
+        "delta": 53,
+        "added": 53,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Sasha Luccioni+} {+- Bruna Trevelin+} {+- Margeret Mitchel+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+type: blog-post+} {+url: https://huggingface.co/blog/sasha/ai-environment-primer+} {+visibility: public+} {+year: 2024+} {+zotero_key: luccioni-2024-environmentalimpactsai+} {+---+} {+[[-bibliography]]+} {+Luccioni, Sasha; Trevelin, Bruna; Mitchel, Margeret. _The Environmental Impacts of AI -- Primer_. 2024. https://huggingface.co/blog/sasha/ai-environment-primer+} {+---+}"
+      }
+    ]
+  },
+  "long-2020-ai-literacy-competencies": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 51,
+        "delta": 51,
+        "added": 51,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Duri Long+} {+- Brian Magerko+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+- Pedagogy+} {+type: conference-paper+} {+url: https://dl.acm.org/doi/abs/10.1145/3313831.3376727+} {+visibility: public+} {+year: 2020+} {+zotero_key: long-2020-whatailiteracy+} {+---+} {+[[-bibliography]]+} {+Long, Duri; Magerko, Brian. _What is AI Literacy? Competencies and Design Considerations_. 2020. https://dl.acm.org/doi/abs/10.1145/3313831.3376727+} {+---+}"
+      }
+    ]
+  },
+  "loglio-nd-roby-matteo-loglio": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 39,
+        "delta": 39,
+        "added": 39,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Matteo Loglio+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+type: web-page+} {+url: https://matlo.me/roby+} {+visibility: public+} {+year: null+} {+zotero_key: loglio--robymatteologlio+} {+---+} {+[[-bibliography]]+} {+Loglio, Matteo. _ROBY | matteo loglio_. https://matlo.me/roby+} {+---+}"
+      }
+    ]
+  },
+  "liu-2026-i-avoid-ai": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 51,
+        "delta": 51,
+        "added": 51,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Wendy Liu+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: newspaper-article+} {+url: https://www.theguardian.com/commentisfree/2026/may/24/ai-tools-thinking-human-hard-coding-writing-technology+} {+visibility: public+} {+year: 2026+} {+zotero_key: liu-2026-avoidaitools+} {+---+} {+[[-bibliography]]+} {+Liu, Wendy. _I avoid AI tools because thinking is supposed to be hard. It’s what makes us human_. 2026. https://www.theguardian.com/commentisfree/2026/may/24/ai-tools-thinking-human-hard-coding-writing-technology+} {+---+}"
+      }
+    ]
+  },
+  "lindrup-2025-prompt-machine-tangible": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 79,
+        "delta": 79,
+        "added": 79,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Martin Lindrup+} {+- Rune Møberg Jacobsen+} {+- Joel Wester+} {+- Niels van Berkel+} {+- Dimitrios Raptis+} {+- Peter Axel Nielsen+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: conference-paper+} {+url: https://dl.acm.org/doi/10.1145/3715336.3735673+} {+visibility: public+} {+year: 2025+} {+zotero_key: lindrup-2025-promptmachinetangible+} {+---+} {+[[-bibliography]]+} {+Lindrup, Martin; Jacobsen, Rune Møberg; Wester, Joel; van Berkel, Niels; Raptis, Dimitrios; Nielsen, Peter Axel. _Prompt Machine: A Tangible Generative AI Tool for Supporting Children's Learning and Literacy_. 2025. https://dl.acm.org/doi/10.1145/3715336.3735673+} {+---+}"
+      }
+    ]
+  },
+  "lin-2023-generative-ai-futures": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 47,
+        "delta": 47,
+        "added": 47,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Lauren Lin+} {+- Duri Long+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: conference-paper+} {+url: https://dl.acm.org/doi/10.1145/3591196.3596616+} {+visibility: public+} {+year: 2023+} {+zotero_key: lin-2023-generativeaifutures+} {+---+} {+[[-bibliography]]+} {+Lin, Lauren; Long, Duri. _Generative AI Futures: A Speculative Design Exploration_. 2023. https://dl.acm.org/doi/10.1145/3591196.3596616+} {+---+}"
+      }
+    ]
+  },
+  "li-2025-t-grag-dynamic": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 74,
+        "delta": 74,
+        "added": 74,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Dong Li+} {+- Yichen Niu+} {+- Ying Ai+} {+- Xiang Zou+} {+- Biqing Qi+} {+- Jianxing Liu+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: conference-paper+} {+url: https://dl.acm.org/doi/10.1145/3746027.3755628+} {+visibility: public+} {+year: 2025+} {+zotero_key: li-2025-tgragdynamicgraphrag+} {+---+} {+[[-bibliography]]+} {+Li, Dong; Niu, Yichen; Ai, Ying; Zou, Xiang; Qi, Biqing; Liu, Jianxing. _T-GRAG: A Dynamic GraphRAG Framework for Resolving Temporal Conflicts and Redundancy in Knowledge Retrieval_. 2025. https://dl.acm.org/doi/10.1145/3746027.3755628+} {+---+}"
+      }
+    ]
+  },
+  "leguin-1982-non-euclidean-view": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 50,
+        "delta": 50,
+        "added": 50,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Ursula K. Le Guin+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- Speculative+} {+type: thesis+} {+url: null+} {+visibility: public+} {+year: 1982+} {+zotero_key: leguin-1982-noneuclideanviewcalifornia+} {+---+} {+[[-bibliography]]+} {+Le Guin, Ursula K.. _A Non-Euclidean View of California as a Cold Place to Be_. 1982.+} {+---+}"
+      }
+    ]
+  },
+  "labrune-2024-large-language-objects": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 59,
+        "delta": 59,
+        "added": 59,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Marcelo Coelho, Jean-Baptiste Labrune+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: journal-article+} {+url: https://interactions.acm.org/archive/view/july-august-2024/large-language-objects-the-design-of-physical-ai-and-generative-experiences+} {+visibility: public+} {+year: 2024+} {+zotero_key: labrune-2024-largelanguageobjects+} {+---+} {+[[-bibliography]]+} {+Labrune, Marcelo Coelho, Jean-Baptiste. _Large Language Objects: The Design of Physical AI and Generative Experiences | IX Magazine Issue XXXI.4 July - August 2024_. 2024. https://interactions.acm.org/archive/view/july-august-2024/large-language-objects-the-design-of-physical-ai-and-generative-experiences+} {+---+}"
+      }
+    ]
+  },
+  "krstich-2016-pedagogy-play-fluxus": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 50,
+        "delta": 50,
+        "added": 50,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Vesna Krstich+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- Pedagogy+} {+- Play+} {+type: magazine-article+} {+url: https://cmagazine.com/articles/the-pedagogy-of-play-fluxus-happenings-and-curriculum-reform-in+} {+visibility: public+} {+year: 2016+} {+zotero_key: krstich-2016-pedagogyplayfluxus+} {+---+} {+[[-bibliography]]+} {+Krstich, Vesna. _The Pedagogy of Play: Fluxus, Happenings, and Curriculum Reform in the 1960s_. 2016. https://cmagazine.com/articles/the-pedagogy-of-play-fluxus-happenings-and-curriculum-reform-in+} {+---+}"
+      }
+    ]
+  },
+  "kreminski-2021-reflective-creators": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 42,
+        "delta": 42,
+        "added": 42,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Max Kreminski+} {+- Michael Mateas+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: journal-article+} {+url: https://mkremins.github.io/publications/ReflectiveCreators_ICCC2021.pdf+} {+visibility: public+} {+year: 2021+} {+zotero_key: kreminski-2021-reflectivecreators+} {+---+} {+[[-bibliography]]+} {+Kreminski, Max; Mateas, Michael. _Reflective Creators_. 2021. https://mkremins.github.io/publications/ReflectiveCreators_ICCC2021.pdf+} {+---+}"
+      }
+    ]
+  },
+  "khasnabish-2014-radical-imagination": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 44,
+        "delta": 44,
+        "added": 44,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Alex Khasnabish+} {+- Max Haiven+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- Speculative+} {+type: book+} {+url: https://www.bloomsbury.com/uk/radical-imagination-9781780329048/+} {+visibility: public+} {+year: 2014+} {+zotero_key: khasnabish-2014-radicalimagination+} {+---+} {+[[-bibliography]]+} {+Khasnabish, Alex; Haiven, Max. _The Radical Imagination_. 2014. https://www.bloomsbury.com/uk/radical-imagination-9781780329048/+} {+---+}"
+      }
+    ]
+  },
+  "karpathy-2025-power-people-llms": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 47,
+        "delta": 47,
+        "added": 47,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Andrej Karpathy+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: web-page+} {+url: https://karpathy.bearblog.dev/power-to-the-people/+} {+visibility: public+} {+year: 2025+} {+zotero_key: karpathy-2025-powerpeoplehow+} {+---+} {+[[-bibliography]]+} {+Karpathy, Andrej. _Power to the people: How LLMs flip the script on technology diffusion_. 2025. https://karpathy.bearblog.dev/power-to-the-people/+} {+---+}"
+      }
+    ]
+  },
+  "karpathy-2025-2025-llm-year": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 45,
+        "delta": 45,
+        "added": 45,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Andrej Karpathy+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+- LLMs / NLP+} {+type: web-page+} {+url: https://karpathy.bearblog.dev/year-in-review-2025/+} {+visibility: public+} {+year: 2025+} {+zotero_key: karpathy-2025-2025llmyear+} {+---+} {+[[-bibliography]]+} {+Karpathy, Andrej. _2025 LLM Year in Review_. 2025. https://karpathy.bearblog.dev/year-in-review-2025/+} {+---+}"
+      }
+    ]
+  },
+  "jowsey-2025-we-reject-use": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 71,
+        "delta": 71,
+        "added": 71,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Tanisha Jowsey+} {+- Virginia Braun+} {+- Victoria Clarke+} {+- Deborah Lupton+} {+- Michelle Fine+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+- Research Methods+} {+type: journal-article+} {+url: https://doi.org/10.1177/10778004251401851+} {+visibility: public+} {+year: 2025+} {+zotero_key: jowsey-2025-werejectuse+} {+---+} {+[[-bibliography]]+} {+Jowsey, Tanisha; Braun, Virginia; Clarke, Victoria; Lupton, Deborah; Fine, Michelle. _We Reject the Use of Generative Artificial Intelligence for Reflexive Qualitative Research_. 2025. https://doi.org/10.1177/10778004251401851+} {+---+}"
+      }
+    ]
+  },
+  "joler-2020-nooscope-manifested": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 44,
+        "delta": 44,
+        "added": 44,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Vladan Joler+} {+- Matteo Pasquinelli+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+type: blog-post+} {+url: https://fritz.ai/nooscope/+} {+visibility: public+} {+year: 2020+} {+zotero_key: joler-2020-nooscopemanifested+} {+---+} {+[[-bibliography]]+} {+Joler, Vladan; Pasquinelli, Matteo. _The Nooscope Manifested_. 2020. https://fritz.ai/nooscope/+} {+---+}"
+      }
+    ]
+  },
+  "institute-2024-our-impact-research": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 41,
+        "delta": 41,
+        "added": 41,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Institute of Imagination+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: web-page+} {+url: https://ioi.london/our-impact/+} {+visibility: public+} {+year: 2024+} {+zotero_key: instituteofimagination-2024-ourimpactresearch+} {+---+} {+[[-bibliography]]+} {+Institute of Imagination. _Our impact and research_. 2024. https://ioi.london/our-impact/+} {+---+}"
+      }
+    ]
+  },
+  "hulick-2023-chatgpt-similar-ai": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 43,
+        "delta": 43,
+        "added": 43,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Kathryn Hulick+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: journal-article+} {+url: https://www.sciencenews.org/article/chatgpt-ai-artificial-intelligence-education-cheating-accuracy+} {+visibility: public+} {+year: 2023+} {+zotero_key: hulick-2023-howchatgptsimilar+} {+---+} {+[[-bibliography]]+} {+Hulick, Kathryn. _How ChatGPT and similar AI will disrupt education_. 2023. https://www.sciencenews.org/article/chatgpt-ai-artificial-intelligence-education-cheating-accuracy+} {+---+}"
+      }
+    ]
+  },
+  "hooks-1994-teaching-transgress": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 38,
+        "delta": 38,
+        "added": 38,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- bell hooks+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- Pedagogy+} {+type: book+} {+url: null+} {+visibility: public+} {+year: 1994+} {+zotero_key: hooks-1994-teachingtransgress+} {+---+} {+[[-bibliography]]+} {+hooks, bell. _Teaching to Transgress_. 1994.+} {+---+}"
+      }
+    ]
+  },
+  "henryrichards-nd-phd-live": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 35,
+        "delta": 35,
+        "added": 35,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Mahalia Henry-Richards+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: web-page+} {+url: https://phd.mm-hr.com/+} {+visibility: public+} {+year: null+} {+zotero_key: henry-richards--phdlive+} {+---+} {+[[-bibliography]]+} {+Henry-Richards, Mahalia. _PhD-Live_. https://phd.mm-hr.com/+} {+---+}"
+      }
+    ]
+  },
+  "hayles-2012-we-think-digital": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 45,
+        "delta": 45,
+        "added": 45,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- N. Katherine Hayles+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: book+} {+url: https://press.uchicago.edu/ucp/books/book/chicago/H/bo5437533.html+} {+visibility: public+} {+year: 2012+} {+zotero_key: hayles-2012-howwethink+} {+---+} {+[[-bibliography]]+} {+Hayles, N. Katherine. _How We Think: Digital Media and Contemporary Technogenesis_. 2012. https://press.uchicago.edu/ucp/books/book/chicago/H/bo5437533.html+} {+---+}"
+      }
+    ]
+  },
+  "hao-2025-empire-ai-karen": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 45,
+        "delta": 45,
+        "added": 45,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Karen Hao+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+type: book+} {+url: null+} {+visibility: public+} {+year: 2025+} {+zotero_key: hao-2025-empireaikaren+} {+---+} {+[[-bibliography]]+} {+Hao, Karen. _Empire of AI by Karen Hao: 9780593657508 | PenguinRandomHouse.com: Books_. 2025.+} {+---+}"
+      }
+    ]
+  },
+  "han-2025-rag-meets-temporal": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 76,
+        "delta": 76,
+        "added": 76,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Jiale Han+} {+- Austin Cheung+} {+- Yubai Wei+} {+- Zheng Yu+} {+- Xusheng Wang+} {+- Bing Zhu+} {+- Yi Yang+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: preprint+} {+url: http://arxiv.org/abs/2510.13590+} {+visibility: public+} {+year: 2025+} {+zotero_key: han-2025-ragmeetstemporal+} {+---+} {+[[-bibliography]]+} {+Han, Jiale; Cheung, Austin; Wei, Yubai; Yu, Zheng; Wang, Xusheng; Zhu, Bing; Yang, Yi. _RAG Meets Temporal Graphs: Time-Sensitive Modeling and Retrieval for Evolving Knowledge_. 2025. http://arxiv.org/abs/2510.13590+} {+---+}"
+      }
+    ]
+  },
+  "hammad-2026-tracing-creativity-design": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 73,
+        "delta": 73,
+        "added": 73,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Noor Hammad+} {+- David Chuan-En Lin+} {+- Amy Smith+} {+- Max Kreminski+} {+- Erik Harpstead+} {+- Jessica Hammer+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: conference-paper+} {+url: https://dl.acm.org/doi/10.1145/3772318.3791263+} {+visibility: public+} {+year: 2026+} {+zotero_key: hammad-2026-tracingcreativitydesign+} {+---+} {+[[-bibliography]]+} {+Hammad, Noor; Lin, David Chuan-En; Smith, Amy; Kreminski, Max; Harpstead, Erik; Hammer, Jessica. _Tracing Creativity: A Design Space For Creative Activity Traces in HCI_. 2026. https://dl.acm.org/doi/10.1145/3772318.3791263+} {+---+}"
+      }
+    ]
+  },
+  "gutowska-2024-ai-agents-ibm": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 41,
+        "delta": 41,
+        "added": 41,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Anna Gutowska+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: web-page+} {+url: https://www.ibm.com/think/topics/ai-agents+} {+visibility: public+} {+year: 2024+} {+zotero_key: gutowska-2024-whatareai+} {+---+} {+[[-bibliography]]+} {+Gutowska, Anna. _What Are AI Agents? | IBM_. 2024. https://www.ibm.com/think/topics/ai-agents+} {+---+}"
+      }
+    ]
+  },
+  "gulezian-2026-understanding-workspace-agents": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 44,
+        "delta": 44,
+        "added": 44,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Kirk Gulezian+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+type: web-page+} {+url: https://academy.openai.com/public/clubs/higher-education-05x4z/blogs/understanding-workspace-agents-higher-education+} {+visibility: public+} {+year: 2026+} {+zotero_key: gulezian-2026-understandingworkspaceagents+} {+---+} {+[[-bibliography]]+} {+Gulezian, Kirk. _Understanding Workspace Agents in higher education - Blog_. 2026. https://academy.openai.com/public/clubs/higher-education-05x4z/blogs/understanding-workspace-agents-higher-education+} {+---+}"
+      }
+    ]
+  },
+  "gomes-2025-our-latest-commitments": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 47,
+        "delta": 47,
+        "added": 47,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Ben Gomes+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+- LLMs / NLP+} {+type: web-page+} {+url: https://blog.google/outreach-initiatives/education/ai-learning-commitments/+} {+visibility: public+} {+year: 2025+} {+zotero_key: gomes-2025-ourlatestcommitments+} {+---+} {+[[-bibliography]]+} {+Gomes, Ben. _Our latest commitments in AI and learning_. 2025. https://blog.google/outreach-initiatives/education/ai-learning-commitments/+} {+---+}"
+      }
+    ]
+  },
+  "gomes-2025-ai-future-learning": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 63,
+        "delta": 63,
+        "added": 63,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Ben Gomes+} {+- Christopher Phillips+} {+- James Manyika+} {+- Lila Ibrahim+} {+- Yossi Matias+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+- Pedagogy+} {+type: journal-article+} {+url: null+} {+visibility: public+} {+year: 2025+} {+zotero_key: gomes-2025-aifuturelearning+} {+---+} {+[[-bibliography]]+} {+Gomes, Ben; Phillips, Christopher; Manyika, James; Ibrahim, Lila; Matias, Yossi. _AI and the Future of Learning_. 2025.+} {+---+}"
+      }
+    ]
+  },
+  "gillsimmen-nd-heres-happens-you": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 46,
+        "delta": 46,
+        "added": 46,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Lucy Gill-Simmen+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: blog-post+} {+url: https://wonkhe.com/blogs/heres-what-happens-when-you-start-ai-policy-with-values-not-tools/+} {+visibility: public+} {+year: null+} {+zotero_key: --hereswhathappens+} {+---+} {+[[-bibliography]]+} {+Gill-Simmen, Lucy. _Here's what happens when you start AI policy with values, not tools_. https://wonkhe.com/blogs/heres-what-happens-when-you-start-ai-policy-with-values-not-tools/+} {+---+}"
+      }
+    ]
+  },
+  "gaver-2012-should-we-expect": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 43,
+        "delta": 43,
+        "added": 43,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- William Gaver+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: conference-paper+} {+url: https://dl.acm.org/doi/10.1145/2207676.2208538+} {+visibility: public+} {+year: 2012+} {+zotero_key: gaver-2012-whatshouldwe+} {+---+} {+[[-bibliography]]+} {+Gaver, William. _What should we expect from research through design?_. 2012. https://dl.acm.org/doi/10.1145/2207676.2208538+} {+---+}"
+      }
+    ]
+  },
+  "friere-1970-pedagogy-oppressed": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 39,
+        "delta": 39,
+        "added": 39,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Paulo Friere+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- Pedagogy+} {+type: book+} {+url: null+} {+visibility: public+} {+year: 1970+} {+zotero_key: friere-1970-pedagogyoppressed+} {+---+} {+[[-bibliography]]+} {+Friere, Paulo. _Pedagogy of the Oppressed_. 1970.+} {+---+}"
+      }
+    ]
+  },
+  "forster-2023-bigger-better-size": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 50,
+        "delta": 50,
+        "added": 50,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Suzanne Forster+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: journal-article+} {+url: https://aprja.net//article/view/140444+} {+visibility: public+} {+year: 2023+} {+zotero_key: forster-2023-biggerbettersize+} {+---+} {+[[-bibliography]]+} {+Forster, Suzanne. _The Bigger the Better? The Size of Language Models and the Dispute over Alternative Architectures_. 2023. https://aprja.net//article/view/140444+} {+---+}"
+      }
+    ]
+  },
+  "finio-2021-chatbot-ibm": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 51,
+        "delta": 51,
+        "added": 51,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Matthew Finio+} {+- Amanda Downie+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+- LLMs / NLP+} {+type: web-page+} {+url: https://www.ibm.com/think/topics/chatbots+} {+visibility: public+} {+year: 2021+} {+zotero_key: finio-2021-whatchatbotibm+} {+---+} {+[[-bibliography]]+} {+Finio, Matthew; Downie, Amanda. _What Is a Chatbot? | IBM_. 2021. https://www.ibm.com/think/topics/chatbots+} {+---+}"
+      }
+    ]
+  },
+  "fiebrink-2019-machine-learning-education": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 45,
+        "delta": 45,
+        "added": 45,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Rebecca Fiebrink+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: journal-article+} {+url: https://dl.acm.org/doi/10.1145/3294008+} {+visibility: public+} {+year: 2019+} {+zotero_key: fiebrink-2019-machinelearningeducation+} {+---+} {+[[-bibliography]]+} {+Fiebrink, Rebecca. _Machine Learning Education for Artists, Musicians, and Other Creative Practitioners_. 2019. https://dl.acm.org/doi/10.1145/3294008+} {+---+}"
+      }
+    ]
+  },
+  "feijo-2023-will-future-education": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 57,
+        "delta": 57,
+        "added": 57,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Sara Feijo+} {+- Katherine Ouellette+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: web-page+} {+url: https://openlearning.mit.edu/news/what-will-future-education-look-world-generative-ai+} {+visibility: public+} {+year: 2023+} {+zotero_key: feijo-2023-whatwillfuture+} {+---+} {+[[-bibliography]]+} {+Feijo, Sara; Ouellette, Katherine. _What will the future of education look like in a world with generative AI? | Open Learning_. 2023. https://openlearning.mit.edu/news/what-will-future-education-look-world-generative-ai+} {+---+}"
+      }
+    ]
+  },
+  "evans-2026-agentic-ai-next": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 59,
+        "delta": 59,
+        "added": 59,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- James Evans+} {+- Benjamin Bratton+} {+- Blaise Agüera y Arcas+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+- Speculative+} {+type: journal-article+} {+url: https://www.science.org/doi/10.1126/science.aeg1895+} {+visibility: public+} {+year: 2026+} {+zotero_key: evans-2026-agenticainext+} {+---+} {+[[-bibliography]]+} {+Evans, James; Bratton, Benjamin; Agüera y Arcas, Blaise. _Agentic AI and the next intelligence explosion_. 2026. https://www.science.org/doi/10.1126/science.aeg1895+} {+---+}"
+      }
+    ]
+  },
+  "essa-2025-mike-caulfield-ai": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 45,
+        "delta": 45,
+        "added": 45,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Alfred Essa+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+- Pedagogy+} {+type: blog-post+} {+url: https://ailearninsights.substack.com/p/mike-caulfield-ai-as-a-tool-for-coreasoning+} {+visibility: public+} {+year: 2025+} {+zotero_key: essa-2025-mikecaulfieldai+} {+---+} {+[[-bibliography]]+} {+Essa, Alfred. _Mike Caulfield: AI in Education (Episode 1)_. 2025. https://ailearninsights.substack.com/p/mike-caulfield-ai-as-a-tool-for-coreasoning+} {+---+}"
+      }
+    ]
+  },
+  "ellis-2000-autoethnography-personal-narrative": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 50,
+        "delta": 50,
+        "added": 50,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Carolyn Ellis+} {+- Arthur P. Bochner+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- Research Methods+} {+type: book+} {+url: null+} {+visibility: public+} {+year: 2000+} {+zotero_key: ellis-2000-autoethnographypersonalnarrative+} {+---+} {+[[-bibliography]]+} {+Ellis, Carolyn; Bochner, Arthur P.. _Autoethnography, personal narrative, reflexivity: researcher as subject_. 2000.+} {+---+}"
+      }
+    ]
+  },
+  "edwards-2025-does-phd-level": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 47,
+        "delta": 47,
+        "added": 47,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Benj Edwards+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+type: web-page+} {+url: https://arstechnica.com/ai/2025/03/what-does-phd-level-ai-mean-openais-rumored-20000-agent-plan-explained/+} {+visibility: public+} {+year: 2025+} {+zotero_key: edwards-2025-whatdoesphdlevel+} {+---+} {+[[-bibliography]]+} {+Edwards, Benj. _What does “PhD-level” AI mean? OpenAI’s rumored $20,000 agent plan explained._. 2025. https://arstechnica.com/ai/2025/03/what-does-phd-level-ai-mean-openais-rumored-20000-agent-plan-explained/+} {+---+}"
+      }
+    ]
+  },
+  "edwards-2025-chatgpt-comes-500": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 49,
+        "delta": 49,
+        "added": 49,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Benj Edwards+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+type: web-page+} {+url: https://arstechnica.com/ai/2025/02/chatgpt-comes-to-500000-new-users-in-openais-largest-ai-education-deal-yet/+} {+visibility: public+} {+year: 2025+} {+zotero_key: edwards-2025-chatgptcomes500000+} {+---+} {+[[-bibliography]]+} {+Edwards, Benj. _ChatGPT comes to 500,000 new users in OpenAI’s largest AI education deal yet_. 2025. https://arstechnica.com/ai/2025/02/chatgpt-comes-to-500000-new-users-in-openais-largest-ai-education-deal-yet/+} {+---+}"
+      }
+    ]
+  },
+  "education-2017-partnership-21st-century": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 43,
+        "delta": 43,
+        "added": 43,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Education Reimagined+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: web-page+} {+url: https://education-reimagined.org/resources/partnership-for-21st-century-learning/+} {+visibility: public+} {+year: 2017+} {+zotero_key: educationreimagined-2017-partnership21stcentury+} {+---+} {+[[-bibliography]]+} {+Education Reimagined. _Partnership for 21st Century Learning - Education Reimagined_. 2017. https://education-reimagined.org/resources/partnership-for-21st-century-learning/+} {+---+}"
+      }
+    ]
+  },
+  "dunne-2013-speculative-everything": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 42,
+        "delta": 42,
+        "added": 42,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Anthony Dunne+} {+- Fiona Raby+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- Speculative+} {+type: book+} {+url: null+} {+visibility: public+} {+year: 2013+} {+zotero_key: dunne-2013-speculativeeverything+} {+---+} {+[[-bibliography]]+} {+Dunne, Anthony; Raby, Fiona. _Speculative everything_. 2013.+} {+---+}"
+      }
+    ]
+  },
+  "duenas-2024-risks-human-overreliance": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 53,
+        "delta": 53,
+        "added": 53,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Tom Duenas+} {+- Diana Ruiz+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+type: preprint+} {+url: https://www.researchgate.net/publication/385743952_The_Risks_Of_Human_Overreliance_On_Large_Language_Models_For_Critical_Thinking+} {+visibility: public+} {+year: 2024+} {+zotero_key: duenas-2024-riskshumanoverreliance+} {+---+} {+[[-bibliography]]+} {+Duenas, Tom; Ruiz, Diana. _THE RISKS OF HUMAN OVERRELIANCE ON LARGE LANGUAGE MODELS FOR CRITICAL THINKING_. 2024. https://www.researchgate.net/publication/385743952_The_Risks_Of_Human_Overreliance_On_Large_Language_Models_For_Critical_Thinking+} {+---+}"
+      }
+    ]
+  },
+  "dinverno-2012-computers-creativity": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 42,
+        "delta": 42,
+        "added": 42,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Mark d’Inverno+} {+- Jon McCormack+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: book+} {+url: null+} {+visibility: public+} {+year: 2012+} {+zotero_key: dinverno-2012-computerscreativity+} {+---+} {+[[-bibliography]]+} {+d’Inverno, Mark; McCormack, Jon. _Computers and Creativity_. 2012.+} {+---+}"
+      }
+    ]
+  },
+  "dekoven-2020-infinite-playground-bernard": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 56,
+        "delta": 56,
+        "added": 56,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Bernard De Koven+} {+- Holly Gramazio+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- Play+} {+- Speculative+} {+type: book+} {+url: https://www.penguinrandomhouse.com/books/647554/the-infinite-playground-by-bernard-de-koven-celia-pearce-and-eric-zimmerman-with-holly-gramazio/9780262543866+} {+visibility: public+} {+year: 2020+} {+zotero_key: dekoven-2020-infiniteplaygroundbernard+} {+---+} {+[[-bibliography]]+} {+De Koven, Bernard; Gramazio, Holly. _The Infinite Playground by Bernard De Koven: 9780262543866 | PenguinRandomHouse.com: Books_. 2020. https://www.penguinrandomhouse.com/books/647554/the-infinite-playground-by-bernard-de-koven-celia-pearce-and-eric-zimmerman-with-holly-gramazio/9780262543866+} {+---+}"
+      }
+    ]
+  },
+  "czerniewicz-nd-higher-education-good": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 48,
+        "delta": 48,
+        "added": 48,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Laura Czerniewicz+} {+- Catherine Cronin+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: book+} {+url: https://books.openbookpublishers.com/10.11647/obp.0363.pdf+} {+visibility: public+} {+year: null+} {+zotero_key: czerniewicz--highereducationgood+} {+---+} {+[[-bibliography]]+} {+Czerniewicz, Laura; Cronin, Catherine. _Higher Education for Good - Teaching and Learning Future_. https://books.openbookpublishers.com/10.11647/obp.0363.pdf+} {+---+}"
+      }
+    ]
+  },
+  "crawford-2022-atlas-ai-power": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 47,
+        "delta": 47,
+        "added": 47,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Kate Crawford+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+type: book+} {+url: null+} {+visibility: public+} {+year: 2022+} {+zotero_key: crawford-2022-atlasaipower+} {+---+} {+[[-bibliography]]+} {+Crawford, Kate. _Atlas of AI: Power, Politics, and the Planetary Costs of Artificial Intelligence_. 2022.+} {+---+}"
+      }
+    ]
+  },
+  "cohen-2017-research-methods-education": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 48,
+        "delta": 48,
+        "added": 48,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Louis Cohen+} {+- Lawrence Manion+} {+- Keith Morrison+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: book+} {+url: null+} {+visibility: public+} {+year: 2017+} {+zotero_key: cohen-2017-researchmethodseducation+} {+---+} {+[[-bibliography]]+} {+Cohen, Louis; Manion, Lawrence; Morrison, Keith. _Research Methods in Education_. 2017.+} {+---+}"
+      }
+    ]
+  },
+  "coelho-2024-large-language-objects": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 51,
+        "delta": 51,
+        "added": 51,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Marcelo Coelho+} {+- Jean-Baptiste Labrune+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: journal-article+} {+url: https://dl.acm.org/doi/10.1145/3672534+} {+visibility: public+} {+year: 2024+} {+zotero_key: coelho-2024-largelanguageobjects+} {+---+} {+[[-bibliography]]+} {+Coelho, Marcelo; Labrune, Jean-Baptiste. _Large Language Objects: The Design of Physical AI and Generative Experiences_. 2024. https://dl.acm.org/doi/10.1145/3672534+} {+---+}"
+      }
+    ]
+  },
+  "cocker-2016-performing-thinking-action": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 48,
+        "delta": 48,
+        "added": 48,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Emma Cocker+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- Live Coding+} {+- Performance+} {+type: journal-article+} {+url: https://doi.org/10.1080/14794713.2016.1227597+} {+visibility: public+} {+year: 2016+} {+zotero_key: cocker-2016-performingthinkingaction+} {+---+} {+[[-bibliography]]+} {+Cocker, Emma. _Performing thinking in action: the meletē of live coding_. 2016. https://doi.org/10.1080/14794713.2016.1227597+} {+---+}"
+      }
+    ]
+  },
+  "cheng-2025-sycophantic-ai-decreases": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 68,
+        "delta": 68,
+        "added": 68,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Myra Cheng+} {+- Cinoo Lee+} {+- Pranav Khadpe+} {+- Sunny Yu+} {+- Dyllan Han+} {+- Dan Jurafsky+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: preprint+} {+url: http://arxiv.org/abs/2510.01395+} {+visibility: public+} {+year: 2025+} {+zotero_key: cheng-2025-sycophanticaidecreases+} {+---+} {+[[-bibliography]]+} {+Cheng, Myra; Lee, Cinoo; Khadpe, Pranav; Yu, Sunny; Han, Dyllan; Jurafsky, Dan. _Sycophantic AI Decreases Prosocial Intentions and Promotes Dependence_. 2025. http://arxiv.org/abs/2510.01395+} {+---+}"
+      }
+    ]
+  },
+  "chang-2024-survey-evaluation-large": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 125,
+        "delta": 125,
+        "added": 125,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Yupeng Chang+} {+- Xu Wang+} {+- Jindong Wang+} {+- Yuan Wu+} {+- Linyi Yang+} {+- Kaijie Zhu+} {+- Hao Chen+} {+- Xiaoyuan Yi+} {+- Cunxiang Wang+} {+- Yidong Wang+} {+- Wei Ye+} {+- Yue Zhang+} {+- Yi Chang+} {+- Philip S. Yu+} {+- Qiang Yang+} {+- Xing Xie+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+- LLMs / NLP+} {+type: journal-article+} {+url: https://dl.acm.org/doi/10.1145/3641289+} {+visibility: public+} {+year: 2024+} {+zotero_key: chang-2024-surveyevaluationlarge+} {+---+} {+[[-bibliography]]+} {+Chang, Yupeng; Wang, Xu; Wang, Jindong; Wu, Yuan; Yang, Linyi; Zhu, Kaijie; Chen, Hao; Yi, Xiaoyuan; Wang, Cunxiang; Wang, Yidong; Ye, Wei; Zhang, Yue; Chang, Yi; Yu, Philip S.; Yang, Qiang; Xie, Xing. _A Survey on Evaluation of Large Language Models_. 2024. https://dl.acm.org/doi/10.1145/3641289+} {+---+}"
+      }
+    ]
+  },
+  "caulfield-2015-garden-stream-technopastoral": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 42,
+        "delta": 42,
+        "added": 42,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Mike Caulfield+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: blog-post+} {+url: https://hapgood.us/2015/10/17/the-garden-and-the-stream-a-technopastoral/+} {+visibility: public+} {+year: 2015+} {+zotero_key: caulfield-2015-gardenstreamtechnopastoral+} {+---+} {+[[-bibliography]]+} {+Caulfield, Mike. _The Garden and the Stream: A Technopastoral_. 2015. https://hapgood.us/2015/10/17/the-garden-and-the-stream-a-technopastoral/+} {+---+}"
+      }
+    ]
+  },
+  "casacuberta-2025-disembodied-creativity-generative": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 55,
+        "delta": 55,
+        "added": 55,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- David Casacuberta+} {+- Ariel Guersenzvaig+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: journal-article+} {+url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12391906/+} {+visibility: public+} {+year: 2025+} {+zotero_key: casacuberta-2025-disembodiedcreativitygenerative+} {+---+} {+[[-bibliography]]+} {+Casacuberta, David; Guersenzvaig, Ariel. _Disembodied creativity in generative AI: prima facie challenges and limitations of prompting in creative practice_. 2025. https://pmc.ncbi.nlm.nih.gov/articles/PMC12391906/+} {+---+}"
+      }
+    ]
+  },
+  "carroll-nd-speculative-whiteness-science": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 44,
+        "delta": 44,
+        "added": 44,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Jordan S. Carroll+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- Speculative+} {+type: book+} {+url: https://manifold.umn.edu/projects/speculative-whiteness+} {+visibility: public+} {+year: null+} {+zotero_key: carroll-22-10-24-speculativewhitenessscience+} {+---+} {+[[-bibliography]]+} {+Carroll, Jordan S.. _Speculative Whiteness  Science Fiction and the Alt-Right_. https://manifold.umn.edu/projects/speculative-whiteness+} {+---+}"
+      }
+    ]
+  },
+  "caldarini-nd-literature-survey-recent": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 57,
+        "delta": 57,
+        "added": 57,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Guendalina Caldarini+} {+- Sardar Jaf+} {+- Kenneth McGarry+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+- LLMs / NLP+} {+type: journal-article+} {+url: https://www.mdpi.com/2078-2489/13/1/41+} {+visibility: public+} {+year: null+} {+zotero_key: caldarini-2022-literaturesurveyrecent+} {+---+} {+[[-bibliography]]+} {+Caldarini, Guendalina; Jaf, Sardar; McGarry, Kenneth. _A Literature Survey of Recent Advances in Chatbots_. https://www.mdpi.com/2078-2489/13/1/41+} {+---+}"
+      }
+    ]
+  },
+  "burrows-2019-fictioning": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 36,
+        "delta": 36,
+        "added": 36,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- David Burrows+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- Speculative+} {+type: book+} {+url: null+} {+visibility: public+} {+year: 2019+} {+zotero_key: burrows-2019-fictioning+} {+---+} {+[[-bibliography]]+} {+Burrows, David. _Fictioning_. 2019.+} {+---+}"
+      }
+    ]
+  },
+  "bryce-2026-leadership-not-literacy": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 44,
+        "delta": 44,
+        "added": 44,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Rosie Bryce+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: blog-post+} {+url: https://medium.com/@rosiebryce/leadership-not-literacy-higher-education-for-an-ai-era-aa4291fa5b2e+} {+visibility: public+} {+year: 2026+} {+zotero_key: bryce-2026-leadershipnotliteracy+} {+---+} {+[[-bibliography]]+} {+Bryce, Rosie. _Leadership, Not Literacy: Higher Education for an AI Era_. 2026. https://medium.com/@rosiebryce/leadership-not-literacy-higher-education-for-an-ai-era-aa4291fa5b2e+} {+---+}"
+      }
+    ]
+  },
+  "boulton-nd-art-design-artificial": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 74,
+        "delta": 74,
+        "added": 74,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Helen Boulton+} {+- Tina Downes+} {+- Natalie Brown+} {+- Klaire Elton+} {+- Kate Farley+} {+- Phoebe Troup+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+- LLMs / NLP+} {+- Pedagogy+} {+type: web-page+} {+url: https://figshare.com/articles/online_resource/Art_Design_Artificial_Intelligence_An_Educator_s_Toolkit/30374065/1+} {+visibility: public+} {+year: null+} {+zotero_key: boulton-2025-artdesignartificial+} {+---+} {+[[-bibliography]]+} {+Boulton, Helen; Downes, Tina; Brown, Natalie; Elton, Klaire; Farley, Kate; Troup, Phoebe. _Art, Design & Artificial Intelligence: An Educator’s Toolkit_. https://figshare.com/articles/online_resource/Art_Design_Artificial_Intelligence_An_Educator_s_Toolkit/30374065/1+} {+---+}"
+      }
+    ]
+  },
+  "bogost-2016-play-anything-pleasure": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 51,
+        "delta": 51,
+        "added": 51,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Ian Bogost+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- Play+} {+type: book+} {+url: https://www.amazon.com/Play-Anything-Pleasure-Limits-Boredom/dp/0465051723+} {+visibility: public+} {+year: 2016+} {+zotero_key: bogost-2016-playanythingpleasure+} {+---+} {+[[-bibliography]]+} {+Bogost, Ian. _Play anything: the pleasure of limits, the uses of boredom, and the secret of games_. 2016. https://www.amazon.com/Play-Anything-Pleasure-Limits-Boredom/dp/0465051723+} {+---+}"
+      }
+    ]
+  },
+  "bleecker-nd-manual-design-fiction": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 58,
+        "delta": 58,
+        "added": 58,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Julian Bleecker+} {+- Nick Foster+} {+- Fabien Girardin+} {+- Nicolas Nova+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- Research Methods+} {+- Speculative+} {+type: book+} {+url: https://www.setmargins.press/books/the-manual-of-design-fiction/+} {+visibility: public+} {+year: null+} {+zotero_key: bleecker-2022-manualdesignfiction+} {+---+} {+[[-bibliography]]+} {+Bleecker, Julian; Foster, Nick; Girardin, Fabien; Nova, Nicolas. _The Manual of Design Fiction_. https://www.setmargins.press/books/the-manual-of-design-fiction/+} {+---+}"
+      }
+    ]
+  },
+  "blackwell-2022-live-coding-users": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 67,
+        "delta": 67,
+        "added": 67,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Alan Blackwell+} {+- Emma Cocker+} {+- Geoff Cox+} {+- Alex McLean+} {+- Thor Magnusson+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- Live Coding+} {+- Play+} {+- Research Methods+} {+type: book+} {+url: https://livecodingbook.toplap.org/+} {+visibility: public+} {+year: 2022+} {+zotero_key: blackwell-2022-livecodingusers+} {+---+} {+[[-bibliography]]+} {+Blackwell, Alan; Cocker, Emma; Cox, Geoff; McLean, Alex; Magnusson, Thor. _Live Coding: A User's Manual_. 2022. https://livecodingbook.toplap.org/+} {+---+}"
+      }
+    ]
+  },
+  "berreby-2026-small-language-models": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 45,
+        "delta": 45,
+        "added": 45,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- David Berreby+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: web-page+} {+url: https://spectrum.ieee.org/small-language-models-ai-pharmaceuticals+} {+visibility: public+} {+year: 2026+} {+zotero_key: berreby-2026-smalllanguagemodels+} {+---+} {+[[-bibliography]]+} {+Berreby, David. _Small Language Models Power Life-Saving Small AI - IEEE Spectrum_. 2026. https://spectrum.ieee.org/small-language-models-ai-pharmaceuticals+} {+---+}"
+      }
+    ]
+  },
+  "benjamin-2024-imagination-manifesto": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 38,
+        "delta": 38,
+        "added": 38,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Ruha Benjamin+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- Speculative+} {+type: book+} {+url: null+} {+visibility: public+} {+year: 2024+} {+zotero_key: benjamin-2024-imaginationmanifesto+} {+---+} {+[[-bibliography]]+} {+Benjamin, Ruha. _Imagination: A Manifesto_. 2024.+} {+---+}"
+      }
+    ]
+  },
+  "bender-2025-unsafe-ai-education": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 83,
+        "delta": 83,
+        "added": 83,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Emily M. Bender+} {+- Eamon Costello+} {+- Kyungmee Lee+} {+- Robert Farrow+} {+- Giselle Ferreira+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+- LLMs / NLP+} {+type: journal-article+} {+url: https://jime.open.ac.uk/articles/10.5334/jime.1079+} {+visibility: public+} {+year: 2025+} {+zotero_key: bender-2025-unsafeaieducation+} {+---+} {+[[-bibliography]]+} {+Bender, Emily M.; Costello, Eamon; Lee, Kyungmee; Farrow, Robert; Ferreira, Giselle. _Unsafe AI for Education: A Conversation on Stochastic Parrots and Other Learning Metaphors ⚠️ | Journal of Interactive Media in Education_. 2025. https://jime.open.ac.uk/articles/10.5334/jime.1079+} {+---+}"
+      }
+    ]
+  },
+  "belas-2019-knowledge-curriculum-democratic": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 47,
+        "delta": 47,
+        "added": 47,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Oliver Belas+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: journal-article+} {+url: https://doi.org/10.1177/0034523719839095+} {+visibility: public+} {+year: 2019+} {+zotero_key: belas-2019-knowledgecurriculumdemocratic+} {+---+} {+[[-bibliography]]+} {+Belas, Oliver. _Knowledge, the curriculum, and democratic education: The curious case of school English_. 2019. https://doi.org/10.1177/0034523719839095+} {+---+}"
+      }
+    ]
+  },
+  "bayley-2018-posthuman-pedagogies-practice": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 45,
+        "delta": 45,
+        "added": 45,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Annouchka Bayley+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: book+} {+url: null+} {+visibility: public+} {+year: 2018+} {+zotero_key: bayley-2018-posthumanpedagogiespractice+} {+---+} {+[[-bibliography]]+} {+Bayley, Annouchka. _Posthuman Pedagogies in Practice: Arts Based Approaches for Developing Participatory Futures_. 2018.+} {+---+}"
+      }
+    ]
+  },
+  "battelle-2019-framework-21st-century": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 43,
+        "delta": 43,
+        "added": 43,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Battelle for Kids+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: report+} {+url: https://www.battelleforkids.org/wp-content/uploads/2023/11/P21_Framework_DefinitionsBFK.pdf+} {+visibility: public+} {+year: 2019+} {+zotero_key: battelleforkids-2019-framework21stcentury+} {+---+} {+[[-bibliography]]+} {+Battelle for Kids. _FRAMEWORK FOR 21st CENTURY LEARNING DEFINITIONS_. 2019. https://www.battelleforkids.org/wp-content/uploads/2023/11/P21_Framework_DefinitionsBFK.pdf+} {+---+}"
+      }
+    ]
+  },
+  "bastani-2019-fully-automated-luxury": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 39,
+        "delta": 39,
+        "added": 39,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Aaron Bastani+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- Speculative+} {+type: book+} {+url: null+} {+visibility: public+} {+year: 2019+} {+zotero_key: bastani-2019-fullyautomatedluxury+} {+---+} {+[[-bibliography]]+} {+Bastani, Aaron. _Fully Automated Luxury Communism_. 2019.+} {+---+}"
+      }
+    ]
+  },
+  "appleton-2020-brief-history-ethos": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 44,
+        "delta": 44,
+        "added": 44,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Maggie Appleton+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: blog-post+} {+url: https://maggieappleton.com/garden-history+} {+visibility: public+} {+year: 2020+} {+zotero_key: appleton-2020-briefhistoryethos+} {+---+} {+[[-bibliography]]+} {+Appleton, Maggie. _A Brief History & Ethos of the Digital Garden_. 2020. https://maggieappleton.com/garden-history+} {+---+}"
+      }
+    ]
+  },
+  "anon-nd-toward-critical-technical": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 36,
+        "delta": 36,
+        "added": 36,
+        "removed": 0,
+        "diff": "{+---+} {+authors: []+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+type: web-page+} {+url: https://pages.gseis.ucla.edu/faculty/agre/critical.html+} {+visibility: public+} {+year: null+} {+zotero_key: --criticaltechnicalpractice+} {+---+} {+[[-bibliography]]+} {+_Toward a Critical Technical Practice_. https://pages.gseis.ucla.edu/faculty/agre/critical.html+} {+---+}"
+      }
+    ]
+  },
+  "anon-nd-introducing-claude-education": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 35,
+        "delta": 35,
+        "added": 35,
+        "removed": 0,
+        "diff": "{+---+} {+authors: []+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+type: web-page+} {+url: https://www.anthropic.com/news/introducing-claude-for-education+} {+visibility: public+} {+year: null+} {+zotero_key: -2025-introducingclaudeeducation+} {+---+} {+[[-bibliography]]+} {+_Introducing Claude for education_. https://www.anthropic.com/news/introducing-claude-for-education+} {+---+}"
+      }
+    ]
+  },
+  "anon-nd-illinois-chat": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 33,
+        "delta": 33,
+        "added": 33,
+        "removed": 0,
+        "diff": "{+---+} {+authors: []+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+type: web-page+} {+url: https://uiuc.chat/+} {+visibility: public+} {+year: null+} {+zotero_key: --illinoischat+} {+---+} {+[[-bibliography]]+} {+_Illinois Chat_. https://uiuc.chat/+} {+---+}"
+      }
+    ]
+  },
+  "anon-nd-eliza-reinterpreted-worlds": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 49,
+        "delta": 49,
+        "added": 49,
+        "removed": 0,
+        "diff": "{+---+} {+authors: []+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+- LLMs / NLP+} {+type: web-page+} {+url: https://arxiv.org/html/2406.17650v2+} {+visibility: public+} {+year: null+} {+zotero_key: --elizareinterpretedworlds+} {+---+} {+[[-bibliography]]+} {+_ELIZA Reinterpreted: The world’s first chatbot was not intended as a chatbot at all_. https://arxiv.org/html/2406.17650v2+} {+---+}"
+      }
+    ]
+  },
+  "anon-nd-calculating-empires-genealogy": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 40,
+        "delta": 40,
+        "added": 40,
+        "removed": 0,
+        "diff": "{+---+} {+authors: []+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: web-page+} {+url: https://calculatingempires.net+} {+visibility: public+} {+year: null+} {+zotero_key: --calculatingempiresgenealogy+} {+---+} {+[[-bibliography]]+} {+_Calculating Empires: A Genealogy of Technology and Power since 1500_. https://calculatingempires.net+} {+---+}"
+      }
+    ]
+  },
+  "anon-2025-rip-d-e": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 46,
+        "delta": 46,
+        "added": 46,
+        "removed": 0,
+        "diff": "{+---+} {+authors: []+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- Pedagogy+} {+- Speculative+} {+type: video-recording+} {+url: https://www.youtube.com/watch?v=1VRCfuKEGdo+} {+visibility: public+} {+year: 2025+} {+zotero_key: whatnow?withtrevornoah-2025-ripruhabenjamin+} {+---+} {+[[-bibliography]]+} {+_RIP… D.E.I. with Ruha Benjamin | What Now? with Trevor Noah Podcast_. 2025. https://www.youtube.com/watch?v=1VRCfuKEGdo+} {+---+}"
+      }
+    ]
+  },
+  "anon-2024-shell-game-evan": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 41,
+        "delta": 41,
+        "added": 41,
+        "removed": 0,
+        "diff": "{+---+} {+authors: []+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+- Speculative+} {+type: podcast+} {+url: https://www.shellgame.co/podcast+} {+visibility: public+} {+year: 2024+} {+zotero_key: ratliff-2024-shellgameevan+} {+---+} {+[[-bibliography]]+} {+_Shell Game | Evan Ratliff | Substack_. 2024. https://www.shellgame.co/podcast+} {+---+}"
+      }
+    ]
+  },
+  "anon-2024-learning-reason-llms": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 41,
+        "delta": 41,
+        "added": 41,
+        "removed": 0,
+        "diff": "{+---+} {+authors: []+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+- LLMs / NLP+} {+type: web-page+} {+url: https://openai.com/index/learning-to-reason-with-llms/+} {+visibility: public+} {+year: 2024+} {+zotero_key: -2024-learningreasonllms+} {+---+} {+[[-bibliography]]+} {+_Learning to reason with LLMs_. 2024. https://openai.com/index/learning-to-reason-with-llms/+} {+---+}"
+      }
+    ]
+  },
+  "anon-2024-hands-research-artists": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 40,
+        "delta": 40,
+        "added": 40,
+        "removed": 0,
+        "diff": "{+---+} {+authors: []+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- Research Methods+} {+type: book+} {+url: null+} {+visibility: public+} {+year: 2024+} {+zotero_key: rasch-2024-handsresearchartists+} {+---+} {+[[-bibliography]]+} {+_Hands on research for artists, designers & educators_. 2024.+} {+---+}"
+      }
+    ]
+  },
+  "anon-2024-ai-education-safety": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 41,
+        "delta": 41,
+        "added": 41,
+        "removed": 0,
+        "diff": "{+---+} {+authors: []+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+- Pedagogy+} {+type: video-recording+} {+url: https://www.youtube.com/watch?v=JSnwZmbTMXM+} {+visibility: public+} {+year: 2024+} {+zotero_key: ibmtechnology-2024-aieducationsafety+} {+---+} {+[[-bibliography]]+} {+_AI in education: Safety, literacy, and predictions_. 2024. https://www.youtube.com/watch?v=JSnwZmbTMXM+} {+---+}"
+      }
+    ]
+  },
+  "anon-2023-meaning-live-art": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 47,
+        "delta": 47,
+        "added": 47,
+        "removed": 0,
+        "diff": "{+---+} {+authors: []+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- Live Coding+} {+- Performance+} {+type: presentation+} {+url: https://zenodo.org/records/7843567+} {+visibility: public+} {+year: 2023+} {+zotero_key: mclean-2023-meaninglivearta+} {+---+} {+[[-bibliography]]+} {+_The Meaning of Live: From Art Without Audience to Programs Without Users_. 2023. https://zenodo.org/records/7843567+} {+---+}"
+      }
+    ]
+  },
+  "anon-2021-auto-ethnographic-turn": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 38,
+        "delta": 38,
+        "added": 38,
+        "removed": 0,
+        "diff": "{+---+} {+authors: []+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- Research Methods+} {+type: book+} {+url: https://valiz.nl/en/publications/the-auto-ethnographic-turn-in-design+} {+visibility: public+} {+year: 2021+} {+zotero_key: schouwenberg-2021-autoethnographicturndesign+} {+---+} {+[[-bibliography]]+} {+_The Auto-Ethnographic Turn in Design_. 2021. https://valiz.nl/en/publications/the-auto-ethnographic-turn-in-design+} {+---+}"
+      }
+    ]
+  },
+  "anon-2021-arts-based-methods": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 39,
+        "delta": 39,
+        "added": 39,
+        "removed": 0,
+        "diff": "{+---+} {+authors: []+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- Research Methods+} {+type: book+} {+url: https://www.routledge.com/Arts-Based-Methods-for-Decolonising-Participatory-Research/Seppala-Sarantou-Miettinen/p/book/9780367513313+} {+visibility: public+} {+year: 2021+} {+zotero_key: seppala-2021-artsbasedmethodsdecolonising+} {+---+} {+[[-bibliography]]+} {+_Arts-Based Methods for Decolonising Participatory Research_. 2021. https://www.routledge.com/Arts-Based-Methods-for-Decolonising-Participatory-Research/Seppala-Sarantou-Miettinen/p/book/9780367513313+} {+---+}"
+      }
+    ]
+  },
+  "ahrens-2017-take-smart-notes": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 40,
+        "delta": 40,
+        "added": 40,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Sonke Ahrens+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: web-page+} {+url: https://www.waterstones.com/book/how-to-take-smart-notes/s-nke-ahrens/9783982438801+} {+visibility: public+} {+year: 2017+} {+zotero_key: --howtakesmart+} {+---+} {+[[-bibliography]]+} {+Ahrens, Sonke. _How to Take Smart Notes_. 2017. https://www.waterstones.com/book/how-to-take-smart-notes/s-nke-ahrens/9783982438801+} {+---+}"
+      }
+    ]
+  },
+  "agerayarcas-2024-intelligence-antikythera": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 49,
+        "delta": 49,
+        "added": 49,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Blaise Agüera y Arcas+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+- LLMs / NLP+} {+type: web-page+} {+url: https://whatisintelligence.antikythera.org/+} {+visibility: public+} {+year: 2024+} {+zotero_key: aguerayarcas-2024-whatintelligenceantikythera+} {+---+} {+[[-bibliography]]+} {+Agüera y Arcas, Blaise. _What is Intelligence? | Antikythera_. 2024. https://whatisintelligence.antikythera.org/+} {+---+}"
+      }
+    ]
+  },
+  "adams-2025-pupils-fear-ai": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 55,
+        "delta": 55,
+        "added": 55,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Richard Adams+} {+- Richard Adams Education editor+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: newspaper-article+} {+url: https://www.theguardian.com/technology/2025/oct/15/pupils-fear-ai-eroding-study-ability-research+} {+visibility: public+} {+year: 2025+} {+zotero_key: adams-2025-pupilsfearai+} {+---+} {+[[-bibliography]]+} {+Adams, Richard; editor, Richard Adams Education. _Pupils fear AI is eroding their ability to study, research finds_. 2025. https://www.theguardian.com/technology/2025/oct/15/pupils-fear-ai-eroding-study-ability-research+} {+---+}"
+      }
+    ]
+  },
+  "abunaseer-2023-use-generative-ai": {
+    "noteDate": "2026-07-17",
+    "revisions": [
+      {
+        "date": "2026-07-18",
+        "hash": "cfa3615",
+        "wordCount": 48,
+        "delta": 48,
+        "added": 48,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Heyam Abunaseer+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+- Pedagogy+} {+type: web-page+} {+url: https://pressbooks.pub/techcurr2023/chapter/the-use-of-generative-ai-in-education-applications-and-impact/+} {+visibility: public+} {+year: 2023+} {+zotero_key: abunaseer-2023-usegenerativeai+} {+---+} {+[[-bibliography]]+} {+Abunaseer, Heyam. _The use of Generative AI in Education: applications, and impact_. 2023. https://pressbooks.pub/techcurr2023/chapter/the-use-of-generative-ai-in-education-applications-and-impact/+} {+---+}"
       }
     ]
   }
