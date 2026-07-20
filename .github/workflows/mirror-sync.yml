@@ -20,22 +20,14 @@ jobs:
         with:
           token: ${{ secrets.MIRROR_SYNC_TOKEN }}
 
-      - name: fetch latest daily mirror file
+      - name: fetch all daily mirror files
         id: fetch_daily
         env:
           MIRROR_SYNC_TOKEN: ${{ secrets.MIRROR_SYNC_TOKEN }}
         run: |
           python3 scripts/fetch_daily.py \
             "https://api.github.com/repos/mahaliahr/research-infrastructure/contents/mirror-outputs/daily" \
-            "daily_content.txt"
-
-          if [ -s daily_content.txt ]; then
-            echo "daily_content<<EOF" >> $GITHUB_OUTPUT
-            cat daily_content.txt >> $GITHUB_OUTPUT
-            echo "EOF" >> $GITHUB_OUTPUT
-          else
-            echo "daily_content=" >> $GITHUB_OUTPUT
-          fi
+            "mirror_daily_tmp.json"
 
       - name: fetch recent weekly mirror files
         id: fetch_weekly
@@ -50,7 +42,6 @@ jobs:
         run: |
           python3 - <<'PYEOF'
           import json, os, re
-          from datetime import datetime
 
           def parse_sections(text):
               sections = {}
@@ -73,20 +64,20 @@ jobs:
                   sections[current_section] = '\n'.join(current_lines).strip()
               return sections
 
-          # daily
-          daily_content = os.environ.get('DAILY_CONTENT', '')
-          daily_output = []
-          if daily_content.strip():
-              # extract date from frontmatter
-              date_match = re.search(r'date:\s*(\S+)', daily_content)
-              date = date_match.group(1) if date_match else 'unknown'
-              daily_output.append({
-                  'date': date,
-                  'raw': daily_content,
-                  'parsed': parse_sections(daily_content)
-              })
-
           os.makedirs('src/site/mirror', exist_ok=True)
+
+          # daily
+          daily_output = []
+          if os.path.exists('mirror_daily_tmp.json'):
+              with open('mirror_daily_tmp.json') as f:
+                  raw_files = json.load(f)
+              for rf in raw_files:
+                  daily_output.append({
+                      'date': rf['date'],
+                      'raw': rf['raw'],
+                      'parsed': parse_sections(rf['raw'])
+                  })
+
           with open('src/site/mirror/mirror-daily.json', 'w') as f:
               json.dump({'files': daily_output}, f, indent=2)
 
@@ -107,8 +98,6 @@ jobs:
 
           print(f"written {len(daily_output)} daily, {len(weekly_files)} weekly files")
           PYEOF
-        env:
-          DAILY_CONTENT: ${{ steps.fetch_daily.outputs.daily_content }}
 
       - name: commit and push if changed
         run: |
@@ -125,4 +114,4 @@ jobs:
           fi
 
       - name: cleanup
-        run: rm -f mirror_weekly_tmp.json daily_content.txt
+        run: rm -f mirror_weekly_tmp.json mirror_daily_tmp.json daily_content.txt

@@ -63,6 +63,12 @@
   background: #D4C8F9;
 }
 
+.mirror-feed {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+}
+
 .live-column-header {
   display: flex;
   align-items: flex-start;
@@ -138,22 +144,54 @@ button.mirror-toggle-switch--on .mirror-toggle-knob {
   line-height: 1.4;
 }
 
-.mirror-section { margin-bottom: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid rgba(100,70,140,0.18); }
+/* mirror tabs */
+.mirror-tabs { display: flex; gap: 0; margin-bottom: 16px; border-bottom: 1px solid rgba(45,26,62,0.15); }
+.mirror-tab { font-size: 12px; font-family: monospace; padding: 6px 12px; cursor: pointer; letter-spacing: 0.05em; text-transform: uppercase; color: #2d1a3e; opacity: 0.5; border: none; background: none; border-bottom: 2px solid transparent; margin-bottom: -1px; }
+.mirror-tab.active { opacity: 1; border-bottom-color: #7c5cbf; font-weight: 500; }
+.mirror-tab:hover { opacity: 0.85; }
+
+/* mirror nav */
+.mirror-nav { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; padding: 4px 0; }
+.mirror-nav-arrow { font-size: 14px; color: #2d1a3e; opacity: 0.55; cursor: pointer; padding: 2px 10px; user-select: none; background: none; border: none; }
+.mirror-nav-arrow.disabled { opacity: 0.15; cursor: default; }
+.mirror-nav-arrow:hover:not(.disabled) { opacity: 1; }
+.mirror-nav-title { text-align: center; }
+.mirror-nav-period { font-size: 13px; font-family: monospace; color: #2d1a3e; font-weight: 500; letter-spacing: 0.05em; }
+.mirror-nav-dates { font-size: 11px; color: #2d1a3e; opacity: 0.55; margin-top: 2px; font-family: monospace; }
+.mirror-latest { display: inline-block; font-size: 9px; font-family: monospace; letter-spacing: 0.05em; text-transform: uppercase; color: #7c5cbf; background: rgba(255,255,255,0.5); padding: 2px 6px; border-radius: 3px; margin-left: 6px; vertical-align: 1px; font-weight: 400; }
+
+/* mirror sections */
+.mirror-section { margin-bottom: 18px; padding-bottom: 18px; border-bottom: 1px solid rgba(45,26,62,0.1); }
 .mirror-section:last-child { border-bottom: none; }
-.mirror-label { font-size: 0.9rem; font-family: 'Roboto Mono'; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.6; margin: 0 0 0.5rem 0; }
-.mirror-sublabel { font-size: 0.7rem; font-family: 'Roboto Mono'; opacity: 0.55; margin: 0.5rem 0 0.2rem 0; }
-.mirror-summary { display: flex; flex-wrap: wrap; gap: 8px; }
-.mirror-summary-item { font-size: 0.8rem; opacity: 0.8; }
-.mirror-days { display: flex; flex-direction: column; gap: 2px; }
-.mirror-day { font-size: 0.9rem; opacity: 0.9; }
-.mirror-day--inactive { opacity: 0.45; }
-.mirror-terms { display: flex; flex-direction: column; gap: 3px; }
-.mirror-term { font-size: 0.9rem; display: flex; justify-content: space-between; opacity: 0.9; }
-.mirror-term-count { font-family: 'Roboto Mono'; font-size: 0.75rem; opacity: 0.6; }
-.mirror-orphan { font-size: 0.8rem; opacity: 0.7; margin: 2px 0; }
-.mirror-synthesis-text { font-size: 0.9rem; line-height: 1.7; margin: 0 0 0.5rem 0; }
-.mirror-grounded { font-size: 0.9rem; font-family: 'Roboto Mono'; opacity: 0.55; margin: 0; }
-.mirror-prompt { font-size: 0.9rem; font-style: italic; line-height: 1.6; margin: 0; }
-.mirror-item { font-size: 0.9rem; margin: 2px 0; opacity: 0.9; }
-.mirror-item--muted { opacity: 0.55; }
-.mirror-empty { font-size: 0.8rem; opacity: 0.55; font-style: italic; }
+.mirror-label { font-size: 11px; font-family: monospace; letter-spacing: 0.08em; text-transform: uppercase; color: #2d1a3e; opacity: 0.55; margin: 0 0 8px 0; }
+.mirror-hint { font-size: 12px; color: #2d1a3e; opacity: 0.5; margin: 0 0 8px 0; font-style: italic; }
+
+/* days */
+.mirror-day-row { display: flex; align-items: baseline; padding: 3px 0; font-size: 13px; color: #2d1a3e; }
+.mirror-day-name { width: 60px; opacity: 0.7; font-family: monospace; font-size: 12px; }
+.mirror-day-content { flex: 1; opacity: 0.85; }
+.mirror-day-row--inactive .mirror-day-name { opacity: 0.3; }
+.mirror-day-row--inactive .mirror-day-content { opacity: 0.3; }
+
+/* terms */
+.mirror-term { display: flex; justify-content: space-between; align-items: baseline; padding: 3px 0; font-size: 13px; color: #2d1a3e; }
+.mirror-term-name { flex: 1; padding-right: 12px; }
+.mirror-term-count { font-family: monospace; font-size: 12px; opacity: 0.5; }
+
+/* wikilinks */
+.mirror-wikilink { color: #2d1a3e; text-decoration: none; border-bottom: 1px dotted rgba(45,26,62,0.35); }
+.mirror-wikilink:hover { border-bottom-color: rgba(45,26,62,0.7); }
+
+/* orphans */
+.mirror-orphan { font-size: 13px; color: #2d1a3e; opacity: 0.7; margin: 3px 0; }
+.mirror-show-more { font-size: 12px; font-family: monospace; color: #7c5cbf; background: none; border: none; padding: 6px 0; cursor: pointer; letter-spacing: 0.05em; opacity: 0.75; margin-top: 4px; }
+.mirror-show-more:hover { opacity: 1; }
+
+/* synthesis and prompt */
+.mirror-synthesis-text { font-size: 14px; line-height: 1.7; color: #2d1a3e; margin: 0 0 10px 0; }
+.mirror-grounded { font-size: 11px; font-family: monospace; color: #2d1a3e; opacity: 0.45; margin: 0; }
+.mirror-prompt { font-size: 14px; line-height: 1.6; font-style: italic; color: #2d1a3e; margin: 0; }
+
+/* daily items */
+.mirror-item { font-size: 13px; color: #2d1a3e; opacity: 0.85; margin: 3px 0; }
+.mirror-empty { font-size: 13px; color: #2d1a3e; opacity: 0.4; font-style: italic; }

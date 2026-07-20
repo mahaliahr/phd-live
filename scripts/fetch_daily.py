@@ -1,7 +1,7 @@
 import os, sys, json, urllib.request
 
 api_url = sys.argv[1]
-output_var_path = sys.argv[2]
+output_path = sys.argv[2]
 
 # Falls back to unauthenticated if unset, so this still works while
 # research-infrastructure is public -- the token is only required once
@@ -21,26 +21,32 @@ try:
         files = json.load(r)
 except Exception as e:
     print(f'API error: {e}')
-    with open(output_var_path, 'w') as f:
-        f.write('')
+    with open(output_path, 'w') as f:
+        json.dump([], f)
     sys.exit(0)
 
 if not isinstance(files, list) or not files:
     print('no daily files found')
-    with open(output_var_path, 'w') as f:
-        f.write('')
+    with open(output_path, 'w') as f:
+        json.dump([], f)
     sys.exit(0)
 
 files.sort(key=lambda f: f['name'], reverse=True)
-latest = files[0]
 
-try:
-    with _get(latest['download_url']) as r:
-        content = r.read().decode('utf-8')
-    print(f"fetched {latest['name']}")
-    with open(output_var_path, 'w') as f:
-        f.write(content)
-except Exception as e:
-    print(f'error fetching {latest["name"]}: {e}')
-    with open(output_var_path, 'w') as f:
-        f.write('')
+results = []
+for f in files:
+    url = f['download_url']
+    try:
+        with _get(url) as r:
+            content = r.read().decode('utf-8')
+        if content.strip():
+            date = url.split('/')[-1].split('?')[0].replace('.md', '')
+            results.append({'date': date, 'raw': content})
+            print(f'fetched {date}')
+    except Exception as e:
+        print(f'error fetching {url}: {e}')
+
+with open(output_path, 'w') as f:
+    json.dump(results, f)
+
+print(f'total: {len(results)} daily files')

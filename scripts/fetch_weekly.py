@@ -33,13 +33,13 @@ if not isinstance(files, list) or not files:
 
 files.sort(key=lambda f: f['name'], reverse=True)
 results = []
-for f in files[:8]:
+for f in files:
     url = f['download_url']
     try:
         with _get(url) as r:
             content = r.read().decode('utf-8')
         if content.strip():
-            week = url.split('/')[-1].replace('.md', '')
+            week = url.split('/')[-1].split('?')[0].replace('.md', '')
             results.append({'week': week, 'raw': content})
             print(f'fetched {week}')
     except Exception as e:

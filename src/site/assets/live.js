@@ -670,10 +670,15 @@
   const mirrorToggle = document.getElementById('mirror-toggle')
   const liveFeed = document.getElementById('live-feed')
   const mirrorFeed = document.getElementById('mirror-feed')
-  const mirrorWeeklyContent = document.getElementById('mirror-weekly-content')
-  const mirrorDailyContent = document.getElementById('mirror-daily-content')
+  const mirrorContainer = document.getElementById('mirror-container')
 
   let mirrorLoaded = false
+  let mirrorWeeklyFiles = []
+  let mirrorDailyFiles = []
+  let mirrorView = 'week'
+  let mirrorWeekIndex = 0
+  let mirrorDayIndex = 0
+  let orphansExpanded = false
 
   function parseListLines(text) {
     if (!text) return []
@@ -708,7 +713,87 @@
     return sections
   }
 
-  function renderMirrorWeekly(file) {
+  function renderWikilinks(text) {
+    if (!text) return ''
+    return text.replace(/\[\[([^\]|#]+)(?:#[^\]]+)?(?:\|([^\]]+))?\]\]/g, (m, link, alias) => {
+      const displayText = alias || link
+      const slug = link.toLowerCase().trim().replace(/\s+/g, '-').replace(/[^\w-]/g, '')
+      return `<a href="/notes/${slug}/" class="mirror-wikilink">${displayText}</a>`
+    })
+  }
+
+  function formatDateLong(dateStr) {
+    // dateStr is YYYY-MM-DD
+    const d = new Date(dateStr + 'T00:00:00')
+    const opts = { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' }
+    return d.toLocaleDateString('en-GB', opts).toLowerCase()
+  }
+
+  function formatWeekDates(weekStr) {
+    // weekStr is YYYY-WNN
+    const match = weekStr.match(/^(\d{4})-W(\d{2})$/)
+    if (!match) return weekStr
+    const year = parseInt(match[1])
+    const week = parseInt(match[2])
+    // ISO week -> monday of that week
+    const simple = new Date(year, 0, 1 + (week - 1) * 7)
+    const dayOfWeek = simple.getDay()
+    const monday = new Date(simple)
+    if (dayOfWeek <= 4) {
+      monday.setDate(simple.getDate() - simple.getDay() + 1)
+    } else {
+      monday.setDate(simple.getDate() + 8 - simple.getDay())
+    }
+    const sunday = new Date(monday)
+    sunday.setDate(monday.getDate() + 6)
+    const opts = { day: 'numeric', month: 'short' }
+    const mondayStr = monday.toLocaleDateString('en-GB', opts).toLowerCase()
+    const sundayStr = sunday.toLocaleDateString('en-GB', { ...opts, year: 'numeric' }).toLowerCase()
+    return `${mondayStr} – ${sundayStr}`
+  }
+
+  function renderNav(period, index, total) {
+    const isLatest = index === 0
+    const isOldest = index === total - 1
+    const label = period === 'week'
+      ? mirrorWeeklyFiles[index]?.week?.replace(/^\d{4}-W/, 'week ') || ''
+      : formatDateLong(mirrorDailyFiles[index]?.date || '')
+    const dates = period === 'week'
+      ? formatWeekDates(mirrorWeeklyFiles[index]?.week || '')
+      : mirrorDailyFiles[index]?.date || ''
+    return `
+      <div class="mirror-nav">
+        <button class="mirror-nav-arrow ${isOldest ? 'disabled' : ''}" data-dir="older" aria-label="older">←</button>
+        <div class="mirror-nav-title">
+          <div class="mirror-nav-period">${label}${isLatest ? ' <span class="mirror-latest">latest</span>' : ''}</div>
+          <div class="mirror-nav-dates">${dates}</div>
+        </div>
+        <button class="mirror-nav-arrow ${isLatest ? 'disabled' : ''}" data-dir="newer" aria-label="newer">→</button>
+      </div>`
+  }
+
+  function renderOrphansSection(orphanLines) {
+    if (!orphanLines.length) return ''
+    const initial = orphanLines.slice(0, 10)
+    const rest = orphanLines.slice(10)
+    const initialHtml = initial.map(o => `<p class="mirror-orphan">${renderWikilinks(o)}</p>`).join('')
+    const restHtml = rest.length && orphansExpanded
+      ? rest.map(o => `<p class="mirror-orphan">${renderWikilinks(o)}</p>`).join('')
+      : ''
+    const toggleHtml = rest.length
+      ? `<button class="mirror-show-more" data-action="toggle-orphans">${orphansExpanded ? 'show fewer' : `show all ${orphanLines.length}`}</button>`
+      : ''
+    return `
+      <div class="mirror-section">
+        <p class="mirror-label">unconnected notes</p>
+        <p class="mirror-hint">notes written this period that don't yet link to other notes</p>
+        ${initialHtml}
+        ${restHtml}
+        ${toggleHtml}
+      </div>`
+  }
+
+  function renderWeekly(file) {
     if (!file) return '<p class="mirror-empty">no weekly digest yet</p>'
     const s = parseMirrorSections(file.raw)
 
@@ -718,90 +803,139 @@
       ? synthesisRaw.slice(0, groundedIdx).trim()
       : synthesisRaw.trim()
     const groundedText = groundedIdx > -1
-      ? synthesisRaw.slice(groundedIdx).trim()
+      ? synthesisRaw.slice(groundedIdx).trim().replace(/^grounded in:\s*/, 'based on: ')
       : ''
 
     const terms = parseListLines(s.recurring_terms).slice(0, 10).map(t => {
       const parts = t.split(' — ')
-      return `<span class="mirror-term">
-        ${parts[0]}
-        <span class="mirror-term-count">${parts[1] || ''}</span>
-      </span>`
+      const termName = parts[0] || ''
+      const count = parts[1] || ''
+      return `<div class="mirror-term">
+        <span class="mirror-term-name">${renderWikilinks(termName)}</span>
+        <span class="mirror-term-count">${count}</span>
+      </div>`
     }).join('')
 
     const days = parseListLines(s.activity_by_day).map(d => {
       const inactive = d.includes('no activity')
-      return `<span class="mirror-day ${inactive
-        ? 'mirror-day--inactive' : ''}">${d}</span>`
+      const parts = d.split(':')
+      const dayName = parts[0]?.trim() || ''
+      const dayContent = parts.slice(1).join(':').trim() || ''
+      return `<div class="mirror-day-row ${inactive ? 'mirror-day-row--inactive' : ''}">
+        <span class="mirror-day-name">${dayName}</span>
+        <span class="mirror-day-content">${inactive ? 'quiet' : dayContent}</span>
+      </div>`
     }).join('')
 
     const orphanLines = parseListLines(s.orphans_this_week)
 
     return `
       <div class="mirror-section">
-        <p class="mirror-label">week ${file.week}</p>
-        <div class="mirror-summary">
-          ${parseListLines(s.summary).map(l =>
-            `<span class="mirror-summary-item">${l}</span>`
-          ).join('')}
-        </div>
+        <p class="mirror-label">days</p>
+        ${days}
       </div>
       <div class="mirror-section">
-        <p class="mirror-label">activity</p>
-        <div class="mirror-days">${days}</div>
+        <p class="mirror-label">most-referenced ideas</p>
+        ${terms}
+      </div>
+      ${renderOrphansSection(orphanLines)}
+      <div class="mirror-section">
+        <p class="mirror-label">what the week seems to be about</p>
+        <p class="mirror-synthesis-text">${renderWikilinks(synthesisText)}</p>
+        ${groundedText ? `<p class="mirror-grounded">${groundedText}</p>` : ''}
       </div>
       <div class="mirror-section">
-        <p class="mirror-label">recurring terms</p>
-        <div class="mirror-terms">${terms}</div>
-      </div>
-      ${orphanLines.length ? `
-        <div class="mirror-section">
-          <p class="mirror-label">orphans</p>
-          ${orphanLines.map(o =>
-            `<p class="mirror-orphan">${o}</p>`
-          ).join('')}
-        </div>` : ''}
-      <div class="mirror-section mirror-section--synthesis">
-        <p class="mirror-label">synthesis</p>
-        <p class="mirror-synthesis-text">${synthesisText}</p>
-        ${groundedText
-          ? `<p class="mirror-grounded">${groundedText}</p>`
-          : ''}
-      </div>
-      <div class="mirror-section">
-        <p class="mirror-label">generated prompt</p>
-        <p class="mirror-prompt">${s.generated_prompt || ''}</p>
+        <p class="mirror-label">a question this raises</p>
+        <p class="mirror-prompt">${renderWikilinks(s.generated_prompt || '')}</p>
       </div>`
   }
 
-  function renderMirrorDaily(file) {
+  function renderDaily(file) {
     if (!file) return '<p class="mirror-empty">no daily digest yet</p>'
     const s = parseMirrorSections(file.raw)
     const created = parseListLines(s.notes_created)
     const edited = parseListLines(s.notes_edited)
     const sessions = parseListLines(s.sessions)
     const orphans = parseListLines(s.orphans_flagged)
+
     return `
-      <div class="mirror-section">
-        <p class="mirror-label">today · ${file.date}</p>
-        ${created.length ? `
-          <p class="mirror-sublabel">created</p>
-          ${created.map(n =>
-            `<p class="mirror-item">${n}</p>`).join('')}` : ''}
-        ${edited.length ? `
-          <p class="mirror-sublabel">edited</p>
-          ${edited.map(n =>
-            `<p class="mirror-item">${n}</p>`).join('')}` : ''}
-        ${sessions.length ? `
-          <p class="mirror-sublabel">sessions</p>
-          ${sessions.map(n =>
-            `<p class="mirror-item">${n}</p>`).join('')}` : ''}
-        ${orphans.length ? `
-          <p class="mirror-sublabel">orphans</p>
-          ${orphans.map(n =>
-            `<p class="mirror-item mirror-item--muted">${n}</p>`
-          ).join('')}` : ''}
+      ${created.length ? `
+        <div class="mirror-section">
+          <p class="mirror-label">notes created</p>
+          ${created.map(n => `<p class="mirror-item">${renderWikilinks(n)}</p>`).join('')}
+        </div>` : ''}
+      ${edited.length ? `
+        <div class="mirror-section">
+          <p class="mirror-label">notes edited</p>
+          ${edited.map(n => `<p class="mirror-item">${renderWikilinks(n)}</p>`).join('')}
+        </div>` : ''}
+      ${sessions.length ? `
+        <div class="mirror-section">
+          <p class="mirror-label">sessions</p>
+          ${sessions.map(n => `<p class="mirror-item">${renderWikilinks(n)}</p>`).join('')}
+        </div>` : ''}
+      ${renderOrphansSection(orphans)}`
+  }
+
+  function renderMirror() {
+    if (!mirrorContainer) return
+    const tabs = `
+      <div class="mirror-tabs">
+        <button class="mirror-tab ${mirrorView === 'week' ? 'active' : ''}" data-view="week">week</button>
+        <button class="mirror-tab ${mirrorView === 'day' ? 'active' : ''}" data-view="day">day</button>
       </div>`
+
+    let nav = ''
+    let content = ''
+
+    if (mirrorView === 'week') {
+      if (mirrorWeeklyFiles.length) {
+        nav = renderNav('week', mirrorWeekIndex, mirrorWeeklyFiles.length)
+        content = renderWeekly(mirrorWeeklyFiles[mirrorWeekIndex])
+      } else {
+        content = '<p class="mirror-empty">no weekly digest yet</p>'
+      }
+    } else {
+      if (mirrorDailyFiles.length) {
+        nav = renderNav('day', mirrorDayIndex, mirrorDailyFiles.length)
+        content = renderDaily(mirrorDailyFiles[mirrorDayIndex])
+      } else {
+        content = '<p class="mirror-empty">no daily digest yet</p>'
+      }
+    }
+
+    mirrorContainer.innerHTML = tabs + nav + content
+
+    mirrorContainer.querySelectorAll('.mirror-tab').forEach(el => {
+      el.addEventListener('click', () => {
+        mirrorView = el.dataset.view
+        orphansExpanded = false
+        renderMirror()
+      })
+    })
+
+    mirrorContainer.querySelectorAll('.mirror-nav-arrow').forEach(el => {
+      el.addEventListener('click', () => {
+        if (el.classList.contains('disabled')) return
+        const dir = el.dataset.dir
+        if (mirrorView === 'week') {
+          mirrorWeekIndex += (dir === 'older' ? 1 : -1)
+          mirrorWeekIndex = Math.max(0, Math.min(mirrorWeeklyFiles.length - 1, mirrorWeekIndex))
+        } else {
+          mirrorDayIndex += (dir === 'older' ? 1 : -1)
+          mirrorDayIndex = Math.max(0, Math.min(mirrorDailyFiles.length - 1, mirrorDayIndex))
+        }
+        orphansExpanded = false
+        renderMirror()
+      })
+    })
+
+    mirrorContainer.querySelectorAll('[data-action="toggle-orphans"]').forEach(el => {
+      el.addEventListener('click', () => {
+        orphansExpanded = !orphansExpanded
+        renderMirror()
+      })
+    })
   }
 
   async function loadMirrorData() {
@@ -814,25 +948,18 @@
       ])
       const weekly = await weeklyRes.json()
       const daily = await dailyRes.json()
-      if (mirrorWeeklyContent) {
-        mirrorWeeklyContent.innerHTML =
-          renderMirrorWeekly(weekly.files && weekly.files[0])
-      }
-      if (mirrorDailyContent) {
-        mirrorDailyContent.innerHTML =
-          renderMirrorDaily(daily.files && daily.files[0])
-      }
+      mirrorWeeklyFiles = weekly.files || []
+      mirrorDailyFiles = daily.files || []
       mirrorLoaded = true
+      renderMirror()
     } catch (e) {
-      if (mirrorWeeklyContent) {
-        mirrorWeeklyContent.innerHTML =
-          '<p class="mirror-empty">mirror data unavailable</p>'
+      if (mirrorContainer) {
+        mirrorContainer.innerHTML = '<p class="mirror-empty">mirror data unavailable</p>'
       }
     }
   }
 
   const liveHeadingEl = document.getElementById('live-heading')
-
   let savedLiveHeading = null
 
   function setMirrorMode(active) {
