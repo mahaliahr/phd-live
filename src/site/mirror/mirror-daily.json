@@ -1,13 +1,13 @@
 {
   "files": [
     {
-      "date": "2026-07-18",
-      "raw": "---\ndate: 2026-07-18\ngenerated: 23:00\n---\n\n## notes created\n- [[2026-07-17]] \u2014 daily/ \u2014 00:21\n\n## notes edited\n- none\n\n## sessions\n- none\n\n## orphans flagged\n- [[2026-07-17]] \u2014 no backlinks",
+      "date": "2026-07-19",
+      "raw": "---\ndate: 2026-07-19\ngenerated: 23:00\n---\n\n## notes created\n- [[feedback-ual-doctoral-symposium]] \u2014 daily/ \u2014 21:11\n- [[confirmation-document]] \u2014 daily/ \u2014 22:31\n- [[AI]] \u2014 daily/ \u2014 22:45\n- [[2026-07-19]] \u2014 daily/ \u2014 20:56\n- [[2026-06-01]] \u2014 daily/ \u2014 20:43\n- [[2026-05-31]] \u2014 daily/ \u2014 20:43\n- [[glossary-index]] \u2014 published/ \u2014 22:25\n- [[ual-doctoral-symposium-summer26]] \u2014 published/ \u2014 20:58\n- [[conferences-workshops-etc]] \u2014 published/ \u2014 20:26\n- [[generative-ai]] \u2014 published/ \u2014 22:33\n- [[phd-proposal]] \u2014 published/ \u2014 20:43\n- [[confirmation-requirements]] \u2014 published/ \u2014 20:43\n- [[supervision-110626]] \u2014 published/ \u2014 20:43\n- [[confirmation-plan]] \u2014 published/ \u2014 20:48\n\n## notes edited\n- none\n\n## sessions\n- other \u2014 16:32 \u2192 ?\n\n## orphans flagged\n- [[2026-07-19]] \u2014 no backlinks\n- [[2026-06-01]] \u2014 no backlinks\n- [[2026-05-31]] \u2014 no backlinks",
       "parsed": {
-        "notes_created": "- [[2026-07-17]] \u2014 daily/ \u2014 00:21",
+        "notes_created": "- [[feedback-ual-doctoral-symposium]] \u2014 daily/ \u2014 21:11\n- [[confirmation-document]] \u2014 daily/ \u2014 22:31\n- [[AI]] \u2014 daily/ \u2014 22:45\n- [[2026-07-19]] \u2014 daily/ \u2014 20:56\n- [[2026-06-01]] \u2014 daily/ \u2014 20:43\n- [[2026-05-31]] \u2014 daily/ \u2014 20:43\n- [[glossary-index]] \u2014 published/ \u2014 22:25\n- [[ual-doctoral-symposium-summer26]] \u2014 published/ \u2014 20:58\n- [[conferences-workshops-etc]] \u2014 published/ \u2014 20:26\n- [[generative-ai]] \u2014 published/ \u2014 22:33\n- [[phd-proposal]] \u2014 published/ \u2014 20:43\n- [[confirmation-requirements]] \u2014 published/ \u2014 20:43\n- [[supervision-110626]] \u2014 published/ \u2014 20:43\n- [[confirmation-plan]] \u2014 published/ \u2014 20:48",
         "notes_edited": "- none",
-        "sessions": "- none",
-        "orphans_flagged": "- [[2026-07-17]] \u2014 no backlinks"
+        "sessions": "- other \u2014 16:32 \u2192 ?",
+        "orphans_flagged": "- [[2026-07-19]] \u2014 no backlinks\n- [[2026-06-01]] \u2014 no backlinks\n- [[2026-05-31]] \u2014 no backlinks"
       }
     }
   ]
