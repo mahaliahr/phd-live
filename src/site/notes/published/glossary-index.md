@@ -18,7 +18,9 @@ description: |-
 
   open-source
   [[]]
-updated: '2025-10-09T17:10:31.555Z'
+updated: 2025-10-09T17:10:31.555Z
+aliases:
+  - glossary
 ---
 [[AI]]
 [[generative-ai]]

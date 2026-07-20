@@ -15,7 +15,7 @@ beginning of September send to supervisors
 
 confirmation 
 
-[[confirmation-draft-document]]
+[[confirmation-plan]]
 
 - [x] send updated abstract to the symposium and 
 - [x] update re the external for the confirmation panel 

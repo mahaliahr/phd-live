@@ -16,7 +16,7 @@ I am beginning to work on reframing my focus, here: [[phd-proposal-thoughts-and-
 - rework in progress: [[research-questions]]
 
 [[research-summary]]
-[[abstract-work-in-progress]] --> for [[confirmation-draft-document]]
+[[abstract-work-in-progress]] --> for [[confirmation-plan]]
 
 ---
 

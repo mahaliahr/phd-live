@@ -7,7 +7,7 @@ type: ""
 aliases:
   - confirmation
 ---
-[[confirmation-draft-document]]
+[[confirmation-plan]]
 
 extract from handbook: 
 

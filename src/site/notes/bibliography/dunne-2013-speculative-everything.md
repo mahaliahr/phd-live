@@ -2,9 +2,9 @@
 authors:
 - Anthony Dunne
 - Fiona Raby
-date-created: '2026-07-17'
+date-created: 2026-07-17
 dg-publish: true
-priority: null
+priority: P1
 read: Not started
 tags: []
 theme:

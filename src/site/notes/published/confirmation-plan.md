@@ -5,7 +5,12 @@ visibility: public
 tags: []
 type: ""
 ---
-[[confirmation-requirements]]
+background info here: [[confirmation-requirements]]
+
+Work in progress document here: [[confirmation-document]]
+
+first outline [feedback link](https://artslondon-my.sharepoint.com/:w:/r/personal/e_verhoeven_arts_ac_uk/_layouts/15/Doc.aspx?sourcedoc=%7BB8C0F0B6-55F7-4FF3-A065-AD4C9A2579DC%7D&file=draft-outline-confirmation-doc.docx&action=default&mobileredirect=true)
+[[feedback-ual-doctoral-symposium]]
 
 ---
 
@@ -23,6 +28,8 @@ type: ""
 
 #### Abstract (what I submitted for the doctoral symposium, definitely needs a bit more work)
 
+[[abstract-work-in-progress]]
+
 ==what why how?
 
 ===where exactly I want to make a contribution to knowledge?
@@ -35,6 +42,8 @@ The research proceeds through building: developing speculative tools, live syste
 PhD-Live sits at the centre of this work: a live, public-facing digital research environment that treats the process of doctoral thinking as a core output rather than just the means to an eventual end state. Around it, a wider infrastructure is taking shape, including a 'supervisor bot' whose development has surfaced a central design tension: how do you build an AI tool that introduces genuine epistemic friction rather than simply reflecting the researcher back at themselves? This question points toward a principle that emerged through making rather than planning: that LLM reasoning and human associative thought operate with different logics. LLMs are built to resolve and optimise; creative research thinking often needs to stay open, contradictory, unfinished. Designing with both means holding that difference deliberately, rather than letting the efficiency logic of the tool quietly shape the thinking.
 
 The research sits at the intersection of speculative design, live coding practice, and critical AI studies. It is shaped by its moment: the politics of knowledge, precarity in higher education, and the institutional pressures that surround the integration of AI. Within this, several threads have emerged as central: what a locally-based AI infrastructure might offer creative research practice; the distinction between liveness and performance; and how generative AI can participate in creative thinking without speaking for the researcher.
+
+
 
 ===could I hyperlink to the phd-live site
 
@@ -53,12 +62,13 @@ I will orient the reader to the project, introduce the research questions and ta
 
 ===criticality needs to be made clear, ie. I am aware of the critique 
 
- **The problem space**
-
+**The direct context** 
 - Commercial AI systems are entering education rapidly, carrying embedded assumptions about what intelligence is, how learning works, and what efficiency looks like
 - These tools are designed to resolve, optimise, and produce polished outputs quickly. That collapses the space between question and answer, process and product
 - For creative practice and creative education specifically, that collapse is a problem. A lot of what matters in creative work happens in the unresolved, unfinished middle, before things make sense
 - This research sits inside that tension. I occupy three roles simultaneously: learner (PhD student), researcher (building and investigating AI tools), and teacher (senior lecturer in creative computing, teaching with and about AI). The triple position is the research site
+
+**Methodological Approach**
 
 **Speculation as method**
 

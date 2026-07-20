@@ -1,10 +1,10 @@
 ---
 authors:
 - Ruha Benjamin
-date-created: '2026-07-17'
+date-created: 2026-07-17
 dg-publish: true
 priority: null
-read: Not started
+read: Read
 tags: []
 theme:
 - Speculative

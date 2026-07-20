@@ -25,15 +25,17 @@ views:
   - type: table
     name: All
     order:
-      - file.name
       - read
       - priority
+      - file.name
       - theme
       - type
       - year
       - authors
       - url
-    sort: []
+    sort:
+      - property: theme
+        direction: DESC
   - type: table
     name: Grouped by status
     groupBy:

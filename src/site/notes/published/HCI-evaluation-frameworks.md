@@ -13,3 +13,7 @@ these papers as a start:
 
 **Cherry, E., & Latulipe, C. (2014).** Quantifying the creativity support of digital tools through the creativity support index. _ACM Transactions on Computer-Human Interaction_, 21(4), Article 21. [https://doi.org/10.1145/2617588](https://doi.org/10.1145/2617588)
 ^ though a bit old very influential
+
+---
+
+connected [[bot-evaluation-thinking-partnership]]

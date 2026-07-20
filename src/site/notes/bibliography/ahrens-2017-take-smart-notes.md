@@ -1,10 +1,10 @@
 ---
 authors:
 - Sonke Ahrens
-date-created: '2026-07-17'
+date-created: 2026-07-17
 dg-publish: true
 priority: null
-read: Not started
+read: In Progress
 tags: []
 theme: []
 type: web-page

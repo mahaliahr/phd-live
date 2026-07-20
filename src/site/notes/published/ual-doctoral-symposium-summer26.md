@@ -7,6 +7,9 @@ type: ""
 aliases:
   - ual-doctoral-symposium
 ---
+[[feedback-ual-doctoral-symposium]]
+
+---
 slidedeck plan [[ual-doctoral-symposium-slidedeck-plan]]
 ### Extracted from the application form:
 
