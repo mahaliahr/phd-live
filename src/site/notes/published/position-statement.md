@@ -5,13 +5,17 @@ visibility: public
 tags: []
 type: ""
 ---
-(perhaps I should frame this as my nuance 'in the middle' take, not pro AI and not anti AI) 
+*(perhaps I should frame this as my nuance 'in the middle' take, not pro AI and not anti AI)* 
+
+As I do this research it has become clear to me that I need to communicate my stance and position on artificial intelligence and AI. I often find when I talk about my PhD causally with others, many people seem to immediately think that I am 'pro-AI' which I really am not. At the same stretch I can also acknowledge potential benefits that this technology might be able to offer, and I feel it's really important to not position AI (generative AI tools specifically) as 'being a certain way' or 'AI wants to do x y z'. The mythic AGI state has not yet been achieved and I think its really important to call it what it is, a technology - being wielded by big corporations and by some very dubious individuals. This is the issue to face. As such I see AI as a material in a sense, as in we can use or not use it, and that's fine and that we should recognise the problematic encroachment of AI tools into our lives, privacy and data as being operated by human beings driven by financial and ideological goals. 
+
+In more specific terms in regards to my research 
 
 STREAM OF CONSCIOUSNESS:
 
 my take on LLMs and why I think its important to engage with: 
 
-'tech bros' / industry has always been difficult space to get into. Often alienating and not inclusive. This is broadly speaking, but also what I have experience myself personally as some coming into the scene not from a computer science or engineering backgorund. 
+'tech bros' / industry has always been difficult space to get into. Often alienating and not inclusive. This is broadly speaking, but also what I have experience myself personally as some coming into the scene not from a computer science or engineering background. 
 
 this impenetrability too extends to academia
 
