@@ -1220,8 +1220,8 @@ a.internal-link.is-unresolved {
   max-height: var(--info-column-height);
 }
 
-.live-heading {
-  font-size: 2.5rem;
+#live-heading.live-heading {
+  font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.02em;
   margin: 0 0 0.25rem 0;
@@ -1733,8 +1733,8 @@ a.internal-link.is-unresolved {
   .phd-live-header .header-left h1 {
     font-size: 2.5rem;
   }
-  .live-heading {
-    font-size: 2rem;
+  #live-heading.live-heading {
+    font-size: 1.2rem;
   }
   .live-column {
     padding: 1.5rem;
