@@ -10,7 +10,7 @@ description: |-
 updated: 2025-10-20T22:37:26.882Z
 featured: true
 ---
-within this research I will use my [[autoethnographic-experience-as-lecturer-and-student]] as direct research. 
+Within this research I will use my [[autoethnographic-experience-as-lecturer-and-student]] as direct research. 
 
 Bringing myself very explicitly into the research means even moreso that [[my-positionality]] will be very important to reference. 
 

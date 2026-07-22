@@ -5,7 +5,7 @@ visibility: public
 tags: []
 type: ""
 ---
-# After Intelligence: building possibility spaces for creative learning, with and through generative systems
+### After Intelligence: building possibility spaces for creative learning, with and through generative systems
 
 ### [[abstract-work-in-progress|Abstract]] (make first person?)
 
@@ -29,10 +29,15 @@ Bot / Chatbot
 ### 1. Introduction
 
 - Orient the reader to the project and the moment it sits within (commercial LLMs entering higher education rapidly, growing financial pressures on UK HE, the socio-political conditions shaping AI adoption in creative education)
+	- my experience as a lecturer, encountering the drastic changes in teaching with AI tools proliferating is what sparked my investigation. it started to become clear that students were relying more on asking chatbot their queries and, the individual personal voice of students was being replaced by a generic tone and prose of a large language model . But this experience doesn't happen in a vacuum, alongside a number of other stressors on HE the context is difficult. My position as a lecturer drives a lot of the way that I am conducting this research but this role doesn't operate in isolation. The nature of being a student and lecturer at the same time brings up interesting tensions and this research interrogate this directly. 
 - State the four research questions
 - Unpack "After Intelligence" as a framing: the critical interrogation of intelligence as a concept, engagement with AI beyond doom and hype rhetoric
+	-  the research frame has always been centered around looking beyond the here and now. I know from my position as a lecturer the kind of struggles that take up the everyday, often around the correct mode of assessment, plagiarism etc but I wanted to look beyond this, at the moment the conversations have a tendency to default to pro or anti AI stances, I wanted look at a more nuanced position, assuming the technology is here to stay. This assumption comes not from a perosnl desire for this outcome, but from a genuine desire to understand why students are using these tools and what scope there is for positive integration to be able to teach in a way that engages with this new emergence. what modes of learning might look like that utilise and integrate these technology and how to do so in a way that acknowledge the problems and ethical issues that are undoubtedly core to AI infrastructure. 
 - Name the inversion from the original proposal (designing speculative learning environments for others) to the current work (my own doctoral practice as site and subject)
+	- When writing my initial proposal, it was still in the early days of ChatGPT's infiltration into the classroom, at that time I was clear on the framing of 'looking beyond the present' and that I would adopt some kind of speculative approach, but I wasn't sure of what form exactly that would take. I also knew that in my role as a teacher I wanted to do something that was inclusive and informed by my students rather than from a top-down approach. However, it has becoming my experience as student that has become a testbed for my primary investigations. Adopting an approach informed by autoethnography and adopting autobiographical design principles, my research process has become a prime site for many of my investigations into AI tools. Primarily, it was through initial ( and at the time I thought unconnected) work into the best system for note taking throughout the research and my discovery of Zettelkasten that I began to realise directly that the knowledge that I am generate day to day and the thinking being captured is the perfect place to speculate on AI implementation, from my position as a student I can test these early questions through my own process, with the plan to then extend that outward to the postgraduate student community after this, with the plan to then extend that outward to the postgraduate student community through workshops and focus groups planned from year 3 onward.
 - Explain how to read this document: what the three elements are (contextual and practice review, draft chapter sections, chapter outlines and plan to completion) and how they relate to the confirmation requirements
+	-  This document lays out a contextual overview that shapes the work and talks through my growing practice that is directly engaging in answering m y research questions. I will also explain my methodological approach in more detail (a section of chapter 2: a 'playful' methodology) and the building of the primary artifacts of the research (a section of chapter 4: process, digital gardens, tools for thought and knowledge infrastructure). Lastly I will provide a chapter outline and my plan to completion, indicating the vision of the research moving forward. 
+
 
 **Research Questions:**
 
@@ -43,7 +48,7 @@ Bot / Chatbot
 
 ## 2. Contextual review
 
-_This section maps the fields the research sits within and the load-bearing references for each. The literature is engaged with in more depth in the draft chapter sections that follow and will be developed further across the thesis chapters._
+Within this section I will map out the fields in which the research sits and the critical references for each. The literature is engaged with in more depth in the draft chapter sections that follow, and will be developed further across the thesis chapters.
 
 ### 2.1 The problem space
 
@@ -56,10 +61,10 @@ _This section maps the fields the research sits within and the load-bearing refe
 
 - The research adopts a speculative stance as a critical method
 - Speculative design (Dunne and Raby) provides the foundational tradition: building artefacts that ask "what if?" as a way of making alternative possibilities thinkable
-- The tradition is read here as politically situated: Benjamin's "Imagination: A Manifesto" frames imagination as a political act, not a luxury. Who gets to imagine, and what gets imagined, are shaped by power
-- The research engages directly with a known critique of speculative design: that it often remains unactionable and rooted in privileged spaces. The possibility/impossibility spaces chapter of the thesis responds to this critique materially, examining what happens when speculative propositions meet real institutional constraints
-- The artefacts in this research are not prototypes or products. They are thought experiments made buildable: propositions about what AI-supported learning and knowledge-making could look like if the assumptions were different
-- This led to the concept of possibility spaces, which the thesis takes up further: both as a speculative method and as something that meets real institutional constraints
+- The tradition is read here as politically situated: Ruha Benjamin's "Imagination: A Manifesto" frames imagination as a political act, not a luxury. Who gets to imagine, and what gets imagined, are shaped by power. 
+- Building on the position from Benjamin and a general critique of speculative design, the research engages directly with a known critique of speculative design: that it often remains unactionable and rooted in privileged spaces. <mark style="background: #ABF7F7A6;">The possibility/impossibility spaces chapter of the thesis responds to this critique materially, examining what happens when speculative propositions meet real institutional constraints</mark>
+- The artefacts in this research are not prototypes or products. They are thought experiments materialised: propositions about what AI-supported learning and knowledge-making could look like if assumptions were different
+- The research builds of the speculative grounding to conduct the investigations in a playful way, which aligns with thought experiments and imagination as being central, together this lays the foundation for the concept of possibility spaces, which the thesis takes up further: both as a speculative method and as something that meets real institutional constraints
 
 ### 2.3 Liveness and process
 
