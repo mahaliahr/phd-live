@@ -8,6 +8,7 @@ aliases:
   - confirmation
 ---
 [[confirmation-plan]]
+[[confirmation-document]]
 
 extract from handbook: 
 

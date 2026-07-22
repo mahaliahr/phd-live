@@ -12,7 +12,9 @@ updated: '2025-10-20T22:34:14.471Z'
 
 I feel that I need to keep coming back to earlier thoughts I was having about [[what-kind-of-research-I-want-to-undertake]] to ensure that I keep the intended spirit of the research alive, whilst defining and solidifying things further. 
 
-Critically I believe that my practice will take the form of [[design-interventions]], choreography of activity through workshops, performance(?) and through my teaching. I will use [[research-methods]] that will align with this.
+Critically I believe that my practice will take the form of [[design-interventions]], choreography of activity through workshops, performance(?) and through my teaching. 
+
+I will use [[research-methods]] that will align with this.
 
 ---
 How I am currently (2/4/25) envisioning my PhD research
@@ -40,4 +42,12 @@ work towards a September Deadline to have something ready to show the new cohort
 
 ~~find communities outside of UAL and Academia (Immediately coming to mind is Huddlecraft)~~
 for now just concentrating on UAL 
+
+---
+
+core texts and scholars:
+
+[[gaver-2012-should-we-expect]]
+[[frayling-1994-research-art-design]]
+[[candy-2006-practice-based-research]]
 

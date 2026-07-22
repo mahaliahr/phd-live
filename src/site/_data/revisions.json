@@ -17,6 +17,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-07-22",
+        "hash": "e7514da",
+        "wordCount": 852,
+        "delta": 661,
+        "added": 852,
+        "removed": 191,
+        "diff": "[-# After Intelligence: building possibility spaces for creative learning, with and through generative systems-] {+### After Intelligence: building possibility spaces for creative learning, with and through generative systems+} {+- my experience as a lecturer, encountering the drastic changes in teaching with AI tools proliferating is what sparked my investigation. it started to become clear that students were relying more on asking chatbot their queries and, the individual personal voice of students was being replaced by a generic tone and prose of a large language model . But this experience doesn't happen in a vacuum, alongside a number of other stressors on HE the context is difficult. My position as a lecturer drives a lot of the way that I am conducting this research but this role doesn't operate in isolation. The nature of being a student and lecturer at the same time brings up interesting tensions and this research interrogate this directly.+} {+-  the research frame has always been centered around looking beyond the here and now. I know from my position as a lecturer the kind of struggles that take up the everyday, often around the correct mode of assessment, plagiarism etc but I wanted to look beyond this, at the moment the conversations have a tendency to default to pro or anti AI stances, I wanted look at a more nuanced position, assuming the technology is here to stay. This assumption comes not from a perosnl desire for this outcome, but from a genuine desire to understand why students are using these tools and what scope there is for positive integration to be able to teach in a way that engages with this new emergence. what modes of learning might look like that utilise and integrate these technology and how to do so in a way that acknowledge the problems and ethical issues that are undoubtedly core to AI infrastructure.+} {+- When writing my initial proposal, it was still in the early days of ChatGPT's infiltration into the classroom, at that time I was clear on the framing of 'looking beyond the present' and that I would adopt some kind of speculative approach, but I wasn't sure of what form exactly that would take. I also knew that in my role as a teacher I wanted to do something that was inclusive and informed by my students rather than from a top-down approach. However, it has becoming my experience as student that has become a testbed for my primary investigations. Adopting an approach informed by autoethnography and adopting autobiographical design principles, my research process has become a prime site for many of my investigations into AI tools. Primarily, it was through initial ( and at the time I thought unconnected) work into the best system for note taking throughout the research and my discovery of Zettelkasten that I began to realise directly that the knowledge that I am generate day to day and the thinking being captured is the perfect place to speculate on AI implementation, from my position as a student I can test these early questions through my own process, with the plan to then extend that outward to the postgraduate student community after this, with the plan to then extend that outward to the postgraduate student community through workshops and focus groups planned from year 3 onward.+} {+-  This document lays out a contextual overview that shapes the work and talks through my growing practice that is directly engaging in answering m y research questions. I will also explain my methodological approach in more detail (a section of chapter 2: a 'playful' methodology) and the building of the primary artifacts of the research (a section of chapter 4: process, digital gardens, tools for thought and knowledge infrastructure). Lastly I will provide a chapter outline and my plan to completion, indicating the vision of the research moving forward.+} [-_This section maps the fields the research sits within and the load-bearing references for each. The literature is engaged with in more depth in the draft chapter sections that follow and will be developed further across the thesis chapters._-] {+Within this section I will map out the fields in which the research sits and the critical references for each. The literature is engaged with in more depth in the draft chapter sections that follow, and will be developed further across the thesis chapters.+} [-- The tradition is read here as politically situated: Benjamin's \"Imagination: A Manifesto\" frames imagination as a political act, not a luxury. Who gets to imagine, and what gets imagined, are shaped by power-] [-- The research engages directly with a known critique of speculative design: that it often remains unactionable and rooted in privileged spaces. The possibility/impossibility spaces chapter of the thesis responds to this critique materially, examining what happens when speculative propositions meet real institutional constraints-] [-- The artefacts in this research are not prototypes or products. They are thought experiments made buildable: propositions about what AI-supported learning and knowledge-making could look like if the assumptions were different-] [-- This led to the concept of possibility spaces, which the thesis takes up further: both as a speculative method and as something that meets real institutional constraints-] {+- The tradition is read here as politically situated: Ruha Benjamin's \"Imagination: A Manifesto\" frames imagination as a political act, not a luxury. Who gets to imagine, and what gets imagined, are shaped by power.+} {+- Building on the position from Benjamin and a general critique of speculative design, the research engages directly with a known critique of speculative design: that it often remains unactionable and rooted in privileged spaces. <mark style=\"background: #ABF7F7A6;\">The possibility/impossibility spaces chapter of the thesis responds to this critique materially, examining what happens when speculative propositions meet real institutional constraints</mark>+} {+- The artefacts in this research are not prototypes or products. They are thought experiments materialised: propositions about what AI-supported learning and knowledge-making could look like if assumptions were different+} {+- The research builds of the speculative grounding to conduct the investigations in a playful way, which aligns with thought experiments and imagination as being central, together this lays the foundation for the concept of possibility spaces, which the thesis takes up further: both as a speculative method and as something that meets real institutional constraints+}"
+      },
+      {
         "date": "2026-07-20",
         "hash": "9c44b88",
         "wordCount": 3815,
@@ -8893,6 +8902,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-07-22",
+        "hash": "e7514da",
+        "wordCount": 342,
+        "delta": 1,
+        "added": 342,
+        "removed": 341,
+        "diff": "[-what LLMs seem to show is that is allows many people access skills ans capacities that they might otherwise have struggled with [[karpathy-2025-power-to-the-people]].-] {+what LLMs seem to show is that is allows many people access skills and capacities that they might otherwise have struggled with [[karpathy-2025-power-to-the-people]].+} [-At the moment and since the LLM boom, it's clear that there is this is this race for dominance by the major tech corporations, this is resulting in many products being developed, but also in this way where AI is being shoved into every application and the public is being forced to engage with this in a way that they never consented to. In the educational domain I see this happening in different initiatives being set up ([[open-ai-anthropic-education-partnerships]] [[gemini-google-ai-education]]). Though this is often done in collaboration with academic institutions, this to me is an overstep, a situation where these companies financially want to make a claim, before its even clear the full impacts of these technolgies on education, there is a soverignty issue here almost like the collective knowledge and expertise of the people in these systems can be funneled into the tech organisations (data).-] {+At the moment and since the LLM boom, it's clear that there is this is this race for dominance by the major tech corporations, this is resulting in many products being developed, but also in this way where AI is being shoved into every application and the public is being forced to engage with this in a way that they never consented to. In the educational domain I see this happening in different initiatives being set up ([[open-ai-anthropic-education-partnerships]] [[gemini-google-ai-education]]). Though this is often done in collaboration with academic institutions, this to me is an overstep, a situation where these companies financially want to make a claim, before its even clear the full impacts of these technologies on education, there is a sovereignty issue here almost like the collective knowledge and expertise of the people in these systems can be funneled into the tech organisations (data).+} [-the technology is not inherently bad, fundamentally it is just computation, an algorithmic system and I think it's important to stay grounded in that reality. However the myths, narratives and material impacts of the pursuit of this continuing pursuit of this technology is somehting that is causing many harms - particularly becasue the people that hold the greatest influence are these major corporations driven by a small community of very wealthy powerful people. They developand push the main narratives that drive the adoption and development of this technoogical progress.-] {+the technology is not inherently bad, fundamentally it is just computation, an algorithmic system and I think it's important to stay grounded in that reality. However the myths, narratives and material impacts of the pursuit of this continuing pursuit of this technology is something that is causing many harms - particularly becasue the people that hold the greatest influence are these major corporations driven by a small community of very wealthy powerful people. They develop and push the main narratives that drive the adoption and development of this technological progress.+} [-the infrastructure materially and foundationally of the commercial AI tools and giant tech companies is exploitative ([[hao-empire-of-AI-2025]] & Atlas of AI).-] {+The infrastructure materially and foundationally of the commercial AI tools and giant tech companies is exploitative ([[hao-empire-of-AI-2025]] & Atlas of AI).+} [-As a society of peopl I believe we need agency to claim ownership on what 'AI' means. As a medium that will potentially be embedded into everything tech device, interface or platform it becomes like a membrane surrounding everything. As such we should have a level of understanding and agency on how we build or implement and integrate these things into our lives.-] {+As a society of people I believe we need agency to claim ownership on what 'AI' means. As a medium that will potentially be embedded into everything tech device, interface or platform it becomes like a membrane surrounding everything. As such we should have a level of understanding and agency on how we build or implement and integrate these things into our lives.+}"
+      },
+      {
         "date": "2026-07-20",
         "hash": "a90121d",
         "wordCount": 261,
@@ -10635,6 +10653,15 @@
   "my-positionality": {
     "noteDate": null,
     "revisions": [
+      {
+        "date": "2026-07-22",
+        "hash": "e7514da",
+        "wordCount": 11,
+        "delta": 0,
+        "added": 11,
+        "removed": 11,
+        "diff": "[-within this research I will use my [[autoethnographic-experience-as-lecturer-and-student]] as direct research.-] {+Within this research I will use my [[autoethnographic-experience-as-lecturer-and-student]] as direct research.+}"
+      },
       {
         "date": "2026-01-19",
         "hash": "25c404a",
@@ -20082,6 +20109,34 @@
       }
     ]
   },
+  "2026-07-22": {
+    "noteDate": "2026-07-22",
+    "revisions": [
+      {
+        "date": "2026-07-22",
+        "hash": "e7514da",
+        "wordCount": 21,
+        "delta": 21,
+        "added": 21,
+        "removed": 0,
+        "diff": "{+---+} {+date: 2026-07-22+} {+---+} {+## sessions+} {+<details>+} {+<summary>Session 1</summary>+} {+start:: 2026-07-21T15:46:57.868Z+} {+topic:: writing · working on confirmation draft+} {+end:: 2026-07-22T00:30:19.206Z+} {+</details>+}"
+      }
+    ]
+  },
+  "2026-07-21": {
+    "noteDate": "2026-07-21",
+    "revisions": [
+      {
+        "date": "2026-07-22",
+        "hash": "e7514da",
+        "wordCount": 161,
+        "delta": 161,
+        "added": 161,
+        "removed": 0,
+        "diff": "{+---+} {+date: 2026-07-21+} {+---+} {+## sessions+} {+<details>+} {+<summary>Session 1</summary>+} {+start:: 2026-07-20T19:53:44.824Z+} {+topic:: coding · debugging phd live site issues+} {+end:: 2026-07-21T10:52:28.499Z+} {+</details>+} {+Below are some notes I had jotted down elsewhere in the past week, but not put here:+} {+- 12:12 Traditional ideas of intelligence are measured against narrow definition. However, creative intelligence (is that even a terminology?) and creative thinking is not so easily measured. This is very relevant for this research, as typical modes of evaluation and benchmarking does not translate necessarily.+} {+- 12:17 Why is live process important? Maybe as a counter, sub-argument to the claims that AI can now do research/ be a researcher. Opening up, documenting, and showcasing the process of creative practice based research is a way to directly address this and challenge it. My intuition is that, the domain of creative, practice based research can not be as easily simulated, and this is what I what I want to dig into more concretely+} {+[[confirmation-document]]+}"
+      }
+    ]
+  },
   "2026-07-20": {
     "noteDate": "2026-07-20",
     "revisions": [
@@ -23413,6 +23468,20 @@
         "added": 49,
         "removed": 0,
         "diff": "{+---+} {+authors: []+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- AI+} {+- LLMs / NLP+} {+type: web-page+} {+url: https://arxiv.org/html/2406.17650v2+} {+visibility: public+} {+year: null+} {+zotero_key: --elizareinterpretedworlds+} {+---+} {+[[-bibliography]]+} {+_ELIZA Reinterpreted: The world’s first chatbot was not intended as a chatbot at all_. https://arxiv.org/html/2406.17650v2+} {+---+}"
+      }
+    ]
+  },
+  "anon-nd-claude-higher-education": {
+    "noteDate": "2026-07-22",
+    "revisions": [
+      {
+        "date": "2026-07-22",
+        "hash": "e7514da",
+        "wordCount": 38,
+        "delta": 38,
+        "added": 38,
+        "removed": 0,
+        "diff": "{+---+} {+authors: []+} {+date-created: '2026-07-22'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: web-page+} {+url: https://claude.com/solutions/education+} {+visibility: public+} {+year: null+} {+zotero_key: --claudehighereducation+} {+---+} {+[[-bibliography]]+} {+_Claude for higher education | Claude by Anthropic_. https://claude.com/solutions/education+} {+---+}"
       }
     ]
   },

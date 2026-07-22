@@ -68,20 +68,19 @@ Within this section I will map out the fields in which the research sits and the
 
 ### 2.3 Liveness and process
 
-- The speculative approach led to utilising live coding as a practice to inform how I explore liveness as a way of keeping process visible and unfinished
+- The speculative framing led to designing artefacts that examine different possibilities, in particular the question of what happens to the creative process when AI tools make the end result easier. This directed attention toward live coding, a creative and improvisatory practice that is in some ways antithetical to polished AI-assisted outputs, and where liveness itself has been examined as a methodological concept.
 - Live coding provides the methodological vocabulary:
     - Blackwell et al's "Live Coding: A User's Manual" establishes liveness as durational, embodied, and non-repeatable
     - Cocker's "Performing thinking in action" frames live coding as thinking-through-doing
     - McLean et al's "The Meaning of Live" raises the question of liveness without audience, which is directly relevant to PhD-Live
 - The central tension: is PhD-Live genuinely performative, or is it live only in a temporal sense? This question drives a research question of its own: what might a commitment to liveness offer as a model for learning and knowledge-making in an era of AI-generated outputs?
-- Tools for thought and digital gardens provide the second lineage:
+- Tools for thought and digital gardens provide the second foundation in this regard:
     - Caulfield's "Garden and the Stream" as the founding distinction between exploratory networked knowledge and linear feeds
-    - Appleton on digital garden history and ethos
+    - Appleton on a comprehensive mapping of digital garden history and ethos
     - Matuschak's "How Might We Learn?" as the bridge between tools-for-thought and AI-and-learning
 - Recent work on creative process traces (Kreminski and Mateas, Hammad et al) speaks directly to what PhD-Live does: making the traces of creative research visible and treating them as meaningful objects, not just documentation
 - The argument: liveness and process visibility are not features of the platform. They are a central way of working. Commercial AI collapses process into product. Making process visible and keeping it unfinished is a deliberate counter, and one that speaks directly to research questions two and four
-
-_The thesis will also engage with Personal Knowledge Management systems and "second brain" traditions (Ahrens and adjacent) but distinguishes its critical research register from their productivity register._
+- The research draws on Zettelkasten principles (Ahrens) as a way of building networked knowledge, while distinguishing itself from the "second brain" productivity culture that has grown around these methods
 
 ### 2.4 Intelligence, cognition, and the politics of AI
 
@@ -90,8 +89,6 @@ _The thesis will also engage with Personal Knowledge Management systems and "sec
 - Agüera y Arcas's "What is Intelligence?" provides a contemporary reframing of the question relevant to current LLMs
 - The chatbot lineage matters as critical precedent: Weizenbaum built ELIZA as a critique, not a product. He was alarmed by how readily people projected understanding onto a system that had none. The bots in this research are built in a similar spirit: to interrogate assumptions about intelligence rather than reproduce them
 - Sycophancy in LLMs (Cheng et al, Malmqvist) names a structural tendency that connects directly to a finding in this research. When the supervisor bot is fed context drawn from my own notes, it tends to agree with positions I've already taken and reinforce framings I've already used, rather than push back or open new lines of thought. The literature suggests this isn't incidental: it reflects how these models are trained and rewarded, which means designing for genuine challenge in a system that holds the researcher's own material is harder than it looks
-
-_The thesis will engage further with histories of cognition and computation (Hayles, the broader critical AI field), but the key references for confirmation are above._
 
 ### 2.5 Learning, institutions, and knowledge
 
@@ -105,17 +102,15 @@ _The thesis will engage further with histories of cognition and computation (Hay
 ### 2.6 Methods: building with and through
 
 - The research is practice-based and autoethnographic, with building tools as the primary mode of investigation
-- Methodological traditions drawn on:
-    - Frayling's "Research in Art and Design" as the foundational distinction between research into, through, and for art and design. This work sits in the "through" tradition: research conducted through making
-    - Candy on practice-based research specifically, distinguishing it from practice-led: the artefacts themselves are the contribution, not just the means of generating findings
-    - Skains on designing and conducting practice-based research in the creative arts
-    - The Research Through Design community and its proceedings as a body of adjacent practice
-    - "The Auto-Ethnographic Turn in Design" on using the researcher's own experience as research material
-    - Gaver on research through design and the annotated portfolio method
+Methodological traditions drawn on:
+	- Frayling's "Research in Art and Design" as the foundational distinction between research into, through, and for art and design. This work sits in the "through" tradition: research conducted through making
+	- Candy on practice-based research specifically, distinguishing it from practice-led: the artefacts themselves are the contribution, not just the means of generating findings
+	- Neustaedter and Sengers on autobiographical design: building for oneself as a legitimate design research method, where the researcher's own use of the artefact is the site of inquiry
+	- "The Auto-Ethnographic Turn in Design" on using the researcher's own experience as research material more broadly
+	- Gaver on research through design and the annotated portfolio method
 - "Building with and through" LLM systems is the specific formulation: the LLMs are both the material (what the tools are made of) and the infrastructure (the substrate the research practice runs on). Each artefact operates as both a technical object and a theoretical proposition
-- The stated "playful approach" is grounded in beliefs about how learning works, drawn from my teaching practice and experience. It connects to the Montessori tradition and to creative and art school approaches to teaching (studio pedagogy, crit culture, learning through making as a norm). The characteristics of play, experimental, imaginative, self-directed, learning through doing, describe both the method and central values about teaching, which is what connects the methodology to the pedagogical thread
+- The methodology chapter develops a "playful" approach grounded in beliefs about how learning works, drawn from my teaching practice and from traditions that treat learning as active construction: Montessori's prepared environments, Papert's constructionism, and the studio, crit and making-focused pedagogy of creative and art schools
 - I will address Jowsey et al's rejection of generative AI for reflexive qualitative research directly: this work uses AI within reflexive research, but AI is the object of inquiry, not a substitute for reflexive analysis
-- Pedagogy and the autoethnographic position are distributed across every chapter rather than isolated in one. This is a deliberate structural choice that the methodology chapter will name and justify
 
 ## 3. Draft chapter sections
 
@@ -127,7 +122,7 @@ _[TO WRITE, c.3,000-4,000 words]_
 
 This section will cover:
 
-- Practice-based and autoethnographic framing (Frayling's into/through/for distinction, Candy on practice-based versus practice-led, Skains, the Research Through Design community, Auto-Ethnographic Turn in Design, Gaver on research through design)
+- Practice-based and autoethnographic framing (Frayling's into/through/for distinction, Candy on practice-based versus practice-led, the Research Through Design community, Auto-Ethnographic Turn in Design, Gaver on research through design)
 - Speculative design and possibility spaces as the foundational speculative approach, with the political situating of speculation (Benjamin) and direct engagement with the critique of speculative design as unactionable
 - Live coding as a practice that embodies liveness, drawing on Blackwell et al, Cocker, McLean et al
 - "Building with and through" LLM systems as the specific mode of investigation: LLMs as both material and infrastructure, each artefact as both technical object and theoretical proposition
@@ -137,6 +132,11 @@ This section will cover:
 - The distributed autoethnographic structure named and justified as a deliberate structural choice
 - The triple role of learner, researcher, teacher as the research site, and how that position produces knowledge neither role alone could generate
 
+This research draws together a number of methods and approaches. At its foundation it builds on practice-based research (Frayling 1993, Candy 2006, Gaver 2012). These references matter for two reasons. First, they articulate how knowledge is made through making rather than only through writing, and they distinguish this from more traditional forms of research. Second, this research is itself concerned with how knowledge gets made, and specifically with the tension between the tacit, unfinished, embodied knowing that practice-based work centres, and the classificatory, algorithmic, output-oriented tendencies of generative AI systems. Practice-based research and generative AI operate on quite different assumptions about what knowledge is and how it becomes available. That tension is the ground the research works on.
+
+Autoethnography as a research method has been articulated most fully by Ellis (2004) and Ellis, Adams, and Bochner (2011), whose work establishes the tradition of using the researcher's own experience as data to study cultural phenomena. This research sits within that tradition but draws more directly on autoethnographic and autobiographical approaches within design research (Neustaedter and Sengers 2012, DiSalvo et al. 2019), where the researcher's engagement with their own artefacts is the specific site of inquiry.
+
+~~A number of strands come interleave of form my approach to conducting this research, all with the foundational principle of embodying a playful approach.~~ Speculative design is the overarching frame in which this sits. Speculative design is a field that is essentially all about exploration, often "intended to act like a mirror reflecting the role a specific technology plays or may play in each of our lives" (Auger 2012, cited in Mitrović _et al._, 2021). As such it feels like the natural starting place for this research investigation. Because the technology of LLMs is new and the circumstances of it encroaching into the educational space is new, the questions and possibilities are many, therefore speculative design offers concrete ways to investigate the domain. 
 ### 3.2 From chapter 4: process, digital gardens, tools for thought, and knowledge infrastructure
 
 _[TO WRITE, c.3,000-4,000 words]_
