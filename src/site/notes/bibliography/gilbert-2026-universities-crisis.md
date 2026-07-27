@@ -20,3 +20,5 @@ zotero_key: gilbert-2026-universitiescrisis
 Gilbert, Jeremy; Finlayson, Alan. _Universities in Crisis_. 2026. https://culturepowerpolitics.org/2026/07/16/universities-in-crisis-part-1/
 
 ---
+
+[[uk-higher-ed-history]]

@@ -5,7 +5,7 @@ visibility: public
 tags: []
 type: ""
 ---
-- part of the broader exploration LLM 'bots' [[teaching-and-learning-bots]]
+ - part of the broader exploration LLM 'bots' [[teaching-and-learning-bots]]
 - integrates into my personal [[research-infrastructure]]
 
 ---

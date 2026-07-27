@@ -36,6 +36,8 @@ views:
     sort:
       - property: theme
         direction: DESC
+    columnSize:
+      note.read: 117
   - type: table
     name: Grouped by status
     groupBy:

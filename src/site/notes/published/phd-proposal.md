@@ -8,6 +8,7 @@ updated: 2025-10-20T22:34:14.469Z
 tags:
 featured: true
 ---
+
 I am beginning to work on reframing my focus, here: [[phd-proposal-thoughts-and-reframing]]
 
 ## current working title: After Intelligence - building possibility spaces for learning and making with and through generative systems

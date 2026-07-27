@@ -17,6 +17,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-07-23",
+        "hash": "2d49770",
+        "wordCount": 624,
+        "delta": 282,
+        "added": 624,
+        "removed": 342,
+        "diff": "[-- The speculative approach led to utilising live coding as a practice to inform how I explore liveness as a way of keeping process visible and unfinished-] {+- The speculative framing led to designing artefacts that examine different possibilities, in particular the question of what happens to the creative process when AI tools make the end result easier. This directed attention toward live coding, a creative and improvisatory practice that is in some ways antithetical to polished AI-assisted outputs, and where liveness itself has been examined as a methodological concept.+} [-- Tools for thought and digital gardens provide the second lineage:-] {+- Tools for thought and digital gardens provide the second foundation in this regard:+} [-- Appleton on digital garden history and ethos-] {+- Appleton on a comprehensive mapping of digital garden history and ethos+} [-_The thesis will also engage with Personal Knowledge Management systems and \"second brain\" traditions (Ahrens and adjacent) but distinguishes its critical research register from their productivity register._-] {+- The research draws on Zettelkasten principles (Ahrens) as a way of building networked knowledge, while distinguishing itself from the \"second brain\" productivity culture that has grown around these methods+} [-_The thesis will engage further with histories of cognition and computation (Hayles, the broader critical AI field), but the key references for confirmation are above._-] [-- Methodological traditions drawn on:-] [-- Frayling's \"Research in Art and Design\" as the foundational distinction between research into, through, and for art and design. This work sits in the \"through\" tradition: research conducted through making-] [-- Candy on practice-based research specifically, distinguishing it from practice-led: the artefacts themselves are the contribution, not just the means of generating findings-] [-- Skains on designing and conducting practice-based research in the creative arts-] [-- The Research Through Design community and its proceedings as a body of adjacent practice-] [-- \"The Auto-Ethnographic Turn in Design\" on using the researcher's own experience as research material-] [-- Gaver on research through design and the annotated portfolio method-] {+Methodological traditions drawn on:+} {+- Frayling's \"Research in Art and Design\" as the foundational distinction between research into, through, and for art and design. This work sits in the \"through\" tradition: research conducted through making+} {+- Candy on practice-based research specifically, distinguishing it from practice-led: the artefacts themselves are the contribution, not just the means of generating findings+} {+- Neustaedter and Sengers on autobiographical design: building for oneself as a legitimate design research method, where the researcher's own use of the artefact is the site of inquiry+} {+- \"The Auto-Ethnographic Turn in Design\" on using the researcher's own experience as research material more broadly+} {+- Gaver on research through design and the annotated portfolio method+} [-- The stated \"playful approach\" is grounded in beliefs about how learning works, drawn from my teaching practice and experience. It connects to the Montessori tradition and to creative and art school approaches to teaching (studio pedagogy, crit culture, learning through making as a norm). The characteristics of play, experimental, imaginative, self-directed, learning through doing, describe both the method and central values about teaching, which is what connects the methodology to the pedagogical thread-] {+- The methodology chapter develops a \"playful\" approach grounded in beliefs about how learning works, drawn from my teaching practice and from traditions that treat learning as active construction: Montessori's prepared environments, Papert's constructionism, and the studio, crit and making-focused pedagogy of creative and art schools+} [-- Pedagogy and the autoethnographic position are distributed across every chapter rather than isolated in one. This is a deliberate structural choice that the methodology chapter will name and justify-] [-- Practice-based and autoethnographic framing (Frayling's into/through/for distinction, Candy on practice-based versus practice-led, Skains, the Research Through Design community, Auto-Ethnographic Turn in Design, Gaver on research through design)-] {+- Practice-based and autoethnographic framing (Frayling's into/through/for distinction, Candy on practice-based versus practice-led, the Research Through Design community, Auto-Ethnographic Turn in Design, Gaver on research through design)+} {+This research draws together a number of methods and approaches. At its foundation it builds on practice-based research (Frayling 1993, Candy 2006, Gaver 2012). These references matter for two reasons. First, they articulate how knowledge is made through making rather than only through writing, and they distinguish this from more traditional forms of research. Second, this research is itself concerned with how knowledge gets made, and specifically with the tension between the tacit, unfinished, embodied knowing that practice-based work centres, and the classificatory, algorithmic, output-oriented tendencies of generative AI systems. Practice-based research and generative AI operate on quite different assumptions about what knowledge is and how it becomes available. That tension is the ground the research works on.+} {+Autoethnography as a research method has been articulated most fully by Ellis (2004) and Ellis, Adams, and Bochner (2011), whose work establishes the tradition of using the researcher's own experience as data to study cultural phenomena. This research sits within that tradition but draws more directly on autoethnographic and autobiographical approaches within design research (Neustaedter and Sengers 2012, DiSalvo et al. 2019), where the researcher's engagement with their own artefacts is the specific site of inquiry.+} {+~~A number of strands come interleave of form my approach to conducting this research, all with the foundational principle of embodying a playful approach.~~ Speculative design is the overarching frame in which this sits. Speculative design is a field that is essentially all about exploration, often \"intended to act like a mirror reflecting the role a specific technology plays or may play in each of our lives\" (Auger 2012, cited in Mitrović _et al._, 2021). As such it feels like the natural starting place for this research investigation. Because the technology of LLMs is new and the circumstances of it encroaching into the educational space is new, the questions and possibilities are many, therefore speculative design offers concrete ways to investigate the domain.+}"
+      },
+      {
         "date": "2026-07-22",
         "hash": "e7514da",
         "wordCount": 852,
@@ -8620,6 +8629,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-07-23",
+        "hash": "2d49770",
+        "wordCount": 39,
+        "delta": 8,
+        "added": 39,
+        "removed": 31,
+        "diff": "[-Critically I believe that my practice will take the form of [[design-interventions]], choreography of activity through workshops, performance(?) and through my teaching. I will use [[research-methods]] that will align with this.-] {+Critically I believe that my practice will take the form of [[design-interventions]], choreography of activity through workshops, performance(?) and through my teaching.+} {+I will use [[research-methods]] that will align with this.+} {+---+} {+core texts and scholars:+} {+[[gaver-2012-should-we-expect]]+} {+[[frayling-1994-research-art-design]]+} {+[[candy-2006-practice-based-research]]+}"
+      },
+      {
         "date": "2026-01-11",
         "hash": "1bdddd0",
         "wordCount": 4,
@@ -13823,6 +13841,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-07-23",
+        "hash": "2d49770",
+        "wordCount": 1,
+        "delta": 1,
+        "added": 1,
+        "removed": 0,
+        "diff": "{+[[mitrović-2021-beyond-speculative-design]]+}"
+      },
+      {
         "date": "2026-01-11",
         "hash": "1bdddd0",
         "wordCount": 5,
@@ -13881,6 +13908,15 @@
   "critiques-of-speculative-design": {
     "noteDate": null,
     "revisions": [
+      {
+        "date": "2026-07-23",
+        "hash": "2d49770",
+        "wordCount": 1,
+        "delta": 1,
+        "added": 1,
+        "removed": 0,
+        "diff": "{+[[mitrović-2021-beyond-speculative-design]]+}"
+      },
       {
         "date": "2026-01-11",
         "hash": "1bdddd0",
@@ -14362,6 +14398,15 @@
   "confirmation-requirements": {
     "noteDate": null,
     "revisions": [
+      {
+        "date": "2026-07-23",
+        "hash": "2d49770",
+        "wordCount": 1,
+        "delta": 1,
+        "added": 1,
+        "removed": 0,
+        "diff": "{+[[confirmation-document]]+}"
+      },
       {
         "date": "2026-07-20",
         "hash": "9c44b88",
@@ -20109,9 +20154,32 @@
       }
     ]
   },
+  "2026-07-23": {
+    "noteDate": "2026-07-23",
+    "revisions": [
+      {
+        "date": "2026-07-23",
+        "hash": "2d49770",
+        "wordCount": 23,
+        "delta": 23,
+        "added": 23,
+        "removed": 0,
+        "diff": "{+---+} {+date: 2026-07-23+} {+---+} {+## sessions+} {+<details>+} {+<summary>Session 1</summary>+} {+start:: 2026-07-22T18:47:45.324Z+} {+topic:: writing · continuing work on the confirmation draft+} {+end:: 2026-07-22T23:41:59.424Z+} {+</details>+}"
+      }
+    ]
+  },
   "2026-07-22": {
     "noteDate": "2026-07-22",
     "revisions": [
+      {
+        "date": "2026-07-23",
+        "hash": "2d49770",
+        "wordCount": 18,
+        "delta": 17,
+        "added": 18,
+        "removed": 1,
+        "diff": "{+<summary>Session 2</summary>+} {+start:: 2026-07-22T00:22:55.309989+00:00+} {+topic:: study companion+} {+end:: 2026-07-22T10:39:09.682948+} {+</details>+} {+<details>+} [-</details>-] {+</details>+} {+continuing to work on the [[confirmation-document]]+}"
+      },
       {
         "date": "2026-07-22",
         "hash": "e7514da",
@@ -21933,7 +22001,7 @@
     ]
   },
   "neustaedter-nd-autobiographical-design-you": {
-    "noteDate": "2026-07-17",
+    "noteDate": null,
     "revisions": [
       {
         "date": "2026-07-18",
@@ -21979,7 +22047,7 @@
     ]
   },
   "naidoo-2013-students-consumers-commodifying": {
-    "noteDate": "2026-07-17",
+    "noteDate": null,
     "revisions": [
       {
         "date": "2026-07-18",
@@ -22105,7 +22173,7 @@
     ]
   },
   "matuschak-2024-might-we-learn": {
-    "noteDate": "2026-07-17",
+    "noteDate": null,
     "revisions": [
       {
         "date": "2026-07-18",
@@ -22147,7 +22215,7 @@
     ]
   },
   "manning-2024-conversation-erin-manning": {
-    "noteDate": "2026-07-17",
+    "noteDate": null,
     "revisions": [
       {
         "date": "2026-07-18",
@@ -22606,7 +22674,7 @@
     ]
   },
   "hooks-1994-teaching-transgress": {
-    "noteDate": "2026-07-17",
+    "noteDate": null,
     "revisions": [
       {
         "date": "2026-07-18",
@@ -22788,7 +22856,7 @@
     ]
   },
   "friere-1970-pedagogy-oppressed": {
-    "noteDate": "2026-07-17",
+    "noteDate": null,
     "revisions": [
       {
         "date": "2026-07-18",
@@ -22798,6 +22866,20 @@
         "added": 39,
         "removed": 0,
         "diff": "{+---+} {+authors:+} {+- Paulo Friere+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme:+} {+- Pedagogy+} {+type: book+} {+url: null+} {+visibility: public+} {+year: 1970+} {+zotero_key: friere-1970-pedagogyoppressed+} {+---+} {+[[-bibliography]]+} {+Friere, Paulo. _Pedagogy of the Oppressed_. 1970.+} {+---+}"
+      }
+    ]
+  },
+  "frayling-1994-research-art-design": {
+    "noteDate": "2026-07-23",
+    "revisions": [
+      {
+        "date": "2026-07-23",
+        "hash": "2d49770",
+        "wordCount": 51,
+        "delta": 51,
+        "added": 51,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Christopher Frayling+} {+date-created: '2026-07-23'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: journal-article+} {+url: https://researchonline.rca.ac.uk/384/+} {+visibility: public+} {+year: 1994+} {+zotero_key: frayling-1994-researchartdesign+} {+---+} {+[[-bibliography]]+} {+Frayling, Christopher. _Research in Art and Design (Royal College of Art Research Papers, Vol 1, No 1, 1993/4)_. 1994. https://researchonline.rca.ac.uk/384/+} {+---+}"
       }
     ]
   },
@@ -23187,6 +23269,20 @@
       }
     ]
   },
+  "candy-2006-practice-based-research": {
+    "noteDate": "2026-07-23",
+    "revisions": [
+      {
+        "date": "2026-07-23",
+        "hash": "2d49770",
+        "wordCount": 39,
+        "delta": 39,
+        "added": 39,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Linda Candy+} {+date-created: '2026-07-23'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: journal-article+} {+url: null+} {+visibility: public+} {+year: 2006+} {+zotero_key: candy-2006-practicebasedresearch+} {+---+} {+[[-bibliography]]+} {+Candy, Linda. _Practice Based Research: A Guide_. 2006.+} {+---+}"
+      }
+    ]
+  },
   "caldarini-nd-literature-survey-recent": {
     "noteDate": "2026-07-17",
     "revisions": [
@@ -23556,7 +23652,7 @@
     ]
   },
   "anon-2024-hands-research-artists": {
-    "noteDate": "2026-07-17",
+    "noteDate": null,
     "revisions": [
       {
         "date": "2026-07-18",

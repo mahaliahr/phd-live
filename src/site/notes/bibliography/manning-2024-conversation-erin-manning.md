@@ -2,10 +2,10 @@
 authors:
 - Erin Manning
 - V.G Bozalek
-date-created: '2026-07-17'
+date-created: 2026-07-17
 dg-publish: true
 priority: null
-read: Not started
+read: Read
 tags: []
 theme:
 - Pedagogy
