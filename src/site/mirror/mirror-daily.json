@@ -1,6 +1,46 @@
 {
   "files": [
     {
+      "date": "2026-07-26",
+      "raw": "---\ndate: 2026-07-26\ngenerated: 23:00\n---\n\n## notes created\n- [[robbins-report-1963]] \u2014 daily/ \u2014 22:23\n- [[uk-higher-ed-history]] \u2014 daily/ \u2014 22:21\n\n## notes edited\n- [[gilbert-2026-universities-crisis]] \u2014 bibliography/ \u2014 22:21\n\n## sessions\n- none\n\n## orphans flagged\n- [[gilbert-2026-universities-crisis]] \u2014 no backlinks\n",
+      "parsed": {
+        "notes_created": "- [[robbins-report-1963]] \u2014 daily/ \u2014 22:23\n- [[uk-higher-ed-history]] \u2014 daily/ \u2014 22:21",
+        "notes_edited": "- [[gilbert-2026-universities-crisis]] \u2014 bibliography/ \u2014 22:21",
+        "sessions": "- none",
+        "orphans_flagged": "- [[gilbert-2026-universities-crisis]] \u2014 no backlinks"
+      }
+    },
+    {
+      "date": "2026-07-25",
+      "raw": "---\ndate: 2026-07-25\ngenerated: 23:15\n---\n\n## notes created\n- none\n\n## notes edited\n- [[friere-1970-pedagogy-oppressed]] \u2014 bibliography/ \u2014 00:06\n- [[krstich-2016-pedagogy-play-fluxus]] \u2014 bibliography/ \u2014 00:06\n- [[hooks-1994-teaching-transgress]] \u2014 bibliography/ \u2014 00:06\n- [[manning-2024-conversation-erin-manning]] \u2014 bibliography/ \u2014 00:06\n- [[anon-2024-hands-research-artists]] \u2014 bibliography/ \u2014 00:06\n- [[matuschak-2024-might-we-learn]] \u2014 bibliography/ \u2014 00:06\n- [[naidoo-2013-students-consumers-commodifying]] \u2014 bibliography/ \u2014 00:06\n- [[neustaedter-nd-autobiographical-design-you]] \u2014 bibliography/ \u2014 00:06\n\n## sessions\n- none\n\n## orphans flagged\n- [[friere-1970-pedagogy-oppressed]] \u2014 no backlinks\n- [[krstich-2016-pedagogy-play-fluxus]] \u2014 no backlinks\n- [[hooks-1994-teaching-transgress]] \u2014 no backlinks\n- [[manning-2024-conversation-erin-manning]] \u2014 no backlinks\n- [[anon-2024-hands-research-artists]] \u2014 no backlinks\n- [[naidoo-2013-students-consumers-commodifying]] \u2014 no backlinks\n- [[neustaedter-nd-autobiographical-design-you]] \u2014 no backlinks\n",
+      "parsed": {
+        "notes_created": "- none",
+        "notes_edited": "- [[friere-1970-pedagogy-oppressed]] \u2014 bibliography/ \u2014 00:06\n- [[krstich-2016-pedagogy-play-fluxus]] \u2014 bibliography/ \u2014 00:06\n- [[hooks-1994-teaching-transgress]] \u2014 bibliography/ \u2014 00:06\n- [[manning-2024-conversation-erin-manning]] \u2014 bibliography/ \u2014 00:06\n- [[anon-2024-hands-research-artists]] \u2014 bibliography/ \u2014 00:06\n- [[matuschak-2024-might-we-learn]] \u2014 bibliography/ \u2014 00:06\n- [[naidoo-2013-students-consumers-commodifying]] \u2014 bibliography/ \u2014 00:06\n- [[neustaedter-nd-autobiographical-design-you]] \u2014 bibliography/ \u2014 00:06",
+        "sessions": "- none",
+        "orphans_flagged": "- [[friere-1970-pedagogy-oppressed]] \u2014 no backlinks\n- [[krstich-2016-pedagogy-play-fluxus]] \u2014 no backlinks\n- [[hooks-1994-teaching-transgress]] \u2014 no backlinks\n- [[manning-2024-conversation-erin-manning]] \u2014 no backlinks\n- [[anon-2024-hands-research-artists]] \u2014 no backlinks\n- [[naidoo-2013-students-consumers-commodifying]] \u2014 no backlinks\n- [[neustaedter-nd-autobiographical-design-you]] \u2014 no backlinks"
+      }
+    },
+    {
+      "date": "2026-07-24",
+      "raw": "---\ndate: 2026-07-24\ngenerated: 23:26\n---\n\n## notes created\n- none\n\n## notes edited\n- [[confirmation-document]] \u2014 daily/ \u2014 11:03\n- [[friere-1970-pedagogy-oppressed]] \u2014 bibliography/ \u2014 11:23\n- [[krstich-2016-pedagogy-play-fluxus]] \u2014 bibliography/ \u2014 11:36\n- [[hooks-1994-teaching-transgress]] \u2014 bibliography/ \u2014 11:24\n- [[manning-2024-conversation-erin-manning]] \u2014 bibliography/ \u2014 11:24\n- [[anon-2024-hands-research-artists]] \u2014 bibliography/ \u2014 11:23\n- [[matuschak-2024-might-we-learn]] \u2014 bibliography/ \u2014 11:25\n- [[naidoo-2013-students-consumers-commodifying]] \u2014 bibliography/ \u2014 11:24\n- [[neustaedter-nd-autobiographical-design-you]] \u2014 bibliography/ \u2014 11:23\n- [[phd-proposal]] \u2014 published/ \u2014 13:17\n\n## sessions\n- none\n\n## orphans flagged\n- [[friere-1970-pedagogy-oppressed]] \u2014 no backlinks\n- [[krstich-2016-pedagogy-play-fluxus]] \u2014 no backlinks\n- [[hooks-1994-teaching-transgress]] \u2014 no backlinks\n- [[manning-2024-conversation-erin-manning]] \u2014 no backlinks\n- [[anon-2024-hands-research-artists]] \u2014 no backlinks\n- [[naidoo-2013-students-consumers-commodifying]] \u2014 no backlinks\n- [[neustaedter-nd-autobiographical-design-you]] \u2014 no backlinks\n",
+      "parsed": {
+        "notes_created": "- none",
+        "notes_edited": "- [[confirmation-document]] \u2014 daily/ \u2014 11:03\n- [[friere-1970-pedagogy-oppressed]] \u2014 bibliography/ \u2014 11:23\n- [[krstich-2016-pedagogy-play-fluxus]] \u2014 bibliography/ \u2014 11:36\n- [[hooks-1994-teaching-transgress]] \u2014 bibliography/ \u2014 11:24\n- [[manning-2024-conversation-erin-manning]] \u2014 bibliography/ \u2014 11:24\n- [[anon-2024-hands-research-artists]] \u2014 bibliography/ \u2014 11:23\n- [[matuschak-2024-might-we-learn]] \u2014 bibliography/ \u2014 11:25\n- [[naidoo-2013-students-consumers-commodifying]] \u2014 bibliography/ \u2014 11:24\n- [[neustaedter-nd-autobiographical-design-you]] \u2014 bibliography/ \u2014 11:23\n- [[phd-proposal]] \u2014 published/ \u2014 13:17",
+        "sessions": "- none",
+        "orphans_flagged": "- [[friere-1970-pedagogy-oppressed]] \u2014 no backlinks\n- [[krstich-2016-pedagogy-play-fluxus]] \u2014 no backlinks\n- [[hooks-1994-teaching-transgress]] \u2014 no backlinks\n- [[manning-2024-conversation-erin-manning]] \u2014 no backlinks\n- [[anon-2024-hands-research-artists]] \u2014 no backlinks\n- [[naidoo-2013-students-consumers-commodifying]] \u2014 no backlinks\n- [[neustaedter-nd-autobiographical-design-you]] \u2014 no backlinks"
+      }
+    },
+    {
+      "date": "2026-07-23",
+      "raw": "---\ndate: 2026-07-23\ngenerated: 23:11\n---\n\n## notes created\n- [[frayling-1994-research-art-design]] \u2014 bibliography/ \u2014 00:39\n- [[candy-2006-practice-based-research]] \u2014 bibliography/ \u2014 00:39\n- [[2026-07-23]] \u2014 daily/ \u2014 00:41\n\n## notes edited\n- [[feedback-ual-doctoral-symposium]] \u2014 daily/ \u2014 00:38\n- [[confirmation-document]] \u2014 daily/ \u2014 22:33\n- [[practice-based-research]] \u2014 published/ \u2014 00:40\n\n## sessions\n- none\n\n## orphans flagged\n- [[2026-07-23]] \u2014 no backlinks\n",
+      "parsed": {
+        "notes_created": "- [[frayling-1994-research-art-design]] \u2014 bibliography/ \u2014 00:39\n- [[candy-2006-practice-based-research]] \u2014 bibliography/ \u2014 00:39\n- [[2026-07-23]] \u2014 daily/ \u2014 00:41",
+        "notes_edited": "- [[feedback-ual-doctoral-symposium]] \u2014 daily/ \u2014 00:38\n- [[confirmation-document]] \u2014 daily/ \u2014 22:33\n- [[practice-based-research]] \u2014 published/ \u2014 00:40",
+        "sessions": "- none",
+        "orphans_flagged": "- [[2026-07-23]] \u2014 no backlinks"
+      }
+    },
+    {
       "date": "2026-07-22",
       "raw": "---\ndate: 2026-07-22\ngenerated: 23:00\n---\n\n## notes created\n- [[confirmation-document]] \u2014 daily/ \u2014 22:58\n- [[anon-nd-claude-higher-education]] \u2014 bibliography/ \u2014 00:05\n- [[2026-07-22]] \u2014 daily/ \u2014 22:42\n- [[critiques of speculative design]] \u2014 published/ \u2014 22:48\n- [[confirmation-requirements]] \u2014 published/ \u2014 22:49\n\n## notes edited\n- none\n\n## sessions\n- study companion \u2014 00:22 \u2192 10:39\n- writing \u2014 18:47 \u2192 ?\n\n## orphans flagged\n- [[anon-nd-claude-higher-education]] \u2014 no backlinks\n- [[2026-07-22]] \u2014 no backlinks\n",
       "parsed": {
