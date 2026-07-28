@@ -15,3 +15,4 @@ luxury whilst our healthcare systems falter leaving hundreds of thousands of peo
 I think this is an interesting and valid point of view. but alternately when you have nothing, imagining and speculating what could be can often be life sustaining. I think worth bearing in mind is the positionality of the authors, that id I believe quite privileged, whats the relation to speculating and imagining for minoritised groups, I believe it's incredibly important. Links to sentiments shared in Ruha Benjamin's writing on Imagination  
 
 [[benjamin-2024-imagination]]
+[[benjamin-2024-imagination-manifesto]]

@@ -51,3 +51,4 @@ core texts and scholars:
 [[frayling-1994-research-art-design]]
 [[candy-2006-practice-based-research]]
 
+Donald Schon The Reflective Practitioner
