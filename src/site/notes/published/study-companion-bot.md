@@ -14,4 +14,8 @@ the study companion bot works as a 'thinking partner' and a way to discuss and w
 
 initial tests show that local models whilst performing quite well, do not compare comparatively to being a good 'thinking partner'
 
+[[study-companion-v0]]
+[[study-companion-v1]]
+[[study-companion-prompts]]
 [[bot-evaluation-thinking-partnership]]
+
