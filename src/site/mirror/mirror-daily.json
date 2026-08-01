@@ -1,6 +1,16 @@
 {
   "files": [
     {
+      "date": "2026-07-31",
+      "raw": "---\ndate: 2026-07-31\ngenerated: 23:00\n---\n\n## notes created\n- [[study-companion-v1]] \u2014 daily/ \u2014 02:10\n- [[study-companion-v0]] \u2014 daily/ \u2014 02:09\n- [[2026-07-31]] \u2014 daily/ \u2014 02:02\n\n## notes edited\n- [[2026-07-30]] \u2014 daily/ \u2014 00:38\n- [[study-companion-bot]] \u2014 published/ \u2014 02:10\n\n## sessions\n- none\n\n## orphans flagged\n- [[2026-07-31]] \u2014 no backlinks\n- [[2026-07-30]] \u2014 no backlinks\n",
+      "parsed": {
+        "notes_created": "- [[study-companion-v1]] \u2014 daily/ \u2014 02:10\n- [[study-companion-v0]] \u2014 daily/ \u2014 02:09\n- [[2026-07-31]] \u2014 daily/ \u2014 02:02",
+        "notes_edited": "- [[2026-07-30]] \u2014 daily/ \u2014 00:38\n- [[study-companion-bot]] \u2014 published/ \u2014 02:10",
+        "sessions": "- none",
+        "orphans_flagged": "- [[2026-07-31]] \u2014 no backlinks\n- [[2026-07-30]] \u2014 no backlinks"
+      }
+    },
+    {
       "date": "2026-07-30",
       "raw": "---\ndate: 2026-07-30\ngenerated: 23:00\n---\n\n## notes created\n- [[study-companion-prompts]] \u2014 daily/ \u2014 20:18\n- [[2026-07-30]] \u2014 daily/ \u2014 02:02\n\n## notes edited\n- [[study-companion-bot]] \u2014 published/ \u2014 20:18\n\n## sessions\n- study companion \u2014 00:51 \u2192 ?\n- study companion \u2014 00:55 \u2192 ?\n- study companion \u2014 00:58 \u2192 ?\n- study companion \u2014 01:07 \u2192 ?\n- study companion \u2014 01:11 \u2192 11:06\n- study companion \u2014 10:47 \u2192 ?\n- study companion \u2014 11:39 \u2192 ?\n- study companion \u2014 11:55 \u2192 ?\n- coding \u2014 15:47 \u2192 ?\n- study companion \u2014 16:15 \u2192 ?\n- study companion \u2014 21:59 \u2192 ?\n\n## orphans flagged\n- [[2026-07-30]] \u2014 no backlinks\n",
       "parsed": {
