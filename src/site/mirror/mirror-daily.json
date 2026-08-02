@@ -1,6 +1,16 @@
 {
   "files": [
     {
+      "date": "2026-08-01",
+      "raw": "---\ndate: 2026-08-01\ngenerated: 23:02\n---\n\n## notes created\n- [[anon-2026-anti-ai-better]] \u2014 bibliography/ \u2014 00:05\n\n## notes edited\n- none\n\n## sessions\n- none\n\n## orphans flagged\n- [[anon-2026-anti-ai-better]] \u2014 no backlinks\n",
+      "parsed": {
+        "notes_created": "- [[anon-2026-anti-ai-better]] \u2014 bibliography/ \u2014 00:05",
+        "notes_edited": "- none",
+        "sessions": "- none",
+        "orphans_flagged": "- [[anon-2026-anti-ai-better]] \u2014 no backlinks"
+      }
+    },
+    {
       "date": "2026-07-31",
       "raw": "---\ndate: 2026-07-31\ngenerated: 23:00\n---\n\n## notes created\n- [[study-companion-v1]] \u2014 daily/ \u2014 02:10\n- [[study-companion-v0]] \u2014 daily/ \u2014 02:09\n- [[2026-07-31]] \u2014 daily/ \u2014 02:02\n\n## notes edited\n- [[2026-07-30]] \u2014 daily/ \u2014 00:38\n- [[study-companion-bot]] \u2014 published/ \u2014 02:10\n\n## sessions\n- none\n\n## orphans flagged\n- [[2026-07-31]] \u2014 no backlinks\n- [[2026-07-30]] \u2014 no backlinks\n",
       "parsed": {
