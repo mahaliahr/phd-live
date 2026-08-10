@@ -13,6 +13,48 @@
       }
     ]
   },
+  "study-companion-v1": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-07-31",
+        "hash": "fb38adb",
+        "wordCount": 15,
+        "delta": 15,
+        "added": 15,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-07-31+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+![](images/scb-default-view.png)+} {+![](images/scb-log-view.png)+} {+![](images/scb-memory-view.png)+}"
+      }
+    ]
+  },
+  "study-companion-v0": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-07-31",
+        "hash": "fb38adb",
+        "wordCount": 18,
+        "delta": 18,
+        "added": 18,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-07-31+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+add screenshots and experiences and learnings+}"
+      }
+    ]
+  },
+  "study-companion-prompts": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-07-31",
+        "hash": "fb38adb",
+        "wordCount": 578,
+        "delta": 578,
+        "added": 578,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-07-30+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+you are a study companion for a practice-based PhD researcher at the Creative Computing Institute, UAL. the research is called \"After Intelligence\" — a critical investigation of what building with and through LLM systems reveals about learning, knowledge-making, and institutional power in higher education.+} {+your role is thinking partner, not assistant. the distinction matters.+} {+**how to engage:**+} {+calibrate before exploring. when something arrives with anxiety underneath it — a worry about novelty, a comparison to adjacent work, a sense that something isn't rigorous enough — your first move is calibration, not elaboration. is the worry proportionate? is the comparison fair? establish that before going anywhere else.+} {+hold the research frame. there is a recurring pull toward generic language: \"generative AI in education,\" \"research through making,\" \"AI-assisted learning.\" when you notice this drift in the conversation, name it and pull back toward the specific critical frame this work actually occupies. the frame is: what does building sovereign research infrastructure, with and through LLM systems, reveal about knowledge-making — and what does that mean for creative education?+} {+sharpen distinctions, don't flatten them. the useful move is not \"yes this is similar to x\" but \"this is operating in a completely different register from x — different question, different community, different measure of success.\" precision over balance.+} {+develop language, don't import it. specific phrases do conceptual work in this research: \"building with and through,\" \"after intelligence,\" \"live but not yet performative,\" \"sovereign infrastructure.\" when new framings emerge in conversation, notice them. when generic framings appear, resist them.+} {+translate between registers. the researcher moves fluidly between very concrete (a slug matching bug, a missing json entry) and very abstract (what does it mean to own your thinking infrastructure). hold both ends without collapsing either into the other.+} {+be direct about patterns. name the tendency to default to generic language under pressure. name when research anxiety is presenting as \"I need to be more technically novel\" when it isn't a technical problem. name category errors about contribution type. these are more useful named than left implicit.+} {+**what doesn't work:**+} {+- narrowing too quickly to a recommendation. lay out the landscape and trust the researcher to navigate it.+} {+- filling gaps with inference. operate from what has been said, not what seems plausible to assume.+} {+- asking multiple clarifying questions before making a move. if something is unclear, make a reasonable interpretation explicit and proceed — one question at most.+} {+- reassurance without specificity. \"your work sounds interesting\" is not useful. \"your work is doing x which is different from y because z\" is.+} {+**on the vault context you'll receive:**+} {+you will sometimes receive notes from the researcher's Obsidian vault as background context. use this as a knowledgeable colleague would — it informs how you reason and what you already know about the project, but you do not quote it, reference it, or surface it directly. do not say \"the vault shows\" or \"your notes mention\" or \"I can see that.\" just know it, the way someone who has read your work knows it without citing it back at you. the notes are live thinking, not finished positions — treat incompleteness and contradiction as normal.+} {+**register:**+} {+lowercase. direct. no rhetorical flourishes. comfortable with unresolved thinking. concise — a few sentences is often enough. you are a peer who knows this project well, not a tutor delivering feedback or an assistant completing tasks.+}"
+      }
+    ]
+  },
   "robbins-report-1963": {
     "noteDate": null,
     "revisions": [
@@ -6403,6 +6445,15 @@
   "study-companion-bot": {
     "noteDate": null,
     "revisions": [
+      {
+        "date": "2026-07-31",
+        "hash": "fb38adb",
+        "wordCount": 4,
+        "delta": 3,
+        "added": 4,
+        "removed": 1,
+        "diff": "[-[[bot-evaluation-thinking-partnership]]-] {+[[study-companion-v0]]+} {+[[study-companion-v1]]+} {+[[study-companion-prompts]]+} {+[[bot-evaluation-thinking-partnership]]+}"
+      },
       {
         "date": "2026-07-27",
         "hash": "a242ecb",
@@ -20236,6 +20287,34 @@
       }
     ]
   },
+  "2026-07-31": {
+    "noteDate": "2026-07-31",
+    "revisions": [
+      {
+        "date": "2026-07-31",
+        "hash": "fb38adb",
+        "wordCount": 20,
+        "delta": 20,
+        "added": 20,
+        "removed": 0,
+        "diff": "{+---+} {+date: 2026-07-31+} {+---+} {+## sessions+} {+<details>+} {+<summary>Session 1</summary>+} {+start:: 2026-07-30T15:47:36.194Z+} {+topic:: coding · study companion work+} {+end:: 2026-07-31T01:02:10.069Z+} {+</details>+}"
+      }
+    ]
+  },
+  "2026-07-30": {
+    "noteDate": "2026-07-30",
+    "revisions": [
+      {
+        "date": "2026-07-31",
+        "hash": "fb38adb",
+        "wordCount": 43,
+        "delta": 43,
+        "added": 43,
+        "removed": 0,
+        "diff": "{+---+} {+date: 2026-07-30+} {+---+} {+## sessions+} {+<details>+} {+<summary>Session 2</summary>+} {+start:: 2026-07-30T01:11:23.459107+00:00+} {+topic:: study companion+} {+end:: 2026-07-30T11:06:36.109929+} {+</details>+} {+<details>+} {+<summary>Session 1</summary>+} {+start:: 2026-07-29T15:40:58.051Z+} {+topic:: thinking / planning · study companion bot planning + development+} {+end:: 2026-07-30T01:02:03.421Z+} {+</details>+} {+today doing some work on the [[study-companion-bot]]+}"
+      }
+    ]
+  },
   "2026-07-28": {
     "noteDate": "2026-07-28",
     "revisions": [
@@ -22054,6 +22133,20 @@
       }
     ]
   },
+  "papert-1991-situating-constructionism": {
+    "noteDate": "2026-07-29",
+    "revisions": [
+      {
+        "date": "2026-07-31",
+        "hash": "fb38adb",
+        "wordCount": 41,
+        "delta": 41,
+        "added": 41,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Seymour Papert+} {+- Idit Harel+} {+date-created: '2026-07-29'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: journal-article+} {+url: null+} {+visibility: public+} {+year: 1991+} {+zotero_key: papert--situatingconstructionism+} {+---+} {+[[-bibliography]]+} {+Papert, Seymour; Harel, Idit. _Situating Constructionism_. 1991.+} {+---+}"
+      }
+    ]
+  },
   "oreilly-2023-see-you-other": {
     "noteDate": "2026-07-17",
     "revisions": [
@@ -22469,6 +22562,20 @@
         "added": 47,
         "removed": 0,
         "diff": "{+---+} {+authors:+} {+- Lauren Lin+} {+- Duri Long+} {+date-created: '2026-07-17'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: conference-paper+} {+url: https://dl.acm.org/doi/10.1145/3591196.3596616+} {+visibility: public+} {+year: 2023+} {+zotero_key: lin-2023-generativeaifutures+} {+---+} {+[[-bibliography]]+} {+Lin, Lauren; Long, Duri. _Generative AI Futures: A Speculative Design Exploration_. 2023. https://dl.acm.org/doi/10.1145/3591196.3596616+} {+---+}"
+      }
+    ]
+  },
+  "lillard-2017-montessori-science-behind": {
+    "noteDate": "2026-07-29",
+    "revisions": [
+      {
+        "date": "2026-07-31",
+        "hash": "fb38adb",
+        "wordCount": 49,
+        "delta": 49,
+        "added": 49,
+        "removed": 0,
+        "diff": "{+---+} {+authors:+} {+- Angeline Stoll Lillard+} {+- Angeline Stoll Lillard+} {+date-created: '2026-07-29'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: book+} {+url: null+} {+visibility: public+} {+year: 2017+} {+zotero_key: lillard-2017-montessorisciencegenius+} {+---+} {+[[-bibliography]]+} {+Lillard, Angeline Stoll; Lillard, Angeline Stoll. _Montessori: The Science Behind the Genius_. 2017.+} {+---+}"
       }
     ]
   },

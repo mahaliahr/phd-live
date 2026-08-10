@@ -9,9 +9,7 @@ description: active work - tasks pulled from the system map
 ## backlog [bugs + fixes]
 
 - [ ] posts not tracking properly
-- [ ] livebar only show when session is actually live
 - [ ] time wrong in recent thoughts + updates section (GMT → BST)
-- [ ] fix the live/current session to the top of the live feed
 
 
 ## backlog [features]
@@ -21,6 +19,7 @@ description: active work - tasks pulled from the system map
 - [ ] when clicking images expand to full size
 - [ ] formatted date view in graph
 - [ ] improve canvas functionality once incorporated
+- [ ] activity log - when logging activity make enter work, instead of just having to click the button
 
 
 ## this week

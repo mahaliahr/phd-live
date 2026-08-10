@@ -56,10 +56,10 @@ Critically however, this experience doesn't happen in a vacuum. It exists alongs
 
 Out of this position and these conditions, the research asks four questions:
 
-- What assumptions about intelligence and knowledge are embedded in commercial AI systems, and how do those assumptions compound when these tools are adopted into learning and educational institutions?
-- How does working with LLM-based tools change the practice of research and self-directed learning?
-- How can experimental and speculative approaches to working with AI move beyond the generic workflows and extractive infrastructures of commercial systems, making space for new kinds of learning and teaching?
-- What might a commitment to liveness (keeping knowledge public whilst still forming) offer as a model for learning and knowledge-making in an era of AI-generated outputs?
+1. What assumptions about intelligence and knowledge are embedded in commercial AI systems, and how do those assumptions compound when these tools are adopted into learning and educational institutions?
+2. How does working with LLM-based tools change the practice of research and self-directed learning?
+3. How can experimental and speculative approaches to working with AI move beyond the generic workflows and extractive infrastructures of commercial systems, making space for new kinds of learning and teaching?
+4. What might a commitment to liveness (keeping knowledge public whilst still forming) offer as a model for learning and knowledge-making in an era of AI-generated outputs?
 
 The framing of "After Intelligence" has always been centred around looking beyond the here and now. I know from my position as a lecturer the kind of struggles that take up the everyday, often around the correct mode of assessment, plagiarism, and other immediate concerns. But I wanted to look beyond this. At the moment, conversations about AI in education have a tendency to default to pro or anti AI stances, but I wanted to explore a more nuanced position. Assuming this technology is here to stay, what might modes of learning look like that utilise and integrate these technologies, and how might we do so in ways that acknowledge the problems and ethical issues that are undoubtedly core to AI infrastructure?
 
@@ -182,6 +182,8 @@ Alongside these four nested layers, the research is fundamentally autoethnograph
 The methodological choice to build my own doctoral practice into the research site was not planned, but emerged throughout these early stages. When I began this PhD, I intended to approach the investigation by designing speculative learning environments for others, with the idea being to work with my students as the primary participants in the research. That framing carried practical difficulties I had not initially thought through. Running fully experimental AI systems on students, without their input and without a clear sense of what these tools might do, was not feasible. There was too much unknown at a granular level about how working with LLMs could actually shape research and learning processes. It became much more sensible to test on myself first, using my own doctoral practice as the site where these experiments could happen without the ethical and practical complications of doing them with others prematurely. What became apparent, first through my note-taking practice and then through the tools I began building for myself, was that the same questions I wanted to ask about learners could be asked more honestly about myself. The knowledge I was generating day to day, the ways I was already using AI tools in my thinking, the anxieties and constraints that shaped what I could actually do as a part-time researcher inside a specific institution, all of this was research material I had been overlooking. The inversion, from designing for others to studying my own practice, is what allowed the research to develop into something that could speak to its questions honestly rather than in a slightly detached way.
 
 This inversion also shapes how the thesis is structured. Because my own practice is now the site of the research, rather than something to draw on occasionally, it made sense to distribute reflection on that practice across every substantive chapter rather than isolate it in one. In each chapter, the conceptual argument comes first, with pedagogy and learning as the orienting context. Then, through reflection on my own practice, the pedagogical and learning questions deepen beyond what the literature alone can reach.
+
+<mark style="background: #FFB8EBA6;">add some sort of chapter conclusion? </mark>
 
 ### 3.2 From chapter 4: process, digital gardens, tools for thought, and knowledge infrastructure
 
