@@ -1,6 +1,16 @@
 {
   "files": [
     {
+      "date": "2026-08-10",
+      "raw": "---\ndate: 2026-08-10\ngenerated: 23:00\n---\n\n## notes created\n- [[2026-08-10]] \u2014 daily/ \u2014 12:15\n\n## notes edited\n- [[confirmation-document]] \u2014 daily/ \u2014 14:01\n- [[phd-live-build]] \u2014 published/ \u2014 12:18\n\n## sessions\n- writing \u2014 11:15 \u2192 21:50\n\n## orphans flagged\n- [[2026-08-10]] \u2014 no backlinks\n",
+      "parsed": {
+        "notes_created": "- [[2026-08-10]] \u2014 daily/ \u2014 12:15",
+        "notes_edited": "- [[confirmation-document]] \u2014 daily/ \u2014 14:01\n- [[phd-live-build]] \u2014 published/ \u2014 12:18",
+        "sessions": "- writing \u2014 11:15 \u2192 21:50",
+        "orphans_flagged": "- [[2026-08-10]] \u2014 no backlinks"
+      }
+    },
+    {
       "date": "2026-08-09",
       "raw": "---\ndate: 2026-08-09\ngenerated: 23:00\n---\n\n## notes created\n- none\n\n## notes edited\n- none\n\n## sessions\n- none\n\n## orphans flagged\n- none\n",
       "parsed": {
