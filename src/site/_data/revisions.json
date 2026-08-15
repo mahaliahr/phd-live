@@ -87,6 +87,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-08-10",
+        "hash": "1fdb0da",
+        "wordCount": 111,
+        "delta": 9,
+        "added": 111,
+        "removed": 102,
+        "diff": "[-- What assumptions about intelligence and knowledge are embedded in commercial AI systems, and how do those assumptions compound when these tools are adopted into learning and educational institutions?-] [-- How does working with LLM-based tools change the practice of research and self-directed learning?-] [-- How can experimental and speculative approaches to working with AI move beyond the generic workflows and extractive infrastructures of commercial systems, making space for new kinds of learning and teaching?-] [-- What might a commitment to liveness (keeping knowledge public whilst still forming) offer as a model for learning and knowledge-making in an era of AI-generated outputs?-] {+1. What assumptions about intelligence and knowledge are embedded in commercial AI systems, and how do those assumptions compound when these tools are adopted into learning and educational institutions?+} {+2. How does working with LLM-based tools change the practice of research and self-directed learning?+} {+3. How can experimental and speculative approaches to working with AI move beyond the generic workflows and extractive infrastructures of commercial systems, making space for new kinds of learning and teaching?+} {+4. What might a commitment to liveness (keeping knowledge public whilst still forming) offer as a model for learning and knowledge-making in an era of AI-generated outputs?+} {+<mark style=\"background: #FFB8EBA6;\">add some sort of chapter conclusion? </mark>+}"
+      },
+      {
         "date": "2026-07-28",
         "hash": "a2f51ea",
         "wordCount": 7228,
@@ -9628,6 +9637,15 @@
   "phd-live-build": {
     "noteDate": null,
     "revisions": [
+      {
+        "date": "2026-08-10",
+        "hash": "1fdb0da",
+        "wordCount": 20,
+        "delta": -5,
+        "added": 20,
+        "removed": 25,
+        "diff": "[-- [ ] livebar only show when session is actually live-] [-- [ ] fix the live/current session to the top of the live feed-] {+- [ ] activity log - when logging activity make enter work, instead of just having to click the button+}"
+      },
       {
         "date": "2026-07-04",
         "hash": "202f1e8",
@@ -20287,9 +20305,32 @@
       }
     ]
   },
+  "2026-08-10": {
+    "noteDate": "2026-08-10",
+    "revisions": [
+      {
+        "date": "2026-08-10",
+        "hash": "1fdb0da",
+        "wordCount": 228,
+        "delta": 228,
+        "added": 228,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+visibility: public+} {+title: 2026-08-10+} {+tags:+} {+- daily+} {+- stream+} {+---+} {+- 12:15+} {+<details>+} {+<summary>Session</summary>+} {+start:: 2026-08-10T12:15:28+0100+} {+topic::+} {+</details>+} {+Back on the phd work today, this week is to make significant progress with writing for the second draft of the confirmation document.+} {+to continue with my commitment to live process, I need to move the confirmation doc writing out of obsidian for formatting purposes and also microsoft is closed so writing in docs stored there is private. Its a dilemma, I was considering etherpad, but that gives anyone that views edit access which is not ideal really.+} {+Also I considered google docs, but this leaves me in a grey area with ethics and where I am storing research material - and that for safety I need to keep all material stored on the UAL managed Microsoft infrastructure.+} {+So all in all I will try to capture as much as I can in obsidian, but at some point will have to peel off into Microsoft Word for formatting and sharing with my supervisors. This is a real world friction point in the capturing research liveness endeavor.+} {+main new writing is for this new section:+} {+[[confirmation-document#3.2 From chapter 4 process, digital gardens, tools for thought, and knowledge infrastructure]]+} {+## sessions+} {+<details>+} {+<summary>Session 1</summary>+} {+start:: 2026-08-10T11:15:09.701Z+} {+topic:: writing · confirmation - second draft, working through feedback+} {+end:: 2026-08-10T21:50:17.292Z+} {+</details>+}"
+      }
+    ]
+  },
   "2026-07-31": {
     "noteDate": "2026-07-31",
     "revisions": [
+      {
+        "date": "2026-08-10",
+        "hash": "1fdb0da",
+        "wordCount": 11,
+        "delta": 11,
+        "added": 11,
+        "removed": 0,
+        "diff": "{+<summary>Session 2</summary>+} {+start:: 2026-07-30T21:59:11.418352+00:00+} {+topic:: study companion+} {+end:: 2026-07-31T11:13:32.309725+} {+</details>+} {+<details>+}"
+      },
       {
         "date": "2026-07-31",
         "hash": "fb38adb",
@@ -23881,6 +23922,20 @@
         "added": 13,
         "removed": 12,
         "diff": "[-date-created: '2026-07-17'-] {+date-created: '2026-07-20'+} [-theme:-] [-- AI-] {+theme: []+} [-url: https://uiuc.chat/-] {+url: https://airesistlist.org/+} [-zotero_key: --illinoischat-] {+zotero_key: --airesistlist+} [-_Illinois Chat_. https://uiuc.chat/-] {+_The AI Resist List_. https://airesistlist.org/+}"
+      }
+    ]
+  },
+  "anon-2026-anti-ai-better": {
+    "noteDate": "2026-08-01",
+    "revisions": [
+      {
+        "date": "2026-08-10",
+        "hash": "1fdb0da",
+        "wordCount": 36,
+        "delta": 36,
+        "added": 36,
+        "removed": 0,
+        "diff": "{+---+} {+authors: []+} {+date-created: '2026-08-01'+} {+dg-publish: true+} {+priority: null+} {+read: Not started+} {+tags: []+} {+theme: []+} {+type: video-recording+} {+url: https://www.youtube.com/watch?v=y85nqc2zm7M+} {+visibility: public+} {+year: 2026+} {+zotero_key: dr.fatima-2026-howaibetter+} {+---+} {+[[-bibliography]]+} {+_How to (Anti) AI Better_. 2026. https://www.youtube.com/watch?v=y85nqc2zm7M+} {+---+}"
       }
     ]
   },

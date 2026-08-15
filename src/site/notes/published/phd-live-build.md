@@ -10,6 +10,7 @@ description: active work - tasks pulled from the system map
 
 - [ ] posts not tracking properly
 - [ ] time wrong in recent thoughts + updates section (GMT → BST)
+- [ ] if I copy paste a big chunk of text to study companion it needs to be collapsed. full height available on click
 
 
 ## backlog [features]
@@ -20,6 +21,7 @@ description: active work - tasks pulled from the system map
 - [ ] formatted date view in graph
 - [ ] improve canvas functionality once incorporated
 - [ ] activity log - when logging activity make enter work, instead of just having to click the button
+- [ ] study companion: it would be good to have a 'regenerate' option to try another version (like the frontier models), but with specific parameters able to be selected or shifted (like temperature)
 
 
 ## this week

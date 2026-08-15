@@ -189,10 +189,37 @@ This inversion also shapes how the thesis is structured. Because my own practice
 
 _[STILL TO WRITE]_
 
+- why am I interested in process, can I articulate this clearly?
+- AI smoothing, compressing, hiding process. 
+- existing works or practices that already challenge the idea of polished output.
+	- bring this together with using AI/LLMs.
+- does a process informed/inspired approach offer new ways of working, what does it say about this new augmented process. 
+- how does using AI/LLMs challenge this way of working. 
+
+research questions that this chapter connects to:
+4 - What might a commitment to liveness (keeping knowledge public whilst still forming) offer as a model for learning and knowledge-making in an era of AI-generated outputs?
+
+2 - How does working with LLM-based tools change the practice of research and self-directed learning?
+
+
+bad writing here ->
+in this chapter I am going to explore why process is integral to this research project. 
+in the context of AI proliferation, it has become obvious that peoples way of working is now irrevocable changed. from my experience in the classroom teaching this is very clear. small 'bad' work, like sketching or scrappy thoughts disappear and are replaced with a curated or manufactured output that has clearly been worked through with an LLM, there is an experience of 'generic-ness' that is ever present and which is very sad.
+
+there is also a narrative being pushed that LLMs have the capability to do 'phd level research' that seems to support the opinion that it's the output of learning that is the thing that matters, rather than acknowledging the fact that it's in the process that you acquire the learning not in the generating of the output. In this new era where an output can be generated very easily, the output is somewhat compromised as an artefact, where there is growing suspicion of the way the artefact was contructed 
+
 This section will cover:
 
-- Digital gardens, PKM, tools for thought as a lineage the research infrastructure sits within and departs from (Caulfield, Appleton, Matuschak)
+from chapter outline: 
+_Conceptual argument:_ Digital gardens, Personal Knowledge Management, and tools for thought as a lineage the local research infrastructure sits within and departs from: constructed instruments for thinking, not productivity tools. The infrastructure documented: supervisor bot, study companion, shared context layer. Architectural decisions as research positions (local/open-source-first, shared substrate, event renderer rather than chat).
+
+_Pedagogical grounding:_ Tools for thought are claims about how learning happens. What changes when the learner is also the builder?
+
+_Autoethnographic account:_ What building and using the infrastructure has surfaced. The echo chamber finding. The capability gap as a sovereignty/quality tradeoff.
+
+connected precedents: 
 - Contemporary work on creative process traces (Kreminski and Mateas, Hammad et al) as a frame for what PhD-Live does
+- Digital gardens, PKM, tools for thought as a lineage the research infrastructure sits within and departs from (Caulfield, Appleton, Matuschak)
 - The research infrastructure as an overarching system that contains all computational components
 - PhD-Live: a public website that publishes my working research notes as I make them
     - Public-facing digital research environment built with Obsidian, Eleventy, and Vercel
@@ -218,7 +245,7 @@ This section will cover:
     - Likely to surface questions about agency, authorship, and voice
     - Queued as priority for the next phase
 
-##### 3.3 Emerging findings
+##### 3.3 Emerging findings (autoethnographic part? )
 
 - The echo chamber problem: correlated context collapses response space. A finding about LLM context handling and about the difficulty of designing for epistemic friction in tools that hold deep researcher context
 - The capability gap: local models do not match frontier systems for open-ended dialogic thinking. A tension between sovereignty (owning infrastructure) and capability (needing what your infrastructure can't provide)
