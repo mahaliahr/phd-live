@@ -1,6 +1,16 @@
 {
   "files": [
     {
+      "date": "2026-08-14",
+      "raw": "---\ndate: 2026-08-14\ngenerated: 23:13\n---\n\n## notes created\n- none\n\n## notes edited\n- [[confirmation-document]] \u2014 daily/ \u2014 16:34\n\n## sessions\n- writing \u2014 13:01 \u2192 ?\n\n## orphans flagged\n- none\n",
+      "parsed": {
+        "notes_created": "- none",
+        "notes_edited": "- [[confirmation-document]] \u2014 daily/ \u2014 16:34",
+        "sessions": "- writing \u2014 13:01 \u2192 ?",
+        "orphans_flagged": "- none"
+      }
+    },
+    {
       "date": "2026-08-13",
       "raw": "---\ndate: 2026-08-13\ngenerated: 23:00\n---\n\n## notes created\n- none\n\n## notes edited\n- none\n\n## sessions\n- none\n\n## orphans flagged\n- none\n",
       "parsed": {
