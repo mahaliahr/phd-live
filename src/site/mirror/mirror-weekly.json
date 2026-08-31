@@ -1,6 +1,18 @@
 {
   "files": [
     {
+      "week": "2026-W36",
+      "raw": "---\nweek: 2026-W36\nperiod: 2026-08-25 \u2192 2026-08-31\ngenerated: 00:30\n---\n\n## summary\n- notes created: 0\n- notes edited: 0\n- sessions: 0\n- active days: 0/7\n\n## activity by day\n- tue 25: no activity\n- wed 26: no activity\n- thu 27: no activity\n- fri 28: no activity\n- sat 29: no activity\n- sun 30: no activity\n- mon 31: no activity\n\n## recurring terms\n- none\n\n## orphans this week\n- none\n\n## synthesis\n\n[synthesis unavailable]\n\ngrounded in: , 0 orphan notes, 0 notes created, 0 sessions\n\n## generated prompt\n[prompt unavailable]\n",
+      "parsed": {
+        "summary": "- notes created: 0\n- notes edited: 0\n- sessions: 0\n- active days: 0/7",
+        "activity_by_day": "- tue 25: no activity\n- wed 26: no activity\n- thu 27: no activity\n- fri 28: no activity\n- sat 29: no activity\n- sun 30: no activity\n- mon 31: no activity",
+        "recurring_terms": "- none",
+        "orphans_this_week": "- none",
+        "synthesis": "[synthesis unavailable]\n\ngrounded in: , 0 orphan notes, 0 notes created, 0 sessions",
+        "generated_prompt": "[prompt unavailable]"
+      }
+    },
+    {
       "week": "2026-W34",
       "raw": "---\nweek: 2026-W34\nperiod: 2026-08-17 \u2192 2026-08-23\ngenerated: 23:30\n---\n\n## summary\n- notes created: 0\n- notes edited: 0\n- sessions: 0\n- active days: 0/7\n\n## activity by day\n- mon 17: no activity\n- tue 18: no activity\n- wed 19: no activity\n- thu 20: no activity\n- fri 21: no activity\n- sat 22: no activity\n- sun 23: no activity\n\n## recurring terms\n- none\n\n## orphans this week\n- none\n\n## synthesis\n\nthe current data points to a complete absence of recorded research input. the activity summary shows zero notes created, zero notes edited, zero sessions, and zero active days. specific metrics such as terms and relevant vault excerpts are all empty. the pattern suggests a period of no interaction with the vault.\n\ngrounded in: , 0 orphan notes, 0 notes created, 0 sessions\n\n## generated prompt\nwhat is the relationship between the recorded zero notes created, zero sessions, and zero active days and the lack of terms this week (frequency) entries?\n",
       "parsed": {
