@@ -7,6 +7,7 @@ type: ""
 aliases:
   - confirmation
 ---
+
 [[confirmation-plan]]
 [[confirmation-document]]
 
