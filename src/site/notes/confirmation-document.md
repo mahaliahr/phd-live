@@ -9,22 +9,20 @@ type: ""
 
 ##### Abstract
 
-As generative AI becomes normalised within academic practice, how might these systems be integrated into creative research and practice, in ways that make thinking more visible rather than less? This practice-based doctoral work asks what alternative relationships with these systems might look like, and what they might reveal about how intelligence, knowledge, and learning are currently being shaped as commercial LLMs become embedded within higher education.
+As generative AI becomes normalised within academic practice, how might these systems be integrated into creative research and practice, in ways that make thinking more visible rather than less? This practice-based work asks what alternative relationships with these systems might look like, and what they might reveal about how intelligence, knowledge, and learning are currently being shaped as commercial large language models (LLMs) become embedded within higher education.
 
-The research begins from the observation that these systems often compress process, producing polished outputs that can obscure the reflective, exploratory, and unfinished aspects of learning. As these tools become infrastructural to academic work, questions of who controls the means of thinking, and on whose terms, also become urgent.
-
-Rather than critique these tendencies from the outside, I investigate them through my own doctoral practice, using an autoethnographic approach informed by my position as both learner and educator. If AI-mediated knowledge work risks making process invisible, then the methodological response is to build infrastructures that make it visible again, and to keep ownership of those infrastructures close to the researcher.
+The research begins from the observation that these systems often compress process, producing polished outputs that can obscure the reflective, exploratory, and unfinished aspects of learning. As these tools become infrastructural to academic work, questions of who controls the means of thinking, and on whose terms, also become urgent. Rather than critique these tendencies from the outside, I investigate them centrally through my own doctoral practice, using an autoethnographic approach informed by my position as both learner and educator. If AI-mediated knowledge production risks making process invisible, then the methodological response is to build infrastructures that make it visible again, and to keep ownership of those infrastructures close to the researcher.
 
 The core artefact is PhD-Live, a public digital research environment designed to keep knowledge-in-process visible. Alongside it, a suite of locally hosted AI systems, including a Supervisor Bot, Study Companion, and shared knowledge layer, creates an experimental infrastructure for exploring alternative human-AI research relationships. These systems are treated not only as tools but also as research materials and sites of inquiry.
 
-Through this making, findings emerge from practice rather than planning. These include the challenge of building AI tools that genuinely challenge the researcher rather than reinforce existing thinking, a tradeoff between technological sovereignty and model capability, and questions about liveness as a research methodology. Together, the project explores how creative research might remain reflective, situated, and open-ended within an emerging landscape of AI-mediated knowledge production.
+Through this making, preliminary findings have emerged from practice and engagement with these tools. These include the challenge of building AI tools that genuinely challenge the researcher rather than reinforce existing thinking, a tradeoff between technological and data sovereignty alongside the model's capability, and questions about liveness as a research methodology. Together, the project explores how creative research might remain reflective, situated, and open-ended within an emerging landscape of AI-mediated knowledge production.
 ##### Glossary
 
 **Artificial Intelligence (AI)** A broad term for computational systems designed to perform tasks that would typically require human intelligence, including pattern recognition, decision-making, and language understanding. In this document, "AI" is used mostly as shorthand for the current wave of generative AI systems entering education.
 
 **Generative AI** AI systems that produce new content, including text, images, audio, and code, rather than only analysing existing content. Includes text-based systems like ChatGPT and Claude, image generators like Midjourney, and code assistants.
 
-**Large Language Models (LLMs)** A specific type of generative AI trained on large amounts of text to produce human-like language responses. When this document refers to "commercial LLMs" or "commercial AI systems," it primarily means ChatGPT, Claude, and similar consumer-facing text-based products.
+**Large Language Models (LLMs)** A specific type of generative AI trained on large amounts of text to produce human-like language responses. When I refer to "commercial LLMs" or "commercial AI systems," it primarily means ChatGPT, Claude, and similar consumer-facing text-based products.
 
 **Bot / Chatbot** A software program designed to hold conversational exchanges with a user. In this research, the "supervisor bot" and "study companion" are locally hosted chatbots I have built specifically for use in my doctoral practice.
 
@@ -34,7 +32,7 @@ Through this making, findings emerge from practice rather than planning. These i
 
 **Personal Knowledge Management (PKM)** A category of tools and practices for capturing, organising, and connecting the knowledge someone accumulates over time. Includes note-taking systems like Obsidian and Notion, and traditions like Zettelkasten.
 
-**Digital garden** A form of public personal website that publishes work in progress rather than only finished writing. Digital gardens are typically networked and revisable, treated as spaces for thinking-in-public rather than as blogs or portfolios.
+**Digital garden** A form of a public personal website that publishes work in progress rather than only finished writing. Digital gardens are typically networked and revisable, treated as spaces for thinking-in-public rather than as blogs or portfolios.
 
 **Practice-based research** A form of academic research in which the primary contribution is a set of practical artefacts (designs, systems, works) accompanied by reflection and theoretical framing. Distinct from practice-led research, where practice generates insights but the contribution is textual.
 
@@ -44,20 +42,20 @@ Through this making, findings emerge from practice rather than planning. These i
 
 **Live coding** A creative and research practice in which code is written and modified in real time, often as performance. Live coding treats the process of coding as itself the work, and has developed a body of thinking about liveness as an artistic and methodological concept.
 
-**Possibility spaces** The space of what a given system, set of constraints, or set of conditions makes possible. In this research, drawn from Bogost's use of the term in the context of play as engagement with constraints. Chapter 7 of the thesis engages with possibility and impossibility spaces directly.
+**Possibility spaces** The space of what a given system, set of constraints, or set of conditions makes possible. In this research, drawn from Bogost's use of the term in the context of play as engagement with constraints (Bogost, 2016). Chapter 7 of the thesis engages with possibility and impossibility spaces directly.
 
-**Speculative design** A design tradition oriented toward using artefacts to imagine and explore possible futures, rather than solving current problems. Associated with Dunne and Raby and used in this research as a critical method for asking what alternatives to current AI-mediated practice might look like.
+**Speculative design** A design tradition oriented toward using artefacts to imagine and explore possible futures, rather than solving current problems. Associated with Dunne and Raby (Dunne and Raby, 2013) and used in this research as a critical method for asking what alternatives to current AI-mediated practice might look like.
 
 ### 1. Introduction
 
 This research began in the classroom. In 2022 and 2023, in the nascent days of ChatGPT and before I started this PhD, I began to sense that something foundational was shifting in how students were learning, and that the unknowns opening up were worth probing further. It started to become quietly clear that students were getting guidance and answers elsewhere, through their chatbots, and that the individual personal expression I was used to experiencing from students was being replaced by a generic tone and prose characteristic of a large language model. It is these observations that shaped the beginnings of this research. 
 
-Critically however, this experience doesn't happen in a vacuum. It exists alongside a number of other stressors on higher education: financial precarity, changing politics, and a growing uncertainty about what universities are for as the conditions of knowledge-making shift. The impact of generative AI always exists within this intertwining web of conditions, which frames the work as much as the classroom experience does. Additionally, my position as a lecturer drives a lot of how I am conducting this research, but this role doesn't operate in isolation. It is also the nature of being both a student and lecturer at the same time that brings up interesting tensions and opportunities within this investigation - the relationship between my personal learning journey and how that extrapolates into my teaching practice and vice versa. 
+Critically however, this experience does not happen in a vacuum. It exists alongside a number of other stressors on higher education: financial precarity, changing politics, and a growing uncertainty about what universities are for as the conditions of knowledge production shift. The impact of generative AI always exists within this intertwining web of conditions, which frames the work as much as the classroom experience does. Additionally, my position as a lecturer drives a lot of how I am conducting this research, but this role doesn't operate in isolation. It is also the nature of being both a student and lecturer at the same time that brings up interesting tensions and opportunities within this investigation - the relationship between my personal learning journey and how that extrapolates into my teaching practice and vice versa. 
 
 Out of this position and these conditions, the research asks four questions:
 
-1. What assumptions about intelligence and knowledge are embedded in commercial AI systems, and how do those assumptions compound when these tools are adopted into learning and educational institutions?
-2. How does working with LLM-based tools change the practice of research and self-directed learning?
+1. What assumptions about intelligence and knowledge are embedded in commercial AI systems - and how do those assumptions compound when these tools are adopted into learning and educational institutions?
+2. How does working with LLM-based tools change the practice of research and self-directed learning in creative higher education?
 3. How can experimental and speculative approaches to working with AI move beyond the generic workflows and extractive infrastructures of commercial systems, making space for new kinds of learning and teaching?
 4. What might a commitment to liveness (keeping knowledge public whilst still forming) offer as a model for learning and knowledge-making in an era of AI-generated outputs?
 

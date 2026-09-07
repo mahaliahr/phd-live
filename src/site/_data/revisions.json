@@ -87,6 +87,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-09-06",
+        "hash": "a85e77f",
+        "wordCount": 66,
+        "delta": 3,
+        "added": 66,
+        "removed": 63,
+        "diff": "[-As generative AI becomes normalised within academic practice, how might these systems be integrated into creative research in ways that make thinking more visible rather than less? This practice-based PhD asks what alternative relationships with these systems might look like, and what they might reveal about how intelligence, knowledge, and learning are currently being shaped as commercial LLMs become embedded within higher education.-] {+As generative AI becomes normalised within academic practice, how might these systems be integrated into creative research and practice, in ways that make thinking more visible rather than less? This practice-based doctoral work asks what alternative relationships with these systems might look like, and what they might reveal about how intelligence, knowledge, and learning are currently being shaped as commercial LLMs become embedded within higher education.+}"
+      },
+      {
         "date": "2026-08-15",
         "hash": "9be780e",
         "wordCount": 427,
@@ -14568,6 +14577,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-09-06",
+        "hash": "a85e77f",
+        "wordCount": 0,
+        "delta": 0,
+        "added": 0,
+        "removed": 0,
+        "diff": ""
+      },
+      {
         "date": "2026-07-23",
         "hash": "2d49770",
         "wordCount": 1,
@@ -20320,6 +20338,20 @@
         "added": 83,
         "removed": 0,
         "diff": "{+---+} {+{\"dg-publish\":true,\"permalink\":\"/pre-start-thoughts/28-11-2023-notes/\"}+} {+---+} {+I feel strongly that a big part of my work should be a critique of the current state of affairs. This critique will come from the perspective of being a member of staff and also of studying.+} {+It will pull from a lived experience of being excluded and what it potentially means to have new models that give access to things that have been historically gatekept,+} {+(what new ways of gatekeeping could be brought up/dreamt up)+} {+Foucault Knowledge and Power+}"
+      }
+    ]
+  },
+  "2026-09-06": {
+    "noteDate": "2026-09-06",
+    "revisions": [
+      {
+        "date": "2026-09-06",
+        "hash": "a85e77f",
+        "wordCount": 8,
+        "delta": -5,
+        "added": 8,
+        "removed": 13,
+        "diff": "[-title: <% tp.date.now('YYYY-MM-DD') %>-] {+title: 2026-09-06+} [-- <% tp.date.now(\"HH:mm\") %>-] [-start:: <% tp.date.now(\"YYYY-MM-DDTHH:mm:ssZZ\") %>-] [-topic::-] {+start:: 2026-09-06T18:17:23+0100+} {+topic:: writing - confirmation+}"
       }
     ]
   },
