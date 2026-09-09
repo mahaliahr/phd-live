@@ -59,17 +59,23 @@ Out of this position and these conditions, the research asks four questions:
 3. How can experimental and speculative approaches to working with AI move beyond the generic workflows and extractive infrastructures of commercial systems, making space for new kinds of learning and teaching?
 4. What might a commitment to liveness (keeping knowledge public whilst still forming) offer as a model for learning and knowledge-making in an era of AI-generated outputs?
 
-The framing of "After Intelligence" has always been centred around looking beyond the here and now. I know from my position as a lecturer the kind of struggles that take up the everyday, often around the correct mode of assessment, plagiarism, and other immediate concerns. But I wanted to look beyond this. At the moment, conversations about AI in education have a tendency to default to pro or anti AI stances, but I wanted to explore a more nuanced position. Assuming this technology is here to stay, what might modes of learning look like that utilise and integrate these technologies, and how might we do so in ways that acknowledge the problems and ethical issues that are undoubtedly core to AI infrastructure?
+The framing of "After Intelligence" has always been centred around looking beyond the here and now. I know from my position as a lecturer the kind of struggles that take up the everyday, often around the correct mode of assessment, plagiarism, and other immediate concerns. But I wanted to look beyond this. At the moment, conversations about AI in education have a tendency to default to pro or anti AI stances (Jensen _et al._, 2025), but I want to explore a more nuanced position. Assuming this technology is here to stay, what might modes of learning look like that utilise and integrate these technologies, but crucially, how might we do so in ways that acknowledge the problems and ethical issues that are undoubtedly core to commercial AI infrastructure?
 
-When writing my initial proposal, it was still in the early days of ChatGPT's infiltration into the classroom. At that time I was clear on the framing of "looking beyond the present" and that I would adopt some kind of speculative approach, but I wasn't sure of what form exactly that would take. I also knew that in my role as a teacher I wanted to do something inclusive and informed by my students rather than from a top-down approach. However, it has become my experience as a student that has become a testbed for my primary investigations. Adopting an approach informed by autoethnography and by autobiographical design principles, my research process itself has become a prime site for many of my investigations into AI tools.
+When I wrote my initial proposal, it was still the early days of ChatGPT's arrival in the classroom. At that time I was clear on the framing of "looking beyond the present," and that I would adopt some kind of speculative approach, though I was not sure what form exactly it would take. This was partly to engage with the topic beyond the booster versus doomster dialogue (Jensen _et al._, 2025) that frames the conversation, and partly to engage with the challenge in a playful way.
 
-Primarily, it was through initial (and at the time I thought unconnected) work on the best system for note-taking throughout the research, and my discovery of Zettelkasten (Ahrens, 2017), that I began to realise directly that the knowledge I am generating day to day and the thinking being captured within my notes is the perfect place to speculate on AI implementation. From my position as a student I can test these early questions through my own process, with the plan to then extend that outward to the postgraduate student community through workshops and focus groups planned from year 3 onward.
+In this research, playfulness is a stance I take toward the work. It lets me challenge the pervasive optimisation logic of commercial AI tools, but it also draws on traditions of making and learning that treat play as central - which are themselves counter to that optimisation logic. This is the starting point that leads me to the concrete frameworks I work through with speculative design and live coding.
 
-This document lays out a contextual overview that maps out the fields of practice the work sits within and talks through my growing practice, which is directly engaged in answering my research questions. I will also explain my methodological approach in more detail through a draft section of chapter 2 (a "playful" methodology), and my documentation of the primary artefacts of the research through a draft section of chapter 4 (process, digital gardens, tools for thought, and knowledge infrastructure). Lastly I will provide the chapter outlines and my plan to completion, indicating the vision of the research moving forward.
+From the outset, I also knew that in my role as a teacher I wanted to do something inclusive and informed the pstgraduate students that I teach, rather than from a top-down approach. However in practice, it is my experience as a doctoral student that has become the testbed for my primary investigations. Working through autoethnography and autobiographical design principles, my own research process has become a prime site for many of my investigations into AI tools.
+
+It was through initial (and at the time I thought unconnected) work on findingthe best system for note-taking throughout the research, and my discovery of Zettelkasten (Ahrens, 2017), that I began to realise directly that the knowledge I am generating day to day and the thinking being captured within my notes is the perfect place to speculate on AI implementation. 
+
+Therefore, starting with my own practice is the practical place to begin in the research. Preparing tools and guardrails carefully enough to put in front of students takes time, while my own research is already ongoing and I can work with it iteratively as I build. It is also a matter of care, and of my responsibility in conducting this research. The unformed, in-process thinking I most want to examine makes sense to be mine to expose, rather than the students' to risk.
+
+This document lays out a contextual overview that maps out the fields of practice the work is situated within and talks through my growing practice, which is directly engaged in answering my research questions. I will also explain my methodological approach in more detail through a draft section of chapter 2 (a "playful" methodology), and my documentation of the primary artefacts of the research through a draft section of chapter 4 (process, digital gardens, tools for thought, and knowledge infrastructure). Lastly I will provide the chapter outlines and my plan to completion, indicating the vision of the research moving forward.
 
 ## 2. Contextual review
 
-This section maps out the fields in which the research sits and the critical references for each. Some of the literature here is engaged with in more depth within the draft chapter sections that follow, and the rest will be developed further across the thesis chapters.
+This section maps out the fields in which the research sits and the critical references for each, <mark style="background: #BBFABBA6;">this is both in key thinker but also key explorations into genAI integration in higher education</mark>. Some of the literature here is engaged with in more depth within the draft chapter sections that follow, and the rest will be developed further across the thesis chapters.
 
 ### 2.1 The problem space
 
@@ -78,7 +84,9 @@ This section maps out the fields in which the research sits and the critical ref
 - For creative practice and creative education specifically, that collapse is a problem. A lot of what matters in creative work happens in the unresolved, unfinished middle, before things make sense
 - This research sits inside that tension. I occupy three roles simultaneously: learner (PhD student), researcher (building and investigating AI tools), and teacher (senior lecturer in creative computing, teaching with and about AI). The triple position is the research site
 
-### 2.2 Speculation as method
+### 2.2
+
+### 2.3 Speculation as method
 
 - The research adopts a speculative stance as a critical method
 - Speculative design (Dunne and Raby) provides the foundational tradition: building artefacts that ask "what if?" as a way of making alternative possibilities thinkable
@@ -87,7 +95,7 @@ This section maps out the fields in which the research sits and the critical ref
 - The artefacts in this research are not prototypes or products. They are thought experiments materialised: propositions about what AI-supported learning and knowledge-making could look like if assumptions were different
 - The research builds of the speculative grounding to conduct the investigations in a playful way, which aligns with thought experiments and imagination as being central, together this lays the foundation for the concept of possibility spaces, which the thesis takes up further: both as a speculative method and as something that meets real institutional constraints
 
-### 2.3 Liveness and process
+### 2.4 Liveness and process
 
 - The speculative framing led to designing artefacts that examine different possibilities, in particular the question of what happens to the creative process when AI tools make the end result easier. This directed attention toward live coding, a creative and improvisatory practice that is in some ways antithetical to polished AI-assisted outputs, and where liveness itself has been examined as a methodological concept.
 - Live coding provides the methodological vocabulary:
@@ -103,7 +111,7 @@ This section maps out the fields in which the research sits and the critical ref
 - The argument: liveness and process visibility are not features of the platform. They are a central way of working. Commercial AI collapses process into product. Making process visible and keeping it unfinished is a deliberate counter, and one that speaks directly to research questions two and four
 - The research draws on Zettelkasten principles (Ahrens) as a way of building networked knowledge, while distinguishing itself from the "second brain" productivity culture that has grown around these methods
 
-### 2.4 Intelligence, cognition, and the politics of AI
+### 2.5 Intelligence, cognition, and the politics of AI
 
 - The research doesn't start from a history of AI. It starts from the question of what intelligence means and who gets to define it
 - Crawford's "Atlas of AI" provides the political economy of AI: how intelligence gets operationalised, who profits, what gets extracted
@@ -111,7 +119,7 @@ This section maps out the fields in which the research sits and the critical ref
 - The chatbot lineage matters as critical precedent: Weizenbaum built ELIZA as a critique, not a product. He was alarmed by how readily people projected understanding onto a system that had none. The bots in this research are built in a similar spirit: to interrogate assumptions about intelligence rather than reproduce them
 - Sycophancy in LLMs (Cheng et al, Malmqvist) names a structural tendency that connects directly to a finding in this research. When the supervisor bot is fed context drawn from my own notes, it tends to agree with positions I've already taken and reinforce framings I've already used, rather than push back or open new lines of thought. The literature suggests this isn't incidental: it reflects how these models are trained and rewarded, which means designing for genuine challenge in a system that holds the researcher's own material is harder than it looks
 
-### 2.5 Learning, institutions, and knowledge
+### 2.6 Learning, institutions, and knowledge
 
 - The pedagogical framing is grounded in:
     - Manning on learning otherwise: learning exceeds and refuses the categories institutions impose on it, as such the application of AI in this context is not straightforward
@@ -120,7 +128,7 @@ This section maps out the fields in which the research sits and the critical ref
 - On creative knowledge specifically: a lot of what matters in creative practice can't be fully put into words. Schon calls it knowing-in-action, Polanyi calls it tacit knowledge, Dreyfus argues expertise is embodied and intuitive rather than rule-based. LLMs only work with what's been written down. So there is a disconnect here: the kinds of knowing creative work depends on most are exactly the kinds these systems are not able to perform well with
 - The argument: learning and knowledge-making happen within institutional, political, and technical conditions. The autoethnographic position makes those conditions visible
 
-### 2.6 Methods: building with and through
+### 2.7 Methods: building with and through
 
 - The research is practice-based and autoethnographic, with building tools as the primary mode of investigation
 Methodological traditions drawn on:
@@ -133,7 +141,7 @@ Methodological traditions drawn on:
 - The methodology chapter develops a "playful" approach grounded in beliefs about how learning works, drawn from my teaching practice and from traditions that treat learning as active construction: Montessori's prepared environments, Papert's constructionism, and the studio, crit and making-focused pedagogy of creative and art schools
 - I will address Jowsey et al's rejection of generative AI for reflexive qualitative research directly: this work uses AI as the object of inquiry, not a substitute for reflexive analysis
 
-## 3. Draft chapter sections
+## 3. Draft excerpts from chapters
 
 The following are draft sections from two thesis chapters, presented here together as part of the contextual and practice review. Together they cover the methodological justification and the practice documentation the confirmation panel needs to see. They are draft material and will be developed further as full chapters during the writing period.
 
@@ -183,9 +191,7 @@ This inversion also shapes how the thesis is structured. Because my own practice
 
 <mark style="background: #FFB8EBA6;">add some sort of chapter conclusion? </mark>
 
-### 3.2 From chapter 4: process, digital gardens, tools for thought, and knowledge infrastructure
-
-_[STILL TO WRITE]_
+### 3.2 From chapter 4: Process is everything - digital gardens, tools for thought and knowledge infrastructure
 
 - why am I interested in process, can I articulate this clearly?
 - AI smoothing, compressing, hiding process. 
@@ -194,17 +200,21 @@ _[STILL TO WRITE]_
 - does a process informed/inspired approach offer new ways of working, what does it say about this new augmented process. 
 - how does using AI/LLMs challenge this way of working. 
 
-research questions that this chapter connects to:
-4 - What might a commitment to liveness (keeping knowledge public whilst still forming) offer as a model for learning and knowledge-making in an era of AI-generated outputs?
+~~bad writing here ->~~
+~~in this chapter I am going to explore why process is integral to this research project.~~ 
+~~in the context of AI proliferation, it has become obvious that peoples way of working is now irrevocable changed. from my experience in the classroom teaching this is very clear. small 'bad' work, like sketching or scrappy thoughts disappear and are replaced with a curated or manufactured output that has clearly been worked through with an LLM, there is an experience of 'generic-ness' that is ever present and which is very sad.~~
 
-2 - How does working with LLM-based tools change the practice of research and self-directed learning?
+~~there is also a narrative being pushed that LLMs have the capability to do 'phd level research' that seems to support the opinion that it's the output of learning that is the thing that matters, rather than acknowledging the fact that it's in the process that you acquire the learning not in the generating of the output. In this new era where an output can be generated very easily, the output is somewhat compromised as an artefact, where there is growing suspicion of the way the artefact was constructed~~ 
+
+~~the proliferation of generative AI in higher education (and education more broadly) brings a new problem into focus. Specifically the value of the end product or result, the thing that gets assessed. Now that this can be generated with ease to a relatively decent standard, compromised this end result. This has led me to explore what it means to expose and share the process of work and making as the only place now that it's clear to see the machinations of thought happening. this is a reframing that is beginning to happen (source?) but still marks a significant break from the way thing have been done historically (source?). Another question that begins to be important is what happens if you integrate generative AI use into your process? There are assumptions made that the machine takes all the labour from the human, but truthfully what is happening? This is something that as a teacher is particularly had to address, but in my doctoral practice has led me to explore what sharing my process fully means. This pursuit crystallised in creating an artefact called "PhD-Live" that documents my research as it progresses and changes over time, and distinctly captures what LLM use looks like embedded in this process, as such the hope is to make clear the realities of a process augmented by AI and to see what new ways of working are possible within.~~ 
+
+~~PhD-Live builds upon a lineage of ways of working that already exist, its important to state that in creative education sharing your process, most often captured in a sketchbook is a normal thing to do. but in the digital sphere the precedents often introduce a layer of curation, such as blogging or posting images on a feed. This was something I wanted to move against for this research and I really wanted to try and capture as much process as it's happening without the curation.~~ 
+
+~~the motivation stems from two points, a desire to adapt the framework of live coding onto research, to show live the inner workings of a research work developing and also an emergent discovery of a workflow that captures my notes as it goes with the realisation that this is an excellent foundation for a research infrastructure fed by my growing thoughts and work.~~
+
+~~Digital gardens, a term coined by Mike Caulfield describes way of capturing thought and content on line that is different from the "feed". He lays out that in early internet development there were two main metaphors for imagining the web the "garden" a space the is exploratory with many element inter weaves and the "stream" a linear path in which things are presented in a particular order (Caulfield 2015). This to me feels like the perfect idea to encapsulate the growing network of notes that I was amassing for the PhD. Whilst encountering this idea, I was also learning about a specific type of note taking called Zettelkasten. The Zettelkasten Method is a system of note-taking and thinking in which each note (‘Zettel’) has a unique address, contains a single idea or concept, and links (or references) other notes. Which means the collection isn’t just a linear archive, but a web of thoughts, where each note connects to others via addresses and references, enabling non-linear navigation and emergent insight. Lastly in reference directly to the material infrastructure of storing this amassing information if the idea of "Personal Knowledge Management". Zettelkasten is a way of doing and people often do this with a digital system (although the orginal was done completely analog on small cards kept in boxes). this digital substrate is important and it was in the early stages of keeping my note in obsidian that I realised that this could form the basis of not only a live "digital garden" but a basis for a research infrastracture, the text being prime data for local LLMs to work with.~~ 
 
 
-bad writing here ->
-in this chapter I am going to explore why process is integral to this research project. 
-in the context of AI proliferation, it has become obvious that peoples way of working is now irrevocable changed. from my experience in the classroom teaching this is very clear. small 'bad' work, like sketching or scrappy thoughts disappear and are replaced with a curated or manufactured output that has clearly been worked through with an LLM, there is an experience of 'generic-ness' that is ever present and which is very sad.
-
-there is also a narrative being pushed that LLMs have the capability to do 'phd level research' that seems to support the opinion that it's the output of learning that is the thing that matters, rather than acknowledging the fact that it's in the process that you acquire the learning not in the generating of the output. In this new era where an output can be generated very easily, the output is somewhat compromised as an artefact, where there is growing suspicion of the way the artefact was contructed 
 
 This section will cover:
 
@@ -249,6 +259,12 @@ connected precedents:
 - The capability gap: local models do not match frontier systems for open-ended dialogic thinking. A tension between sovereignty (owning infrastructure) and capability (needing what your infrastructure can't provide)
 - Liveness vs performance: an open conceptual question, now driving a dedicated research question
 - LLM reasoning vs human associative thought: LLMs are built to resolve and optimise; creative research thinking often needs to stay open, contradictory, unfinished. Designing with both means holding that difference deliberately
+---
+Integral to this research is process, and the following chapter clarify its importance. The reasoning is grounded in a specific observation that has become impossible to ignore in my teaching. Small, unfinished, exploratory work has been disappearing from what students bring to class. In its place has come a kind of curated finish: outputs that have clearly passed through an LLM before they arrive, with the generic tone and prose characteristic of large language models, and with none of the scrappy sketching, half-formed thinking, or personal voice that used to fill the middle of the process. The observation is small, but the shift it points to is not. What is being lost is not just the messiness of student work but the visibility of learning itself, because learning happens in that messy middle rather than in the finished output.
+
+The claim is straightforward and worth stating plainly: it is in the process of arriving at an output that learning is done, not in the output itself. This is not a new argument. It runs through decades of thinking about pedagogy, reflective practice, and creative development. But it becomes urgent again in this moment because the compression that generative AI performs is a specific and consequential one. When a polished output can be produced quickly and with little apparent effort, the output as an artefact becomes harder to trust, and the relationship between the artefact and the labour that supposedly produced it becomes unclear. There is now a growing suspicion around the way any given output was made, which is a real and reasonable concern, but it also points to a deeper problem: if the output can no longer stand for the learning, then the visibility of process becomes the only place where learning can be seen at all.
+
+This is the argument the chapter builds on. If AI-mediated knowledge work risks making process invisible, and if process is where learning actually lives, then the response is not to lament what has been lost but to build infrastructures that make process visible again. The rest of the chapter documents this response as it takes shape in the research. First, by situating the project within a lineage of tools for thought and digital garden practice that already treats process as substance rather than as scaffolding for eventual outputs. Then, by describing the specific infrastructure this research has built: PhD-Live, a set of locally hosted bots, and a shared context layer that together form the environment through which the research is conducted. Finally, by reflecting on what building and using this infrastructure has actually surfaced, findings that emerged not from planning but from daily use.
 
 ---
 
