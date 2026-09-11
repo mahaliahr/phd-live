@@ -1,6 +1,16 @@
 {
   "files": [
     {
+      "date": "2026-09-10",
+      "raw": "---\ndate: 2026-09-10\ngenerated: 22:00\n---\n\n## notes created\n- none\n\n## notes edited\n- [[confirmation-document]] \u2014 daily/ \u2014 21:57\n\n## sessions\n- none\n\n## orphans flagged\n- none\n",
+      "parsed": {
+        "notes_created": "- none",
+        "notes_edited": "- [[confirmation-document]] \u2014 daily/ \u2014 21:57",
+        "sessions": "- none",
+        "orphans_flagged": "- none"
+      }
+    },
+    {
       "date": "2026-09-09",
       "raw": "---\ndate: 2026-09-09\ngenerated: 22:08\n---\n\n## notes created\n- [[2026-09-09]] \u2014 daily/ \u2014 01:35\n\n## notes edited\n- [[confirmation-document]] \u2014 daily/ \u2014 21:27\n- [[kreminski-and-mateas-2021-reflective-creators]] \u2014 bibliography/ \u2014 19:40\n- [[matuschak-2019-can-we-develop]] \u2014 bibliography/ \u2014 13:25\n\n## sessions\n- writing \u2014 10:51 \u2192 ?\n\n## orphans flagged\n- [[2026-09-09]] \u2014 no backlinks\n",
       "parsed": {
