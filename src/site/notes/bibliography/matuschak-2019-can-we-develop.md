@@ -1,10 +1,10 @@
 ---
 authors:
-  - Andy Matuschak
-  - Michael Nielsen
+- Andy Matuschak
+- Michael Nielsen
 date-created: 2026-07-17
 dg-publish: true
-priority:
+priority: null
 read: In Progress
 tags: []
 theme: []
