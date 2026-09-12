@@ -330,7 +330,7 @@ Mirroring Chapter 3's interrogation of intelligence, Chapter 6 turns the same qu
 
 ##### 7. Possibility or Impossibility Spaces
 
-Returns to the speculative framing of the methodology to examine the distance between what can be imagined and what can actually be built within material, institutional and economic constraints. Reflecting on local infrastructure, commercial AI, institutional pressures and my dual position as lecturer and student, the chapter treats the impossibilities encountered through making as findings in themselves.
+Returns to the speculative framing of the methodology to examine the distance between what can be imagined and what can actually be built within material, institutional and economic constraints. Reflecting on local infrastructure, commercial AI, institutional pressures and my dual position as lecturer and student, the chapter treats the impossibilities encountered through making as findings in themselves. The chapter also considers the option of refusal and what this might have meant for the research and what this means moving forward. 
 
 ##### 8. Conclusion
 
