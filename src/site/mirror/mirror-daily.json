@@ -1,6 +1,16 @@
 {
   "files": [
     {
+      "date": "2026-09-13",
+      "raw": "---\ndate: 2026-09-13\ngenerated: 22:00\n---\n\n## notes created\n- none\n\n## notes edited\n- [[confirmation-document]] \u2014 daily/ \u2014 03:53\n- [[kreminski-2021-reflective-creators]] \u2014 bibliography/ \u2014 02:58\n- [[matuschak-2019-can-we-develop]] \u2014 bibliography/ \u2014 02:59\n- [[manning-2019-propositions-radical-pedagogy]] \u2014 bibliography/ \u2014 02:59\n\n## sessions\n- none\n\n## orphans flagged\n- [[kreminski-2021-reflective-creators]] \u2014 no backlinks\n- [[manning-2019-propositions-radical-pedagogy]] \u2014 no backlinks\n",
+      "parsed": {
+        "notes_created": "- none",
+        "notes_edited": "- [[confirmation-document]] \u2014 daily/ \u2014 03:53\n- [[kreminski-2021-reflective-creators]] \u2014 bibliography/ \u2014 02:58\n- [[matuschak-2019-can-we-develop]] \u2014 bibliography/ \u2014 02:59\n- [[manning-2019-propositions-radical-pedagogy]] \u2014 bibliography/ \u2014 02:59",
+        "sessions": "- none",
+        "orphans_flagged": "- [[kreminski-2021-reflective-creators]] \u2014 no backlinks\n- [[manning-2019-propositions-radical-pedagogy]] \u2014 no backlinks"
+      }
+    },
+    {
       "date": "2026-09-12",
       "raw": "---\ndate: 2026-09-12\ngenerated: 22:00\n---\n\n## notes created\n- [[2026-09-12]] \u2014 daily/ \u2014 02:23\n\n## notes edited\n- [[confirmation-document]] \u2014 daily/ \u2014 13:30\n\n## sessions\n- none\n\n## orphans flagged\n- [[2026-09-12]] \u2014 no backlinks\n",
       "parsed": {
