@@ -1,5 +1,6 @@
 ---
-authors: []
+authors:
+- Claude
 date-created: '2026-07-22'
 dg-publish: true
 priority: null

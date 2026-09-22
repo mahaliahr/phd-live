@@ -10,7 +10,7 @@ theme:
 type: web-page
 url: https://uiuc.chat/
 visibility: public
-year: null
+year: 2025
 zotero_key: --illinoischat
 ---
 

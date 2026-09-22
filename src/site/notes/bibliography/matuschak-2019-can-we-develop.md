@@ -5,7 +5,7 @@ authors:
 date-created: 2026-07-17
 dg-publish: true
 priority: null
-read: In Progress
+read: read
 tags: []
 theme: []
 type: journal-article

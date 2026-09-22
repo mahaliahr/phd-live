@@ -2,10 +2,10 @@
 authors:
 - Max Kreminski
 - Michael Mateas
-date-created: '2026-07-17'
+date-created: 2026-07-17
 dg-publish: true
 priority: null
-read: Not started
+read: Read
 tags: []
 theme: []
 type: journal-article

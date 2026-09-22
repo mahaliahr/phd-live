@@ -1,5 +1,6 @@
 ---
-authors: []
+authors:
+- Maggie Appleton
 date-created: '2026-09-09'
 dg-publish: true
 priority: null

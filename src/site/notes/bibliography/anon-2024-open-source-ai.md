@@ -1,5 +1,6 @@
 ---
-authors: []
+authors:
+- Open Source Initiative
 date-created: '2026-09-11'
 dg-publish: true
 priority: null

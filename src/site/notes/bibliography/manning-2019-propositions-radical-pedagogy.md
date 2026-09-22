@@ -1,10 +1,10 @@
 ---
 authors:
 - Erin Manning
-date-created: '2026-07-17'
+date-created: 2026-07-17
 dg-publish: true
 priority: null
-read: Not started
+read: read
 tags: []
 theme: []
 type: journal-article

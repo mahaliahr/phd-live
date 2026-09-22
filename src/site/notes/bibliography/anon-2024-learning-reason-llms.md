@@ -1,5 +1,6 @@
 ---
-authors: []
+authors:
+- OpenAI
 date-created: '2026-07-17'
 dg-publish: true
 priority: null

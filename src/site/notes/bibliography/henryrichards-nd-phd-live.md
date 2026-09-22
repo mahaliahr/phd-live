@@ -10,7 +10,7 @@ theme: []
 type: web-page
 url: https://phd.mm-hr.com/
 visibility: public
-year: null
+year: 2025
 zotero_key: henry-richards--phdlive
 ---
 

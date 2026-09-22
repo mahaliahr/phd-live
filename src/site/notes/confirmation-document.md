@@ -193,6 +193,15 @@ These practices sit within the broader context of Personal Knowledge Management 
 
 A related contemporary metaphor is the ‘second brain’: an external system for capturing and organising knowledge (Forte, 2023). Increasingly, LLMs are being incorporated into such systems to summarise, organise, link and retrieve their contents. Karpathy's ‘LLM Wiki’, for example, proposes an architecture in which accumulated source material can be transformed by an LLM into a structured, interconnected knowledge base (Karpathy, 2026).
 
+<!-- comments from supervisors re. the second brain:
+
+Do we loose anything in the process of learning through this second brain? How important is it for us to try and summarise, link and retrieve in order to learn?
+
+I am not suggesting that you necessarily need to answer this in your confirmation document, but it is important to show explicitly where questions might be raised that you have thought about it and either will make it part of the ongoing research or already have a position on it that you can present.
+
+Sorry - not sure how clear I am, struggling a bit with putting it into writing - let me know if you need clarification
+--> 
+
 My infrastructure shares characteristics with these traditions but differs in intention. It draws upon the networked structure of Zettelkasten and digital gardening and similarly makes accumulated research material computationally accessible. Its purpose, however, is not primarily to optimise knowledge management or maximise what an LLM can do with it. Instead, the infrastructure provides an environment through which the relationship between computational systems, research material and my own thinking can itself be investigated.
 
 The broader lineage of ‘tools for thought’ helps position this distinction. In his Turing Award lecture, ‘Notation as a Tool of Thought’, Kenneth Iverson considered how systems of notation can enable and shape reasoning rather than merely express existing thought (Iverson, 1980). Matuschak and Nielsen (2019) extend this concern into computational media, asking how computers might support forms of thought that would otherwise be difficult or impossible rather than simply making existing tasks faster.
@@ -281,28 +290,41 @@ I suggest to include literature that is critical of the arts school pedagogy, sp
 
 and UAL colleagues at LCC [https://ualresearchonline.arts.ac.uk/id/eprint/7385/](https://ualresearchonline.arts.ac.uk/id/eprint/7385/)
 
+[associated with this from draft: _Pedagogical grounding:_ Learning in public as a pedagogical proposition. Connects back to art school pedagogy: showing work in progress, crit culture, process as visible and discussable.] 
+
+
+associated with my research infrastructure diagram ->
 Tega Brain: The environment is not a system
+
+in reference to this text 'Intended to address the second-guessing and uncertainty that can prevent me from sharing work, it would assess material before publication while leaving the final decision with me ->
 
 Betti Marenko (colleague at CSM) advocates for using uncertainty as a resource not seeing it as a barrier. She recently published this book which might be of interest going forward [https://www.bloomsbury.com/uk/power-of-maybes-9781350377288/](https://www.bloomsbury.com/uk/power-of-maybes-9781350377288/)
 
 ---
 
-## 4. Plan to Completion
+## 3. Plan to Completion
 
-The following outlines my ongoing plan towards completion. 
-Part-time PhD, started January 2024. Funded through January 2029, institutional limit 2031. Working 1–1.5 days a week plus evenings/weekends, with summer as the main writing period. Target submission late 2029 to early 2030.
+##### 3.1 Where the Research Stands Currently 
 
-##### Timeline
+The PhD began part-time in January 2024. Following completion of the PGCert in January 2025, building became a sustained part of the research from summer 2025, beginning with the Supervisor Bot and followed by PhD-Live in autumn 2025.
 
-**Year 3: October 2026 – September 2027** Confirmation submitted in October 2026. First workshops and focus groups with students. First substantial chapter drafts begin in summer 2027, starting with chapters closest to existing material (methodology and process).
+The research infrastructure now comprises PhD-Live, Supervisor Bot, Study Companion, Mirror, the shared knowledge layer and Learning Dashboard. Autoethnographic practice has been the primary research site since summer 2025, generating material including daily research notes, bot interactions and transcripts, session logs, PhD-Live activity and Mirror outputs. Five initial findings have emerged through building and using this infrastructure and are described in Section 2.5.6. These remain provisional ahead of systematic analysis.
 
-**Year 4: October 2027 – September 2028** Main writing period. Multiple chapter drafts across the year, with summer as the highest-output period. Continue infrastructure work and workshops/working with students alongside writing.
+The next stage extends the research beyond my own practice. Participant information materials have been prepared for workshops and focus groups with MSc Creative Computing students, beginning from October 2026. Formal analysis of the accumulated autoethnographic material will take place alongside this next stage of the research.
+##### 3.2 What Remains to be Investigated  
 
-**Year 5: October 2028 – September 2029** Complete remaining chapters. Reflective chapters benefit from being written last when the work is further along. Draft introduction and conclusion. Full draft review with supervisors. Revisions and final preparation for submission. Target submission late 2029.
+The remaining research consists of three overlapping strands: continued development and use of the research infrastructure; workshops and focus groups with students; and systematic analysis of the material generated through both.
 
-**Buffer: October 2029 – 2030** One year of contingency between funded submission target and realistic worst case.
+Infrastructure development will continue in response to questions emerging through use rather than as a predetermined software-development roadmap. Planned work currently includes Mirror v1, Study Companion v2 and the Confidence Bot.
 
-##### Thesis chapter outlines
+From October 2026, workshops and focus groups with MSc Creative Computing students will explore how questions emerging through my own practice translate beyond it. These will examine how students relate to local and commercial AI systems, how documentation and visibility affect creative process, and whether the playful methodological approach extends beyond my personal context and what it enables for other learners.
+
+Systematic analysis will bring together research notes, bot interactions and transcripts, session logs, PhD-Live and Mirror outputs, git histories and material generated through the student workshops. A process-tracing codebook is in development, currently organised around originating, executing, consolidating and dead-end moments in the research trajectory.
+
+The research is also developing criteria for evaluating qualities that conventional AI benchmarks do not readily capture. These currently include **epistemic friction, sovereignty, boundary respect, genuine novelty and non-linearity preservation**. The criteria will be refined through continued use and analysis and may themselves form part of the contribution of the thesis.
+
+Analysis and writing will proceed in parallel. The autoethnographic material will feed particularly into the methodology, process and liveness chapters, while the student work will inform the discussion of liveness, learning in public and possibility/impossibility spaces. The two strands come together in Chapter 7, where the speculative possibilities with which the research began are considered against the possibilities, constraints and refusals encountered through practice.
+##### 3.3 Thesis Chapter Outlines 
 
 The thesis is structured so that each substantive chapter moves between a conceptual argument, grounded in questions of pedagogy and learning, and an autoethnographic account of how those questions emerge through my own practice. Together, this will allow the conceptual concerns of the research to be examined through the experience of my experience occupying the simultaneous roles of doctoral researcher and teacher.
 
@@ -330,17 +352,29 @@ Mirroring Chapter 3's interrogation of intelligence, Chapter 6 turns the same qu
 
 ##### 7. Possibility or Impossibility Spaces
 
-Returns to the speculative framing of the methodology to examine the distance between what can be imagined and what can actually be built within material, institutional and economic constraints. Reflecting on local infrastructure, commercial AI, institutional pressures and my dual position as lecturer and student, the chapter treats the impossibilities encountered through making as findings in themselves. The chapter also considers the option of refusal and what this might have meant for the research and what this means moving forward. 
+Returns to the speculative framing of the methodology to examine the distance between what can be imagined and what can actually be built within material, institutional and economic constraints. Reflecting on local infrastructure, commercial AI, institutional pressures and my dual position as lecturer and student, the chapter treats the impossibilities encountered through making as findings in themselves. The chapter also considers refusal as an alternate position, asking what refusing these systems might have meant for the research and what role refusal might play moving forward. 
 
 ##### 8. Conclusion
 
 Returns to the research questions and synthesizes the contributions emerging across the thesis. It reflects on what 'After Intelligence' has come to mean through the research and identifies its limitations and future directions.
 
-##### Ongoing alongside writing
 
-- PhD-Live maintained as a live research environment throughout
-- Infrastructure (bots, dashboard, etc.) continues to develop
-- 2-3 workshops or focus groups per academic year, feeding into the autoethnographic thread.
+##### 3.4 Timeline
+
+The following outlines my ongoing plan towards completion. The PhD began part-time in January 2024, with funding through January 2029 and an institutional completion limit of 2031. I currently work on the PhD for approximately 1–1.5 days per week alongside evenings and weekends, with the summer period providing the main opportunity for sustained writing. I am targeting submission in late 2029, with contingency into 2030.
+
+##### Timeline
+
+**Year 3: October 2026 – September 2027** Confirmation completed by end of September 2026. Begin workshops and focus groups with students. Continue development and use of the research infrastructure. Substantial chapter drafting begins in summer 2027, starting with the chapters closest to the existing research material, particularly methodology and process.
+
+**Year 4: October 2027 – September 2028** Main period of analysis and writing. Systematic analysis of the accumulated autoethnographic and workshop material runs alongside the development of multiple chapter drafts. Infrastructure development and work with students continue where they contribute to the research questions, with summer remaining the main period for sustained writing.
+
+**Year 5: October 2028 – September 2029** Complete remaining chapters and move towards synthesis of the research. Later reflective chapters are completed once the practical research is further developed, followed by the introduction and conclusion. Full draft review with supervisors, revision and preparation for submission. Target submission in late 2029.
+
+**Contingency: October 2029 – 2030**  
+Additional time is retained for further revision, examination preparation and any delays arising during the remaining research and writing.
+
+
 
 ---
 ## 4. Bibliography

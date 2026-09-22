@@ -9,7 +9,7 @@ theme: []
 type: web-page
 url: https://airesistlist.org/
 visibility: public
-year: null
+year: 2026
 zotero_key: --airesistlist
 ---
 
