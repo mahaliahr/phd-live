@@ -1,6 +1,18 @@
 {
   "files": [
     {
+      "week": "2026-W39",
+      "raw": "---\nweek: 2026-W39\nperiod: 2026-09-21 \u2192 2026-09-27\ngenerated: 23:30\n---\n\n## summary\n- notes created: 1\n- notes edited: 0\n- sessions: 2\n- active days: 2/7\n\n## activity by day\n- mon 21: no activity\n- tue 22: 1 notes \u00b7 1 sessions\n- wed 23: no activity\n- thu 24: 0 notes \u00b7 1 sessions\n- fri 25: no activity\n- sat 26: no activity\n- sun 27: no activity\n\n## recurring terms\n- none\n\n## orphans this week\n- [[2026-09-22]] \u2014 first flagged 2026-09-22\n\n## synthesis\n\nthe observed data points toward minimal activity this week. the terms section highlights \"orphan notes,\" which is the only explicit recurring term listed. activity metrics show one notes created and zero notes edited across two active days. there are no relevant vault excerpts provided, and only one note creation event was logged.\n\ngrounded in: , 1 orphan notes, 1 notes created, 2 sessions\n\n## generated prompt\nwhat were the details of the \"orphan notes\" linked to 2026-09-22?\n",
+      "parsed": {
+        "summary": "- notes created: 1\n- notes edited: 0\n- sessions: 2\n- active days: 2/7",
+        "activity_by_day": "- mon 21: no activity\n- tue 22: 1 notes \u00b7 1 sessions\n- wed 23: no activity\n- thu 24: 0 notes \u00b7 1 sessions\n- fri 25: no activity\n- sat 26: no activity\n- sun 27: no activity",
+        "recurring_terms": "- none",
+        "orphans_this_week": "- [[2026-09-22]] \u2014 first flagged 2026-09-22",
+        "synthesis": "the observed data points toward minimal activity this week. the terms section highlights \"orphan notes,\" which is the only explicit recurring term listed. activity metrics show one notes created and zero notes edited across two active days. there are no relevant vault excerpts provided, and only one note creation event was logged.\n\ngrounded in: , 1 orphan notes, 1 notes created, 2 sessions",
+        "generated_prompt": "what were the details of the \"orphan notes\" linked to 2026-09-22?"
+      }
+    },
+    {
       "week": "2026-W38",
       "raw": "---\nweek: 2026-W38\nperiod: 2026-09-14 \u2192 2026-09-20\ngenerated: 22:30\n---\n\n## summary\n- notes created: 1\n- notes edited: 0\n- sessions: 0\n- active days: 1/7\n\n## activity by day\n- mon 14: 1 notes \u00b7 0 sessions\n- tue 15: no activity\n- wed 16: no activity\n- thu 17: no activity\n- fri 18: no activity\n- sat 19: no activity\n- sun 20: no activity\n\n## recurring terms\n- [[-bibliography]] \u2014 34\n- tools thought \u2014 7\n- https www \u2014 6\n- com news \u2014 3\n- learning https \u2014 3\n- [[live-coding-a-phd]] \u2014 1\n\n## orphans this week\n- [[2026-09-14]] \u2014 first flagged 2026-09-14\n\n## synthesis\n\nthe activity centers on mapping a theoretical and technical lineage of knowledge creation. a prominent pattern is the heavy indexing of external information, evidenced by the repeated `[[-bibliography]]` term and the presence of `https www` in the frequency list. specific terms like `tools thought` and `[[live-coding-a-phd]]` suggest a focus on methodological architecture. the excerpts confirm this by discussing process visibility, llms, and the role of research infrastructure within digital garden frameworks.\n\ngrounded in: [[-bibliography]] \u00d734, tools thought \u00d77, https www \u00d76, 1 orphan notes, 1 notes created, 0 sessions\n\n## generated prompt\nhow are the high index counts of `[[-bibliography]]` connected to the methodological architecture suggested by `tools thought` and llms?\n",
       "parsed": {
