@@ -12368,6 +12368,142 @@
       }
     ]
   },
+  "generative-AI": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-01-21",
+        "hash": "d3e224e",
+        "wordCount": 14,
+        "delta": 2,
+        "added": 14,
+        "removed": 12,
+        "diff": "[-Here I will outline various GenAI of relevance to this research-] {+<!-- Here I will outline various GenAI of relevance to this research+} [-[[spatial-ai]]-] {+[[spatial-ai]]+} {+-->+}"
+      },
+      {
+        "date": "2026-01-11",
+        "hash": "1bdddd0",
+        "wordCount": 3,
+        "delta": 0,
+        "added": 3,
+        "removed": 3,
+        "diff": "[-title: Generative Ai-] {+title: generative ai+}"
+      },
+      {
+        "date": "2025-10-21",
+        "hash": "01cf58d",
+        "wordCount": 36,
+        "delta": 36,
+        "added": 36,
+        "removed": 0,
+        "diff": "{+title: Generative Ai+} {+permalink: /notes/generative-ai/+} {+visibility: public+} {+description: |-+} {+Generative AI or GenAI is... (add definition in my own words)+} {+---+} {+Here I will outline various GenAI of relevance to this research+} {+large-language-models (LLMs+} {+updated: '2025-10-20T22:34:14.447Z'+}"
+      },
+      {
+        "date": "2025-10-20",
+        "hash": "60d0c7e",
+        "wordCount": 5,
+        "delta": 1,
+        "added": 5,
+        "removed": 4,
+        "diff": "[-{\"dg-publish\":true,\"permalink\":\"/published/generative-ai/\",\"noteIcon\":\"\"}-] {+dg-publish: true+} [-[[published/large-language-models\\|large-language-models]] (LLMs)-] {+[[large-language-models]] (LLMs)+} [-[[spatial-ai\\|spatial-ai]]-] {+[[spatial-ai]]+}"
+      },
+      {
+        "date": "2025-10-19",
+        "hash": "51a3220",
+        "wordCount": 0,
+        "delta": -12,
+        "added": 0,
+        "removed": 12,
+        "diff": "[-title: Generative AI or GenAI is... (add definition in my own words)-]"
+      },
+      {
+        "date": "2025-09-03",
+        "hash": "085be0c",
+        "wordCount": 1,
+        "delta": 0,
+        "added": 1,
+        "removed": 1,
+        "diff": "[-{\"dg-publish\":true,\"permalink\":\"/published/generative-ai/\"}-] {+{\"dg-publish\":true,\"permalink\":\"/published/generative-ai/\",\"noteIcon\":\"\"}+}"
+      },
+      {
+        "date": "2025-08-29",
+        "hash": "5756079",
+        "wordCount": 45,
+        "delta": 45,
+        "added": 45,
+        "removed": 0,
+        "diff": "{+---+} {+{\"dg-publish\":true,\"permalink\":\"/published/generative-ai/\"}+} {+---+} {+Generative AI or GenAI is... (add definition in my own words)+} {+---+} {+Here I will outline various GenAI of relevance to this research+} {+[[published/large-language-models\\|large-language-models]] (LLMs)+} {+Reinforcement Learning from Human Feedback (RLHF)+} {+Humanity's Last Exam (benchmark for LLMs?) https://lastexam.ai/+} {+https://huggingface.co/blog/4bit-transformers-bitsandbytes?ref=blog.mozilla.ai+} {+datacentric ai+} {+[[spatial-ai\\|spatial-ai]]+}"
+      }
+    ]
+  },
+  "generative-ai": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-01-21",
+        "hash": "d3e224e",
+        "wordCount": 14,
+        "delta": 2,
+        "added": 14,
+        "removed": 12,
+        "diff": "[-Here I will outline various GenAI of relevance to this research-] {+<!-- Here I will outline various GenAI of relevance to this research+} [-[[spatial-ai]]-] {+[[spatial-ai]]+} {+-->+}"
+      },
+      {
+        "date": "2026-01-11",
+        "hash": "1bdddd0",
+        "wordCount": 3,
+        "delta": 0,
+        "added": 3,
+        "removed": 3,
+        "diff": "[-title: Generative Ai-] {+title: generative ai+}"
+      },
+      {
+        "date": "2025-10-21",
+        "hash": "01cf58d",
+        "wordCount": 36,
+        "delta": 36,
+        "added": 36,
+        "removed": 0,
+        "diff": "{+title: Generative Ai+} {+permalink: /notes/generative-ai/+} {+visibility: public+} {+description: |-+} {+Generative AI or GenAI is... (add definition in my own words)+} {+---+} {+Here I will outline various GenAI of relevance to this research+} {+large-language-models (LLMs+} {+updated: '2025-10-20T22:34:14.447Z'+}"
+      },
+      {
+        "date": "2025-10-20",
+        "hash": "60d0c7e",
+        "wordCount": 5,
+        "delta": 1,
+        "added": 5,
+        "removed": 4,
+        "diff": "[-{\"dg-publish\":true,\"permalink\":\"/published/generative-ai/\",\"noteIcon\":\"\"}-] {+dg-publish: true+} [-[[published/large-language-models\\|large-language-models]] (LLMs)-] {+[[large-language-models]] (LLMs)+} [-[[spatial-ai\\|spatial-ai]]-] {+[[spatial-ai]]+}"
+      },
+      {
+        "date": "2025-10-19",
+        "hash": "51a3220",
+        "wordCount": 0,
+        "delta": -12,
+        "added": 0,
+        "removed": 12,
+        "diff": "[-title: Generative AI or GenAI is... (add definition in my own words)-]"
+      },
+      {
+        "date": "2025-09-03",
+        "hash": "085be0c",
+        "wordCount": 1,
+        "delta": 0,
+        "added": 1,
+        "removed": 1,
+        "diff": "[-{\"dg-publish\":true,\"permalink\":\"/published/generative-ai/\"}-] {+{\"dg-publish\":true,\"permalink\":\"/published/generative-ai/\",\"noteIcon\":\"\"}+}"
+      },
+      {
+        "date": "2025-08-29",
+        "hash": "5756079",
+        "wordCount": 45,
+        "delta": 45,
+        "added": 45,
+        "removed": 0,
+        "diff": "{+---+} {+{\"dg-publish\":true,\"permalink\":\"/published/generative-ai/\"}+} {+---+} {+Generative AI or GenAI is... (add definition in my own words)+} {+---+} {+Here I will outline various GenAI of relevance to this research+} {+[[published/large-language-models\\|large-language-models]] (LLMs)+} {+Reinforcement Learning from Human Feedback (RLHF)+} {+Humanity's Last Exam (benchmark for LLMs?) https://lastexam.ai/+} {+https://huggingface.co/blog/4bit-transformers-bitsandbytes?ref=blog.mozilla.ai+} {+datacentric ai+} {+[[spatial-ai\\|spatial-ai]]+}"
+      }
+    ]
+  },
   "gemini-google-ai-education": {
     "noteDate": null,
     "revisions": [
@@ -19799,12 +19935,12 @@
     "revisions": [
       {
         "date": "2026-07-04",
-        "hash": "7f2a9e1",
-        "wordCount": 22,
-        "delta": 22,
-        "added": 22,
+        "hash": "a72b310",
+        "wordCount": 11,
+        "delta": 11,
+        "added": 11,
         "removed": 0,
-        "diff": "{+---+} {+date: 2026-07-04+} {+---+} {+## sessions+} {+<details>+} {+<summary>Session 1</summary>+} {+start:: 2026-07-03T19:41:48.313Z+} {+topic:: coding · debugging - latest feature testing+} {+end:: 2026-07-04T00:55:15.701Z+} {+</details>+}"
+        "diff": "{+<summary>Session 2</summary>+} {+start:: 2026-07-04T00:18:46.228046+} {+topic:: study companion+} {+end:: 2026-07-04T12:08:13.581899+} {+</details>+} {+<details>+}"
       }
     ]
   },
