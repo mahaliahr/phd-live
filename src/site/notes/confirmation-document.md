@@ -5,6 +5,7 @@ visibility: public
 tags: []
 type: ""
 ---
+[[confirmation-requirements|confirmation]]
 ### After Intelligence: building possibility spaces for creative learning, with and through generative systems
 
 ##### Abstract

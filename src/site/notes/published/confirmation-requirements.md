@@ -10,7 +10,7 @@ aliases:
 
 [[confirmation-plan]]
 [[confirmation-document]]
-
+[[confirmation-feedback]]
 extract from handbook: 
 
 5.1 Students are registered initially for an unspecified research degree, at which point they will have indicated their intended degree (MPhil or PhD). The application to confirm the degree for which they will be examined will normally take place after a probationary period of 12 to 18 months for full time students and 24 to 30 months for part-time students. 
