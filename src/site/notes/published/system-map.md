@@ -58,7 +58,7 @@ status key: 🟢 stable · 🔵 active · 🟡 speculative
 | live logging        | 🔵 active      |                                                           |
 | supervisor bot      | 🔵 active      |                                                           |
 | activity log        | 🔵 active      |                                                           |
-| mirror / AI layer   | 🟡 speculative |                                                           |
+| mirror / AI layer   | 🔵 active      |                                                           |
 | study companion bot | 🔵 active      | → [[system-open-questions#supervisor-vs-study-companion]] |
 | confidence bot      | 🟡 speculative |                                                           |
 
@@ -66,15 +66,15 @@ status key: 🟢 stable · 🔵 active · 🟡 speculative
 
 ## phd-live public site
 
-| component                           | status         | notes |
-| ----------------------------------- | -------------- | ----- |
-| obsidian → eleventy → vercel stack  | 🟢 stable      |       |
-| revision history                    | 🔵 active      |       |
-| screenshot archive / evolution page | 🔵 active      |       |
-| kanban rendering                    | 🟡 speculative |       |
-| keystroke → audio trigger           | 🟡 speculative |       |
-| youtube livestream                  | 🟡 speculative |       |
-| newsletter                          | 🟡 speculative |       |
+| component                           | status         | notes                                     |
+| ----------------------------------- | -------------- | ----------------------------------------- |
+| obsidian → eleventy → vercel stack  | 🟢 stable      |                                           |
+| revision history                    | 🔵 active      |                                           |
+| screenshot archive / evolution page | 🔵 active      |                                           |
+| kanban rendering                    | 🔵 active      | active, but I may not actually really use |
+| keystroke → audio trigger           | 🟡 speculative |                                           |
+| youtube livestream                  | 🟡 speculative |                                           |
+| newsletter                          | 🟡 speculative |                                           |
 
 ---
 
