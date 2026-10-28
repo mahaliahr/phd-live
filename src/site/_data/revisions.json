@@ -13,6 +13,20 @@
       }
     ]
   },
+  "supervision-291026": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-10-28",
+        "hash": "67802bc",
+        "wordCount": 45,
+        "delta": 45,
+        "added": 45,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-10-26+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+things to talk about / cover+} {+ethics form for DIY bot+} {+talk about the build-a-bot / DIY bot Peckham Digital workshop [[provisional-pilot-diy-bot-workshop]]+} {+summary of confirmation feedback+} {+next steps moving on from the confirmation+}"
+      }
+    ]
+  },
   "study-companion-v1": {
     "noteDate": null,
     "revisions": [
@@ -83,9 +97,32 @@
       }
     ]
   },
+  "confirmation-feedback": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-10-28",
+        "hash": "67802bc",
+        "wordCount": 284,
+        "delta": 284,
+        "added": 284,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-10-26+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+Mahalia submitted a very comprehensive report and we would like to confirm this as a PhD.+} {+Here are some recommendations for the next stages of the research:+} {+**Positioning and theoretical framing**+} {+·       Clarify what your position is and the value system that underpins this. Develop this further to take a clearer stance within this complex and challenging context.+} {+·       Explore key terms in your project and their interrelationships: intelligence, learning, knowledge, research, training. Identify where they connect, intersect and differ – also depending on the positioning you take.+} {+·       Consider whether your sections of the PhD on reflexive practice on the one hand and creative ecdication in HE can be brought together. Does this link need stronger theoretical bridging?+} {+**Literature/Practice review**+} {+·       Review work of Neil Postman – how is tech changing education+} {+·       Strengthen the contextual review of education literature on academic integrity in the context of Gen AI and approaches taken by Art/Design HE institutions+} {+·       Relate your project to current UAL developments and the wider sector.+} {+·       Include existing examples of playful engagement with LLM bots (i.e.Bratton bots into discord)+} {+**Audiences**+} {+·       Identify your audiences. We discussed that there might be several, and it would help to define each one clearly. Engaging with other disciplines through your trans/inter/multi-disciplinary work could help you to scale your research and consider where your research will have impact.+} {+·       Present at conferences (ELIA, Cumulus, ECREA for example) to test it with different audiences+} {+**Planning and Preparation**+} {+·       Plan your research time carefully with your line manager to protect your 20% research time.+} {+·       Rehearse presentations to build confidence and prepare for the Viva.+}"
+      }
+    ]
+  },
   "confirmation-document": {
     "noteDate": null,
     "revisions": [
+      {
+        "date": "2026-10-28",
+        "hash": "67802bc",
+        "wordCount": 1,
+        "delta": 1,
+        "added": 1,
+        "removed": 0,
+        "diff": "{+[[confirmation-requirements|confirmation]]+}"
+      },
       {
         "date": "2026-09-22",
         "hash": "e106758",
@@ -5833,6 +5870,15 @@
   "supervision-meetings-record": {
     "noteDate": null,
     "revisions": [
+      {
+        "date": "2026-10-28",
+        "hash": "67802bc",
+        "wordCount": 6,
+        "delta": 6,
+        "added": 6,
+        "removed": 0,
+        "diff": "{+26-27 academic year+} {+1 [[supervision-291026]]+} {+///+}"
+      },
       {
         "date": "2026-06-15",
         "hash": "3abb84f",
@@ -12762,6 +12808,160 @@
       }
     ]
   },
+  "generative-AI": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-07-20",
+        "hash": "9c44b88",
+        "wordCount": 3,
+        "delta": -26,
+        "added": 3,
+        "removed": 29,
+        "diff": "[-description: |--] [-Generative AI or GenAI is... (add definition in my own words)-] [-----] [-Here I will outline various GenAI of relevance to this research-] [-large-language-models (LLMs-] [-updated: '2025-10-20T22:34:14.447Z'-] {+description:+} {+updated: 2025-10-20T22:34:14.447Z+}"
+      },
+      {
+        "date": "2026-01-21",
+        "hash": "d3e224e",
+        "wordCount": 14,
+        "delta": 2,
+        "added": 14,
+        "removed": 12,
+        "diff": "[-Here I will outline various GenAI of relevance to this research-] {+<!-- Here I will outline various GenAI of relevance to this research+} [-[[spatial-ai]]-] {+[[spatial-ai]]+} {+-->+}"
+      },
+      {
+        "date": "2026-01-11",
+        "hash": "1bdddd0",
+        "wordCount": 3,
+        "delta": 0,
+        "added": 3,
+        "removed": 3,
+        "diff": "[-title: Generative Ai-] {+title: generative ai+}"
+      },
+      {
+        "date": "2025-10-21",
+        "hash": "01cf58d",
+        "wordCount": 36,
+        "delta": 36,
+        "added": 36,
+        "removed": 0,
+        "diff": "{+title: Generative Ai+} {+permalink: /notes/generative-ai/+} {+visibility: public+} {+description: |-+} {+Generative AI or GenAI is... (add definition in my own words)+} {+---+} {+Here I will outline various GenAI of relevance to this research+} {+large-language-models (LLMs+} {+updated: '2025-10-20T22:34:14.447Z'+}"
+      },
+      {
+        "date": "2025-10-20",
+        "hash": "60d0c7e",
+        "wordCount": 5,
+        "delta": 1,
+        "added": 5,
+        "removed": 4,
+        "diff": "[-{\"dg-publish\":true,\"permalink\":\"/published/generative-ai/\",\"noteIcon\":\"\"}-] {+dg-publish: true+} [-[[published/large-language-models\\|large-language-models]] (LLMs)-] {+[[large-language-models]] (LLMs)+} [-[[spatial-ai\\|spatial-ai]]-] {+[[spatial-ai]]+}"
+      },
+      {
+        "date": "2025-10-19",
+        "hash": "51a3220",
+        "wordCount": 0,
+        "delta": -12,
+        "added": 0,
+        "removed": 12,
+        "diff": "[-title: Generative AI or GenAI is... (add definition in my own words)-]"
+      },
+      {
+        "date": "2025-09-03",
+        "hash": "085be0c",
+        "wordCount": 1,
+        "delta": 0,
+        "added": 1,
+        "removed": 1,
+        "diff": "[-{\"dg-publish\":true,\"permalink\":\"/published/generative-ai/\"}-] {+{\"dg-publish\":true,\"permalink\":\"/published/generative-ai/\",\"noteIcon\":\"\"}+}"
+      },
+      {
+        "date": "2025-08-29",
+        "hash": "5756079",
+        "wordCount": 45,
+        "delta": 45,
+        "added": 45,
+        "removed": 0,
+        "diff": "{+---+} {+{\"dg-publish\":true,\"permalink\":\"/published/generative-ai/\"}+} {+---+} {+Generative AI or GenAI is... (add definition in my own words)+} {+---+} {+Here I will outline various GenAI of relevance to this research+} {+[[published/large-language-models\\|large-language-models]] (LLMs)+} {+Reinforcement Learning from Human Feedback (RLHF)+} {+Humanity's Last Exam (benchmark for LLMs?) https://lastexam.ai/+} {+https://huggingface.co/blog/4bit-transformers-bitsandbytes?ref=blog.mozilla.ai+} {+datacentric ai+} {+[[spatial-ai\\|spatial-ai]]+}"
+      }
+    ]
+  },
+  "generative-ai": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-07-20",
+        "hash": "9c44b88",
+        "wordCount": 3,
+        "delta": -26,
+        "added": 3,
+        "removed": 29,
+        "diff": "[-description: |--] [-Generative AI or GenAI is... (add definition in my own words)-] [-----] [-Here I will outline various GenAI of relevance to this research-] [-large-language-models (LLMs-] [-updated: '2025-10-20T22:34:14.447Z'-] {+description:+} {+updated: 2025-10-20T22:34:14.447Z+}"
+      },
+      {
+        "date": "2026-01-21",
+        "hash": "d3e224e",
+        "wordCount": 14,
+        "delta": 2,
+        "added": 14,
+        "removed": 12,
+        "diff": "[-Here I will outline various GenAI of relevance to this research-] {+<!-- Here I will outline various GenAI of relevance to this research+} [-[[spatial-ai]]-] {+[[spatial-ai]]+} {+-->+}"
+      },
+      {
+        "date": "2026-01-11",
+        "hash": "1bdddd0",
+        "wordCount": 3,
+        "delta": 0,
+        "added": 3,
+        "removed": 3,
+        "diff": "[-title: Generative Ai-] {+title: generative ai+}"
+      },
+      {
+        "date": "2025-10-21",
+        "hash": "01cf58d",
+        "wordCount": 36,
+        "delta": 36,
+        "added": 36,
+        "removed": 0,
+        "diff": "{+title: Generative Ai+} {+permalink: /notes/generative-ai/+} {+visibility: public+} {+description: |-+} {+Generative AI or GenAI is... (add definition in my own words)+} {+---+} {+Here I will outline various GenAI of relevance to this research+} {+large-language-models (LLMs+} {+updated: '2025-10-20T22:34:14.447Z'+}"
+      },
+      {
+        "date": "2025-10-20",
+        "hash": "60d0c7e",
+        "wordCount": 5,
+        "delta": 1,
+        "added": 5,
+        "removed": 4,
+        "diff": "[-{\"dg-publish\":true,\"permalink\":\"/published/generative-ai/\",\"noteIcon\":\"\"}-] {+dg-publish: true+} [-[[published/large-language-models\\|large-language-models]] (LLMs)-] {+[[large-language-models]] (LLMs)+} [-[[spatial-ai\\|spatial-ai]]-] {+[[spatial-ai]]+}"
+      },
+      {
+        "date": "2025-10-19",
+        "hash": "51a3220",
+        "wordCount": 0,
+        "delta": -12,
+        "added": 0,
+        "removed": 12,
+        "diff": "[-title: Generative AI or GenAI is... (add definition in my own words)-]"
+      },
+      {
+        "date": "2025-09-03",
+        "hash": "085be0c",
+        "wordCount": 1,
+        "delta": 0,
+        "added": 1,
+        "removed": 1,
+        "diff": "[-{\"dg-publish\":true,\"permalink\":\"/published/generative-ai/\"}-] {+{\"dg-publish\":true,\"permalink\":\"/published/generative-ai/\",\"noteIcon\":\"\"}+}"
+      },
+      {
+        "date": "2025-08-29",
+        "hash": "5756079",
+        "wordCount": 45,
+        "delta": 45,
+        "added": 45,
+        "removed": 0,
+        "diff": "{+---+} {+{\"dg-publish\":true,\"permalink\":\"/published/generative-ai/\"}+} {+---+} {+Generative AI or GenAI is... (add definition in my own words)+} {+---+} {+Here I will outline various GenAI of relevance to this research+} {+[[published/large-language-models\\|large-language-models]] (LLMs)+} {+Reinforcement Learning from Human Feedback (RLHF)+} {+Humanity's Last Exam (benchmark for LLMs?) https://lastexam.ai/+} {+https://huggingface.co/blog/4bit-transformers-bitsandbytes?ref=blog.mozilla.ai+} {+datacentric ai+} {+[[spatial-ai\\|spatial-ai]]+}"
+      }
+    ]
+  },
   "gemini-google-ai-education": {
     "noteDate": null,
     "revisions": [
@@ -14621,6 +14821,15 @@
   "confirmation-requirements": {
     "noteDate": null,
     "revisions": [
+      {
+        "date": "2026-10-28",
+        "hash": "67802bc",
+        "wordCount": 1,
+        "delta": 1,
+        "added": 1,
+        "removed": 0,
+        "diff": "{+[[confirmation-feedback]]+}"
+      },
       {
         "date": "2026-09-06",
         "hash": "a85e77f",
@@ -20383,6 +20592,34 @@
         "added": 83,
         "removed": 0,
         "diff": "{+---+} {+{\"dg-publish\":true,\"permalink\":\"/pre-start-thoughts/28-11-2023-notes/\"}+} {+---+} {+I feel strongly that a big part of my work should be a critique of the current state of affairs. This critique will come from the perspective of being a member of staff and also of studying.+} {+It will pull from a lived experience of being excluded and what it potentially means to have new models that give access to things that have been historically gatekept,+} {+(what new ways of gatekeeping could be brought up/dreamt up)+} {+Foucault Knowledge and Power+}"
+      }
+    ]
+  },
+  "2026-10-26": {
+    "noteDate": "2026-10-26",
+    "revisions": [
+      {
+        "date": "2026-10-28",
+        "hash": "67802bc",
+        "wordCount": 92,
+        "delta": 92,
+        "added": 92,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+visibility: public+} {+title: 2026-10-26+} {+tags:+} {+- daily+} {+- stream+} {+---+} {+<!--+} {+Daily note template (PhD-Live)+} {+Stream line syntax:+} {+- HH:MM something you did+} {+Quick syntax:+} {+Session: start:: YYYY-MM-DD HH:MM+ZZ | end:: ... | topic:: ...+} {+Milestone: - [ ] Thing #milestone @YYYY-MM-DD+} {+-->+} {+supervision prep - [[supervision-meetings-record]]+} {+## sessions+} {+<details>+} {+<summary>Session 3</summary>+} {+start:: 2026-10-26T13:39:07.922077+00:00+} {+topic:: study companion+} {+end:: 2026-10-26T23:18:09.560899+} {+</details>+} {+<details>+} {+<summary>Session 2</summary>+} {+start:: 2026-10-26T16:46:08.458Z+} {+topic:: thinking / planning+} {+end:: 2026-10-26T18:00:32.529Z+} {+</details>+} {+<details>+} {+<summary>Session 1</summary>+} {+start:: 2026-10-26T13:14:53.881Z+} {+topic:: thinking / planning · preparing for supervisor meeting+} {+end:: 2026-10-26T14:36:12.572Z+} {+</details>+}"
+      }
+    ]
+  },
+  "2026-10-19": {
+    "noteDate": "2026-10-19",
+    "revisions": [
+      {
+        "date": "2026-10-28",
+        "hash": "67802bc",
+        "wordCount": 25,
+        "delta": 25,
+        "added": 25,
+        "removed": 0,
+        "diff": "{+---+} {+date: 2026-10-19+} {+---+} {+## sessions+} {+<details>+} {+<summary>Session 1</summary>+} {+start:: 2026-10-19T15:26:00.694Z+} {+topic:: thinking / planning · workshop prep / plus other thinking+} {+end:: 2026-10-19T20:32:28.184Z+} {+</details>+}"
       }
     ]
   },
