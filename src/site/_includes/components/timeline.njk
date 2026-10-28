@@ -1,0 +1,72 @@
+{# config #}
+{% set monthsBefore = 12 %}
+{% set monthsAfter = 3 %}
+{% set tl = collections.milestones | default([]) | buildTimeline(track, monthsBefore, monthsAfter) %}
+
+{% macro marker(i) -%}
+<i class="tl-m tl-{{ i.status }}{% if i.overdue %} tl-overdue{% endif %}{% if i.key %} tl-key{% endif %}"></i>
+{%- endmacro %}
+
+{% macro row(i, notes) %}
+<li class="tl-item" data-id="{{ i.id }}">
+  <span class="tl-mcol">{% if i.status == 'active' %}<i class="tl-seg"></i>{% else %}{{ marker(i) }}{% endif %}</span>
+  <span class="tl-title">{{ i.title | inlineLinks(notes) | safe }}{% if i.dateLabel and (i.status == 'active' or (i.status == 'planned' and not i.overdue)) %} <span class="tl-until">→ {{ i.dateLabel }}</span>{% endif %}</span>
+  <a class="tl-src" href="{{ i.url | url }}">{{ i.sourceLabel or i.noteTitle }}</a>
+</li>
+{% endmacro %}
+
+<div class="tl">
+  <div class="tl-legend">
+    <span><i class="tl-m tl-done"></i>done</span>
+    <span><i class="tl-m tl-planned"></i>planned</span>
+    <span><i class="tl-m tl-planned tl-overdue"></i>overdue</span>
+    <span><i class="tl-seg"></i>active</span>
+    <span><i class="tl-m tl-done tl-key"></i>key</span>
+  </div>
+
+  <div class="tl-strip">
+    <div class="tl-months">
+      {% for m in tl.months %}<span class="tl-month" style="left: {{ m.pct }}%">{{ m.label }}</span>{% endfor %}
+    </div>
+    <span class="tl-base"></span>
+    <span class="tl-today" style="left: {{ tl.todayPct }}%"></span>
+    {% for k in tl.markers %}
+      {% if k.status == 'active' %}<span class="tl-line tl-lv{{ k.level }}" style="left: {{ k.lineLeft }}%; width: {{ k.lineWidth }}%"></span>{% endif %}
+      <i class="tl-m tl-pt tl-lv{{ k.level }} tl-{{ k.status }}{% if k.overdue %} tl-overdue{% endif %}{% if k.key %} tl-key{% endif %}" data-id="{{ k.id }}" style="left: {{ k.pct }}%" title="{{ k.tip }}"></i>
+    {% endfor %}
+  </div>
+
+  {% if tl.now | length %}
+    <h2 class="tl-h">now</h2>
+    <ul class="tl-list">{% for i in tl.now %}{{ row(i, collections.all) }}{% endfor %}</ul>
+  {% endif %}
+
+  {% if tl.next | length %}
+    <h2 class="tl-h">next</h2>
+    <ul class="tl-list">{% for i in tl.next %}{{ row(i, collections.all) }}{% endfor %}</ul>
+  {% endif %}
+
+  {% if tl.log | length %}
+    <h2 class="tl-h">log</h2>
+    {% for g in tl.log %}
+      <h3 class="tl-month-h">{{ g.label }}</h3>
+      <ul class="tl-list">{% for i in g.items %}{{ row(i, collections.all) }}{% endfor %}</ul>
+    {% endfor %}
+  {% endif %}
+</div>
+
+<script>
+(function () {
+  var root = document.querySelector('.tl');
+  if (!root) return;
+  function set(e, on) {
+    var el = e.target.closest && e.target.closest('[data-id]');
+    if (!el || !root.contains(el)) return;
+    root.querySelectorAll('[data-id="' + el.getAttribute('data-id') + '"]').forEach(function (n) {
+      n.classList.toggle('tl-hl', on);
+    });
+  }
+  root.addEventListener('mouseover', function (e) { set(e, true); });
+  root.addEventListener('mouseout', function (e) { set(e, false); });
+})();
+</script>

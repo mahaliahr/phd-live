@@ -13,7 +13,13 @@ class Milestones {
       checked: m.checked,
       status: m.status,
       url: m.url,
-      noteTitle: m.noteTitle
+      noteTitle: m.noteTitle,
+      tags: m.tags,
+      milestone: m.milestone,
+      key: m.key,
+      track: m.track,
+      date: m.date,
+      sourceDate: m.sourceDate
     }));
     
     return JSON.stringify(milestones, null, 2);
