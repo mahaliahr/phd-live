@@ -24,6 +24,9 @@
         "sass": "^1.93.3",
         "serve": "^14.2.6"
     },
+    "overrides": {
+        "sharp": "^0.35.5"
+    },
     "dependencies": {
         "@11ty/eleventy-img": "^4.0.2",
         "@sindresorhus/slugify": "^1.1.0",
