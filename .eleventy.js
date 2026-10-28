@@ -726,38 +726,86 @@ const normalizeToUTC = (dateStr) => {
     api.getFilteredByGlob("src/site/notes/**/*.canvas")
   );
   
-// ===== SIMPLIFIED MILESTONES COLLECTION =====
+// ===== MILESTONES COLLECTION =====
+// Harvests checkbox lines tagged #milestone from published notes only.
+// Syntax: - [ ] | [x] | [/]  text #tags @YYYY-MM-DD
 eleventyConfig.addCollection("milestones", (c) => {
   const out = [];
-  
+  const lineRe = /^\s*(?:[-*+]\s+)?\[([ xX\/])\]\s+(.+)$/;
+  const tagRe = /(^|\s)#([A-Za-z][\w\/-]*)/g;
+  const dueRe = /(^|\s)@(\d{4}-\d[\d-]*)(?=\s|$)/g;
+  const parseDue = (tok) => {
+    const m = tok.match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);
+    if (!m) return null;
+    const [y, mo, d] = [+m[1], +m[2], +m[3]];
+    const dt = new Date(Date.UTC(y, mo - 1, d));
+    if (dt.getUTCFullYear() !== y || dt.getUTCMonth() !== mo - 1 || dt.getUTCDate() !== d) return null;
+    return dt.toISOString().slice(0, 10);
+  };
+  const isoDay = /^\d{4}-\d{2}-\d{2}$/;
+
   for (const p of c.getAll()) {
     if (!p.inputPath?.endsWith('.md')) continue;
-    
+    if (p.inputPath.includes('/_unpublished/') || p.inputPath.includes('/_templates/')) continue;
+    if (p.data?.["dg-publish"] !== true) continue;
+
     const txt = getText(p);
     if (!txt || !txt.includes('#milestone')) continue;
-    
-    // Simple line-by-line parsing
-    const lines = txt.split('\n');
-    for (const line of lines) {
-      // Match: - [ ] or - [x] ... #milestone ... @2025-01-20
-      const match = line.match(/^[\s-]*\[([x\s])\]\s+(.+?)\s+#milestone(?:\s+@(\d{4}-\d{2}-\d{2}))?/i);
+
+    // Daily note date: filename first, then frontmatter date/created
+    let sourceDate = null;
+    const slug = p.fileSlug || '';
+    const isDaily = isoDay.test(slug) || p.inputPath.includes('/notes/daily/') ||
+      (Array.isArray(p.data?.tags) && p.data.tags.includes('daily'));
+    if (isoDay.test(slug)) {
+      sourceDate = slug;
+    } else if (isDaily) {
+      for (const f of [p.data?.date, p.data?.created]) {
+        if (!f) continue;
+        const d = f instanceof Date ? f : new Date(f);
+        if (!isNaN(d)) { sourceDate = d.toISOString().slice(0, 10); break; }
+      }
+    }
+
+    for (const line of txt.split('\n')) {
+      const match = line.match(lineRe);
       if (!match) continue;
-      
-      const checkbox = match[1].toLowerCase();
-      const text = match[2].trim();
-      const date = match[3] || null;
-      
+
+      const box = match[1].toLowerCase();
+      const body = match[2];
+      const tags = [...body.matchAll(tagRe)].map(m => m[2].toLowerCase());
+      if (!tags.includes('milestone')) continue;
+
+      let due = null;
+      for (const dm of body.matchAll(dueRe)) {
+        const parsed = parseDue(dm[2]);
+        if (parsed) { due = due || parsed; }
+        else console.warn(`[milestones] unparseable due date "@${dm[2]}" in ${p.inputPath}`);
+      }
+      const title = body
+        .replace(tagRe, '$1')
+        .replace(dueRe, '$1')
+        .replace(/\s+/g, ' ')
+        .trim();
+
+      const status = box === 'x' ? 'done' : box === '/' ? 'active' : 'planned';
       out.push({
-        title: text,
-        due: date,
-        checked: checkbox === 'x',
-        status: checkbox === 'x' ? 'done' : 'planned',
+        title,
+        due,
+        checked: box === 'x',
+        status,
         url: p.url,
         noteTitle: p.data.title || p.fileSlug,
+        tags,
+        milestone: true,
+        key: tags.includes('key'),
+        track: tags.includes('build') ? 'build' : 'research',
+        date: due || (status === 'done' ? sourceDate : null),
+        sourceDate,
       });
     }
   }
-  
+
   // Sort: incomplete first (by date), then complete (by date)
   return out.sort((a, b) => {
     if (a.checked !== b.checked) return a.checked ? 1 : -1;
@@ -766,6 +814,118 @@ eleventyConfig.addCollection("milestones", (c) => {
     if (!b.due) return -1;
     return new Date(a.due) - new Date(b.due);
   });
+});
+
+// Page model for /research and /build: strip markers, now/next lists and log
+eleventyConfig.addFilter("buildTimeline", (items, track, monthsBefore, monthsAfter) => {
+  const iso = (d) => d.toISOString().slice(0, 10);
+  const nowDate = new Date();
+  const today = new Date(Date.UTC(nowDate.getUTCFullYear(), nowDate.getUTCMonth(), nowDate.getUTCDate()));
+  const start = new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth() - monthsBefore, today.getUTCDate()));
+  const end = new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth() + monthsAfter, today.getUTCDate()));
+  const span = end - start;
+  const r2 = (n) => Math.round(n * 100) / 100;
+  const pct = (d) => r2(((d - start) / span) * 100);
+  const todayStr = iso(today);
+  const todayPct = pct(today);
+  const MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
+  const utc = (str) => new Date(str + 'T00:00:00Z');
+  const short = (str) => utc(str).getUTCDate() + ' ' + MONTHS[utc(str).getUTCMonth()];
+
+  const months = [];
+  for (let d = new Date(Date.UTC(start.getUTCFullYear(), start.getUTCMonth() + 1, 1)); d <= end;
+       d = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth() + 1, 1))) {
+    const jan = d.getUTCMonth() === 0;
+    months.push({
+      pct: pct(d),
+      label: MONTHS[d.getUTCMonth()] + (jan ? ' ' + String(d.getUTCFullYear()).slice(2) : ''),
+    });
+  }
+
+  const all = (items || []).filter(i => i.track === track).map((i, idx) => {
+    const overdue = i.status === 'planned' && !!i.date && i.date < todayStr;
+    return Object.assign({}, i, {
+      id: 'i' + idx,
+      overdue,
+      dateLabel: i.date ? short(i.date) : null,
+      sourceLabel: i.sourceDate ? 'daily / ' + short(i.sourceDate) : null,
+    });
+  });
+
+  // Strip: every dated item inside the axis; stagger close neighbours across 3 levels
+  const markers = [];
+  let prevPct = -Infinity, prevLevel = 0;
+  for (const i of all.filter(i => i.date && i.date >= iso(start) && i.date <= iso(end))
+                     .sort((a, b) => a.date.localeCompare(b.date) || a.id.localeCompare(b.id))) {
+    const p = pct(utc(i.date));
+    const level = p - prevPct < 3 ? (prevLevel + 1) % 3 : 0;
+    prevPct = p; prevLevel = level;
+    markers.push({
+      id: i.id, pct: p, level, status: i.status, overdue: i.overdue, key: i.key,
+      lineLeft: Math.min(p, todayPct), lineWidth: r2(Math.abs(p - todayPct)),
+      tip: i.title.replace(/\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|([^\]]+))?\]\]/g, (m, t, al) => al || t)
+                  .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1') + ' (' + i.date + ')',
+    });
+  }
+
+  const byDate = (a, b) => (a.date || '9999').localeCompare(b.date || '9999');
+  const nowItems = all.filter(i => i.status === 'active').sort(byDate);
+  const overdue = all.filter(i => i.overdue).sort(byDate);
+  const upcoming = all.filter(i => i.status === 'planned' && i.date && i.date >= todayStr).sort(byDate);
+  const undated = all.filter(i => i.status === 'planned' && !i.date);
+  const next = overdue.concat(upcoming, undated);
+
+  const groups = new Map();
+  for (const i of all.filter(i => i.status === 'done' && i.date).sort((a, b) => b.date.localeCompare(a.date))) {
+    const key = i.date.slice(0, 7);
+    if (!groups.has(key)) groups.set(key, { label: MONTHS[+key.slice(5) - 1] + ' ' + key.slice(0, 4), items: [] });
+    groups.get(key).items.push(i);
+  }
+  const log = [...groups.keys()].sort().reverse().map(k => groups.get(k));
+
+  return { months, todayPct, markers, now: nowItems, next, log };
+});
+
+// Render [[wikilinks]], [markdown](links) and bare URLs in a task title; everything else escaped
+const noteLookups = new WeakMap();
+eleventyConfig.addFilter("inlineLinks", (str, notes) => {
+  const esc = (t) => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  let lookup = null;
+  if (Array.isArray(notes)) {
+    lookup = noteLookups.get(notes);
+    if (!lookup) {
+      lookup = new Map();
+      for (const n of notes) {
+        if (n.inputPath?.endsWith('.md') && n.fileSlug) lookup.set(n.fileSlug.toLowerCase(), n);
+      }
+      noteLookups.set(notes, lookup);
+    }
+  }
+  const re = /\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|([^\]]+))?\]\]|\[([^\]]+)\]\(([^)\s]+)\)|(https?:\/\/[^\s<>"]+)/g;
+  let out = '', last = 0, m;
+  const s = String(str || '');
+  while ((m = re.exec(s))) {
+    out += esc(s.slice(last, m.index));
+    last = m.index + m[0].length;
+    if (m[1]) {
+      const target = m[1].trim();
+      const note = lookup && lookup.get(target.toLowerCase());
+      const slug = target.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+      const href = note ? note.url : `/notes/${slug}/`;
+      const text = (m[2] && m[2].trim()) || (note && note.data?.title) || slug.replace(/-/g, ' ');
+      out += `<a href="${esc(href)}">${esc(text)}</a>`;
+    } else if (m[3]) {
+      out += /^(https?:|\/|#|mailto:)/i.test(m[4]) ? `<a href="${esc(m[4])}">${esc(m[3])}</a>` : esc(m[0]);
+    } else {
+      let url = m[5];
+      const trail = url.match(/[.,;:!?)\]]+$/);
+      if (trail) { url = url.slice(0, -trail[0].length); last -= trail[0].length; }
+      let host = url;
+      try { host = new URL(url).hostname.replace(/^www\./, ''); } catch {}
+      out += `<a href="${esc(url)}">${esc(host)}</a>`;
+    }
+  }
+  return out + esc(s.slice(last));
 });
 
 // Sessions: any note in notes/sessions/ or with "start::"
