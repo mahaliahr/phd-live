@@ -83,6 +83,20 @@
       }
     ]
   },
+  "planning-2025-26": {
+    "noteDate": null,
+    "revisions": [
+      {
+        "date": "2026-10-28",
+        "hash": "af95eb3",
+        "wordCount": 218,
+        "delta": 218,
+        "added": 218,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+date-created: 2026-10-28+} {+visibility: public+} {+tags: []+} {+type: \"\"+} {+---+} {+data from superseded notion tracking page+} {+## research+} {+- [x] plan AI literacy session @2025-09-26 #milestone+} {+- [x] AI literacy introduction workshop @2025-10-10 #milestone #key+} {+- [x] apply to the UAL Doctoral Summer Symposium @2026-05-08 #milestone+} {+- [x] working on conference submissions @2026-05-11 #milestone+} {+- [x] send draft confirmation doc to supervisors before June supervision meeting @2026-06-04 #milestone+} {+- [x] send through an updated abstract for the doctoral symposium @2026-06-11 #milestone+} {+- [x] plan my talk for the doctoral symposium @2026-06-12 #milestone+} {+- [x] workshop idea for PD @2026-06-14 #milestone+} {+- [x] prepare slidedeck for doctoral symposium @2026-06-19 #milestone+} {+- [x] present at UAL Doctoral Summer Symposium @2026-06-22 #milestone #key+} {+- [x] first draft of confirmation document @2026-07-28 #milestone+} {+- [x] second draft of confirmation document @2026-08-28 #milestone+} {+- [x] finish confirmation document @2026-09-11 #milestone+} {+- [x] confirmation panel @2026-09-24 #milestone #key+} {+- [ ] ethics application for student 'DIY Bot' project #milestone+} {+- [ ] send out onboarding questionnaire for staff interviews #milestone+} {+- [ ] CCI staff interviews: Moodle lit review (on hold) #milestone+} {+## build+} {+- [x] LLM Supervisor v1 prototype (Supervisor Bot) @2025-07-25 #milestone #build #key+} {+- [x] study-companion v2 (local LLM + interface with broad PhD context) @2026-05-22 #milestone #build #key+}"
+      }
+    ]
+  },
   "feedback-ual-doctoral-symposium": {
     "noteDate": null,
     "revisions": [
@@ -5367,6 +5381,15 @@
   "system-map": {
     "noteDate": null,
     "revisions": [
+      {
+        "date": "2026-10-28",
+        "hash": "af95eb3",
+        "wordCount": 96,
+        "delta": 8,
+        "added": 96,
+        "removed": 88,
+        "diff": "[-| mirror / AI layer   | 🟡 speculative |                                                           |-] {+| mirror / AI layer   | 🔵 active      |                                                           |+} [-| component                           | status         | notes |-] [-| ----------------------------------- | -------------- | ----- |-] [-| obsidian → eleventy → vercel stack  | 🟢 stable      |       |-] [-| revision history                    | 🔵 active      |       |-] [-| screenshot archive / evolution page | 🔵 active      |       |-] [-| kanban rendering                    | 🟡 speculative |       |-] [-| keystroke → audio trigger           | 🟡 speculative |       |-] [-| youtube livestream                  | 🟡 speculative |       |-] [-| newsletter                          | 🟡 speculative |       |-] {+| component                           | status         | notes                                     |+} {+| ----------------------------------- | -------------- | ----------------------------------------- |+} {+| obsidian → eleventy → vercel stack  | 🟢 stable      |                                           |+} {+| revision history                    | 🔵 active      |                                           |+} {+| screenshot archive / evolution page | 🔵 active      |                                           |+} {+| kanban rendering                    | 🔵 active      | active, but I may not actually really use |+} {+| keystroke → audio trigger           | 🟡 speculative |                                           |+} {+| youtube livestream                  | 🟡 speculative |                                           |+} {+| newsletter                          | 🟡 speculative |                                           |+}"
+      },
       {
         "date": "2026-06-24",
         "hash": "7e09bc0",
@@ -21254,6 +21277,15 @@
     "noteDate": "2026-05-31",
     "revisions": [
       {
+        "date": "2026-10-28",
+        "hash": "af95eb3",
+        "wordCount": 22,
+        "delta": 1,
+        "added": 22,
+        "removed": 21,
+        "diff": "[-- [ ] add all the bots into the learning dashboard (buttons to launch app and activity summaries logged here) #milestone-] {+- [ ] add all the bots into the learning dashboard (buttons to launch app and activity summaries logged here) #milestone #build+}"
+      },
+      {
         "date": "2026-07-20",
         "hash": "9c44b88",
         "wordCount": 1,
@@ -21613,6 +21645,15 @@
   "2026-04-17": {
     "noteDate": "2026-04-17",
     "revisions": [
+      {
+        "date": "2026-10-28",
+        "hash": "af95eb3",
+        "wordCount": 20,
+        "delta": 1,
+        "added": 20,
+        "removed": 19,
+        "diff": "[-- [x] UI update with debug log and prompt engineering to supervisor bot v1.5 before next supervision meeting #milestone@2026-04-28-] {+- [x] UI update with debug log and prompt engineering to supervisor bot v1.5 before next supervision meeting #milestone@2026-04-28 #build+}"
+      },
       {
         "date": "2026-04-30",
         "hash": "ae9331d",
@@ -22162,6 +22203,15 @@
   "2026-01-20": {
     "noteDate": "2026-01-20",
     "revisions": [
+      {
+        "date": "2026-10-28",
+        "hash": "af95eb3",
+        "wordCount": 14,
+        "delta": 1,
+        "added": 14,
+        "removed": 13,
+        "diff": "[-- [x] work on refining [[project-supervisor-bot]] v1.5 ready for supervision conversations #milestone @2026-04-28-] {+- [x] work on refining [[project-supervisor-bot]] v1.5 ready for supervision conversations #milestone @2026-04-28 #build+}"
+      },
       {
         "date": "2026-04-18",
         "hash": "4fd8dd4",
