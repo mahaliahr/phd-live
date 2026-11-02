@@ -17,6 +17,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-10-29",
+        "hash": "3f52d3b",
+        "wordCount": 2,
+        "delta": 2,
+        "added": 2,
+        "removed": 0,
+        "diff": "{+https://github.com/mahaliahr/diy-bot+} {+[[diy-bot-creation]]+}"
+      },
+      {
         "date": "2026-10-28",
         "hash": "67802bc",
         "wordCount": 45,
@@ -20624,6 +20633,20 @@
         "added": 83,
         "removed": 0,
         "diff": "{+---+} {+{\"dg-publish\":true,\"permalink\":\"/pre-start-thoughts/28-11-2023-notes/\"}+} {+---+} {+I feel strongly that a big part of my work should be a critique of the current state of affairs. This critique will come from the perspective of being a member of staff and also of studying.+} {+It will pull from a lived experience of being excluded and what it potentially means to have new models that give access to things that have been historically gatekept,+} {+(what new ways of gatekeeping could be brought up/dreamt up)+} {+Foucault Knowledge and Power+}"
+      }
+    ]
+  },
+  "2026-10-28": {
+    "noteDate": "2026-10-28",
+    "revisions": [
+      {
+        "date": "2026-10-29",
+        "hash": "3f52d3b",
+        "wordCount": 205,
+        "delta": 205,
+        "added": 205,
+        "removed": 0,
+        "diff": "{+---+} {+dg-publish: true+} {+visibility: public+} {+title: 2026-10-28+} {+tags:+} {+- daily+} {+- stream+} {+---+} {+today I have been doing a bit of housekeeping with the phd-live site, in the last months with the confirmation and all other things that I have been working on I have not had the time to tweak or fix things that needed it. One of these things being that at the beginning of the research I kept and tracked everything on Notion, but as I have built up this system and been working in obsidian, it no longer makes sense to have the planning tracker in Notion, today I implemented the phd-live tracking/progress pages, one named 'research' and one named 'build' which integrates the milestone tracking system I already had from phd-live into a central way I can keep track of everything - lets see how it goes.+} {+I have also been preparing for supervision tomorrow [[supervision-291026]] - namely after the pilot DIY Bot workshop working on a draft of the ethics form that perhaps we can talk about. There is also generally the [[confirmation-feedback]] to maybe talk about too.+} {+## sessions+} {+<details>+} {+<summary>Session 1</summary>+} {+start:: 2026-10-28T21:32:15.208Z+} {+topic:: thinking / planning · supervision meeting prep and other organising+} {+end:: 2026-10-28T23:38:11.805Z+} {+</details>+}"
       }
     ]
   },

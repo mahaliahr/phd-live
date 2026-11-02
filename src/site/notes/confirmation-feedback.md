@@ -31,10 +31,9 @@ Here are some recommendations for the next stages of the research:
 
 ·       Identify your audiences. We discussed that there might be several, and it would help to define each one clearly. Engaging with other disciplines through your trans/inter/multi-disciplinary work could help you to scale your research and consider where your research will have impact.
 
-·       Present at conferences (ELIA, Cumulus, ECREA for example) to test it with different audiences
+· Present at conferences (ELIA, Cumulus, DRS, DIS, ECREA for example) to test it with different audiences. Workshops as a way to get in. 
 
 **Planning and Preparation**
 
 ·       Plan your research time carefully with your line manager to protect your 20% research time.
-
 ·       Rehearse presentations to build confidence and prepare for the Viva.
