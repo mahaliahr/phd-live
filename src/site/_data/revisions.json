@@ -17,6 +17,15 @@
     "noteDate": null,
     "revisions": [
       {
+        "date": "2026-11-02",
+        "hash": "7f839de",
+        "wordCount": 188,
+        "delta": 154,
+        "added": 188,
+        "removed": 34,
+        "diff": "[-things to talk about / cover-] {+### things to talk about / cover:+} [-ethics form for DIY bot-] [-talk about the build-a-bot / DIY bot Peckham Digital workshop [[provisional-pilot-diy-bot-workshop]]-] [-https://github.com/mahaliahr/diy-bot-] {+- talk about the build-a-bot / DIY bot Peckham Digital workshop [[provisional-pilot-diy-bot-workshop]]+} {+- https://github.com/mahaliahr/diy-bot+} {+- ethics form for DIY bot+} {+- summary of confirmation feedback [[confirmation-feedback]]+} {+- next steps moving on from the confirmation+} [-summary of confirmation feedback-] [-next steps moving on from the confirmation-] {+---+} {+How will I be analysing this data from the workshops and focus groups?+} {+finding the applicable research methods for the work:+} {+creativity support index ?+} {+spec. design integration+} {+research through design+} {+conference rationale  - what kind of feedback? audience and community? make writing align with thesis chapters, so that papers can be useful+} {+for next meeting: have the plan ready to discuss for the workshops + focus groups - research design+} {+the ethics form can happen async+} {+we discussed the earlier [[project-cci-ual-staff-interviews]] that has been on hiatus for months. The discussion was broadly exploring what addition this makes to the research and if I still need to do / the diy bot workshops might be more useful. So I will continue to have this on hold, potentially it will become clearer what these should look like in time and I can get back to it time.+}"
+      },
+      {
         "date": "2026-10-29",
         "hash": "3f52d3b",
         "wordCount": 2,
@@ -123,6 +132,15 @@
   "confirmation-feedback": {
     "noteDate": null,
     "revisions": [
+      {
+        "date": "2026-11-02",
+        "hash": "7f839de",
+        "wordCount": 24,
+        "delta": 9,
+        "added": 24,
+        "removed": 15,
+        "diff": "[-·       Present at conferences (ELIA, Cumulus, ECREA for example) to test it with different audiences-] {+· Present at conferences (ELIA, Cumulus, DRS, DIS, ECREA for example) to test it with different audiences. Workshops as a way to get in.+}"
+      },
       {
         "date": "2026-10-28",
         "hash": "67802bc",
@@ -20633,6 +20651,20 @@
         "added": 83,
         "removed": 0,
         "diff": "{+---+} {+{\"dg-publish\":true,\"permalink\":\"/pre-start-thoughts/28-11-2023-notes/\"}+} {+---+} {+I feel strongly that a big part of my work should be a critique of the current state of affairs. This critique will come from the perspective of being a member of staff and also of studying.+} {+It will pull from a lived experience of being excluded and what it potentially means to have new models that give access to things that have been historically gatekept,+} {+(what new ways of gatekeeping could be brought up/dreamt up)+} {+Foucault Knowledge and Power+}"
+      }
+    ]
+  },
+  "2026-11-02": {
+    "noteDate": "2026-11-02",
+    "revisions": [
+      {
+        "date": "2026-11-02",
+        "hash": "7f839de",
+        "wordCount": 19,
+        "delta": 19,
+        "added": 19,
+        "removed": 0,
+        "diff": "{+---+} {+date: 2026-11-02+} {+---+} {+## sessions+} {+<details>+} {+<summary>Session 1</summary>+} {+start:: 2026-11-02T13:43:18.276Z+} {+topic:: coding · debugging mirror+} {+end:: 2026-11-02T20:59:14.994Z+} {+</details>+}"
       }
     ]
   },
