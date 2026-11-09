@@ -44,4 +44,4 @@ whats a good hardware set for this hypothetically if I want to keep everything l
 
 [[peckham-digital-26-open-call]]
 
-possible workshop structure: [[provisional-pilot-diy-bot-workshop]]
+possible workshop structure: [[pilot-diy-bot-workshop]]

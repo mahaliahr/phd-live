@@ -7,7 +7,7 @@ type: ""
 ---
 ### things to talk about / cover: 
 
-- talk about the build-a-bot / DIY bot Peckham Digital workshop [[provisional-pilot-diy-bot-workshop]] 
+- talk about the build-a-bot / DIY bot Peckham Digital workshop [[pilot-diy-bot-workshop]] 
 	- https://github.com/mahaliahr/diy-bot
 - ethics form for DIY bot
 - summary of confirmation feedback [[confirmation-feedback]]
