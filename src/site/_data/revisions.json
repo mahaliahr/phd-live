@@ -20709,12 +20709,12 @@
     "revisions": [
       {
         "date": "2026-11-09",
-        "hash": "bcef7d7",
-        "wordCount": 27,
-        "delta": 27,
-        "added": 27,
-        "removed": 0,
-        "diff": "{+[[confidence-bot]]+} {+- [ ] need to bring v0 confidence bot to life #milestone+} {+## sessions+} {+<details>+} {+<summary>Session 1</summary>+} {+start:: 2026-11-09T15:26:31.612Z+} {+topic:: thinking / planning+} {+end:: 2026-11-09T18:00:07.275Z+} {+</details>+}"
+        "hash": "e59b55a",
+        "wordCount": 0,
+        "delta": -6,
+        "added": 0,
+        "removed": 6,
+        "diff": "[-<details>-] [-<summary>Session</summary>-] [-start:: 2026-11-09T16:58:03+0000-] [-topic::-] [-</details>-]"
       }
     ]
   },
