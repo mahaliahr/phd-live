@@ -1,6 +1,26 @@
 {
   "files": [
     {
+      "date": "2026-11-12",
+      "raw": "---\ndate: 2026-11-12\ngenerated: 22:09\n---\n\n## notes created\n- [[gaver-2023-living-light-touch]] \u2014 bibliography/ \u2014 22:09\n\n## notes edited\n- none\n\n## sessions\n- none\n\n## orphans flagged\n- [[gaver-2023-living-light-touch]] \u2014 no backlinks\n",
+      "parsed": {
+        "notes_created": "- [[gaver-2023-living-light-touch]] \u2014 bibliography/ \u2014 22:09",
+        "notes_edited": "- none",
+        "sessions": "- none",
+        "orphans_flagged": "- [[gaver-2023-living-light-touch]] \u2014 no backlinks"
+      }
+    },
+    {
+      "date": "2026-11-11",
+      "raw": "---\ndate: 2026-11-11\ngenerated: 22:11\n---\n\n## notes created\n- [[2026-11-11]] \u2014 daily/ \u2014 22:11\n\n## notes edited\n- [[2026-11-10]] \u2014 daily/ \u2014 22:11\n\n## sessions\n- none\n\n## orphans flagged\n- none\n",
+      "parsed": {
+        "notes_created": "- [[2026-11-11]] \u2014 daily/ \u2014 22:11",
+        "notes_edited": "- [[2026-11-10]] \u2014 daily/ \u2014 22:11",
+        "sessions": "- none",
+        "orphans_flagged": "- none"
+      }
+    },
+    {
       "date": "2026-11-10",
       "raw": "---\ndate: 2026-11-10\ngenerated: 22:00\n---\n\n## notes created\n- [[2026-11-10]] \u2014 daily/ \u2014 22:00\n\n## notes edited\n- [[2026-11-09]] \u2014 daily/ \u2014 22:00\n\n## sessions\n- none\n\n## orphans flagged\n- none\n",
       "parsed": {
