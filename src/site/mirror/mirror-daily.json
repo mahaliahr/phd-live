@@ -1,6 +1,76 @@
 {
   "files": [
     {
+      "date": "2026-11-23",
+      "raw": "---\ndate: 2026-11-23\ngenerated: 22:00\n---\n\n## notes created\n- none\n\n## notes edited\n- none\n\n## sessions\n- none\n\n## orphans flagged\n- none\n",
+      "parsed": {
+        "notes_created": "- none",
+        "notes_edited": "- none",
+        "sessions": "- none",
+        "orphans_flagged": "- none"
+      }
+    },
+    {
+      "date": "2026-11-22",
+      "raw": "---\ndate: 2026-11-22\ngenerated: 22:01\n---\n\n## notes created\n- none\n\n## notes edited\n- none\n\n## sessions\n- none\n\n## orphans flagged\n- none\n",
+      "parsed": {
+        "notes_created": "- none",
+        "notes_edited": "- none",
+        "sessions": "- none",
+        "orphans_flagged": "- none"
+      }
+    },
+    {
+      "date": "2026-11-21",
+      "raw": "---\ndate: 2026-11-21\ngenerated: 22:00\n---\n\n## notes created\n- none\n\n## notes edited\n- none\n\n## sessions\n- none\n\n## orphans flagged\n- none\n",
+      "parsed": {
+        "notes_created": "- none",
+        "notes_edited": "- none",
+        "sessions": "- none",
+        "orphans_flagged": "- none"
+      }
+    },
+    {
+      "date": "2026-11-20",
+      "raw": "---\ndate: 2026-11-20\ngenerated: 22:00\n---\n\n## notes created\n- none\n\n## notes edited\n- none\n\n## sessions\n- none\n\n## orphans flagged\n- none\n",
+      "parsed": {
+        "notes_created": "- none",
+        "notes_edited": "- none",
+        "sessions": "- none",
+        "orphans_flagged": "- none"
+      }
+    },
+    {
+      "date": "2026-11-19",
+      "raw": "---\ndate: 2026-11-19\ngenerated: 22:14\n---\n\n## notes created\n- none\n\n## notes edited\n- none\n\n## sessions\n- none\n\n## orphans flagged\n- none\n",
+      "parsed": {
+        "notes_created": "- none",
+        "notes_edited": "- none",
+        "sessions": "- none",
+        "orphans_flagged": "- none"
+      }
+    },
+    {
+      "date": "2026-11-18",
+      "raw": "---\ndate: 2026-11-18\ngenerated: 22:00\n---\n\n## notes created\n- none\n\n## notes edited\n- [[abstract-work-in-progress]] \u2014 published/ \u2014 22:00\n\n## sessions\n- none\n\n## orphans flagged\n- none\n",
+      "parsed": {
+        "notes_created": "- none",
+        "notes_edited": "- [[abstract-work-in-progress]] \u2014 published/ \u2014 22:00",
+        "sessions": "- none",
+        "orphans_flagged": "- none"
+      }
+    },
+    {
+      "date": "2026-11-17",
+      "raw": "---\ndate: 2026-11-17\ngenerated: 22:00\n---\n\n## notes created\n- none\n\n## notes edited\n- none\n\n## sessions\n- none\n\n## orphans flagged\n- none\n",
+      "parsed": {
+        "notes_created": "- none",
+        "notes_edited": "- none",
+        "sessions": "- none",
+        "orphans_flagged": "- none"
+      }
+    },
+    {
       "date": "2026-11-16",
       "raw": "---\ndate: 2026-11-16\ngenerated: 22:00\n---\n\n## notes created\n- [[2026-11-16]] \u2014 daily/ \u2014 22:00\n\n## notes edited\n- none\n\n## sessions\n- none\n\n## orphans flagged\n- none\n",
       "parsed": {
