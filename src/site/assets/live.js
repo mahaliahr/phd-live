@@ -190,7 +190,7 @@
 
   function isActive(session) {
     if (session.source === 'study_companion' || session.source === 'supervisor_bot') return false
-    if (session.source === 'dashboard') {
+    if (session.source === 'dashboard' || session.source === 'dashboard-remote') {
       const status = String(session.status || '').trim().toLowerCase();
       if (status !== 'active') return false;
 
